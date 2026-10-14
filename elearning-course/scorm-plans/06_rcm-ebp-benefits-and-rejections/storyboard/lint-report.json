@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -21,98 +23,104 @@
     "clean": true,
     "module_id": "MC06-rcm-ebp-benefits-rejections",
     "wpm": 140,
-    "total_est_sec": 281.1,
+    "total_est_sec": 282.0,
     "total_est_min": 4.7,
     "screens": [
       {
         "screen_id": "rcmb-000",
-        "part": null,
+        "part": "omar",
         "words": 31,
         "est_sec": 13.3
       },
       {
         "screen_id": "rcmb-001",
-        "part": null,
-        "words": 73,
-        "est_sec": 31.3
+        "part": "omar",
+        "words": 77,
+        "est_sec": 33.0
       },
       {
         "screen_id": "rcmb-010",
-        "part": null,
-        "words": 24,
-        "est_sec": 10.3
+        "part": "omar",
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-020",
-        "part": null,
-        "words": 89,
-        "est_sec": 38.1
+        "part": "omar",
+        "words": 91,
+        "est_sec": 39.0
       },
       {
         "screen_id": "rcmb-021",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-030",
-        "part": null,
-        "words": 81,
-        "est_sec": 34.7
+        "part": "noor",
+        "words": 87,
+        "est_sec": 37.3
       },
       {
         "screen_id": "rcmb-031",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-040",
-        "part": null,
-        "words": 102,
-        "est_sec": 43.7
+        "part": "omar",
+        "words": 101,
+        "est_sec": 43.3
       },
       {
         "screen_id": "rcmb-041",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-050",
-        "part": null,
+        "part": "omar",
         "words": 72,
         "est_sec": 30.9
       },
       {
         "screen_id": "rcmb-051",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-052",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "rcmb-060",
-        "part": null,
+        "part": "omar",
         "words": 23,
         "est_sec": 9.9
       },
       {
         "screen_id": "rcmb-090",
-        "part": null,
+        "part": "omar",
         "words": 21,
         "est_sec": 9.0
       },
       {
         "screen_id": "rcmb-091",
-        "part": null,
-        "words": 50,
-        "est_sec": 21.4
+        "part": "omar-1",
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "rcmb-091",
+        "part": "noor-1",
+        "words": 11,
+        "est_sec": 4.7
       }
     ],
     "issues": []

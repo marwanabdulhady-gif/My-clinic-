@@ -5,7 +5,7 @@
   "voice": {
     "provider": "external",
     "voice_id": null,
-    "persona": "an experienced My Clinic colleague coaching a learner in their first week",
+    "persona": "Two fixed companion voices (companions.md §5): Dr. Omar, lead host — male, late 30s, friendly, confident, medium-low pitch; Noor, co-host — female, early-to-mid 30s, warm, calm, clear. Neither voice may be cloned from or resemble a real employee. Provider and voice ids pending program D10.",
     "gender": null
   },
   "lexicon": {
@@ -47,185 +47,255 @@
   "segments": [
     {
       "screen_id": "hs2-000",
+      "part": "noor",
       "narration": "NOOR: Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
       "on_screen_text": "\"Safety in Practice\" · \"Hazard, fire and chemical lab\"",
       "target_sec": 12.0,
-      "tone": "warm"
+      "tone": "warm",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-001",
+      "part": "noor",
       "narration": "NOOR: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.",
       "on_screen_text": "\"Safety = measures that protect life, health and environment.\" · \"Today you practise, not read.\"",
       "target_sec": 20.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-010",
-      "narration": "NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
+      "part": "noor",
+      "narration": "NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
       "on_screen_text": "Problem: wet floor at the clinic entrance during rain. Steps: (1) name the hazard; (2) likelihood 4 (busy entrance) ; (3) impact 3 (fall injury); (4) risk = 4 × 3 = 12; (5) control: mat + sign + mop …",
       "target_sec": 45.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-011",
+      "part": "noor",
       "narration": "NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.",
       "on_screen_text": "New illustration of a store room/office (based on p.4 idea). Answer key (6 regions): trailing cables across the walkway · boxes stacked above shoulder height · blocked fire exit / extinguisher · unlabelled bottle on a shelf · liquid spill …",
       "target_sec": 15.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-012",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "\"Which hazard in the room do you report and fix first?\" → blocked fire exit (high impact for everyone)",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-013",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "\"Likelihood 2, impact 5. Risk score = ___\" → accepted: 10",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-020",
-      "narration": "NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "part": "noor",
+      "narration": "NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
       "on_screen_text": "10 colour codes + 2 announcements; front EN + AR name and colour chip, back meaning + extension (D2). Code Blue 2222",
       "target_sec": 25.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-030",
-      "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.\n\nOMAR: Carry this practical rule into your next decision.",
+      "part": "noor-1",
+      "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.",
       "on_screen_text": "Setting: afternoon clinic, smoke from a consultation room. Nodes: (1) Rescue — patient in the room vs. phone first; (2) Alarm — shout \"Code Red\", pull the call point, then choose the complete call script (code type + location + …",
-      "target_sec": 20.0,
-      "tone": "encouraging"
+      "target_sec": 16,
+      "tone": "encouraging",
+      "speaker": "noor"
+    },
+    {
+      "screen_id": "hs2-030",
+      "part": "omar-1",
+      "narration": "OMAR: Carry this practical rule into your next decision.",
+      "on_screen_text": "Setting: afternoon clinic, smoke from a consultation room. Nodes: (1) Rescue — patient in the room vs. phone first; (2) Alarm — shout \"Code Red\", pull the call point, then choose the complete call script (code type + location + …",
+      "target_sec": 5.0,
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "hs2-031",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Items: \"Bedbound adult on the 2nd floor\", \"Adult who can't walk, stairs needed\", \"Newborn in the nursery\", \"Infant carried by staff\" → targets: Evacuation mattress · Evacuation chair · Newborn evacuation chair · Baby mover / apron",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-032",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Generic own floor plan (Zones A–E). Place 6 labels: call point · extinguisher · fire hose reel · fire blanket · evacuation route · assembly point (\"you are here\" given)",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-033",
-      "narration": "NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "part": "noor",
+      "narration": "NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
       "on_screen_text": "Inside assembly point · Outside assembly point · \"Find your unit's plan on the wall today.\" Horizontal → vertical → full (recap from 01)",
       "target_sec": 25.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-040",
+      "part": "noor",
       "narration": "NOOR: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task.",
       "on_screen_text": "Own photo of a My Clinic dry-powder extinguisher. Regions: safety pin · pressure gauge (needle in green) · class / agent label · instructions panel (PASS) · last inspection tag",
       "target_sec": 20.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-041",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Scenes: \"Sparking computer\", \"Pan of oil in the staff kitchen\", \"Burning cardboard\", \"Spilled solvent on fire\" → CO₂ · Wet chemical · Water / ABC powder · Foam",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-050",
+      "part": "noor",
       "narration": "NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "on_screen_text": "Definition (p.21) · Code Orange = chemical or biological release · Rule from D1",
       "target_sec": 25.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-051",
+      "part": "noor",
       "narration": "NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.",
       "on_screen_text": "Before = Chemical spill kit (red case) · After = Biological spill kit (yellow, biohazard) · caption: contents of each",
       "target_sec": 15.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-052",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "3 nodes: (1) urine sample dropped in the lab corridor → biological kit, no Code Orange; (2) large spill of surface disinfectant above the threshold → Code Orange; (3) small amount of a reagent marked \"highly toxic\" → Code Orange …",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-053",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "7 steps (B4): PPE per SDS → isolate & warn → contain the edges → absorb / neutralise → bag, seal, label → clean & report → restock the kit",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-060",
+      "part": "noor",
       "narration": "NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "on_screen_text": "Anonymised register table (5 rows, from B5): name · hazard class · purpose · quantity · SDS ✓ · NFPA H/F/R/S. Callouts on the SDS and NFPA columns",
       "target_sec": 35.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-061",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "9 pairs: pictogram ↔ example hazard text from p.23 (e.g. Flame over circle ↔ \"oxidiser — can intensify fire\")",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-062",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Row: \"Surface disinfectant X — SDS ✘\". \"You need it for a cleaning task now. What do you do?\" → don't use; report the missing SDS to your supervisor / EHS",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-063",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Row shows NFPA 2-3-0. \"Where must it be stored?\" → approved flammable cabinet, away from heat",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-064",
-      "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
+      "part": "noor",
+      "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
       "on_screen_text": "Intro: the store door is locked; four checks unlock it. Puzzles: (1) \"Health rating of the solvent on the diamond?\" → 2; (2) \"Which register row is missing its SDS? Enter the row number.\" → 4; (3) \"How many minutes …",
       "target_sec": 15.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-070",
+      "part": "noor",
       "narration": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Items: scented candle · personal fan heater · extension cord from home · e-cigarette · Facilities-approved power strip · BME-tagged suction unit · reheating lunch for 10 minutes · kettle in the staff pantry (approved) → Allowed / Prohibited (union …",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-080",
+      "part": "noor",
       "narration": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit.",
       "on_screen_text": "hs2-o1…o7, weak below 70%",
       "target_sec": 12.0,
-      "tone": "supportive"
+      "tone": "supportive",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-081",
+      "part": "noor",
       "narration": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
       "on_screen_text": "\"Name one hazard you'll check in your own area this week.\"",
       "target_sec": 8.0,
-      "tone": "reflective"
+      "tone": "reflective",
+      "speaker": "noor"
     },
     {
       "screen_id": "hs2-090",
-      "narration": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role.\n\nOMAR: Carry this practical rule into your next decision.",
+      "part": "noor-1",
+      "narration": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
       "on_screen_text": "What you practised · Contact: Safety & Security (extension B9) · Next: module 04 / your unit's drill schedule",
-      "target_sec": 20.0,
-      "tone": "confident"
+      "target_sec": 16,
+      "tone": "confident",
+      "speaker": "noor"
+    },
+    {
+      "screen_id": "hs2-090",
+      "part": "omar-1",
+      "narration": "OMAR: Carry this practical rule into your next decision.",
+      "on_screen_text": "What you practised · Contact: Safety & Security (extension B9) · Next: module 04 / your unit's drill schedule",
+      "target_sec": 5.0,
+      "tone": "confident",
+      "speaker": "omar"
     }
   ]
 }

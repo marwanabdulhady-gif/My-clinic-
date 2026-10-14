@@ -85,7 +85,14 @@ Short, true-to-life moments the companions share once each, to make it safe for 
 | `char-<id>-success` | `MAHX-jiR90M` | `MAHX-llCU5M` | Thumbs up — correct choices, results, close |
 | `char-<id>-listening` | `MAHX-v3i0kY` | `MAHX-uifxtY` | Holding a tablet, attentive — polls, reflections |
 | `char-<id>-avatar-neutral` | `MAHX-n4HuyU` | `MAHX-nPHDkA` | Head and shoulders, square — crop to a circle for 48–64 px avatars |
-| `char-<id>-avatar-happy` / `-avatar-concern` | to make if needed | to make if needed | Crop from `-success` / `-concern`, or generate from the avatar with the pose prompt |
+| `char-<id>-avatar-happy` / `-avatar-concern` | interim crop in `assets/` (see below) | interim crop in `assets/` (see below) | Crop from `-success` / `-concern`, or generate from the avatar with the pose prompt |
+
+**Interim avatar crops in this repository (2026-10-14).** `tools/make_companion_avatars.py`
+derives `assets/char-noor-avatar-happy.png`, `assets/char-noor-avatar-concern.png` and
+`assets/char-omar-avatar-happy.png` as head-and-shoulder crops of the approved `-success` /
+`-concern` previews, and copies the two approved neutral avatars to `assets/` as transparent PNGs.
+They are 87–200 px and are **placeholders for layout and review only**: production still uses the
+full-size Canva downloads below (1024 × 1024, transparent), rerun-free of any new likeness work.
 | `char-duo-welcome` | — | — | Not needed as one image: place the two `-welcome` poses side by side (see mockup 07) |
 
 | | Noor | Dr. Omar |

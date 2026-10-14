@@ -34,7 +34,7 @@
 | Module colour | Ambitious teal #008C99 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B10; program D1, D2, D11 and D14 |
-| Narration reconciliation | Detailed card scripts: 16.5 min; Phase 3 per-screen targets: 16.5 min; Phase 3 rough module estimate: ~19 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 16.4 min; Phase 3 per-screen targets: 16.5 min; Phase 3 rough module estimate: ~19 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
 
 ### Production guardrails
 
@@ -480,10 +480,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 84 words / ≈ 36 s at 140 wpm |
+| Word count / estimated seconds | 78 words / ≈ 33.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -589,10 +589,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 56 words / ≈ 24 s at 140 wpm |
+| Word count / estimated seconds | 64 words / ≈ 27.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -698,10 +698,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 48 words / ≈ 20.6 s at 140 wpm |
+| Word count / estimated seconds | 51 words / ≈ 21.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.
+> NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -918,10 +918,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 56 words / ≈ 24 s at 140 wpm |
+| Word count / estimated seconds | 63 words / ≈ 27 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1027,10 +1027,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 67 words / ≈ 28.7 s at 140 wpm |
+| Word count / estimated seconds | 71 words / ≈ 30.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1136,10 +1136,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 69 words / ≈ 29.6 s at 140 wpm |
+| Word count / estimated seconds | 70 words / ≈ 30 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1357,10 +1357,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2128,10 +2128,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 68 words / ≈ 29.1 s at 140 wpm |
+| Word count / estimated seconds | 67 words / ≈ 28.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.
+> NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2466,10 +2466,10 @@ Single clean flat vector illustration for a My Clinic e-learning course. Clinic 
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 46 words / ≈ 19.7 s at 140 wpm |
+| Word count / estimated seconds | 42 words / ≈ 18 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check.
+> NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2575,10 +2575,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 23 words / ≈ 9.9 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2686,10 +2686,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 82 words / ≈ 35.1 s at 140 wpm |
+| Word count / estimated seconds | 79 words / ≈ 33.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -3018,10 +3018,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -3238,10 +3238,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 57 words / ≈ 24.4 s at 140 wpm |
+| Word count / estimated seconds | 64 words / ≈ 27.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -3680,10 +3680,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 71 words / ≈ 30.4 s at 140 wpm |
+| Word count / estimated seconds | 75 words / ≈ 32.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.
+> NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -3903,7 +3903,7 @@ lock items have written SME decisions.
 | Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -4011,10 +4011,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 24 words / ≈ 10.3 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -4342,10 +4342,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 60 words / ≈ 25.7 s at 140 wpm |
+| Word count / estimated seconds | 54 words / ≈ 23.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -4565,7 +4565,7 @@ lock items have written SME decisions.
 | Word count / estimated seconds | 60 words / ≈ 25.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -4672,10 +4672,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 12 |
-| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
+| Word count / estimated seconds | 27 words / ≈ 11.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -4894,10 +4894,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 82 words / ≈ 35.1 s at 140 wpm |
+| Word count / estimated seconds | 89 words / ≈ 38.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -5223,10 +5223,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 58 words / ≈ 24.9 s at 140 wpm |
+| Word count / estimated seconds | 57 words / ≈ 24.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.
+> NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -5554,10 +5554,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 62 words / ≈ 26.6 s at 140 wpm |
+| Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -5664,12 +5664,12 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR / OMAR |
 | Tone | encouraging |
 | Target seconds | 20 |
-| Word count / estimated seconds | 52 words / ≈ 22.3 s at 140 wpm |
+| Word count / estimated seconds | 45 words / ≈ 19.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.
 >
-> OMAR: Carry this practical rule into your next decision.
+> OMAR: That is the habit we want from every new colleague.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -5778,10 +5778,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | supportive |
 | Target seconds | 15 |
-| Word count / estimated seconds | 34 words / ≈ 14.6 s at 140 wpm |
+| Word count / estimated seconds | 38 words / ≈ 16.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Keep the next action clear.
+> NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -5997,10 +5997,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR / OMAR |
 | Tone | confident |
 | Target seconds | 30 |
-| Word count / estimated seconds | 77 words / ≈ 33 s at 140 wpm |
+| Word count / estimated seconds | 78 words / ≈ 33.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
 >
 > OMAR: Carry this practical rule into your next decision.
 
@@ -6052,58 +6052,58 @@ lock items have written SME decisions.
 | 1 | `hs1-000` | `title_slide` | N | 0 | 7 | 33 | 14 | Draft |
 | 2 | `hs1-001` | `content_slide` | N | 0 | 16 | 68 | 29 | Draft |
 | 3 | `hs1-002` | `poll` | N | 0 | 13 | 19 | 8 | Draft |
-| 4 | `hs1-101` | `content_slide` | N | 0 | 7 | 84 | 36 | Draft |
-| 5 | `hs1-102` | `hotspot` | N | 0 | 14 | 56 | 24 | Draft |
-| 6 | `hs1-103` | `content_slide` | N | 0 | 13 | 48 | 21 | Draft |
+| 4 | `hs1-101` | `content_slide` | N | 0 | 7 | 78 | 33 | Draft |
+| 5 | `hs1-102` | `hotspot` | N | 0 | 14 | 64 | 27 | Draft |
+| 6 | `hs1-103` | `content_slide` | N | 0 | 13 | 51 | 22 | Draft |
 | 7 | `hs1-104` | `matching` | Y | 10 | 7 | 18 | 8 | Draft |
-| 8 | `hs1-201` | `flashcards` | N | 0 | 9 | 56 | 24 | Draft |
-| 9 | `hs1-202` | `accordion` | N | 0 | 16 | 67 | 29 | Draft |
-| 10 | `hs1-203` | `labeled_diagram` | N | 0 | 6 | 69 | 30 | Draft |
+| 8 | `hs1-201` | `flashcards` | N | 0 | 9 | 63 | 27 | Draft |
+| 9 | `hs1-202` | `accordion` | N | 0 | 16 | 71 | 30 | Draft |
+| 10 | `hs1-203` | `labeled_diagram` | N | 0 | 6 | 70 | 30 | Draft |
 | 11 | `hs1-204` | `sorting` | Y | 10 | 9 | 23 | 10 | Draft |
-| 12 | `hs1-205` | `decision_scenario` | Y | 15 | 37 | 36 | 15 | Draft |
+| 12 | `hs1-205` | `decision_scenario` | Y | 15 | 37 | 31 | 13 | Draft |
 | 13 | `hs1-206` | `accordion` | N | 0 | 21 | 67 | 29 | Draft |
 | 14 | `hs1-301` | `flashcards` | N | 0 | 15 | 69 | 30 | Draft |
 | 15 | `hs1-302` | `matching` | Y | 10 | 27 | 18 | 8 | Draft |
 | 16 | `hs1-303` | `content_slide` | N | 0 | 15 | 58 | 25 | Draft |
 | 17 | `hs1-304` | `sorting` | Y | 5 | 5 | 18 | 8 | Draft |
 | 18 | `hs1-305` | `labeled_diagram` | N | 0 | 11 | 44 | 19 | Draft |
-| 19 | `hs1-401` | `labeled_diagram` | N | 0 | 14 | 68 | 29 | Draft |
+| 19 | `hs1-401` | `labeled_diagram` | N | 0 | 14 | 67 | 29 | Draft |
 | 20 | `hs1-402` | `sorting` | Y | 5 | 5 | 18 | 8 | Draft |
 | 21 | `hs1-403` | `sorting` | Y | 5 | 8 | 18 | 8 | Draft |
-| 22 | `hs1-404` | `hotspot` | N | 0 | 20 | 46 | 20 | Draft |
-| 23 | `hs1-405` | `drag_drop` | Y | 10 | 20 | 23 | 10 | Draft |
-| 24 | `hs1-406` | `tabs` | N | 0 | 14 | 82 | 35 | Draft |
+| 22 | `hs1-404` | `hotspot` | N | 0 | 20 | 42 | 18 | Draft |
+| 23 | `hs1-405` | `drag_drop` | Y | 10 | 20 | 18 | 8 | Draft |
+| 24 | `hs1-406` | `tabs` | N | 0 | 14 | 79 | 34 | Draft |
 | 25 | `hs1-407` | `mcq` | Y | 5 | 29 | 18 | 8 | Draft |
 | 26 | `hs1-408` | `true_false` | Y | 5 | 7 | 18 | 8 | Draft |
-| 27 | `hs1-409` | `decision_scenario` | Y | 20 | 38 | 36 | 15 | Draft |
+| 27 | `hs1-409` | `decision_scenario` | Y | 20 | 38 | 31 | 13 | Draft |
 | 28 | `hs1-410` | `content_slide` | N | 0 | 14 | 56 | 24 | Draft |
-| 29 | `hs1-501` | `content_slide` | N | 0 | 13 | 57 | 24 | Draft |
+| 29 | `hs1-501` | `content_slide` | N | 0 | 13 | 64 | 27 | Draft |
 | 30 | `hs1-502` | `matching` | Y | 10 | 12 | 18 | 8 | Draft |
 | 31 | `hs1-503` | `labeled_diagram` | Y | 10 | 11 | 18 | 8 | Draft |
 | 32 | `hs1-504` | `mcq` | Y | 5 | 24 | 18 | 8 | Draft |
-| 33 | `hs1-505` | `accordion` | N | 0 | 18 | 71 | 30 | Draft |
+| 33 | `hs1-505` | `accordion` | N | 0 | 18 | 75 | 32 | Draft |
 | 34 | `hs1-506` | `content_slide` | N | 0 | 13 | 57 | 24 | Draft |
 | 35 | `hs1-507` | `decision_scenario` | Y | 15 | 36 | 36 | 15 | Draft |
-| 36 | `hs1-508` | `drag_drop` | Y | 10 | 19 | 24 | 10 | Draft |
+| 36 | `hs1-508` | `drag_drop` | Y | 10 | 19 | 18 | 8 | Draft |
 | 37 | `hs1-601` | `tabs` | N | 0 | 17 | 70 | 30 | Draft |
 | 38 | `hs1-602` | `mcq` | Y | 5 | 33 | 18 | 8 | Draft |
-| 39 | `hs1-701` | `hotspot` | N | 0 | 22 | 60 | 26 | Draft |
+| 39 | `hs1-701` | `hotspot` | N | 0 | 22 | 54 | 23 | Draft |
 | 40 | `hs1-702` | `mcq` | Y | 5 | 20 | 18 | 8 | Draft |
 | 41 | `hs1-801` | `content_slide` | N | 0 | 10 | 60 | 26 | Draft |
-| 42 | `hs1-802` | `decision_scenario` | Y | 15 | 37 | 31 | 13 | Draft |
+| 42 | `hs1-802` | `decision_scenario` | Y | 15 | 37 | 27 | 12 | Draft |
 | 43 | `hs1-803` | `true_false` | Y | 5 | 12 | 18 | 8 | Draft |
-| 44 | `hs1-901` | `tabs` | N | 0 | 24 | 82 | 35 | Draft |
+| 44 | `hs1-901` | `tabs` | N | 0 | 24 | 89 | 38 | Draft |
 | 45 | `hs1-902` | `matching` | Y | 5 | 4 | 18 | 8 | Draft |
 | 46 | `hs1-903` | `labeled_diagram` | N | 0 | 7 | 58 | 25 | Draft |
-| 47 | `hs1-904` | `accordion` | N | 0 | 8 | 58 | 25 | Draft |
+| 47 | `hs1-904` | `accordion` | N | 0 | 8 | 57 | 24 | Draft |
 | 48 | `hs1-905` | `mcq` | Y | 5 | 20 | 18 | 8 | Draft |
 | 49 | `hs1-906` | `matching` | Y | 5 | 11 | 18 | 8 | Draft |
-| 50 | `hs1-907` | `content_slide` | N | 0 | 15 | 62 | 27 | Draft |
-| 51 | `hs1-950` | `game` | Y | 25 | 38 | 52 | 22 | Draft |
-| 52 | `hs1-980` | `results_breakdown` | N | 0 | 7 | 34 | 15 | Draft |
+| 50 | `hs1-907` | `content_slide` | N | 0 | 15 | 59 | 25 | Draft |
+| 51 | `hs1-950` | `game` | Y | 25 | 38 | 45 | 19 | Draft |
+| 52 | `hs1-980` | `results_breakdown` | N | 0 | 7 | 38 | 16 | Draft |
 | 53 | `hs1-981` | `poll` | N | 0 | 4 | 19 | 8 | Draft |
-| 54 | `hs1-990` | `summary` | N | 0 | 29 | 77 | 33 | Draft |
-| | **Totals** | | **24** | **220** | | **2304** | **987 ≈ 16.5 min** | Draft |
+| 54 | `hs1-990` | `summary` | N | 0 | 29 | 78 | 33 | Draft |
+| | **Totals** | | **24** | **220** | | **2294** | **983 ≈ 16.4 min** | Draft |
 
 ### Asset list
 

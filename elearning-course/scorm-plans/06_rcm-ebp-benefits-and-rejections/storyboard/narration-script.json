@@ -5,7 +5,7 @@
   "voice": {
     "provider": "external",
     "voice_id": null,
-    "persona": "an experienced My Clinic colleague coaching a learner in their first week",
+    "persona": "Two fixed companion voices (companions.md §5): Dr. Omar, lead host — male, late 30s, friendly, confident, medium-low pitch; Noor, co-host — female, early-to-mid 30s, warm, calm, clear. Neither voice may be cloned from or resemble a real employee. Provider and voice ids pending program D10.",
     "gender": null
   },
   "lexicon": {
@@ -47,108 +47,147 @@
   "segments": [
     {
       "screen_id": "rcmb-000",
+      "part": "omar",
       "narration": "OMAR: Welcome to RCM Part B: New EBP Benefits & Claim-Rejection Analysis. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
       "on_screen_text": "\"What's new in the EBP — and why claims get rejected\" · \"RCM Part B\" · policy effective date (B1)",
       "target_sec": 12.0,
-      "tone": "warm"
+      "tone": "warm",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-001",
-      "narration": "OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
+      "part": "omar",
+      "narration": "OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
       "on_screen_text": "The EBP added new benefits and amended others · Coverage depends on the table of benefits and the documentation · Partial coverage ≠ full approval",
       "target_sec": 30.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-010",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
+      "part": "omar",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Cards: prevention exams · STDs · adult vaccination · home care for inpatients · temporary contraception · telemedicine · menopause/perimenopause cover · kidney transplant · diabetes programme → Added; mental health · optical · congenital anomalies · dental · dialysis …",
       "target_sec": 10.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-020",
-      "narration": "OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "part": "omar",
+      "narration": "OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
       "on_screen_text": "Early exams: mammogram · Pap smear · FIT/colonoscopy · dietary counselling (risk criteria, B7) · FBS/HbA1c · lipids · DEXA · Adult vaccines: Tdap · PCV13 · PPSV23 · influenza · STDs: treatment whatever the mode of infection (list)",
       "target_sec": 40.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-021",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "\"A 52-year-old with BMI 32 and high cholesterol asks for help with diet to lower her heart risk.\" → covered behavioural/dietary consultation; document BMI and risk factors (B7)",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-030",
-      "narration": "NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "part": "noor",
+      "narration": "NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
       "on_screen_text": "Included conditions (9) · Excluded: hypnosis, rehabilitation · Limit per policy period (B5) · Pre-authorisation for sub-limit services · Document: indication, link symptoms to a valid psychiatric diagnosis, justify referral",
       "target_sec": 35.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "noor"
     },
     {
       "screen_id": "rcmb-031",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "\"Hypnosis for alcohol use is covered under the mental-health benefit.\" → False",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-040",
-      "narration": "OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
+      "part": "omar",
+      "narration": "OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
       "on_screen_text": "Home care for inpatients (wound care, IV meds, catheter care) · Telemedicine (MOH-licensed centre, CHI rules) · Diabetes 360° programme (team + specialist visits) · Women's health (menopausal/perimenopausal hormone therapy) + family planning (hormonal contraceptives, IUD) · Kidney transplant (limit …",
       "target_sec": 45.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-041",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Mental health ↔ sub-limit per policy period + pre-auth · Kidney transplant ↔ up to the policy limit · Telemedicine ↔ MOH-licensed centre · Home care ↔ after an inpatient stay (wound/IV/catheter) · Family planning ↔ hormonal contraceptives and IUDs …",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-050",
+      "part": "omar",
       "narration": "OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "on_screen_text": "Rebuilt HTML table, 8 rows, invented claim ids (B8): diagnosis · service · rejection comment. Comments drawn from slide 6: \"pain, unspecified\" · \"fever\" · \"requires pre-authorisation as per policy\" · \"consultation within the free follow-up period\" · \"radiology: two …",
       "target_sec": 30.0,
-      "tone": "calm, practical"
+      "tone": "calm, practical",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-051",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "The 8 comments → Documentation · Coding · Policy / pre-auth · Timing / follow-up period · Billing process (categories per B9)",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-052",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "on_screen_text": "Claim rejected: \"Fever — non-specific diagnosis\". Node 1: resubmit unchanged / bill again / review the note ✔. Node 2: the note shows fever 3 days, dysuria, positive urinalysis → add specific/provisional diagnosis and findings ✔ vs add a second …",
       "target_sec": 8.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-060",
+      "part": "omar",
       "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
       "on_screen_text": "Bank of 15 patient requests across all benefits (e.g. adult influenza vaccine; PCOS hormonal panel; telemedicine follow-up from an unlicensed app; IUD insertion; home IV antibiotics after discharge; bipolar disorder management; hypnosis; DEXA for a postmenopausal woman). max_items 8, target_success …",
       "target_sec": 10.0,
-      "tone": "encouraging"
+      "tone": "encouraging",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-090",
+      "part": "omar",
       "narration": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
       "on_screen_text": "rcmb-o1…o3",
       "target_sec": 10.0,
-      "tone": "supportive"
+      "tone": "supportive",
+      "speaker": "omar"
     },
     {
       "screen_id": "rcmb-091",
-      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context.\n\nNOOR: Carry this practical rule into your next decision.",
+      "part": "omar-1",
+      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
       "on_screen_text": "Know what's new · Document to the benefit's criteria · Check limits and pre-auth · Rework, don't resubmit · Link: EBP one-page summary (PDF)",
-      "target_sec": 20.0,
-      "tone": "confident"
+      "target_sec": 15,
+      "tone": "confident",
+      "speaker": "omar"
+    },
+    {
+      "screen_id": "rcmb-091",
+      "part": "noor-1",
+      "narration": "NOOR: And remember: asking early is always the safe move here.",
+      "on_screen_text": "Know what's new · Document to the benefit's criteria · Check limits and pre-auth · Rework, don't resubmit · Link: EBP one-page summary (PDF)",
+      "target_sec": 5.0,
+      "tone": "confident",
+      "speaker": "noor"
     }
   ]
 }

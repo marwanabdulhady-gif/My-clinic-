@@ -29,7 +29,7 @@
 | Brand identity, logo files, layouts L1–L6, screen mockups | ✅ draft · 🔒 Marketing confirmation (D11) |
 | Companions Noor and Dr. Omar: bible, 8 poses each, avatars, placement rules | ✅ · ⬜ full-size transparent PNGs not yet downloaded from Canva into `characters/assets/` |
 | Storyboard template, screen-type guide, examples, review checklist | ✅ |
-| Client-review Word pack (all 8) + review register (37 build-detail questions) | ✅ v0.2 |
+| Client-review Word pack (all 8, branded header/footer) + review register (52 build-detail questions across all 8 packs) | ✅ v0.2 |
 | **SCORM structure** (programme + per module) | ✅ new: [`scorm-structure.md`](scorm-structure.md) and `<module>/scorm-structure.md` |
 | Proposal (6 courses, USD 9,000) | ✅ Rev01 (narration ~60 min, 26 scenarios, guide characters) · see §3 |
 | Cross-module decisions D1–D14 | 🔒 all 14 open |
@@ -46,11 +46,13 @@
 |---|---|---|---|---|
 | G1 | ~~03 storyboard predates the companions.~~ **Done:** v0.2 with shared `char-*` art, `OMAR:`/`NOOR:` tags, two-voice split on `hr-000` and `hr-091`, full pack and clean lint. | `03_hr-employee-induction/storyboard/` | — | Done |
 | G2 | ~~07 storyboard pack is incomplete.~~ **Done:** v0.2 with Omar on `qsr-031`, `qsr-040` and `qsr-092`, full pack, 3 native SVG diagrams and clean lint. SME to confirm: Noor beside the unscored poll on `qsr-002` (companions.md says no companion over a question), risk-matrix band names (B6), and the closing quote (B1). | `07_quality-safety-and-risk/storyboard/` | Confirm the three points in Phase 0 review | SMEs |
-| G3 | **Shipping audio voice settings are generic.** Every `narration-script.json` has `voice_id: null`, `gender: null` and a generic persona, not the two companion voices.  Also, in 01, 02, 04, 05, 06 and 08 the TTS text started with the `NOOR:`/`OMAR:` label, so the voice would have read it aloud; **fixed** (label removed from `tts_text`, `speaker` field added). Still open: 7 screens in those packs have both voices in one segment (2 in 01, 2 in 02, 1 each in 04, 05, 06) and must be split into `noor-1`/`omar-1` parts, as 03 and 07 do. | all `storyboard/narration-script.json` and `audio-script-export.json` | After D10, set one voice block per companion and keep the `NOOR:` / `OMAR:` split (companions.md §5). | Course owner → agent |
+| G3 | ~~Two-voice screens were one recording, and TTS read the speaker label aloud.~~ **Done:** all eight packs now carry one segment per spoken line (`part` = `omar-1` / `noor-1`), `tts_text`/`ssml` without labels, one shared companion voice block, and one export schema (`tools/audio_export.py`, used by the generator and by `tools/normalise_narration.py` for 03/07). **Still open:** the voice ids themselves — `voice_id: null` until **D10** closes. | all `storyboard/narration-script.json` and `audio-script-export.json` | Close D10, then record provider + voice ids in `narration-and-lexicon.md` §1 and each `voice` block | Course owner → agent |
 | G4 | **Thin objective evidence.** 14 objectives are assessed by one scored screen only, so the LMS objective result depends on one answer. | see each `scorm-structure.md` §5 | Add a second short check where the objective matters for compliance (01 `hs1-o6`, `hs1-o7`; 07 `qsr-o5`; 08 `ehr-o2`), or accept at SME sign-off. Capstones (`hs1-o10`, `rcma-o5`) are fine as one big case. | SMEs + L&D |
-| G5 | **37 scored screens still need SME build detail** (answers, feedback, replay rules, typed-answer variants). | [`storyboard-review-register.md`](storyboard-review-register.md) | Close row by row with the named SME, then update the cards. | SMEs + L&D |
-| G6 | **Companion art not in the repo at full size.** Only preview JPGs exist; the proxy blocks Canva downloads. | `characters/` | Download the 18 files by media id (companions.md §3) as transparent PNGs into `characters/assets/`. | Marwan (Canva) |
+| G5 | **52 scored screens still need SME build detail** (answers, feedback, replay rules, typed-answer variants). The register now covers all eight packs, not six. | [`storyboard-review-register.md`](storyboard-review-register.md) | Close row by row with the named SME, then update the cards. | SMEs + L&D |
+| G6 | **Companion art not in the repo at full size.** Previews are complete (18/18) and `tools/make_companion_avatars.py` added five interim transparent avatar PNGs (incl. the three missing `avatar-happy` / `avatar-concern` crops), but the 18 full-size Canva PNGs are still absent. | `characters/` | Download the 18 files by media id (companions.md §3, ids repeated in [`asset-template-audit.md`](asset-template-audit.md) §2) as transparent PNGs into `characters/assets/`. | Marwan (Canva) |
 | G7 | **Master timeline was out of step with the proposal** (8 weeks vs the proposal's 9–10 weeks). | `../README.md` §3 | Fixed in this pass: the README timeline now follows the proposal's phases. | Done |
+| G8 | **No repeatable evidence for assets, templates and logo placement.** Reviews relied on memory of what exists. | `00_program/` | Added `tools/audit_assets.py` → [`asset-template-audit.md`](asset-template-audit.md) + `asset-audit.json`: brand pixels/alpha, mockups vs L1–L6, companion coverage, referenced-vs-on-disk module assets, SVG validity, card template completeness, logo in every board/Word doc/Markdown cover, internal link resolution, TTS label leaks. Clean on 2026-10-14. | Done (rerun after changes) |
+| G9 | **Planning lint could not be rerun locally** (the edumints MCP server is unreachable here), so `lint-report.json` files went stale after edits. | all `storyboard/lint-report.json` | Added `tools/lint_planning.py`, a deterministic local port of `lint_visual_plan` / `lint_narration_script` (upstream rev `4bbf4591`); all eight reports regenerated and clean. Each report says it is a local port and that the server lint must be rerun before Phase 4. | Done (rerun after changes) |
 
 ---
 
@@ -90,6 +92,12 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 3. **Phase model updated.** The structure file is part of every module folder and the build pipeline (step 4c).
 4. **README timeline aligned** with the proposal phases and weeks.
 5. **Status board.** This file replaces guesswork with a module × phase grid.
+6. **Two-voice audio fixed everywhere (G3).** One recording segment per spoken line in all eight packs; `tts_text` and `ssml` never contain the speaker label; one shared companion voice block and one export schema, implemented once in `tools/audio_export.py`.
+7. **Narration padding de-duplicated.** Generated packs no longer repeat the same coaching sentence inside one screen (01, 02, 04, 05, 06, 08), and two-voice hand-offs vary by screen.
+8. **Branded client Word pack.** Every rendering now carries the supplied client logo in the running header of each page, a module-colour cover band, a document-control table (`MC-SB-<nn> v0.2`) and live page numbering; all nine files regenerated from the current v0.2 storyboards.
+9. **Interim companion avatars.** `tools/make_companion_avatars.py` derives the three missing avatar crops (`char-noor-avatar-happy/concern`, `char-omar-avatar-happy`) from approved poses and copies the two neutral avatars as transparent PNGs.
+10. **Repeatable evidence.** `tools/audit_assets.py` (asset/template/logo/link audit) and `tools/lint_planning.py` (local port of the edumints planning lint) make the two quality gates rerunnable in this workspace; both are clean as at 2026-10-14.
+11. **SME register completed.** The build-detail queue now covers all eight packs (52 screen-level questions, was 37 across six).
 
 ---
 
@@ -99,10 +107,11 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 |---|---|---|---|
 | 1 | Send the client-review Word pack and the review register to My Clinic; book the Phase 0 kick-off | L2S | everything |
 | 2 | ~~Issue proposal Rev01 (§3 fixes)~~ ✅ done — send Rev01 with the storyboard pack as evidence | L2S | contract |
-| 3 | ~~Retrofit 03 and complete 07 to v0.2 (G1, G2)~~ ✅ done; split the 7 two-voice segments (G3) | Storyboard agent | Phase 3 audio |
+| 3 | ~~Retrofit 03 and complete 07 to v0.2 (G1, G2)~~ ✅ done; ~~split the 7 two-voice segments (G3)~~ ✅ done for all eight packs | Storyboard agent | Phase 3 audio |
+| 3b | Work the chunked implementation queue in [`next-phases-roadmap.md`](next-phases-roadmap.md) (one PR per chunk) | L2S + agent | Phases 3–5 |
 | 4 | Close D9 (LMS, SCORM version), D10 (voices), D11 (brand) | My Clinic L&D / Marketing | Phase 3 and 4 |
 | 5 | Close module B-items and D1–D8, D12–D14 with named SMEs; update Phase 0 files and cards | SMEs | Phase 2 approval |
-| 6 | Close the 37 register rows (G5); decide on thin objectives (G4) | SMEs + L&D | Phase 4 build fields |
+| 6 | Close the 52 register rows (G5); decide on thin objectives (G4) | SMEs + L&D | Phase 4 build fields |
 | 7 | Download companion PNGs (G6); record and approve two 30-second voice samples | Marwan / course owner | Phase 3 |
 | 8 | Module 08: test environment, test patient, 2-hour capture session, DPO review | IT + DPO | 08 build |
 | 9 | Phase 3: produce narration audio (normalised), final images, captions; rerun `lint_narration_script` and `lint_authoring_plan(stage="planning")` | L2S | Phase 4 |

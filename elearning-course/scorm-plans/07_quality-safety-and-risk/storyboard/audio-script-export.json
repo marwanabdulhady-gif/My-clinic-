@@ -2,312 +2,301 @@
   "module_id": "MC07-clinical-governance",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 359.8,
+  "voices": {
+    "omar": {
+      "label": "OMAR:",
+      "brief": "Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "label": "NOOR:",
+      "brief": "Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "tools/audio_export.py (edumints core.playbook export rules, rev 4bbf4591)",
+  "total_est_sec": 369.7,
   "segments": [
     {
       "screen_id": "qsr-000",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-000.mp3",
-      "narration_text": "Noor: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting.",
+      "narration_text": "NOOR: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting.",
       "tts_text": "Hello, I'm noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting.",
       "ssml": "<speak xml:lang=\"en\">Hello, I&#x27;m <sub alias=\"noor\">Noor</sub>, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You&#x27;ll link daily decisions to quality, safety, risk and reporting.</speak>",
-      "est_sec": 12.9,
+      "est_sec": 13.3,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-001",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-001.mp3",
-      "narration_text": "Noor: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.",
+      "narration_text": "NOOR: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.",
       "tts_text": "Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.",
       "ssml": "<speak xml:lang=\"en\">Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.</speak>",
-      "est_sec": 25.7,
+      "est_sec": 26.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-002",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-002.mp3",
-      "narration_text": "Noor: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.",
+      "narration_text": "NOOR: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.",
       "tts_text": "Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.",
       "ssml": "<speak xml:lang=\"en\">Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.</speak>",
-      "est_sec": 10.3,
+      "est_sec": 10.7,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-010",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-010.mp3",
-      "narration_text": "Noor: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.",
+      "narration_text": "NOOR: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.",
       "tts_text": "Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.",
       "ssml": "<speak xml:lang=\"en\">Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.</speak>",
-      "est_sec": 33.0,
+      "est_sec": 33.4,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-011",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-011.mp3",
-      "narration_text": "Noor: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.",
+      "narration_text": "NOOR: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.",
       "tts_text": "Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.",
       "ssml": "<speak xml:lang=\"en\">Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.</speak>",
-      "est_sec": 7.7,
+      "est_sec": 8.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-012",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-012.mp3",
-      "narration_text": "Noor: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step.",
+      "narration_text": "NOOR: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step.",
       "tts_text": "Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step.",
       "ssml": "<speak xml:lang=\"en\">Arrange the nine steps in order and show how the last begins the next cycle. Don&#x27;t skip a step.</speak>",
-      "est_sec": 8.1,
+      "est_sec": 8.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-020",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-020.mp3",
-      "narration_text": "Noor: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.",
+      "narration_text": "NOOR: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.",
       "tts_text": "Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.",
       "ssml": "<speak xml:lang=\"en\">Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.</speak>",
-      "est_sec": 32.1,
+      "est_sec": 32.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-021",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-021.mp3",
-      "narration_text": "Noor: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.",
+      "narration_text": "NOOR: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.",
       "tts_text": "I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.",
       "ssml": "<speak xml:lang=\"en\">I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.</speak>",
-      "est_sec": 14.6,
+      "est_sec": 15.0,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-022",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-022.mp3",
-      "narration_text": "Noor: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.",
+      "narration_text": "NOOR: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.",
       "tts_text": "Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.",
       "ssml": "<speak xml:lang=\"en\">Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.</speak>",
-      "est_sec": 7.7,
+      "est_sec": 8.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-023",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-023.mp3",
-      "narration_text": "Noor: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.",
+      "narration_text": "NOOR: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.",
       "tts_text": "Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.",
       "ssml": "<speak xml:lang=\"en\">Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.</speak>",
-      "est_sec": 7.7,
+      "est_sec": 8.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-030",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-030.mp3",
-      "narration_text": "Noor: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score.",
+      "narration_text": "NOOR: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score.",
       "tts_text": "Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score.",
       "ssml": "<speak xml:lang=\"en\">Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It&#x27;s a sequence, not a score.</speak>",
-      "est_sec": 8.6,
+      "est_sec": 9.0,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-031",
       "part": "omar",
+      "speaker": "omar",
       "filename": "MC07-clinical-governance_qsr-031.mp3",
-      "narration_text": "Omar: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.",
+      "narration_text": "OMAR: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.",
       "tts_text": "Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.",
       "ssml": "<speak xml:lang=\"en\">Let&#x27;s score one together. It&#x27;s a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn&#x27;t work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn&#x27;t tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.</speak>",
-      "est_sec": 43.7,
+      "est_sec": 44.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Omar"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-032",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-032.mp3",
-      "narration_text": "Noor: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.",
+      "narration_text": "NOOR: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.",
       "tts_text": "Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.",
       "ssml": "<speak xml:lang=\"en\">Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.</speak>",
-      "est_sec": 7.7,
+      "est_sec": 8.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-033",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-033.mp3",
-      "narration_text": "Noor: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.",
+      "narration_text": "NOOR: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.",
       "tts_text": "Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.",
       "ssml": "<speak xml:lang=\"en\">Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.</speak>",
-      "est_sec": 8.1,
+      "est_sec": 8.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-040",
       "part": "omar",
+      "speaker": "omar",
       "filename": "MC07-clinical-governance_qsr-040.mp3",
-      "narration_text": "Omar: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.",
+      "narration_text": "OMAR: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.",
       "tts_text": "Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.",
       "ssml": "<speak xml:lang=\"en\">Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here&#x27;s what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.</speak>",
-      "est_sec": 29.6,
+      "est_sec": 30.0,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Omar"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-041",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-041.mp3",
-      "narration_text": "Noor: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.",
+      "narration_text": "NOOR: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.",
       "tts_text": "Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.",
       "ssml": "<speak xml:lang=\"en\">Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.</speak>",
-      "est_sec": 8.6,
+      "est_sec": 9.0,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-042",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-042.mp3",
-      "narration_text": "Noor: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.",
+      "narration_text": "NOOR: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.",
       "tts_text": "Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.",
       "ssml": "<speak xml:lang=\"en\">Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.</speak>",
-      "est_sec": 8.1,
+      "est_sec": 8.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-050",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-050.mp3",
-      "narration_text": "Noor: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.",
+      "narration_text": "NOOR: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.",
       "tts_text": "Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.",
       "ssml": "<speak xml:lang=\"en\">Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.</speak>",
-      "est_sec": 32.1,
+      "est_sec": 32.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-051",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-051.mp3",
-      "narration_text": "Noor: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.",
+      "narration_text": "NOOR: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.",
       "tts_text": "A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.",
       "ssml": "<speak xml:lang=\"en\">A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.</speak>",
-      "est_sec": 16.3,
+      "est_sec": 16.7,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-090",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-090.mp3",
-      "narration_text": "Noor: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.",
+      "narration_text": "NOOR: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.",
       "tts_text": "Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.",
       "ssml": "<speak xml:lang=\"en\">Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.</speak>",
-      "est_sec": 10.7,
+      "est_sec": 11.1,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-091",
       "part": "noor",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-091.mp3",
-      "narration_text": "Noor: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.",
+      "narration_text": "NOOR: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.",
       "tts_text": "Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.",
       "ssml": "<speak xml:lang=\"en\">Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.</speak>",
-      "est_sec": 8.1,
+      "est_sec": 8.6,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-092",
       "part": "noor-1",
+      "speaker": "noor",
       "filename": "MC07-clinical-governance_qsr-092_noor-1.mp3",
-      "narration_text": "Noor: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.",
+      "narration_text": "NOOR: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.",
       "tts_text": "You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.",
       "ssml": "<speak xml:lang=\"en\">You&#x27;ve practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.</speak>",
-      "est_sec": 12.4,
+      "est_sec": 12.9,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Noor"
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "qsr-092",
       "part": "omar-1",
+      "speaker": "omar",
       "filename": "MC07-clinical-governance_qsr-092_omar-1.mp3",
-      "narration_text": "Omar: And remember, you're the final layer of protection. When you see something, say something.",
+      "narration_text": "OMAR: And remember, you're the final layer of protection. When you see something, say something.",
       "tts_text": "And remember, you're the final layer of protection. When you see something, say something.",
       "ssml": "<speak xml:lang=\"en\">And remember, you&#x27;re the final layer of protection. When you see something, say something.</speak>",
-      "est_sec": 6.0,
+      "est_sec": 6.4,
       "cues": [],
-      "timing_source": "estimated_word_count",
-      "speaker": "Omar"
+      "timing_source": "estimated_word_count"
     }
   ],
-  "joins": [
-    {
-      "screen_id": "qsr-092",
-      "parts": [
-        "noor-1",
-        "omar-1"
-      ],
-      "inputs": [
-        "MC07-clinical-governance_qsr-092_noor-1.mp3",
-        "MC07-clinical-governance_qsr-092_omar-1.mp3"
-      ],
-      "gap_sec": 0.3,
-      "output": "MC07-clinical-governance_qsr-092.mp3",
-      "then": "normalize_audio_asset",
-      "est_sec": 18.7
-    }
-  ],
-  "voices": {
-    "Noor": {
-      "voice_id": null,
-      "brief": "Female, early-to-mid 30s, warm, calm, clear; international English, light Gulf Arabic accent welcome; ~140 wpm"
-    },
-    "Omar": {
-      "voice_id": null,
-      "brief": "Male, late 30s, friendly, confident, relaxed; international English, light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm"
-    },
-    "provider": "pending D10"
-  },
-  "note": "Generated with edumints core.playbook.export_audio_script on the narration script with the NOOR:/OMAR: tag removed from tts_text/ssml; narration_text keeps the speaker name for captions. Single-voice screens use one file per screen; qsr-092 parts are joined with 0.3 s silence, then normalised (companions.md §5)."
+  "voice_talent_md": "# Voice-over script — MC07-clinical-governance\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 20 | Pending program **D10** |\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 3 | Pending program **D10** |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).\n\n## Pronunciation guide\n\n- **Noor** → noor\n- **Omar** → OH-mar\n- **IPSG** → I-P-S-G\n- **FOCUS-PDCA** → focus, P-D-C-A\n- **MRN** → medical record number\n- **DOB** → date of birth\n- **JCI** → J-C-I\n- **CBAHI** → see-bah-hee\n- **WHO** → W-H-O\n\n## Recording table\n\n| # | Screen / part | Speaker | Tone | Script | Est. sec | File |\n|---|---|---|---|---|---|---|\n| 1 | `qsr-000` | noor | Warm, steady | NOOR: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting. | 13.3 | `MC07-clinical-governance_qsr-000.mp3` |\n| 2 | `qsr-001` | noor | Calm, confident | NOOR: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan. | 26.1 | `MC07-clinical-governance_qsr-001.mp3` |\n| 3 | `qsr-002` | noor | Warm, honest, non-judgemental | NOOR: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass. | 10.7 | `MC07-clinical-governance_qsr-002.mp3` |\n| 4 | `qsr-010` | noor | Clear, explanatory | NOOR: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time. | 33.4 | `MC07-clinical-governance_qsr-010.mp3` |\n| 5 | `qsr-011` | noor | Encouraging | NOOR: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking. | 8.1 | `MC07-clinical-governance_qsr-011.mp3` |\n| 6 | `qsr-012` | noor | Encouraging | NOOR: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step. | 8.6 | `MC07-clinical-governance_qsr-012.mp3` |\n| 7 | `qsr-020` | noor | Clear, practical | NOOR: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action. | 32.6 | `MC07-clinical-governance_qsr-020.mp3` |\n| 8 | `qsr-021` | noor | Serious, warm | NOOR: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match. | 15.0 | `MC07-clinical-governance_qsr-021.mp3` |\n| 9 | `qsr-022` | noor | Encouraging | NOOR: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording. | 8.1 | `MC07-clinical-governance_qsr-022.mp3` |\n| 10 | `qsr-023` | noor | Encouraging | NOOR: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one. | 8.1 | `MC07-clinical-governance_qsr-023.mp3` |\n| 11 | `qsr-030` | noor | Practical | NOOR: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score. | 9.0 | `MC07-clinical-governance_qsr-030.mp3` |\n| 12 | `qsr-031` | omar | Calm, explanatory, conversational | OMAR: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them. | 44.1 | `MC07-clinical-governance_qsr-031.mp3` |\n| 13 | `qsr-032` | noor | Encouraging | NOOR: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band. | 8.1 | `MC07-clinical-governance_qsr-032.mp3` |\n| 14 | `qsr-033` | noor | Encouraging | NOOR: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning. | 8.6 | `MC07-clinical-governance_qsr-033.mp3` |\n| 15 | `qsr-040` | omar | Serious, reassuring | OMAR: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk. | 30.0 | `MC07-clinical-governance_qsr-040.mp3` |\n| 16 | `qsr-041` | noor | Serious, neutral | NOOR: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation. | 9.0 | `MC07-clinical-governance_qsr-041.mp3` |\n| 17 | `qsr-042` | noor | Reassuring, careful | NOOR: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation. | 8.6 | `MC07-clinical-governance_qsr-042.mp3` |\n| 18 | `qsr-050` | noor | Clear, practical | NOOR: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions. | 32.6 | `MC07-clinical-governance_qsr-050.mp3` |\n| 19 | `qsr-051` | noor | Serious, supportive | NOOR: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy. | 16.7 | `MC07-clinical-governance_qsr-051.mp3` |\n| 20 | `qsr-090` | noor | Neutral, encouraging | NOOR: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt. | 11.1 | `MC07-clinical-governance_qsr-090.mp3` |\n| 21 | `qsr-091` | noor | Warm, practical | NOOR: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it. | 8.6 | `MC07-clinical-governance_qsr-091.mp3` |\n| 22 | `qsr-092/noor-1` | noor | Warm, steady | NOOR: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them. | 12.9 | `MC07-clinical-governance_qsr-092_noor-1.mp3` |\n| 23 | `qsr-092/omar-1` | omar | Encouraging, firm | OMAR: And remember, you're the final layer of protection. When you see something, say something. | 6.4 | `MC07-clinical-governance_qsr-092_omar-1.mp3` |\n"
 }

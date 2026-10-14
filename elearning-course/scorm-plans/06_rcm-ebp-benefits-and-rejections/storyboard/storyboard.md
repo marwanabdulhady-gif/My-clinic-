@@ -247,10 +247,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 73 words / ≈ 31.3 s at 140 wpm |
+| Word count / estimated seconds | 77 words / ≈ 33 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.
+> OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -358,10 +358,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 24 words / ≈ 10.3 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -470,10 +470,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 89 words / ≈ 38.1 s at 140 wpm |
+| Word count / estimated seconds | 91 words / ≈ 39 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -691,10 +691,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 81 words / ≈ 34.7 s at 140 wpm |
+| Word count / estimated seconds | 87 words / ≈ 37.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -912,10 +912,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 45 |
-| Word count / estimated seconds | 102 words / ≈ 43.7 s at 140 wpm |
+| Word count / estimated seconds | 101 words / ≈ 43.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.
+> OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1688,12 +1688,12 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR / NOOR |
 | Tone | confident |
 | Target seconds | 20 |
-| Word count / estimated seconds | 50 words / ≈ 21.4 s at 140 wpm |
+| Word count / estimated seconds | 47 words / ≈ 20.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context.
+> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.
 >
-> NOOR: Carry this practical rule into your next decision.
+> NOOR: And remember: asking early is always the safe move here.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1741,21 +1741,21 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `rcmb-000` | `title_slide` | N | 0 | 17 | 31 | 13 | Draft |
-| 2 | `rcmb-001` | `content_slide` | N | 0 | 22 | 73 | 31 | Draft |
-| 3 | `rcmb-010` | `drag_drop` | Y | 10 | 28 | 24 | 10 | Draft |
-| 4 | `rcmb-020` | `tabs` | N | 0 | 30 | 89 | 38 | Draft |
+| 2 | `rcmb-001` | `content_slide` | N | 0 | 22 | 77 | 33 | Draft |
+| 3 | `rcmb-010` | `drag_drop` | Y | 10 | 28 | 18 | 8 | Draft |
+| 4 | `rcmb-020` | `tabs` | N | 0 | 30 | 91 | 39 | Draft |
 | 5 | `rcmb-021` | `mcq` | Y | 5 | 29 | 18 | 8 | Draft |
-| 6 | `rcmb-030` | `accordion` | N | 0 | 26 | 81 | 35 | Draft |
+| 6 | `rcmb-030` | `accordion` | N | 0 | 26 | 87 | 37 | Draft |
 | 7 | `rcmb-031` | `true_false` | Y | 5 | 11 | 18 | 8 | Draft |
-| 8 | `rcmb-040` | `tabs` | N | 0 | 35 | 102 | 44 | Draft |
+| 8 | `rcmb-040` | `tabs` | N | 0 | 35 | 101 | 43 | Draft |
 | 9 | `rcmb-041` | `matching` | Y | 10 | 32 | 18 | 8 | Draft |
 | 10 | `rcmb-050` | `content_slide` | N | 0 | 34 | 72 | 31 | Draft |
 | 11 | `rcmb-051` | `drag_drop` | Y | 15 | 15 | 18 | 8 | Draft |
 | 12 | `rcmb-052` | `decision_scenario` | Y | 15 | 35 | 18 | 8 | Draft |
 | 13 | `rcmb-060` | `adaptive_practice` | Y | 20 | 43 | 23 | 10 | Draft |
 | 14 | `rcmb-090` | `results_breakdown` | N | 0 | 2 | 21 | 9 | Draft |
-| 15 | `rcmb-091` | `summary` | N | 0 | 20 | 50 | 21 | Draft |
-| | **Totals** | | **7** | **80** | | **656** | **281 ≈ 4.7 min** | Draft |
+| 15 | `rcmb-091` | `summary` | N | 0 | 20 | 47 | 20 | Draft |
+| | **Totals** | | **7** | **80** | | **658** | **282 ≈ 4.7 min** | Draft |
 
 ### Asset list
 

@@ -1,13 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
-  "how": "Imported core.project / core.playbook from the server checkout (python-ulid installed only in a scratch target dir); lint_visual_plan(plan, brand) and lint_narration_script(script, plan) on the files in this folder; export_audio_script for audio-script-export.json.",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
     "narration_script": true,
-    "build_blocks_screen_model": true
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -167,6 +167,7 @@
     ],
     "issues": []
   },
+  "how": "Imported core.project / core.playbook from the server checkout (python-ulid installed only in a scratch target dir); lint_visual_plan(plan, brand) and lint_narration_script(script, plan) on the files in this folder; export_audio_script for audio-script-export.json.",
   "build_blocks": {
     "error_count": 0,
     "clean": true,
@@ -217,5 +218,5 @@
     "checks": "Every card narration line and every script segment starts NOOR:/OMAR:; char-noor-*/char-omar-* only on Phase 3 screens; Omar lines only on qsr-031/040/092; honest stories only on qsr-002/qsr-021; qsr-092 ≤ 2 turns and ≤ 45 s; no v0.1 module character ids anywhere in storyboard/; no companion art on non-scenario question cards.",
     "issues": []
   },
-  "production_note": "Planning lint only. Phase 0 approval (B1–B11, D7–D10, NEW-01), asset QA, avatar crops, voices (D10) and SCORM QA remain required."
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
 }

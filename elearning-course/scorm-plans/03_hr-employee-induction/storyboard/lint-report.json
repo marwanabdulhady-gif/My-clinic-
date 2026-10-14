@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -261,5 +263,5 @@
     ],
     "issues": []
   },
-  "production_note": "Planning lint only. Phase 0 approval, D10 voice approval, asset QA, type-specific build JSON and SCORM QA remain required."
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
 }

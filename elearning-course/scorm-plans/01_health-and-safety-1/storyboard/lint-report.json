@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -21,332 +23,344 @@
     "clean": true,
     "module_id": "MC01-facility-management-safety",
     "wpm": 140,
-    "total_est_sec": 987.1,
-    "total_est_min": 16.5,
+    "total_est_sec": 982.8,
+    "total_est_min": 16.4,
     "screens": [
       {
         "screen_id": "hs1-000",
-        "part": null,
+        "part": "noor",
         "words": 33,
         "est_sec": 14.1
       },
       {
         "screen_id": "hs1-001",
-        "part": null,
+        "part": "noor",
         "words": 68,
         "est_sec": 29.1
       },
       {
         "screen_id": "hs1-002",
-        "part": null,
+        "part": "noor",
         "words": 19,
         "est_sec": 8.1
       },
       {
         "screen_id": "hs1-101",
-        "part": null,
-        "words": 84,
-        "est_sec": 36.0
+        "part": "noor",
+        "words": 78,
+        "est_sec": 33.4
       },
       {
         "screen_id": "hs1-102",
-        "part": null,
-        "words": 56,
-        "est_sec": 24.0
+        "part": "noor",
+        "words": 64,
+        "est_sec": 27.4
       },
       {
         "screen_id": "hs1-103",
-        "part": null,
-        "words": 48,
-        "est_sec": 20.6
+        "part": "noor",
+        "words": 51,
+        "est_sec": 21.9
       },
       {
         "screen_id": "hs1-104",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-201",
-        "part": null,
-        "words": 56,
-        "est_sec": 24.0
+        "part": "noor",
+        "words": 63,
+        "est_sec": 27.0
       },
       {
         "screen_id": "hs1-202",
-        "part": null,
-        "words": 67,
-        "est_sec": 28.7
+        "part": "noor",
+        "words": 71,
+        "est_sec": 30.4
       },
       {
         "screen_id": "hs1-203",
-        "part": null,
-        "words": 69,
-        "est_sec": 29.6
+        "part": "noor",
+        "words": 70,
+        "est_sec": 30.0
       },
       {
         "screen_id": "hs1-204",
-        "part": null,
+        "part": "noor",
         "words": 23,
         "est_sec": 9.9
       },
       {
         "screen_id": "hs1-205",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "noor",
+        "words": 31,
+        "est_sec": 13.3
       },
       {
         "screen_id": "hs1-206",
-        "part": null,
+        "part": "omar",
         "words": 67,
         "est_sec": 28.7
       },
       {
         "screen_id": "hs1-301",
-        "part": null,
+        "part": "noor",
         "words": 69,
         "est_sec": 29.6
       },
       {
         "screen_id": "hs1-302",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-303",
-        "part": null,
+        "part": "noor",
         "words": 58,
         "est_sec": 24.9
       },
       {
         "screen_id": "hs1-304",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-305",
-        "part": null,
+        "part": "noor",
         "words": 44,
         "est_sec": 18.9
       },
       {
         "screen_id": "hs1-401",
-        "part": null,
-        "words": 68,
-        "est_sec": 29.1
+        "part": "noor",
+        "words": 67,
+        "est_sec": 28.7
       },
       {
         "screen_id": "hs1-402",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-403",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-404",
-        "part": null,
-        "words": 46,
-        "est_sec": 19.7
+        "part": "noor",
+        "words": 42,
+        "est_sec": 18.0
       },
       {
         "screen_id": "hs1-405",
-        "part": null,
-        "words": 23,
-        "est_sec": 9.9
+        "part": "noor",
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "hs1-406",
-        "part": null,
-        "words": 82,
-        "est_sec": 35.1
+        "part": "noor",
+        "words": 79,
+        "est_sec": 33.9
       },
       {
         "screen_id": "hs1-407",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-408",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-409",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "noor",
+        "words": 31,
+        "est_sec": 13.3
       },
       {
         "screen_id": "hs1-410",
-        "part": null,
+        "part": "noor",
         "words": 56,
         "est_sec": 24.0
       },
       {
         "screen_id": "hs1-501",
-        "part": null,
-        "words": 57,
-        "est_sec": 24.4
+        "part": "noor",
+        "words": 64,
+        "est_sec": 27.4
       },
       {
         "screen_id": "hs1-502",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-503",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-504",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-505",
-        "part": null,
-        "words": 71,
-        "est_sec": 30.4
+        "part": "noor",
+        "words": 75,
+        "est_sec": 32.1
       },
       {
         "screen_id": "hs1-506",
-        "part": null,
+        "part": "omar",
         "words": 57,
         "est_sec": 24.4
       },
       {
         "screen_id": "hs1-507",
-        "part": null,
+        "part": "noor",
         "words": 36,
         "est_sec": 15.4
       },
       {
         "screen_id": "hs1-508",
-        "part": null,
-        "words": 24,
-        "est_sec": 10.3
+        "part": "noor",
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "hs1-601",
-        "part": null,
+        "part": "noor",
         "words": 70,
         "est_sec": 30.0
       },
       {
         "screen_id": "hs1-602",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-701",
-        "part": null,
-        "words": 60,
-        "est_sec": 25.7
+        "part": "noor",
+        "words": 54,
+        "est_sec": 23.1
       },
       {
         "screen_id": "hs1-702",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-801",
-        "part": null,
+        "part": "noor",
         "words": 60,
         "est_sec": 25.7
       },
       {
         "screen_id": "hs1-802",
-        "part": null,
-        "words": 31,
-        "est_sec": 13.3
+        "part": "omar",
+        "words": 27,
+        "est_sec": 11.6
       },
       {
         "screen_id": "hs1-803",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-901",
-        "part": null,
-        "words": 82,
-        "est_sec": 35.1
+        "part": "noor",
+        "words": 89,
+        "est_sec": 38.1
       },
       {
         "screen_id": "hs1-902",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-903",
-        "part": null,
+        "part": "noor",
         "words": 58,
         "est_sec": 24.9
       },
       {
         "screen_id": "hs1-904",
-        "part": null,
-        "words": 58,
-        "est_sec": 24.9
+        "part": "noor",
+        "words": 57,
+        "est_sec": 24.4
       },
       {
         "screen_id": "hs1-905",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-906",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs1-907",
-        "part": null,
-        "words": 62,
-        "est_sec": 26.6
+        "part": "noor",
+        "words": 59,
+        "est_sec": 25.3
       },
       {
         "screen_id": "hs1-950",
-        "part": null,
-        "words": 52,
-        "est_sec": 22.3
-      },
-      {
-        "screen_id": "hs1-980",
-        "part": null,
+        "part": "noor-1",
         "words": 34,
         "est_sec": 14.6
       },
       {
+        "screen_id": "hs1-950",
+        "part": "omar-1",
+        "words": 11,
+        "est_sec": 4.7
+      },
+      {
+        "screen_id": "hs1-980",
+        "part": "noor",
+        "words": 38,
+        "est_sec": 16.3
+      },
+      {
         "screen_id": "hs1-981",
-        "part": null,
+        "part": "noor",
         "words": 19,
         "est_sec": 8.1
       },
       {
         "screen_id": "hs1-990",
-        "part": null,
-        "words": 77,
-        "est_sec": 33.0
+        "part": "noor-1",
+        "words": 69,
+        "est_sec": 29.6
+      },
+      {
+        "screen_id": "hs1-990",
+        "part": "omar-1",
+        "words": 9,
+        "est_sec": 3.9
       }
     ],
     "issues": []

@@ -15,7 +15,7 @@
 | Pass mark | 80% = **116 / 145 points** |
 | Screens | 26 in 7 outline sections |
 | Scored screens | 13 · scenarios, games and simulations: 3 |
-| Narration | 26 narrated screens · ≈6.5 min at 140 wpm (from `narration-script.json`) |
+| Narration | 26 narrated screens · ≈6.4 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 7 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -74,7 +74,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 |---|---|---|---|---|---|---|---|
 | 1 | `hs2-000` | `title_slide` | Safety in Practice: Hazard, Fire & Chemical Lab |  | — | 🗣 Noor | Noor · 13 s |
 | 2 | `hs2-001` | `content_slide` | The lab |  | — | — | Noor · 20 s |
-| 3 | `hs2-010` | `worked_example` | Teach risk scoring |  | — | — | Noor · 44 s |
+| 3 | `hs2-010` | `worked_example` | Teach risk scoring |  | — | — | Noor · 42 s |
 | 4 | `hs2-011` | `hotspot` | Find the hazards |  | — | 🗣 Noor | Noor · 15 s |
 | 5 | `hs2-012` ★ | `mcq` | Prioritise | 5 | hs2-o1 | — | Noor · 7 s |
 | 6 | `hs2-013` ★ | `fill_blank` | Score a risk | 5 | hs2-o1 | — | Noor · 7 s |
@@ -85,8 +85,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-020` | `flashcards` | Bilingual code poster |  | — | — | Noor · 24 s |
-| 2 | `hs2-030` ★ | `game` | Code Red drill | 25 | hs2-o2 | 🗣 Noor + Omar | Noor/Omar · 21 s |
+| 1 | `hs2-020` | `flashcards` | Bilingual code poster |  | — | — | Noor · 25 s |
+| 2 | `hs2-030` ★ | `game` | Code Red drill | 25 | hs2-o2 | 🗣 Noor + Omar | Noor/Omar · 18 s |
 
 ### `hs2-sC` — C · Evacuation
 
@@ -128,7 +128,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | 2 | `hs2-061` ★ | `matching` | GHS hazard statements | 10 | hs2-o6 | — | Noor · 7 s |
 | 3 | `hs2-062` ★ | `mcq` | Register decision | 10 | hs2-o6 | — | Noor · 7 s |
 | 4 | `hs2-063` ★ | `mcq` | NFPA in practice | 5 | hs2-o6 | — | Noor · 7 s |
-| 5 | `hs2-064` ★ | `escape_room` | Chemical store lockout (capstone) | 20 | hs2-o6 | 🗣 Noor | Noor · 15 s |
+| 5 | `hs2-064` ★ | `escape_room` | Chemical store lockout (capstone) | 20 | hs2-o6 | 🗣 Noor | Noor · 14 s |
 
 ### `hs2-sG` — G · Regulations & close
 
@@ -139,7 +139,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | 1 | `hs2-070` ★ | `drag_drop` | Allowed or prohibited? | 10 | hs2-o7 | — | Noor · 7 s |
 | 2 | `hs2-080` | `results_breakdown` | Per-objective results |  | — | — | Noor · 12 s |
 | 3 | `hs2-081` | `poll` | Commit |  | — | — | Noor · 8 s |
-| 4 | `hs2-090` | `summary` | Close |  | — | 🗣 Noor + Omar | Noor/Omar · 21 s |
+| 4 | `hs2-090` | `summary` | Close |  | — | 🗣 Noor + Omar | Noor/Omar · 18 s |
 
 ## 5. Objectives, evidence and scoring
 

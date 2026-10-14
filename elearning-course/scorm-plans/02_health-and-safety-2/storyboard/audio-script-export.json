@@ -2,242 +2,361 @@
   "module_id": "MC02-safety-in-practice",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 400.9,
+  "voices": {
+    "omar": {
+      "label": "OMAR:",
+      "brief": "Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "label": "NOOR:",
+      "brief": "Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "tools/audio_export.py (edumints core.playbook export rules, rev 4bbf4591)",
+  "total_est_sec": 394.2,
   "segments": [
     {
       "screen_id": "hs2-000",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-000.mp3",
       "narration_text": "NOOR: Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
       "tts_text": "Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">Welcome to Safety in Practice: Hazard, Fire &amp; Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.</speak>",
       "est_sec": 12.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-001",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-001.mp3",
       "narration_text": "NOOR: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.",
       "tts_text": "Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.",
+      "ssml": "<speak xml:lang=\"en\">Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.</speak>",
       "est_sec": 20.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-010",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-010.mp3",
-      "narration_text": "NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "tts_text": "Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "est_sec": 44.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "tts_text": "Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
+      "est_sec": 42.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-011",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-011.mp3",
       "narration_text": "NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.",
       "tts_text": "Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.",
+      "ssml": "<speak xml:lang=\"en\">Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.</speak>",
       "est_sec": 15.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-012",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-012.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-013",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-013.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-020",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-020.mp3",
-      "narration_text": "NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 24.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+      "tts_text": "The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+      "ssml": "<speak xml:lang=\"en\">The poster on the wall is bilingual. Learn both names. Check your site&#x27;s extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.</speak>",
+      "est_sec": 25.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-030",
-      "filename": "MC02-safety-in-practice_hs2-030.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. OMAR: Carry this practical rule into your next decision.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. Carry this practical rule into your next decision.",
-      "est_sec": 21.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor+omar"
+      "part": "noor-1",
+      "speaker": "noor",
+      "filename": "MC02-safety-in-practice_hs2-030_noor-1.mp3",
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 15.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
+    },
+    {
+      "screen_id": "hs2-030",
+      "part": "omar-1",
+      "speaker": "omar",
+      "filename": "MC02-safety-in-practice_hs2-030_omar-1.mp3",
+      "narration_text": "OMAR: Carry this practical rule into your next decision.",
+      "tts_text": "Carry this practical rule into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Carry this practical rule into your next decision.</speak>",
+      "est_sec": 3.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-031",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-031.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-032",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-032.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-033",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-033.mp3",
-      "narration_text": "NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "narration_text": "NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "tts_text": "Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "ssml": "<speak xml:lang=\"en\">Inside vs outside assembly points. Find your unit&#x27;s plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.</speak>",
       "est_sec": 25.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-040",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-040.mp3",
       "narration_text": "NOOR: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task.",
       "tts_text": "Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task.</speak>",
       "est_sec": 19.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-041",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-041.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-050",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-050.mp3",
       "narration_text": "NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "tts_text": "haz-mat is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\"><sub alias=\"haz-mat\">HAZMAT</sub> is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 24.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-051",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-051.mp3",
       "narration_text": "NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.",
       "tts_text": "Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.",
+      "ssml": "<speak xml:lang=\"en\">Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.</speak>",
       "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-052",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-052.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-053",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-053.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-060",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-060.mp3",
       "narration_text": "NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "tts_text": "Read a register row left to right: what it is, why it's here, is the S-D-S on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Read a register row left to right: what it is, why it&#x27;s here, is the <sub alias=\"S-D-S\">SDS</sub> on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 34.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-061",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-061.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-062",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-062.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-063",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-063.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-064",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-064.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.</speak>",
+      "est_sec": 14.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-070",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-070.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-080",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-080.mp3",
       "narration_text": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit.",
       "tts_text": "Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit.",
+      "ssml": "<speak xml:lang=\"en\">Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit.</speak>",
       "est_sec": 12.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-081",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC02-safety-in-practice_hs2-081.mp3",
       "narration_text": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
       "tts_text": "This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">This reflection is not scored. Choose the response that helps you set one intention for your next shift.</speak>",
       "est_sec": 8.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs2-090",
-      "filename": "MC02-safety-in-practice_hs2-090.mp3",
-      "narration_text": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. OMAR: Carry this practical rule into your next decision.",
-      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. Carry this practical rule into your next decision.",
-      "est_sec": 22.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor+omar"
+      "part": "noor-1",
+      "speaker": "noor",
+      "filename": "MC02-safety-in-practice_hs2-090_noor-1.mp3",
+      "narration_text": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+      "ssml": "<speak xml:lang=\"en\">You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.</speak>",
+      "est_sec": 15.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
+    },
+    {
+      "screen_id": "hs2-090",
+      "part": "omar-1",
+      "speaker": "omar",
+      "filename": "MC02-safety-in-practice_hs2-090_omar-1.mp3",
+      "narration_text": "OMAR: Carry this practical rule into your next decision.",
+      "tts_text": "Carry this practical rule into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Carry this practical rule into your next decision.</speak>",
+      "est_sec": 3.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     }
   ],
-  "voice_talent_md": "# Voice-over script — MC02-safety-in-practice\n\nLanguage: en · Pace: ~140 wpm\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **NOOR** → noor\n- **OHS** → O-H-S\n- **OMAR** → OH-mar\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen | Tone | Script | Est. sec |\n|---|---|---|---|---|\n| 1 | `hs2-000` | warm | NOOR: Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.9 |\n| 2 | `hs2-001` | calm, practical | NOOR: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. | 20.1 |\n| 3 | `hs2-010` | calm, practical | NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. | 44.1 |\n| 4 | `hs2-011` | calm, practical | NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion. | 15.9 |\n| 5 | `hs2-012` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 6 | `hs2-013` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 7 | `hs2-020` | calm, practical | NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.9 |\n| 8 | `hs2-030` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. OMAR: Carry this practical rule into your next decision. | 21.4 |\n| 9 | `hs2-031` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 10 | `hs2-032` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 11 | `hs2-033` | calm, practical | NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 25.3 |\n| 12 | `hs2-040` | calm, practical | NOOR: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task. | 19.3 |\n| 13 | `hs2-041` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 14 | `hs2-050` | calm, practical | NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.0 |\n| 15 | `hs2-051` | calm, practical | NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot. | 15.4 |\n| 16 | `hs2-052` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 17 | `hs2-053` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 18 | `hs2-060` | calm, practical | NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 34.7 |\n| 19 | `hs2-061` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 20 | `hs2-062` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 21 | `hs2-063` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 22 | `hs2-064` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 15.4 |\n| 23 | `hs2-070` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 24 | `hs2-080` | supportive | NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. | 12.4 |\n| 25 | `hs2-081` | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 |\n| 26 | `hs2-090` | confident | NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. OMAR: Carry this practical rule into your next decision. | 22.3 |\n"
+  "voice_talent_md": "# Voice-over script — MC02-safety-in-practice\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 26 | Pending program **D10** |\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 2 | Pending program **D10** |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **OHS** → O-H-S\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen / part | Speaker | Tone | Script | Est. sec | File |\n|---|---|---|---|---|---|---|\n| 1 | `hs2-000` | noor | warm | NOOR: Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.9 | `MC02-safety-in-practice_hs2-000.mp3` |\n| 2 | `hs2-001` | noor | calm, practical | NOOR: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. | 20.1 | `MC02-safety-in-practice_hs2-001.mp3` |\n| 3 | `hs2-010` | noor | calm, practical | NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 42.9 | `MC02-safety-in-practice_hs2-010.mp3` |\n| 4 | `hs2-011` | noor | calm, practical | NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion. | 15.9 | `MC02-safety-in-practice_hs2-011.mp3` |\n| 5 | `hs2-012` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-012.mp3` |\n| 6 | `hs2-013` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-013.mp3` |\n| 7 | `hs2-020` | noor | calm, practical | NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. | 25.3 | `MC02-safety-in-practice_hs2-020.mp3` |\n| 8 | `hs2-030/noor-1` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. | 15.4 | `MC02-safety-in-practice_hs2-030_noor-1.mp3` |\n| 9 | `hs2-030/omar-1` | omar | encouraging | OMAR: Carry this practical rule into your next decision. | 3.9 | `MC02-safety-in-practice_hs2-030_omar-1.mp3` |\n| 10 | `hs2-031` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-031.mp3` |\n| 11 | `hs2-032` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-032.mp3` |\n| 12 | `hs2-033` | noor | calm, practical | NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. | 25.3 | `MC02-safety-in-practice_hs2-033.mp3` |\n| 13 | `hs2-040` | noor | calm, practical | NOOR: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task. | 19.3 | `MC02-safety-in-practice_hs2-040.mp3` |\n| 14 | `hs2-041` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-041.mp3` |\n| 15 | `hs2-050` | noor | calm, practical | NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.0 | `MC02-safety-in-practice_hs2-050.mp3` |\n| 16 | `hs2-051` | noor | calm, practical | NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot. | 15.4 | `MC02-safety-in-practice_hs2-051.mp3` |\n| 17 | `hs2-052` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-052.mp3` |\n| 18 | `hs2-053` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-053.mp3` |\n| 19 | `hs2-060` | noor | calm, practical | NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 34.7 | `MC02-safety-in-practice_hs2-060.mp3` |\n| 20 | `hs2-061` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-061.mp3` |\n| 21 | `hs2-062` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-062.mp3` |\n| 22 | `hs2-063` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-063.mp3` |\n| 23 | `hs2-064` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers. | 14.6 | `MC02-safety-in-practice_hs2-064.mp3` |\n| 24 | `hs2-070` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC02-safety-in-practice_hs2-070.mp3` |\n| 25 | `hs2-080` | noor | supportive | NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. | 12.4 | `MC02-safety-in-practice_hs2-080.mp3` |\n| 26 | `hs2-081` | noor | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 | `MC02-safety-in-practice_hs2-081.mp3` |\n| 27 | `hs2-090/noor-1` | noor | confident | NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. | 15.4 | `MC02-safety-in-practice_hs2-090_noor-1.mp3` |\n| 28 | `hs2-090/omar-1` | omar | confident | OMAR: Carry this practical rule into your next decision. | 3.9 | `MC02-safety-in-practice_hs2-090_omar-1.mp3` |\n"
 }

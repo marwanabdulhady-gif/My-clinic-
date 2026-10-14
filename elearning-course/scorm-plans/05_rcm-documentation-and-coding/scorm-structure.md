@@ -15,7 +15,7 @@
 | Pass mark | 80% = **80 / 100 points** |
 | Screens | 21 in 6 outline sections |
 | Scored screens | 10 · scenarios, games and simulations: 2 |
-| Narration | 21 narrated screens · ≈6.3 min at 140 wpm (from `narration-script.json`) |
+| Narration | 21 narrated screens · ≈6.1 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 5 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -83,7 +83,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcma-010` | `tabs` | Always / Avoid |  | — | — | Omar · 36 s |
+| 1 | `rcma-010` | `tabs` | Always / Avoid |  | — | — | Omar · 34 s |
 | 2 | `rcma-011` | `image_compare` | Weak vs strong |  | — | 🗣 Noor | Noor · 24 s |
 | 3 | `rcma-012` ★ | `sorting` | The full clinical picture | 10 | rcma-o1 | — | Omar · 7 s |
 | 4 | `rcma-013` ★ | `mcq` | Medical necessity | 5 | rcma-o1 | — | Omar · 7 s |
@@ -94,9 +94,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcma-020` | `content_slide` | Coding is clinical translation |  | — | — | Omar · 36 s |
+| 1 | `rcma-020` | `content_slide` | Coding is clinical translation |  | — | — | Omar · 33 s |
 | 2 | `rcma-021` ★ | `matching` | Symptom → supported diagnosis | 10 | rcma-o2 | — | Omar · 7 s |
-| 3 | `rcma-022` | `worked_example` | Provisional diagnosis |  | — | — | Omar · 39 s |
+| 3 | `rcma-022` | `worked_example` | Provisional diagnosis |  | — | — | Omar · 38 s |
 | 4 | `rcma-023` ★ | `drag_drop` | Covered or not as primary? | 10 | rcma-o2 | — | Omar · 10 s |
 
 ### `rcma-sD` — Defensive medicine & ordering
@@ -105,8 +105,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcma-030` | `content_slide` | More tests ≠ better care |  | — | — | Omar · 33 s |
-| 2 | `rcma-031` ★ | `decision_scenario` | Joint-pain case | 15 | rcma-o3 | 🗣 Omar | Omar · 15 s |
+| 1 | `rcma-030` | `content_slide` | More tests ≠ better care |  | — | — | Omar · 36 s |
+| 2 | `rcma-031` ★ | `decision_scenario` | Joint-pain case | 15 | rcma-o3 | 🗣 Omar | Omar · 13 s |
 | 3 | `rcma-032` ★ | `mcq` | Timing | 5 | rcma-o3 | — | Omar · 7 s |
 | 4 | `rcma-033` ★ | `true_false` | Supplements | 5 | rcma-o3 | — | Omar · 7 s |
 
@@ -116,8 +116,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcma-040` ★ | `drag_drop` | Four causes | 10 | rcma-o4 | — | Omar · 10 s |
-| 2 | `rcma-041` | `content_slide` | Coverage changes |  | — | — | Omar · 30 s |
+| 1 | `rcma-040` ★ | `drag_drop` | Four causes | 10 | rcma-o4 | — | Omar · 7 s |
+| 2 | `rcma-041` | `content_slide` | Coverage changes |  | — | — | Omar · 31 s |
 | 3 | `rcma-042` ★ | `mcq` | Coverage check | 5 | rcma-o4 | — | Omar · 7 s |
 
 ### `rcma-sF` — Fix the note
@@ -126,9 +126,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcma-050` ★ | `game` | Fix the note | 25 | rcma-o5 | 🗣 Omar + Noor | Noor/Omar · 16 s |
+| 1 | `rcma-050` ★ | `game` | Fix the note | 25 | rcma-o5 | 🗣 Omar + Noor | Noor/Omar · 15 s |
 | 2 | `rcma-090` | `results_breakdown` | Results |  | — | — | Omar · 9 s |
-| 3 | `rcma-091` | `summary` | List to keep |  | — | 🗣 Omar | Omar · 26 s |
+| 3 | `rcma-091` | `summary` | List to keep |  | — | 🗣 Omar | Omar · 24 s |
 
 ## 5. Objectives, evidence and scoring
 

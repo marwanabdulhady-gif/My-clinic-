@@ -2,494 +2,697 @@
   "module_id": "MC01-facility-management-safety",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 987.1,
+  "voices": {
+    "omar": {
+      "label": "OMAR:",
+      "brief": "Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "label": "NOOR:",
+      "brief": "Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "tools/audio_export.py (edumints core.playbook export rules, rev 4bbf4591)",
+  "total_est_sec": 982.8,
   "segments": [
     {
       "screen_id": "hs1-000",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-000.mp3",
       "narration_text": "NOOR: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role.",
       "tts_text": "Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role.",
+      "ssml": "<speak xml:lang=\"en\">Welcome to Facility Management &amp; Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role.</speak>",
       "est_sec": 14.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-001",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-001.mp3",
       "narration_text": "NOOR: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "tts_text": "see-bah-hee surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\"><sub alias=\"see-bah-hee\">CBAHI</sub> surveyors ask staff, not just managers. On my first day I didn&#x27;t know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 29.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-002",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-002.mp3",
       "narration_text": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
       "tts_text": "This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">This reflection is not scored. Choose the response that helps you set one intention for your next shift.</speak>",
       "est_sec": 8.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-101",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-101.mp3",
-      "narration_text": "NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "est_sec": 36.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 33.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-102",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-102.mp3",
-      "narration_text": "NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "tts_text": "The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "est_sec": 24.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 27.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-103",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-103.mp3",
-      "narration_text": "NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.",
-      "tts_text": "Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.",
-      "est_sec": 20.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall.",
+      "tts_text": "Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall.",
+      "ssml": "<speak xml:lang=\"en\">Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall.</speak>",
+      "est_sec": 21.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-104",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-104.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-201",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-201.mp3",
-      "narration_text": "NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 24.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "tts_text": "Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "ssml": "<speak xml:lang=\"en\">Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.</speak>",
+      "est_sec": 27.0,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-202",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-202.mp3",
-      "narration_text": "NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "tts_text": "A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "est_sec": 28.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "tts_text": "A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "ssml": "<speak xml:lang=\"en\">A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.</speak>",
+      "est_sec": 30.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-203",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-203.mp3",
-      "narration_text": "NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "tts_text": "AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "est_sec": 29.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "tts_text": "A-R-E-C as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "ssml": "<speak xml:lang=\"en\"><sub alias=\"A-R-E-C\">AREC</sub> as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.</speak>",
+      "est_sec": 30.0,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-204",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-204.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.</speak>",
       "est_sec": 9.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-205",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-205.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 13.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-206",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC01-facility-management-safety_hs1-206.mp3",
       "narration_text": "OMAR: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
       "tts_text": "You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">You can stop unsafe work without fear. If you&#x27;re unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
       "est_sec": 28.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-301",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-301.mp3",
       "narration_text": "NOOR: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "tts_text": "Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Codes are announced overhead. Learn the meaning, then your site&#x27;s extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 29.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-302",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-302.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-303",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-303.mp3",
       "narration_text": "NOOR: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.",
       "tts_text": "Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 24.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-304",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-304.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-305",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-305.mp3",
       "narration_text": "NOOR: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision.",
-      "tts_text": "The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision.",
+      "tts_text": "The E-R-T is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision.",
+      "ssml": "<speak xml:lang=\"en\">The <sub alias=\"E-R-T\">ERT</sub> is five teams. You are part of the response even if you&#x27;re not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision.</speak>",
       "est_sec": 18.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-401",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-401.mp3",
-      "narration_text": "NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.",
-      "tts_text": "Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.",
-      "est_sec": 29.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "tts_text": "Remove one side of the triangle and the fire stops. Smoke kills first, which is why race rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">Remove one side of the triangle and the fire stops. Smoke kills first, which is why <sub alias=\"race\">RACE</sub> rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 28.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-402",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-402.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-403",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-403.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-404",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-404.mp3",
-      "narration_text": "NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check.",
-      "tts_text": "Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check.",
-      "est_sec": 19.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow.",
+      "tts_text": "Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 18.0,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-405",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-405.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
-      "est_sec": 9.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
+      "est_sec": 7.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-406",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-406.mp3",
-      "narration_text": "NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 35.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "tts_text": "Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "ssml": "<speak xml:lang=\"en\">Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.</speak>",
+      "est_sec": 33.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-407",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-407.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-408",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-408.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-409",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-409.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 13.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-410",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-410.mp3",
       "narration_text": "NOOR: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "tts_text": "Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 24.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-501",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-501.mp3",
-      "narration_text": "NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 24.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "tts_text": "Chemicals come in one door only — procurement — and never without a label and an S-D-S. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "ssml": "<speak xml:lang=\"en\">Chemicals come in one door only — procurement — and never without a label and an <sub alias=\"S-D-S\">SDS</sub>. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.</speak>",
+      "est_sec": 27.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-502",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-502.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-503",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-503.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-504",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-504.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-505",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-505.mp3",
-      "narration_text": "NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "tts_text": "Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "est_sec": 30.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "tts_text": "Storage, transport and handling all follow the S-D-S. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">Storage, transport and handling all follow the <sub alias=\"S-D-S\">SDS</sub>. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 32.1,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-506",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC01-facility-management-safety_hs1-506.mp3",
       "narration_text": "OMAR: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "tts_text": "Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Find your nearest eyewash today. 15 minutes feels long — don&#x27;t stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 24.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-507",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-507.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague.</speak>",
       "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-508",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-508.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "est_sec": 10.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
+      "est_sec": 7.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-601",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-601.mp3",
       "narration_text": "NOOR: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
       "tts_text": "Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
       "est_sec": 30.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-602",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-602.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-701",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-701.mp3",
-      "narration_text": "NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "tts_text": "Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "est_sec": 25.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "tts_text": "Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 23.1,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-702",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-702.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-801",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-801.mp3",
-      "narration_text": "NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "narration_text": "NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "tts_text": "Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "ssml": "<speak xml:lang=\"en\">Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.</speak>",
       "est_sec": 25.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-802",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC01-facility-management-safety_hs1-802.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
-      "est_sec": 13.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague.</speak>",
+      "est_sec": 11.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-803",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-803.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-901",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-901.mp3",
-      "narration_text": "NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "tts_text": "Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "est_sec": 35.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+      "tts_text": "Ionising vs non-ionising. The M-R-I magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+      "ssml": "<speak xml:lang=\"en\">Ionising vs non-ionising. The <sub alias=\"M-R-I\">MRI</sub> magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.</speak>",
+      "est_sec": 38.1,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-902",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-902.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-903",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-903.mp3",
       "narration_text": "NOOR: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
       "tts_text": "Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
       "est_sec": 24.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-904",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-904.mp3",
-      "narration_text": "NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.",
-      "tts_text": "Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context.",
-      "est_sec": 24.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "tts_text": "Wear your badge. The R-S-O is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">Wear your badge. The <sub alias=\"R-S-O\">RSO</sub> is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 24.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-905",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-905.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-906",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-906.mp3",
       "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-907",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-907.mp3",
-      "narration_text": "NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 26.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">Laser eye injuries often don&#x27;t hurt at first — that&#x27;s why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 25.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-950",
-      "filename": "MC01-facility-management-safety_hs1-950.mp3",
-      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. OMAR: Carry this practical rule into your next decision.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Carry this practical rule into your next decision.",
-      "est_sec": 22.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor+omar"
+      "part": "noor-1",
+      "speaker": "noor",
+      "filename": "MC01-facility-management-safety_hs1-950_noor-1.mp3",
+      "narration_text": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.</speak>",
+      "est_sec": 14.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
+    },
+    {
+      "screen_id": "hs1-950",
+      "part": "omar-1",
+      "speaker": "omar",
+      "filename": "MC01-facility-management-safety_hs1-950_omar-1.mp3",
+      "narration_text": "OMAR: That is the habit we want from every new colleague.",
+      "tts_text": "That is the habit we want from every new colleague.",
+      "ssml": "<speak xml:lang=\"en\">That is the habit we want from every new colleague.</speak>",
+      "est_sec": 4.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-980",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-980.mp3",
-      "narration_text": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Keep the next action clear.",
-      "tts_text": "Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Keep the next action clear.",
-      "est_sec": 14.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow.",
+      "tts_text": "Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 16.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-981",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC01-facility-management-safety_hs1-981.mp3",
       "narration_text": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
       "tts_text": "This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">This reflection is not scored. Choose the response that helps you set one intention for your next shift.</speak>",
       "est_sec": 8.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "hs1-990",
-      "filename": "MC01-facility-management-safety_hs1-990.mp3",
-      "narration_text": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. OMAR: Carry this practical rule into your next decision.",
-      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry this practical rule into your next decision.",
-      "est_sec": 33.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor+omar"
+      "part": "noor-1",
+      "speaker": "noor",
+      "filename": "MC01-facility-management-safety_hs1-990_noor-1.mp3",
+      "narration_text": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 29.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
+    },
+    {
+      "screen_id": "hs1-990",
+      "part": "omar-1",
+      "speaker": "omar",
+      "filename": "MC01-facility-management-safety_hs1-990_omar-1.mp3",
+      "narration_text": "OMAR: Carry this practical rule into your next decision.",
+      "tts_text": "Carry this practical rule into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Carry this practical rule into your next decision.</speak>",
+      "est_sec": 3.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     }
   ],
-  "voice_talent_md": "# Voice-over script — MC01-facility-management-safety\n\nLanguage: en · Pace: ~140 wpm\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **MRI** → M-R-I\n- **NFPA** → N-F-P-A\n- **NOOR** → noor\n- **OHS** → O-H-S\n- **OMAR** → OH-mar\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen | Tone | Script | Est. sec |\n|---|---|---|---|---|\n| 1 | `hs1-000` | warm | NOOR: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role. | 14.1 |\n| 2 | `hs1-001` | calm, practical | NOOR: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 29.1 |\n| 3 | `hs1-002` | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 |\n| 4 | `hs1-101` | calm, practical | NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 36.0 |\n| 5 | `hs1-102` | calm, practical | NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 24.0 |\n| 6 | `hs1-103` | calm, practical | NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. | 20.6 |\n| 7 | `hs1-104` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 8 | `hs1-201` | calm, practical | NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. Think of the first detail you would check. Apply the point to a familiar task. | 24.0 |\n| 9 | `hs1-202` | calm, practical | NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 28.7 |\n| 10 | `hs1-203` | calm, practical | NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 29.6 |\n| 11 | `hs1-204` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. | 9.9 |\n| 12 | `hs1-205` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 15.4 |\n| 13 | `hs1-206` | calm, practical | OMAR: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 28.7 |\n| 14 | `hs1-301` | calm, practical | NOOR: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 29.6 |\n| 15 | `hs1-302` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 16 | `hs1-303` | calm, practical | NOOR: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. | 24.9 |\n| 17 | `hs1-304` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 18 | `hs1-305` | calm, practical | NOOR: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. | 18.9 |\n| 19 | `hs1-401` | calm, practical | NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. | 29.1 |\n| 20 | `hs1-402` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 21 | `hs1-403` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 22 | `hs1-404` | calm, practical | NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check. | 19.7 |\n| 23 | `hs1-405` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. | 9.9 |\n| 24 | `hs1-406` | calm, practical | NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 35.1 |\n| 25 | `hs1-407` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 26 | `hs1-408` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 27 | `hs1-409` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 15.4 |\n| 28 | `hs1-410` | calm, practical | NOOR: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.0 |\n| 29 | `hs1-501` | calm, practical | NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. | 24.4 |\n| 30 | `hs1-502` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 31 | `hs1-503` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 32 | `hs1-504` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 33 | `hs1-505` | calm, practical | NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. | 30.4 |\n| 34 | `hs1-506` | calm, practical | OMAR: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.4 |\n| 35 | `hs1-507` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. | 15.4 |\n| 36 | `hs1-508` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. | 10.3 |\n| 37 | `hs1-601` | calm, practical | NOOR: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 30.0 |\n| 38 | `hs1-602` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 39 | `hs1-701` | calm, practical | NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 25.7 |\n| 40 | `hs1-702` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 41 | `hs1-801` | calm, practical | NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 25.7 |\n| 42 | `hs1-802` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. | 13.3 |\n| 43 | `hs1-803` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 44 | `hs1-901` | calm, practical | NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 35.1 |\n| 45 | `hs1-902` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 46 | `hs1-903` | calm, practical | NOOR: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 24.9 |\n| 47 | `hs1-904` | calm, practical | NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. | 24.9 |\n| 48 | `hs1-905` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 49 | `hs1-906` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 50 | `hs1-907` | calm, practical | NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 26.6 |\n| 51 | `hs1-950` | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. OMAR: Carry this practical rule into your next decision. | 22.3 |\n| 52 | `hs1-980` | supportive | NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Keep the next action clear. | 14.6 |\n| 53 | `hs1-981` | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 |\n| 54 | `hs1-990` | confident | NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. OMAR: Carry this practical rule into your next decision. | 33.0 |\n"
+  "voice_talent_md": "# Voice-over script — MC01-facility-management-safety\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 51 | Pending program **D10** |\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 5 | Pending program **D10** |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **MRI** → M-R-I\n- **NFPA** → N-F-P-A\n- **OHS** → O-H-S\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen / part | Speaker | Tone | Script | Est. sec | File |\n|---|---|---|---|---|---|---|\n| 1 | `hs1-000` | noor | warm | NOOR: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role. | 14.1 | `MC01-facility-management-safety_hs1-000.mp3` |\n| 2 | `hs1-001` | noor | calm, practical | NOOR: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 29.1 | `MC01-facility-management-safety_hs1-001.mp3` |\n| 3 | `hs1-002` | noor | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 | `MC01-facility-management-safety_hs1-002.mp3` |\n| 4 | `hs1-101` | noor | calm, practical | NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 33.4 | `MC01-facility-management-safety_hs1-101.mp3` |\n| 5 | `hs1-102` | noor | calm, practical | NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 27.4 | `MC01-facility-management-safety_hs1-102.mp3` |\n| 6 | `hs1-103` | noor | calm, practical | NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. | 21.9 | `MC01-facility-management-safety_hs1-103.mp3` |\n| 7 | `hs1-104` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-104.mp3` |\n| 8 | `hs1-201` | noor | calm, practical | NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. | 27.0 | `MC01-facility-management-safety_hs1-201.mp3` |\n| 9 | `hs1-202` | noor | calm, practical | NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 30.4 | `MC01-facility-management-safety_hs1-202.mp3` |\n| 10 | `hs1-203` | noor | calm, practical | NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 30.0 | `MC01-facility-management-safety_hs1-203.mp3` |\n| 11 | `hs1-204` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. | 9.9 | `MC01-facility-management-safety_hs1-204.mp3` |\n| 12 | `hs1-205` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. | 13.3 | `MC01-facility-management-safety_hs1-205.mp3` |\n| 13 | `hs1-206` | omar | calm, practical | OMAR: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 28.7 | `MC01-facility-management-safety_hs1-206.mp3` |\n| 14 | `hs1-301` | noor | calm, practical | NOOR: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 29.6 | `MC01-facility-management-safety_hs1-301.mp3` |\n| 15 | `hs1-302` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-302.mp3` |\n| 16 | `hs1-303` | noor | calm, practical | NOOR: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task. | 24.9 | `MC01-facility-management-safety_hs1-303.mp3` |\n| 17 | `hs1-304` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-304.mp3` |\n| 18 | `hs1-305` | noor | calm, practical | NOOR: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. | 18.9 | `MC01-facility-management-safety_hs1-305.mp3` |\n| 19 | `hs1-401` | noor | calm, practical | NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 28.7 | `MC01-facility-management-safety_hs1-401.mp3` |\n| 20 | `hs1-402` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-402.mp3` |\n| 21 | `hs1-403` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-403.mp3` |\n| 22 | `hs1-404` | noor | calm, practical | NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow. | 18.0 | `MC01-facility-management-safety_hs1-404.mp3` |\n| 23 | `hs1-405` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-405.mp3` |\n| 24 | `hs1-406` | noor | calm, practical | NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 33.9 | `MC01-facility-management-safety_hs1-406.mp3` |\n| 25 | `hs1-407` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-407.mp3` |\n| 26 | `hs1-408` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-408.mp3` |\n| 27 | `hs1-409` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. | 13.3 | `MC01-facility-management-safety_hs1-409.mp3` |\n| 28 | `hs1-410` | noor | calm, practical | NOOR: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.0 | `MC01-facility-management-safety_hs1-410.mp3` |\n| 29 | `hs1-501` | noor | calm, practical | NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. | 27.4 | `MC01-facility-management-safety_hs1-501.mp3` |\n| 30 | `hs1-502` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-502.mp3` |\n| 31 | `hs1-503` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-503.mp3` |\n| 32 | `hs1-504` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-504.mp3` |\n| 33 | `hs1-505` | noor | calm, practical | NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 32.1 | `MC01-facility-management-safety_hs1-505.mp3` |\n| 34 | `hs1-506` | omar | calm, practical | OMAR: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.4 | `MC01-facility-management-safety_hs1-506.mp3` |\n| 35 | `hs1-507` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. | 15.4 | `MC01-facility-management-safety_hs1-507.mp3` |\n| 36 | `hs1-508` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-508.mp3` |\n| 37 | `hs1-601` | noor | calm, practical | NOOR: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 30.0 | `MC01-facility-management-safety_hs1-601.mp3` |\n| 38 | `hs1-602` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-602.mp3` |\n| 39 | `hs1-701` | noor | calm, practical | NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 23.1 | `MC01-facility-management-safety_hs1-701.mp3` |\n| 40 | `hs1-702` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-702.mp3` |\n| 41 | `hs1-801` | noor | calm, practical | NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. | 25.7 | `MC01-facility-management-safety_hs1-801.mp3` |\n| 42 | `hs1-802` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. | 11.6 | `MC01-facility-management-safety_hs1-802.mp3` |\n| 43 | `hs1-803` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-803.mp3` |\n| 44 | `hs1-901` | noor | calm, practical | NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. | 38.1 | `MC01-facility-management-safety_hs1-901.mp3` |\n| 45 | `hs1-902` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-902.mp3` |\n| 46 | `hs1-903` | noor | calm, practical | NOOR: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 24.9 | `MC01-facility-management-safety_hs1-903.mp3` |\n| 47 | `hs1-904` | noor | calm, practical | NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 24.4 | `MC01-facility-management-safety_hs1-904.mp3` |\n| 48 | `hs1-905` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-905.mp3` |\n| 49 | `hs1-906` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC01-facility-management-safety_hs1-906.mp3` |\n| 50 | `hs1-907` | noor | calm, practical | NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 25.3 | `MC01-facility-management-safety_hs1-907.mp3` |\n| 51 | `hs1-950/noor-1` | noor | encouraging | NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. | 14.6 | `MC01-facility-management-safety_hs1-950_noor-1.mp3` |\n| 52 | `hs1-950/omar-1` | omar | encouraging | OMAR: That is the habit we want from every new colleague. | 4.7 | `MC01-facility-management-safety_hs1-950_omar-1.mp3` |\n| 53 | `hs1-980` | noor | supportive | NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow. | 16.3 | `MC01-facility-management-safety_hs1-980.mp3` |\n| 54 | `hs1-981` | noor | reflective | NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 | `MC01-facility-management-safety_hs1-981.mp3` |\n| 55 | `hs1-990/noor-1` | noor | confident | NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 29.6 | `MC01-facility-management-safety_hs1-990_noor-1.mp3` |\n| 56 | `hs1-990/omar-1` | omar | confident | OMAR: Carry this practical rule into your next decision. | 3.9 | `MC01-facility-management-safety_hs1-990_omar-1.mp3` |\n"
 }

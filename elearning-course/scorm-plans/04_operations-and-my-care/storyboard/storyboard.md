@@ -34,7 +34,7 @@
 | Module colour | Responsible magenta #9D3293 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B7; program D3, D5 and D11 |
-| Narration reconciliation | Detailed card scripts: 4.5 min; Phase 3 per-screen targets: 4.4 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 4.4 min; Phase 3 per-screen targets: 4.4 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
 
 ### Production guardrails
 
@@ -469,10 +469,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 94 words / ≈ 40.3 s at 140 wpm |
+| Word count / estimated seconds | 91 words / ≈ 39 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.
+> OMAR: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -580,10 +580,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 72 words / ≈ 30.9 s at 140 wpm |
+| Word count / estimated seconds | 73 words / ≈ 31.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> OMAR: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -690,10 +690,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 93 words / ≈ 39.9 s at 140 wpm |
+| Word count / estimated seconds | 90 words / ≈ 38.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -804,7 +804,7 @@ lock items have written SME decisions.
 | Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> OMAR: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1140,10 +1140,10 @@ Single clean flat vector illustration for a My Clinic e-learning course. A patie
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1474,10 +1474,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR / NOOR |
 | Tone | confident |
 | Target seconds | 20 |
-| Word count / estimated seconds | 52 words / ≈ 22.3 s at 140 wpm |
+| Word count / estimated seconds | 45 words / ≈ 19.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Pause and connect this to your role.
+> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.
 >
 > NOOR: Carry this practical rule into your next decision.
 
@@ -1529,17 +1529,17 @@ lock items have written SME decisions.
 | 1 | `ops-000` | `title_slide` | N | 0 | 6 | 29 | 12 | Draft |
 | 2 | `ops-001` | `content_slide` | N | 0 | 13 | 58 | 25 | Draft |
 | 3 | `ops-002` | `hotspot` | N | 0 | 22 | 50 | 21 | Draft |
-| 4 | `ops-010` | `accordion` | N | 0 | 24 | 94 | 40 | Draft |
-| 5 | `ops-011` | `labeled_diagram` | N | 0 | 33 | 72 | 31 | Draft |
-| 6 | `ops-020` | `accordion` | N | 0 | 10 | 93 | 40 | Draft |
+| 4 | `ops-010` | `accordion` | N | 0 | 24 | 91 | 39 | Draft |
+| 5 | `ops-011` | `labeled_diagram` | N | 0 | 33 | 73 | 31 | Draft |
+| 6 | `ops-020` | `accordion` | N | 0 | 10 | 90 | 39 | Draft |
 | 7 | `ops-021` | `labeled_diagram` | N | 0 | 25 | 59 | 25 | Draft |
 | 8 | `ops-022` | `flashcards` | N | 0 | 10 | 35 | 15 | Draft |
 | 9 | `ops-030` | `drag_drop` | Y | 15 | 32 | 18 | 8 | Draft |
-| 10 | `ops-031` | `decision_scenario` | Y | 20 | 37 | 36 | 15 | Draft |
+| 10 | `ops-031` | `decision_scenario` | Y | 20 | 37 | 31 | 13 | Draft |
 | 11 | `ops-032` | `mcq` | Y | 5 | 21 | 18 | 8 | Draft |
 | 12 | `ops-033` | `matching` | Y | 10 | 31 | 18 | 8 | Draft |
-| 13 | `ops-090` | `summary` | N | 0 | 17 | 52 | 22 | Draft |
-| | **Totals** | | **4** | **50** | | **632** | **271 ≈ 4.5 min** | Draft |
+| 13 | `ops-090` | `summary` | N | 0 | 17 | 45 | 19 | Draft |
+| | **Totals** | | **4** | **50** | | **615** | **264 ≈ 4.4 min** | Draft |
 
 ### Asset list
 

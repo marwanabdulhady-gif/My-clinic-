@@ -2,188 +2,265 @@
   "module_id": "MC08-ehr-consultation",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 306.3,
+  "voices": {
+    "omar": {
+      "label": "OMAR:",
+      "brief": "Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "label": "NOOR:",
+      "brief": "Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "tools/audio_export.py (edumints core.playbook export rules, rev 4bbf4591)",
+  "total_est_sec": 303.8,
   "segments": [
     {
       "screen_id": "ehr-000",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-000.mp3",
       "narration_text": "OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
-      "tts_text": "Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "tts_text": "Welcome to E-H-R Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">Welcome to <sub alias=\"E-H-R\">EHR</sub> Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.</speak>",
       "est_sec": 12.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-001",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-001.mp3",
       "narration_text": "OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
       "tts_text": "Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
       "est_sec": 24.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-002",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-002.mp3",
-      "narration_text": "OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "tts_text": "The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
-      "est_sec": 28.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "tts_text": "The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 30.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-010",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-010.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "est_sec": 10.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
+      "est_sec": 7.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-011",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-011.mp3",
-      "narration_text": "OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "tts_text": "The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "est_sec": 26.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "tts_text": "The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "ssml": "<speak xml:lang=\"en\">The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.</speak>",
+      "est_sec": 26.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-012",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-012.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-020",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-020.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 20.6,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.</speak>",
+      "est_sec": 21.4,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-030",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-030.mp3",
-      "narration_text": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "tts_text": "Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "est_sec": 25.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+      "tts_text": "Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+      "ssml": "<speak xml:lang=\"en\">Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.</speak>",
+      "est_sec": 28.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-031",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-031.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 13.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-032",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-032.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.</speak>",
       "est_sec": 10.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-033",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-033.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-034",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-034.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-040",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-040.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "est_sec": 10.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
+      "est_sec": 7.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-041",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-041.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised.",
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.</speak>",
       "est_sec": 12.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-042",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC08-ehr-consultation_ehr-042.mp3",
-      "narration_text": "NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context.",
-      "tts_text": "Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context.",
-      "est_sec": 20.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.",
+      "tts_text": "Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.",
+      "ssml": "<speak xml:lang=\"en\">Patient &amp; family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.</speak>",
+      "est_sec": 19.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-050",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-050.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.</speak>",
+      "est_sec": 14.6,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-051",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-051.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-052",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-052.mp3",
       "narration_text": "OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.",
       "tts_text": "Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
       "est_sec": 18.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-090",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-090.mp3",
       "narration_text": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
       "tts_text": "Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+      "ssml": "<speak xml:lang=\"en\">Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.</speak>",
       "est_sec": 9.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "ehr-091",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC08-ehr-consultation_ehr-091.mp3",
       "narration_text": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
       "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+      "ssml": "<speak xml:lang=\"en\">You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.</speak>",
       "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     }
   ],
-  "voice_talent_md": "# Voice-over script — MC08-ehr-consultation\n\nLanguage: en · Pace: ~140 wpm\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **NOOR** → noor\n- **OHS** → O-H-S\n- **OMAR** → OH-mar\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen | Tone | Script | Est. sec |\n|---|---|---|---|---|\n| 1 | `ehr-000` | warm | OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.0 |\n| 2 | `ehr-001` | calm, practical | OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.4 |\n| 3 | `ehr-002` | calm, practical | OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. | 28.7 |\n| 4 | `ehr-010` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. | 10.3 |\n| 5 | `ehr-011` | calm, practical | OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 26.1 |\n| 6 | `ehr-012` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 7 | `ehr-020` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 20.6 |\n| 8 | `ehr-030` | calm, practical | OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 25.3 |\n| 9 | `ehr-031` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 15.4 |\n| 10 | `ehr-032` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. | 10.7 |\n| 11 | `ehr-033` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 12 | `ehr-034` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 13 | `ehr-040` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. | 10.3 |\n| 14 | `ehr-041` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. | 12.9 |\n| 15 | `ehr-042` | calm, practical | NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. | 20.1 |\n| 16 | `ehr-050` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. | 15.4 |\n| 17 | `ehr-051` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 18 | `ehr-052` | calm, practical | OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision. | 18.9 |\n| 19 | `ehr-090` | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 |\n| 20 | `ehr-091` | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. | 15.4 |\n"
+  "voice_talent_md": "# Voice-over script — MC08-ehr-consultation\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 19 | Pending program **D10** |\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 1 | Pending program **D10** |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **OHS** → O-H-S\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen / part | Speaker | Tone | Script | Est. sec | File |\n|---|---|---|---|---|---|---|\n| 1 | `ehr-000` | omar | warm | OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.0 | `MC08-ehr-consultation_ehr-000.mp3` |\n| 2 | `ehr-001` | omar | calm, practical | OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 24.4 | `MC08-ehr-consultation_ehr-001.mp3` |\n| 3 | `ehr-002` | omar | calm, practical | OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 30.4 | `MC08-ehr-consultation_ehr-002.mp3` |\n| 4 | `ehr-010` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-010.mp3` |\n| 5 | `ehr-011` | omar | calm, practical | OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 26.6 | `MC08-ehr-consultation_ehr-011.mp3` |\n| 6 | `ehr-012` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-012.mp3` |\n| 7 | `ehr-020` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers. | 21.4 | `MC08-ehr-consultation_ehr-020.mp3` |\n| 8 | `ehr-030` | omar | calm, practical | OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. | 28.3 | `MC08-ehr-consultation_ehr-030.mp3` |\n| 9 | `ehr-031` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. | 13.3 | `MC08-ehr-consultation_ehr-031.mp3` |\n| 10 | `ehr-032` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. | 10.7 | `MC08-ehr-consultation_ehr-032.mp3` |\n| 11 | `ehr-033` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-033.mp3` |\n| 12 | `ehr-034` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-034.mp3` |\n| 13 | `ehr-040` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-040.mp3` |\n| 14 | `ehr-041` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised. | 12.9 | `MC08-ehr-consultation_ehr-041.mp3` |\n| 15 | `ehr-042` | noor | calm, practical | NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. | 19.7 | `MC08-ehr-consultation_ehr-042.mp3` |\n| 16 | `ehr-050` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. | 14.6 | `MC08-ehr-consultation_ehr-050.mp3` |\n| 17 | `ehr-051` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC08-ehr-consultation_ehr-051.mp3` |\n| 18 | `ehr-052` | omar | calm, practical | OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision. | 18.9 | `MC08-ehr-consultation_ehr-052.mp3` |\n| 19 | `ehr-090` | omar | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 | `MC08-ehr-consultation_ehr-090.mp3` |\n| 20 | `ehr-091` | omar | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. | 15.4 | `MC08-ehr-consultation_ehr-091.mp3` |\n"
 }
