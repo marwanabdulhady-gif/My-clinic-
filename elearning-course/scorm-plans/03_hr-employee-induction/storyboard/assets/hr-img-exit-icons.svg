@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Leaving My Clinic — step icon family</title>
+<desc id="desc">Four line icons for the exit steps: a document with a signature (Qiwa), a screen with a form (Oracle), a calendar (notice period) and an envelope with a certificate (end of service). Decorative: each step is labelled in on-screen text.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:600;stroke-dashoffset:600;animation:ext-draw 880ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:ext-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:110ms}
+    g:nth-of-type(4) .draw,g:nth-of-type(4) .tile{animation-delay:220ms}
+    g:nth-of-type(5) .draw,g:nth-of-type(5) .tile{animation-delay:330ms}
+  }
+  @keyframes ext-draw{to{stroke-dashoffset:0}}
+  @keyframes ext-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+<text x="80" y="88" class="h">Leaving My Clinic — step icons</text>
+<g id="icon-qiwa" transform="translate(110,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <path class="line draw" d="M92 120h136l44 44v286H92z"/>
+  <path class="line draw" d="M228 120v44h44"/>
+  <path class="line draw" d="M126 226h108M126 272h108M126 318h64"/>
+  <path class="accent draw" d="M120 420q34-40 52 0t46-6"/>
+  <circle class="dot" cx="242" cy="404" r="12"/>
+</g>
+<g id="icon-oracle-exit" transform="translate(470,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <rect class="line draw" x="66" y="126" width="228" height="170" rx="14"/>
+  <path class="line draw" d="M142 296v40h76v-40"/>
+  <path class="line draw" d="M104 336h152"/>
+  <path class="accent draw" d="M104 178h152M104 220h104"/>
+  <path class="accent draw" d="M104 258h70"/>
+  <circle class="dot" cx="240" cy="258" r="12"/>
+</g>
+<g id="icon-notice" transform="translate(830,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <rect class="line draw" x="72" y="150" width="216" height="216" rx="14"/>
+  <path class="line draw" d="M72 210h216"/>
+  <path class="line draw" d="M126 126v40M234 126v40"/>
+  <path class="accent draw" d="M118 262h40v40h-40z"/>
+  <path class="line draw" d="M200 262h56M200 306h56"/>
+  <path class="accent draw" d="M120 452h120M148 452l-28-28M148 452l-28 28"/>
+</g>
+<g id="icon-eos" transform="translate(1190,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <path class="line draw" d="M62 200h236v176H62z"/>
+  <path class="line draw" d="M62 200l118 96 118-96"/>
+  <path class="accent draw" d="M196 320h60v96h-60z"/>
+  <path class="accent draw" d="M210 356h32M210 386h32"/>
+  <circle class="dot" cx="120" cy="440" r="13"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · exit steps and system names await HR confirmation</text>
+</svg>

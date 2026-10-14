@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-10-14",
+  "spec_version": "1.0",
+  "tool": "tools/build_motion_spec.py",
+  "modules": [
+    {
+      "module": "01_health-and-safety-1",
+      "screens": 54,
+      "intents": {
+        "orient": 1,
+        "teach": 9,
+        "reflect": 2,
+        "assess": 31,
+        "explore": 9,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 23,
+        "none": 31
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "02_health-and-safety-2",
+      "screens": 26,
+      "intents": {
+        "orient": 1,
+        "teach": 4,
+        "explore": 2,
+        "assess": 16,
+        "close": 2,
+        "reflect": 1
+      },
+      "entry_presets": {
+        "fade-up": 10,
+        "none": 16
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "03_hr-employee-induction",
+      "screens": 36,
+      "intents": {
+        "orient": 1,
+        "teach": 8,
+        "reflect": 1,
+        "explore": 8,
+        "assess": 16,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 11,
+        "none": 25
+      },
+      "cue_bound_layers": 70,
+      "problems": []
+    },
+    {
+      "module": "04_operations-and-my-care",
+      "screens": 13,
+      "intents": {
+        "orient": 1,
+        "teach": 1,
+        "assess": 7,
+        "explore": 3,
+        "close": 1
+      },
+      "entry_presets": {
+        "fade-up": 6,
+        "none": 7
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "05_rcm-documentation-and-coding",
+      "screens": 21,
+      "intents": {
+        "orient": 1,
+        "teach": 4,
+        "reflect": 1,
+        "explore": 2,
+        "assess": 11,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 10,
+        "none": 11
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "06_rcm-ebp-benefits-and-rejections",
+      "screens": 15,
+      "intents": {
+        "orient": 1,
+        "teach": 2,
+        "assess": 7,
+        "explore": 3,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 8,
+        "none": 7
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "07_quality-safety-and-risk",
+      "screens": 22,
+      "intents": {
+        "orient": 1,
+        "section": 1,
+        "reflect": 2,
+        "assess": 14,
+        "explore": 1,
+        "teach": 1,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 8,
+        "none": 14
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    },
+    {
+      "module": "08_it-ehr-consultation",
+      "screens": 20,
+      "intents": {
+        "orient": 1,
+        "teach": 4,
+        "explore": 1,
+        "assess": 12,
+        "close": 2
+      },
+      "entry_presets": {
+        "fade-up": 8,
+        "none": 12
+      },
+      "cue_bound_layers": 0,
+      "problems": []
+    }
+  ],
+  "totals": {
+    "screens": 207,
+    "cue_bound_layers": 70,
+    "problems": 0
+  }
+}

@@ -255,3 +255,70 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | Per objective | `cmi.objectives.n.id / .score / .success_status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
 | Resume | `cmi.suspend_data` (64,000 chars) · `cmi.location` | player state |
+
+### Interaction records (`cmi.interactions.n.type`)
+
+One interaction record per scored screen, in screen order. `poll` screens are unscored reflections and are **not** reported as interactions.
+
+| Interaction type | Scored screens | Screen ids |
+|---|---:|---|
+| `choice` | 5 | `hs1-407`, `hs1-504`, `hs1-602`, `hs1-702`, `hs1-905` |
+| `matching` | 7 | `hs1-104`, `hs1-302`, `hs1-405`, `hs1-502`, `hs1-508`, `hs1-902`, `hs1-906` |
+| `performance` | 6 | `hs1-205`, `hs1-409`, `hs1-503`, `hs1-507`, `hs1-802`, `hs1-950` |
+| `sequencing` | 4 | `hs1-204`, `hs1-304`, `hs1-402`, `hs1-403` |
+| `true-false` | 2 | `hs1-408`, `hs1-803` |
+
+Resume payload: ~**2,448 characters** estimated (54 screens × 24 + 24 scored × 48) against the 64,000-character limit of SCORM 2004 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+
+## 7. Gamification (what the record carries, and what it must not)
+
+Rules come from `../00_program/gamification-plan.md` and this pack's Phase 3 activity table. Points are the only score the LMS sees; nothing here adds a mechanic the proposal does not contain.
+
+| Mechanic | Planned rule (Phase 3) | Objective | Reported to the LMS as |
+|---|---|---|---|
+| `hs1-205` decision scenario | 3 nodes, each choice has `score_delta` +1 for the best choice, 0 otherwise | hs1-o2 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hs1-409` decision scenario | 4 nodes, branching on "fire grows" | hs1-o4 | `cmi.interactions.n.*` + 20 pts in `cmi.score.raw` |
+| `hs1-507` decision scenario | 3 cases + steps | hs1-o5 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hs1-802` decision scenario | 4 nodes | hs1-o8 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hs1-950` game | `case_sim`, score, 3 lives, 1 hint per node, no timer; rule: `when wrong if lives==0 then goto debrief` | hs1-o10 | `cmi.interactions.n.*` + 25 pts in `cmi.score.raw` |
+
+**Points economy.** `hs1-s1` 10 · `hs1-s2` 25 · `hs1-s3` 15 · `hs1-s4` 50 · `hs1-s5` 50 · `hs1-s6` 5 · `hs1-s7` 5 · `hs1-s8` 20 · `hs1-s9` 15 · `hs1-s10` 25 · **total 220**, pass 80% = 176.
+
+**Feedback coverage.** 0 of 24 scored screens carry authored answer feedback in the build block (`hs1-104`, `hs1-204`, `hs1-205`, `hs1-302`, `hs1-304`, `hs1-402`, `hs1-403`, `hs1-405`, `hs1-407`, `hs1-408`, `hs1-409`, `hs1-502` take it from the Phase 3 activity table or the player default).
+
+No excluded mechanic (leaderboard, ranking, streak, badge, countdown, time limit) is introduced by this pack's storyboard or Phase 3/4 text.
+
+## 8. Scenarios and branching
+
+5 scenario, game, simulation or adaptive-practice screen(s). Branch structure is read from the authored build blocks; retry and pass rules from Phase 3.
+
+| Screen | Type | Authored structure | Objective | Pts | Pass / retry rule (Phase 3) |
+|---|---|---|---|---:|---|
+| `hs1-205` | `decision_scenario` | not in the storyboard block yet — Phase 3: 3 nodes, each choice has `score_delta` +1 for the best choice, 0 otherwise | hs1-o2 | 15 | ≥ 2 · Replay allowed; score counted once |
+| `hs1-409` | `decision_scenario` | not in the storyboard block yet — Phase 3: 4 nodes, branching on "fire grows" | hs1-o4 | 20 | ≥ 3 · Replay |
+| `hs1-507` | `decision_scenario` | not in the storyboard block yet — Phase 3: 3 cases + steps | hs1-o5 | 15 | ≥ 3 of 4 · Replay |
+| `hs1-802` | `decision_scenario` | not in the storyboard block yet — Phase 3: 4 nodes | hs1-o8 | 15 | ≥ 3 · Replay |
+| `hs1-950` | `game` | not in the storyboard block yet — Phase 3: `case_sim`, score, 3 lives, 1 hint per node, no timer; rule: `when wrong if lives==0 then goto debrief` | hs1-o10 | 25 | `pass_score` 2 (best choice on 2 of 3 nodes) · Lives exhausted → debrief → retry |
+
+⚠ Decision screens whose nodes are still authored only in the Phase 3 table (no branch JSON yet): `hs1-205`, `hs1-409`, `hs1-507`, `hs1-802`. Phase 4 needs the node/choice graph before the package can report per-branch interactions.
+
+## 9. Base SCORM structure checklist
+
+Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build blockers unless the note says so.
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
+| Pass mark written to the manifest (80%) | ✅ | `imsss:minNormalizedMeasure` |
+| Every objective has at least one scored screen | ✅ | 10/10 objectives evidenced |
+| Every scored screen names its objective | ✅ | 24 scored screens |
+| Every scored screen maps to an interaction type | ✅ | 24 interaction records |
+| Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~2,448 chars vs 64,000 limit |
+| Gamification rules recorded for every scenario screen | ✅ | 5/5 scenario screens have a Phase 3 rule row |
+| Answer feedback authored for the scored checks | ⚠ | 0/24 scored screens carry feedback in the block |
+| No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |
+| Motion spec present for every screen (reduced-motion safe) | ✅ | 54/54 screens carry a `motion` object |
+| Thin-evidence objectives flagged for SME sign-off | ⚠ | 4 objective(s) rest on a single scored screen |
+
+**10/12 base requirements met.** Rerun `tools/build_scorm_structure.py` after any storyboard change, then `tools/audit_scorm_base.py` for the programme-wide view.

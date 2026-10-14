@@ -13,6 +13,67 @@ const plainHTML = html => rich(html).textContent;
 const assetKey = id => (id || '').replace(/^<|>$/g, '');
 const assetURL = id => DATA.assets[assetKey(id)] || DATA.preview_assets[assetKey(id)];
 
+/* --- Motion -------------------------------------------------------------
+   Applies the structured motion spec that tools/build_motion_spec.py writes into
+   every screen (vocabulary in tools/motion_spec.py, presets in style.css).
+   motion.reduced_motion = "static" and the OS prefers-reduced-motion setting both
+   land every element in its final state with no animation and no hidden layer.  */
+const MO_EASING = {standard: 'var(--mo-ease-standard)', decelerate: 'var(--mo-ease-decelerate)',
+                   accelerate: 'var(--mo-ease-accelerate)', spring: 'var(--mo-ease-spring)'};
+const prefersReducedMotion = () =>
+  Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+function motionHosts(root) {
+  // Layers are applied in authored order to the screen's top-level content blocks.
+  const host = root.querySelector('.screen-body') || root.querySelector('.title-copy') ||
+               root.querySelector('.section-copy') || root;
+  return [...host.children];
+}
+
+function applyMotion(root, s) {
+  const spec = s._motion;
+  if (!spec || typeof spec !== 'object') {root.dataset.motion = 'no-spec'; return;}
+  root.dataset.motion = spec.spec_version || 'unspecified';
+  root.dataset.motionIntent = spec.intent || '';
+  if (prefersReducedMotion()) {
+    // OS setting wins over the spec; .mo-static is the runtime form of reduced_motion: "static".
+    root.classList.add('mo-static');
+    return;
+  }
+  const entry = spec.entry || {};
+  root.classList.add('mo-entry-' + (entry.preset || 'none'));
+  root.style.setProperty('--mo-entry-duration', (entry.duration_ms || 0) + 'ms');
+  root.style.setProperty('--mo-entry-delay', (entry.delay_ms || 0) + 'ms');
+  root.style.setProperty('--mo-easing', MO_EASING[entry.easing] || MO_EASING.standard);
+  const hosts = motionHosts(root);
+  (spec.layers || []).forEach((layer, index) => {
+    const node = hosts[index];
+    if (!node) return;
+    node.classList.add('mo-layer', 'mo-layer-' + (layer.preset || 'fade-up'));
+    node.dataset.moLayer = layer.id;
+    node.dataset.moTrigger = layer.trigger || 'enter';
+    node.style.setProperty('--mo-layer-duration', (layer.duration_ms || 360) + 'ms');
+    node.style.setProperty('--mo-layer-delay', (layer.delay_ms || 0) + 'ms');
+    node.style.setProperty('--mo-easing', MO_EASING[layer.easing] || MO_EASING.standard);
+  });
+  const emphasis = spec.emphasis || {};
+  if (emphasis.preset && emphasis.preset !== 'none' && hosts.length) {
+    const target = hosts.find(node =>
+      (node.textContent || '').toLowerCase().includes(String(emphasis.target || '').toLowerCase())) || hosts[0];
+    target.classList.add('mo-emphasis-' + emphasis.preset);
+  }
+}
+
+function replayCueLayers(root) {
+  // Review aid only: fires the cue-bound layers in authored order, the way the narration
+  // [[cue:…]] marks will fire them in the built course. No learner state is involved.
+  const cueLayers = [...root.querySelectorAll('.mo-layer[data-mo-trigger="cue"]')];
+  cueLayers.forEach(node => node.classList.remove('is-cued'));
+  cueLayers.forEach((node, index) =>
+    setTimeout(() => node.classList.add('is-cued'), 120 + index * 260));
+  return cueLayers.length;
+}
+
 function media(id, alt) {
   const url = assetURL(id);
   if (url && /\.(png|jpe?g|webp|svg)$/i.test(url)) {
@@ -28,6 +89,16 @@ function media(id, alt) {
 function feedbackBox() {const box = el('div', 'feedback'); box.setAttribute('role', 'status'); box.hidden = true; return box;}
 function feedback(box, screen, correct, custom) {
   box.hidden = false; box.classList.toggle('positive', correct); box.classList.toggle('negative', !correct);
+  // Feedback motion comes from motion_spec.feedback_for: settle for a safe choice, a short
+  // nudge for one to review. It is cosmetic — the text carries the result (no colour-only cue).
+  const spec = (screen.motion || {}).feedback || {};
+  const preset = correct ? spec.correct : spec.incorrect;
+  box.classList.remove('mo-feedback-settle-once', 'mo-feedback-nudge-once', 'mo-feedback-pulse-once');
+  if (preset && preset !== 'none' && !prefersReducedMotion()) {
+    box.style.setProperty('--mo-feedback-duration', (spec.duration_ms || 420) + 'ms');
+    void box.offsetWidth; // restart the animation when the same box is reused
+    box.classList.add('mo-feedback-' + preset);
+  }
   box.replaceChildren(el('strong', '', correct ? '✓ Correct for this draft' : '↻ Review this choice'));
   box.append(rich(custom || (screen.feedback || {})[correct ? 'correct_html' : 'incorrect_html'] || '<p>No authored feedback supplied.</p>'));
   box.append(el('small', 'result-note', 'Draft answer check only — no completion or LMS score is recorded.'));
@@ -315,6 +386,12 @@ function resultsContent(m, s) {
   root.append(total, sections); return root;
 }
 function buildScreen(m, s) {
+  const root = buildSlide(m, s);
+  applyMotion(root, s);
+  return root;
+}
+
+function buildSlide(m, s) {
   const root = el('div', `slide layout-${s._layout.id}`);
   root.dataset.screenId = s.id; root.dataset.layout = s._layout.id;
   root.dataset.reference = s._layout.reference_id;
@@ -403,7 +480,51 @@ function render() {
   $('template-gates').replaceChildren(...contract.gates.map(g => el('li', '', (g.checked ? '☑ ' : '☐ ') + g.text)));
   $('input-links').replaceChildren(...contract.inputs.map(input => {const li = el('li'); const a = el('a', '', input.path.replace('elearning-course/scorm-plans/', '')); a.href = 'reference/inputs/' + input.path; a.target = '_blank'; a.rel = 'noopener'; li.append(a, el('small', '', ` · SHA256 ${input.sha256.slice(0, 12)}`)); return li;}));
   $('spec').textContent = JSON.stringify(Object.fromEntries(Object.entries(s).filter(([key]) => !key.startsWith('_'))), null, 2);
+  motionPanel(s);
   document.title = `${s.id} · My Clinic screen review`; outline();
+}
+
+function motionPanel(s) {
+  // Reviewer-facing summary of the structured motion spec for the current screen.
+  const spec = s._motion;
+  const slide = $('stage').firstElementChild;
+  if (!spec || typeof spec !== 'object') {
+    $('motion-status').textContent = 'NO MOTION SPEC';
+    $('motion-summary').textContent = 'This screen has no motion object. Rerun tools/build_motion_spec.py.';
+    $('replay-motion').hidden = true; $('motion-reduced').textContent = '';
+    return;
+  }
+  const entry = spec.entry || {}, emphasis = spec.emphasis || {}, exitBlock = spec.exit || {};
+  const feedbackBlock = spec.feedback || {};
+  const layers = spec.layers || [];
+  const cueCount = layers.filter(l => l.trigger === 'cue').length;
+  $('motion-status').textContent = `SPEC v${spec.spec_version} · ${String(spec.intent || '').toUpperCase()}`;
+  $('motion-summary').innerHTML = '';
+  const rows = [
+    ['Intent', spec.intent],
+    ['Entrance', `${entry.preset} · ${entry.duration_ms} ms · ${entry.easing}`],
+    ['Layers', layers.length ? `${layers.length} (${cueCount} bound to narration cues): ` +
+      layers.map(l => `${l.id} ${l.preset}@${l.delay_ms}ms`).join(' · ') : 'none'],
+    ['Emphasis', emphasis.preset === 'none' ? 'none' : `${emphasis.preset} on ${emphasis.target}`],
+    ['Answer feedback', `safe: ${feedbackBlock.correct} · review: ${feedbackBlock.incorrect}`],
+    ['Exit', `${exitBlock.preset} · ${exitBlock.duration_ms} ms`],
+    ['Entrance budget', `${spec.budget_ms} ms · loop ${spec.loop ? 'yes' : 'no'}`],
+  ];
+  rows.forEach(([label, value]) => {
+    const line = el('span'); line.append(el('strong', '', label + ': '), document.createTextNode(String(value)));
+    $('motion-summary').append(line, el('br'));
+  });
+  $('motion-reduced').textContent = prefersReducedMotion()
+    ? 'prefers-reduced-motion is ON in this browser: every preset is disabled and all layers are shown (motion.reduced_motion = "static").'
+    : `Reduced-motion fallback: "${spec.reduced_motion}" — with the OS setting on, nothing animates and no cue layer stays hidden.`;
+  $('replay-motion').hidden = false;
+  $('replay-motion').onclick = () => {
+    if (!slide) return;
+    slide.classList.remove(...[...slide.classList].filter(c => c.startsWith('mo-entry-')));
+    void slide.offsetWidth;
+    applyMotion(slide, s);
+    replayCueLayers(slide);
+  };
 }
 
 function navigate(mi, si) {

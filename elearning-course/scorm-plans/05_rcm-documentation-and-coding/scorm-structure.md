@@ -27,8 +27,12 @@ MC_05_RCM-A_v1.0_1.2.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── -strong.*
     ├── rcma-img-note-strong.*
     ├── rcma-img-note-weak.*
+    ├── rcma-img-notes-1.*
+    ├── rcma-img-notes-2.*
+    ├── rcma-img-notes-3.*
     ├── rcma-img-reviewer.*
     ├── rcma-pdf-checklist.*
     ├── char-noor-avatar-neutral.png
@@ -152,3 +156,64 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | Per objective | `cmi.objectives.n.id / .score / .status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
 | Resume | `cmi.suspend_data` (**4,096 chars**) · `cmi.core.lesson_location` | player state — 21 screens; check the `SUSPEND_OVERFLOW` lint before build |
+
+### Interaction records (`cmi.interactions.n.type`)
+
+One interaction record per scored screen, in screen order. `poll` screens are unscored reflections and are **not** reported as interactions.
+
+| Interaction type | Scored screens | Screen ids |
+|---|---:|---|
+| `choice` | 3 | `rcma-013`, `rcma-032`, `rcma-042` |
+| `matching` | 3 | `rcma-021`, `rcma-023`, `rcma-040` |
+| `performance` | 2 | `rcma-031`, `rcma-050` |
+| `sequencing` | 1 | `rcma-012` |
+| `true-false` | 1 | `rcma-033` |
+
+Resume payload: ~**984 characters** estimated (21 screens × 24 + 10 scored × 48) against the 4,096-character limit of SCORM 1.2 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+
+## 7. Gamification (what the record carries, and what it must not)
+
+Rules come from `../00_program/gamification-plan.md` and this pack's Phase 3 activity table. Points are the only score the LMS sees; nothing here adds a mechanic the proposal does not contain.
+
+| Mechanic | Planned rule (Phase 3) | Objective | Reported to the LMS as |
+|---|---|---|---|
+| `rcma-031` decision scenario | 2 nodes | rcma-o3 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `rcma-050` game | `case_sim`, 3 nodes, +1 best rewrite, 1 hint each, no lives, no timer | rcma-o5 | `cmi.interactions.n.*` + 25 pts in `cmi.score.raw` |
+
+**Points economy.** `rcma-sB` 15 · `rcma-sC` 20 · `rcma-sD` 25 · `rcma-sE` 15 · `rcma-sF` 25 · **total 100**, pass 80% = 80.
+
+**Feedback coverage.** 0 of 10 scored screens carry authored answer feedback in the build block (`rcma-012`, `rcma-013`, `rcma-021`, `rcma-023`, `rcma-031`, `rcma-032`, `rcma-033`, `rcma-040`, `rcma-042`, `rcma-050` take it from the Phase 3 activity table or the player default).
+
+No excluded mechanic (leaderboard, ranking, streak, badge, countdown, time limit) is introduced by this pack's storyboard or Phase 3/4 text.
+
+## 8. Scenarios and branching
+
+2 scenario, game, simulation or adaptive-practice screen(s). Branch structure is read from the authored build blocks; retry and pass rules from Phase 3.
+
+| Screen | Type | Authored structure | Objective | Pts | Pass / retry rule (Phase 3) |
+|---|---|---|---|---:|---|
+| `rcma-031` | `decision_scenario` | not in the storyboard block yet — Phase 3: 2 nodes | rcma-o3 | 15 | both best · — |
+| `rcma-050` | `game` | not in the storyboard block yet — Phase 3: `case_sim`, 3 nodes, +1 best rewrite, 1 hint each, no lives, no timer | rcma-o5 | 25 | `pass_score` 2 · — |
+
+⚠ Decision screens whose nodes are still authored only in the Phase 3 table (no branch JSON yet): `rcma-031`. Phase 4 needs the node/choice graph before the package can report per-branch interactions.
+
+## 9. Base SCORM structure checklist
+
+Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build blockers unless the note says so.
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
+| Pass mark written to the manifest (80%) | ✅ | `adlcp:masteryscore` |
+| Every objective has at least one scored screen | ✅ | 5/5 objectives evidenced |
+| Every scored screen names its objective | ✅ | 10 scored screens |
+| Every scored screen maps to an interaction type | ✅ | 10 interaction records |
+| Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~984 chars vs 4,096 limit |
+| Gamification rules recorded for every scenario screen | ✅ | 2/2 scenario screens have a Phase 3 rule row |
+| Answer feedback authored for the scored checks | ⚠ | 0/10 scored screens carry feedback in the block |
+| No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |
+| Motion spec present for every screen (reduced-motion safe) | ✅ | 21/21 screens carry a `motion` object |
+| Thin-evidence objectives flagged for SME sign-off | ⚠ | 1 objective(s) rest on a single scored screen |
+
+**10/12 base requirements met.** Rerun `tools/build_scorm_structure.py` after any storyboard change, then `tools/audit_scorm_base.py` for the programme-wide view.

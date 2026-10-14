@@ -47,7 +47,85 @@
       "on_screen_text": "\"EHR consultation workflow\" · \"Guided practice on a test patient\"",
       "animation": "fade",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "orient",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "logo",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "title",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "subtitle",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "companions",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "tagline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "pulse-once",
+          "target": "module-chip",
+          "duration_ms": 520,
+          "easing": "spring"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-001",
@@ -84,7 +162,67 @@
       "on_screen_text": "Complete, linked, on the day · Disclaimer (B7) · \"Everything here is a test patient.\"",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "ehr-capture-sheet",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-002",
@@ -107,7 +245,76 @@
       "on_screen_text": "9 steps as events: 1 Open · 2 Document · 3 Diagnose · 4 Order · 5 Review orders · 6 Summary · 7 Educate · 8 Refer & follow up · 9 Complete",
       "animation": "fade-up",
       "interaction": "Click through",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "axis",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "event-1",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "event-2",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "event-3",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "highlight-sweep",
+          "target": "current-event",
+          "duration_ms": 560,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-010",
@@ -144,7 +351,39 @@
       "on_screen_text": "Step 1: today's consultation list → click the test patient. Step 2: open the consultation form",
       "animation": "none",
       "interaction": "Hints name the panel",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-011",
@@ -174,7 +413,39 @@
       "on_screen_text": "Consultation form screenshot; regions = each mandatory section (B4): chief complaint · duration · HPI · past history (allergies, medications) · examination · plan of care",
       "animation": "fade-up",
       "interaction": "Each region: what to write, \"save as you go\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-012",
@@ -197,7 +468,39 @@
       "on_screen_text": "\"You press Complete and the system refuses. The form shows chief complaint, HPI and examination filled in.\" Most likely cause → plan of care (or another mandatory field per B4) is empty",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-020",
@@ -262,7 +565,39 @@
       "on_screen_text": "Step 1: click Add Diagnosis. Step 2: type E11 (accepted: E11, e11, type 2 diabetes). Step 3: choose Type 2 diabetes mellitus from results. Step 4: mark as primary / problem; onset, chronicity. Step 5: click the star to add …",
       "animation": "none",
       "interaction": "Feedback: \"Specific primary diagnosis = fewer rejections (module 05).\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-030",
@@ -285,7 +620,67 @@
       "on_screen_text": "Search by service · lab · referral · package · order profile · Form Wizard reviews a package before you finalise",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-031",
@@ -350,7 +745,39 @@
       "on_screen_text": "Step 1: open order search. Step 2: type the drug name (B6 example). Step 3: set route, dose, frequency, duration. Step 4: choose the assessed diagnosis (E11). Step 5: add instructions to the patient. Step 6: press Order",
       "animation": "none",
       "interaction": "Feedback: \"The order isn't placed until you press Order.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-032",
@@ -401,7 +828,39 @@
       "on_screen_text": "Step 1: search the package (B6). Step 2: Form Wizard step 1 — review items. Step 3: remove an item not needed. Step 4: finalise",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-033",
@@ -424,7 +883,39 @@
       "on_screen_text": "\"You order ⚠ PENDING non-formulary item, B6. The system flags it. What does that mean?\" → it needs approval before it can be dispensed; consider a formulary alternative",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-034",
@@ -447,7 +938,39 @@
       "on_screen_text": "\"Why must each order be linked to the assessed diagnosis?\" → it shows medical necessity to the reviewer and keeps the record consistent; unlinked orders are a common rejection cause",
       "animation": "none",
       "interaction": "Link to module 05",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-040",
@@ -491,7 +1014,39 @@
       "on_screen_text": "Step 1: open Consultation Summary. Step 2: check lab orders, special tests, referrals. Step 3: Download and Print",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-041",
@@ -549,7 +1104,39 @@
       "on_screen_text": "Step 1: open Send SMS – educational material. Step 2: choose department. Step 3: type E11. Step 4: select the leaflet. Step 5: Send (B8)",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-042",
@@ -579,7 +1166,67 @@
       "on_screen_text": "Checklist: infection control · medication use · disease/condition · treatment · health & lifestyle · other · \"Required before finalising\"",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-050",
@@ -651,7 +1298,39 @@
       "on_screen_text": "Step 1: open referral. Step 2: specialty = Endocrinology. Step 3: type the reason (approved example phrase, e.g. \"poorly controlled type 2 diabetes\"; variants listed in input_accepted). Step 4: type = Internal; timing = within a month (B9). Step 5 …",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-051",
@@ -674,7 +1353,39 @@
       "on_screen_text": "9 steps from ehr-002 in order",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "ehr-052",
@@ -697,7 +1408,67 @@
       "on_screen_text": "\"Record saved successfully\" → Complete · What happens if a field is missing · Where to get help (IT service desk)",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-090",
@@ -720,7 +1491,76 @@
       "on_screen_text": "ehr-o1…o5",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "score-ring",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-1",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-2",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "advice",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "ehr-091",
@@ -750,7 +1590,82 @@
       "on_screen_text": "Complete, specific, linked · Links: EHR quick-reference card (PDF), IT service desk",
       "animation": "fade-up",
       "interaction": "show_score",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "action-list",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "job-aids",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "sign-off",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     }
-  ]
+  ],
+  "motion_spec_version": "1.0",
+  "motion_generated": {
+    "generated_at": "2026-10-14",
+    "tool": "tools/build_motion_spec.py (vocabulary in tools/motion_spec.py)",
+    "note": "Derived from screen_type, layout, cue_targets and the legacy animation token. Rerun this tool after any storyboard or visual-plan change; do not edit the motion objects by hand. Every preset is implemented in tools/screen_generator/style.css and honours prefers-reduced-motion."
+  }
 }

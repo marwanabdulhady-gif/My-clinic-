@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">My Clinic seven-pillar icon family</title>
+<desc id="desc">Seven line icons for the seven pillars: headset (Closer), syringe (Cure), mind and gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart in hands (Care) and coins (Cost). Decorative: each pillar is labelled in on-screen text, not in this file.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  /* Motion: the pillar icons draw in once, staggered. Decorative only — the labels carry
+     the meaning — and fully disabled when the learner asks for reduced motion. */
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:520;stroke-dashoffset:520;animation:hr-draw 900ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:hr-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(2) .draw,g:nth-of-type(2) .tile{animation-delay:70ms}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:140ms}
+    g:nth-of-type(4) .draw,g:nth-of-type(4) .tile{animation-delay:210ms}
+    g:nth-of-type(5) .draw,g:nth-of-type(5) .tile{animation-delay:280ms}
+    g:nth-of-type(6) .draw,g:nth-of-type(6) .tile{animation-delay:350ms}
+    g:nth-of-type(7) .draw,g:nth-of-type(7) .tile{animation-delay:420ms}
+    g:nth-of-type(8) .draw,g:nth-of-type(8) .tile{animation-delay:490ms}
+  }
+  @keyframes hr-draw{to{stroke-dashoffset:0}}
+  @keyframes hr-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+<text x="80" y="88" class="h">Seven pillars — icon family</text>
+<g id="icon-closer" transform="translate(120,150)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="line draw" d="M80 190v-35a70 70 0 0 1 140 0v35"/>
+  <path class="line draw" d="M62 175h26v62H62a14 14 0 0 1-14-14v-34a14 14 0 0 1 14-14z"/>
+  <path class="line draw" d="M238 175h-26v62h26a14 14 0 0 0 14-14v-34a14 14 0 0 0-14-14z"/>
+  <path class="accent draw" d="M212 237v22a30 30 0 0 1-30 30h-32"/>
+  <circle class="dot" cx="140" cy="289" r="12"/>
+</g>
+<g id="icon-cure" transform="translate(470,150)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="line draw" d="M96 204L204 96"/>
+  <path class="line draw" d="M78 186l36 36 26-26-36-36z"/>
+  <path class="line draw" d="M196 88l16 16"/>
+  <path class="accent draw" d="M120 100h34M137 83v34"/>
+  <circle class="dot" cx="222" cy="216" r="12"/>
+</g>
+<g id="icon-capabilities" transform="translate(820,150)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="line draw" d="M96 118a54 54 0 0 1 108 0c0 26-16 38-16 58h-76c0-20-16-32-16-58z"/>
+  <path class="line draw" d="M126 206h48M134 232h32"/>
+  <circle class="accent draw" cx="216" cy="222" r="26"/>
+  <path class="accent draw" d="M216 196v-12M216 260v-12M190 222h-12M254 222h-12"/>
+</g>
+<g id="icon-culture" transform="translate(1170,150)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="line draw" d="M56 176l44-32 40 26 40-26 44 32"/>
+  <path class="line draw" d="M100 144l40 34 40-34"/>
+  <path class="accent draw" d="M140 178l-18 26 18 20 18-20z"/>
+  <circle class="dot" cx="140" cy="112" r="12"/>
+</g>
+<g id="icon-clinicians" transform="translate(120,500)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="line draw" d="M92 96v52a48 48 0 0 0 96 0V96"/>
+  <path class="line draw" d="M78 96h28M194 96h28"/>
+  <path class="line draw" d="M140 196v34"/>
+  <circle class="accent draw" cx="140" cy="248" r="20"/>
+  <circle class="dot" cx="222" cy="112" r="12"/>
+</g>
+<g id="icon-care" transform="translate(470,500)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <path class="accent draw" d="M150 206s-52-32-52-66a28 28 0 0 1 52-14 28 28 0 0 1 52 14c0 34-52 66-52 66z"/>
+  <path class="line draw" d="M62 236q40 34 88 34t88-34"/>
+  <path class="line draw" d="M62 236v-26M238 236v-26"/>
+</g>
+<g id="icon-cost" transform="translate(820,500)">
+  <rect class="tile" width="300" height="300" rx="16"/>
+  <ellipse class="line draw" cx="150" cy="112" rx="72" ry="26"/>
+  <path class="line draw" d="M78 112v76c0 14 32 26 72 26s72-12 72-26v-76"/>
+  <path class="accent draw" d="M78 150c0 14 32 26 72 26s72-12 72-26"/>
+  <circle class="dot" cx="150" cy="112" r="11"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · pillar wording awaits SME approval</text>
+</svg>

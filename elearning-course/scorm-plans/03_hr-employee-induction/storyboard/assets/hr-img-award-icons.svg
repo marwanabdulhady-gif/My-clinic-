@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Awards and recognition icon family</title>
+<desc id="desc">Two line icons for the awards cards: a trophy and a laurel star. Decorative: each card front is labelled in on-screen text.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:700;stroke-dashoffset:700;animation:aw-draw 1000ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:aw-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:160ms}
+    .sparkle{animation:aw-sparkle 1600ms cubic-bezier(.2,0,0,1) 900ms both}
+  }
+  @keyframes aw-draw{to{stroke-dashoffset:0}}
+  @keyframes aw-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes aw-sparkle{0%{opacity:0;transform:scale(.4)}55%{opacity:1;transform:scale(1.1)}100%{opacity:1;transform:scale(1)}}
+</style>
+<text x="80" y="88" class="h">Awards and recognition — icon family</text>
+<g id="icon-trophy" transform="translate(300,160)">
+  <rect class="tile" width="440" height="560" rx="18"/>
+  <path class="line draw" d="M140 120h160v84a80 80 0 0 1-160 0z"/>
+  <path class="line draw" d="M140 148H96a44 44 0 0 0 44 68"/>
+  <path class="line draw" d="M300 148h44a44 44 0 0 1-44 68"/>
+  <path class="line draw" d="M220 284v70"/>
+  <path class="line draw" d="M160 400h120l-16-46H176z"/>
+  <path class="accent draw" d="M186 354h68"/>
+  <g class="sparkle" transform="translate(330,120)">
+    <path class="accent draw" d="M0-34v68M-34 0h68M-24-24l48 48M24-24l-48 48"/>
+  </g>
+</g>
+<g id="icon-laurel-star" transform="translate(860,160)">
+  <rect class="tile" width="440" height="560" rx="18"/>
+  <path class="accent draw" d="M120 420c-46-70-40-166 14-232"/>
+  <path class="accent draw" d="M320 420c46-70 40-166-14-232"/>
+  <path class="accent draw" d="M104 350q-30 6 0 44M112 288q-32 2-10 44M136 232q-30-4-18 38"/>
+  <path class="accent draw" d="M336 350q30 6 0 44M328 288q32 2 10 44M304 232q30-4 18 38"/>
+  <path class="line draw" d="M220 190l26 56 60 8-44 44 11 60-53-29-53 29 11-60-44-44 60-8z"/>
+  <circle class="dot" cx="220" cy="470" r="14"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · award names await client confirmation</text>
+</svg>

@@ -315,8 +315,94 @@ textarea { min-height: 80px; margin-top: 16px; }
   .player-bar button { padding: 9px 12px; font-size: 12px; }
   .player-bar span { font-size: 9px; }
 }
+/* ---------------------------------------------------------------------------
+   Motion engine.
+   Implements the presets named by the structured motion spec that
+   tools/build_motion_spec.py writes into every screen of every visual plan
+   (vocabulary: tools/motion_spec.py). player.js reads screen.motion, sets the
+   --mo-* custom properties below and adds the matching .mo-* class.
+   Nothing loops on a scored screen, and the prefers-reduced-motion block after
+   this one removes all of it, which is what motion.reduced_motion = "static"
+   promises in the spec.
+--------------------------------------------------------------------------- */
+:root {
+  --mo-ease-standard: cubic-bezier(.2, 0, 0, 1);
+  --mo-ease-decelerate: cubic-bezier(.05, .7, .1, 1);
+  --mo-ease-accelerate: cubic-bezier(.3, 0, .8, .15);
+  --mo-ease-spring: cubic-bezier(.34, 1.4, .64, 1);
+  --mo-easing: var(--mo-ease-standard);
+  --mo-entry-duration: 420ms;
+  --mo-entry-delay: 0ms;
+  --mo-layer-duration: 360ms;
+  --mo-layer-delay: 0ms;
+  --mo-feedback-duration: 420ms;
+  --mo-travel: 16px;
+}
+@keyframes mo-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes mo-fade-up { from { opacity: 0; transform: translate3d(0, var(--mo-travel), 0); } to { opacity: 1; transform: none; } }
+@keyframes mo-fade-down { from { opacity: 0; transform: translate3d(0, calc(var(--mo-travel) * -1), 0); } to { opacity: 1; transform: none; } }
+@keyframes mo-slide-left { from { opacity: 0; transform: translate3d(calc(var(--mo-travel) * 2), 0, 0); } to { opacity: 1; transform: none; } }
+@keyframes mo-pop-in { 0% { opacity: 0; transform: scale(.94); } 60% { opacity: 1; transform: scale(1.015); } 100% { opacity: 1; transform: none; } }
+@keyframes mo-grow-x { from { opacity: 0; transform: scaleX(.86); transform-origin: left center; } to { opacity: 1; transform: none; } }
+@keyframes mo-rise-stagger { from { opacity: 0; transform: translate3d(0, calc(var(--mo-travel) * 1.5), 0); } to { opacity: 1; transform: none; } }
+@keyframes mo-wipe-right { from { opacity: 0; clip-path: inset(0 100% 0 0); } to { opacity: 1; clip-path: inset(0 0 0 0); } }
+@keyframes mo-draw-line { from { opacity: 0; stroke-dashoffset: 480; } to { opacity: 1; stroke-dashoffset: 0; } }
+@keyframes mo-count-up { from { opacity: 0; transform: translateY(6px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes mo-pulse-once { 0% { transform: scale(1); } 40% { transform: scale(1.045); } 100% { transform: scale(1); } }
+@keyframes mo-settle-once { 0% { opacity: 0; transform: translateY(8px); } 55% { opacity: 1; transform: translateY(-2px); } 100% { opacity: 1; transform: none; } }
+@keyframes mo-nudge-once { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 55% { transform: translateX(4px); } 80% { transform: translateX(-2px); } }
+@keyframes mo-highlight-sweep { 0% { background-position: -120% 0; } 100% { background-position: 220% 0; } }
+
+/* Entrance presets — one class per ENTRY_PRESETS value. */
+.mo-entry-none { animation: none; }
+.mo-entry-fade { animation: mo-fade var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-fade-up { animation: mo-fade-up var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-fade-down { animation: mo-fade-down var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-slide-left { animation: mo-slide-left var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-pop-in { animation: mo-pop-in var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-grow-x { animation: mo-grow-x var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-rise-stagger { animation: mo-rise-stagger var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+.mo-entry-draw-line { animation: mo-draw-line var(--mo-entry-duration) var(--mo-entry-delay) var(--mo-easing) both; }
+
+/* Layer reveals. player.js tags the element with .mo-layer and sets --mo-layer-delay
+   from motion.layers[].delay_ms, so the authored order survives the build. */
+.mo-layer { animation: var(--mo-layer-animation, mo-fade-up) var(--mo-layer-duration) var(--mo-layer-delay) var(--mo-easing) both; }
+.mo-layer-fade { --mo-layer-animation: mo-fade; }
+.mo-layer-fade-up { --mo-layer-animation: mo-fade-up; }
+.mo-layer-fade-down { --mo-layer-animation: mo-fade-down; }
+.mo-layer-pop-in { --mo-layer-animation: mo-pop-in; }
+.mo-layer-wipe-right { --mo-layer-animation: mo-wipe-right; }
+.mo-layer-grow-x { --mo-layer-animation: mo-grow-x; }
+.mo-layer-draw-line { --mo-layer-animation: mo-draw-line; stroke-dasharray: 480; }
+.mo-layer-count-up { --mo-layer-animation: mo-count-up; }
+/* Cue-bound layers stay hidden until the narration cue fires; player.js flips .is-cued. */
+.mo-layer[data-mo-trigger="cue"] { opacity: 0; animation: none; }
+.mo-layer[data-mo-trigger="cue"].is-cued { animation: var(--mo-layer-animation, mo-fade-up) var(--mo-layer-duration) 0ms var(--mo-easing) both; }
+
+/* Emphasis. Applied by player.js to the element named by motion.emphasis.target. */
+.mo-emphasis-pulse-once { animation: mo-pulse-once 520ms var(--mo-easing) both; }
+.mo-emphasis-highlight-sweep {
+  background-image: linear-gradient(100deg, transparent 20%, #9D329322 45%, transparent 70%);
+  background-size: 220% 100%; background-repeat: no-repeat;
+  animation: mo-highlight-sweep 620ms var(--mo-easing) 1 both;
+}
+.mo-emphasis-underline-draw { border-bottom: 2px solid var(--secondary-text); animation: mo-grow-x 620ms var(--mo-easing) both; }
+
+/* Answer feedback — settle for a safe choice, nudge for a review-this choice. */
+.mo-feedback-settle-once { animation: mo-settle-once var(--mo-feedback-duration) var(--mo-ease-spring) both; }
+.mo-feedback-nudge-once { animation: mo-nudge-once var(--mo-feedback-duration) var(--mo-ease-standard) both; }
+.mo-feedback-pulse-once { animation: mo-pulse-once var(--mo-feedback-duration) var(--mo-ease-spring) both; }
+
+/* .mo-static is what motion.reduced_motion = "static" means at runtime: every
+   element lands in its final state immediately, with no hidden cue layer. */
+.mo-static, .mo-static * { animation: none !important; transition: none !important; opacity: 1 !important; }
+.mo-static .mo-layer[data-mo-trigger="cue"] { opacity: 1 !important; }
+.motion-note { font-size: 10px; color: var(--muted); line-height: 1.7; }
+.motion-note strong { color: var(--primary); }
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+  .mo-layer[data-mo-trigger="cue"] { opacity: 1 !important; }
 }
 @media print {
   .app-header, .sidebar, .player-bar, .review-toolbar, .batch-header, .build-warning, #audio { display: none; }

@@ -40,7 +40,85 @@
       "on_screen_text": "\"Safety in Practice\" · \"Hazard, fire and chemical lab\"",
       "animation": "fade",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "orient",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "logo",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "title",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "subtitle",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "companions",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "tagline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "pulse-once",
+          "target": "module-chip",
+          "duration_ms": 520,
+          "easing": "spring"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-001",
@@ -63,7 +141,67 @@
       "on_screen_text": "\"Safety = measures that protect life, health and environment.\" · \"Today you practise, not read.\"",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-010",
@@ -86,7 +224,85 @@
       "on_screen_text": "Problem: wet floor at the clinic entrance during rain. Steps: (1) name the hazard; (2) likelihood 4 (busy entrance) ; (3) impact 3 (fall injury); (4) risk = 4 × 3 = 12; (5) control: mat + sign + mop …",
       "animation": "fade-up",
       "interaction": "Unscored self-explanation",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "problem",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-1",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-2",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-3",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "rule",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-011",
@@ -123,7 +339,39 @@
       "on_screen_text": "New illustration of a store room/office (based on p.4 idea). Answer key (6 regions): trailing cables across the walkway · boxes stacked above shoulder height · blocked fire exit / extinguisher · unlabelled bottle on a shelf · liquid spill …",
       "animation": "fade-up",
       "interaction": "Each region explains the hazard and the control",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-012",
@@ -146,7 +394,39 @@
       "on_screen_text": "\"Which hazard in the room do you report and fix first?\" → blocked fire exit (high impact for everyone)",
       "animation": "none",
       "interaction": "Feedback compares likelihood and impact of each option",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-013",
@@ -169,7 +449,39 @@
       "on_screen_text": "\"Likelihood 2, impact 5. Risk score = ___\" → accepted: 10",
       "animation": "none",
       "interaction": "Feedback: \"Low likelihood, but severe harm still needs a control.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-020",
@@ -199,7 +511,67 @@
       "on_screen_text": "10 colour codes + 2 announcements; front EN + AR name and colour chip, back meaning + extension (D2). Code Blue 2222",
       "animation": "fade-up",
       "interaction": "Flip",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "card-front",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "card-back",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "deck-progress",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-030",
@@ -271,7 +643,39 @@
       "on_screen_text": "Setting: afternoon clinic, smoke from a consultation room. Nodes: (1) Rescue — patient in the room vs. phone first; (2) Alarm — shout \"Code Red\", pull the call point, then choose the complete call script (code type + location + …",
       "animation": "none",
       "interaction": "Each wrong choice shows the poster rule (pp.7–11) as feedback; debrief lists the RACE step for each decision",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-031",
@@ -294,7 +698,39 @@
       "on_screen_text": "Items: \"Bedbound adult on the 2nd floor\", \"Adult who can't walk, stairs needed\", \"Newborn in the nursery\", \"Infant carried by staff\" → targets: Evacuation mattress · Evacuation chair · Newborn evacuation chair · Baby mover / apron",
       "animation": "none",
       "interaction": "Keyboard pick-and-place",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-032",
@@ -324,7 +760,39 @@
       "on_screen_text": "Generic own floor plan (Zones A–E). Place 6 labels: call point · extinguisher · fire hose reel · fire blanket · evacuation route · assembly point (\"you are here\" given)",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-033",
@@ -347,7 +815,67 @@
       "on_screen_text": "Inside assembly point · Outside assembly point · \"Find your unit's plan on the wall today.\" Horizontal → vertical → full (recap from 01)",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-040",
@@ -377,7 +905,39 @@
       "on_screen_text": "Own photo of a My Clinic dry-powder extinguisher. Regions: safety pin · pressure gauge (needle in green) · class / agent label · instructions panel (PASS) · last inspection tag",
       "animation": "fade-up",
       "interaction": "Each region: what to check",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-041",
@@ -400,7 +960,39 @@
       "on_screen_text": "Scenes: \"Sparking computer\", \"Pan of oil in the staff kitchen\", \"Burning cardboard\", \"Spilled solvent on fire\" → CO₂ · Wet chemical · Water / ABC powder · Foam",
       "animation": "none",
       "interaction": "Feedback ties agent to class (A, B, C, K)",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-050",
@@ -423,7 +1015,67 @@
       "on_screen_text": "Definition (p.21) · Code Orange = chemical or biological release · Rule from D1",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-051",
@@ -460,7 +1112,39 @@
       "on_screen_text": "Before = Chemical spill kit (red case) · After = Biological spill kit (yellow, biohazard) · caption: contents of each",
       "animation": "fade-up",
       "interaction": "Slider",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-052",
@@ -490,7 +1174,39 @@
       "on_screen_text": "3 nodes: (1) urine sample dropped in the lab corridor → biological kit, no Code Orange; (2) large spill of surface disinfectant above the threshold → Code Orange; (3) small amount of a reagent marked \"highly toxic\" → Code Orange …",
       "animation": "none",
       "interaction": "Feedback quotes the single rule (D1)",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-053",
@@ -513,7 +1229,39 @@
       "on_screen_text": "7 steps (B4): PPE per SDS → isolate & warn → contain the edges → absorb / neutralise → bag, seal, label → clean & report → restock the kit",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-060",
@@ -543,7 +1291,67 @@
       "on_screen_text": "Anonymised register table (5 rows, from B5): name · hazard class · purpose · quantity · SDS ✓ · NFPA H/F/R/S. Callouts on the SDS and NFPA columns",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "hs2-img-register",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-061",
@@ -629,7 +1437,39 @@
       "on_screen_text": "9 pairs: pictogram ↔ example hazard text from p.23 (e.g. Flame over circle ↔ \"oxidiser — can intensify fire\")",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-062",
@@ -659,7 +1499,39 @@
       "on_screen_text": "Row: \"Surface disinfectant X — SDS ✘\". \"You need it for a cleaning task now. What do you do?\" → don't use; report the missing SDS to your supervisor / EHS",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-063",
@@ -696,7 +1568,39 @@
       "on_screen_text": "Row shows NFPA 2-3-0. \"Where must it be stored?\" → approved flammable cabinet, away from heat",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-064",
@@ -747,7 +1651,39 @@
       "on_screen_text": "Intro: the store door is locked; four checks unlock it. Puzzles: (1) \"Health rating of the solvent on the diamond?\" → 2; (2) \"Which register row is missing its SDS? Enter the row number.\" → 4; (3) \"How many minutes …",
       "animation": "none",
       "interaction": "Debrief explains each answer and where to find it at work",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-070",
@@ -770,7 +1706,39 @@
       "on_screen_text": "Items: scented candle · personal fan heater · extension cord from home · e-cigarette · Facilities-approved power strip · BME-tagged suction unit · reheating lunch for 10 minutes · kettle in the staff pantry (approved) → Allowed / Prohibited (union …",
       "animation": "none",
       "interaction": "Feedback cites the fire risk",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hs2-080",
@@ -793,7 +1761,76 @@
       "on_screen_text": "hs2-o1…o7, weak below 70%",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "score-ring",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-1",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-2",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "advice",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-081",
@@ -816,7 +1853,67 @@
       "on_screen_text": "\"Name one hazard you'll check in your own area this week.\"",
       "animation": "fade-up",
       "interaction": "Reflection text",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "reflect",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "none",
+          "duration_ms": 260,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hs2-090",
@@ -846,7 +1943,82 @@
       "on_screen_text": "What you practised · Contact: Safety & Security (extension B9) · Next: module 04 / your unit's drill schedule",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "action-list",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "job-aids",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "sign-off",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     }
-  ]
+  ],
+  "motion_spec_version": "1.0",
+  "motion_generated": {
+    "generated_at": "2026-10-14",
+    "tool": "tools/build_motion_spec.py (vocabulary in tools/motion_spec.py)",
+    "note": "Derived from screen_type, layout, cue_targets and the legacy animation token. Rerun this tool after any storyboard or visual-plan change; do not edit the motion objects by hand. Every preset is implemented in tools/screen_generator/style.css and honours prefers-reduced-motion."
+  }
 }

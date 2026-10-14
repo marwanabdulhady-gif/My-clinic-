@@ -167,6 +167,14 @@
     ],
     "issues": []
   },
+  "motion_spec": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "spec_version": "1.0",
+    "screen_count": 22,
+    "issues": []
+  },
   "how": "Imported core.project / core.playbook from the server checkout (python-ulid installed only in a scratch target dir); lint_visual_plan(plan, brand) and lint_narration_script(script, plan) on the files in this folder; export_audio_script for audio-script-export.json.",
   "build_blocks": {
     "error_count": 0,

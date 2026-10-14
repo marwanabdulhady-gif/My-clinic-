@@ -11,6 +11,11 @@ Honesty note kept inside every report: ``tool`` names this port, ``tool_revision
 upstream revision the rules were ported from, and ``upstream_equivalence`` records that the
 server-side lint must still be rerun before Phase 4. The report never claims an MCP result.
 
+The ``motion_spec`` section is the exception: it is a **local** rule set
+(``tools/motion_spec.py``), not an upstream port, because the structured motion spec was
+introduced in this repository. It is reported under its own key so it is never mistaken for
+an edumints result.
+
 Usage:
     python3 elearning-course/scorm-plans/tools/lint_planning.py            # all eight packs
     python3 elearning-course/scorm-plans/tools/lint_planning.py 07_quality-safety-and-risk
@@ -22,6 +27,9 @@ import json
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from motion_spec import lint_plan_motion  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
@@ -290,6 +298,7 @@ def main():
         script_problems = validate_narration(script)
         vp = lint_visual_plan(plan, roles)
         ns = lint_narration_script(script, plan)
+        ms = lint_plan_motion(plan)
         report_path = story / "lint-report.json"
         existing = {}
         if report_path.exists():
@@ -299,7 +308,8 @@ def main():
                 existing = {}
         keep = {k: v for k, v in existing.items()
                 if k not in {"generated_at", "tool", "tool_revision", "brand_adapter", "model_validation",
-                             "visual_plan", "narration_script", "production_note", "upstream_equivalence"}}
+                             "visual_plan", "narration_script", "motion_spec", "production_note",
+                             "upstream_equivalence"}}
         out = {
             "generated_at": TODAY,
             "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
@@ -316,18 +326,22 @@ def main():
             },
             "visual_plan": vp,
             "narration_script": ns,
+            "motion_spec": ms,
             **keep,
             "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build "
                                "JSON and SCORM QA remain required.",
         }
         report_path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        status = "clean" if (vp["clean"] and ns["clean"] and not plan_problems and not script_problems) else "ISSUES"
+        status = "clean" if (vp["clean"] and ns["clean"] and ms["clean"]
+                             and not plan_problems and not script_problems) else "ISSUES"
         if status == "ISSUES":
             exit_code = 1
         print(f"{folder}: visual {vp['error_count']}e/{vp['warn_count']}w · "
-              f"narration {ns['error_count']}e/{ns['warn_count']}w · model ok "
+              f"narration {ns['error_count']}e/{ns['warn_count']}w · "
+              f"motion {ms['error_count']}e/{ms['warn_count']}w · model ok "
               f"{out['model_validation']['visual_plan'] and out['model_validation']['narration_script']} · {status}")
-        for item in vp["issues"] + ns["issues"] + [issue("error", "model", p) for p in plan_problems + script_problems]:
+        for item in (vp["issues"] + ns["issues"] + ms["issues"]
+                     + [issue("error", "model", p) for p in plan_problems + script_problems]):
             print(f"    [{item['severity']}] {item['code']}: {item['message']} ({item['path']})")
     sys.exit(exit_code)
 

@@ -40,7 +40,85 @@
       "on_screen_text": "\"Documentation & coding that gets approved\" · \"RCM Part A\"",
       "animation": "fade",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "orient",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "logo",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "title",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "subtitle",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "companions",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "tagline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "pulse-once",
+          "target": "module-chip",
+          "duration_ms": 520,
+          "easing": "spring"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-001",
@@ -84,7 +162,67 @@
       "on_screen_text": "\"The payer doesn't see your patient. The payer sees your note.\" · Clinical decision + documentation + coding = optimised payment",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "rcma-img-reviewer",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-002",
@@ -107,7 +245,67 @@
       "on_screen_text": "\"What do you think is the #1 cause of rejections at My Clinic?\" (4 causes)",
       "animation": "fade-up",
       "interaction": "Reflection: \"Hold that thought — we'll check it later.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "reflect",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "none",
+          "duration_ms": 260,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-010",
@@ -130,7 +328,76 @@
       "on_screen_text": "Always: chief complaint & HPI · relevant findings · link symptoms to the working diagnosis · labs/imaging when needed · Avoid: vague notes · diagnosis without support · copy-paste · \"fatigue only\", \"body pain\"",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "tab-bar",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "panel-1",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "panel-2",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "panel-3",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-011",
@@ -181,7 +448,39 @@
       "on_screen_text": "Before: \"Patient given IV fluids.\" · After: \"Dehydration signs (HR 112, dry mucosa) — IV fluids started for stabilisation.\" Rendered as two note cards (SVG)",
       "animation": "fade-up",
       "interaction": "Slider; caption: same treatment, different outcome",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-012",
@@ -204,7 +503,39 @@
       "on_screen_text": "Order: Chief complaint → HPI → relevant past history → clinical findings → assessment → plan with duration & follow-up",
       "animation": "none",
       "interaction": "Feedback: \"Good documentation tells a story, not just a diagnosis.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-013",
@@ -227,7 +558,39 @@
       "on_screen_text": "\"Which note best justifies a CBC?\" options: \"Routine CBC\" / \"Fatigue\" / \"Fatigue for 6 weeks, pallor, menorrhagia — rule out anaemia\" ✔ / \"Patient requested blood test\"",
       "animation": "none",
       "interaction": "Feedback explains what the reviewer asks: why was this done?",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-020",
@@ -250,7 +613,67 @@
       "on_screen_text": "Primary = main condition treated · Secondary = complexity · Specific code = higher acceptance · #1 rejection cause: non-specific symptom coding",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-021",
@@ -273,7 +696,39 @@
       "on_screen_text": "Presentations ↔ codes (final codes per B4): \"Vomiting + diarrhoea, 2 days, dehydration\" ↔ gastroenteritis code · \"Sore throat, fever, tonsillar exudate\" ↔ J03 Acute tonsillitis · \"Headache, BP 168/102 on two readings\" ↔ I10 Hypertension · \"Polyuria, HbA1c 8.1%\" …",
       "animation": "none",
       "interaction": "Feedback: \"Don't stop at the symptom.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-022",
@@ -296,7 +751,85 @@
       "on_screen_text": "Fever 3 days + dysuria + suprapubic pain → urinalysis and culture ordered → document a provisional diagnosis linked to the findings → confirm or change when results return. Self-explanation: \"Why is a provisional diagnosis better than 'fever' here?\"",
       "animation": "fade-up",
       "interaction": "Unscored",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "problem",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-1",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-2",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-3",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "rule",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-023",
@@ -319,7 +852,39 @@
       "on_screen_text": "Items: E66 Obesity (BMI 31) · L70 Acne · L66 Hair loss · L21 Seborrhoeic dermatitis · N97 Female infertility · General check-up · J03 Acute tonsillitis · E11 Type 2 diabetes · Obesity with BMI 42 referred for bariatric …",
       "animation": "none",
       "interaction": "Feedback: \"Link to a covered condition when it truly exists, or don't use it as the main diagnosis.\"",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-030",
@@ -342,7 +907,67 @@
       "on_screen_text": "Follow initial work-up protocols · No supplements without indication · Repeat only at evidence-based intervals · If you deviate, document why",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-031",
@@ -372,7 +997,39 @@
       "on_screen_text": "Node 1: 45-year-old with multi-joint pain, first visit, no history → order everything (CRP, ESR, anti-DNA, anti-Ro, anti-La) vs initial work-up (CRP, ESR) ✔. Node 2: same patient, rheumatoid arthritis already diagnosed by a rheumatologist elsewhere → document the history …",
       "animation": "none",
       "interaction": "Feedback quotes the script's example (B10)",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-032",
@@ -395,7 +1052,39 @@
       "on_screen_text": "\"Your diabetic patient's HbA1c was done 6 weeks ago. He asks for another.\" Best action → don't repeat yet unless there's a documented clinical reason; next test at the approved interval (B3)",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-033",
@@ -418,7 +1107,39 @@
       "on_screen_text": "\"Prescribing a combined multivitamin 'for general wellness' with no documented deficiency is likely to be rejected.\" → True (B8)",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-040",
@@ -441,7 +1162,39 @@
       "on_screen_text": "Rejection notes → causes: \"No indication for the MRI\" → missing justification · \"Diagnosis: fever\" → non-specific · \"No examination findings recorded\" → incomplete · \"Antibiotic billed for a viral URTI code\" → mismatch (+ 4 more)",
       "animation": "none",
       "interaction": "Feedback reveals the poll answer from rcma-002",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-041",
@@ -464,7 +1217,67 @@
       "on_screen_text": "Benefits are added and amended often · Know what's covered, adapt documentation · \"If you don't document it properly, it won't be covered — even if it's clinically correct.\" · Next: Part B covers the new EBP",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-042",
@@ -487,7 +1300,39 @@
       "on_screen_text": "\"Which hormonal assessment is likely to be approved?\" → menopausal symptoms ✔ vs PCOS work-up (B6)",
       "animation": "none",
       "interaction": "Feedback: the same service can be accepted or rejected depending on indication and documentation",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-050",
@@ -524,7 +1369,39 @@
       "on_screen_text": "3 invented notes, one node each: (1) \"Body pain. Vit D + B12 + multivitamin.\" → choose the best rewrite (findings, deficiency evidence, single indicated supplement, follow-up); (2) \"Cough. Augmentin.\" → choose specific diagnosis + findings justifying antibiotic; (3) \"Check-up …",
       "animation": "none",
       "interaction": "Debrief: the 6-point checklist from the script's summary",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "rcma-090",
@@ -547,7 +1424,76 @@
       "on_screen_text": "rcma-o1…o5, weak below 70%",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "score-ring",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-1",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-2",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "advice",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "rcma-091",
@@ -584,7 +1530,82 @@
       "on_screen_text": "✔ Be specific; avoid uncovered codes and combined supplements · ✔ Full data + plan with duration and outcome · ✔ Justify every service with a specific code; provisional diagnosis if needed · ✔ Think like a clinician and a …",
       "animation": "fade-up",
       "interaction": "show_score",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "action-list",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "job-aids",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "sign-off",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     }
-  ]
+  ],
+  "motion_spec_version": "1.0",
+  "motion_generated": {
+    "generated_at": "2026-10-14",
+    "tool": "tools/build_motion_spec.py (vocabulary in tools/motion_spec.py)",
+    "note": "Derived from screen_type, layout, cue_targets and the legacy animation token. Rerun this tool after any storyboard or visual-plan change; do not edit the motion objects by hand. Every preset is implemented in tools/screen_generator/style.css and honours prefers-reduced-motion."
+  }
 }
