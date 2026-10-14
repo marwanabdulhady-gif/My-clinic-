@@ -1,0 +1,539 @@
+{
+  "module_id": "MC08-ehr-consultation",
+  "module_title": "My Clinic — EHR Consultation Workflow: Guided Simulation",
+  "brand_name": "My Clinic",
+  "audience": "Physicians and clinical staff who document consultations in the clinic EHR",
+  "objective": "See the approved Phase 1 observable objectives; each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "ehr-000",
+      "screen_type": "title_slide",
+      "purpose": "Open",
+      "visual_concept": "Official navy title gradient with supplied white My Clinic logo, large Montserrat course title, and a cropped white petal watermark. Omar is placed l1 half-body bottom-right.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "Official navy title background supplied by My Clinic; no content is baked into it.",
+          "source": "client",
+          "alt_text": "Decorative navy title gradient.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal white logo lock-up.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets.",
+          "source": "svg",
+          "alt_text": "Checklist showing safe test-environment screenshot requirements.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-welcome at L1 half-body bottom-right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"EHR consultation workflow\" · \"Guided practice on a test patient\"",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-001",
+      "screen_type": "content_slide",
+      "purpose": "Why + disclaimer",
+      "visual_concept": "A clean My Clinic content stage for why + disclaimer, using a navy header, concise keyword cards and one Dark teal #006E78 highlight. Omar is placed l3 right column.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets.",
+          "source": "svg",
+          "alt_text": "Checklist showing safe test-environment screenshot requirements.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-explaining at L3 right column.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Complete, linked, on the day · Disclaimer (B7) · \"Everything here is a test patient.\"",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-002",
+      "screen_type": "timeline",
+      "purpose": "Workflow map",
+      "visual_concept": "A clean My Clinic content stage for workflow map, using a navy header, concise keyword cards and one Dark teal #006E78 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "9 steps as events: 1 Open · 2 Document · 3 Diagnose · 4 Order · 5 Review orders · 6 Summary · 7 Educate · 8 Refer & follow up · 9 Complete",
+      "animation": "fade-up",
+      "interaction": "Click through",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-010",
+      "screen_type": "simulation",
+      "purpose": "Open the consultation",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for open the consultation.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: today's consultation list → click the test patient. Step 2: open the consultation form",
+      "animation": "none",
+      "interaction": "Hints name the panel",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-011",
+      "screen_type": "hotspot",
+      "purpose": "Mandatory fields",
+      "visual_concept": "A high-clarity central visual for mandatory fields, with large keyboard-reachable hotspot markers, a short instruction panel and no text baked into the image.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Consultation form screenshot; regions = each mandatory section (B4): chief complaint · duration · HPI · past history (allergies, medications) · examination · plan of care",
+      "animation": "fade-up",
+      "interaction": "Each region: what to write, \"save as you go\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-012",
+      "screen_type": "mcq",
+      "purpose": "Why it won't complete",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Dark teal #006E78 progress cue for why it won't complete.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"You press Complete and the system refuses. The form shows chief complaint, HPI and examination filled in.\" Most likely cause → plan of care (or another mandatory field per B4) is empty",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-020",
+      "screen_type": "simulation",
+      "purpose": "Add the primary diagnosis",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for add the primary diagnosis. Omar is placed l5 avatar above the simulation.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-neutral + tip card at L5 avatar above the simulation.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: click Add Diagnosis. Step 2: type E11 (accepted: E11, e11, type 2 diabetes). Step 3: choose Type 2 diabetes mellitus from results. Step 4: mark as primary / problem; onset, chronicity. Step 5: click the star to add …",
+      "animation": "none",
+      "interaction": "Feedback: \"Specific primary diagnosis = fewer rejections (module 05).\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-030",
+      "screen_type": "content_slide",
+      "purpose": "How to find an order",
+      "visual_concept": "A clean My Clinic content stage for how to find an order, using a navy header, concise keyword cards and one Dark teal #006E78 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Search by service · lab · referral · package · order profile · Form Wizard reviews a package before you finalise",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-031",
+      "screen_type": "simulation",
+      "purpose": "Medication order",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for medication order.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: open order search. Step 2: type the drug name (B6 example). Step 3: set route, dose, frequency, duration. Step 4: choose the assessed diagnosis (E11). Step 5: add instructions to the patient. Step 6: press Order",
+      "animation": "none",
+      "interaction": "Feedback: \"The order isn't placed until you press Order.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-032",
+      "screen_type": "simulation",
+      "purpose": "Lab package via Form Wizard",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for lab package via form wizard.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: search the package (B6). Step 2: Form Wizard step 1 — review items. Step 3: remove an item not needed. Step 4: finalise",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-033",
+      "screen_type": "mcq",
+      "purpose": "Non-formulary",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Dark teal #006E78 progress cue for non-formulary.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"You order ⚠ PENDING non-formulary item, B6. The system flags it. What does that mean?\" → it needs approval before it can be dispensed; consider a formulary alternative",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-034",
+      "screen_type": "mcq",
+      "purpose": "Why link to a diagnosis",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Dark teal #006E78 progress cue for why link to a diagnosis.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Why must each order be linked to the assessed diagnosis?\" → it shows medical necessity to the reviewer and keeps the record consistent; unlinked orders are a common rejection cause",
+      "animation": "none",
+      "interaction": "Link to module 05",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-040",
+      "screen_type": "simulation",
+      "purpose": "Consultation summary",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for consultation summary.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: open Consultation Summary. Step 2: check lab orders, special tests, referrals. Step 3: Download and Print",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-041",
+      "screen_type": "simulation",
+      "purpose": "SMS education",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for sms education.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: open Send SMS – educational material. Step 2: choose department. Step 3: type E11. Step 4: select the leaflet. Step 5: Send (B8)",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-042",
+      "screen_type": "content_slide",
+      "purpose": "Patient & family education",
+      "visual_concept": "A clean My Clinic content stage for patient & family education, using a navy header, concise keyword cards and one Dark teal #006E78 highlight. Noor is placed l3 tip card.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Checklist: infection control · medication use · disease/condition · treatment · health & lifestyle · other · \"Required before finalising\"",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-050",
+      "screen_type": "simulation",
+      "purpose": "Internal referral + follow-up",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Dark teal #006E78 progress cue for internal referral + follow-up. Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-neutral at L5 avatar.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Step 1: open referral. Step 2: specialty = Endocrinology. Step 3: type the reason (approved example phrase, e.g. \"poorly controlled type 2 diabetes\"; variants listed in input_accepted). Step 4: type = Internal; timing = within a month (B9). Step 5 …",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-051",
+      "screen_type": "sorting",
+      "purpose": "The whole workflow",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Dark teal #006E78 progress cue for the whole workflow.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "9 steps from ehr-002 in order",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-052",
+      "screen_type": "content_slide",
+      "purpose": "Complete the encounter",
+      "visual_concept": "A clean My Clinic content stage for complete the encounter, using a navy header, concise keyword cards and one Dark teal #006E78 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Record saved successfully\" → Complete · What happens if a field is missing · Where to get help (IT service desk)",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-090",
+      "screen_type": "results_breakdown",
+      "purpose": "Results",
+      "visual_concept": "A calm results panel showing each objective as an HTML progress row, with plain-language next steps and a small companion feedback card.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "ehr-o1…o5",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ehr-091",
+      "screen_type": "summary",
+      "purpose": "Close",
+      "visual_concept": "A confident light closing screen with four short takeaways, the supplied My Clinic logo, and space for the next-module hand-off. Omar is placed l6 right.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ehr-pdf-quickref: 1-page EHR consultation quick-reference card",
+          "source": "svg",
+          "alt_text": "Close visual.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-success at L6 right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Complete, specific, linked · Links: EHR quick-reference card (PDF), IT service desk",
+      "animation": "fade-up",
+      "interaction": "show_score",
+      "cue_targets": []
+    }
+  ]
+}

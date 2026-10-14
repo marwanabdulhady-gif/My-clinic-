@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC04-operations-my-care",
+    "screen_count": 13,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC04-operations-my-care",
+    "wpm": 140,
+    "total_est_sec": 270.9,
+    "total_est_min": 4.5,
+    "screens": [
+      {
+        "screen_id": "ops-000",
+        "part": null,
+        "words": 29,
+        "est_sec": 12.4
+      },
+      {
+        "screen_id": "ops-001",
+        "part": null,
+        "words": 58,
+        "est_sec": 24.9
+      },
+      {
+        "screen_id": "ops-002",
+        "part": null,
+        "words": 50,
+        "est_sec": 21.4
+      },
+      {
+        "screen_id": "ops-010",
+        "part": null,
+        "words": 94,
+        "est_sec": 40.3
+      },
+      {
+        "screen_id": "ops-011",
+        "part": null,
+        "words": 72,
+        "est_sec": 30.9
+      },
+      {
+        "screen_id": "ops-020",
+        "part": null,
+        "words": 93,
+        "est_sec": 39.9
+      },
+      {
+        "screen_id": "ops-021",
+        "part": null,
+        "words": 59,
+        "est_sec": 25.3
+      },
+      {
+        "screen_id": "ops-022",
+        "part": null,
+        "words": 35,
+        "est_sec": 15.0
+      },
+      {
+        "screen_id": "ops-030",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ops-031",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "ops-032",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ops-033",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ops-090",
+        "part": null,
+        "words": 52,
+        "est_sec": 22.3
+      }
+    ],
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
+}

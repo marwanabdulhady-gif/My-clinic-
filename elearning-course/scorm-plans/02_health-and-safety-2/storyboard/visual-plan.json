@@ -1,0 +1,663 @@
+{
+  "module_id": "MC02-safety-in-practice",
+  "module_title": "My Clinic — Safety in Practice: Hazard, Fire & Chemical Lab",
+  "brand_name": "My Clinic",
+  "audience": "All new staff, after module 01",
+  "objective": "See the approved Phase 1 observable objectives; each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "hs2-000",
+      "screen_type": "title_slide",
+      "purpose": "Open",
+      "visual_concept": "Official navy title gradient with supplied white My Clinic logo, large Montserrat course title, and a cropped white petal watermark. Noor is placed l1 half-body bottom-right.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "Official navy title background supplied by My Clinic; no content is baked into it.",
+          "source": "client",
+          "alt_text": "Decorative navy title gradient.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal white logo lock-up.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-welcome at L1 half-body bottom-right.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Safety in Practice\" · \"Hazard, fire and chemical lab\"",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-001",
+      "screen_type": "content_slide",
+      "purpose": "Frame the lab",
+      "visual_concept": "A clean My Clinic content stage for frame the lab, using a navy header, concise keyword cards and one Ambitious teal #008C99 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Safety = measures that protect life, health and environment.\" · \"Today you practise, not read.\"",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-010",
+      "screen_type": "worked_example",
+      "purpose": "Teach risk scoring",
+      "visual_concept": "A step-by-step worked example for teach risk scoring, using numbered white cards, restrained navy connectors and a single Ambitious teal #008C99 emphasis.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Problem: wet floor at the clinic entrance during rain. Steps: (1) name the hazard; (2) likelihood 4 (busy entrance) ; (3) impact 3 (fall injury); (4) risk = 4 × 3 = 12; (5) control: mat + sign + mop …",
+      "animation": "fade-up",
+      "interaction": "Unscored self-explanation",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-011",
+      "screen_type": "hotspot",
+      "purpose": "Find the hazards",
+      "visual_concept": "A high-clarity central visual for find the hazards, with large keyboard-reachable hotspot markers, a short instruction panel and no text baked into the image. Noor is placed l3 tip card.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-storeroom: Generated 2026-10-14 — Safety Manager must confirm the six-hotspot answer key before use.",
+          "source": "generate",
+          "alt_text": "Clinic store room with cables, high boxes, blocked exit, unlabelled bottle, spill by socket and a person on a wheeled chair.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "New illustration of a store room/office (based on p.4 idea). Answer key (6 regions): trailing cables across the walkway · boxes stacked above shoulder height · blocked fire exit / extinguisher · unlabelled bottle on a shelf · liquid spill …",
+      "animation": "fade-up",
+      "interaction": "Each region explains the hazard and the control",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-012",
+      "screen_type": "mcq",
+      "purpose": "Prioritise",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for prioritise.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Which hazard in the room do you report and fix first?\" → blocked fire exit (high impact for everyone)",
+      "animation": "none",
+      "interaction": "Feedback compares likelihood and impact of each option",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-013",
+      "screen_type": "fill_blank",
+      "purpose": "Score a risk",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for score a risk.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Likelihood 2, impact 5. Risk score = ___\" → accepted: 10",
+      "animation": "none",
+      "interaction": "Feedback: \"Low likelihood, but severe harm still needs a control.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-020",
+      "screen_type": "flashcards",
+      "purpose": "Bilingual code poster",
+      "visual_concept": "A white content stage for bilingual code poster, with one open item at a time, navy structure, and a Ambitious teal #008C99 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "10 colour codes + 2 announcements; front EN + AR name and colour chip, back meaning + extension (D2). Code Blue 2222",
+      "animation": "fade-up",
+      "interaction": "Flip",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-030",
+      "screen_type": "game",
+      "purpose": "Code Red drill",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Ambitious teal #008C99 progress cue for code red drill. Noor + Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar (host); char-omar-avatar (node 2) at L5 avatar.",
+          "source": "client",
+          "alt_text": "Noor + Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Setting: afternoon clinic, smoke from a consultation room. Nodes: (1) Rescue — patient in the room vs. phone first; (2) Alarm — shout \"Code Red\", pull the call point, then choose the complete call script (code type + location + …",
+      "animation": "none",
+      "interaction": "Each wrong choice shows the poster rule (pp.7–11) as feedback; debrief lists the RACE step for each decision",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-031",
+      "screen_type": "drag_drop",
+      "purpose": "Tool ↔ patient",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for tool ↔ patient.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Items: \"Bedbound adult on the 2nd floor\", \"Adult who can't walk, stairs needed\", \"Newborn in the nursery\", \"Infant carried by staff\" → targets: Evacuation mattress · Evacuation chair · Newborn evacuation chair · Baby mover / apron",
+      "animation": "none",
+      "interaction": "Keyboard pick-and-place",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-032",
+      "screen_type": "labeled_diagram",
+      "purpose": "Read a plan",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for read a plan.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Generic own floor plan (Zones A–E). Place 6 labels: call point · extinguisher · fire hose reel · fire blanket · evacuation route · assembly point (\"you are here\" given)",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-033",
+      "screen_type": "content_slide",
+      "purpose": "Assembly points",
+      "visual_concept": "A clean My Clinic content stage for assembly points, using a navy header, concise keyword cards and one Ambitious teal #008C99 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Inside assembly point · Outside assembly point · \"Find your unit's plan on the wall today.\" Horizontal → vertical → full (recap from 01)",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-040",
+      "screen_type": "hotspot",
+      "purpose": "Read the label",
+      "visual_concept": "A high-clarity central visual for read the label, with large keyboard-reachable hotspot markers, a short instruction panel and no text baked into the image.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Own photo of a My Clinic dry-powder extinguisher. Regions: safety pin · pressure gauge (needle in green) · class / agent label · instructions panel (PASS) · last inspection tag",
+      "animation": "fade-up",
+      "interaction": "Each region: what to check",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-041",
+      "screen_type": "drag_drop",
+      "purpose": "Match the fire",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for match the fire.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Scenes: \"Sparking computer\", \"Pan of oil in the staff kitchen\", \"Burning cardboard\", \"Spilled solvent on fire\" → CO₂ · Wet chemical · Water / ABC powder · Foam",
+      "animation": "none",
+      "interaction": "Feedback ties agent to class (A, B, C, K)",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-050",
+      "screen_type": "content_slide",
+      "purpose": "What is HAZMAT; Code Orange",
+      "visual_concept": "A clean My Clinic content stage for what is hazmat; code orange, using a navy header, concise keyword cards and one Ambitious teal #008C99 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Definition (p.21) · Code Orange = chemical or biological release · Rule from D1",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-051",
+      "screen_type": "image_compare",
+      "purpose": "Two kits",
+      "visual_concept": "A paired before-and-after comparison for two kits, with a draggable divider, descriptive HTML captions and a clean light background.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Before = Chemical spill kit (red case) · After = Biological spill kit (yellow, biohazard) · caption: contents of each",
+      "animation": "fade-up",
+      "interaction": "Slider",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-052",
+      "screen_type": "decision_scenario",
+      "purpose": "Spill triage",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Ambitious teal #008C99 progress cue for spill triage. Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "3 nodes: (1) urine sample dropped in the lab corridor → biological kit, no Code Orange; (2) large spill of surface disinfectant above the threshold → Code Orange; (3) small amount of a reagent marked \"highly toxic\" → Code Orange …",
+      "animation": "none",
+      "interaction": "Feedback quotes the single rule (D1)",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-053",
+      "screen_type": "sorting",
+      "purpose": "Spill-kit procedure",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for spill-kit procedure.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "7 steps (B4): PPE per SDS → isolate & warn → contain the edges → absorb / neutralise → bag, seal, label → clean & report → restock the kit",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-060",
+      "screen_type": "content_slide",
+      "purpose": "How to read a register",
+      "visual_concept": "A clean My Clinic content stage for how to read a register, using a navy header, concise keyword cards and one Ambitious teal #008C99 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Anonymised register table (5 rows, from B5): name · hazard class · purpose · quantity · SDS ✓ · NFPA H/F/R/S. Callouts on the SDS and NFPA columns",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-061",
+      "screen_type": "matching",
+      "purpose": "GHS hazard statements",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for ghs hazard statements.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "9 pairs: pictogram ↔ example hazard text from p.23 (e.g. Flame over circle ↔ \"oxidiser — can intensify fire\")",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-062",
+      "screen_type": "mcq",
+      "purpose": "Register decision",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for register decision.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Row: \"Surface disinfectant X — SDS ✘\". \"You need it for a cleaning task now. What do you do?\" → don't use; report the missing SDS to your supervisor / EHS",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-063",
+      "screen_type": "mcq",
+      "purpose": "NFPA in practice",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for nfpa in practice.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Row shows NFPA 2-3-0. \"Where must it be stored?\" → approved flammable cabinet, away from heat",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-064",
+      "screen_type": "escape_room",
+      "purpose": "Chemical store lockout (capstone)",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for chemical store lockout (capstone). Noor is placed l5 avatar beside hint text.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-tip (hints) at L5 avatar beside hint text.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Intro: the store door is locked; four checks unlock it. Puzzles: (1) \"Health rating of the solvent on the diamond?\" → 2; (2) \"Which register row is missing its SDS? Enter the row number.\" → 4; (3) \"How many minutes …",
+      "animation": "none",
+      "interaction": "Debrief explains each answer and where to find it at work",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-070",
+      "screen_type": "drag_drop",
+      "purpose": "Allowed or prohibited?",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Ambitious teal #008C99 progress cue for allowed or prohibited?.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Items: scented candle · personal fan heater · extension cord from home · e-cigarette · Facilities-approved power strip · BME-tagged suction unit · reheating lunch for 10 minutes · kettle in the staff pantry (approved) → Allowed / Prohibited (union …",
+      "animation": "none",
+      "interaction": "Feedback cites the fire risk",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-080",
+      "screen_type": "results_breakdown",
+      "purpose": "Per-objective results",
+      "visual_concept": "A calm results panel showing each objective as an HTML progress row, with plain-language next steps and a small companion feedback card.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "hs2-o1…o7, weak below 70%",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-081",
+      "screen_type": "poll",
+      "purpose": "Commit",
+      "visual_concept": "A clean My Clinic content stage for commit, using a navy header, concise keyword cards and one Ambitious teal #008C99 highlight.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Name one hazard you'll check in your own area this week.\"",
+      "animation": "fade-up",
+      "interaction": "Reflection text",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hs2-090",
+      "screen_type": "summary",
+      "purpose": "Close",
+      "visual_concept": "A confident light closing screen with four short takeaways, the supplied My Clinic logo, and space for the next-module hand-off. Noor + Omar is placed l6.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-success + char-omar-avatar-happy at L6.",
+          "source": "client",
+          "alt_text": "Noor + Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "What you practised · Contact: Safety & Security (extension B9) · Next: module 04 / your unit's drill schedule",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    }
+  ]
+}

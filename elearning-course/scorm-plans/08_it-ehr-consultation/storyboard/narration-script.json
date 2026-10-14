@@ -1,0 +1,189 @@
+{
+  "module_id": "MC08-ehr-consultation",
+  "language": "en",
+  "wpm": 140,
+  "voice": {
+    "provider": "external",
+    "voice_id": null,
+    "persona": "an experienced My Clinic colleague coaching a learner in their first week",
+    "gender": null
+  },
+  "lexicon": {
+    "ALARA": "ah-LAR-ah",
+    "AREC": "A-R-E-C",
+    "BME": "Biomedical Engineering",
+    "BMI": "B-M-I",
+    "CBAHI": "see-bah-hee",
+    "CCHI": "C-C-H-I",
+    "CDI": "C-D-I",
+    "CHI": "C-H-I",
+    "EBP": "E-B-P",
+    "EHR": "E-H-R",
+    "ERT": "E-R-T",
+    "FMS": "F-M-S",
+    "GHS": "G-H-S",
+    "HAZMAT": "haz-mat",
+    "HPI": "history of present illness",
+    "ICD": "I-C-D",
+    "ICD-10": "I-C-D ten",
+    "KPI": "K-P-I",
+    "MOH": "M-O-H",
+    "NFPA": "N-F-P-A",
+    "NOOR": "noor",
+    "OHS": "O-H-S",
+    "OMAR": "OH-mar",
+    "PASS": "pass",
+    "PPE": "P-P-E",
+    "PXO": "patient experience officer",
+    "RACE": "race",
+    "RCM": "R-C-M",
+    "RSO": "R-S-O",
+    "SAR": "Saudi riyals",
+    "SCORM": "scorm",
+    "SDS": "S-D-S",
+    "SMS": "S-M-S",
+    "TAT": "turnaround time"
+  },
+  "segments": [
+    {
+      "screen_id": "ehr-000",
+      "narration": "OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "on_screen_text": "\"EHR consultation workflow\" · \"Guided practice on a test patient\"",
+      "target_sec": 12.0,
+      "tone": "warm"
+    },
+    {
+      "screen_id": "ehr-001",
+      "narration": "OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "on_screen_text": "Complete, linked, on the day · Disclaimer (B7) · \"Everything here is a test patient.\"",
+      "target_sec": 25.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-002",
+      "narration": "OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.",
+      "on_screen_text": "9 steps as events: 1 Open · 2 Document · 3 Diagnose · 4 Order · 5 Review orders · 6 Summary · 7 Educate · 8 Refer & follow up · 9 Complete",
+      "target_sec": 30.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-010",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
+      "on_screen_text": "Step 1: today's consultation list → click the test patient. Step 2: open the consultation form",
+      "target_sec": 10.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-011",
+      "narration": "OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "on_screen_text": "Consultation form screenshot; regions = each mandatory section (B4): chief complaint · duration · HPI · past history (allergies, medications) · examination · plan of care",
+      "target_sec": 25.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-012",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "on_screen_text": "\"You press Complete and the system refuses. The form shows chief complaint, HPI and examination filled in.\" Most likely cause → plan of care (or another mandatory field per B4) is empty",
+      "target_sec": 8.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-020",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
+      "on_screen_text": "Step 1: click Add Diagnosis. Step 2: type E11 (accepted: E11, e11, type 2 diabetes). Step 3: choose Type 2 diabetes mellitus from results. Step 4: mark as primary / problem; onset, chronicity. Step 5: click the star to add …",
+      "target_sec": 20.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-030",
+      "narration": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "on_screen_text": "Search by service · lab · referral · package · order profile · Form Wizard reviews a package before you finalise",
+      "target_sec": 25.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-031",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
+      "on_screen_text": "Step 1: open order search. Step 2: type the drug name (B6 example). Step 3: set route, dose, frequency, duration. Step 4: choose the assessed diagnosis (E11). Step 5: add instructions to the patient. Step 6: press Order",
+      "target_sec": 15.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-032",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "on_screen_text": "Step 1: search the package (B6). Step 2: Form Wizard step 1 — review items. Step 3: remove an item not needed. Step 4: finalise",
+      "target_sec": 10.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-033",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "on_screen_text": "\"You order ⚠ PENDING non-formulary item, B6. The system flags it. What does that mean?\" → it needs approval before it can be dispensed; consider a formulary alternative",
+      "target_sec": 8.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-034",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "on_screen_text": "\"Why must each order be linked to the assessed diagnosis?\" → it shows medical necessity to the reviewer and keeps the record consistent; unlinked orders are a common rejection cause",
+      "target_sec": 8.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-040",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
+      "on_screen_text": "Step 1: open Consultation Summary. Step 2: check lab orders, special tests, referrals. Step 3: Download and Print",
+      "target_sec": 10.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-041",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised.",
+      "on_screen_text": "Step 1: open Send SMS – educational material. Step 2: choose department. Step 3: type E11. Step 4: select the leaflet. Step 5: Send (B8)",
+      "target_sec": 12.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-042",
+      "narration": "NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context.",
+      "on_screen_text": "Checklist: infection control · medication use · disease/condition · treatment · health & lifestyle · other · \"Required before finalising\"",
+      "target_sec": 20.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-050",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits.",
+      "on_screen_text": "Step 1: open referral. Step 2: specialty = Endocrinology. Step 3: type the reason (approved example phrase, e.g. \"poorly controlled type 2 diabetes\"; variants listed in input_accepted). Step 4: type = Internal; timing = within a month (B9). Step 5 …",
+      "target_sec": 15.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-051",
+      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "on_screen_text": "9 steps from ehr-002 in order",
+      "target_sec": 8.0,
+      "tone": "encouraging"
+    },
+    {
+      "screen_id": "ehr-052",
+      "narration": "OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "on_screen_text": "\"Record saved successfully\" → Complete · What happens if a field is missing · Where to get help (IT service desk)",
+      "target_sec": 20.0,
+      "tone": "calm, practical"
+    },
+    {
+      "screen_id": "ehr-090",
+      "narration": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+      "on_screen_text": "ehr-o1…o5",
+      "target_sec": 10.0,
+      "tone": "supportive"
+    },
+    {
+      "screen_id": "ehr-091",
+      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+      "on_screen_text": "Complete, specific, linked · Links: EHR quick-reference card (PDF), IT service desk",
+      "target_sec": 15.0,
+      "tone": "confident"
+    }
+  ]
+}

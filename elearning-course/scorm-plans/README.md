@@ -16,14 +16,14 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 
 | # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Storyboard status |
 |---|---|---|---|---|---|---|
-| 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Plan ready, blocked on Phase 0 |
-| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Plan ready, blocked on Phase 0 |
+| 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Storyboard v0.2 complete — SME/source-lock review |
+| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Storyboard v0.2 complete — SME/source-lock review |
 | 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.1 drafted — SME review |
-| 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Plan ready, blocked on Phase 0 |
-| 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Plan ready, blocked on Phase 0 |
-| 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Plan ready, blocked on Phase 0 |
-| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Plan ready, blocked on Phase 0 |
-| 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Plan ready, blocked on Phase 0 and PHI removal |
+| 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Storyboard v0.2 complete — SME/source-lock review |
+| 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Storyboard v0.2 complete — SME/source-lock review |
+| 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Storyboard v0.2 complete — SME/source-lock review |
+| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Storyboard v0.1 drafted — SME/source-lock review |
+| 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock/DPO review |
 
 **Why 05 and 06 are two packages, not one.** Both files come from the same RCM session, but they carry different content: 05 (the script) teaches documentation and coding; 06 (the 2026 deck) adds the new EBP benefits and the rejection log. Splitting them avoids repeating the same screens and lets RCM staff take Part B alone.
 
@@ -32,20 +32,32 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 Suggested learning path (matches `../README.md` §4):
 `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
 
+### Storyboard-review artefacts (14 October 2026)
+
+Six newly completed packs — **01, 02, 04, 05, 06 and 08** — are indexed on the
+[programme production board](00_program/storyboard-production-board.md). Each provides a complete
+screen-card storyboard, branded HTML visual board, editable narration script, visual plan, voice-talent
+export, asset register and planning lint report. The visual-plan and narration-script reports are clean
+for those six packs; this is a **documentation-quality result only**, not SME/policy approval or a build
+release. Client-shareable Word renderings for all eight modules are in
+[`client-review/`](client-review/). The screen-level authoring and visual sign-off queue is in
+[`00_program/storyboard-review-register.md`](00_program/storyboard-review-register.md) with a
+[tracker-import CSV](00_program/storyboard-review-register.csv).
+
 ---
 
 ## 2. The phase model used in every module folder
 
 Every module folder has the same files, so the team can track all eight packages on one board.
 
-**Phase 2 is two steps.** `phase-2-storyboard.md` is the *screen list*: one row per screen — id, type, purpose, points, source. Once the list is approved, the [storyboard template](00_program/storyboard-template/) turns each row into a finished **screen card** in `<module folder>/storyboard/storyboard.md`: full on-screen wording, visual brief, animation/reveal behaviour, interaction and scoring with feedback, the complete narration script, accessibility notes, and the edumints JSON for that screen. Write one module per run. The cards, not the list, are what the developer builds from.
+**Phase 2 is two steps.** `phase-2-storyboard.md` is the *screen list*: one row per screen — id, type, purpose, points, source. Once the list is approved, the [storyboard template](00_program/storyboard-template/) turns each row into a finished **screen card** in `<module folder>/storyboard/storyboard.md`: full on-screen wording, visual brief, animation/reveal behaviour, interaction and scoring with feedback, the complete narration script, accessibility notes, review build metadata, and companion visual/narration JSON. Write one module per run. The cards, not the list, are what the developer builds from after source lock; type-specific production JSON is completed in Phase 4.
 
 | Phase | File | What it produces | Exit gate (must be true to move on) |
 |---|---|---|---|
 | **0 — Source lock** | `phase-0-source-lock.md` | Resolved conflicts, verified facts, permissions, SME owners | Every **blocking** item has a written decision from the named owner |
 | **1 — Action map & objectives** | `phase-1-action-map.md` | Business goal, observable behaviours, practice activities, objective → evidence map, seat-time budget | SME agrees the objectives and the assessed evidence |
 | **2a — Screen list** | `phase-2-storyboard.md` | Screen-by-screen plan: id, section, edumints screen type, content, interaction, scoring, source page | `lint_visual_plan` clean (errors fixed, warnings justified); SME and course owner approve |
-| **2b — Storyboard cards** | `storyboard/storyboard.md` | One finished card per Phase 2 screen: on-screen text, visual design and animation/reveal, interaction and scoring, full narration script, accessibility, edumints build JSON | Every Phase 2 screen has a card (same ids, same order); all JSON blocks validate against the server models; `review-checklist.md` run on every card; SME review started |
+| **2b — Storyboard cards** | `storyboard/storyboard.md` | One finished card per Phase 2 screen: on-screen text, visual design and animation/reveal, interaction and scoring, full narration script, accessibility, review build metadata | Every Phase 2 screen has a card (same ids, same order); the visual plan and narration script validate against the server models; every card passes the structural template audit; the human/SME checklist is the next hand-off. Type-specific build JSON follows approved source lock in Phase 4. |
 | **3 — Narration & assets** | `phase-3-narration-and-assets.md` | Narration outline per screen, pronunciation lexicon, asset manifest with provenance, characters, video plan | `lint_narration_script` and `lint_authoring_plan(stage="planning")` clean; voice and visuals approved |
 | **4 — Build** | `phase-4-build.md` | Course settings, outline, objectives, tracking, spec snippets for the key interactions, MCP tool sequence | `lint_course` has no errors; preview reviewed |
 | **5 — QA & delivery** | `phase-5-qa-and-delivery.md` | Module-specific test cases, LMS test, pilot, sign-off, maintenance triggers | `validate_package` passes, SCORM Cloud / LMS test passes, SME sign-off recorded |

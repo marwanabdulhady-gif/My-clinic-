@@ -1,0 +1,590 @@
+{
+  "module_id": "MC05-rcm-documentation-coding",
+  "module_title": "My Clinic — RCM Part A: Documentation & ICD-10 Coding That Gets Approved",
+  "brand_name": "My Clinic",
+  "audience": "Physicians and dentists",
+  "objective": "See the approved Phase 1 observable objectives; each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "rcma-000",
+      "screen_type": "title_slide",
+      "purpose": "Open",
+      "visual_concept": "Official navy title gradient with supplied white My Clinic logo, large Montserrat course title, and a cropped white petal watermark. Omar is placed l1 half-body bottom-right.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "Official navy title background supplied by My Clinic; no content is baked into it.",
+          "source": "client",
+          "alt_text": "Decorative navy title gradient.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal white logo lock-up.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-welcome at L1 half-body bottom-right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Documentation & coding that gets approved\" · \"RCM Part A\"",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-001",
+      "screen_type": "content_slide",
+      "purpose": "The core idea",
+      "visual_concept": "A clean My Clinic content stage for the core idea, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight. Omar is placed l3 right column.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-reviewer: Generated native SVG.",
+          "source": "svg",
+          "alt_text": "A reviewer sees a written note rather than the patient encounter.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-reviewer: Minimal illustration: note on one side, reviewer with only the paper on the other",
+          "source": "svg",
+          "alt_text": "\"A reviewer sees only the written note.\"",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-explaining at L3 right column.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"The payer doesn't see your patient. The payer sees your note.\" · Clinical decision + documentation + coding = optimised payment",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-002",
+      "screen_type": "poll",
+      "purpose": "Productive failure",
+      "visual_concept": "A clean My Clinic content stage for productive failure, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"What do you think is the #1 cause of rejections at My Clinic?\" (4 causes)",
+      "animation": "fade-up",
+      "interaction": "Reflection: \"Hold that thought — we'll check it later.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-010",
+      "screen_type": "tabs",
+      "purpose": "Always / Avoid",
+      "visual_concept": "A white content stage for always / avoid, with one open item at a time, navy structure, and a Collaborative burgundy #7C0041 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Always: chief complaint & HPI · relevant findings · link symptoms to the working diagnosis · labs/imaging when needed · Avoid: vague notes · diagnosis without support · copy-paste · \"fatigue only\", \"body pain\"",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-011",
+      "screen_type": "image_compare",
+      "purpose": "Weak vs strong",
+      "visual_concept": "A paired before-and-after comparison for weak vs strong, with a draggable divider, descriptive HTML captions and a clean light background. Noor is placed l3 tip card.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-note-weak: Generated native SVG using fictional teaching text.",
+          "source": "svg",
+          "alt_text": "Weak generic clinical note stating only that IV fluids were given.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-note-strong: Generated native SVG using fictional teaching text.",
+          "source": "svg",
+          "alt_text": "Stronger generic clinical note linking dehydration signs to IV fluids.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-note-weak / -strong: Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text",
+          "source": "svg",
+          "alt_text": "\"Weak note: patient given IV fluids.\" / \"Strong note: dehydration signs, IV fluids for stabilisation.\"",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Before: \"Patient given IV fluids.\" · After: \"Dehydration signs (HR 112, dry mucosa) — IV fluids started for stabilisation.\" Rendered as two note cards (SVG)",
+      "animation": "fade-up",
+      "interaction": "Slider; caption: same treatment, different outcome",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-012",
+      "screen_type": "sorting",
+      "purpose": "The full clinical picture",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for the full clinical picture.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Order: Chief complaint → HPI → relevant past history → clinical findings → assessment → plan with duration & follow-up",
+      "animation": "none",
+      "interaction": "Feedback: \"Good documentation tells a story, not just a diagnosis.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-013",
+      "screen_type": "mcq",
+      "purpose": "Medical necessity",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for medical necessity.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Which note best justifies a CBC?\" options: \"Routine CBC\" / \"Fatigue\" / \"Fatigue for 6 weeks, pallor, menorrhagia — rule out anaemia\" ✔ / \"Patient requested blood test\"",
+      "animation": "none",
+      "interaction": "Feedback explains what the reviewer asks: why was this done?",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-020",
+      "screen_type": "content_slide",
+      "purpose": "Coding is clinical translation",
+      "visual_concept": "A clean My Clinic content stage for coding is clinical translation, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Primary = main condition treated · Secondary = complexity · Specific code = higher acceptance · #1 rejection cause: non-specific symptom coding",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-021",
+      "screen_type": "matching",
+      "purpose": "Symptom → supported diagnosis",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for symptom → supported diagnosis.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Presentations ↔ codes (final codes per B4): \"Vomiting + diarrhoea, 2 days, dehydration\" ↔ gastroenteritis code · \"Sore throat, fever, tonsillar exudate\" ↔ J03 Acute tonsillitis · \"Headache, BP 168/102 on two readings\" ↔ I10 Hypertension · \"Polyuria, HbA1c 8.1%\" …",
+      "animation": "none",
+      "interaction": "Feedback: \"Don't stop at the symptom.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-022",
+      "screen_type": "worked_example",
+      "purpose": "Provisional diagnosis",
+      "visual_concept": "A step-by-step worked example for provisional diagnosis, using numbered white cards, restrained navy connectors and a single Collaborative burgundy #7C0041 emphasis.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Fever 3 days + dysuria + suprapubic pain → urinalysis and culture ordered → document a provisional diagnosis linked to the findings → confirm or change when results return. Self-explanation: \"Why is a provisional diagnosis better than 'fever' here?\"",
+      "animation": "fade-up",
+      "interaction": "Unscored",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-023",
+      "screen_type": "drag_drop",
+      "purpose": "Covered or not as primary?",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for covered or not as primary?.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Items: E66 Obesity (BMI 31) · L70 Acne · L66 Hair loss · L21 Seborrhoeic dermatitis · N97 Female infertility · General check-up · J03 Acute tonsillitis · E11 Type 2 diabetes · Obesity with BMI 42 referred for bariatric …",
+      "animation": "none",
+      "interaction": "Feedback: \"Link to a covered condition when it truly exists, or don't use it as the main diagnosis.\"",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-030",
+      "screen_type": "content_slide",
+      "purpose": "More tests ≠ better care",
+      "visual_concept": "A clean My Clinic content stage for more tests ≠ better care, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Follow initial work-up protocols · No supplements without indication · Repeat only at evidence-based intervals · If you deviate, document why",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-031",
+      "screen_type": "decision_scenario",
+      "purpose": "Joint-pain case",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Collaborative burgundy #7C0041 progress cue for joint-pain case. Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-thinking → -happy / -concern at L5 avatar.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Node 1: 45-year-old with multi-joint pain, first visit, no history → order everything (CRP, ESR, anti-DNA, anti-Ro, anti-La) vs initial work-up (CRP, ESR) ✔. Node 2: same patient, rheumatoid arthritis already diagnosed by a rheumatologist elsewhere → document the history …",
+      "animation": "none",
+      "interaction": "Feedback quotes the script's example (B10)",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-032",
+      "screen_type": "mcq",
+      "purpose": "Timing",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for timing.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Your diabetic patient's HbA1c was done 6 weeks ago. He asks for another.\" Best action → don't repeat yet unless there's a documented clinical reason; next test at the approved interval (B3)",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-033",
+      "screen_type": "true_false",
+      "purpose": "Supplements",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for supplements.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Prescribing a combined multivitamin 'for general wellness' with no documented deficiency is likely to be rejected.\" → True (B8)",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-040",
+      "screen_type": "drag_drop",
+      "purpose": "Four causes",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for four causes.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Rejection notes → causes: \"No indication for the MRI\" → missing justification · \"Diagnosis: fever\" → non-specific · \"No examination findings recorded\" → incomplete · \"Antibiotic billed for a viral URTI code\" → mismatch (+ 4 more)",
+      "animation": "none",
+      "interaction": "Feedback reveals the poll answer from rcma-002",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-041",
+      "screen_type": "content_slide",
+      "purpose": "Coverage changes",
+      "visual_concept": "A clean My Clinic content stage for coverage changes, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Benefits are added and amended often · Know what's covered, adapt documentation · \"If you don't document it properly, it won't be covered — even if it's clinically correct.\" · Next: Part B covers the new EBP",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-042",
+      "screen_type": "mcq",
+      "purpose": "Coverage check",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for coverage check.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Which hormonal assessment is likely to be approved?\" → menopausal symptoms ✔ vs PCOS work-up (B6)",
+      "animation": "none",
+      "interaction": "Feedback: the same service can be accepted or rejected depending on indication and documentation",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-050",
+      "screen_type": "game",
+      "purpose": "Fix the note",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Collaborative burgundy #7C0041 progress cue for fix the note. Omar + Noor is placed l5.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-notes-1..3: Invented notes in HTML (real text)",
+          "source": "svg",
+          "alt_text": "Fix the note visual.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar (host); char-noor-tip (hints) at L5.",
+          "source": "client",
+          "alt_text": "Omar + Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "3 invented notes, one node each: (1) \"Body pain. Vit D + B12 + multivitamin.\" → choose the best rewrite (findings, deficiency evidence, single indicated supplement, follow-up); (2) \"Cough. Augmentin.\" → choose specific diagnosis + findings justifying antibiotic; (3) \"Check-up …",
+      "animation": "none",
+      "interaction": "Debrief: the 6-point checklist from the script's summary",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-090",
+      "screen_type": "results_breakdown",
+      "purpose": "Results",
+      "visual_concept": "A calm results panel showing each objective as an HTML progress row, with plain-language next steps and a small companion feedback card.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "rcma-o1…o5, weak below 70%",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcma-091",
+      "screen_type": "summary",
+      "purpose": "Checklist to keep",
+      "visual_concept": "A confident light closing screen with four short takeaways, the supplied My Clinic logo, and space for the next-module hand-off. Omar is placed l6 right.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "rcma-pdf-checklist: One-page \"Clear, strong, defensible\" desk checklist",
+          "source": "svg",
+          "alt_text": "List to keep visual.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-success at L6 right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "✔ Be specific; avoid uncovered codes and combined supplements · ✔ Full data + plan with duration and outcome · ✔ Justify every service with a specific code; provisional diagnosis if needed · ✔ Think like a clinician and a …",
+      "animation": "fade-up",
+      "interaction": "show_score",
+      "cue_targets": []
+    }
+  ]
+}
