@@ -31,7 +31,7 @@
 | Storyboard template, screen-type guide, examples, review checklist | ✅ |
 | Client-review Word pack (all 8) + review register (37 build-detail questions) | ✅ v0.2 |
 | **SCORM structure** (programme + per module) | ✅ new: [`scorm-structure.md`](scorm-structure.md) and `<module>/scorm-structure.md` |
-| Proposal (6 courses, USD 9,000) | ✅ Rev00 · see §3 for the check |
+| Proposal (6 courses, USD 9,000) | ✅ Rev01 (narration ~60 min, 26 scenarios, guide characters) · see §3 |
 | Cross-module decisions D1–D14 | 🔒 all 14 open |
 | Voices (D10), LMS + SCORM version (D9) | 🔒 open |
 | Any SCORM project, build, package or LMS test | ⬜ none yet |
@@ -73,7 +73,7 @@ Checked every number in the proposal against the storyboard build blocks, narrat
 | Phases and payment points | Phases 0–5, 9–10 weeks | same phase model in every folder | ✅ (README timeline now aligned) |
 | Companions Noor and Dr. Omar, two voices | **not mentioned** | in every plan, Phase 2/3 and 6 of 8 storyboards | ⚠ added after Rev00 |
 
-**Verdict:** the proposal matches the plans on every number the client pays for (courses, packages, screens, scored activities, pass marks, test cases, seat time). Three things to correct in a **Rev01** before it goes to My Clinic:
+**Verdict:** the proposal matches the plans on every number the client pays for (courses, packages, screens, scored activities, pass marks, test cases, seat time). Three corrections were needed; all three are made in **Rev01** (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx` / `.pdf`, revision sheet row 01). Rev00 is kept for the record:
 
 1. **Narration:** say "about 60 minutes" (or "up to 70 minutes") instead of "about 70 minutes". The finished scripts total ~61 minutes; promising 70 creates a gap at delivery.
 2. **Scenarios:** RCM has 4 scenarios, games and adaptive practice (2 in Part A, 2 in Part B), so the total is 26, not 27. Or add one scenario to RCM Part A to keep 27.
@@ -98,7 +98,7 @@ Optional for Rev01: the proposal says L2S prepared "a screen-by-screen storyboar
 | Step | Action | Owner | Unblocks |
 |---|---|---|---|
 | 1 | Send the client-review Word pack and the review register to My Clinic; book the Phase 0 kick-off | L2S | everything |
-| 2 | Issue proposal Rev01 (§3 fixes) with the storyboard pack as evidence | L2S | contract |
+| 2 | ~~Issue proposal Rev01 (§3 fixes)~~ ✅ done — send Rev01 with the storyboard pack as evidence | L2S | contract |
 | 3 | Retrofit 03 and complete 07 to v0.2 (G1, G2) | Storyboard agent | Phase 2 sign-off for 03, 07 |
 | 4 | Close D9 (LMS, SCORM version), D10 (voices), D11 (brand) | My Clinic L&D / Marketing | Phase 3 and 4 |
 | 5 | Close module B-items and D1–D8, D12–D14 with named SMEs; update Phase 0 files and cards | SMEs | Phase 2 approval |
