@@ -19,7 +19,127 @@
       "hs1-o7",
       "hs1-o10"
     ],
-    "zip": "MC_01_FMS_v1.0_2004.zip"
+    "zip": "MC_01_FMS_v1.0_2004.zip",
+    "interaction_types": {
+      "matching": 7,
+      "sequencing": 4,
+      "performance": 6,
+      "choice": 5,
+      "true-false": 2
+    },
+    "suspend_chars": 2448,
+    "suspend_limit": 64000,
+    "scenario_screens": [
+      {
+        "id": "hs1-205",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 3 nodes, each choice has `score_delta` +1 for the best choice, 0 otherwise",
+        "points": 15,
+        "objectives": [
+          "hs1-o2"
+        ]
+      },
+      {
+        "id": "hs1-409",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 4 nodes, branching on \"fire grows\"",
+        "points": 20,
+        "objectives": [
+          "hs1-o4"
+        ]
+      },
+      {
+        "id": "hs1-507",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 3 cases + steps",
+        "points": 15,
+        "objectives": [
+          "hs1-o5"
+        ]
+      },
+      {
+        "id": "hs1-802",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 4 nodes",
+        "points": 15,
+        "objectives": [
+          "hs1-o8"
+        ]
+      },
+      {
+        "id": "hs1-950",
+        "type": "game",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: `case_sim`, score, 3 lives, 1 hint per node, no timer; rule: `when wrong if lives==0 then goto debrief`",
+        "points": 25,
+        "objectives": [
+          "hs1-o10"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`imsss:minNormalizedMeasure`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "10/10 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "24 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "24 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~2,448 chars vs 64,000 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "5/5 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/24 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "54/54 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "4 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "02",
@@ -40,7 +160,109 @@
       "hs2-o4",
       "hs2-o7"
     ],
-    "zip": "MC_02_SafetyLab_v1.0_1.2.zip"
+    "zip": "MC_02_SafetyLab_v1.0_1.2.zip",
+    "interaction_types": {
+      "choice": 3,
+      "fill-in": 2,
+      "performance": 3,
+      "matching": 4,
+      "sequencing": 1
+    },
+    "suspend_chars": 1248,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "hs2-030",
+        "type": "game",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 6 nodes; `score_delta` +1 per correct RACE choice; 2 lives; 1 hint per node; no timer",
+        "points": 25,
+        "objectives": [
+          "hs2-o2"
+        ]
+      },
+      {
+        "id": "hs2-052",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 3 nodes",
+        "points": 15,
+        "objectives": [
+          "hs2-o5"
+        ]
+      },
+      {
+        "id": "hs2-064",
+        "type": "escape_room",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 4 sequential puzzles, text answers with aliases, 3 lives, 1 hint each",
+        "points": 20,
+        "objectives": [
+          "hs2-o6"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "7/7 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "13 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "13 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~1,248 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "3/3 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/13 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "26/26 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "3 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "03",
@@ -57,7 +279,118 @@
     "minutes": 11.742857142857142,
     "objectives": 6,
     "weak": [],
-    "zip": "MC_03_WelcomeOnBoard_v1.0_2004.zip"
+    "zip": "MC_03_WelcomeOnBoard_v1.0_2004.zip",
+    "interaction_types": {
+      "matching": 5,
+      "choice": 5,
+      "performance": 3,
+      "fill-in": 1,
+      "true-false": 1
+    },
+    "suspend_chars": 1584,
+    "suspend_limit": 64000,
+    "scenario_screens": [
+      {
+        "id": "hr-031",
+        "type": "decision_scenario",
+        "structure": "3 decision nodes \u00b7 9 authored choices \u00b7 6 explicit branches",
+        "points": 15,
+        "objectives": [
+          "hr-o2"
+        ]
+      },
+      {
+        "id": "hr-044",
+        "type": "decision_scenario",
+        "structure": "4 decision nodes \u00b7 13 authored choices \u00b7 10 explicit branches",
+        "points": 15,
+        "objectives": [
+          "hr-o3"
+        ]
+      },
+      {
+        "id": "hr-045",
+        "type": "adaptive_practice",
+        "structure": "12-item bank \u00b7 max 6 served \u00b7 pass ratio 0.6 \u00b7 elo",
+        "points": 15,
+        "objectives": [
+          "hr-o3"
+        ]
+      },
+      {
+        "id": "hr-061",
+        "type": "simulation",
+        "structure": "5 click/type steps \u00b7 5 scored targets",
+        "points": 15,
+        "objectives": [
+          "hr-o5"
+        ]
+      }
+    ],
+    "feedback_screens": 15,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (70%)",
+        "ok": true,
+        "evidence": "`imsss:minNormalizedMeasure`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "6/6 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "15 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "15 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~1,584 chars vs 64,000 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "4/4 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": true,
+        "evidence": "15/15 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "36/36 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": true,
+        "evidence": "all objectives have \u22652 checks"
+      }
+    ]
   },
   {
     "num": "04",
@@ -77,7 +410,89 @@
       "ops-o1",
       "ops-o3"
     ],
-    "zip": "MC_04_OpsMyCare_v1.0_1.2.zip"
+    "zip": "MC_04_OpsMyCare_v1.0_1.2.zip",
+    "interaction_types": {
+      "matching": 2,
+      "performance": 1,
+      "choice": 1
+    },
+    "suspend_chars": 504,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "ops-031",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 4 nodes, +1 per correct route",
+        "points": 20,
+        "objectives": [
+          "ops-o2"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (70%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "3/3 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "4 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "4 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~504 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "1/1 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/4 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "13/13 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "2 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "05",
@@ -96,7 +511,100 @@
     "weak": [
       "rcma-o5"
     ],
-    "zip": "MC_05_RCM-A_v1.0_1.2.zip"
+    "zip": "MC_05_RCM-A_v1.0_1.2.zip",
+    "interaction_types": {
+      "sequencing": 1,
+      "choice": 3,
+      "matching": 3,
+      "performance": 2,
+      "true-false": 1
+    },
+    "suspend_chars": 984,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "rcma-031",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 2 nodes",
+        "points": 15,
+        "objectives": [
+          "rcma-o3"
+        ]
+      },
+      {
+        "id": "rcma-050",
+        "type": "game",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: `case_sim`, 3 nodes, +1 best rewrite, 1 hint each, no lives, no timer",
+        "points": 25,
+        "objectives": [
+          "rcma-o5"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "5/5 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "10 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "10 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~984 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "2/2 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/10 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "21/21 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "1 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "06",
@@ -115,7 +623,99 @@
     "weak": [
       "rcmb-o1"
     ],
-    "zip": "MC_06_RCM-B_v1.0_1.2.zip"
+    "zip": "MC_06_RCM-B_v1.0_1.2.zip",
+    "interaction_types": {
+      "matching": 3,
+      "choice": 2,
+      "true-false": 1,
+      "performance": 1
+    },
+    "suspend_chars": 696,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "rcmb-052",
+        "type": "decision_scenario",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: 3 nodes",
+        "points": 15,
+        "objectives": [
+          "rcmb-o3"
+        ]
+      },
+      {
+        "id": "rcmb-060",
+        "type": "adaptive_practice",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Elo, 15-item bank, max 8",
+        "points": 20,
+        "objectives": [
+          "rcmb-o2"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "3/3 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "7 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "7 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~696 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "2/2 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/7 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "15/15 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "1 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "07",
@@ -134,7 +734,100 @@
     "weak": [
       "qsr-o5"
     ],
-    "zip": "MC_07_ClinicalGov_v1.0_1.2.zip"
+    "zip": "MC_07_ClinicalGov_v1.0_1.2.zip",
+    "interaction_types": {
+      "matching": 4,
+      "sequencing": 3,
+      "performance": 2,
+      "fill-in": 1,
+      "true-false": 1
+    },
+    "suspend_chars": 1056,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "qsr-021",
+        "type": "decision_scenario",
+        "structure": "3 decision nodes \u00b7 9 authored choices \u00b7 6 explicit branches",
+        "points": 15,
+        "objectives": [
+          "qsr-o2"
+        ]
+      },
+      {
+        "id": "qsr-051",
+        "type": "decision_scenario",
+        "structure": "3 decision nodes \u00b7 9 authored choices \u00b7 6 explicit branches",
+        "points": 15,
+        "objectives": [
+          "qsr-o5"
+        ]
+      }
+    ],
+    "feedback_screens": 11,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "5/5 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "11 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "11 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~1,056 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "2/2 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": true,
+        "evidence": "11/11 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "22/22 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "1 objective(s) rest on a single scored screen"
+      }
+    ]
   },
   {
     "num": "08",
@@ -154,6 +847,142 @@
       "ehr-o2",
       "ehr-o5"
     ],
-    "zip": "MC_08_EHR_v1.0_1.2.zip"
+    "zip": "MC_08_EHR_v1.0_1.2.zip",
+    "interaction_types": {
+      "performance": 7,
+      "choice": 3,
+      "sequencing": 1
+    },
+    "suspend_chars": 1008,
+    "suspend_limit": 4096,
+    "scenario_screens": [
+      {
+        "id": "ehr-010",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 5,
+        "objectives": [
+          "ehr-o1"
+        ]
+      },
+      {
+        "id": "ehr-020",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 10,
+        "objectives": [
+          "ehr-o2"
+        ]
+      },
+      {
+        "id": "ehr-031",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 15,
+        "objectives": [
+          "ehr-o3"
+        ]
+      },
+      {
+        "id": "ehr-032",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 10,
+        "objectives": [
+          "ehr-o3"
+        ]
+      },
+      {
+        "id": "ehr-040",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 5,
+        "objectives": [
+          "ehr-o4"
+        ]
+      },
+      {
+        "id": "ehr-041",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 10,
+        "objectives": [
+          "ehr-o4"
+        ]
+      },
+      {
+        "id": "ehr-050",
+        "type": "simulation",
+        "structure": "not in the storyboard block yet \u2014 Phase 3: Each step: click region (`rect`) or type (`input_accepted`); hint after a wrong attempt",
+        "points": 10,
+        "objectives": [
+          "ehr-o4"
+        ]
+      }
+    ],
+    "feedback_screens": 0,
+    "banned_mechanic_hits": [],
+    "checklist": [
+      {
+        "requirement": "Manifest: one organization, one item, one SCO resource",
+        "ok": true,
+        "evidence": "\u00a73 manifest sketch; single-SCO rule in the programme structure \u00a72"
+      },
+      {
+        "requirement": "Pass mark written to the manifest (80%)",
+        "ok": true,
+        "evidence": "`adlcp:masteryscore`"
+      },
+      {
+        "requirement": "Every objective has at least one scored screen",
+        "ok": true,
+        "evidence": "5/5 objectives evidenced"
+      },
+      {
+        "requirement": "Every scored screen names its objective",
+        "ok": true,
+        "evidence": "11 scored screens"
+      },
+      {
+        "requirement": "Every scored screen maps to an interaction type",
+        "ok": true,
+        "evidence": "11 interaction records"
+      },
+      {
+        "requirement": "Completion rule set (`viewed_all_and_passed`)",
+        "ok": true,
+        "evidence": "Phase 4 course settings"
+      },
+      {
+        "requirement": "Resume state fits the SCORM version's suspend_data limit",
+        "ok": true,
+        "evidence": "~1,008 chars vs 4,096 limit"
+      },
+      {
+        "requirement": "Gamification rules recorded for every scenario screen",
+        "ok": true,
+        "evidence": "7/7 scenario screens have a Phase 3 rule row"
+      },
+      {
+        "requirement": "Answer feedback authored for the scored checks",
+        "ok": false,
+        "evidence": "0/11 scored screens carry feedback in the block"
+      },
+      {
+        "requirement": "No excluded gamification mechanic introduced",
+        "ok": true,
+        "evidence": "storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers"
+      },
+      {
+        "requirement": "Motion spec present for every screen (reduced-motion safe)",
+        "ok": true,
+        "evidence": "20/20 screens carry a `motion` object"
+      },
+      {
+        "requirement": "Thin-evidence objectives flagged for SME sign-off",
+        "ok": false,
+        "evidence": "2 objective(s) rest on a single scored screen"
+      }
+    ]
   }
 ]

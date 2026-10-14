@@ -40,8 +40,10 @@ This remains **planning and draft review**, not a production course build. A [lo
 | `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards; [G10 restoration](00_program/g10-visual-restoration.md) adds 02 drill and 08 capture manifests |
 | `tools/normalise_narration.py` | Canonical narration/audio outputs for the hand-authored packs (03, 07) | Same rules as the generator, via `tools/audio_export.py` |
 | `tools/audio_export.py` | Shared rules: speaker labels out of TTS input, one segment per spoken line, lexicon + SSML, voice table | Imported by both tools above |
-| `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |
-| `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
+| `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`) plus the **local** `motion_spec` rules; the report states the server lint must still be rerun before Phase 4 |
+| `tools/build_motion_spec.py` | `motion` object on every screen of all eight `visual-plan.json` files + `00_program/motion-spec-summary.json` | Derived, idempotent — rerun after any storyboard/visual-plan change, never hand-edit. Vocabulary in `tools/motion_spec.py`; see [`00_program/motion-and-animation-spec.md`](00_program/motion-and-animation-spec.md) |
+| `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` (package, manifest, screens, objectives, tracking + interaction types, gamification, scenarios, base checklist) + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
+| `tools/audit_scorm_base.py` | `00_program/scorm-base-audit.md` + `scorm-base-audit.json` | Programme-wide base-structure gate: stale structure docs, objective evidence, interaction mapping, suspend_data budget, scenario counts vs Rev01 (26), excluded mechanics, motion coverage. Hard failures exit non-zero |
 | `tools/generate_screens.py` | Ignored `.generated/screens/`: offline branded HTML preview + layout/input/alignment report | [Four drafting batches](00_program/draft-slide-production.md), required worksheets/plans, compiled mockup metrics, bundled fonts; draft review only |
 | `tools/browser/capture_slides.cjs` | Ignored review gallery, actual browser PNGs, overview and capture/QA report | One capture per current slide plus selected interaction states; reference→draft comparisons; not production QA or approval |
 | `tools/prepare_asset_approval_handoff.py` | [G10 approval packet](00_program/asset-approval-handoff/README.md), 44-row response template and request JSON | Prepared, not submitted or approved; preserves human responses |
@@ -51,9 +53,10 @@ This remains **planning and draft review**, not a production course build. A [lo
 | `tools/build_decision_sheet.py` | `00_program/decision-sheet.md` + `decision-sheet.csv` | Parses the eight `phase-0-source-lock.md` files, `cross-module-decisions.md` and `scorm-structure-summary.json`; lists **open** rows only (102 as at 2026-10-14) with owner role, due date and write-back target. Rerun after any Phase 0 write-back — closed rows drop out |
 | `tools/export_kickoff_docx.py` | `00_program/kickoff-pack.docx` (`MC-KO-01 v0.1`) | Kick-off run sheet + decision sheet as one branded Word file; reuses the header, footer and Markdown renderer from `export_storyboard_docx.py` |
 
-Recommended order after any approved edit: generator or normaliser → `lint_planning.py` →
-`build_scorm_structure.py` → `export_storyboard_docx.py` → `build_decision_sheet.py` →
-`export_kickoff_docx.py` → `audit_assets.py`.
+Recommended order after any approved edit: generator or normaliser → `build_motion_spec.py` →
+`lint_planning.py` → `build_scorm_structure.py` → `audit_scorm_base.py` →
+`export_storyboard_docx.py` → `build_decision_sheet.py` → `export_kickoff_docx.py` →
+`audit_assets.py`.
 
 Suggested learning path (matches `../README.md` §4):
 `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
@@ -94,6 +97,8 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand summary, theme decision, Arabic/RTL plan
 - [`00_program/characters/companions.md`](00_program/characters/companions.md) — **the two course companions, Noor and Dr. Omar**: character bible, poses and AI prompts, placement on screens, voices and script rules, per-module plan
 - [`00_program/scorm-structure.md`](00_program/scorm-structure.md) — **structure of the SCORM packages**: LMS learning path, zip contents, manifest, course outline model, tracking data, versioning
+- [`00_program/scorm-base-audit.md`](00_program/scorm-base-audit.md) — **generated base-structure gate** for all eight packages: objectives, interaction records, tracking and resume budget, gamification rules, scenario counts, motion coverage, hard failures (regenerate with `tools/audit_scorm_base.py`)
+- [`00_program/motion-and-animation-spec.md`](00_program/motion-and-animation-spec.md) — **motion vocabulary and rules**: presets, timing envelope, per-intent behaviour, the "assessment screens do not move" rule, cue-bound layers and the reduced-motion contract
 - [`00_program/programme-status.md`](00_program/programme-status.md) — what is done, gaps, proposal check, next steps
 - [`00_program/asset-template-audit.md`](00_program/asset-template-audit.md) — evidence-based inventory of brand files, companion art, module assets, Word renderings and card templates (regenerate with `tools/audit_assets.py`)
 - [`00_program/next-phases-roadmap.md`](00_program/next-phases-roadmap.md) — the remaining work cut into PR-sized chunks with acceptance criteria

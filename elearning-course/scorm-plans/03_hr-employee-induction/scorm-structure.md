@@ -30,6 +30,8 @@ MC_03_WelcomeOnBoard_v1.0_2004.zip
     ├── hr-img-7c-icons.*
     ├── hr-img-award-icons.*
     ├── hr-img-benefits-wheel.*
+    ├── hr-img-branches.*
+    ├── hr-img-dress.*
     ├── hr-img-dress-backoffice.*
     ├── hr-img-dress-frontoffice.*
     ├── hr-img-dress-medical.*
@@ -229,3 +231,66 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | Per objective | `cmi.objectives.n.id / .score / .success_status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
 | Resume | `cmi.suspend_data` (64,000 chars) · `cmi.location` | player state |
+
+### Interaction records (`cmi.interactions.n.type`)
+
+One interaction record per scored screen, in screen order. `poll` screens are unscored reflections and are **not** reported as interactions.
+
+| Interaction type | Scored screens | Screen ids |
+|---|---:|---|
+| `choice` | 5 | `hr-013`, `hr-033`, `hr-045`, `hr-054`, `hr-081` |
+| `fill-in` | 1 | `hr-052` |
+| `matching` | 5 | `hr-011`, `hr-032`, `hr-042`, `hr-060`, `hr-071` |
+| `performance` | 3 | `hr-031`, `hr-044`, `hr-061` |
+| `true-false` | 1 | `hr-062` |
+
+Resume payload: ~**1,584 characters** estimated (36 screens × 24 + 15 scored × 48) against the 64,000-character limit of SCORM 2004 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+
+## 7. Gamification (what the record carries, and what it must not)
+
+Rules come from `../00_program/gamification-plan.md` and this pack's Phase 3 activity table. Points are the only score the LMS sees; nothing here adds a mechanic the proposal does not contain.
+
+| Mechanic | Planned rule (Phase 3) | Objective | Reported to the LMS as |
+|---|---|---|---|
+| `hr-031` decision scenario | 3 nodes | hr-o2 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hr-044` decision scenario | 4 nodes, one per colleague | hr-o3 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hr-045` adaptive practice | Elo, 12-item bank, max 6, stop when mastery reached | hr-o3 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hr-061` simulation | 5 click steps, `rect` regions, hint per step | hr-o5 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+
+**Points economy.** `hr-sB` 15 · `hr-sD` 30 · `hr-sE` 35 · `hr-sF` 20 · `hr-sG` 30 · `hr-sH` 10 · `hr-sI` 5 · **total 145**, pass 70% = 102.
+
+**Feedback coverage.** 15 of 15 scored screens carry authored answer feedback in the build block.
+
+No excluded mechanic (leaderboard, ranking, streak, badge, countdown, time limit) is introduced by this pack's storyboard or Phase 3/4 text.
+
+## 8. Scenarios and branching
+
+4 scenario, game, simulation or adaptive-practice screen(s). Branch structure is read from the authored build blocks; retry and pass rules from Phase 3.
+
+| Screen | Type | Authored structure | Objective | Pts | Pass / retry rule (Phase 3) |
+|---|---|---|---|---:|---|
+| `hr-031` | `decision_scenario` | 3 decision nodes · 9 authored choices · 6 explicit branches | hr-o2 | 15 | ≥ 2 best · replay |
+| `hr-044` | `decision_scenario` | 4 decision nodes · 13 authored choices · 10 explicit branches | hr-o3 | 15 | ≥ 3 · replay |
+| `hr-045` | `adaptive_practice` | 12-item bank · max 6 served · pass ratio 0.6 · elo | hr-o3 | 15 | pass ratio 0.6 · items keep coming up to max |
+| `hr-061` | `simulation` | 5 click/type steps · 5 scored targets | hr-o5 | 15 | all steps · retry step |
+
+## 9. Base SCORM structure checklist
+
+Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build blockers unless the note says so.
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
+| Pass mark written to the manifest (70%) | ✅ | `imsss:minNormalizedMeasure` |
+| Every objective has at least one scored screen | ✅ | 6/6 objectives evidenced |
+| Every scored screen names its objective | ✅ | 15 scored screens |
+| Every scored screen maps to an interaction type | ✅ | 15 interaction records |
+| Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~1,584 chars vs 64,000 limit |
+| Gamification rules recorded for every scenario screen | ✅ | 4/4 scenario screens have a Phase 3 rule row |
+| Answer feedback authored for the scored checks | ✅ | 15/15 scored screens carry feedback in the block |
+| No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |
+| Motion spec present for every screen (reduced-motion safe) | ✅ | 36/36 screens carry a `motion` object |
+| Thin-evidence objectives flagged for SME sign-off | ✅ | all objectives have ≥2 checks |
+
+**12/12 base requirements met.** Rerun `tools/build_scorm_structure.py` after any storyboard change, then `tools/audit_scorm_base.py` for the programme-wide view.

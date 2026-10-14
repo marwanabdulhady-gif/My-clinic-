@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Ethics and values icon family</title>
+<desc id="desc">Four line icons for the ethics values: two people with a heart (Respect), an open hand with a tick (Integrity), a clipboard with a check (Accountability) and a lightbulb with a link (Innovation and collaboration). Decorative: each value is labelled in on-screen text.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:600;stroke-dashoffset:600;animation:eth-draw 900ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:eth-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:110ms}
+    g:nth-of-type(4) .draw,g:nth-of-type(4) .tile{animation-delay:220ms}
+    g:nth-of-type(5) .draw,g:nth-of-type(5) .tile{animation-delay:330ms}
+  }
+  @keyframes eth-draw{to{stroke-dashoffset:0}}
+  @keyframes eth-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+<text x="80" y="88" class="h">Ethics and values — icon family</text>
+<g id="icon-respect" transform="translate(110,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <circle class="line draw" cx="118" cy="180" r="42"/>
+  <circle class="line draw" cx="216" cy="180" r="42"/>
+  <path class="line draw" d="M62 330a56 56 0 0 1 112 0"/>
+  <path class="line draw" d="M160 330a56 56 0 0 1 112 0"/>
+  <path class="accent draw" d="M167 470s-46-28-46-58a25 25 0 0 1 46-12 25 25 0 0 1 46 12c0 30-46 58-46 58z"/>
+</g>
+<g id="icon-integrity" transform="translate(470,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <path class="line draw" d="M74 236v-56a40 40 0 0 1 40-40h106"/>
+  <path class="line draw" d="M74 236q-14 60 22 104t96 54"/>
+  <path class="line draw" d="M192 394l40-8"/>
+  <path class="accent draw" d="M126 288l30 30 62-70"/>
+  <circle class="dot" cx="160" cy="470" r="13"/>
+</g>
+<g id="icon-accountability" transform="translate(830,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <rect class="line draw" x="86" y="150" width="188" height="250" rx="14"/>
+  <path class="line draw" d="M130 150v-22h60v22"/>
+  <path class="line draw" d="M118 226h124M118 276h124M118 326h78"/>
+  <path class="accent draw" d="M118 452l34 34 74-84"/>
+</g>
+<g id="icon-innovation" transform="translate(1190,150)">
+  <rect class="tile" width="320" height="580" rx="18"/>
+  <path class="line draw" d="M110 240a50 50 0 0 1 100 0c0 30-20 42-20 66h-60c0-24-20-36-20-66z"/>
+  <path class="line draw" d="M138 340h44M146 372h28"/>
+  <path class="accent draw" d="M160 130v-26M84 176l-20-18M236 176l20-18"/>
+  <path class="accent draw" d="M120 452h44a26 26 0 0 1 0 52h-14"/>
+  <path class="accent draw" d="M200 504h-44a26 26 0 0 1 0-52h14"/>
+  <circle class="dot" cx="160" cy="478" r="11"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · value wording awaits HR approval</text>
+</svg>

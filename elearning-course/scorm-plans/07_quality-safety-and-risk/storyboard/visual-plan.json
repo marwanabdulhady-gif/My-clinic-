@@ -47,7 +47,85 @@
       "on_screen_text": "Subtitle: Quality, patient safety and risk · Module 07 · Caring",
       "animation": "fade",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "orient",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "logo",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "title",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "subtitle",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "companions",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "tagline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "pulse-once",
+          "target": "module-chip",
+          "duration_ms": 520,
+          "easing": "spring"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-001",
@@ -84,7 +162,67 @@
       "on_screen_text": "SECTION 1 OF 7 · “Doing the right things right — the first time, and every time.” ⚠ PENDING B1",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "section",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "brand-logo-horizontal-navy",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-002",
@@ -114,7 +252,67 @@
       "on_screen_text": "Have you ever noticed something unsafe at work and not said anything? · Anonymous response handling ⚠ PENDING NEW-01",
       "animation": "fade-up",
       "interaction": "Choose Yes, No or Not sure; you may continue without answering.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "reflect",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "brand-logo-horizontal-navy",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "none",
+          "duration_ms": 260,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-010",
@@ -144,7 +342,39 @@
       "on_screen_text": "Structure → Process → Outcome · Collect valid, reliable data · FOCUS-PDCA improvement cycle ⚠ PENDING B11",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-011",
@@ -167,7 +397,39 @@
       "on_screen_text": "Resources · Actions carried out · Patient results",
       "animation": "none",
       "interaction": "Place each illustrative measure in Structure, Process or Outcome, then check.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-012",
@@ -190,7 +452,39 @@
       "on_screen_text": "Nine steps · One repeating cycle · Exact wording ⚠ PENDING B11",
       "animation": "none",
       "interaction": "Arrange the steps in order, then check how the final step begins the next cycle.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-020",
@@ -220,7 +514,39 @@
       "on_screen_text": "Identification · Communication · High-alert medication · Safe procedures · Hand hygiene · Fall prevention ⚠ PENDING B3",
       "animation": "fade-up",
       "interaction": "Open all six goal panels and read the draft practice for each.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-021",
@@ -264,7 +590,39 @@
       "on_screen_text": "Two fictional records share one full name. Verify before care. ⚠ PENDING B4",
       "animation": "none",
       "interaction": "Choose what you would do at each decision point before the blood test proceeds.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-022",
@@ -287,7 +645,39 @@
       "on_screen_text": "Match each daily practice to one goal. ⚠ PENDING B3–B5",
       "animation": "none",
       "interaction": "Match each practice with the patient-safety goal it supports.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-023",
@@ -310,7 +700,39 @@
       "on_screen_text": "Order the hand-hygiene moments. ⚠ PENDING B10",
       "animation": "none",
       "interaction": "Arrange the five moments in the order shown in the approved hand-hygiene guidance.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-030",
@@ -333,7 +755,39 @@
       "on_screen_text": "Identify · Assess · Manage · Monitor · Report",
       "animation": "none",
       "interaction": "Put the risk-management lifecycle in order.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-031",
@@ -370,7 +824,85 @@
       "on_screen_text": "Hypothetical case · Impact 4 × likelihood 3 = 12 · Band ⚠ PENDING B6 · Responses: Reduce · Transfer · Accept · Avoid ⚠ PENDING B7",
       "animation": "fade-up",
       "interaction": "Follow the worked steps; consider a control in the reflection prompt.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "problem",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-1",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-2",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "step-3",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "rule",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-032",
@@ -393,7 +925,39 @@
       "on_screen_text": "Impact 5 × likelihood 2 = ___ · Band: ___ ⚠ PENDING B6",
       "animation": "none",
       "interaction": "Enter the numeric score and the matching band from the approved risk matrix.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-033",
@@ -416,7 +980,39 @@
       "on_screen_text": "Reduce · Transfer · Accept · Avoid — wording ⚠ PENDING B7",
       "animation": "none",
       "interaction": "Match each response with the action it describes.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-040",
@@ -453,7 +1049,39 @@
       "on_screen_text": "Critical / sentinel event · Adverse event · Near miss — terms ⚠ PENDING B8",
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-041",
@@ -476,7 +1104,39 @@
       "on_screen_text": "Critical / sentinel · Adverse · Near miss ⚠ PENDING B8",
       "animation": "none",
       "interaction": "Classify each fictional event by what happened and whether harm reached a person.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-042",
@@ -499,7 +1159,39 @@
       "on_screen_text": "“If you report a near miss you caused, you will be disciplined.” ⚠ PENDING B8",
       "animation": "none",
       "interaction": "Decide whether the statement matches the policy-approved reporting culture.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-050",
@@ -522,7 +1214,67 @@
       "on_screen_text": "Report: clinical + non-clinical events · When: 24 hours ⚠ PENDING B9/D8 · Where: digital form or email ⚠ PENDING B9 · System review follows",
       "animation": "fade-up",
       "interaction": "Read the draft workflow; use only the confirmed channel and timing at work.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "brand-logo-horizontal-navy",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-051",
@@ -566,7 +1318,39 @@
       "on_screen_text": "Fictional near miss · Choose whether, when and where to report · ⚠ PENDING B8/B9/D8",
       "animation": "none",
       "interaction": "Choose a safe next step at each node, then select a timing and channel.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "qsr-090",
@@ -589,7 +1373,76 @@
       "on_screen_text": "Results by objective · Review any area below threshold",
       "animation": "fade-up",
       "interaction": "Review your objective bars and any advice shown.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "score-ring",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-1",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-2",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "advice",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-091",
@@ -612,7 +1465,67 @@
       "on_screen_text": "What will you say the next time you notice something unsafe?",
       "animation": "fade-up",
       "interaction": "Write a short sentence or continue without sharing.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "reflect",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "brand-logo-horizontal-navy",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "none",
+          "duration_ms": 260,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "qsr-092",
@@ -656,7 +1569,82 @@
       "on_screen_text": "Measure quality · apply patient-safety goals · score risk and classify events · follow reporting workflow · approved links ⚠ PENDING B3/B9",
       "animation": "fade-up",
       "interaction": "Use the approved policy links and reporting channel after they are supplied.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "action-list",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "job-aids",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "sign-off",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     }
-  ]
+  ],
+  "motion_spec_version": "1.0",
+  "motion_generated": {
+    "generated_at": "2026-10-14",
+    "tool": "tools/build_motion_spec.py (vocabulary in tools/motion_spec.py)",
+    "note": "Derived from screen_type, layout, cue_targets and the legacy animation token. Rerun this tool after any storyboard or visual-plan change; do not edit the motion objects by hand. Every preset is implemented in tools/screen_generator/style.css and honours prefers-reduced-motion."
+  }
 }

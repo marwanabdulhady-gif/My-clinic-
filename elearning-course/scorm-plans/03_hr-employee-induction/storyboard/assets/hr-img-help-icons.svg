@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Where to get help — icon family</title>
+<desc id="desc">Three line icons for the help routes: a headset (help desk), a screen with a form (Oracle self-service) and a document with an arrow (downloadable quick reference). Decorative: each card is labelled in on-screen text.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:620;stroke-dashoffset:620;animation:hlp-draw 900ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:hlp-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:120ms}
+    g:nth-of-type(4) .draw,g:nth-of-type(4) .tile{animation-delay:240ms}
+  }
+  @keyframes hlp-draw{to{stroke-dashoffset:0}}
+  @keyframes hlp-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+<text x="80" y="88" class="h">Where to get help — icon family</text>
+<g id="icon-helpdesk" transform="translate(170,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <path class="line draw" d="M96 300v-52a94 94 0 0 1 188 0v52"/>
+  <path class="line draw" d="M72 282h34v84H72a18 18 0 0 1-18-18v-48a18 18 0 0 1 18-18z"/>
+  <path class="line draw" d="M308 282h-34v84h34a18 18 0 0 0 18-18v-48a18 18 0 0 0-18-18z"/>
+  <path class="accent draw" d="M274 366v34a40 40 0 0 1-40 40h-44"/>
+  <circle class="dot" cx="190" cy="440" r="14"/>
+</g>
+<g id="icon-oracle" transform="translate(610,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <rect class="line draw" x="66" y="120" width="248" height="180" rx="14"/>
+  <path class="line draw" d="M150 300v44h80v-44"/>
+  <path class="line draw" d="M110 344h160"/>
+  <path class="accent draw" d="M110 176h160M110 220h110"/>
+  <path class="accent draw" d="M110 264h74"/>
+  <circle class="dot" cx="252" cy="264" r="12"/>
+</g>
+<g id="icon-quickref" transform="translate(1050,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <path class="line draw" d="M96 116h136l56 56v248H96z"/>
+  <path class="line draw" d="M232 116v56h56"/>
+  <path class="line draw" d="M132 236h116M132 282h116M132 328h72"/>
+  <path class="accent draw" d="M196 404h96M262 374l30 30-30 30"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · contact routes await HR confirmation</text>
+</svg>

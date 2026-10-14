@@ -54,7 +54,85 @@
       "on_screen_text": null,
       "animation": "fade-up",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "orient",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 520,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "logo",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "title",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "subtitle",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "companions",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "tagline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "pulse-once",
+          "target": "module-chip",
+          "duration_ms": 520,
+          "easing": "spring"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 720,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hr-001",
@@ -81,7 +159,67 @@
         "purpose",
         "mission",
         "goal"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "purpose",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "mission",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "goal",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 440,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-002",
@@ -104,7 +242,67 @@
       "on_screen_text": "If you had one million Saudi riyals, where would you spend it?",
       "animation": "none",
       "interaction": "Pick the one closest to you, or write your own.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "reflect",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "headline",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "body",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "media",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "none",
+          "duration_ms": 260,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hr-010",
@@ -154,7 +352,85 @@
         "resp",
         "amb",
         "care"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "intro",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "collab",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "resp",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "amb",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "care",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 560,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-011",
@@ -169,7 +445,39 @@
       "on_screen_text": "Six things people did this week. Match each one to the value behind it.",
       "animation": "none",
       "interaction": "Match each action to a value.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-012",
@@ -201,7 +509,112 @@
         "clin",
         "care",
         "cost"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "intro",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "closer",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "cure",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "cap",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "culture",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "clin",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 300,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "care",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "cost",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 420,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 740,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-013",
@@ -216,7 +629,39 @@
       "on_screen_text": null,
       "animation": "none",
       "interaction": "Choose one.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-014",
@@ -243,7 +688,67 @@
         "patients",
         "community",
         "corporates"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "patients",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "community",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "corporates",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 440,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-020",
@@ -264,7 +769,85 @@
         "e2023",
         "e2024",
         "e2025"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "e2017",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "e2019",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "e2023",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "e2024",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "e2025",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "highlight-sweep",
+          "target": "current-event",
+          "duration_ms": 560,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 560,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-021",
@@ -287,7 +870,39 @@
       "on_screen_text": "Seven sites. You'll hear these codes every day — open each pin.",
       "animation": "none",
       "interaction": "Open all seven pins.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-022",
@@ -336,7 +951,76 @@
         "cmo",
         "coo",
         "cfo"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "ceo",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "cmo",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "coo",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "cfo",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 500,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-023",
@@ -359,7 +1043,67 @@
       "on_screen_text": "Flip each card. Accreditation is measured, not given — and it has to be earned again.",
       "animation": "none",
       "interaction": "Flip each card.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "card-front",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "card-back",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "deck-progress",
+            "trigger": "enter",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 540,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hr-030",
@@ -388,7 +1132,85 @@
         "accountability",
         "innovation",
         "report"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "respect",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "integrity",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "accountability",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "innovation",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "report",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 560,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-031",
@@ -446,7 +1268,39 @@
       "on_screen_text": "Three moments, three decisions. Nobody is watching.",
       "animation": "none",
       "interaction": "Choose what you would do at each step.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-032",
@@ -461,7 +1315,39 @@
       "on_screen_text": "Nine statements from the notice in reception. Sort them into the right column.",
       "animation": "none",
       "interaction": "Place each statement under Patient right or Patient responsibility.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-033",
@@ -476,7 +1362,39 @@
       "on_screen_text": null,
       "animation": "none",
       "interaction": "Choose one.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-040",
@@ -503,7 +1421,67 @@
         "desk",
         "oracle",
         "pdf"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "desk",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "oracle",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "pdf",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 440,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-041",
@@ -529,7 +1507,112 @@
         "hajj",
         "compass",
         "holidays"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "intro",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "annual",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "sick",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "injury",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "maternity",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "exam",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 300,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "scientific",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 360,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "hajj",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 420,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 740,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-042",
@@ -544,7 +1627,39 @@
       "on_screen_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days.",
       "animation": "none",
       "interaction": "Match each grade to its entitlement.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-043",
@@ -573,7 +1688,85 @@
         "s3",
         "s4",
         "s5"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "s1",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s2",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s3",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s4",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s5",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 240,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 620,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-044",
@@ -603,7 +1796,39 @@
       "on_screen_text": "Four colleagues, four questions. You're the one they've asked.",
       "animation": "none",
       "interaction": "Answer each colleague.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-045",
@@ -618,7 +1843,39 @@
       "on_screen_text": "Answer until the practice says you're ready. It stops early if you've got it.",
       "animation": "none",
       "interaction": "Choose one answer each time.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-050",
@@ -645,7 +1902,67 @@
         "what",
         "who",
         "split"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "what",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "who",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "split",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 440,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-051",
@@ -664,7 +1981,67 @@
         "s1",
         "s2",
         "s3"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "s1",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s2",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s3",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 620,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-052",
@@ -679,7 +2056,39 @@
       "on_screen_text": "Basic 6,000 + housing 1,500. Your monthly GOSI deduction = ___ SAR",
       "animation": "none",
       "interaction": "Type the number.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-053",
@@ -699,7 +2108,76 @@
         "s2",
         "s3",
         "elig"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "explore",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [
+          {
+            "id": "s1",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s2",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "s3",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "elig",
+            "trigger": "cue",
+            "preset": "wipe-right",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "underline-draw",
+          "target": "key-term",
+          "duration_ms": 620,
+          "easing": "decelerate"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 620,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-054",
@@ -714,7 +2192,39 @@
       "on_screen_text": null,
       "animation": "none",
       "interaction": "Choose one.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-060",
@@ -729,7 +2239,39 @@
       "on_screen_text": "Six tasks, four systems. Match each task to where it happens.",
       "animation": "none",
       "interaction": "Match each task to its system.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-061",
@@ -787,7 +2329,39 @@
       "on_screen_text": "Five steps. These screenshots come from a test account, so nothing here is real.",
       "animation": "none",
       "interaction": "Follow the instruction on each step and click the right place.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-062",
@@ -802,7 +2376,39 @@
       "on_screen_text": null,
       "animation": "none",
       "interaction": "True or false?",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-070",
@@ -836,7 +2442,67 @@
         "id",
         "lost",
         "wheel"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "id",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "lost",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "wheel",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 440,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-071",
@@ -873,7 +2539,39 @@
       "on_screen_text": "Six rules, three groups. Place each rule where it applies.",
       "animation": "none",
       "interaction": "Place each rule under Front office, Medical team or Back office.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-080",
@@ -901,7 +2599,76 @@
         "oracle",
         "notice",
         "eos"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "teach",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "qiwa",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "oracle",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "notice",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "eos",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 500,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     },
     {
       "screen_id": "hr-081",
@@ -916,7 +2683,39 @@
       "on_screen_text": null,
       "animation": "none",
       "interaction": "Choose one.",
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "assess",
+        "entry": {
+          "preset": "none",
+          "duration_ms": 0,
+          "delay_ms": 0,
+          "easing": "standard"
+        },
+        "layers": [],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "settle-once",
+          "incorrect": "nudge-once",
+          "duration_ms": 420,
+          "easing": "spring"
+        },
+        "exit": {
+          "preset": "none",
+          "duration_ms": 0,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 0,
+        "notes": "Assessment screen: the interaction area stays still so motion cannot cue an answer."
+      }
     },
     {
       "screen_id": "hr-090",
@@ -931,7 +2730,76 @@
       "on_screen_text": "One row per objective. Anything below 70% comes with a suggestion.",
       "animation": "none",
       "interaction": null,
-      "cue_targets": []
+      "cue_targets": [],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "score-ring",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 0,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-1",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 90,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "objective-2",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 180,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          },
+          {
+            "id": "advice",
+            "trigger": "enter",
+            "preset": "count-up",
+            "delay_ms": 270,
+            "duration_ms": 360,
+            "easing": "standard",
+            "stagger_ms": 90
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 630,
+        "notes": "Staged entrance; nothing loops and no timing pressure is applied."
+      }
     },
     {
       "screen_id": "hr-091",
@@ -966,7 +2834,82 @@
         "pdf",
         "survey",
         "next"
-      ]
+      ],
+      "motion": {
+        "spec_version": "1.0",
+        "intent": "close",
+        "entry": {
+          "preset": "fade-up",
+          "duration_ms": 420,
+          "delay_ms": 0,
+          "easing": "decelerate"
+        },
+        "layers": [
+          {
+            "id": "list",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 0,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "pdf",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 60,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "survey",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 120,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          },
+          {
+            "id": "next",
+            "trigger": "cue",
+            "preset": "fade-up",
+            "delay_ms": 180,
+            "duration_ms": 320,
+            "easing": "standard",
+            "stagger_ms": 60
+          }
+        ],
+        "emphasis": {
+          "preset": "none",
+          "target": null,
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "feedback": {
+          "correct": "none",
+          "incorrect": "none",
+          "duration_ms": 0,
+          "easing": "standard"
+        },
+        "exit": {
+          "preset": "fade",
+          "duration_ms": 180,
+          "easing": "accelerate"
+        },
+        "loop": false,
+        "reduced_motion": "static",
+        "budget_ms": 500,
+        "notes": "Layer reveals are bound to the narration cue marks in narration-script.json."
+      }
     }
-  ]
+  ],
+  "motion_spec_version": "1.0",
+  "motion_generated": {
+    "generated_at": "2026-10-14",
+    "tool": "tools/build_motion_spec.py (vocabulary in tools/motion_spec.py)",
+    "note": "Derived from screen_type, layout, cue_targets and the legacy animation token. Rerun this tool after any storyboard or visual-plan change; do not edit the motion objects by hand. Every preset is implemented in tools/screen_generator/style.css and honours prefers-reduced-motion."
+  }
 }

@@ -233,6 +233,9 @@ def module_data(module):
                              for block in card.get('blocks', []) if block.get('asset_id') and
                              re.search(r'pending consent', block.get('caption', ''), re.I)]
         card['_visual'] = visual.get('visual_concept', '')
+        # Structured motion spec written by tools/build_motion_spec.py (vocabulary in
+        # tools/motion_spec.py). The review player applies it; it is not a production build.
+        card['_motion'] = visual.get('motion')
         card['_planned_visuals'] = []
         for image in visual.get('imagery', []):
             match = re.match(r'([a-z0-9-]+):\s*(.*)', image.get('description', ''), re.S)

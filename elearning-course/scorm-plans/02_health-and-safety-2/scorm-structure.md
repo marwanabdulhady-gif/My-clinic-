@@ -186,3 +186,66 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | Per objective | `cmi.objectives.n.id / .score / .status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
 | Resume | `cmi.suspend_data` (**4,096 chars**) · `cmi.core.lesson_location` | player state — 26 screens; check the `SUSPEND_OVERFLOW` lint before build |
+
+### Interaction records (`cmi.interactions.n.type`)
+
+One interaction record per scored screen, in screen order. `poll` screens are unscored reflections and are **not** reported as interactions.
+
+| Interaction type | Scored screens | Screen ids |
+|---|---:|---|
+| `choice` | 3 | `hs2-012`, `hs2-062`, `hs2-063` |
+| `fill-in` | 2 | `hs2-013`, `hs2-064` |
+| `matching` | 4 | `hs2-031`, `hs2-041`, `hs2-061`, `hs2-070` |
+| `performance` | 3 | `hs2-030`, `hs2-032`, `hs2-052` |
+| `sequencing` | 1 | `hs2-053` |
+
+Resume payload: ~**1,248 characters** estimated (26 screens × 24 + 13 scored × 48) against the 4,096-character limit of SCORM 1.2 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+
+## 7. Gamification (what the record carries, and what it must not)
+
+Rules come from `../00_program/gamification-plan.md` and this pack's Phase 3 activity table. Points are the only score the LMS sees; nothing here adds a mechanic the proposal does not contain.
+
+| Mechanic | Planned rule (Phase 3) | Objective | Reported to the LMS as |
+|---|---|---|---|
+| `hs2-030` game | 6 nodes; `score_delta` +1 per correct RACE choice; 2 lives; 1 hint per node; no timer | hs2-o2 | `cmi.interactions.n.*` + 25 pts in `cmi.score.raw` |
+| `hs2-052` decision scenario | 3 nodes | hs2-o5 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `hs2-064` escape room | 4 sequential puzzles, text answers with aliases, 3 lives, 1 hint each | hs2-o6 | `cmi.interactions.n.*` + 20 pts in `cmi.score.raw` |
+
+**Points economy.** `hs2-sA` 10 · `hs2-sB` 25 · `hs2-sC` 20 · `hs2-sD` 10 · `hs2-sE` 25 · `hs2-sF` 45 · `hs2-sG` 10 · **total 145**, pass 80% = 116.
+
+**Feedback coverage.** 0 of 13 scored screens carry authored answer feedback in the build block (`hs2-012`, `hs2-013`, `hs2-030`, `hs2-031`, `hs2-032`, `hs2-041`, `hs2-052`, `hs2-053`, `hs2-061`, `hs2-062`, `hs2-063`, `hs2-064` take it from the Phase 3 activity table or the player default).
+
+No excluded mechanic (leaderboard, ranking, streak, badge, countdown, time limit) is introduced by this pack's storyboard or Phase 3/4 text.
+
+## 8. Scenarios and branching
+
+3 scenario, game, simulation or adaptive-practice screen(s). Branch structure is read from the authored build blocks; retry and pass rules from Phase 3.
+
+| Screen | Type | Authored structure | Objective | Pts | Pass / retry rule (Phase 3) |
+|---|---|---|---|---:|---|
+| `hs2-030` | `game` | not in the storyboard block yet — Phase 3: 6 nodes; `score_delta` +1 per correct RACE choice; 2 lives; 1 hint per node; no timer | hs2-o2 | 25 | ≥ 5 of 6 · Lives at 0 → debrief → restart |
+| `hs2-052` | `decision_scenario` | not in the storyboard block yet — Phase 3: 3 nodes | hs2-o5 | 15 | ≥ 3 correct · Replay |
+| `hs2-064` | `escape_room` | not in the storyboard block yet — Phase 3: 4 sequential puzzles, text answers with aliases, 3 lives, 1 hint each | hs2-o6 | 20 | all 4 solved · Lives at 0 → debrief → retry |
+
+⚠ Decision screens whose nodes are still authored only in the Phase 3 table (no branch JSON yet): `hs2-052`. Phase 4 needs the node/choice graph before the package can report per-branch interactions.
+
+## 9. Base SCORM structure checklist
+
+Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build blockers unless the note says so.
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
+| Pass mark written to the manifest (80%) | ✅ | `adlcp:masteryscore` |
+| Every objective has at least one scored screen | ✅ | 7/7 objectives evidenced |
+| Every scored screen names its objective | ✅ | 13 scored screens |
+| Every scored screen maps to an interaction type | ✅ | 13 interaction records |
+| Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~1,248 chars vs 4,096 limit |
+| Gamification rules recorded for every scenario screen | ✅ | 3/3 scenario screens have a Phase 3 rule row |
+| Answer feedback authored for the scored checks | ⚠ | 0/13 scored screens carry feedback in the block |
+| No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |
+| Motion spec present for every screen (reduced-motion safe) | ✅ | 26/26 screens carry a `motion` object |
+| Thin-evidence objectives flagged for SME sign-off | ⚠ | 3 objective(s) rest on a single scored screen |
+
+**10/12 base requirements met.** Rerun `tools/build_scorm_structure.py` after any storyboard change, then `tools/audit_scorm_base.py` for the programme-wide view.

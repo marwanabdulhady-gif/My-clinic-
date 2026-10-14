@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Who My Clinic serves — icon family</title>
+<desc id="desc">Three line icons for the groups My Clinic serves: a family group (patients), a community ring (the community) and a briefcase with a shield (corporate clients). Decorative: each card is labelled in on-screen text.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:40px;font-weight:700}
+  .small{font-size:21px;font-weight:600;fill:#5B6B7B}
+  .line{fill:none;stroke:#003867;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:none;stroke:#652D8C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .dot{fill:#652D8C}
+  .tile{fill:#FFFFFF;stroke:#D9E1E8;stroke-width:3}
+  /* One draw-in per card, staggered; disabled entirely under reduced motion. */
+  @media (prefers-reduced-motion: no-preference){
+    .draw{stroke-dasharray:620;stroke-dashoffset:620;animation:srv-draw 950ms cubic-bezier(.05,.7,.1,1) both}
+    .tile{animation:srv-in 420ms cubic-bezier(.2,0,0,1) both}
+    g:nth-of-type(3) .draw,g:nth-of-type(3) .tile{animation-delay:120ms}
+    g:nth-of-type(4) .draw,g:nth-of-type(4) .tile{animation-delay:240ms}
+  }
+  @keyframes srv-draw{to{stroke-dashoffset:0}}
+  @keyframes srv-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+<text x="80" y="88" class="h">Who we serve — icon family</text>
+<g id="icon-patients" transform="translate(170,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <circle class="line draw" cx="130" cy="170" r="46"/>
+  <path class="line draw" d="M62 340a68 68 0 0 1 136 0"/>
+  <circle class="accent draw" cx="266" cy="196" r="34"/>
+  <path class="accent draw" d="M214 340a52 52 0 0 1 104 0"/>
+  <circle class="dot" cx="190" cy="430" r="13"/>
+</g>
+<g id="icon-community" transform="translate(610,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <circle class="line draw" cx="190" cy="250" r="120"/>
+  <circle class="accent draw" cx="190" cy="250" r="66"/>
+  <circle class="line draw" cx="190" cy="130" r="26"/>
+  <circle class="line draw" cx="294" cy="310" r="26"/>
+  <circle class="line draw" cx="86" cy="310" r="26"/>
+  <circle class="dot" cx="190" cy="250" r="16"/>
+</g>
+<g id="icon-corporates" transform="translate(1050,170)">
+  <rect class="tile" width="380" height="520" rx="18"/>
+  <rect class="line draw" x="72" y="188" width="236" height="164" rx="14"/>
+  <path class="line draw" d="M148 188v-30a20 20 0 0 1 20-20h44a20 20 0 0 1 20 20v30"/>
+  <path class="line draw" d="M72 250h236"/>
+  <path class="accent draw" d="M268 300l52-20v58c0 38-26 62-52 74-26-12-52-36-52-74v-58z"/>
+  <path class="accent draw" d="M246 356l16 16 32-34"/>
+</g>
+<text x="80" y="856" class="small">Own SVG draft · labels stay in HTML · card wording awaits SME approval</text>
+</svg>

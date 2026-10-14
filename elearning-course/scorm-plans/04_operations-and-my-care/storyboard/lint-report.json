@@ -113,5 +113,13 @@
     ],
     "issues": []
   },
+  "motion_spec": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "spec_version": "1.0",
+    "screen_count": 13,
+    "issues": []
+  },
   "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
 }

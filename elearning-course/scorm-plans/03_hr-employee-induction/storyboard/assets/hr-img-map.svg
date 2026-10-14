@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">My Clinic sites map</title>
+<desc id="desc">Map of My Clinic sites: five in Jeddah, one in Petro-Rabigh, one in Riyadh. Simplified outline of the western region with a Riyadh inset; no satellite detail. Pin positions are marked here and the pin graphics are drawn by the player.</desc>
+<rect width="1200" height="800" fill="#FFFFFF"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:34px;font-weight:700}
+  .b{font-size:22px;font-weight:600}
+  .small{font-size:18px;font-weight:600;fill:#5B6B7B}
+  .coast{fill:#F4F7FA;stroke:#C0CED9;stroke-width:4}
+  .inset{fill:#F4F7FA;stroke:#C0CED9;stroke-width:4;stroke-dasharray:10 8}
+  .anchor{fill:#FFFFFF;stroke:#652D8C;stroke-width:6}
+  .halo{fill:#652D8C;opacity:.14}
+  /* Motion: the coastline draws, then the seven site anchors settle in sequence. */
+  @media (prefers-reduced-motion: no-preference){
+    .coast,.inset{stroke-dasharray:2600;stroke-dashoffset:2600;animation:map-draw 1400ms cubic-bezier(.05,.7,.1,1) both}
+    .site{animation:map-pop 420ms cubic-bezier(.34,1.4,.64,1) both}
+    .site:nth-of-type(2){animation-delay:420ms}
+    .site:nth-of-type(3){animation-delay:520ms}
+    .site:nth-of-type(4){animation-delay:620ms}
+    .site:nth-of-type(5){animation-delay:720ms}
+    .site:nth-of-type(6){animation-delay:820ms}
+    .site:nth-of-type(7){animation-delay:920ms}
+  }
+  @keyframes map-draw{to{stroke-dashoffset:0}}
+  @keyframes map-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+</style>
+<text x="60" y="70" class="h">My Clinic sites</text>
+<path class="coast" d="M120 130 L470 118 L640 170 L700 260 L690 400 L640 540 L520 660 L360 700 L210 640 L140 470 Z"/>
+<path class="inset" d="M830 150 L1090 140 L1130 300 L1050 430 L880 420 L820 300 Z"/>
+<text x="860" y="128" class="small">Riyadh inset</text>
+<g class="site" id="site-jeddah-1" transform="translate(300,470)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-jeddah-2" transform="translate(352,506)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-jeddah-3" transform="translate(286,536)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-jeddah-4" transform="translate(344,572)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-jeddah-5" transform="translate(296,606)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-petro-rabigh" transform="translate(268,352)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<g class="site" id="site-riyadh" transform="translate(960,286)">
+  <circle class="halo" r="30"/><circle class="anchor" r="13"/>
+</g>
+<text x="400" y="560" class="b">Jeddah · 5 sites</text>
+<text x="120" y="330" class="b">Petro-Rabigh · 1</text>
+<text x="1000" y="330" class="b">Riyadh · 1</text>
+<text x="60" y="760" class="small">Own SVG draft · simplified outline, no satellite detail · pin graphics drawn by the player · site names and counts await SME approval</text>
+</svg>

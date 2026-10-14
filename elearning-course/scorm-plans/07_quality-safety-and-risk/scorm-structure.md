@@ -30,9 +30,9 @@ MC_07_ClinicalGov_v1.0_1.2.zip
     ├── qsr-img-iceberg.*
     ├── qsr-img-matrix.*
     ├── qsr-img-pillars.*
+    ├── qsr-img-quote.*
     ├── qsr-img-spo.*
     ├── qsr-img-wristbands.*
-    ├── qsr-vid-speakup.*
     ├── char-noor-avatar-concern.png
     ├── char-noor-avatar-neutral.png
     ├── char-noor-listening.png
@@ -163,3 +163,62 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | Per objective | `cmi.objectives.n.id / .score / .status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
 | Resume | `cmi.suspend_data` (**4,096 chars**) · `cmi.core.lesson_location` | player state — 22 screens; check the `SUSPEND_OVERFLOW` lint before build |
+
+### Interaction records (`cmi.interactions.n.type`)
+
+One interaction record per scored screen, in screen order. `poll` screens are unscored reflections and are **not** reported as interactions.
+
+| Interaction type | Scored screens | Screen ids |
+|---|---:|---|
+| `fill-in` | 1 | `qsr-032` |
+| `matching` | 4 | `qsr-011`, `qsr-022`, `qsr-033`, `qsr-041` |
+| `performance` | 2 | `qsr-021`, `qsr-051` |
+| `sequencing` | 3 | `qsr-012`, `qsr-023`, `qsr-030` |
+| `true-false` | 1 | `qsr-042` |
+
+Resume payload: ~**1,056 characters** estimated (22 screens × 24 + 11 scored × 48) against the 4,096-character limit of SCORM 1.2 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+
+## 7. Gamification (what the record carries, and what it must not)
+
+Rules come from `../00_program/gamification-plan.md` and this pack's Phase 3 activity table. Points are the only score the LMS sees; nothing here adds a mechanic the proposal does not contain.
+
+| Mechanic | Planned rule (Phase 3) | Objective | Reported to the LMS as |
+|---|---|---|---|
+| `qsr-021` decision scenario | 3 nodes | qsr-o2 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+| `qsr-051` decision scenario | 3 nodes | qsr-o5 | `cmi.interactions.n.*` + 15 pts in `cmi.score.raw` |
+
+**Points economy.** `qsr-sB` 15 · `qsr-sC` 30 · `qsr-sD` 20 · `qsr-sE` 15 · `qsr-sF` 15 · **total 95**, pass 80% = 76.
+
+**Feedback coverage.** 11 of 11 scored screens carry authored answer feedback in the build block.
+
+No excluded mechanic (leaderboard, ranking, streak, badge, countdown, time limit) is introduced by this pack's storyboard or Phase 3/4 text.
+
+## 8. Scenarios and branching
+
+2 scenario, game, simulation or adaptive-practice screen(s). Branch structure is read from the authored build blocks; retry and pass rules from Phase 3.
+
+| Screen | Type | Authored structure | Objective | Pts | Pass / retry rule (Phase 3) |
+|---|---|---|---|---:|---|
+| `qsr-021` | `decision_scenario` | 3 decision nodes · 9 authored choices · 6 explicit branches | qsr-o2 | 15 | ≥ 2 best · — |
+| `qsr-051` | `decision_scenario` | 3 decision nodes · 9 authored choices · 6 explicit branches | qsr-o5 | 15 | all best · — |
+
+## 9. Base SCORM structure checklist
+
+Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build blockers unless the note says so.
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
+| Pass mark written to the manifest (80%) | ✅ | `adlcp:masteryscore` |
+| Every objective has at least one scored screen | ✅ | 5/5 objectives evidenced |
+| Every scored screen names its objective | ✅ | 11 scored screens |
+| Every scored screen maps to an interaction type | ✅ | 11 interaction records |
+| Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~1,056 chars vs 4,096 limit |
+| Gamification rules recorded for every scenario screen | ✅ | 2/2 scenario screens have a Phase 3 rule row |
+| Answer feedback authored for the scored checks | ✅ | 11/11 scored screens carry feedback in the block |
+| No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |
+| Motion spec present for every screen (reduced-motion safe) | ✅ | 22/22 screens carry a `motion` object |
+| Thin-evidence objectives flagged for SME sign-off | ⚠ | 1 objective(s) rest on a single scored screen |
+
+**11/12 base requirements met.** Rerun `tools/build_scorm_structure.py` after any storyboard change, then `tools/audit_scorm_base.py` for the programme-wide view.
