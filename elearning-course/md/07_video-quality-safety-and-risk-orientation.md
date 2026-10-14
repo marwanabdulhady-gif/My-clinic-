@@ -1,12 +1,13 @@
 # Video — Quality, Safety and Risk Orientation (Module Source)
 
-> **Source file:** `google_drive/Quality, Safety and Risk Orientation.mp4` *(not committed to git — see README)*
+> **Source file:** `google_drive/Quality, Safety and Risk Orientation.mp4` *(committed to git)*
 > **Drive folder:** top level of the course folder
 > **Size:** 39,451,744 bytes · **Duration:** 8 min 56 s · **Video:** 1280×720
 > **Last modified in Drive:** 2026-10-07
 > **Inspection method:**
 > - **Audio:** speech is present (≈ −20 dB mean level). Transcribed locally with an offline speech recogniser (CMU Pocketsphinx, English model). This recogniser is **low-accuracy** for conversational speech, so the transcript below is a *working draft* and every quoted phrase should be re-checked by listening to the video.
-> - **Visuals:** 13 keyframes sampled every 40 s, reviewed on contact sheets. Slide titles and text were read from the frames.
+> - **Visuals:** 107 screenshots sampled every 5 s, committed in `media/07_quality-safety-risk/` (`tSSSSs.jpg`, e.g. `t0120s.jpg` = 2:00). Slide text read with OCR (RapidOCR).
+> - **Detailed pass (second review):** 10-second narration windows (`media/07_quality-safety-risk/CHUNKS_10s.md`), with screenshot references and OCR for each window. Section 6 summarises each minute.
 
 ---
 
@@ -94,7 +95,7 @@ Times are from the narration (approximate; ±10 s). Frame times are when the fra
 
 ---
 
-## 4. Visual reference (keyframes reviewed)
+## 4. Visual reference (screenshots reviewed)
 
 | Frame | Content |
 |---|---|
@@ -124,3 +125,28 @@ Times are from the narration (approximate; ±10 s). Frame times are when the fra
 6. **Consistency:** the reporting window (24 hours) is the same rule the ethics slides in the HR deck give for ethical dilemmas (incident report within 24 hours). Keep these consistent.
 7. **Missing visuals:** Goals 3–4, risk responses, iceberg, critical incident and reporting workflow have no frames; add slides.
 8. **Interactive candidates:** two-identifier check (scenario), the 6 goals matching game, risk-scoring drill (impact × likelihood), iceberg classification (critical / adverse / near miss), and a 24-hour reporting scenario.
+
+---
+
+## 6. Detailed pass by minute (second review)
+
+Source for each minute: the 10-second chunk log in `CHUNKS_10s.md` (narration + on-slide OCR, screenshots every 5 s). Narration wording comes from the low-accuracy machine transcript and is paraphrased here, so verify against the video before quoting.
+
+| Time | Section | What is said and shown |
+|---|---|---|
+| 0:00–1:00 | Welcome | The presenter welcomes new clinical staff to the general orientation. The goal is to explain how the clinic runs and how quality is protected through clinical governance. The slides are the orientation's official visuals. The quote on screen is "Doing the right things right the first time and every time." The agenda has five parts: quality standard, patient safety, risk management, incidents and events, and the reporting workflow. |
+| 1:00–1:40 | 1. Quality standard | Quality is measured in three linked layers: **Structure** (resources and setting), **Processes** (how activities are performed), and **Outcomes** (the results). The aim is to collect valid, reliable data that reflects real performance. The slides show the **FOCUS-PDCA** model as the organisation's approved quality-improvement cycle. |
+| 1:40–2:40 | 1. (cont.) | The PDCA cycle is described as plan, do, check, act, repeated continuously. |
+| 2:40–3:30 | 2. Patient safety goals | Six International Patient Safety Goals (IPSG). Goal 1, identification: use **two identifiers only**, the patient's full name and medical record number. Age, room number and similar details are not identifiers. Goal 2, communication: verify verbal and telephone orders, and report critical results. |
+| 3:30–4:10 | 2. (cont.) | Goal 3, high-alert medications: a standard process and a red warning label. Goal 4, safe surgery: site marking, the time-out before the start, and sign-out before the patient leaves. |
+| 4:10–4:50 | 2. (cont.) | Goal 5, hand hygiene at the five moments. Goal 6, falls: a high-risk patient wears a yellow identification band. The narration says hand hygiene and fall prevention are daily habits. |
+| 4:40–5:20 | 3. Risk management | The lifecycle is identify, assess, manage (controls), and report (risk register). Risk is scored as **impact (1–5) × likelihood (1–5)**, giving a range from 1 (green) to 25 (deep red). |
+| 5:20–6:10 | 3. (cont.) | The four responses: **mitigate** (reduce the impact or likelihood with controls), **transfer** (for example to an insurer), **accept** (only with executive review and approval), **avoid** (do not start the activity). |
+| 6:10–7:20 | 4. Incidents and events | Iceberg model: critical incidents (top, visible), adverse events (below the surface), and near misses (largest, underwater, caught before harm). The culture is **non-punitive and open**, so staff report hidden near misses without fear. A **sentinel event** is defined as an unanticipated occurrence involving death or serious injury that needs immediate investigation. Examples given in the narration: surgery-related events, infant abduction, workplace violence. |
+| 7:30–8:40 | 5. Reporting workflow | **Every employee** must report any variance. The examples include medication errors, falls, system downtime, equipment failure, lab issues, fire hazards and security breaches. The staff member has **24 hours** to submit a digital report by the internet or email. The system then grades and escalates. Severity 1–2 (negligible or minor) is escalated within the department. |
+| 8:40–8:56 | Close | The closing question is "Will you speak up and keep patients safe?" The narration says staff are the final layer of protection. The video ends on the NotebookLM end card. |
+
+### Points to check against the source before the course goes live
+- The sentinel-event examples and the wording of the 24-hour rule need to match the clinic's policy document, not only the narration.
+- The IPSG goal numbers and wording should be checked against the official International Patient Safety Goals.
+- The yellow identification band for falls is named in the narration only. Check it against the clinic's falls policy.
