@@ -6,7 +6,9 @@ Two fictional My Clinic colleagues guide every trainee through all eight package
 
 This file is the **character bible**. It is mandatory for anyone (person or AI agent) who writes storyboards, narration, image prompts or audio for the courses. It sits with the brand guide: [`../brand/brand-identity.md`](../brand/brand-identity.md).
 
-![Companion placement mockups](../brand/screen-mockups/07-meet-your-guides.png)
+![Noor and Dr. Omar character sheet](character-sheet.png)
+
+*Character sheet: master + 7 poses + avatar for each companion, generated from the master as reference so face, outfit and style stay identical. Previews here are low resolution; the full-size originals (1088 × 1456 px) are in My Clinic's Canva account — media ids in §3.*
 
 ---
 
@@ -46,7 +48,7 @@ Short, true-to-life moments the companions share once each, to make it safe for 
 
 ## 2. How they look (visual bible)
 
-Same flat vector style as the brand (navy outlines, white space, no gradients, no text). Semi-realistic proportions (about 6.5 heads tall), friendly but professional — **not** cartoon or chibi.
+**Approved style:** polished flat vector illustration with **subtle soft shading**, like a premium explainer-video character; clean confident linework; semi-realistic proportions (about 7 heads tall); friendly and professional — **not** cartoon, chibi or photoreal. Limited palette: navy, white, the character's accent colour, warm skin tones. (Characters are the one place where soft shading is allowed; scenes and diagrams stay flat.)
 
 | | **Noor** | **Dr. Omar** |
 |---|---|---|
@@ -60,7 +62,7 @@ Same flat vector style as the brand (navy outlines, white space, no gradients, n
 
 ### Consistency rules
 
-1. Make **one master image of each character first** (front, three-quarter, neutral pose, full body on white). Get it approved (Phase 3 approval). Every other pose is generated **from that master** (image reference / character reference / same seed), not from a fresh prompt.
+1. The **master image of each character is done** (`char-noor-master`, `char-omar-master`). Confirm approval in Phase 3. Every other pose is generated **from that master** (image reference / character reference / same seed), not from a fresh prompt.
 2. Keep face, skin tone, hijab/hair, clothing, lanyard colour and proportions identical in every pose.
 3. Check every pose at the size it will be shown (64 px avatar and 300–420 px half-body), next to the master, before accepting it.
 4. Transparent background (PNG with alpha), no shadow on the ground, no props that are not in the list.
@@ -70,31 +72,38 @@ Same flat vector style as the brand (navy outlines, white space, no gradients, n
 
 ## 3. Asset list (program-wide, shared by all modules)
 
-All files live in `00_program/characters/assets/` once produced. Provenance: `ai-generated` (prompt, tool, date recorded) after human review.
+**Status: masters and 7 poses + avatar per character are generated** (Canva AI, 14 Oct 2026). The full-size files live in My Clinic's Canva account; open each with `https://www.canva.com/M/<media id>` and download as **PNG with transparent background** (Canva Pro background remover) into `00_program/characters/assets/<asset id>.png`. Low-resolution previews are in [`previews/`](previews/). Provenance: `ai-generated` (Canva AI, prompts below), reviewed for consistency.
 
-| Asset id | Noor | Dr. Omar | Use |
+| Asset id | Noor — Canva media id | Dr. Omar — Canva media id | Use |
 |---|---|---|---|
-| `char-<id>-master` | ✔ | ✔ | Reference only (full body, neutral, 3/4 view) |
-| `char-<id>-welcome` | ✔ | ✔ | Open palm wave, big smile — title / intro / "meet your guide" |
-| `char-<id>-explaining` | ✔ | ✔ | One hand gesturing to the side (toward content) — content screens, scenario intros |
-| `char-<id>-thinking` | ✔ | ✔ | Hand at chin, slight head tilt — worked examples, "let's work it out" |
-| `char-<id>-tip` | ✔ | ✔ | Index finger raised, friendly — tip cards |
-| `char-<id>-concern` | ✔ | ✔ | Serious face, palm slightly raised — warnings, wrong choices with safety impact |
-| `char-<id>-success` | ✔ | ✔ | Thumbs up or small clap, big smile — correct choices, results, close |
-| `char-<id>-listening` | ✔ | ✔ | Holding tablet/clipboard, nodding — reflection polls, "your turn" |
-| `char-<id>-avatar-neutral` | ✔ | ✔ | Head-and-shoulders, circle crop, 512 × 512 — 48–64 px avatars |
-| `char-<id>-avatar-happy` | ✔ | ✔ | Avatar, smiling — success feedback |
-| `char-<id>-avatar-concern` | ✔ | ✔ | Avatar, concerned — caution feedback |
-| `char-duo-welcome` | ✔ together | | Both side by side, waving — course title / "meet your guides" (hr-000) |
+| `char-<id>-master` | `MAHX-pdlawM` | `MAHX-ka2O4Q` | Reference only (full body, 3/4 view) — every pose is generated from this |
+| `char-<id>-welcome` | `MAHX-pFaNMU` | `MAHX-hEFOR4` | Open-palm wave — title / intro / "meet your guides" |
+| `char-<id>-explaining` | `MAHX-hqkU5I` | `MAHX-ljvFtE` | Hand presenting to the side — content screens, scenario intros |
+| `char-<id>-tip` | `MAHX-v-F8xI` | `MAHX-jYQR58` | Index finger raised — tip cards |
+| `char-<id>-thinking` | `MAHX-p0nWpE` | `MAHX-jgu1Vk` | Hand at chin — worked examples |
+| `char-<id>-concern` | `MAHX-hFE0aQ` | `MAHX-nCzJ70` | Raised palm, serious — warnings, unsafe choices |
+| `char-<id>-success` | `MAHX-jiR90M` | `MAHX-llCU5M` | Thumbs up — correct choices, results, close |
+| `char-<id>-listening` | `MAHX-v3i0kY` | `MAHX-uifxtY` | Holding a tablet, attentive — polls, reflections |
+| `char-<id>-avatar-neutral` | `MAHX-n4HuyU` | `MAHX-nPHDkA` | Head and shoulders, square — crop to a circle for 48–64 px avatars |
+| `char-<id>-avatar-happy` / `-avatar-concern` | to make if needed | to make if needed | Crop from `-success` / `-concern`, or generate from the avatar with the pose prompt |
+| `char-duo-welcome` | — | — | Not needed as one image: place the two `-welcome` poses side by side (see mockup 07) |
 
-**Total: 23 images** (11 per character + 1 duo). Half-body poses: 1200 × 1600 px PNG, transparent. Avatars: 512 × 512 PNG.
+| | Noor | Dr. Omar |
+|---|---|---|
+| Preview | ![](previews/char-noor-welcome.jpg) | ![](previews/char-omar-welcome.jpg) |
 
-### AI prompt — master images (fill nothing; use as is)
+Sizes in the course: half-body 300–420 px tall; avatars 48–64 px. Export at 1088 × 1456 (poses) and 1024 × 1024 (avatars).
+
+### AI prompts actually used (Canva AI image generator)
+
+Master images were made with these prompts (text-to-image, portrait 3:4):
 
 **Noor (master):**
 ```text
-Character design sheet master image, flat vector illustration, full body, three-quarter view, standing
-neutral and relaxed, transparent background. A Saudi woman in her mid-30s, a senior staff nurse:
+Professional character design for a corporate healthcare e-learning course, high-quality modern flat
+vector illustration with subtle soft shading, polished like a premium explainer-video character. Full
+body, three-quarter view, standing relaxed and confident, warm friendly smile, on a plain white
+background. A Saudi woman in her mid-30s, a senior staff nurse:
 oval face, warm medium-brown skin, dark brown eyes, soft natural smile, plain navy (#003867) hijab
 neatly wrapped, navy scrubs with a short white open lab coat, fob watch pinned to the coat, plain
 white ID badge on a purple (#652D8C) lanyard with nothing printed on the badge, flat white shoes.
@@ -105,8 +114,10 @@ for Saudi Arabia. No text, no letters, no logos, no watermark, no background sce
 
 **Dr. Omar (master):**
 ```text
-Character design sheet master image, flat vector illustration, full body, three-quarter view, standing
-neutral and relaxed, transparent background. A Saudi man in his late 30s, a family physician:
+Professional character design for a corporate healthcare e-learning course, high-quality modern flat
+vector illustration with subtle soft shading, polished like a premium explainer-video character. Full
+body, three-quarter view, standing relaxed and confident, warm friendly smile, on a plain white
+background. A Saudi man in his late 30s, a family physician:
 slightly square face, light-medium brown skin, dark eyes, short neat black beard, short tidy dark
 hair, warm smile, white doctor's coat over a light blue-grey (#C0CED9) shirt and navy (#003867)
 trousers, stethoscope around the neck, plain white ID badge on a teal (#008C99) lanyard with nothing
@@ -116,12 +127,15 @@ professional, culturally appropriate for Saudi Arabia. No text, no letters, no l
 no background scene, no shadow.
 ```
 
-### AI prompt — poses (use the approved master as the character reference)
+### AI prompt — poses (image-to-image, the approved master attached as the reference image)
+
+Used for every pose; only the `{POSE}` sentence changes. In Canva: generate-image with the master's media id as the image reference.
 
 ```text
-Same character as the reference image, identical face, skin tone, {hijab and navy scrubs with white
-coat and purple lanyard | beard, white coat, blue-grey shirt, stethoscope and teal lanyard}, same flat
-vector style and navy outlines. {POSE}: e.g. "half-body, open palm wave, big friendly smile" /
+Same character as the reference image: identical face, skin tone, {navy hijab, navy scrubs, short white
+open lab coat, fob watch, blank white badge on purple lanyard | short neat black beard, white doctor's
+coat over light blue-grey shirt, navy trousers, stethoscope, blank white badge on teal lanyard}, same
+polished flat vector illustration style with soft shading. Plain white background. {POSE}: e.g. "half-body, open palm wave, big friendly smile" /
 "half-body, right hand gesturing to the left side as if presenting something" / "half-body, index
 finger raised, giving a friendly tip" / "half-body, serious caring expression, palm slightly raised" /
 "half-body, thumbs up, big smile" / "head and shoulders only, centred, for a circular avatar, {neutral |
@@ -139,7 +153,7 @@ Follow the brand layouts L1–L6 ([`../brand/brand-identity.md`](../brand/brand-
 
 | Layout | Companion use | Size and position |
 |---|---|---|
-| L1 Title | Lead host `welcome` pose (or `char-duo-welcome` on the first course in the path, `hr-000`) | Half-body, 380–420 px tall, bottom-right, cropped at the waist by the stage edge; replaces the watermark |
+| L1 Title | Lead host `welcome` pose (both `welcome` poses on `hr-000`, the first course in the path) | On the navy background, show the character in a **white rounded portrait card** (16 px radius, 4 px top edge in the character colour, name + role under the image), about 190 × 300 px, right side (mockup 07). Use a free-standing cut-out only if you have a clean transparent PNG from Canva's background remover — never a rough cut-out on navy |
 | L2 Section opener | None (the value tile carries the screen) | — |
 | L3 Content | (a) **Intro screens**: half-body `explaining` pose in the right column instead of an illustration. (b) **Tip card**: avatar + speech card | (a) 320–380 px tall, right column. (b) 56 px avatar with a 3 px ring in the character colour, card 360 px wide max, bottom-left, white card with 4 px left edge in the character colour, ≤ 25 words, label "Noor's tip" / "Omar's tip" |
 | L4 Question | **Not visible while the learner answers.** May appear in the feedback banner as an avatar (`avatar-happy` correct / `avatar-concern` incorrect) | 40 px avatar at the left of the feedback banner |

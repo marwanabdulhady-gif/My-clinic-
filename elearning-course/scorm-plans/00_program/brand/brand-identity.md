@@ -169,7 +169,7 @@ Two fictional guides appear across all courses. **Everything about them — look
 
 - **Noor**: senior staff nurse, navy hijab, navy scrubs with short white coat, **purple** (#652D8C) lanyard. Leads 01, 02, 07.
 - **Dr. Omar**: family physician, short beard, white coat over blue-grey shirt, stethoscope, **teal** (#008C99) lanyard. Leads 03, 04, 05, 06, 08.
-- Badges carry no logo or text. One master image each, approved first; every pose is made from the master.
+- Badges carry no logo or text. Style: polished flat vector with subtle soft shading (the one exception to "flat only"). Masters and 16 poses are generated — see the character sheet `../characters/character-sheet.png`; every pose is made from the master.
 - Placement: half-body on title, intro and closing screens; 48–64 px avatar with a ring in their colour on scenarios and tip cards; never over a question while the learner answers. Visible on about one screen in three at most.
 
 ---
