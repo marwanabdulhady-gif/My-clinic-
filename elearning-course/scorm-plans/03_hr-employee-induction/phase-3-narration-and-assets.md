@@ -10,19 +10,22 @@ outputs below are generated from those cards, so the storyboard stays the single
 
 | File | What it is |
 |---|---|
+| [`storyboard/visual-plan.json`](storyboard/visual-plan.json) | `VisualPlan` — 36 screens with brand roles, layouts `L1`–`L6`, imagery, `on_screen_text`, `cue_targets`. `lint_visual_plan(plan, brand)` → **0 errors, 0 warnings**. |
 | [`storyboard/narration-script.json`](storyboard/narration-script.json) | `NarrationScript` — 36 segments with `on_screen_text`, `target_sec` and tone, plus the module lexicon. Input to `lint_narration_script`. |
 | [`storyboard/audio-script-export.json`](storyboard/audio-script-export.json) | Output of `export_audio_script`: per screen `tts_text` (lexicon applied), `ssml`, `narration_text` (captions), filename, `est_sec` and estimated cue times. |
 | [`storyboard/voice_talent.md`](storyboard/voice_talent.md) | Voice-over table for human review or a voice actor. |
 
-`lint_narration_script` result: **0 errors, 0 warnings** (36 segments, 1,590 words, 705 s ≈ 11 min 45 s at 140 wpm).
+`lint_visual_plan(plan, brand)` result: **0 errors, 0 warnings** (36 screens).
+`lint_narration_script(script, plan)` result: **0 errors, 0 warnings** (36 segments, 1,590 words, 705 s ≈ 11 min 45 s at 140 wpm).
 
 **Reference audio:** [`storyboard/audio/`](storyboard/audio/) — 10 clips, one per section, ~5 min,
 generated from the `tts_text` of the export (lexicon applied, so it's a real test of the
 pronunciations). See [`storyboard/audio/README.md`](storyboard/audio/README.md) for what to listen
 for. Voice route is still open (program **D10**) — this is a reference read, not the shipping audio.
 
-Still to do in this phase: `visual-plan.json` (Phase 2 exit gate), the remaining 26 audio clips, and
-`lint_authoring_plan(stage="planning")`.
+Planning-stage quality checks: `lint_visual_plan(plan, brand)` and `lint_narration_script(script, plan)` both pass with **0 errors, 0 warnings**. A draft authoring plan assembled from the storyboard, narration and visual plan was checked with `lint_authoring_plan(stage="planning")` → **0 errors, 0 warnings**; no persistent `authoring-plan.json` has been saved yet.
+
+Still to do in this phase: the remaining 26 optional audio clips. Then stop for human approval before production.
 
 ## 1. Voice
 

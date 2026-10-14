@@ -1,0 +1,906 @@
+{
+  "module_id": "MC03-welcome-on-board",
+  "module_title": "My Clinic — Welcome On Board: My Clinic & HR Essentials",
+  "brand_name": "My Clinic",
+  "audience": "All new employees (clinical and non-clinical), day 1–3",
+  "objective": "Link My Clinic's purpose, values and 7C strategy to daily work, and apply ethics, patient rights, leave, GOSI, overtime, HR systems (Oracle, Qiwa, Mumaris), ID, dress-code and resignation rules.",
+  "screens": [
+    {
+      "screen_id": "hr-000",
+      "screen_type": "title_slide",
+      "purpose": "Open: make the learner welcome and say what the next 45 minutes give them",
+      "visual_concept": "Official navy gradient cover with supplied white My Clinic lock-up at upper left, purple module chip, large white petal watermark cropped off the right edge, white title and mist subtitle; no photograph or generated logo.",
+      "layout": "L1 Title (n/a (`title_slide`))",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "background-title-navy.png: official My Clinic navy title-gradient background, 16:9.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "logo-horizontal-white.png: supplied white My Clinic lock-up, placed top-left at 48 px tall.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "mark-white.png: supplied five-petal watermark at 10% opacity, 520 px, cropped off the right edge.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": null,
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-001",
+      "screen_type": "content_slide",
+      "purpose": "Explain: the purpose, mission and goal, in plain words, and why it matters on the job",
+      "visual_concept": "Three stacked statement blocks on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top",
+      "layout": "L3 Content (`full_media` with the hero photo behind a 60% `light` scrim, text blocks left-aligned over it)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "hr-img-hero: Reused from `hr-000`, darker crop, scrim applied in the theme, not baked in",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "**Purpose** — helping people live longer, healthier, happier lives · **Mission** — the world's most customer-centric healthcare company · **Goal** — outstanding patient experience + excellent clinical outcomes",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "purpose",
+        "mission",
+        "goal"
+      ]
+    },
+    {
+      "screen_id": "hr-002",
+      "screen_type": "poll",
+      "purpose": "Explore: an unscored icebreaker that makes the learner commit to something they care about before any policy appears",
+      "visual_concept": "Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other”",
+      "layout": "L4 Question (n/a (`poll`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "If you had one million Saudi riyals, where would you spend it?",
+      "animation": "none",
+      "interaction": "Pick the one closest to you, or write your own.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-010",
+      "screen_type": "tabs",
+      "purpose": "Explain: each value is a set of behaviours, not a poster",
+      "visual_concept": "Four horizontal tab labels use the supplied official square value tiles with white line icons; the active panel shows its theme line in large type and actions as plain HTML text.",
+      "layout": "L3 Content (n/a (`tabs`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "value-tile-collaborative-burgundy.png: official square value tile with white line icon; tab label remains HTML text.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "value-tile-responsible-magenta.png: official square value tile with white line icon; tab label remains HTML text.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "value-tile-ambitious-teal.png: official square value tile with white line icon; tab label remains HTML text.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "value-tile-caring-purple.png: official square value tile with white line icon; tab label remains HTML text.",
+          "source": "client",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Values are behaviours. Open each one and look for something you already do.",
+      "animation": "none",
+      "interaction": "Open each value.",
+      "cue_targets": [
+        "intro",
+        "collab",
+        "resp",
+        "amb",
+        "care"
+      ]
+    },
+    {
+      "screen_id": "hr-011",
+      "screen_type": "matching",
+      "purpose": "Check: recognise the four values in real workplace behaviour",
+      "visual_concept": "Two columns: six plain white action cards on the left, four value tiles on the right; a drawn connector line follows the learner's pointer while a card is selected",
+      "layout": "L4 Question (n/a (`matching`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Six things people did this week. Match each one to the value behind it.",
+      "animation": "none",
+      "interaction": "Match each action to a value.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-012",
+      "screen_type": "accordion",
+      "purpose": "Explain: where the company is going, and which pillar the learner's own role touches most",
+      "visual_concept": "Seven collapsed rows in a single column, each with a line icon, the pillar name in caps and a chevron; expanding a row reveals the headline line and the key points as a wrapped keyword row",
+      "layout": "L3 Content (n/a (`accordion`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Seven pillars. Open the ones your role touches — you're not expected to memorise all seven.",
+      "animation": "none",
+      "interaction": "Open each pillar.",
+      "cue_targets": [
+        "intro",
+        "closer",
+        "cure",
+        "cap",
+        "culture",
+        "clin",
+        "care",
+        "cost"
+      ]
+    },
+    {
+      "screen_id": "hr-013",
+      "screen_type": "mcq",
+      "purpose": "Check: pick the pillar a real activity belongs to, with plausible neighbouring pillars as distractors",
+      "visual_concept": "Stem in large type at the top; four plain option rows beneath, each a radio control plus a single sentence; no imagery, so the decision is the only thing on screen",
+      "layout": "L4 Question (n/a (`mcq`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Choose one.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-014",
+      "screen_type": "content_slide",
+      "purpose": "Explain: the three groups we serve, including people who are healthy today",
+      "visual_concept": "Three equal cards side by side, each with one line icon above a short label and a one-line caption; the first card is annotated “sick or healthy” in a smaller line",
+      "layout": "L3 Content (`text`)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-serve-icons: Line icons: family group, community ring, briefcase-and-shield",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Patients & families — sick or healthy · Community · Corporates & insurers",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "patients",
+        "community",
+        "corporates"
+      ]
+    },
+    {
+      "screen_id": "hr-020",
+      "screen_type": "timeline",
+      "purpose": "Explain: how one clinic in 2017 became a network, and what each step added",
+      "visual_concept": "A single horizontal axis with nine year nodes; the active node lifts and its caption card slides in beneath the axis; a thin progress line fills as the learner moves along",
+      "layout": "L3 Content (n/a (`timeline`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "From one clinic in Jeddah to a network across the west and Riyadh.",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": [
+        "e2017",
+        "e2019",
+        "e2023",
+        "e2024",
+        "e2025"
+      ]
+    },
+    {
+      "screen_id": "hr-021",
+      "screen_type": "hotspot",
+      "purpose": "Explore: connect the branch codes staff use every day to real places",
+      "visual_concept": "Minimal outline map of western Saudi Arabia with an inset for Riyadh; seven numbered pins; each pin opens a small card with the code, the branch type, the city and the year; a counter shows “3 of 7”",
+      "layout": "L3 Content (n/a (`hotspot`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "diagram",
+          "description": "hr-img-map: 1200×800, simplified outline of the western region plus a Riyadh inset; no satellite detail; seven pin positions marked but pin graphics drawn by the player",
+          "source": "svg",
+          "alt_text": "Map of My Clinic sites: five in Jeddah, one in Petro-Rabigh, one in Riyadh.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Seven sites. You'll hear these codes every day — open each pin.",
+      "animation": "none",
+      "interaction": "Open all seven pins.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-022",
+      "screen_type": "content_slide",
+      "purpose": "Explain: who leads the company and what each role looks after",
+      "visual_concept": "Four portrait cards in one row; each is a soft-cornered square with the role printed under it and a one-line “looks after” caption; no names until consent is recorded",
+      "layout": "L3 Content (`text` (blocks: caption, image, caption, image …))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "hr-img-leaders-ceo: Consented portrait, 800×800, neutral studio background",
+          "source": "client",
+          "alt_text": "Abdullah Alghamdi, Chief Executive Officer.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hr-img-leaders-cmo: Consented portrait, 800×800",
+          "source": "client",
+          "alt_text": "Dr Ahmed Al Zahrani, Chief Medical Officer.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hr-img-leaders-coo: Consented portrait, 800×800",
+          "source": "client",
+          "alt_text": "Hesham Abdulwahab, Chief Operating Officer.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hr-img-leaders-cfo: Consented portrait, 800×800",
+          "source": "client",
+          "alt_text": "Richard Thompson, Chief Finance Officer.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Chief Executive Officer · Chief Medical Officer · Chief Operating Officer · Chief Finance Officer",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "ceo",
+        "cmo",
+        "coo",
+        "cfo"
+      ]
+    },
+    {
+      "screen_id": "hr-023",
+      "screen_type": "flashcards",
+      "purpose": "Explore: the accreditation and awards, and the point that they have to be re-earned",
+      "visual_concept": "Five cards in a shallow fan across the middle of the stage; flipping one rotates it on its vertical axis to reveal the back; the flipped card stays face-up and slides to the back of the fan",
+      "layout": "L3 Content (n/a (`flashcards`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-award-icons: Two line icons redrawn from slides 17–18: a trophy and a laurel star",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Flip each card. Accreditation is measured, not given — and it has to be earned again.",
+      "animation": "none",
+      "interaction": "Flip each card.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-030",
+      "screen_type": "content_slide",
+      "purpose": "Explain: the four ethics values, and the one rule to follow when a situation is unclear",
+      "visual_concept": "Four value blocks in a 2×2 grid with one line icon each; a single full-width warning strip below the grid carries the 24-hour rule, set in `dark` on an `accent`-tinted panel, with an exclamation icon so the meaning is not carried by colour",
+      "layout": "L3 Content (`text`)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "accent",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-ethics-icons: Line icons: two people with a heart (Respect), open hand with a tick (Integrity), clipboard with a check (Accountability), lightbulb with a link (Innovation and collaboration)",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Respect · Integrity · Accountability · Innovation & collaboration · **Ethical dilemma? Incident report within 24 hours + ethics team.**",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "respect",
+        "integrity",
+        "accountability",
+        "innovation",
+        "report"
+      ]
+    },
+    {
+      "screen_id": "hr-031",
+      "screen_type": "decision_scenario",
+      "purpose": "Practise: disclose a conflict of interest, resist a queue-jumping request, and use the 24-hour route when unsure",
+      "visual_concept": "A flat-illustration band across the top that changes with the node — a meeting room, then a corridor, then a quiet desk; the situation text sits on a white card below it and the choices are full-width buttons under that",
+      "layout": "L5 Scenario (n/a (`decision_scenario`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "hr-img-ethics-meeting: Flat meeting-room scene: table, four chairs, a laptop and a document; two brand colours",
+          "source": "generate",
+          "alt_text": "A small meeting room where a supplier evaluation is being discussed.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-img-ethics-corridor: Flat corridor scene: reception desk and a queue of two patients",
+          "source": "generate",
+          "alt_text": "A clinic corridor with a reception desk and two patients waiting.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-img-ethics-desk: Flat desk scene: laptop showing a blank report form, a cup, a notebook",
+          "source": "generate",
+          "alt_text": "A desk with a laptop open on an incident report form.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-char-noor` / `mentor-noor: Program mentor, three poses",
+          "source": "generate",
+          "alt_text": "Noor, a senior nurse and safety liaison, speaking.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Three moments, three decisions. Nobody is watching.",
+      "animation": "none",
+      "interaction": "Choose what you would do at each step.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-032",
+      "screen_type": "drag_drop",
+      "purpose": "Check: separate what patients can expect from us and their families from what we ask of them",
+      "visual_concept": "Two tall drop zones side by side with plain headings and one line icon each; nine draggable chips sit in a wrap row below; a placed chip shows a 1 px border and a small position number",
+      "layout": "L4 Question (n/a (`drag_drop`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Nine statements from the notice in reception. Sort them into the right column.",
+      "animation": "none",
+      "interaction": "Place each statement under Patient right or Patient responsibility.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-033",
+      "screen_type": "mcq",
+      "purpose": "Check: apply the right to refuse treatment in a realistic consultation moment",
+      "visual_concept": "Stem in large type; four plain option rows; no imagery, so the decision carries the screen",
+      "layout": "L4 Question (n/a (`mcq`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Choose one.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-040",
+      "screen_type": "content_slide",
+      "purpose": "Explain: the three places help comes from, so the learner stops guessing",
+      "visual_concept": "Three cards in a row, each with a line icon and a short label; the third card carries a download affordance and a small PDF glyph; beneath them a single line states the rule “if it's a request, it goes through Oracle”",
+      "layout": "L3 Content (`text`)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-help-icons: Line icons: headset (help desk), screen-and-form (Oracle), document-arrow (PDF)",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Your HR help desk — one per business unit · Request everything in Oracle · Full rules: **HR Quick Reference** PDF",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "desk",
+        "oracle",
+        "pdf"
+      ]
+    },
+    {
+      "screen_id": "hr-041",
+      "screen_type": "accordion",
+      "purpose": "Explain: the nine leave types and the one rule worth remembering per type",
+      "visual_concept": "Nine collapsed rows, each with a two-letter code chip on the left (AN, SK, WI, MA, EX, SC, HJ, CO, OH), the leave name, and a chevron; expanding shows one sentence of plain text plus a single “watch out” line where a rule trips people up",
+      "layout": "L3 Content (n/a (`accordion`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Nine types. Open the one you need — the full tables are in the Quick Reference.",
+      "animation": "none",
+      "interaction": "Open each leave type.",
+      "cue_targets": [
+        "intro",
+        "annual",
+        "sick",
+        "injury",
+        "maternity",
+        "exam",
+        "scientific",
+        "hajj",
+        "compass",
+        "holidays"
+      ]
+    },
+    {
+      "screen_id": "hr-042",
+      "screen_type": "matching",
+      "purpose": "Check: find the annual-leave entitlement for a grade without memorising the table",
+      "visual_concept": "Two columns: four grade tiles on the left (H, G, F and Consultant, A to E) and four number tiles on the right (30, 27, 25, 22); a connector line follows the selection",
+      "layout": "L4 Question (n/a (`matching`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days.",
+      "animation": "none",
+      "interaction": "Match each grade to its entitlement.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-043",
+      "screen_type": "worked_example",
+      "purpose": "Explain: walk the sick-leave pay bands end to end, then ask the learner to predict the one variation that matters",
+      "visual_concept": "A five-row vertical ledger on a white card: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action",
+      "layout": "L3 Content (n/a (`worked_example`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Reveal why each step is taken, one step at a time.",
+      "cue_targets": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "screen_id": "hr-044",
+      "screen_type": "decision_scenario",
+      "purpose": "Practise: eligibility decisions for the four leave types people ask about most",
+      "visual_concept": "A flat service-desk illustration band at the top that stays constant; below it a single request card with the colleague's first name, role and question, then full-width choice buttons; a “3 of 4 answered” counter sits in the corner",
+      "layout": "L5 Scenario (n/a (`decision_scenario`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "hr-img-leavedesk: Flat office-desk scene: a desk, a laptop, a small plant, two chairs; brand colours, white background",
+          "source": "generate",
+          "alt_text": "An HR service desk with a laptop and two chairs.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-char-noor` / `mentor-noor: Program mentor, poses `explaining` and `neutral`",
+          "source": "generate",
+          "alt_text": "Noor, a senior nurse and safety liaison, at the leave desk.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Four colleagues, four questions. You're the one they've asked.",
+      "animation": "none",
+      "interaction": "Answer each colleague.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-045",
+      "screen_type": "adaptive_practice",
+      "purpose": "Practise: a short adaptive set on the leave numbers, so experienced hires finish early and new joiners get more",
+      "visual_concept": "One question at a time, centred, with three option rows; a thin progress strip at the top fills as items are answered and a small “est. 3 more” hint appears once the estimator has enough data",
+      "layout": "L4 Question (n/a (`adaptive_practice`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Answer until the practice says you're ready. It stops early if you've got it.",
+      "animation": "none",
+      "interaction": "Choose one answer each time.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-050",
+      "screen_type": "content_slide",
+      "purpose": "Explain: what the deduction on the payslip is for, and why it is a benefit rather than a loss",
+      "visual_concept": "A horizontal stacked bar split 9.75 / 11.75 across the full width, labelled “you” and “My Clinic” under each segment and “21.5% total” above; beneath it a single line naming what the contribution buys",
+      "layout": "L3 Content (`text`)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "accent",
+      "imagery": [
+        {
+          "kind": "diagram",
+          "description": "hr-img-gosi-bar: 960×200 authored SVG stacked bar, two segments; percentages as real text, not baked in",
+          "source": "svg",
+          "alt_text": "GOSI contribution: the employee pays 9.75%, My Clinic pays 11.75%, a total of 21.5%.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "General Organization for Social Insurance · Saudi employees only · 9.75% you + 11.75% My Clinic = **21.5%** of basic + housing",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "what",
+        "who",
+        "split"
+      ]
+    },
+    {
+      "screen_id": "hr-051",
+      "screen_type": "worked_example",
+      "purpose": "Explain: the GOSI calculation step by step, before the learner does one alone",
+      "visual_concept": "A three-row calculation ledger: each row shows one line of arithmetic in large mono-ish numerals with a “Why?” control to the right; the final row is boxed and carries the answer in the accent colour plus a SAR label",
+      "layout": "L3 Content (n/a (`worked_example`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Reveal why each step is taken, one step at a time.",
+      "cue_targets": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "screen_id": "hr-052",
+      "screen_type": "fill_blank",
+      "purpose": "Check: do the GOSI calculation once, unaided",
+      "visual_concept": "A large centred equation with a single inline input at the blank; beneath it a small muted line reminding the learner of the two inputs, and nothing else — no imagery to distract from the arithmetic",
+      "layout": "L4 Question (n/a (`fill_blank`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Basic 6,000 + housing 1,500. Your monthly GOSI deduction = ___ SAR",
+      "animation": "none",
+      "interaction": "Type the number.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-053",
+      "screen_type": "worked_example",
+      "purpose": "Explain: the hourly rate first, then the multiplier, so the learner can rebuild it from memory",
+      "visual_concept": "A three-row ledger like `hr-051`, but the third row forks into two stacked results — “normal day ×1.5” and “public holiday ×2” — so the learner sees one rate and two multipliers",
+      "layout": "L3 Content (n/a (`worked_example`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Reveal why each step is taken, one step at a time.",
+      "cue_targets": [
+        "s1",
+        "s2",
+        "s3",
+        "elig"
+      ]
+    },
+    {
+      "screen_id": "hr-054",
+      "screen_type": "mcq",
+      "purpose": "Check: apply the overtime formula to a normal working day",
+      "visual_concept": "Stem in large type; four plain option rows, each a single amount; no imagery, so the arithmetic carries the screen",
+      "layout": "L4 Question (n/a (`mcq`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Choose one.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-060",
+      "screen_type": "matching",
+      "purpose": "Check: route each HR task to the right system, so the learner stops emailing HR",
+      "visual_concept": "Two columns: six task cards on the left, four system tiles on the right, each system tile carrying a small monogram (O, Q, M, I); a connector line follows the selection",
+      "layout": "L4 Question (n/a (`matching`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "Six tasks, four systems. Match each task to where it happens.",
+      "animation": "none",
+      "interaction": "Match each task to its system.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-061",
+      "screen_type": "simulation",
+      "purpose": "Practise: complete the five Oracle clicks for an annual-leave request on a test account",
+      "visual_concept": "A browser-chrome frame holding a full-width screenshot; a numbered instruction bar sits directly above the frame; the correct region is not outlined until the learner asks for a hint, at which point a dashed rectangle appears around it",
+      "layout": "L5 Scenario (n/a (`simulation`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "screenshot",
+          "description": "hr-img-oracle-1: Oracle Applications Cloud sign-in page, test account, 1920×1080",
+          "source": "screenshot",
+          "alt_text": "Oracle sign-in page with empty username and password fields and a Sign In button.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "hr-img-oracle-2: Oracle home with the Time and Absences tile",
+          "source": "screenshot",
+          "alt_text": "Oracle home page with a Time and Absences tile in the quick actions area.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "hr-img-oracle-3: Time and Absences hub with the Add Leaves tile",
+          "source": "screenshot",
+          "alt_text": "Oracle Time and Absences page with an Add Leaves tile.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "hr-img-oracle-4: Add Leaves form with the leave-type drop-down open, showing Annual, Bereavement, Marriage, Scientific, Sick, Study",
+          "source": "screenshot",
+          "alt_text": "Oracle Add Leaves form with the leave-type drop-down open.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "hr-img-oracle-5: Add Leaves form filled, with a Submit button",
+          "source": "screenshot",
+          "alt_text": "Oracle Add Leaves form with dates entered and a Submit button.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Five steps. These screenshots come from a test account, so nothing here is real.",
+      "animation": "none",
+      "interaction": "Follow the instruction on each step and click the right place.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-062",
+      "screen_type": "true_false",
+      "purpose": "Check: the licence-renewal rule that can stop someone working",
+      "visual_concept": "The statement in large type centred, with two wide side-by-side buttons beneath labelled True and False; no imagery, so the judgement carries the screen",
+      "layout": "L4 Question (n/a (`true_false`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "True or false?",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-070",
+      "screen_type": "content_slide",
+      "purpose": "Explain: how to look after the ID card, and what the benefits package actually contains",
+      "visual_concept": "A two-card row: the left card shows an ID badge with a small warning line about lost cards; the right card is a six-segment benefits wheel, each segment labelled with a one- or two-word benefit and a line icon",
+      "layout": "L3 Content (`text` (blocks: image, caption, image, caption))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "accent",
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "hr-img-idcard: Flat ID badge on a lanyard, first name only, no real logo until approved",
+          "source": "generate",
+          "alt_text": "A My Clinic staff ID badge on a lanyard.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hr-img-benefits-wheel: 600×600 six-segment wheel: health insurance, performance bonus, development, hybrid work, internal advancement, discounts; labels as real text",
+          "source": "svg",
+          "alt_text": "Benefits wheel: health insurance, annual performance bonuses, employee development, hybrid work, internal advancement and discounts.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Lost card → email HR. Replacement fee ⚠ PENDING B4. Damaged card → replaced free.",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "id",
+        "lost",
+        "wheel"
+      ]
+    },
+    {
+      "screen_id": "hr-071",
+      "screen_type": "drag_drop",
+      "purpose": "Check: apply the dress code that applies to your own role",
+      "visual_concept": "Three drop zones in a row, each headed by a small flat figure illustration showing the outfit; six draggable chips sit in a wrap row beneath; a placed chip shows a border and an index number",
+      "layout": "L4 Question (n/a (`drag_drop`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "hr-img-dress-frontoffice: Flat figure in a clinic uniform, standing, neutral background",
+          "source": "generate",
+          "alt_text": "A front-office colleague in the clinic uniform.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-img-dress-medical: Flat figure in scrubs and a coat, with a stethoscope",
+          "source": "generate",
+          "alt_text": "A clinical colleague in scrubs and a coat.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hr-img-dress-backoffice: Flat figure in business attire",
+          "source": "generate",
+          "alt_text": "A back-office colleague in business attire.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Six rules, three groups. Place each rule where it applies.",
+      "animation": "none",
+      "interaction": "Place each rule under Front office, Medical team or Back office.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-080",
+      "screen_type": "content_slide",
+      "purpose": "Explain: how the contract is accepted, and how to leave well if it ever comes to that",
+      "visual_concept": "A short horizontal four-step strip — Qiwa, Oracle, two months, 15 days — with an arrow between each; each step carries a one-line caption beneath it and a small line icon above",
+      "layout": "L3 Content (`text`)",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "accent",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "hr-img-exit-icons: Line icons: document-signature (Qiwa), screen-and-form (Oracle), calendar (notice period), envelope-with-certificate (EOS)",
+          "source": "svg",
+          "alt_text": null,
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "Accept your contract on Qiwa · Resign in Oracle · Notice: **2 months** both ways · EOS + experience certificate within 15 days",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "qiwa",
+        "oracle",
+        "notice",
+        "eos"
+      ]
+    },
+    {
+      "screen_id": "hr-081",
+      "screen_type": "mcq",
+      "purpose": "Check: apply the notice rule when the learner's own interests pull the other way",
+      "visual_concept": "Stem in large type; four plain option rows; no imagery, so the decision carries the screen",
+      "layout": "L4 Question (n/a (`mcq`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": null,
+      "animation": "none",
+      "interaction": "Choose one.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-090",
+      "screen_type": "results_breakdown",
+      "purpose": "Close: show results by objective and point the learner at what to revisit",
+      "visual_concept": "Six rows, each with the objective name, a thin bar showing the percentage, and the points earned over points available; any row below the threshold expands to show one line of advice beneath it",
+      "layout": "L6 Results / close (n/a (`results_breakdown`))",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "One row per objective. Anything below 70% comes with a suggestion.",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "hr-091",
+      "screen_type": "summary",
+      "purpose": "Close: say what the learner can now do, and hand them the two things they need next",
+      "visual_concept": "A five-item checklist on the left, each with a small tick glyph; on the right two stacked action cards — one for the HR Quick Reference download, one for the onboarding survey — and a single line naming the next module",
+      "layout": "L6 Results / close (n/a (`summary`))",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [],
+      "on_screen_text": "You can now: live the values · raise a concern · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": [
+        "list",
+        "pdf",
+        "survey",
+        "next"
+      ]
+    }
+  ]
+}
