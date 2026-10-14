@@ -22,11 +22,16 @@ The HR deck is a full-day classroom induction: company story, values, the 7C str
 |---|---|
 | 0 — Source lock | [phase-0-source-lock.md](phase-0-source-lock.md) |
 | 1 — Action map & objectives | [phase-1-action-map.md](phase-1-action-map.md) |
-| 2 — Storyboard | [phase-2-storyboard.md](phase-2-storyboard.md) |
+| 2a — Screen list | [phase-2-storyboard.md](phase-2-storyboard.md) |
+| 2b — Storyboard cards | [storyboard/storyboard.md](storyboard/storyboard.md) — **v0.1 drafted, in SME review** |
 | 3 — Narration & assets | [phase-3-narration-and-assets.md](phase-3-narration-and-assets.md) |
 | 4 — Build | [phase-4-build.md](phase-4-build.md) |
 | 5 — QA & delivery | [phase-5-qa-and-delivery.md](phase-5-qa-and-delivery.md) |
 
 ## Current status
 
-**Blocked on Phase 0**: HR policy confirmations (sick-leave pay, compassionate leave wording, ID-card penalty, overtime by grade), branch names (D3), personal-data policy (D5), Oracle test account for screenshots.
+**Storyboard v0.1 drafted — in SME review.** All 36 screens have a finished card: on-screen wording, visual brief, animation/reveal, interaction and scoring with feedback, full narration script, accessibility notes, and the edumints JSON for each screen. Totals: 36 screens · 15 scored · 145 points · 366 on-screen words · 1,636 narration words (≈ 11 min 41 s of audio, inside the Phase 3 budget). Every JSON block validates against the server's `core/project.py` models.
+
+**Still blocked on Phase 0**: HR policy confirmations (sick-leave pay B1, compassionate leave wording B2, ID-card penalty B4, overtime by grade B3, GOSI rates B12, SCFHS rule B13), branch names (B5/D3), personal-data policy (B6/D5), awards wording (B7), and the Oracle test account (B8 — this one blocks building `hr-061`).
+
+**Not yet started**: Phase 3 machine-readable outputs (`visual-plan.json`, `narration-script.json`) and the narration audio.

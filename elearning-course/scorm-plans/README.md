@@ -12,11 +12,11 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 
 ## 1. Package map (one SCORM package per source file)
 
-| # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Status |
+| # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Storyboard status |
 |---|---|---|---|---|---|---|
 | 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Plan ready, blocked on Phase 0 |
 | 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Plan ready, blocked on Phase 0 |
-| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Plan ready, blocked on Phase 0 |
+| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.1 drafted — SME review |
 | 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Plan ready, blocked on Phase 0 |
 | 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Plan ready, blocked on Phase 0 |
 | 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Plan ready, blocked on Phase 0 |
@@ -36,11 +36,14 @@ Suggested learning path (matches `../README.md` §4):
 
 Every module folder has the same files, so the team can track all eight packages on one board.
 
+**Phase 2 is two steps.** `phase-2-storyboard.md` is the *screen list*: one row per screen — id, type, purpose, points, source. Once the list is approved, the [storyboard template](00_program/storyboard-template/) turns each row into a finished **screen card** in `<module folder>/storyboard/storyboard.md`: full on-screen wording, visual brief, animation/reveal behaviour, interaction and scoring with feedback, the complete narration script, accessibility notes, and the edumints JSON for that screen. Write one module per run. The cards, not the list, are what the developer builds from.
+
 | Phase | File | What it produces | Exit gate (must be true to move on) |
 |---|---|---|---|
 | **0 — Source lock** | `phase-0-source-lock.md` | Resolved conflicts, verified facts, permissions, SME owners | Every **blocking** item has a written decision from the named owner |
 | **1 — Action map & objectives** | `phase-1-action-map.md` | Business goal, observable behaviours, practice activities, objective → evidence map, seat-time budget | SME agrees the objectives and the assessed evidence |
-| **2 — Storyboard** | `phase-2-storyboard.md` | Screen-by-screen plan: id, section, edumints screen type, content, interaction, scoring, source page | `lint_visual_plan` clean (errors fixed, warnings justified); SME and course owner approve |
+| **2a — Screen list** | `phase-2-storyboard.md` | Screen-by-screen plan: id, section, edumints screen type, content, interaction, scoring, source page | `lint_visual_plan` clean (errors fixed, warnings justified); SME and course owner approve |
+| **2b — Storyboard cards** | `storyboard/storyboard.md` | One finished card per Phase 2 screen: on-screen text, visual design and animation/reveal, interaction and scoring, full narration script, accessibility, edumints build JSON | Every Phase 2 screen has a card (same ids, same order); all JSON blocks validate against the server models; `review-checklist.md` run on every card; SME review started |
 | **3 — Narration & assets** | `phase-3-narration-and-assets.md` | Narration outline per screen, pronunciation lexicon, asset manifest with provenance, characters, video plan | `lint_narration_script` and `lint_authoring_plan(stage="planning")` clean; voice and visuals approved |
 | **4 — Build** | `phase-4-build.md` | Course settings, outline, objectives, tracking, spec snippets for the key interactions, MCP tool sequence | `lint_course` has no errors; preview reviewed |
 | **5 — QA & delivery** | `phase-5-qa-and-delivery.md` | Module-specific test cases, LMS test, pilot, sign-off, maintenance triggers | `validate_package` passes, SCORM Cloud / LMS test passes, SME sign-off recorded |
@@ -91,5 +94,9 @@ These are the items from `../README.md` §3 that stop more than one package. Det
 1. Connect the MCP client to the edumints server (hosted `https://scorm.edumints.com/mcp` or self-hosted Docker).
 2. Open the module folder. Close Phase 0 with the SMEs.
 3. Ask Claude to run Phase 1–3 for that module, using the plan file as the brief. Claude calls `get_playbook`, `lint_visual_plan`, `lint_narration_script` and `lint_authoring_plan`, and **stops for your approval** at the end of Phase 3.
+   - **Phase 2b is a separate run.** Once the screen list is approved, point Claude at
+     `00_program/storyboard-template/README.md` and ask for `storyboard/storyboard.md`. One module
+     per run. Claude fills every field of every card and leaves nothing in `<angle brackets>`
+     except `<hr-…>` asset placeholders.
 4. Phase 4: Claude builds with `create_project` / `add_screen` (or `build_from_spec`), using `language: "en"` (the server default is Turkish).
 5. Phase 5: run the QA checklist, test in SCORM Cloud and your LMS, and record sign-off.
