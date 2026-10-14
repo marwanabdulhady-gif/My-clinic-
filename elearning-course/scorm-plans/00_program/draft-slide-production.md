@@ -13,9 +13,9 @@ The machine-readable selection is [`draft-slide-phases.json`](draft-slide-phases
 | Draft batch | Packages | Core screens | State / next review |
 |---|---|---:|---|
 | **1 — Welcome & clinical governance** | **03 HR + 07 Quality** | **36 + 22 = 58** | **First browser-rendered draft and screenshot set generated**; review layout, wording, companions and pending policies |
-| 2 — Health & safety | 01 FMS + 02 Safety Lab | 54 + 26 = 80 | Queued; current briefs and scene placements first, never infer emergency numbers/thresholds/keys |
-| 3 — Operations & revenue cycle | 04 Operations + 05 RCM A + 06 RCM B | 13 + 21 + 15 = 49 | Queued; current role maps, note examples, benefits and claim-rejection placeholders |
-| 4 — EHR guided workflow | 08 EHR | 20 | Queued; workflow and capture slots only until approved test-account screenshots/DPO clearance |
+| 2 — Health & safety | 01 FMS + 02 Safety Lab | 54 + 26 = 80 | **Generated and browser-captured for draft review**; all 80 remain brief-only, emergency numbers/thresholds/answer keys pending |
+| 3 — Operations & revenue cycle | 04 Operations + 05 RCM A + 06 RCM B | 13 + 21 + 15 = 49 | **Generated and browser-captured for draft review**; all 49 remain brief-only, role/payer/policy details pending |
+| 4 — EHR guided workflow | 08 EHR | 20 | **Owner-reported draft review complete**; 20 PNGs/checks reported, test-account captures/DPO clearance pending; output is not in this checkout for independent re-review |
 
 All batches total **207** core screens. Optional screens are not silently added.
 Later batches retain their current skeletal build blocks; rendering a brief is not
@@ -74,6 +74,13 @@ only the generated directory is served, never the source-media repository.
 - Licensed **Montserrat and Tajawal are bundled locally**, with upstream commit,
   checksums and both OFL texts in [`brand/fonts/`](brand/fonts/). This is an English draft,
   not an approved Arabic/RTL variant.
+
+## Subsequent-batch results
+
+- **Batch 2 — Health & Safety:** generated 80 slides in canonical order (module 01: 54; module 02: 26), retaining 37 planned scored screens. All **80/80 are brief-only**: 63 have missing build fields and 29 have unresolved asset references (these groups overlap). The engine did not supply emergency numbers, spill thresholds or missing answer keys. Browser capture produced **80 PNGs and 80 mobile checks**, with local fonts and no browser errors, missing requests or external requests. The offline review ZIP passed archive-integrity verification.
+- **Batch 3 — Operations & Revenue Cycle:** generated 49 slides (module 04: 13; module 05: 21; module 06: 15), retaining 21 planned scored screens. All **49/49 are brief-only**: 41 have missing build fields and 18 have unresolved asset references. The engine did not infer reporting lines, payer limits, policy or rejection data. Browser capture produced **49 PNGs and 49 mobile checks**, with local fonts and no browser errors, missing requests or external requests. The offline review ZIP passed archive-integrity verification.
+- Both batches used the current brand kit, all eight supplied mockup references, the HTML mockup geometry, package storyboards, Phase 0–5 plans and required worksheets. Capture was rerun under Node 22.17. Output remains in ignored `.generated/slides/phase-2/` and `phase-3/`; galleries, captures and ZIPs are review artefacts, not committed sources or SCORM packages.
+- **Batch 4 — EHR:** the owner reports 20 brief-only screens, 20 real browser captures/mobile checks and a verified offline ZIP. Those files were not present in this sandbox checkout, so that batch is recorded as owner-reported rather than independently reopened here. Test-account screenshots and DPO clearance remain pending as stated by the owner.
 
 ### Title-background correction discovered in the screenshots
 
