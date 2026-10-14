@@ -37,7 +37,7 @@ This remains **planning and draft review**, not a production course build. A [lo
 
 | Tool | Produces | Notes |
 |---|---|---|
-| `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards |
+| `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards; [G10 restoration](00_program/g10-visual-restoration.md) adds 02 drill and 08 capture manifests |
 | `tools/normalise_narration.py` | Canonical narration/audio outputs for the hand-authored packs (03, 07) | Same rules as the generator, via `tools/audio_export.py` |
 | `tools/audio_export.py` | Shared rules: speaker labels out of TTS input, one segment per spoken line, lexicon + SSML, voice table | Imported by both tools above |
 | `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |

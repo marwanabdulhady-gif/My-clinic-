@@ -565,6 +565,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-8plans` | diagram | hs1-img-8plans: 4×2 grid, one line icon per plan, label under each; hotspot rects per tile Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "Eight Facility Management and Safety plans shown as icons." | No |
 
 #### 4. Interaction and scoring
 
@@ -617,7 +618,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-102",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-8plans> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1112,6 +1114,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-arec` | diagram | hs1-img-arec: 4-stage circular arrow, brand colours Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "AREC cycle: Anticipate, Recognise, Evaluate, Control." | No |
 
 #### 4. Interaction and scoring
 
@@ -1164,7 +1167,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-203",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-arec> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1554,6 +1558,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-codes-chips` | diagram | hs1-img-codes-chips: 11 colour chips with code names printed Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | (decorative — name is in text) | No |
 | `Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.` | illustration | Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card. | own / official My Clinic asset | Noor companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -1607,7 +1612,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-301",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-codes-chips> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1995,6 +2001,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-ert` | diagram | hs1-img-ert: Incident Commander centre, 5 team nodes Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "Emergency Response Team: Safety, Security, Nursing, Facility, Operation." | No |
 
 #### 4. Interaction and scoring
 
@@ -2047,7 +2054,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-305",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-ert> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -2104,6 +2112,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-triangle` | diagram | hs1-img-triangle: Fire triangle with three labelled sides Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "Fire triangle: heat, fuel and oxygen." | No |
 
 #### 4. Interaction and scoring
 
@@ -2156,7 +2165,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-401",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-triangle> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -2435,7 +2445,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `hs1-img-corridor` | illustration | hs1-img-corridor: Generated 2026-10-14 — SME visual check required before hotspot coordinates are set. | ai-generated, visual QA required | Clinic corridor showing a call point, extinguisher, fire blanket, sprinkler, evacuation chair and assembly sign. | No |
+| `hs1-img-corridor` | illustration | hs1-img-corridor: Generated 2026-10-14 — SME visual check required before hotspot coordinates are set. | ai-generated route, production/visual QA pending | Clinic corridor showing a call point, extinguisher, fire blanket, sprinkler, evacuation chair and assembly sign. | No |
 
 **AI image prompt (recorded production prompt)**
 
@@ -2494,7 +2504,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-404",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-corridor> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -3323,6 +3334,15 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-ghs-1` | diagram | hs1-img-ghs-1: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-2` | diagram | hs1-img-ghs-2: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-3` | diagram | hs1-img-ghs-3: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-4` | diagram | hs1-img-ghs-4: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-5` | diagram | hs1-img-ghs-5: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-6` | diagram | hs1-img-ghs-6: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-7` | diagram | hs1-img-ghs-7: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-8` | diagram | hs1-img-ghs-8: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
+| `hs1-img-ghs-9` | diagram | hs1-img-ghs-9: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | name of each pictogram | No |
 
 #### 4. Interaction and scoring
 
@@ -3377,7 +3397,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "hs1-502",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-ghs-1> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-2> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-3> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-4> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-5> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-6> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-7> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-8> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <hs1-img-ghs-9> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -3434,6 +3455,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-nfpa-blank` | diagram | hs1-img-nfpa-blank: Generic NFPA 704 diamond, quadrants without labels Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "Empty NFPA hazard diamond with four quadrants." | No |
 
 #### 4. Interaction and scoring
 
@@ -3488,7 +3510,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "hs1-503",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-nfpa-blank> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -3545,6 +3568,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-nfpa-301w` | diagram | hs1-img-nfpa-301w: Diamond with 3/0/1/W Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "NFPA diamond: health 3, flammability 0, reactivity 1, special W." | No |
 
 #### 4. Interaction and scoring
 
@@ -3599,7 +3623,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 5,
   "narration_script_id": "hs1-504",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-nfpa-301w> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -3765,6 +3790,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-eyewash` | photo | hs1-img-eyewash: Own photo of a My Clinic eyewash/shower unit Placement: Screen visual; production placement reviewed by the SME. PENDING My Clinic photo permission and Facilities/EHS approval of the pictured unit. | client photo, permission/SME review pending | "Combined eyewash and emergency shower station." | No |
 | `Approved program companion pose char-omar-avatar-neutral + tip card at L3 tip card.` | illustration | Approved program companion pose char-omar-avatar-neutral + tip card at L3 tip card. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -3818,7 +3844,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-506",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-eyewash> — Screen visual; production placement reviewed by the SME.. PENDING My Clinic photo permission and Facilities/EHS approval of the pictured unit."
 }
 ```
 
@@ -4318,6 +4345,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-treatment-room` | illustration | hs1-img-treatment-room: Room with sockets, UPS monitor, extension, valve, vent Placement: Screen visual; production placement reviewed by the SME. PENDING 01 B6; Facilities confirms equipment, sockets and visual targets before illustration/hotspots. | ai-generated route, production/visual QA pending | "Treatment room showing sockets, a valve and an air vent." | No |
 
 #### 4. Interaction and scoring
 
@@ -4370,7 +4398,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-701",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-treatment-room> — Screen visual; production placement reviewed by the SME.. PENDING 01 B6; Facilities confirms equipment, sockets and visual targets before illustration/hotspots."
 }
 ```
 
@@ -4647,6 +4676,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-pump-label` | illustration | hs1-img-pump-label: Infusion pump with an overdue inspection label (fictional dates); label dates and overdue status in editable HTML, not AI-rendered lettering. Placement: Screen visual; production placement reviewed by the SME. PENDING Biomedical/Facilities confirmation of the inspection-label rule; fictional dates in an editable HTML overlay. | ai-generated route, production/visual QA pending | "Infusion pump with an overdue inspection label." | No |
 | `Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar.` | illustration | Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -4702,7 +4732,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 15,
   "narration_script_id": "hs1-802",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-pump-label> — Screen visual; production placement reviewed by the SME.. PENDING Biomedical/Facilities confirmation of the inspection-label rule; fictional dates in an editable HTML overlay."
 }
 ```
 
@@ -5090,6 +5121,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `hs1-img-alara` | diagram | hs1-img-alara: Source icon with time/distance/shield labels Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "ALARA: time, distance, shielding." | No |
 
 #### 4. Interaction and scoring
 
@@ -5142,7 +5174,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "hs1-903",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <hs1-img-alara> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -6116,8 +6149,30 @@ lock items have written SME decisions.
 | `hs1-img-alara` | diagram | Generated file | own | Yes | Generated native SVG. |
 | `hs1-img-nfpa-blank` | diagram | Generated file | own | Yes | Generated native SVG. |
 | `hs1-img-nfpa-301w` | diagram | Generated file | own | Yes | Generated native SVG. |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
-| `hs1-aud-` | narration audio | all narrated screens | ai-generated (TTS) | Yes | Planned |
+| `hs1-img-8plans` | SVG icon grid | hs1-102 | own | Yes | Planned |
+| `hs1-img-arec` | SVG cycle | hs1-203 | own | Yes | Planned |
+| `hs1-img-ert` | SVG diagram | hs1-305 | own | Yes | Planned |
+| `hs1-img-triangle` | SVG | hs1-401 | own | Yes | Planned |
+| `hs1-img-corridor` | illustration | hs1-404 | ai-generated (reviewed) or own | Yes | Planned |
+| `hs1-img-ghs-1` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-2` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-3` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-4` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-5` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-6` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-7` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-8` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-ghs-9` | SVG pictograms | hs1-502 | own / public-domain (UN GHS) | Yes | Planned |
+| `hs1-img-nfpa-blank` | SVG | hs1-503 | own | Yes | Planned |
+| `hs1-img-nfpa-301w` | SVG | hs1-504 | own | Yes | Planned |
+| `hs1-img-eyewash` | photo | hs1-506 | own (with permission) | Yes | Planned |
+| `hs1-img-treatment-room` | illustration | hs1-701 | ai-generated (reviewed) | Yes | Planned |
+| `hs1-img-pump-label` | illustration | hs1-802 | ai-generated (reviewed) | Yes | Planned |
+| `hs1-img-alara` | SVG | hs1-903 | own | Yes | Planned |
+| `hs1-img-codes-chips` | SVG set | hs1-301 | own | Yes | Planned |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `hs1-aud-*` | narration audio | all narrated screens | ai-generated (TTS) | Yes | Planned |
 
 ### Open questions for the SME
 

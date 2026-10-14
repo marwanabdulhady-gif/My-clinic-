@@ -29,6 +29,37 @@ MC_08_EHR_v1.0_1.2.zip
 └── assets/
     ├── ehr-capture-sheet.*
     ├── ehr-pdf-quickref.*
+    ├── ehr-shot-dx-1.*
+    ├── ehr-shot-dx-2.*
+    ├── ehr-shot-dx-3.*
+    ├── ehr-shot-dx-4.*
+    ├── ehr-shot-dx-5.*
+    ├── ehr-shot-form.*
+    ├── ehr-shot-list.*
+    ├── ehr-shot-order-1.*
+    ├── ehr-shot-order-2.*
+    ├── ehr-shot-order-3.*
+    ├── ehr-shot-order-4.*
+    ├── ehr-shot-order-5.*
+    ├── ehr-shot-order-6.*
+    ├── ehr-shot-ref-1.*
+    ├── ehr-shot-ref-2.*
+    ├── ehr-shot-ref-3.*
+    ├── ehr-shot-ref-4.*
+    ├── ehr-shot-ref-5.*
+    ├── ehr-shot-ref-6.*
+    ├── ehr-shot-sms-1.*
+    ├── ehr-shot-sms-2.*
+    ├── ehr-shot-sms-3.*
+    ├── ehr-shot-sms-4.*
+    ├── ehr-shot-sms-5.*
+    ├── ehr-shot-summary-1.*
+    ├── ehr-shot-summary-2.*
+    ├── ehr-shot-summary-3.*
+    ├── ehr-shot-wizard-1.*
+    ├── ehr-shot-wizard-2.*
+    ├── ehr-shot-wizard-3.*
+    ├── ehr-shot-wizard-4.*
     ├── char-noor-avatar-neutral.png
     ├── char-omar-avatar-neutral.png
     ├── char-omar-explaining.png

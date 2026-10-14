@@ -9,6 +9,7 @@ The Markdown remains the editable source of truth. Generated .docx files are rev
 """
 from __future__ import annotations
 
+import argparse
 import re
 from pathlib import Path
 
@@ -347,9 +348,17 @@ def make_program_pack(target: Path) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('modules', nargs='*', help='Optional module folders; default: all eight.')
+    args = parser.parse_args()
+    unknown = set(args.modules) - {entry[0] for entry in MODULES}
+    if unknown:
+        parser.error('Unknown module folders: ' + ', '.join(sorted(unknown)))
     OUTPUT.mkdir(parents=True, exist_ok=True)
     exported = []
     for folder, number, slug, colour in MODULES:
+        if args.modules and folder not in args.modules:
+            continue
         source = PLANS / folder / "storyboard" / "storyboard.md"
         if not source.exists():
             raise SystemExit(f"Missing storyboard source: {source}")
@@ -359,8 +368,11 @@ def main() -> None:
     overview = OUTPUT / "MyClinic_Elearning_Storyboard_Review_Pack_v0.2.docx"
     make_program_pack(overview)
     readme = ["# My Clinic — client-review documents", "", "These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.", "", "Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.", "", "To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.", "", "| File | Contents |", "|---|---|"]
+    readme[6:6] = ['Send the nine documents below with the **Phase 0 kick-off pack**, [`../00_program/kickoff-pack.docx`](../00_program/kickoff-pack.docx) (`MC-KO-01 v0.1`): the proposed 90-minute agenda, who must be in the room and which decisions they own, the pre-read list, and the full [open-decision sheet](../00_program/decision-sheet.md) with owners and due dates. The kick-off pack is regenerated with `tools/export_kickoff_docx.py` after `tools/build_decision_sheet.py`.', '']
     readme.append(f"| [{overview.name}]({overview.name}) | Programme overview, review route and release gates |")
-    for filename in exported:
+    # A selective export must never remove other modules from the client-review index.
+    for _, number, slug, _ in MODULES:
+        filename = f'MyClinic_{number}_{slug}_Storyboard_v0.2.docx'
         readme.append(f"| [{filename}]({filename}) | Complete module screen cards, visual specification, narration and hand-off notes |")
     readme += ["", "All documents remain **drafts for SME review** until their source-lock decisions, asset approvals and voice route are signed off.", ""]
     (OUTPUT / "README.md").write_text("\n".join(readme), encoding="utf-8")

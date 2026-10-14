@@ -209,6 +209,12 @@ def module_data(module):
         visual = visual_by_id.get(card['id'], {})
         card['_brief'] = visual.get('on_screen_text', '')
         card['_visual'] = visual.get('visual_concept', '')
+        card['_planned_visuals'] = []
+        for image in visual.get('imagery', []):
+            match = re.match(r'([a-z0-9-]+):\s*(.*)', image.get('description', ''), re.S)
+            if match:
+                card['_planned_visuals'].append({'asset_id': match[1], 'brief': match[2],
+                                                'alt': image.get('alt_text', '')})
         card['_missing'] = missing_fields(card)
         card['_mode'] = ('brief' if card['_missing'] or card.get('asset_status') else
                          'review' if card['type'] in REVIEW_ONLY else 'rendered')
@@ -261,7 +267,8 @@ def generate(modules, output, asset_map=None):
     for module in data:
         module['color'] = brand['module_colors'][module['id']]
         for card in module['screens']:
-            unresolved = sorted(asset_ids(card) - assets.keys())
+            planned_ids = {image['asset_id'] for image in card.get('_planned_visuals', [])}
+            unresolved = sorted((asset_ids(card) | planned_ids) - assets.keys())
             card['_unresolved'] = unresolved
             if card['_mode'] != 'rendered' or unresolved:
                 issues.append({'module': module['id'], 'screen_id': card['id'],

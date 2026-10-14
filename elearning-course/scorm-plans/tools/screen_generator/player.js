@@ -180,6 +180,14 @@ function screenContent(s) {
     body.append(el('div', 'review-only', 'Build detail pending — this is an authored visual brief, not a functional interaction.'));
     if (s.body_html) body.append(rich(s.body_html, 'content'));
     body.append(el('div', 'brief', s._brief || 'No on-screen content supplied.'));
+    if (s._planned_visuals && s._planned_visuals.length) {
+      const list = el('div', 'planned-scene-list');
+      list.append(el('h3', '', 'Planned scene / capture placements'));
+      s._planned_visuals.forEach(image => {
+        const card = el('div', 'panel'); card.append(el('h4', '', image.asset_id),
+          media(image.asset_id, image.alt), el('p', 'result-note', image.brief)); list.append(card);
+      }); body.append(list);
+    }
     return body;
   }
   switch (s.type) {

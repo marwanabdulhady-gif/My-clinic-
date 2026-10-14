@@ -29,6 +29,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import audio_export  # noqa: E402  sibling module with the canonical narration/audio rules
+from planned_visual_assets import assets_for_screen, expand_asset, imagery_entry, is_visual
 
 ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
@@ -396,14 +397,14 @@ def parse_assets(module_dir: Path) -> list[dict[str, str]]:
             continue
         # Asset rows have a planned id in col 1 and one or more screen ids in col 3.  This keeps
         # out the companion placement and activity-plan tables.
-        if not ("img" in cells[0].lower() or "aud" in cells[0].lower() or "char-" in cells[0].lower() or "pdf" in cells[0].lower() or "tbl" in cells[0].lower() or "vid" in cells[0].lower()):
+        if not ("img" in cells[0].lower() or "aud" in cells[0].lower() or "char-" in cells[0].lower() or "pdf" in cells[0].lower() or "tbl" in cells[0].lower() or "vid" in cells[0].lower() or "shot" in cells[0].lower()):
             continue
-        if not re.search(r"(?:[a-z]+-\d+|all narrated|see \"companions)", cells[2], re.I):
+        if not re.search(r"(?:[a-z0-9]+-\d+|all narrated|see \"companions)", cells[2], re.I):
             continue
-        rows.append({
-            "id": strip_md(cells[0]), "kind": strip_md(cells[1]), "screens": strip_md(cells[2]),
+        rows.extend(expand_asset({
+            "id": cells[0].replace('`', '').strip(), "kind": strip_md(cells[1]), "screens": strip_md(cells[2]),
             "brief": strip_md(cells[3]), "source": strip_md(cells[4]), "alt": strip_md(cells[5]),
-        })
+        }))
     return rows
 
 
@@ -520,20 +521,13 @@ def imagery_for(folder: str, row: dict[str, Any], asset_rows: list[dict[str, str
             source = "svg" if asset["source"] == "own" else "generate"
             imagery.append({"kind": kind, "description": f"{aid}: {asset['status']}", "source": source, "alt_text": asset["alt"], "decorative": False})
 
-    # Include a planned Phase 3 asset when it explicitly names this screen.  It provides a useful
-    # bridge from storyboarding to production without pretending that a pending asset already exists.
-    for asset in asset_rows:
-        if row["id"] not in asset["screens"]:
-            continue
-        asset_id = asset["id"].replace("`", "")
-        kind_l = asset["kind"].lower()
-        if "audio" in kind_l or "character" in kind_l:
-            continue
-        kind = "diagram" if any(k in kind_l for k in ("svg", "diagram", "html")) else "screenshot" if "screenshot" in kind_l else "photo" if "photo" in kind_l else "illustration"
-        source_l = asset["source"].lower()
-        source = "svg" if "own" in source_l or "svg" in source_l else "generate" if "ai" in source_l else "client"
-        imagery.append({"kind": kind, "description": f"{asset_id}: {asset['brief']}", "source": source, "alt_text": asset["alt"] if asset["alt"].lower() != "n/a" else f"{title_for(row, MODULES[folder])} visual.", "decorative": False})
-        break
+    # Include ALL explicitly mapped Phase 3 visuals (G10). Exact screen matching, expanded
+    # grouped IDs and deduplication preserve multi-image comparisons and step/node sequences.
+    included = {image['description'].split(':', 1)[0] for image in imagery}
+    for asset in assets_for_screen(asset_rows, row['id']):
+        if is_visual(asset) and asset['id'] not in included:
+            imagery.append(imagery_entry(asset))
+            included.add(asset['id'])
     if companion:
         imagery.append({
             "kind": "illustration", "description": f"Approved program companion pose {companion['pose']} at {companion['placement']}.",
@@ -950,7 +944,7 @@ def brand_logo_html(light: bool = True) -> str:
     return f'<img class="logo" src="../../00_program/brand/assets/{file}" alt="My Clinic logo">'
 
 
-def html_screen_markup(row: dict[str, Any], cfg: dict[str, Any], companion: dict[str, str] | None, folder: str) -> str:
+def html_screen_markup(row: dict[str, Any], cfg: dict[str, Any], companion: dict[str, str] | None, folder: str, assets: list[dict] | None = None) -> str:
     title = html.escape(title_for(row, cfg))
     content = html.escape(short_text(row["on_screen"], 28))
     layout, _, _, _ = layout_for(row["type"], row["scored"])
@@ -984,14 +978,23 @@ def html_screen_markup(row: dict[str, Any], cfg: dict[str, Any], companion: dict
     else:
         art_html = ""
     asset_note = f" · visual asset: {html.escape(', '.join(asset_ids))}" if asset_ids else ""
+    pending = [asset for asset in assets_for_screen(assets or [], row['id'])
+               if is_visual(asset) and asset['id'] not in generated]
+    placement_html = ''
+    if pending:
+        slots = ''.join(f'<li><b>{html.escape(asset["placement"])}</b> · <code>{html.escape(asset["id"])}</code>'
+                        f'<p>{html.escape(asset["brief"])}</p><p>Draft alt: {html.escape(asset["alt"])}</p>'
+                        f'<small>{html.escape(asset["gate"])}</small></li>' for asset in pending)
+        placement_html = f'<section class="planned-visuals"><h3>Planned visuals — not generated / captured</h3><ol>{slots}</ol></section>'
     return f'''<article class="board" id="{row['id']}">
   <div class="screen {classes}">{brand_logo_html(True)}<div class="header-rule"></div><p class="crumb">{html.escape(layout)} · {html.escape(row['phase_heading'])}</p><h2>{title}</h2><p class="keywords">{content}</p>{art_html}{cards}{companion_html}<div class="progress" style="--accent:{cfg['module_hex']}"></div></div>
   <div class="caption"><code>{row['id']}</code> · {html.escape(row['type'])}{asset_note} · screen visual reference only · inspect final responsive build before approval</div>
+{placement_html}
 </article>'''
 
 
-def write_screen_visuals(out_dir: Path, folder: str, cfg: dict[str, Any], rows: list[dict[str, Any]], companions: dict[str, dict[str, str]]) -> None:
-    boards = "\n".join(html_screen_markup(row, cfg, companions.get(row["id"]), folder) for row in rows)
+def write_screen_visuals(out_dir: Path, folder: str, cfg: dict[str, Any], rows: list[dict[str, Any]], companions: dict[str, dict[str, str]], assets: list[dict] | None = None) -> None:
+    boards = "\n".join(html_screen_markup(row, cfg, companions.get(row["id"]), folder, assets) for row in rows)
     content = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Clinic — Module {cfg['number']} visual storyboard</title>
@@ -999,6 +1002,7 @@ def write_screen_visuals(out_dir: Path, folder: str, cfg: dict[str, Any], rows: 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root{{--navy:#003867;--ink:#1F2A37;--bg:#F4F7FA;--line:#D9E1E8;--muted:#5B6B7B;--accent:{cfg['module_hex']};}}
 *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif}} header{{background:var(--navy);color:#fff;padding:42px max(24px,5vw)}}header img{{width:188px;height:auto}}header h1{{font-size:32px;margin:20px 0 6px}}header p{{max-width:850px;color:#C0CED9;line-height:1.5}}main{{max-width:1160px;margin:28px auto;padding:0 24px}}.notice{{border-left:4px solid #9D3293;background:#fff;padding:16px 20px;border-radius:8px;margin-bottom:24px;line-height:1.5}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;align-items:start}}.board{{margin:0}}.screen{{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;padding:30px 40px;box-shadow:0 8px 24px rgba(0,56,103,.08)}}.screen .logo{{width:142px;height:auto;position:absolute;left:40px;top:20px;z-index:2}}.header-rule{{position:absolute;left:40px;right:40px;top:63px;height:2px;background:var(--navy)}}.crumb{{margin:55px 0 10px;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}}.screen h2{{font-size:clamp(18px,2.3vw,30px);line-height:1.15;color:var(--navy);margin:0 0 16px;max-width:70%}}.keywords{{font-size:clamp(12px,1.5vw,16px);line-height:1.45;max-width:60%;margin:0}}.title-screen{{background:linear-gradient(135deg,#003867,#3B6A97);padding:72px 48px;color:#fff}}.title-screen .logo{{left:48px;top:38px;width:192px}}.title-screen h2{{color:#fff;font-size:clamp(28px,4vw,44px);max-width:68%;margin-top:66px}}.title-screen p{{color:#C0CED9}}.chip{{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em}}.watermark{{position:absolute;right:-30px;bottom:-105px;font-size:270px;opacity:.08}}.question .choice-row{{position:absolute;left:40px;right:40px;bottom:40px;display:flex;gap:10px}}.choice-row span{{height:42px;flex:1;border:1px solid #D9E1E8;border-radius:10px;background:#fff}}.scenario{{background:#fff}}.scenario .choice-row span:first-child{{border:2px solid var(--accent)}}.content-cards{{display:flex;gap:10px;margin-top:24px;max-width:66%}}.content-cards span{{height:48px;flex:1;background:#fff;border:1px solid #D9E1E8;border-radius:10px}}.companion{{position:absolute;right:36px;bottom:30px;width:135px;border:1px solid #D9E1E8;background:#fff;border-radius:12px;padding:12px;color:var(--navy);font-size:11px;line-height:1.35}}.companion span{{color:var(--muted)}}.progress{{position:absolute;bottom:0;left:0;width:42%;height:5px;background:var(--accent)}}.art{{position:absolute;right:30px;bottom:30px;width:36%;height:48%;object-fit:cover;border-radius:10px;border:1px solid #D9E1E8;background:#fff}}.art.diagram{{object-fit:contain;padding:4px}}.art-pair{{position:absolute;right:30px;bottom:30px;width:40%;height:48%;display:flex;gap:8px;padding:5px;background:#fff;border:1px solid #D9E1E8;border-radius:10px}}.art-pair img{{min-width:0;width:50%;height:100%;object-fit:contain}}.caption{{font-size:12px;color:var(--muted);padding:9px 4px;line-height:1.4}}code{{color:#006E78;font-family:ui-monospace,monospace}}@media(max-width:550px){{.grid{{grid-template-columns:1fr}}.screen{{padding:22px}}.screen .logo{{left:22px;top:16px;width:110px}}.header-rule{{left:22px;right:22px;top:52px}}.screen h2{{max-width:88%;margin-top:10px}}.keywords{{max-width:85%}}.choice-row{{left:22px!important;right:22px!important;bottom:22px!important}}.companion{{display:none}}}}
+.planned-visuals{{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:16px;margin:6px 0 20px;font-size:12px;line-height:1.5}}.planned-visuals h3{{color:var(--navy);margin:0 0 10px;font-size:14px}}.planned-visuals li{{margin-bottom:16px}}.planned-visuals p{{margin:4px 0}}.planned-visuals small{{color:#8A5A00}}
 </style></head><body>
 <header><img src="../../00_program/brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Module {cfg['number']} · screen visual review</h1><p>{html.escape(cfg['title'])} · official client logo and palette applied to every reference screen.</p></header>
 <main><div class="notice"><strong>Review artefact, not a SCORM preview.</strong> These visual boards show layout, client-logo placement, screen hierarchy and the one-module-colour rule. Final content is governed by <code>storyboard.md</code>; screenshots, policy values and hotspot coordinates remain subject to the module’s source lock.</div><div class="grid">{boards}</div></main></body></html>'''
@@ -1044,14 +1048,36 @@ def write_asset_register(out_dir: Path, folder: str, assets: list[dict[str, str]
     lines = ["# Visual and audio asset register", "", "This register is the production hand-off for review. `Generated` means the file is in this repository; `planned` means it must still be approved or supplied. Every asset still needs the final `add_asset` provenance record during Phase 4.", "", "## Generated in this review pack", "", "| Asset id | File | Kind | Provenance | Status | Alt text |", "|---|---|---|---|---|---|"]
     for aid, asset in generated.items():
         lines.append(f"| `{aid}` | [`{asset['file']}`]({asset['file']}) | {asset['kind']} | {asset['source']} | {asset['status']} | {safe_cell(asset['alt'])} |")
-    lines += ["", "## Planned assets from Phase 3", "", "| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note |", "|---|---|---|---|---|---|"]
+    lines += ["", "## Planned assets from Phase 3", "", "| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note | Placement | Production gate |", "|---|---|---|---|---|---|---|---|"]
     seen: set[str] = set()
     for asset in assets:
         if asset["id"] in seen:
             continue
         seen.add(asset["id"])
-        lines.append(f"| `{asset['id']}` | {asset['kind']} | {safe_cell(asset['screens'])} | {safe_cell(asset['brief'])} | {safe_cell(asset['source'])} | {safe_cell(asset['alt'])} |")
+        lines.append(f"| `{asset['id']}` | {asset['kind']} | {safe_cell(asset['screens'])} | {safe_cell(asset['brief'])} | {safe_cell(asset['source'])} | {safe_cell(asset['alt'])} | {safe_cell(asset['placement'])} | {safe_cell(asset['gate'])} |")
     lines += ["", "## Non-negotiable production rules", "", "- Use the supplied My Clinic logo PNGs; never generate, redraw or bake the logo into an AI image.", "- AI images contain no text, letters, numbers, brand names or patient/staff likenesses. Review every generated image before it becomes an interaction asset.", "- Module 08 only uses newly captured screenshots from a test environment after DPO review. This repository contains no simulated production patient record.", "- Keep diagrams as SVG/HTML where factual text needs revision after SME review.", ""]
+    if folder == '02_health-and-safety-2':
+        scenes = [asset for asset in assets if asset['id'].startswith('hs2-img-drill-')]
+        if len(scenes) != 6:
+            raise RuntimeError('G10 baseline requires all six Code Red scenes; reconcile Phase 3 before changing scope.')
+        manifest = {'module': folder, 'screen_id': 'hs2-030', 'status': 'Planned — not generated or approved',
+                    'scene_count': len(scenes), 'variant': 'Full six-scene drill; no lean reduction', 'assets': scenes}
+        (out_dir / 'drill-scene-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+        lines += ['## Six-scene Code Red drill', '',
+                  'See [`drill-scene-manifest.json`](drill-scene-manifest.json) for the six node placements. All scenes remain planned, not generated or approved.', '']
+    if folder == '08_it-ehr-consultation':
+        captures = [asset for asset in assets if asset['id'].startswith('ehr-shot-')]
+        if len(captures) != 31 or len({asset['id'] for asset in captures}) != 31:
+            raise RuntimeError('G10 baseline requires 31 unique EHR shots; reconcile Phase 3 before changing scope.')
+        manifest = {'module': folder, 'status': 'Planned — no screenshots captured or DPO-approved',
+                    'screenshot_count': len(captures), 'viewport': [1920, 1080], 'browser_zoom_percent': 125,
+                    'privacy': 'DPO-approved test environment only; fictional demographics and phone; never IT.mp4 or its frames.',
+                    'ehr_version': None, 'dpo_approval': None,
+                    'optional_crops': {'max_count': 4, 'status': 'Unassigned — only after legibility review; not additional workflow steps'},
+                    'assets': captures}
+        (out_dir / 'capture-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+        lines += ['## Test-environment capture manifest', '',
+                  'See [`capture-manifest.json`](capture-manifest.json): 31 unique shots, with the form reused on ehr-011. Up to four crops may support legibility (~35); they are not new simulation steps. No captures or DPO approvals exist yet.', '']
     (out_dir / "asset-register.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -1156,7 +1182,11 @@ def write_storyboard(folder: str) -> dict[str, Any]:
         companion_text = "None." if not companion else f"{companion['visible']} · pose `{companion['pose']}` · placement {companion['placement']} · speaks: {companion['speaks']}."
         imagery_rows = []
         for img in visual["imagery"]:
-            provenance = "own / official My Clinic asset" if img["source"] == "client" else "own SVG" if img["source"] == "svg" else "ai-generated, visual QA required"
+            provenance = ("test capture, DPO review pending" if img['kind'] == 'screenshot' else
+                          "client photo, permission/SME review pending" if img['kind'] == 'photo' and ':' in img['description'] else
+                          "own / official My Clinic asset" if img["source"] == "client" else
+                          "own SVG, final content review required" if img["source"] == "svg" else
+                          "ai-generated route, production/visual QA pending")
             imagery_rows.append(f"| `{img['description'].split(':', 1)[0]}` | {img['kind']} | {safe_cell(img['description'])} | {provenance} | {safe_cell(img.get('alt_text') or 'Decorative.') } | {'Yes' if img.get('decorative') else 'No'} |")
         if not imagery_rows:
             imagery_rows.append("| n/a | n/a | No meaningful image beyond layout chrome. | n/a | n/a | n/a |")
@@ -1186,6 +1216,10 @@ def write_storyboard(folder: str) -> dict[str, Any]:
             "objective_ids": objectives, "points": row["points"], "narration_script_id": sid,
             "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
         }
+        planned_visuals = [asset for asset in assets_for_screen(assets, sid) if is_visual(asset)]
+        if planned_visuals:
+            build_metadata['notes'] = 'Planned Phase 3 visual placements (not production assets): ' + '; '.join(
+                f"<{asset['id']}> — {asset['placement']}. {asset['gate']}" for asset in planned_visuals)
         source_html = clean_html_text(row["source"])
         card_parts.append(f'''### `{sid}` — {title}
 
@@ -1324,7 +1358,7 @@ lock items have written SME decisions.
     (out_dir / "visual-plan.json").write_text(json.dumps(visual_plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_asset_register(out_dir, folder, assets)
     write_audio_readme(out_dir, cfg, exported)
-    write_screen_visuals(out_dir, folder, cfg, rows, companions)
+    write_screen_visuals(out_dir, folder, cfg, rows, companions, assets)
 
     estimated_seconds = sum(word_count(narration_plain(s["narration"])) / WPM * 60 for s in scripts)
     detailed_target_seconds = sum(float(outline.get(row["id"], {}).get("target", 0)) for row in rows)

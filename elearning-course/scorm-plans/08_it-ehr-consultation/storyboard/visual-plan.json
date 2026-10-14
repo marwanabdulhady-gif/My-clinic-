@@ -125,6 +125,20 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-list: Today's consultation list, test patient only, 1920×1080 at 125% zoom Placement: ehr-010 step 1 · consultation list PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "\"Today's consultation list with one test patient.\"",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-form: Consultation form with all sections visible (may need 2 crops) Placement: ehr-010 step 2; reused on ehr-011 for mandatory-field exploration PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields.",
+          "source": "client",
+          "alt_text": "\"Consultation form showing mandatory sections.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Step 1: today's consultation list → click the test patient. Step 2: open the consultation form",
@@ -147,6 +161,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-form: Consultation form with all sections visible (may need 2 crops) Placement: ehr-010 step 2; reused on ehr-011 for mandatory-field exploration PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields.",
+          "source": "client",
+          "alt_text": "\"Consultation form showing mandatory sections.\"",
           "decorative": false
         }
       ],
@@ -193,6 +214,41 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-dx-1: Add Diagnosis dialog; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Add Diagnosis dialog PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing add diagnosis dialog; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-dx-2: Diagnosis search with draft E11 input; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Diagnosis search with draft E11 input PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing diagnosis search with draft e11 input; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-dx-3: Diagnosis results; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Diagnosis results PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing diagnosis results; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-dx-4: Primary diagnosis details, onset and chronicity; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Primary diagnosis details, onset and chronicity PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing primary diagnosis details, onset and chronicity; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-dx-5: Diagnosis favourites star; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Diagnosis favourites star PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing diagnosis favourites star; no real identifiers.",
           "decorative": false
         },
         {
@@ -247,6 +303,48 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-1: Order search; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Order search PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing order search; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-2: Drug-name search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Drug-name search using the approved B6 example PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing drug-name search using the approved b6 example; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-3: Medication route, dose, frequency and duration fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Medication route, dose, frequency and duration fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing medication route, dose, frequency and duration fields; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-4: Assessed-diagnosis selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Assessed-diagnosis selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing assessed-diagnosis selection; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-5: Patient-instructions fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Patient-instructions fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing patient-instructions fields; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-order-6: Order submission control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 6 · Order submission control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing order submission control; no real identifiers.",
+          "decorative": false
         }
       ],
       "on_screen_text": "Step 1: open order search. Step 2: type the drug name (B6 example). Step 3: set route, dose, frequency, duration. Step 4: choose the assessed diagnosis (E11). Step 5: add instructions to the patient. Step 6: press Order",
@@ -269,6 +367,34 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-wizard-1: Package search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Package search using the approved B6 example PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing package search using the approved b6 example; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-wizard-2: Form Wizard item review; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Form Wizard item review PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing form wizard item review; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-wizard-3: Form Wizard item removal; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Form Wizard item removal PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing form wizard item removal; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-wizard-4: Form Wizard finalisation; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Form Wizard finalisation PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing form wizard finalisation; no real identifiers.",
           "decorative": false
         }
       ],
@@ -339,6 +465,27 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-summary-1: Consultation Summary entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Consultation Summary entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing consultation summary entry; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-summary-2: Lab orders, special tests and referrals in summary; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Lab orders, special tests and referrals in summary PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing lab orders, special tests and referrals in summary; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-summary-3: Download and Print control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Download and Print control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing download and print control; no real identifiers.",
+          "decorative": false
         }
       ],
       "on_screen_text": "Step 1: open Consultation Summary. Step 2: check lab orders, special tests, referrals. Step 3: Download and Print",
@@ -361,6 +508,41 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-sms-1: Send SMS educational-material entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Send SMS educational-material entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing send sms educational-material entry; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-sms-2: SMS department selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · SMS department selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing sms department selection; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-sms-3: SMS diagnosis-code search; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · SMS diagnosis-code search PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing sms diagnosis-code search; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-sms-4: SMS leaflet selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · SMS leaflet selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing sms leaflet selection; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-sms-5: SMS Send control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · SMS Send control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing sms send control; no real identifiers.",
           "decorative": false
         }
       ],
@@ -414,6 +596,48 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-1: Referral entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Referral entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing referral entry; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-2: Referral specialty selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Referral specialty selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing referral specialty selection; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-3: Referral-reason field; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Referral-reason field PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing referral-reason field; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-4: Referral type and timing fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Referral type and timing fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing referral type and timing fields; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-5: Follow-up toggle and interval; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Follow-up toggle and interval PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing follow-up toggle and interval; no real identifiers.",
+          "decorative": false
+        },
+        {
+          "kind": "screenshot",
+          "description": "ehr-shot-ref-6: Referral Save control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 6 · Referral Save control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+          "source": "client",
+          "alt_text": "Test-patient EHR screen showing referral save control; no real identifiers.",
           "decorative": false
         },
         {
@@ -513,13 +737,6 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
-          "decorative": false
-        },
-        {
-          "kind": "illustration",
-          "description": "ehr-pdf-quickref: 1-page EHR consultation quick-reference card",
-          "source": "svg",
-          "alt_text": "Close visual.",
           "decorative": false
         },
         {
