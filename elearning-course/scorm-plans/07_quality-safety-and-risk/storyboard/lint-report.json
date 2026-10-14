@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "how": "Imported core.project / core.playbook from the server checkout (python-ulid installed only in a scratch target dir); lint_visual_plan(plan, brand) and lint_narration_script(script, plan) on the files in this folder; export_audio_script for audio-script-export.json.",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true,
+    "build_blocks_screen_model": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC07-clinical-governance",
+    "screen_count": 22,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC07-clinical-governance",
+    "wpm": 140,
+    "total_est_sec": 369.7,
+    "total_est_min": 6.2,
+    "screens": [
+      {
+        "screen_id": "qsr-000",
+        "part": "noor",
+        "words": 31,
+        "est_sec": 13.3
+      },
+      {
+        "screen_id": "qsr-001",
+        "part": "noor",
+        "words": 61,
+        "est_sec": 26.1
+      },
+      {
+        "screen_id": "qsr-002",
+        "part": "noor",
+        "words": 25,
+        "est_sec": 10.7
+      },
+      {
+        "screen_id": "qsr-010",
+        "part": "noor",
+        "words": 78,
+        "est_sec": 33.4
+      },
+      {
+        "screen_id": "qsr-011",
+        "part": "noor",
+        "words": 19,
+        "est_sec": 8.1
+      },
+      {
+        "screen_id": "qsr-012",
+        "part": "noor",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "qsr-020",
+        "part": "noor",
+        "words": 76,
+        "est_sec": 32.6
+      },
+      {
+        "screen_id": "qsr-021",
+        "part": "noor",
+        "words": 35,
+        "est_sec": 15.0
+      },
+      {
+        "screen_id": "qsr-022",
+        "part": "noor",
+        "words": 19,
+        "est_sec": 8.1
+      },
+      {
+        "screen_id": "qsr-023",
+        "part": "noor",
+        "words": 19,
+        "est_sec": 8.1
+      },
+      {
+        "screen_id": "qsr-030",
+        "part": "noor",
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "qsr-031",
+        "part": "omar",
+        "words": 103,
+        "est_sec": 44.1
+      },
+      {
+        "screen_id": "qsr-032",
+        "part": "noor",
+        "words": 19,
+        "est_sec": 8.1
+      },
+      {
+        "screen_id": "qsr-033",
+        "part": "noor",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "qsr-040",
+        "part": "omar",
+        "words": 70,
+        "est_sec": 30.0
+      },
+      {
+        "screen_id": "qsr-041",
+        "part": "noor",
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "qsr-042",
+        "part": "noor",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "qsr-050",
+        "part": "noor",
+        "words": 76,
+        "est_sec": 32.6
+      },
+      {
+        "screen_id": "qsr-051",
+        "part": "noor",
+        "words": 39,
+        "est_sec": 16.7
+      },
+      {
+        "screen_id": "qsr-090",
+        "part": "noor",
+        "words": 26,
+        "est_sec": 11.1
+      },
+      {
+        "screen_id": "qsr-091",
+        "part": "noor",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "qsr-092",
+        "part": "noor-1",
+        "words": 30,
+        "est_sec": 12.9
+      },
+      {
+        "screen_id": "qsr-092",
+        "part": "omar-1",
+        "words": 15,
+        "est_sec": 6.4
+      }
+    ],
+    "issues": []
+  },
+  "build_blocks": {
+    "error_count": 0,
+    "clean": true,
+    "block_count": 22,
+    "scored_screens": 11,
+    "total_points": 95,
+    "required_keys": [
+      "id",
+      "type",
+      "node_id",
+      "points",
+      "objective_ids"
+    ],
+    "checks": "JSON parses; required keys present; core.project.Screen validates; ids/order match the visual plan; points unchanged; narration_text equals the script with markup stripped and speaker names kept.",
+    "issues": []
+  },
+  "companion_checks": {
+    "error_count": 0,
+    "clean": true,
+    "companion_screens": [
+      "qsr-000",
+      "qsr-002",
+      "qsr-021",
+      "qsr-031",
+      "qsr-040",
+      "qsr-051",
+      "qsr-092"
+    ],
+    "phase3_companion_screens": [
+      "qsr-000",
+      "qsr-002",
+      "qsr-021",
+      "qsr-031",
+      "qsr-040",
+      "qsr-051",
+      "qsr-092"
+    ],
+    "noor_lines": 20,
+    "omar_lines": 3,
+    "omar_screens": [
+      "qsr-031",
+      "qsr-040",
+      "qsr-092"
+    ],
+    "narrated_screens": 22,
+    "spoken_words_excl_tags": 840,
+    "spoken_minutes_at_140wpm_excl_tags": 6.0,
+    "checks": "Every card narration line and every script segment starts NOOR:/OMAR:; char-noor-*/char-omar-* only on Phase 3 screens; Omar lines only on qsr-031/040/092; honest stories only on qsr-002/qsr-021; qsr-092 ≤ 2 turns and ≤ 45 s; no v0.1 module character ids anywhere in storyboard/; no companion art on non-scenario question cards.",
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval (B1–B11, D7–D10, NEW-01), asset QA, avatar crops, voices (D10) and SCORM QA remain required."
+}

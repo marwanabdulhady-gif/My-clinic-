@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC03-welcome-on-board",
+    "screen_count": 36,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC03-welcome-on-board",
+    "wpm": 140,
+    "total_est_sec": 738.2,
+    "total_est_min": 12.3,
+    "screens": [
+      {
+        "screen_id": "hr-000",
+        "part": "omar-1",
+        "words": 26,
+        "est_sec": 11.1
+      },
+      {
+        "screen_id": "hr-000",
+        "part": "noor-1",
+        "words": 22,
+        "est_sec": 9.7
+      },
+      {
+        "screen_id": "hr-001",
+        "part": "omar",
+        "words": 86,
+        "est_sec": 38.1
+      },
+      {
+        "screen_id": "hr-002",
+        "part": "omar",
+        "words": 24,
+        "est_sec": 10.3
+      },
+      {
+        "screen_id": "hr-010",
+        "part": "omar",
+        "words": 82,
+        "est_sec": 37.1
+      },
+      {
+        "screen_id": "hr-011",
+        "part": "omar",
+        "words": 17,
+        "est_sec": 7.3
+      },
+      {
+        "screen_id": "hr-012",
+        "part": "omar",
+        "words": 100,
+        "est_sec": 46.1
+      },
+      {
+        "screen_id": "hr-013",
+        "part": "omar",
+        "words": 17,
+        "est_sec": 7.3
+      },
+      {
+        "screen_id": "hr-014",
+        "part": "omar",
+        "words": 45,
+        "est_sec": 20.0
+      },
+      {
+        "screen_id": "hr-020",
+        "part": "omar",
+        "words": 73,
+        "est_sec": 32.5
+      },
+      {
+        "screen_id": "hr-021",
+        "part": "omar",
+        "words": 32,
+        "est_sec": 13.7
+      },
+      {
+        "screen_id": "hr-022",
+        "part": "omar",
+        "words": 47,
+        "est_sec": 21.2
+      },
+      {
+        "screen_id": "hr-023",
+        "part": "omar",
+        "words": 40,
+        "est_sec": 17.1
+      },
+      {
+        "screen_id": "hr-030",
+        "part": "omar",
+        "words": 79,
+        "est_sec": 35.6
+      },
+      {
+        "screen_id": "hr-031",
+        "part": "noor",
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "hr-032",
+        "part": "omar",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "hr-033",
+        "part": "omar",
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "hr-040",
+        "part": "omar",
+        "words": 64,
+        "est_sec": 28.2
+      },
+      {
+        "screen_id": "hr-041",
+        "part": "omar",
+        "words": 92,
+        "est_sec": 42.4
+      },
+      {
+        "screen_id": "hr-042",
+        "part": "omar",
+        "words": 15,
+        "est_sec": 6.4
+      },
+      {
+        "screen_id": "hr-043",
+        "part": "omar",
+        "words": 96,
+        "est_sec": 43.6
+      },
+      {
+        "screen_id": "hr-044",
+        "part": "noor",
+        "words": 28,
+        "est_sec": 12.0
+      },
+      {
+        "screen_id": "hr-045",
+        "part": "omar",
+        "words": 26,
+        "est_sec": 11.1
+      },
+      {
+        "screen_id": "hr-050",
+        "part": "omar",
+        "words": 63,
+        "est_sec": 27.8
+      },
+      {
+        "screen_id": "hr-051",
+        "part": "omar",
+        "words": 66,
+        "est_sec": 29.1
+      },
+      {
+        "screen_id": "hr-052",
+        "part": "omar",
+        "words": 16,
+        "est_sec": 6.9
+      },
+      {
+        "screen_id": "hr-053",
+        "part": "omar",
+        "words": 80,
+        "est_sec": 35.9
+      },
+      {
+        "screen_id": "hr-054",
+        "part": "omar",
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "hr-060",
+        "part": "omar",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "hr-061",
+        "part": "omar-1",
+        "words": 28,
+        "est_sec": 12.0
+      },
+      {
+        "screen_id": "hr-061",
+        "part": "omar-tip",
+        "words": 23,
+        "est_sec": 9.9
+      },
+      {
+        "screen_id": "hr-062",
+        "part": "omar",
+        "words": 20,
+        "est_sec": 8.6
+      },
+      {
+        "screen_id": "hr-070",
+        "part": "omar",
+        "words": 58,
+        "est_sec": 25.7
+      },
+      {
+        "screen_id": "hr-071",
+        "part": "omar",
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "hr-080",
+        "part": "omar",
+        "words": 53,
+        "est_sec": 23.9
+      },
+      {
+        "screen_id": "hr-081",
+        "part": "omar",
+        "words": 17,
+        "est_sec": 7.3
+      },
+      {
+        "screen_id": "hr-090",
+        "part": "omar",
+        "words": 29,
+        "est_sec": 12.4
+      },
+      {
+        "screen_id": "hr-091",
+        "part": "omar-1",
+        "words": 47,
+        "est_sec": 20.7
+      },
+      {
+        "screen_id": "hr-091",
+        "part": "noor-1",
+        "words": 17,
+        "est_sec": 7.6
+      }
+    ],
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval, D10 voice approval, asset QA, type-specific build JSON and SCORM QA remain required."
+}

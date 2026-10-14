@@ -54,7 +54,7 @@
     "pass_pts": 102,
     "sections": 10,
     "scen": 4,
-    "minutes": 11.478571428571428,
+    "minutes": 11.742857142857142,
     "objectives": 6,
     "weak": [],
     "zip": "MC_03_WelcomeOnBoard_v1.0_2004.zip"
@@ -129,7 +129,7 @@
     "pass_pts": 76,
     "sections": 7,
     "scen": 2,
-    "minutes": null,
+    "minutes": 6.0,
     "objectives": 5,
     "weak": [
       "qsr-o5"

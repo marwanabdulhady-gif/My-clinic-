@@ -2,708 +2,915 @@
   "module_id": "MC03-welcome-on-board",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 705.1,
+  "voices": {
+    "omar": {
+      "name": "Dr. Omar",
+      "role": "lead host",
+      "provider": null,
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "name": "Noor",
+      "role": "co-host",
+      "provider": null,
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "edumints-scorm-mcp core.playbook.export_audio_script @ 4bbf459, then speaker labels removed from tts_text/ssml and speaker/voice/screen_file/playback added",
+  "total_est_sec": 738.2,
   "segments": [
     {
       "screen_id": "hr-000",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-000.mp3",
-      "narration_text": "Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the HR rules you'll actually use in your first month. Nothing here is a memory test.",
-      "tts_text": "Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the H-R rules you'll actually use in your first month. Nothing here is a memory test.",
-      "ssml": "<speak xml:lang=\"en\">Welcome to My Clinic. Over the next forty-five minutes you&#x27;ll meet who we are, and the <sub alias=\"H-R\">HR</sub> rules you&#x27;ll actually use in your first month. Nothing here is a memory test.</speak>",
-      "est_sec": 13.3,
+      "part": "omar-1",
+      "filename": "MC03-welcome-on-board_hr-000_omar-1.mp3",
+      "narration_text": "OMAR: Welcome to My Clinic. I'm Dr. Omar, a family physician at J2. Today you'll meet who we are, and the HR rules you'll actually use.",
+      "tts_text": "Welcome to My Clinic. I'm Dr. OH-mar, a family physician at J-two. Today you'll meet who we are, and the H-R rules you'll actually use.",
+      "ssml": "<speak xml:lang=\"en\">Welcome to My Clinic. I&#x27;m Dr. <sub alias=\"OH-mar\">Omar</sub>, a family physician at <sub alias=\"J-two\">J2</sub>. Today you&#x27;ll meet who we are, and the <sub alias=\"H-R\">HR</sub> rules you&#x27;ll actually use.</speak>",
+      "est_sec": 11.1,
       "cues": [],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-000.mp3",
+      "playback": "join parts in order with 0.3 s silence into screen_file, then normalize_audio_asset"
+    },
+    {
+      "screen_id": "hr-000",
+      "part": "noor-1",
+      "filename": "MC03-welcome-on-board_hr-000_noor-1.mp3",
+      "narration_text": "NOOR: And I'm Noor, a senior nurse at J1. Nothing here is a memory test. We'll show you where to find things.",
+      "tts_text": "And I'm noor, a senior nurse at J-one. Nothing here is a memory test. We'll show you where to find things.",
+      "ssml": "<speak xml:lang=\"en\"><break time=\"0.3s\"/> And I&#x27;m <sub alias=\"noor\">Noor</sub>, a senior nurse at <sub alias=\"J-one\">J1</sub>. Nothing here is a memory test. We&#x27;ll show you where to find things.</speak>",
+      "est_sec": 9.7,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "noor",
+      "voice": "Noor",
+      "screen_file": "MC03-welcome-on-board_hr-000.mp3",
+      "playback": "join parts in order with 0.3 s silence into screen_file, then normalize_audio_asset"
     },
     {
       "screen_id": "hr-001",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-001.mp3",
-      "narration_text": "Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Everyone here remembers their own first week.",
-      "tts_text": "Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Everyone here remembers their own first week.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"purpose\"/> Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. <break time=\"0.4s\"/> <mark name=\"mission\"/> Our mission is to be the world&#x27;s most customer-centric healthcare company. Customer-centric isn&#x27;t a slogan — it&#x27;s why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? <break time=\"0.4s\"/> <mark name=\"goal\"/> Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. <break time=\"0.4s\"/> Everyone here remembers their own first week.</speak>",
-      "est_sec": 37.6,
+      "narration_text": "OMAR: Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. Our mission is to be the world's most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Honestly, my first week here, I felt there was too much to take in. You don't need to remember everything today — just where to find it.",
+      "tts_text": "Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. Our mission is to be the world's most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Honestly, my first week here, I felt there was too much to take in. You don't need to remember everything today — just where to find it.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"purpose\"/> Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. <break time=\"0.4s\"/> <mark name=\"mission\"/> Our mission is to be the world&#x27;s most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? <break time=\"0.4s\"/> <mark name=\"goal\"/> Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. <break time=\"0.4s\"/> Honestly, my first week here, I felt there was too much to take in. You don&#x27;t need to remember everything today — just where to find it.</speak>",
+      "est_sec": 38.1,
       "cues": [
         {
           "cue": "purpose",
-          "at_sec": 0.0
+          "at_sec": 0.4
         },
         {
           "cue": "mission",
-          "at_sec": 13.7
+          "at_sec": 11.1
         },
         {
           "cue": "goal",
-          "at_sec": 29.1
+          "at_sec": 21.4
         }
       ],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-001.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-002",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-002.mp3",
-      "narration_text": "Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.",
+      "narration_text": "OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.",
       "tts_text": "Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.",
       "ssml": "<speak xml:lang=\"en\">Before we start: if you had one million Saudi riyals, where would you spend it? There&#x27;s no right answer. Pick whatever is closest.</speak>",
-      "est_sec": 9.9,
+      "est_sec": 10.3,
       "cues": [],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-002.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-010",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-010.mp3",
-      "narration_text": "Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked.",
+      "narration_text": "OMAR: Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked.",
       "tts_text": "Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked.",
       "ssml": "<speak xml:lang=\"en\"><mark name=\"intro\"/> Every clinic has values on a wall. Ours only matter if you can see them in what people do. <break time=\"0.4s\"/> <mark name=\"collab\"/> Collaborative: we act together, treat everyone with respect, and stay transparent. <break time=\"0.4s\"/> <mark name=\"resp\"/> Responsible: own your decisions, make things happen, and hold each other to the same standard. <break time=\"0.4s\"/> <mark name=\"amb\"/> Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. <break time=\"0.4s\"/> <mark name=\"care\"/> Caring: act with empathy, because everyone matters. <break time=\"0.4s\"/> As you go on, think which of these you already do without being asked.</speak>",
-      "est_sec": 36.7,
+      "est_sec": 37.1,
       "cues": [
         {
           "cue": "intro",
-          "at_sec": 0.0
+          "at_sec": 0.4
         },
         {
           "cue": "collab",
-          "at_sec": 8.5
+          "at_sec": 9.0
         },
         {
           "cue": "resp",
-          "at_sec": 13.7
+          "at_sec": 14.1
         },
         {
           "cue": "amb",
-          "at_sec": 20.5
+          "at_sec": 20.9
         },
         {
           "cue": "care",
-          "at_sec": 27.3
+          "at_sec": 27.7
         }
       ],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-010.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-011",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-011.mp3",
-      "narration_text": "Here are six things people did this week. Match each one to the value behind it.",
+      "narration_text": "OMAR: Here are six things people did this week. Match each one to the value behind it.",
       "tts_text": "Here are six things people did this week. Match each one to the value behind it.",
       "ssml": "<speak xml:lang=\"en\">Here are six things people did this week. Match each one to the value behind it.</speak>",
-      "est_sec": 6.9,
+      "est_sec": 7.3,
       "cues": [],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-011.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-012",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-012.mp3",
-      "narration_text": "Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in.",
+      "narration_text": "OMAR: Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in.",
       "tts_text": "Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in.",
       "ssml": "<speak xml:lang=\"en\"><mark name=\"intro\"/> Strategy feels like someone else&#x27;s job until you find your own work inside it. Here are the seven pillars. <break time=\"0.4s\"/> <mark name=\"closer\"/> Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. <break time=\"0.4s\"/> <mark name=\"cure\"/> Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. <break time=\"0.4s\"/> <mark name=\"cap\"/> Capabilities: a repeatable model for running and growing clinics, with real governance. <break time=\"0.4s\"/> <mark name=\"culture\"/> Culture: our mission and values, servant leadership, a culture of excellence. <break time=\"0.4s\"/> <mark name=\"clin\"/> Clinicians: a caring environment, competitive benefits, room to grow. <break time=\"0.4s\"/> <mark name=\"care\"/> Care: seamless experience, empathy, loyalty built through My Care. <break time=\"0.4s\"/> <mark name=\"cost\"/> Cost: competitive cost to serve. <break time=\"0.4s\"/> Whichever one you picked, that&#x27;s your line in.</speak>",
-      "est_sec": 45.6,
+      "est_sec": 46.1,
       "cues": [
         {
           "cue": "intro",
-          "at_sec": 0.0
+          "at_sec": 0.4
         },
         {
           "cue": "closer",
-          "at_sec": 8.5
+          "at_sec": 9.0
         },
         {
           "cue": "cure",
-          "at_sec": 14.5
+          "at_sec": 14.9
         },
         {
           "cue": "cap",
-          "at_sec": 20.5
+          "at_sec": 20.9
         },
         {
           "cue": "culture",
-          "at_sec": 26.0
+          "at_sec": 26.5
         },
         {
           "cue": "clin",
-          "at_sec": 31.1
+          "at_sec": 31.6
         },
         {
           "cue": "care",
-          "at_sec": 35.4
+          "at_sec": 35.8
         },
         {
           "cue": "cost",
-          "at_sec": 39.7
+          "at_sec": 40.1
         }
       ],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-012.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-013",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-013.mp3",
-      "narration_text": "One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?",
+      "narration_text": "OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?",
       "tts_text": "One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?",
       "ssml": "<speak xml:lang=\"en\">One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?</speak>",
-      "est_sec": 6.9,
+      "est_sec": 7.3,
       "cues": [],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-013.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-014",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-014.mp3",
-      "narration_text": "Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
+      "narration_text": "OMAR: Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
       "tts_text": "Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
       "ssml": "<speak xml:lang=\"en\"><mark name=\"patients\"/> Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. <break time=\"0.4s\"/> <mark name=\"community\"/> Second, the community around each clinic. <break time=\"0.3s\"/> <mark name=\"corporates\"/> Third, corporates and insurers. Three groups, one standard.</speak>",
-      "est_sec": 19.6,
+      "est_sec": 20.0,
       "cues": [
         {
           "cue": "patients",
-          "at_sec": 0.0
+          "at_sec": 0.4
         },
         {
           "cue": "community",
-          "at_sec": 13.3
+          "at_sec": 13.7
         },
         {
           "cue": "corporates",
-          "at_sec": 16.1
+          "at_sec": 16.6
         }
       ],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-014.mp3",
+      "playback": "on screen entry; record directly as screen_file"
     },
     {
       "screen_id": "hr-020",
-      "part": null,
+      "part": "omar",
       "filename": "MC03-welcome-on-board_hr-020.mp3",
-      "narration_text": "We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer.",
+      "narration_text": "OMAR: We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer.",
       "tts_text": "We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer.",
       "ssml": "<speak xml:lang=\"en\">We opened our first clinic in North Jeddah in 2017. <mark name=\"e2017\"/> <break time=\"0.3s\"/> In 2019 we started the employment check-up unit, <mark name=\"e2019\"/> our first corporate service. <break time=\"0.3s\"/> Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, <mark name=\"e2023\"/> our first clinic inside a corporate community. <break time=\"0.3s\"/> Riyadh followed in 2024, <mark name=\"e2024\"/> a flagship to put the brand on the map. <break time=\"0.3s\"/> The last two years added our first community clinics. <mark name=\"e2025\"/> Nine years, nine steps, one idea: bring good care closer.</speak>",
-      "est_sec": 32.1,
+      "est_sec": 32.5,
       "cues": [
         {
           "cue": "e2017",
-          "at_sec": 4.3
-        },
-        {
-          "cue": "e2019",
-          "at_sec": 8.0
-        },
-        {
-          "cue": "e2023",
-          "at_sec": 14.7
-        },
-        {
-          "cue": "e2024",
-          "at_sec": 19.8
-        },
-        {
-          "cue": "e2025",
-          "at_sec": 27.8
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-021",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-021.mp3",
-      "narration_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
-      "tts_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
-      "ssml": "<speak xml:lang=\"en\">You&#x27;ll hear these codes every day, so it&#x27;s worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.</speak>",
-      "est_sec": 13.3,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-022",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-022.mp3",
-      "narration_text": "Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs.",
-      "tts_text": "Four people lead the company. The C-E-O sets the direction. The C-M-O owns clinical standards — questions about how we practise medicine land here. The C-O-O runs the clinics day to day. The C-F-O looks after the money. You'll see their decisions in how your clinic runs.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"ceo\"/> Four people lead the company. The <sub alias=\"C-E-O\">CEO</sub> sets the direction. <break time=\"0.4s\"/> <mark name=\"cmo\"/> The <sub alias=\"C-M-O\">CMO</sub> owns clinical standards — questions about how we practise medicine land here. <break time=\"0.4s\"/> <mark name=\"coo\"/> The <sub alias=\"C-O-O\">COO</sub> runs the clinics day to day. <break time=\"0.3s\"/> <mark name=\"cfo\"/> The <sub alias=\"C-F-O\">CFO</sub> looks after the money. You&#x27;ll see their decisions in how your clinic runs.</speak>",
-      "est_sec": 20.8,
-      "cues": [
-        {
-          "cue": "ceo",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "cmo",
           "at_sec": 4.7
         },
         {
-          "cue": "coo",
-          "at_sec": 10.7
+          "cue": "e2019",
+          "at_sec": 8.4
         },
         {
-          "cue": "cfo",
-          "at_sec": 14.4
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-023",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-023.mp3",
-      "narration_text": "We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.",
-      "tts_text": "We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.",
-      "ssml": "<speak xml:lang=\"en\">We&#x27;re proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.</speak>",
-      "est_sec": 16.7,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-030",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-030.mp3",
-      "narration_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
-      "tts_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"respect\"/> Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. <break time=\"0.4s\"/> <mark name=\"integrity\"/> Integrity — be transparent, and disclose any conflict of interest. <break time=\"0.4s\"/> <mark name=\"accountability\"/> Accountability — a culture where people report safety concerns instead of staying quiet. <break time=\"0.4s\"/> <mark name=\"innovation\"/> Innovation and collaboration — research and community work that improves outcomes. <break time=\"0.5s\"/> <mark name=\"report\"/> And the rule you&#x27;ll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You&#x27;re never expected to work it out alone.</speak>",
-      "est_sec": 35.1,
-      "cues": [
-        {
-          "cue": "respect",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "integrity",
-          "at_sec": 7.3
-        },
-        {
-          "cue": "accountability",
-          "at_sec": 11.5
-        },
-        {
-          "cue": "innovation",
-          "at_sec": 17.1
-        },
-        {
-          "cue": "report",
-          "at_sec": 21.8
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-031",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-031.mp3",
-      "narration_text": "Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?",
-      "tts_text": "Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?",
-      "ssml": "<speak xml:lang=\"en\">Three moments now, and nobody is watching. First: you&#x27;re on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin&#x27;s company. The evaluation starts in an hour. What do you do?</speak>",
-      "est_sec": 15.0,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-032",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-032.mp3",
-      "narration_text": "Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?",
-      "tts_text": "Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?",
-      "ssml": "<speak xml:lang=\"en\">Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?</speak>",
-      "est_sec": 8.1,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-033",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-033.mp3",
-      "narration_text": "Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?",
-      "tts_text": "Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?",
-      "ssml": "<speak xml:lang=\"en\">Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?</speak>",
-      "est_sec": 8.6,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-040",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-040.mp3",
-      "narration_text": "Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
-      "tts_text": "Where help lives. First, your H-R help desk — one per business unit, so you'll talk to people who know your clinic. Second, OR-uh-kul. If it's a request, it goes through OR-uh-kul. That's the only way it has a record. Third, the H-R Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"desk\"/> Where help lives. First, your <sub alias=\"H-R\">HR</sub> help desk — one per business unit, so you&#x27;ll talk to people who know your clinic. <break time=\"0.4s\"/> <mark name=\"oracle\"/> Second, <sub alias=\"OR-uh-kul\">Oracle</sub>. If it&#x27;s a request, it goes through <sub alias=\"OR-uh-kul\">Oracle</sub>. That&#x27;s the only way it has a record. <break time=\"0.4s\"/> <mark name=\"pdf\"/> Third, the <sub alias=\"H-R\">HR</sub> Quick Reference: two pages with every leave table and the pay rules. Download it now. You don&#x27;t need to memorise this.</speak>",
-      "est_sec": 27.8,
-      "cues": [
-        {
-          "cue": "desk",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "oracle",
-          "at_sec": 9.4
-        },
-        {
-          "cue": "pdf",
-          "at_sec": 17.5
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-041",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-041.mp3",
-      "narration_text": "Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most.",
-      "tts_text": "Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then eed, Founding Day, National Day. We'll practise the four people ask about most.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"intro\"/> Nine types. Open the ones you need. <break time=\"0.3s\"/> <mark name=\"annual\"/> Annual: after probation, five days carried over, used by end of March. <break time=\"0.3s\"/> <mark name=\"sick\"/> Sick: valid report needed. First thirty days paid in full. <break time=\"0.3s\"/> <mark name=\"injury\"/> Work injury covers commuting, and has a same-day or next-day deadline. <break time=\"0.3s\"/> <mark name=\"maternity\"/> Maternity: twelve weeks, starting up to four weeks early. <break time=\"0.3s\"/> <mark name=\"exam\"/> Exam leave: academic exams only, documents two weeks ahead. <break time=\"0.3s\"/> <mark name=\"scientific\"/> Scientific: by profession, and can&#x27;t be carried over. <break time=\"0.3s\"/> <mark name=\"hajj\"/> <sub alias=\"hajj\">Hajj</sub>: two years&#x27; service and a permit. <break time=\"0.3s\"/> <mark name=\"compass\"/> Compassionate: marriage, paternity, bereavement. <break time=\"0.3s\"/> <mark name=\"holidays\"/> Then <sub alias=\"eed\">Eid</sub>, Founding Day, National Day. <break time=\"0.3s\"/> We&#x27;ll practise the four people ask about most.</speak>",
-      "est_sec": 42.0,
-      "cues": [
-        {
-          "cue": "intro",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "annual",
-          "at_sec": 3.3
-        },
-        {
-          "cue": "sick",
-          "at_sec": 8.7
-        },
-        {
-          "cue": "injury",
-          "at_sec": 13.3
-        },
-        {
-          "cue": "maternity",
-          "at_sec": 18.3
-        },
-        {
-          "cue": "exam",
-          "at_sec": 22.5
-        },
-        {
-          "cue": "scientific",
-          "at_sec": 26.7
-        },
-        {
-          "cue": "hajj",
-          "at_sec": 30.4
-        },
-        {
-          "cue": "compass",
-          "at_sec": 33.7
-        },
-        {
-          "cue": "holidays",
-          "at_sec": 35.7
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-042",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-042.mp3",
-      "narration_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days.",
-      "tts_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days.",
-      "ssml": "<speak xml:lang=\"en\">Four grades, four entitlements. Match each grade to its annual leave, in working days.</speak>",
-      "est_sec": 6.0,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-043",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-043.mp3",
-      "narration_text": "One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?",
-      "tts_text": "One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?",
-      "ssml": "<speak xml:lang=\"en\">One example, properly. A colleague is off sick forty days in a year, with valid reports. <mark name=\"s1\"/> First, she tells her line manager — that&#x27;s first, not last. <break time=\"0.4s\"/> <mark name=\"s2\"/> The first thirty days are paid in full. <break time=\"0.4s\"/> <mark name=\"s3\"/> Ten days fall into the next band, and that&#x27;s where pay drops. <break time=\"0.4s\"/> Note the detail people miss: it&#x27;s the total in the year that sets the band, not one spell. <break time=\"0.5s\"/> <mark name=\"s4\"/> Beyond ninety days it&#x27;s unpaid. <break time=\"0.4s\"/> <mark name=\"s5\"/> And if the report is from outside My Clinic, the Staff Health Clinic must approve it. <break time=\"0.4s\"/> Now: what changes if her report comes from another hospital?</speak>",
-      "est_sec": 43.2,
-      "cues": [
-        {
-          "cue": "s1",
-          "at_sec": 6.9
-        },
-        {
-          "cue": "s2",
-          "at_sec": 11.5
-        },
-        {
-          "cue": "s3",
-          "at_sec": 15.4
-        },
-        {
-          "cue": "s4",
-          "at_sec": 29.1
-        },
-        {
-          "cue": "s5",
-          "at_sec": 31.7
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-044",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-044.mp3",
-      "narration_text": "Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.",
-      "tts_text": "Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the M-D's pre-approval.",
-      "ssml": "<speak xml:lang=\"en\">Now you&#x27;re on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the <sub alias=\"M-D\">MD</sub>&#x27;s pre-approval.</speak>",
-      "est_sec": 11.6,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-045",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-045.mp3",
-      "narration_text": "A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.",
-      "tts_text": "A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.",
-      "ssml": "<speak xml:lang=\"en\">A short practice set now. It adapts: if you&#x27;re getting these, it will finish early. If you&#x27;re not, it&#x27;ll keep going for a few more.</speak>",
-      "est_sec": 10.7,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-050",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-050.mp3",
-      "narration_text": "GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.",
-      "tts_text": "GO-see is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"what\"/> <sub alias=\"GO-see\">GOSI</sub> is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. <break time=\"0.4s\"/> <mark name=\"who\"/> It applies to Saudi employees, until retirement at sixty. <break time=\"0.4s\"/> <mark name=\"split\"/> The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn&#x27;t yours.</speak>",
-      "est_sec": 27.4,
-      "cues": [
-        {
-          "cue": "what",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "who",
-          "at_sec": 7.7
-        },
-        {
-          "cue": "split",
-          "at_sec": 11.9
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-051",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-051.mp3",
-      "narration_text": "Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.",
-      "tts_text": "Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GO-see is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.",
-      "ssml": "<speak xml:lang=\"en\">Let&#x27;s do one together. Basic four thousand eight hundred, housing one thousand two hundred. <mark name=\"s1\"/> Add them — <sub alias=\"GO-see\">GOSI</sub> is charged on basic plus housing, so six thousand. <break time=\"0.4s\"/> <mark name=\"s2\"/> Apply your rate, nine point seven five per cent. The company&#x27;s rate never touches your payslip. <break time=\"0.4s\"/> <mark name=\"s3\"/> Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That&#x27;s the line to look for.</speak>",
-      "est_sec": 28.7,
-      "cues": [
-        {
-          "cue": "s1",
-          "at_sec": 6.0
-        },
-        {
-          "cue": "s2",
-          "at_sec": 11.5
-        },
-        {
-          "cue": "s3",
-          "at_sec": 18.8
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-052",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-052.mp3",
-      "narration_text": "Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?",
-      "tts_text": "Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GO-see deduction?",
-      "ssml": "<speak xml:lang=\"en\">Your turn. Basic six thousand, housing one thousand five hundred. What&#x27;s your monthly <sub alias=\"GO-see\">GOSI</sub> deduction?</speak>",
-      "est_sec": 6.4,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-053",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-053.mp3",
-      "narration_text": "One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves.",
-      "tts_text": "One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"elig\"/> One caveat before the numbers: whether you&#x27;re eligible for overtime at all depends on your grade. Check that first. <break time=\"0.4s\"/> <mark name=\"s1\"/> Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. <break time=\"0.4s\"/> <mark name=\"s2\"/> On a normal working day, multiply by one and a half. That&#x27;s thirty-seven riyals fifty. <break time=\"0.4s\"/> <mark name=\"s3\"/> On a public holiday, multiply by two. Fifty riyals an hour. <break time=\"0.4s\"/> Same hourly rate both times. Only the multiplier moves.</speak>",
-      "est_sec": 35.5,
-      "cues": [
-        {
-          "cue": "elig",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "s1",
-          "at_sec": 8.5
-        },
-        {
-          "cue": "s2",
-          "at_sec": 19.7
-        },
-        {
-          "cue": "s3",
-          "at_sec": 26.5
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-054",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-054.mp3",
-      "narration_text": "One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?",
-      "tts_text": "One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?",
-      "ssml": "<speak xml:lang=\"en\">One for you. Basic six thousand. You work four overtime hours on a normal working day. What&#x27;s the overtime pay?</speak>",
-      "est_sec": 8.6,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-060",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-060.mp3",
-      "narration_text": "Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.",
-      "tts_text": "Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.",
-      "ssml": "<speak xml:lang=\"en\">Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.</speak>",
-      "est_sec": 8.1,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-061",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-061.mp3",
-      "narration_text": "Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.",
-      "tts_text": "Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.",
-      "ssml": "<speak xml:lang=\"en\">Let&#x27;s do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I&#x27;ll tell you what to look for.</speak>",
-      "est_sec": 11.6,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-062",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-062.mp3",
-      "narration_text": "True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.",
-      "tts_text": "True or false: if your licence expires in under thirty days without renewal, H-R may suspend you from work.",
-      "ssml": "<speak xml:lang=\"en\">True or false: if your licence expires in under thirty days without renewal, <sub alias=\"H-R\">HR</sub> may suspend you from work.</speak>",
-      "est_sec": 8.1,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-070",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-070.mp3",
-      "narration_text": "Two quick things. Your ID card: wear it where it can be seen. Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.",
-      "tts_text": "Two quick things. Your I-D card: wear it where it can be seen. Lose it, and you email H-R — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"id\"/> Two quick things. Your <sub alias=\"I-D\">ID</sub> card: wear it where it can be seen. <break time=\"0.4s\"/> <mark name=\"lost\"/> Lose it, and you email <sub alias=\"H-R\">HR</sub> — there&#x27;s a replacement fee. Damage it, and it&#x27;s replaced free. <break time=\"0.4s\"/> <mark name=\"wheel\"/> Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you&#x27;d actually use.</speak>",
-      "est_sec": 25.2,
-      "cues": [
-        {
-          "cue": "id",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "lost",
-          "at_sec": 6.0
-        },
-        {
-          "cue": "wheel",
-          "at_sec": 13.2
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-071",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-071.mp3",
-      "narration_text": "Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.",
-      "tts_text": "Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.",
-      "ssml": "<speak xml:lang=\"en\">Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.</speak>",
-      "est_sec": 8.6,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-080",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-080.mp3",
-      "narration_text": "Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
-      "tts_text": "Two ends of one story. Starting: you accept your contract on KEE-wa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through OR-uh-kul. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"qiwa\"/> Two ends of one story. Starting: you accept your contract on <sub alias=\"KEE-wa\">Qiwa</sub>, the Ministry of Human Resources platform. <break time=\"0.4s\"/> <mark name=\"oracle\"/> Leaving: a resignation is a request, so it goes through <sub alias=\"OR-uh-kul\">Oracle</sub>. <break time=\"0.4s\"/> <mark name=\"notice\"/> Notice is two months, and it runs both ways. <break time=\"0.4s\"/> <mark name=\"eos\"/> End-of-service benefits and your experience certificate follow within fifteen days of your last day.</speak>",
-      "est_sec": 23.5,
-      "cues": [
-        {
-          "cue": "qiwa",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "oracle",
-          "at_sec": 8.1
-        },
-        {
-          "cue": "notice",
-          "at_sec": 13.2
-        },
-        {
-          "cue": "eos",
-          "at_sec": 17.5
-        }
-      ],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-081",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-081.mp3",
-      "narration_text": "Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?",
-      "tts_text": "Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?",
-      "ssml": "<speak xml:lang=\"en\">Last scenario. You&#x27;ve accepted a new job starting in three weeks. What happens with your notice?</speak>",
-      "est_sec": 6.9,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-090",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-090.mp3",
-      "narration_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.",
-      "tts_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.",
-      "ssml": "<speak xml:lang=\"en\">Here&#x27;s where you landed, objective by objective. Anything under seventy per cent has a note beside it. It&#x27;s a list of where to look next, not a verdict.</speak>",
-      "est_sec": 12.0,
-      "cues": [],
-      "timing_source": "estimated_word_count"
-    },
-    {
-      "screen_id": "hr-091",
-      "part": null,
-      "filename": "MC03-welcome-on-board_hr-091.mp3",
-      "narration_text": "That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. Download the HR Quick Reference. Please complete the onboarding survey — two minutes, and it shapes how we run this day. Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.",
-      "tts_text": "That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. Download the H-R Quick Reference. Please complete the onboarding survey — two minutes, and it shapes how we run this day. Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.",
-      "ssml": "<speak xml:lang=\"en\"><mark name=\"list\"/> That&#x27;s the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You&#x27;ll also know which system to use. <break time=\"0.3s\"/> <mark name=\"pdf\"/> Download the <sub alias=\"H-R\">HR</sub> Quick Reference. <break time=\"0.3s\"/> <mark name=\"survey\"/> Please complete the onboarding survey — two minutes, and it shapes how we run this day. <break time=\"0.3s\"/> <mark name=\"next\"/> Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.</speak>",
-      "est_sec": 27.0,
-      "cues": [
-        {
-          "cue": "list",
-          "at_sec": 0.0
-        },
-        {
-          "cue": "pdf",
-          "at_sec": 12.7
-        },
-        {
-          "cue": "survey",
+          "cue": "e2023",
           "at_sec": 15.2
         },
         {
-          "cue": "next",
-          "at_sec": 21.9
+          "cue": "e2024",
+          "at_sec": 20.2
+        },
+        {
+          "cue": "e2025",
+          "at_sec": 28.2
         }
       ],
-      "timing_source": "estimated_word_count"
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-020.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-021",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-021.mp3",
+      "narration_text": "OMAR: You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
+      "tts_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
+      "ssml": "<speak xml:lang=\"en\">You&#x27;ll hear these codes every day, so it&#x27;s worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.</speak>",
+      "est_sec": 13.7,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-021.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-022",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-022.mp3",
+      "narration_text": "OMAR: Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs.",
+      "tts_text": "Four people lead the company. The C-E-O sets the direction. The C-M-O owns clinical standards — questions about how we practise medicine land here. The C-O-O runs the clinics day to day. The C-F-O looks after the money. You'll see their decisions in how your clinic runs.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"ceo\"/> Four people lead the company. The <sub alias=\"C-E-O\">CEO</sub> sets the direction. <break time=\"0.4s\"/> <mark name=\"cmo\"/> The <sub alias=\"C-M-O\">CMO</sub> owns clinical standards — questions about how we practise medicine land here. <break time=\"0.4s\"/> <mark name=\"coo\"/> The <sub alias=\"C-O-O\">COO</sub> runs the clinics day to day. <break time=\"0.3s\"/> <mark name=\"cfo\"/> The <sub alias=\"C-F-O\">CFO</sub> looks after the money. You&#x27;ll see their decisions in how your clinic runs.</speak>",
+      "est_sec": 21.2,
+      "cues": [
+        {
+          "cue": "ceo",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "cmo",
+          "at_sec": 5.1
+        },
+        {
+          "cue": "coo",
+          "at_sec": 11.1
+        },
+        {
+          "cue": "cfo",
+          "at_sec": 14.8
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-022.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-023",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-023.mp3",
+      "narration_text": "OMAR: We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.",
+      "tts_text": "We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.",
+      "ssml": "<speak xml:lang=\"en\">We&#x27;re proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.</speak>",
+      "est_sec": 17.1,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-023.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-030",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-030.mp3",
+      "narration_text": "OMAR: Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
+      "tts_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"respect\"/> Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. <break time=\"0.4s\"/> <mark name=\"integrity\"/> Integrity — be transparent, and disclose any conflict of interest. <break time=\"0.4s\"/> <mark name=\"accountability\"/> Accountability — a culture where people report safety concerns instead of staying quiet. <break time=\"0.4s\"/> <mark name=\"innovation\"/> Innovation and collaboration — research and community work that improves outcomes. <break time=\"0.5s\"/> <mark name=\"report\"/> And the rule you&#x27;ll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You&#x27;re never expected to work it out alone.</speak>",
+      "est_sec": 35.6,
+      "cues": [
+        {
+          "cue": "respect",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "integrity",
+          "at_sec": 7.7
+        },
+        {
+          "cue": "accountability",
+          "at_sec": 11.9
+        },
+        {
+          "cue": "innovation",
+          "at_sec": 17.5
+        },
+        {
+          "cue": "report",
+          "at_sec": 22.3
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-030.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-031",
+      "part": "noor",
+      "filename": "MC03-welcome-on-board_hr-031.mp3",
+      "narration_text": "NOOR: Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?",
+      "tts_text": "Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?",
+      "ssml": "<speak xml:lang=\"en\">Three moments now, and nobody is watching. First: you&#x27;re on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin&#x27;s company. The evaluation starts in an hour. What do you do?</speak>",
+      "est_sec": 15.4,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "noor",
+      "voice": "Noor",
+      "screen_file": "MC03-welcome-on-board_hr-031.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-032",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-032.mp3",
+      "narration_text": "OMAR: Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?",
+      "tts_text": "Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?",
+      "ssml": "<speak xml:lang=\"en\">Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?</speak>",
+      "est_sec": 8.6,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-032.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-033",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-033.mp3",
+      "narration_text": "OMAR: Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?",
+      "tts_text": "Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?",
+      "ssml": "<speak xml:lang=\"en\">Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?</speak>",
+      "est_sec": 9.0,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-033.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-040",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-040.mp3",
+      "narration_text": "OMAR: Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
+      "tts_text": "Where help lives. First, your H-R help desk — one per business unit, so you'll talk to people who know your clinic. Second, OR-uh-kul. If it's a request, it goes through OR-uh-kul. That's the only way it has a record. Third, the H-R Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"desk\"/> Where help lives. First, your <sub alias=\"H-R\">HR</sub> help desk — one per business unit, so you&#x27;ll talk to people who know your clinic. <break time=\"0.4s\"/> <mark name=\"oracle\"/> Second, <sub alias=\"OR-uh-kul\">Oracle</sub>. If it&#x27;s a request, it goes through <sub alias=\"OR-uh-kul\">Oracle</sub>. That&#x27;s the only way it has a record. <break time=\"0.4s\"/> <mark name=\"pdf\"/> Third, the <sub alias=\"H-R\">HR</sub> Quick Reference: two pages with every leave table and the pay rules. Download it now. You don&#x27;t need to memorise this.</speak>",
+      "est_sec": 28.2,
+      "cues": [
+        {
+          "cue": "desk",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "oracle",
+          "at_sec": 9.8
+        },
+        {
+          "cue": "pdf",
+          "at_sec": 17.9
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-040.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-041",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-041.mp3",
+      "narration_text": "OMAR: Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most.",
+      "tts_text": "Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then eed, Founding Day, National Day. We'll practise the four people ask about most.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"intro\"/> Nine types. Open the ones you need. <break time=\"0.3s\"/> <mark name=\"annual\"/> Annual: after probation, five days carried over, used by end of March. <break time=\"0.3s\"/> <mark name=\"sick\"/> Sick: valid report needed. First thirty days paid in full. <break time=\"0.3s\"/> <mark name=\"injury\"/> Work injury covers commuting, and has a same-day or next-day deadline. <break time=\"0.3s\"/> <mark name=\"maternity\"/> Maternity: twelve weeks, starting up to four weeks early. <break time=\"0.3s\"/> <mark name=\"exam\"/> Exam leave: academic exams only, documents two weeks ahead. <break time=\"0.3s\"/> <mark name=\"scientific\"/> Scientific: by profession, and can&#x27;t be carried over. <break time=\"0.3s\"/> <mark name=\"hajj\"/> <sub alias=\"hajj\">Hajj</sub>: two years&#x27; service and a permit. <break time=\"0.3s\"/> <mark name=\"compass\"/> Compassionate: marriage, paternity, bereavement. <break time=\"0.3s\"/> <mark name=\"holidays\"/> Then <sub alias=\"eed\">Eid</sub>, Founding Day, National Day. <break time=\"0.3s\"/> We&#x27;ll practise the four people ask about most.</speak>",
+      "est_sec": 42.4,
+      "cues": [
+        {
+          "cue": "intro",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "annual",
+          "at_sec": 3.7
+        },
+        {
+          "cue": "sick",
+          "at_sec": 9.2
+        },
+        {
+          "cue": "injury",
+          "at_sec": 13.8
+        },
+        {
+          "cue": "maternity",
+          "at_sec": 18.8
+        },
+        {
+          "cue": "exam",
+          "at_sec": 22.9
+        },
+        {
+          "cue": "scientific",
+          "at_sec": 27.1
+        },
+        {
+          "cue": "hajj",
+          "at_sec": 30.8
+        },
+        {
+          "cue": "compass",
+          "at_sec": 34.1
+        },
+        {
+          "cue": "holidays",
+          "at_sec": 36.1
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-041.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-042",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-042.mp3",
+      "narration_text": "OMAR: Four grades, four entitlements. Match each grade to its annual leave, in working days.",
+      "tts_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days.",
+      "ssml": "<speak xml:lang=\"en\">Four grades, four entitlements. Match each grade to its annual leave, in working days.</speak>",
+      "est_sec": 6.4,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-042.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-043",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-043.mp3",
+      "narration_text": "OMAR: One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?",
+      "tts_text": "One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?",
+      "ssml": "<speak xml:lang=\"en\">One example, properly. A colleague is off sick forty days in a year, with valid reports. <mark name=\"s1\"/> First, she tells her line manager — that&#x27;s first, not last. <break time=\"0.4s\"/> <mark name=\"s2\"/> The first thirty days are paid in full. <break time=\"0.4s\"/> <mark name=\"s3\"/> Ten days fall into the next band, and that&#x27;s where pay drops. <break time=\"0.4s\"/> Note the detail people miss: it&#x27;s the total in the year that sets the band, not one spell. <break time=\"0.5s\"/> <mark name=\"s4\"/> Beyond ninety days it&#x27;s unpaid. <break time=\"0.4s\"/> <mark name=\"s5\"/> And if the report is from outside My Clinic, the Staff Health Clinic must approve it. <break time=\"0.4s\"/> Now: what changes if her report comes from another hospital?</speak>",
+      "est_sec": 43.6,
+      "cues": [
+        {
+          "cue": "s1",
+          "at_sec": 7.3
+        },
+        {
+          "cue": "s2",
+          "at_sec": 12.0
+        },
+        {
+          "cue": "s3",
+          "at_sec": 15.8
+        },
+        {
+          "cue": "s4",
+          "at_sec": 29.6
+        },
+        {
+          "cue": "s5",
+          "at_sec": 32.1
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-043.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-044",
+      "part": "noor",
+      "filename": "MC03-welcome-on-board_hr-044.mp3",
+      "narration_text": "NOOR: Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.",
+      "tts_text": "Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the M-D's pre-approval.",
+      "ssml": "<speak xml:lang=\"en\">Now you&#x27;re on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the <sub alias=\"M-D\">MD</sub>&#x27;s pre-approval.</speak>",
+      "est_sec": 12.0,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "noor",
+      "voice": "Noor",
+      "screen_file": "MC03-welcome-on-board_hr-044.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-045",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-045.mp3",
+      "narration_text": "OMAR: A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.",
+      "tts_text": "A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.",
+      "ssml": "<speak xml:lang=\"en\">A short practice set now. It adapts: if you&#x27;re getting these, it will finish early. If you&#x27;re not, it&#x27;ll keep going for a few more.</speak>",
+      "est_sec": 11.1,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-045.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-050",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-050.mp3",
+      "narration_text": "OMAR: GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.",
+      "tts_text": "GO-see is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"what\"/> <sub alias=\"GO-see\">GOSI</sub> is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. <break time=\"0.4s\"/> <mark name=\"who\"/> It applies to Saudi employees, until retirement at sixty. <break time=\"0.4s\"/> <mark name=\"split\"/> The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn&#x27;t yours.</speak>",
+      "est_sec": 27.8,
+      "cues": [
+        {
+          "cue": "what",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "who",
+          "at_sec": 8.1
+        },
+        {
+          "cue": "split",
+          "at_sec": 12.4
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-050.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-051",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-051.mp3",
+      "narration_text": "OMAR: Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.",
+      "tts_text": "Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GO-see is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.",
+      "ssml": "<speak xml:lang=\"en\">Let&#x27;s do one together. Basic four thousand eight hundred, housing one thousand two hundred. <mark name=\"s1\"/> Add them — <sub alias=\"GO-see\">GOSI</sub> is charged on basic plus housing, so six thousand. <break time=\"0.4s\"/> <mark name=\"s2\"/> Apply your rate, nine point seven five per cent. The company&#x27;s rate never touches your payslip. <break time=\"0.4s\"/> <mark name=\"s3\"/> Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That&#x27;s the line to look for.</speak>",
+      "est_sec": 29.1,
+      "cues": [
+        {
+          "cue": "s1",
+          "at_sec": 6.4
+        },
+        {
+          "cue": "s2",
+          "at_sec": 12.0
+        },
+        {
+          "cue": "s3",
+          "at_sec": 19.2
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-051.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-052",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-052.mp3",
+      "narration_text": "OMAR: Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?",
+      "tts_text": "Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GO-see deduction?",
+      "ssml": "<speak xml:lang=\"en\">Your turn. Basic six thousand, housing one thousand five hundred. What&#x27;s your monthly <sub alias=\"GO-see\">GOSI</sub> deduction?</speak>",
+      "est_sec": 6.9,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-052.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-053",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-053.mp3",
+      "narration_text": "OMAR: One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves.",
+      "tts_text": "One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"elig\"/> One caveat before the numbers: whether you&#x27;re eligible for overtime at all depends on your grade. Check that first. <break time=\"0.4s\"/> <mark name=\"s1\"/> Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. <break time=\"0.4s\"/> <mark name=\"s2\"/> On a normal working day, multiply by one and a half. That&#x27;s thirty-seven riyals fifty. <break time=\"0.4s\"/> <mark name=\"s3\"/> On a public holiday, multiply by two. Fifty riyals an hour. <break time=\"0.4s\"/> Same hourly rate both times. Only the multiplier moves.</speak>",
+      "est_sec": 35.9,
+      "cues": [
+        {
+          "cue": "elig",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "s1",
+          "at_sec": 9.0
+        },
+        {
+          "cue": "s2",
+          "at_sec": 20.1
+        },
+        {
+          "cue": "s3",
+          "at_sec": 26.9
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-053.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-054",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-054.mp3",
+      "narration_text": "OMAR: One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?",
+      "tts_text": "One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?",
+      "ssml": "<speak xml:lang=\"en\">One for you. Basic six thousand. You work four overtime hours on a normal working day. What&#x27;s the overtime pay?</speak>",
+      "est_sec": 9.0,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-054.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-060",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-060.mp3",
+      "narration_text": "OMAR: Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.",
+      "tts_text": "Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.",
+      "ssml": "<speak xml:lang=\"en\">Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.</speak>",
+      "est_sec": 8.6,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-060.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-061",
+      "part": "omar-1",
+      "filename": "MC03-welcome-on-board_hr-061_omar-1.mp3",
+      "narration_text": "OMAR: Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.",
+      "tts_text": "Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.",
+      "ssml": "<speak xml:lang=\"en\">Let&#x27;s do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I&#x27;ll tell you what to look for.</speak>",
+      "est_sec": 12.0,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-061.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-061",
+      "part": "omar-tip",
+      "filename": "MC03-welcome-on-board_hr-061_omar-tip.mp3",
+      "narration_text": "OMAR: One habit worth building. After you submit, open the request again. Wait until it shows as approved before you book any travel.",
+      "tts_text": "One habit worth building. After you submit, open the request again. Wait until it shows as approved before you book any travel.",
+      "ssml": "<speak xml:lang=\"en\">One habit worth building. After you submit, open the request again. Wait until it shows as approved before you book any travel.</speak>",
+      "est_sec": 9.9,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-061_omar-tip.mp3",
+      "playback": "with the end-of-simulation feedback (tip card), not on screen entry"
+    },
+    {
+      "screen_id": "hr-062",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-062.mp3",
+      "narration_text": "OMAR: True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.",
+      "tts_text": "True or false: if your licence expires in under thirty days without renewal, H-R may suspend you from work.",
+      "ssml": "<speak xml:lang=\"en\">True or false: if your licence expires in under thirty days without renewal, <sub alias=\"H-R\">HR</sub> may suspend you from work.</speak>",
+      "est_sec": 8.6,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-062.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-070",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-070.mp3",
+      "narration_text": "OMAR: Two quick things. Your ID card: wear it where it can be seen. Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.",
+      "tts_text": "Two quick things. Your I-D card: wear it where it can be seen. Lose it, and you email H-R — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"id\"/> Two quick things. Your <sub alias=\"I-D\">ID</sub> card: wear it where it can be seen. <break time=\"0.4s\"/> <mark name=\"lost\"/> Lose it, and you email <sub alias=\"H-R\">HR</sub> — there&#x27;s a replacement fee. Damage it, and it&#x27;s replaced free. <break time=\"0.4s\"/> <mark name=\"wheel\"/> Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you&#x27;d actually use.</speak>",
+      "est_sec": 25.7,
+      "cues": [
+        {
+          "cue": "id",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "lost",
+          "at_sec": 6.4
+        },
+        {
+          "cue": "wheel",
+          "at_sec": 13.7
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-070.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-071",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-071.mp3",
+      "narration_text": "OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.",
+      "tts_text": "Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.",
+      "ssml": "<speak xml:lang=\"en\">Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.</speak>",
+      "est_sec": 9.0,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-071.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-080",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-080.mp3",
+      "narration_text": "OMAR: Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
+      "tts_text": "Two ends of one story. Starting: you accept your contract on KEE-wa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through OR-uh-kul. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"qiwa\"/> Two ends of one story. Starting: you accept your contract on <sub alias=\"KEE-wa\">Qiwa</sub>, the Ministry of Human Resources platform. <break time=\"0.4s\"/> <mark name=\"oracle\"/> Leaving: a resignation is a request, so it goes through <sub alias=\"OR-uh-kul\">Oracle</sub>. <break time=\"0.4s\"/> <mark name=\"notice\"/> Notice is two months, and it runs both ways. <break time=\"0.4s\"/> <mark name=\"eos\"/> End-of-service benefits and your experience certificate follow within fifteen days of your last day.</speak>",
+      "est_sec": 23.9,
+      "cues": [
+        {
+          "cue": "qiwa",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "oracle",
+          "at_sec": 8.5
+        },
+        {
+          "cue": "notice",
+          "at_sec": 13.7
+        },
+        {
+          "cue": "eos",
+          "at_sec": 17.9
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-080.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-081",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-081.mp3",
+      "narration_text": "OMAR: Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?",
+      "tts_text": "Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?",
+      "ssml": "<speak xml:lang=\"en\">Last scenario. You&#x27;ve accepted a new job starting in three weeks. What happens with your notice?</speak>",
+      "est_sec": 7.3,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-081.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-090",
+      "part": "omar",
+      "filename": "MC03-welcome-on-board_hr-090.mp3",
+      "narration_text": "OMAR: Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.",
+      "tts_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.",
+      "ssml": "<speak xml:lang=\"en\">Here&#x27;s where you landed, objective by objective. Anything under seventy per cent has a note beside it. It&#x27;s a list of where to look next, not a verdict.</speak>",
+      "est_sec": 12.4,
+      "cues": [],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-090.mp3",
+      "playback": "on screen entry; record directly as screen_file"
+    },
+    {
+      "screen_id": "hr-091",
+      "part": "omar-1",
+      "filename": "MC03-welcome-on-board_hr-091_omar-1.mp3",
+      "narration_text": "OMAR: That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. Download the HR Quick Reference. And please complete the onboarding survey. Two minutes, and it shapes how we run this day.",
+      "tts_text": "That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. Download the H-R Quick Reference. And please complete the onboarding survey. Two minutes, and it shapes how we run this day.",
+      "ssml": "<speak xml:lang=\"en\"><mark name=\"list\"/> That&#x27;s the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. <break time=\"0.3s\"/> <mark name=\"pdf\"/> Download the <sub alias=\"H-R\">HR</sub> Quick Reference. <break time=\"0.3s\"/> <mark name=\"survey\"/> And please complete the onboarding survey. Two minutes, and it shapes how we run this day.</speak>",
+      "est_sec": 20.7,
+      "cues": [
+        {
+          "cue": "list",
+          "at_sec": 0.4
+        },
+        {
+          "cue": "pdf",
+          "at_sec": 11.4
+        },
+        {
+          "cue": "survey",
+          "at_sec": 13.9
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "omar",
+      "voice": "Dr. Omar",
+      "screen_file": "MC03-welcome-on-board_hr-091.mp3",
+      "playback": "join parts in order with 0.3 s silence into screen_file, then normalize_audio_asset"
+    },
+    {
+      "screen_id": "hr-091",
+      "part": "noor-1",
+      "filename": "MC03-welcome-on-board_hr-091_noor-1.mp3",
+      "narration_text": "NOOR: Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic.",
+      "tts_text": "Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic.",
+      "ssml": "<speak xml:lang=\"en\"><break time=\"0.3s\"/> <mark name=\"next\"/> Next, you&#x27;ll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic.</speak>",
+      "est_sec": 7.6,
+      "cues": [
+        {
+          "cue": "next",
+          "at_sec": 0.7
+        }
+      ],
+      "timing_source": "estimated_word_count",
+      "speaker": "noor",
+      "voice": "Noor",
+      "screen_file": "MC03-welcome-on-board_hr-091.mp3",
+      "playback": "join parts in order with 0.3 s silence into screen_file, then normalize_audio_asset"
     }
   ],
-  "voice_talent_md": "# Voice-over script — MC03-welcome-on-board\n\nLanguage: en · Pace: ~140 wpm · Voice: an experienced colleague coaching a new team member on their first week\n\n**Pronunciation guide**\n\n- **GOSI** → GO-see\n- **SCFHS** → S-C-F-H-S\n- **Mumaris** → mu-MAH-ris\n- **Qiwa** → KEE-wa\n- **HRMS** → H-R-M-S\n- **SAR** → Saudi riyals\n- **HHC** → home health care\n- **CBAHI** → see-bah-hee\n- **MCJ1** → M-C-J-one\n- **MCJ2** → M-C-J-two\n- **PRC** → P-R-C\n- **J1** → J-one\n- **J2** → J-two\n- **J3** → J-three\n- **J4** → J-four\n- **D1** → D-one\n- **R1** → R-one\n- **EOS** → end of service\n- **IELTS** → eye-elts\n- **TOEFL** → toe-full\n- **Oracle** → OR-uh-kul\n- **CEO** → C-E-O\n- **CMO** → C-M-O\n- **COO** → C-O-O\n- **CFO** → C-F-O\n- **ID** → I-D\n- **MD** → M-D\n- **Hajj** → hajj\n- **Eid** → eed\n- **HR** → H-R\n- **VIP** → V-I-P\n\n| # | Screen | Tone | Script | Est. sec |\n|---|---|---|---|---|\n| 1 | hr-000 | warm | Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the HR rules you'll actually use in your first month. Nothing here is a memory test. | 13.3 |\n| 2 | hr-001 | warm | Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. *(pause 0.4s)* Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? *(pause 0.4s)* Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. *(pause 0.4s)* Everyone here remembers their own first week. | 37.6 |\n| 3 | hr-002 | warm | Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest. | 9.9 |\n| 4 | hr-010 | warm | Every clinic has values on a wall. Ours only matter if you can see them in what people do. *(pause 0.4s)* Collaborative: we act together, treat everyone with respect, and stay transparent. *(pause 0.4s)* Responsible: own your decisions, make things happen, and hold each other to the same standard. *(pause 0.4s)* Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. *(pause 0.4s)* Caring: act with empathy, because everyone matters. *(pause 0.4s)* As you go on, think which of these you already do without being asked. | 36.7 |\n| 5 | hr-011 | encouraging | Here are six things people did this week. Match each one to the value behind it. | 6.9 |\n| 6 | hr-012 | calm | Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. *(pause 0.4s)* Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. *(pause 0.4s)* Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. *(pause 0.4s)* Capabilities: a repeatable model for running and growing clinics, with real governance. *(pause 0.4s)* Culture: our mission and values, servant leadership, a culture of excellence. *(pause 0.4s)* Clinicians: a caring environment, competitive benefits, room to grow. *(pause 0.4s)* Care: seamless experience, empathy, loyalty built through My Care. *(pause 0.4s)* Cost: competitive cost to serve. *(pause 0.4s)* Whichever one you picked, that's your line in. | 45.6 |\n| 7 | hr-013 | encouraging | One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to? | 6.9 |\n| 8 | hr-014 | warm | Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. *(pause 0.4s)* Second, the community around each clinic. *(pause 0.3s)* Third, corporates and insurers. Three groups, one standard. | 19.6 |\n| 9 | hr-020 | warm | We opened our first clinic in North Jeddah in 2017. *(pause 0.3s)* In 2019 we started the employment check-up unit, our first corporate service. *(pause 0.3s)* Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. *(pause 0.3s)* Riyadh followed in 2024, a flagship to put the brand on the map. *(pause 0.3s)* The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer. | 32.1 |\n| 10 | hr-021 | warm | You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one. | 13.3 |\n| 11 | hr-022 | warm | Four people lead the company. The CEO sets the direction. *(pause 0.4s)* The CMO owns clinical standards — questions about how we practise medicine land here. *(pause 0.4s)* The COO runs the clinics day to day. *(pause 0.3s)* The CFO looks after the money. You'll see their decisions in how your clinic runs. | 20.8 |\n| 12 | hr-023 | warm | We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards. | 16.7 |\n| 13 | hr-030 | serious | Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. *(pause 0.4s)* Integrity — be transparent, and disclose any conflict of interest. *(pause 0.4s)* Accountability — a culture where people report safety concerns instead of staying quiet. *(pause 0.4s)* Innovation and collaboration — research and community work that improves outcomes. *(pause 0.5s)* And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone. | 35.1 |\n| 14 | hr-031 | serious | Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do? | 15.0 |\n| 15 | hr-032 | encouraging | Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them? | 8.1 |\n| 16 | hr-033 | calm | Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do? | 8.6 |\n| 17 | hr-040 | practical | Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. *(pause 0.4s)* Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. *(pause 0.4s)* Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this. | 27.8 |\n| 18 | hr-041 | practical | Nine types. Open the ones you need. *(pause 0.3s)* Annual: after probation, five days carried over, used by end of March. *(pause 0.3s)* Sick: valid report needed. First thirty days paid in full. *(pause 0.3s)* Work injury covers commuting, and has a same-day or next-day deadline. *(pause 0.3s)* Maternity: twelve weeks, starting up to four weeks early. *(pause 0.3s)* Exam leave: academic exams only, documents two weeks ahead. *(pause 0.3s)* Scientific: by profession, and can't be carried over. *(pause 0.3s)* Hajj: two years' service and a permit. *(pause 0.3s)* Compassionate: marriage, paternity, bereavement. *(pause 0.3s)* Then Eid, Founding Day, National Day. *(pause 0.3s)* We'll practise the four people ask about most. | 42.0 |\n| 19 | hr-042 | encouraging | Four grades, four entitlements. Match each grade to its annual leave, in working days. | 6.0 |\n| 20 | hr-043 | calm | One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. *(pause 0.4s)* The first thirty days are paid in full. *(pause 0.4s)* Ten days fall into the next band, and that's where pay drops. *(pause 0.4s)* Note the detail people miss: it's the total in the year that sets the band, not one spell. *(pause 0.5s)* Beyond ninety days it's unpaid. *(pause 0.4s)* And if the report is from outside My Clinic, the Staff Health Clinic must approve it. *(pause 0.4s)* Now: what changes if her report comes from another hospital? | 43.2 |\n| 21 | hr-044 | practical | Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval. | 11.6 |\n| 22 | hr-045 | encouraging | A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more. | 10.7 |\n| 23 | hr-050 | calm | GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. *(pause 0.4s)* It applies to Saudi employees, until retirement at sixty. *(pause 0.4s)* The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours. | 27.4 |\n| 24 | hr-051 | calm | Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. *(pause 0.4s)* Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. *(pause 0.4s)* Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for. | 28.7 |\n| 25 | hr-052 | encouraging | Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction? | 6.4 |\n| 26 | hr-053 | calm | One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. *(pause 0.4s)* Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. *(pause 0.4s)* On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. *(pause 0.4s)* On a public holiday, multiply by two. Fifty riyals an hour. *(pause 0.4s)* Same hourly rate both times. Only the multiplier moves. | 35.5 |\n| 27 | hr-054 | encouraging | One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay? | 8.6 |\n| 28 | hr-060 | practical | Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system. | 8.1 |\n| 29 | hr-061 | practical | Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for. | 11.6 |\n| 30 | hr-062 | serious | True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work. | 8.1 |\n| 31 | hr-070 | practical | Two quick things. Your ID card: wear it where it can be seen. *(pause 0.4s)* Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. *(pause 0.4s)* Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use. | 25.2 |\n| 32 | hr-071 | practical | Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days. | 8.6 |\n| 33 | hr-080 | calm | Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. *(pause 0.4s)* Leaving: a resignation is a request, so it goes through Oracle. *(pause 0.4s)* Notice is two months, and it runs both ways. *(pause 0.4s)* End-of-service benefits and your experience certificate follow within fifteen days of your last day. | 23.5 |\n| 34 | hr-081 | calm | Last scenario. You've accepted a new job starting in three weeks. What happens with your notice? | 6.9 |\n| 35 | hr-090 | encouraging | Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict. | 12.0 |\n| 36 | hr-091 | warm | That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. *(pause 0.3s)* Download the HR Quick Reference. *(pause 0.3s)* Please complete the onboarding survey — two minutes, and it shapes how we run this day. *(pause 0.3s)* Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic. | 27.0 |\n"
+  "voice_talent_md": "# Voice-over script — MC03-welcome-on-board\n\nModule 03 · Welcome On Board: My Clinic & HR Essentials · storyboard v0.2 (2026-10-14)\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English, light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 35 | Pending program **D10** |\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English, light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 4 | Pending program **D10** (same provider as Dr. Omar) |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied.\n\n## Pronunciation guide\n\n- **GOSI** → GO-see\n- **SCFHS** → S-C-F-H-S\n- **Mumaris** → mu-MAH-ris\n- **Qiwa** → KEE-wa\n- **HRMS** → H-R-M-S\n- **SAR** → Saudi riyals\n- **HHC** → home health care\n- **CBAHI** → see-bah-hee\n- **MCJ1** → M-C-J-one\n- **MCJ2** → M-C-J-two\n- **PRC** → P-R-C\n- **J1** → J-one\n- **J2** → J-two\n- **J3** → J-three\n- **J4** → J-four\n- **D1** → D-one\n- **R1** → R-one\n- **EOS** → end of service\n- **IELTS** → eye-elts\n- **TOEFL** → toe-full\n- **Oracle** → OR-uh-kul\n- **CEO** → C-E-O\n- **CMO** → C-M-O\n- **COO** → C-O-O\n- **CFO** → C-F-O\n- **ID** → I-D\n- **MD** → M-D\n- **Hajj** → hajj\n- **Eid** → eed\n- **HR** → H-R\n- **VIP** → V-I-P\n- **Noor** → noor\n- **Omar** → OH-mar\n\n## Two-voice screens (join into one file per screen)\n\n| Screen | Parts in order | Join | Output file |\n|---|---|---|---|\n| `hr-000` | `omar-1` → `noor-1` | 0.3 s silence between lines, then `normalize_audio_asset` | `MC03-welcome-on-board_hr-000.mp3` |\n| `hr-091` | `omar-1` → `noor-1` | 0.3 s silence between lines, then `normalize_audio_asset` | `MC03-welcome-on-board_hr-091.mp3` |\n\n`hr-061` has a second Omar line (`omar-tip`) that plays with the end-of-simulation feedback; keep it as its own file `MC03-welcome-on-board_hr-061_omar-tip.mp3`.\n\n## Recording table — Dr. Omar\n\n| # | Screen / part | Tone | Script | Est. sec | Record as |\n|---|---|---|---|---|---|\n| 1 | `hr-000` / `omar-1` | warm | Welcome to My Clinic. I'm Dr. Omar, a family physician at J2. Today you'll meet who we are, and the HR rules you'll actually use. | 11.1 | `MC03-welcome-on-board_hr-000_omar-1.mp3` |\n| 2 | `hr-001` / `omar` | warm | Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. (pause 0.4s) Our mission is to be the world's most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? (pause 0.4s) Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. (pause 0.4s) Honestly, my first week here, I felt there was too much to take in. You don't need to remember everything today — just where to find it. | 38.1 | `MC03-welcome-on-board_hr-001.mp3` |\n| 3 | `hr-002` / `omar` | warm | Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest. | 10.3 | `MC03-welcome-on-board_hr-002.mp3` |\n| 4 | `hr-010` / `omar` | warm | Every clinic has values on a wall. Ours only matter if you can see them in what people do. (pause 0.4s) Collaborative: we act together, treat everyone with respect, and stay transparent. (pause 0.4s) Responsible: own your decisions, make things happen, and hold each other to the same standard. (pause 0.4s) Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. (pause 0.4s) Caring: act with empathy, because everyone matters. (pause 0.4s) As you go on, think which of these you already do without being asked. | 37.1 | `MC03-welcome-on-board_hr-010.mp3` |\n| 5 | `hr-011` / `omar` | encouraging | Here are six things people did this week. Match each one to the value behind it. | 7.3 | `MC03-welcome-on-board_hr-011.mp3` |\n| 6 | `hr-012` / `omar` | calm | Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. (pause 0.4s) Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. (pause 0.4s) Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. (pause 0.4s) Capabilities: a repeatable model for running and growing clinics, with real governance. (pause 0.4s) Culture: our mission and values, servant leadership, a culture of excellence. (pause 0.4s) Clinicians: a caring environment, competitive benefits, room to grow. (pause 0.4s) Care: seamless experience, empathy, loyalty built through My Care. (pause 0.4s) Cost: competitive cost to serve. (pause 0.4s) Whichever one you picked, that's your line in. | 46.1 | `MC03-welcome-on-board_hr-012.mp3` |\n| 7 | `hr-013` / `omar` | encouraging | One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to? | 7.3 | `MC03-welcome-on-board_hr-013.mp3` |\n| 8 | `hr-014` / `omar` | warm | Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. (pause 0.4s) Second, the community around each clinic. (pause 0.3s) Third, corporates and insurers. Three groups, one standard. | 20.0 | `MC03-welcome-on-board_hr-014.mp3` |\n| 9 | `hr-020` / `omar` | warm | We opened our first clinic in North Jeddah in 2017. (pause 0.3s) In 2019 we started the employment check-up unit, our first corporate service. (pause 0.3s) Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. (pause 0.3s) Riyadh followed in 2024, a flagship to put the brand on the map. (pause 0.3s) The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer. | 32.5 | `MC03-welcome-on-board_hr-020.mp3` |\n| 10 | `hr-021` / `omar` | warm | You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one. | 13.7 | `MC03-welcome-on-board_hr-021.mp3` |\n| 11 | `hr-022` / `omar` | warm | Four people lead the company. The CEO sets the direction. (pause 0.4s) The CMO owns clinical standards — questions about how we practise medicine land here. (pause 0.4s) The COO runs the clinics day to day. (pause 0.3s) The CFO looks after the money. You'll see their decisions in how your clinic runs. | 21.2 | `MC03-welcome-on-board_hr-022.mp3` |\n| 12 | `hr-023` / `omar` | warm | We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards. | 17.1 | `MC03-welcome-on-board_hr-023.mp3` |\n| 13 | `hr-030` / `omar` | serious | Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. (pause 0.4s) Integrity — be transparent, and disclose any conflict of interest. (pause 0.4s) Accountability — a culture where people report safety concerns instead of staying quiet. (pause 0.4s) Innovation and collaboration — research and community work that improves outcomes. (pause 0.5s) And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone. | 35.6 | `MC03-welcome-on-board_hr-030.mp3` |\n| 14 | `hr-032` / `omar` | encouraging | Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them? | 8.6 | `MC03-welcome-on-board_hr-032.mp3` |\n| 15 | `hr-033` / `omar` | calm | Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do? | 9.0 | `MC03-welcome-on-board_hr-033.mp3` |\n| 16 | `hr-040` / `omar` | practical | Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. (pause 0.4s) Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. (pause 0.4s) Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this. | 28.2 | `MC03-welcome-on-board_hr-040.mp3` |\n| 17 | `hr-041` / `omar` | practical | Nine types. Open the ones you need. (pause 0.3s) Annual: after probation, five days carried over, used by end of March. (pause 0.3s) Sick: valid report needed. First thirty days paid in full. (pause 0.3s) Work injury covers commuting, and has a same-day or next-day deadline. (pause 0.3s) Maternity: twelve weeks, starting up to four weeks early. (pause 0.3s) Exam leave: academic exams only, documents two weeks ahead. (pause 0.3s) Scientific: by profession, and can't be carried over. (pause 0.3s) Hajj: two years' service and a permit. (pause 0.3s) Compassionate: marriage, paternity, bereavement. (pause 0.3s) Then Eid, Founding Day, National Day. (pause 0.3s) We'll practise the four people ask about most. | 42.4 | `MC03-welcome-on-board_hr-041.mp3` |\n| 18 | `hr-042` / `omar` | encouraging | Four grades, four entitlements. Match each grade to its annual leave, in working days. | 6.4 | `MC03-welcome-on-board_hr-042.mp3` |\n| 19 | `hr-043` / `omar` | calm | One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. (pause 0.4s) The first thirty days are paid in full. (pause 0.4s) Ten days fall into the next band, and that's where pay drops. (pause 0.4s) Note the detail people miss: it's the total in the year that sets the band, not one spell. (pause 0.5s) Beyond ninety days it's unpaid. (pause 0.4s) And if the report is from outside My Clinic, the Staff Health Clinic must approve it. (pause 0.4s) Now: what changes if her report comes from another hospital? | 43.6 | `MC03-welcome-on-board_hr-043.mp3` |\n| 20 | `hr-045` / `omar` | encouraging | A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more. | 11.1 | `MC03-welcome-on-board_hr-045.mp3` |\n| 21 | `hr-050` / `omar` | calm | GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. (pause 0.4s) It applies to Saudi employees, until retirement at sixty. (pause 0.4s) The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours. | 27.8 | `MC03-welcome-on-board_hr-050.mp3` |\n| 22 | `hr-051` / `omar` | calm | Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. (pause 0.4s) Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. (pause 0.4s) Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for. | 29.1 | `MC03-welcome-on-board_hr-051.mp3` |\n| 23 | `hr-052` / `omar` | encouraging | Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction? | 6.9 | `MC03-welcome-on-board_hr-052.mp3` |\n| 24 | `hr-053` / `omar` | calm | One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. (pause 0.4s) Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. (pause 0.4s) On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. (pause 0.4s) On a public holiday, multiply by two. Fifty riyals an hour. (pause 0.4s) Same hourly rate both times. Only the multiplier moves. | 35.9 | `MC03-welcome-on-board_hr-053.mp3` |\n| 25 | `hr-054` / `omar` | encouraging | One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay? | 9.0 | `MC03-welcome-on-board_hr-054.mp3` |\n| 26 | `hr-060` / `omar` | practical | Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system. | 8.6 | `MC03-welcome-on-board_hr-060.mp3` |\n| 27 | `hr-061` / `omar-1` | practical | Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for. | 12.0 | `MC03-welcome-on-board_hr-061_omar-1.mp3` |\n| 28 | `hr-061` / `omar-tip` | practical | One habit worth building. After you submit, open the request again. Wait until it shows as approved before you book any travel. | 9.9 | `MC03-welcome-on-board_hr-061_omar-tip.mp3` |\n| 29 | `hr-062` / `omar` | serious | True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work. | 8.6 | `MC03-welcome-on-board_hr-062.mp3` |\n| 30 | `hr-070` / `omar` | practical | Two quick things. Your ID card: wear it where it can be seen. (pause 0.4s) Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. (pause 0.4s) Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use. | 25.7 | `MC03-welcome-on-board_hr-070.mp3` |\n| 31 | `hr-071` / `omar` | practical | Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days. | 9.0 | `MC03-welcome-on-board_hr-071.mp3` |\n| 32 | `hr-080` / `omar` | calm | Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. (pause 0.4s) Leaving: a resignation is a request, so it goes through Oracle. (pause 0.4s) Notice is two months, and it runs both ways. (pause 0.4s) End-of-service benefits and your experience certificate follow within fifteen days of your last day. | 23.9 | `MC03-welcome-on-board_hr-080.mp3` |\n| 33 | `hr-081` / `omar` | calm | Last scenario. You've accepted a new job starting in three weeks. What happens with your notice? | 7.3 | `MC03-welcome-on-board_hr-081.mp3` |\n| 34 | `hr-090` / `omar` | encouraging | Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict. | 12.4 | `MC03-welcome-on-board_hr-090.mp3` |\n| 35 | `hr-091` / `omar-1` | warm | That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. (pause 0.3s) Download the HR Quick Reference. (pause 0.3s) And please complete the onboarding survey. Two minutes, and it shapes how we run this day. | 20.7 | `MC03-welcome-on-board_hr-091_omar-1.mp3` |\n\n## Recording table — Noor\n\n| # | Screen / part | Tone | Script | Est. sec | Record as |\n|---|---|---|---|---|---|\n| 1 | `hr-000` / `noor-1` | warm | (pause 0.3s) And I'm Noor, a senior nurse at J1. Nothing here is a memory test. We'll show you where to find things. | 9.7 | `MC03-welcome-on-board_hr-000_noor-1.mp3` |\n| 2 | `hr-031` / `noor` | serious | Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do? | 15.4 | `MC03-welcome-on-board_hr-031.mp3` |\n| 3 | `hr-044` / `noor` | practical | Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval. | 12.0 | `MC03-welcome-on-board_hr-044.mp3` |\n| 4 | `hr-091` / `noor-1` | warm | (pause 0.3s) Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic. | 7.6 | `MC03-welcome-on-board_hr-091_noor-1.mp3` |\n\n## Totals\n\n- 39 recorded lines for 36 screens (Dr. Omar 35, Noor 4).\n- Estimated audio: 738.2 s ≈ 12.3 min at 140 wpm (lint estimate, labels counted as one word each).\n"
 }

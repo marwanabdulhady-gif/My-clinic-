@@ -2,9 +2,19 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> Screen-by-screen storyboard for module 03. One card per screen listed in
-> [`../phase-2-storyboard.md`](../phase-2-storyboard.md), same ids, same order.
+> **Review pack v0.2 · 2026-10-14.** Screen-by-screen storyboard for module 03. One card per screen listed in
+> [`../phase-2-storyboard.md`](../phase-2-storyboard.md), same ids, same order, same types and points.
 > Written against [`../../00_program/storyboard-template/README.md`](../../00_program/storyboard-template/README.md).
+> v0.2 retrofits the course companions **Dr. Omar** (lead host) and **Noor** (co-host) from
+> [`../../00_program/characters/companions.md`](../../00_program/characters/companions.md): every spoken line is
+> tagged `OMAR:` / `NOOR:`, and the shared programme assets `char-omar-*` / `char-noor-*` replace the old
+> module-only character art. It is a review artefact, **not an approved policy or production SCORM package**;
+> source-lock decisions stay marked `⚠ PENDING`.
+
+**Companion documents:** [`screen-visuals.html`](screen-visuals.html) ·
+[`visual-plan.json`](visual-plan.json) · [`narration-script.json`](narration-script.json) ·
+[`audio-script-export.json`](audio-script-export.json) · [`voice_talent.md`](voice_talent.md) ·
+[`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json)
 
 ---
 
@@ -14,10 +24,10 @@
 |---|---|
 | Module | 03 — My Clinic — Welcome On Board: My Clinic & HR Essentials |
 | Module prefix | `hr-` |
-| Storyboard version | `v0.1` |
-| Author | Arena agent (storyboarding run 1), for HR + Comms review |
+| Storyboard version | `v0.2` (v0.1 → v0.2: companions retrofit, speaker-tagged narration, review-pack files) |
+| Author | Arena agent (storyboarding run 1; v0.2 companion retrofit), for HR + Comms review |
 | Date | 2026-10-14 |
-| Status | `Draft — ready for SME review` |
+| Status | `Draft — ready for SME review` (blocked from production by the open Phase 0 items below) |
 | SME reviewer (role) | HR Business Partner / Head of Human Capital (SME lead); Corporate Communications for screens `hr-020`–`hr-023` |
 | Audience | All new employees (clinical and non-clinical), day 1–3 |
 | Seat-time budget | Proposal target ~45 minutes; Phase 1 allocation ~46 minutes (A 3 · B 6 · C 5 · D 6 · E 10 · F 6 · G 5 · H 2 · I 2 · Close 1); reconcile the 1-minute difference at SME review / pilot. |
@@ -27,7 +37,9 @@
 | Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (version/date read: `2026-10-14`) |
 | Module colour | Caring purple `#652D8C` |
 | Theme | `brand_to_theme(00_program/brand/brand-kit.json)` + `style-minimal`; module colour `#652D8C` as `secondary` |
-| Phase 0 items still open | B1, B2, B3, B4, B5/D3, B6/D5, B7, B8, B9, B10, B11, B12, B13, B14/D8 |
+| Phase 0 items still open | B1, B2, B3, B4, B5/D3, B6/D5, B7, B8, B9, B10, B11, B12, B13, B14/D8; program D10 (voices) |
+| Companions | Lead host **Dr. Omar** (`OMAR:`), co-host **Noor** (`NOOR:`) — [`companions.md`](../../00_program/characters/companions.md) §6 and Phase 3 "Companions in this module". Visible on 8 of 36 screens (`hr-000`, `hr-001`, `hr-002`, `hr-031`, `hr-043`, `hr-044`, `hr-061`, `hr-091`); every other screen is Dr. Omar's voice only. Shared art only: `char-omar-*` / `char-noor-*` (companions.md §3) |
+| Narration | 36 screens narrated in 39 recorded lines (Dr. Omar 35, Noor 4); two-voice screens `hr-000` and `hr-091`; totals in §C |
 
 ### Objectives covered
 
@@ -62,7 +74,10 @@
 | `section` | Matches the *Section title* column above (for example `E · Your leave`). |
 | `reveal` | `"auto"` on every narrated content screen; `"none"` on questions, games and interactions; `"click"` where the card says so. |
 | `animation` | `fade-up` (default) unless the card says otherwise. |
-| `narration_text` | Every card with a narration script carries `narration_text` = the script with `[[cue:…]]` / `[[pause:…]]` markup removed, for captions and the transcript. |
+| `narration_text` | Every card with a narration script carries `narration_text` = the script with `[[cue:…]]` / `[[pause:…]]` markup removed and the speaker labels (`OMAR:` / `NOOR:`) **kept**, for captions and the transcript. On `hr-061` the tip line is played with the end-of-simulation feedback, so it lives in the feedback HTML rather than in `narration_text`. |
+| Speakers | Every spoken line starts `OMAR:` or `NOOR:` (companions.md §5). Two-voice screens are split into one `narration-script.json` segment per line (`part` = `omar-1`, `noor-1`) and joined into one audio file per screen with 0.3 s silence. |
+| `notes` | Companion placement, pose asset ids and alt text are recorded in the schema's `notes` field on the 8 companion screens (the screen models have no avatar field; the renderer places the companion from the card). |
+| Points / objectives | Every build block states `points` and `objective_ids`, including `0` / `[]` on unscored screens (so explore-mode hotspots are never counted at the model default). |
 | `narration_asset_id` | `<hr-aud-XXX>` — assigned in Phase 3/4 from `export_audio_script`. |
 | `evidence_screen_ids` | Set on every scored screen to the screen that teaches the rule (K1 evidence link, `core/antislop.py` E1). |
 | Asset id placeholders | Written as `<hr-img-…>` / `<hr-aud-…>` / `<hr-pdf-…>` until `add_asset` returns a real id. |
@@ -73,6 +88,9 @@
 |---|---|---|---|---|
 | 1 | `hr-044`, node 1 | Frame the lab-technician request as a request that **already has the MD's pre-approval**, and make the tested rule *“2 days a year for technicians, never carried over”* (slides 39–40). | Phase 2 words it as “scientific leave for a conference”. The source says scientific leave is for academic exams (slide 40) and that supporting documents need the MD's pre-approval. The reframe keeps the item answerable from the source and still tests the 2-day allowance. | Yes — the original card is written; the reframe is inside it and flagged for HR. |
 | 2 | `hr-071`, item `it6` | Keep the wording **“No casual days”** for back office and make front office **“Uniform for every shift”**, with per-item feedback that names the difference. | The source uses *“no casual days”* for back office (slide 58) and *“no casual attire”* for front office. Two near-identical strings would make one placement ambiguous. | Yes — flagged in the card's SME notes. |
+| 3 | `hr-001` | v0.2: Dr. Omar's half-body `char-omar-explaining` pose takes the right column (`text_media`) instead of the full-bleed hero photo; `hr-img-hero` is no longer placed on any screen. | Phase 2/3 companion tables and companions.md §4 (intro screens use the lead host in the right column instead of an illustration); the hero photo was also blocked on consent (**B6 / D5**). | Yes — HR may still supply a consented team photo for the HR Quick Reference or a later version. |
+| 4 | `hr-000` | v0.2: narration target 15 s → 20 s for the "meet your guides" two-voice introduction (Omar 11 s + Noor 9 s). | Two self-introductions plus the welcome do not fit in 15 s at 140 wpm; companions.md §5 allows up to 45 s for a planned two-voice welcome. | Yes — module total stays inside the Phase 3 estimate. |
+| 5 | `hr-061` | v0.2: Omar's tip card appears with the end-of-simulation feedback (appended to both feedback strings) and has its own short audio line (`part` `omar-tip`). | Phase 3 companion table: "Tip: check the request status before you book travel", shown after the simulation, never during the click steps. | Yes — no change to steps, regions, points or pass rule. |
 
 ---
 
@@ -108,14 +126,14 @@
 |---|---|
 | Brand layout | L1 Title (see `../../00_program/brand/screen-mockups/01-title.png`) |
 | Logo | `logo-horizontal-white.png`, 48 px tall, top-left (48 px from left, 40 px from top) |
-| Visual concept | Official navy gradient background (`background-title-navy.png`, `#003867 → #3B6A97`) with the supplied white five-petal watermark (`mark-white.png`) cropped off the right edge; supplied white My Clinic logo top-left; Caring purple `#652D8C` module chip above the white Montserrat Bold title and mist `#C0CED9` subtitle; tagline bottom-left; no photograph or generated logo |
+| Visual concept | Official navy gradient background (`background-title-navy.png`, `#003867 → #3B6A97`) with the supplied white five-petal watermark (`mark-white.png`) cropped off the right edge; supplied white My Clinic logo top-left; Caring purple `#652D8C` module chip above the white Montserrat Bold title and mist `#C0CED9` subtitle on the left; **"Meet your guides"**: two white rounded portrait cards bottom-right, side by side — Dr. Omar (`char-omar-welcome`) and Noor (`char-noor-welcome`) waving — with name and role under each (mockup `07-meet-your-guides.png`); tagline bottom-left; no photograph or generated logo |
 | edumints layout | n/a (`title_slide`) |
 | Colours (palette names + hex) | bg `primary` (navy gradient `#003867 → #3B6A97`) · text `on_primary` (white `#FFFFFF`, subtitle mist `#C0CED9`) · highlight `secondary` (Caring purple `#652D8C` module chip) · warning none |
 | Typography (Montserrat) | Title Montserrat Bold 700, 40 px; subtitle Montserrat Regular 400, 18–20 px; module chip Montserrat Bold 700, 12–14 px; footer/tagline 10–12 px. |
 | Watermark | Petal watermark (`mark-white.png` at 10% opacity, 520 px, cropped off the right edge) |
 | Icons | None |
-| Animation / reveal | Title fades up, then the subtitle 0.4 s later |
-| Character | None |
+| Animation / reveal | Title fades up, then the subtitle 0.4 s later; Omar's card fades up as he speaks, Noor's card as she speaks (reduced motion: both visible at once) |
+| Companion | **Both** — `char-omar-welcome` + `char-noor-welcome` side by side (the planned `char-duo-welcome` is built from the two `-welcome` poses, companions.md §3) · placement L1 duo, bottom-right: two white rounded portrait cards, 16 px radius, ~190 × 300 px each, 4 px top edge in the character colour (Omar teal `#008C99`, Noor purple `#652D8C`), caption under each image "Dr. Omar · Family physician" / "Noor · Senior nurse & safety liaison" (Montserrat 600, 14 px, navy) · they sit above the petal watermark and never cover the title · tip text n/a · speaks: Omar, then Noor (two-voice welcome) |
 
 **Imagery**
 
@@ -124,6 +142,8 @@
 | `brand-background-title-navy` | background | Supplied `00_program/brand/assets/background-title-navy.png`; official 16:9 navy gradient; no added content | own (official My Clinic brand asset) | Decorative background. | Yes |
 | `brand-logo-horizontal-white` | image | Supplied `00_program/brand/assets/logo-horizontal-white.png`; unmodified white lock-up, 48 px high | own (official My Clinic brand asset) | My Clinic logo. | No |
 | `brand-mark-white` | icon | Supplied `00_program/brand/assets/mark-white.png`; five-petal watermark, 520 px, 10% opacity, cropped off right edge | own (official My Clinic brand asset) | Decorative watermark. | Yes |
+| `char-omar-welcome` | illustration | Shared programme companion pose (Canva media `MAHX-hEFOR4`), half-body open-palm wave, in the left portrait card; transparent PNG from `00_program/characters/assets/` | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, smiling and waving hello.” | No |
+| `char-noor-welcome` | illustration | Shared programme companion pose (Canva media `MAHX-pFaNMU`), half-body open-palm wave, in the right portrait card | ai-generated (programme master, companions.md §3) | “Noor, a senior nurse and patient-safety liaison, smiling and waving hello.” | No |
 
 #### 4. Interaction and scoring
 
@@ -133,14 +153,17 @@ n/a — title slide, no interaction and no score.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR → NOOR (two-voice screen: parts `omar-1`, `noor-1`; joined into one file with 0.3 s silence) |
 | Tone | Warm |
-| Target seconds | 15 |
-| Word count / est. seconds | 31 words / ≈ 13.3 s |
+| Target seconds | 20 (v0.1: 15) — per part: `omar-1` 11, `noor-1` 9 |
+| Word count / est. seconds | 46 words / ≈ 20.0 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the HR rules you'll actually use in your first month. Nothing here is a memory test.
+> OMAR: Welcome to My Clinic. I'm Dr. Omar, a family physician at J2. Today you'll meet who we are, and the HR rules you'll actually use.
 
-New lexicon terms: None
+> NOOR: [[pause:0.3]] And I'm Noor, a senior nurse at J1. Nothing here is a memory test. We'll show you where to find things.
+
+New lexicon terms: Noor — “noor” (rhymes with *tour*); Omar — “OH-mar” (companions.md §5). J1 — “J-one”; J2 — “J-two”
 
 #### 6. Accessibility
 
@@ -161,18 +184,21 @@ New lexicon terms: None
   "subtitle": "My Clinic & HR essentials · about 45 minutes",
   "section": "A · Welcome",
   "node_id": "hr-sA",
+  "objective_ids": [],
+  "points": 0,
+  "notes": "Companions (companions.md §4, mockup 07): two white rounded portrait cards bottom-right, ~190x300 px each, 4 px top edge in the character colour — Dr. Omar char-omar-welcome (alt: 'Dr. Omar, a family physician, smiling and waving hello.') and Noor char-noor-welcome (alt: 'Noor, a senior nurse and patient-safety liaison, smiling and waving hello.'). Audio: omar-1 + noor-1 joined with 0.3 s silence.",
   "background_asset_id": "<brand-background-title-navy>",
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<hr-aud-000>",
-  "narration_text": "Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the HR rules you'll actually use in your first month. Nothing here is a memory test."
+  "narration_text": "OMAR: Welcome to My Clinic. I'm Dr. Omar, a family physician at J2. Today you'll meet who we are, and the HR rules you'll actually use. NOOR: And I'm Noor, a senior nurse at J1. Nothing here is a memory test. We'll show you where to find things."
 }
 ```
 
 #### 8. Notes for SME and developer
 
-- Open questions: Does HR want the real CEO welcome video here instead of a still (phase-3 §1, program D10)? If yes, this becomes a `video` screen and the narration moves to the video transcript.
-- Developer notes: use the supplied `background-title-navy.png`, `logo-horizontal-white.png` and `mark-white.png` from `00_program/brand/assets/` unchanged. No photograph, generated logo, or extra wordmark is used on this title screen.
+- Open questions: Does HR want the real CEO welcome video here instead of a still (phase-3 §1, program D10)? If yes, this becomes a `video` screen, the duo introduction moves to `hr-001`, and the narration moves to the video transcript.
+- Developer notes: use the supplied `background-title-navy.png`, `logo-horizontal-white.png` and `mark-white.png` from `00_program/brand/assets/` unchanged. No photograph, generated logo, or extra wordmark is used on this title screen. `title_slide` has no image slot: place the two companion cards from the theme/renderer as described in `notes`. This is the first course in the learning path, so it is the only title screen in the programme with both companions (companions.md §4).
 
 ---
 
@@ -205,20 +231,20 @@ New lexicon terms: None
 |---|---|
 | Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "A · Welcome", 2 px navy `#003867` header rule |
-| Visual concept | Three stacked statement blocks on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top |
-| edumints layout | `full_media` with the hero photo behind a 60% `light` scrim, text blocks left-aligned over it |
+| Visual concept | Three stacked statement blocks in the left column on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top; Dr. Omar's half-body `explaining` pose stands in the right column, hand presenting towards the statements (companions.md §4 intro screen: the lead host replaces the illustration) |
+| edumints layout | `text_media` — text blocks left, `char-omar-explaining` right (320–380 px tall, bottom-aligned, transparent PNG, no card behind him) |
 | Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
 | Watermark | None |
 | Icons | Single-weight line icons (heart, globe-and-heart, shield-check), 24 px grid, 1.5 px stroke, Caring purple #652D8C, own SVG |
-| Animation / reveal | Blocks reveal in narration order: purpose → mission → goal |
-| Character | None |
+| Animation / reveal | Blocks reveal in narration order: purpose → mission → goal; Omar is visible from the start (no movement on him) |
+| Companion | Dr. Omar · `char-omar-explaining` · placement L3 right column, half-body, 320–380 px · tip text n/a · speaks: Omar, including his honest first-week story (companions.md §1, used once in the programme, here) |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `hr-img-hero` | photo | Reused from `hr-000`, darker crop, scrim applied in the theme, not baked in | own | Decorative background: the My Clinic reception area. | Yes |
+| `char-omar-explaining` | illustration | Shared programme companion pose (Canva media `MAHX-ljvFtE`): half-body, hand presenting to the side; right column, 320–380 px | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, presenting the clinic's purpose, mission and goal.” | No |
 
 #### 4. Interaction and scoring
 
@@ -228,12 +254,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, calm |
 | Target seconds | 35 |
-| Word count / est. seconds | 85 words / ≈ 37.6 s |
+| Word count / est. seconds | 85 words / ≈ 37.6 s (speaker labels excluded, pauses included) |
 | Cue targets | `purpose`, `mission`, `goal` |
 
-> [[cue:purpose]] Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. [[pause:0.4]] [[cue:mission]] Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? [[pause:0.4]] [[cue:goal]] Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. [[pause:0.4]] Everyone here remembers their own first week.
+> OMAR: [[cue:purpose]] Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. [[pause:0.4]] [[cue:mission]] Our mission is to be the world's most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? [[pause:0.4]] [[cue:goal]] Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. [[pause:0.4]] Honestly, my first week here, I felt there was too much to take in. You don't need to remember everything today — just where to find it.
 
 New lexicon terms: None
 
@@ -255,21 +282,24 @@ New lexicon terms: None
   "title": "Why we exist",
   "section": "A · Welcome",
   "node_id": "hr-sA",
-  "layout": "full_media",
-  "media_asset_id": "<hr-img-hero>",
-  "media_alt": "Decorative background: the My Clinic reception area.",
+  "objective_ids": [],
+  "points": 0,
+  "notes": "Companion: Dr. Omar char-omar-explaining is the media of the text_media layout (right column, 320-380 px). Honest story: Omar's first week (companions.md §1, used once, here).",
+  "layout": "text_media",
+  "media_asset_id": "<char-omar-explaining>",
+  "media_alt": "Dr. Omar, a family physician, presenting the clinic's purpose, mission and goal.",
   "animation": "fade-up",
   "reveal": "auto",
   "body_html": "<p><strong>Purpose</strong> — helping people live longer, healthier, happier lives</p><p><strong>Mission</strong> — the world's most customer-centric healthcare company</p><p><strong>Goal</strong> — outstanding patient experience + excellent clinical outcomes</p>",
   "narration_asset_id": "<hr-aud-001>",
-  "narration_text": "Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Everyone here remembers their own first week."
+  "narration_text": "OMAR: Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives, including people who are well today. Our mission is to be the world's most customer-centric healthcare company. In practice, every role asks one question: did this help the patient? Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. Honestly, my first week here, I felt there was too much to take in. You don't need to remember everything today — just where to find it."
 }
 ```
 
 #### 8. Notes for SME and developer
 
-- Open questions: None. The three statements are verbatim from the brand banner in the deck.
-- Developer notes: `blocks` reveal as one unit. The three statements are therefore separate `<p>` elements in `body_html`, not `blocks`, so they reveal one by one.
+- Open questions: None on content. The three statements are verbatim from the brand banner in the deck. Omar's first-week story is the approved line from companions.md §1.
+- Developer notes: the companion image is the media of a `text_media` layout, so it carries real alt text (not decorative). `blocks` reveal as one unit. The three statements are therefore separate `<p>` elements in `body_html`, not `blocks`, so they reveal one by one.
 
 ---
 
@@ -302,16 +332,20 @@ New lexicon terms: None
 |---|---|
 | Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "A · Welcome · Check", 2 px navy `#003867` header rule |
-| Visual concept | Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other” |
+| Visual concept | Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other”; Dr. Omar's small half-body `listening` pose (holding a tablet) stands beside the option area on the right, outside the cards — this is an unscored icebreaker, not a question |
 | edumints layout | n/a (`poll`) |
 | Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
 | Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None |
 | Icons | Single-weight line icons on the five poll cards (family, plane, book, hands, speech-bubble), navy #003867, own SVG |
 | Animation / reveal | Cards fade up in sequence over 0.6 s; the reflection panel fades in after submitting |
-| Character | None |
+| Companion | Dr. Omar · `char-omar-listening` · placement small, beside the poll (~220–260 px tall, right edge of the stage, never over the option cards or the text box; hidden below 600 px width so the options keep the full row) · tip text n/a · speaks: Omar (invites the icebreaker) |
 
-**Imagery:** None (icon set is part of the shared line-icon family, not a per-screen asset).
+**Imagery** (the poll icon set is part of the shared line-icon family, not a per-screen asset)
+
+| Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
+|---|---|---|---|---|---|
+| `char-omar-listening` | illustration | Shared programme companion pose (Canva media `MAHX-uifxtY`): half-body, holding a tablet, attentive; small, right of the option cards | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, listening with a tablet in his hand.” | No |
 
 #### 4. Interaction and scoring
 
@@ -327,12 +361,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, light |
 | Target seconds | 10 |
-| Word count / est. seconds | 23 words / ≈ 9.9 s |
+| Word count / est. seconds | 23 words / ≈ 9.9 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.
+> OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.
 
 New lexicon terms: None
 
@@ -354,6 +389,9 @@ New lexicon terms: None
   "title": "One million riyals",
   "section": "A · Welcome",
   "node_id": "hr-sA",
+  "objective_ids": [],
+  "points": 0,
+  "notes": "Companion: Dr. Omar char-omar-listening, ~220-260 px, right edge beside the option cards, never over them; hidden below 600 px width. Alt: 'Dr. Omar, a family physician, listening with a tablet in his hand.'",
   "prompt_html": "<p>If you had one million Saudi riyals, where would you spend it?</p>",
   "options": [
     {
@@ -382,14 +420,14 @@ New lexicon terms: None
   "reflection_html": "<p>Whatever you chose says something you care about. At My Clinic, we start from what people care about — including yours.</p>",
   "reveal": "none",
   "narration_asset_id": "<hr-aud-002>",
-  "narration_text": "Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest."
+  "narration_text": "OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: None.
-- Developer notes: the poll must never block Continue — `poll` is unscored and participation-only.
+- Developer notes: the poll must never block Continue — `poll` is unscored and participation-only. Place Omar from the theme/renderer as described in `notes`; he never overlaps an option card.
 
 ---
 
@@ -438,7 +476,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Four supplied official value tiles (`value-tile-collaborative-burgundy.png`, `value-tile-responsible-magenta.png`, `value-tile-ambitious-teal.png`, `value-tile-caring-purple.png`); use the white line icons in the supplied assets; do not redraw |
 | Animation / reveal | Panel content fades up on each tab change |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -461,12 +499,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, direct |
 | Target seconds | 40 |
-| Word count / est. seconds | 81 words / ≈ 36.7 s |
+| Word count / est. seconds | 81 words / ≈ 36.7 s (speaker labels excluded, pauses included) |
 | Cue targets | `intro`, `collab`, `resp`, `amb`, `care` |
 
-> [[cue:intro]] Every clinic has values on a wall. Ours only matter if you can see them in what people do. [[pause:0.4]] [[cue:collab]] Collaborative: we act together, treat everyone with respect, and stay transparent. [[pause:0.4]] [[cue:resp]] Responsible: own your decisions, make things happen, and hold each other to the same standard. [[pause:0.4]] [[cue:amb]] Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. [[pause:0.4]] [[cue:care]] Caring: act with empathy, because everyone matters. [[pause:0.4]] As you go on, think which of these you already do without being asked.
+> OMAR: [[cue:intro]] Every clinic has values on a wall. Ours only matter if you can see them in what people do. [[pause:0.4]] [[cue:collab]] Collaborative: we act together, treat everyone with respect, and stay transparent. [[pause:0.4]] [[cue:resp]] Responsible: own your decisions, make things happen, and hold each other to the same standard. [[pause:0.4]] [[cue:amb]] Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. [[pause:0.4]] [[cue:care]] Caring: act with empathy, because everyone matters. [[pause:0.4]] As you go on, think which of these you already do without being asked.
 
 New lexicon terms: None
 
@@ -488,6 +527,8 @@ New lexicon terms: None
   "title": "Our four values",
   "section": "B · Our values & strategy",
   "node_id": "hr-sB",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>Values are behaviours. Open each one and look for something you already do.</p>",
   "tabs": [
     {
@@ -517,7 +558,7 @@ New lexicon terms: None
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-010>",
-  "narration_text": "Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked."
+  "narration_text": "OMAR: Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked."
 }
 ```
 
@@ -564,7 +605,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None (text and value-colour badge cards) |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only interaction).
 
@@ -584,12 +625,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 16 words / ≈ 6.9 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Here are six things people did this week. Match each one to the value behind it.
+> OMAR: Here are six things people did this week. Match each one to the value behind it.
 
 New lexicon terms: None
 
@@ -658,7 +700,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-011>",
-  "narration_text": "Here are six things people did this week. Match each one to the value behind it."
+  "narration_text": "OMAR: Here are six things people did this week. Match each one to the value behind it."
 }
 ```
 
@@ -715,7 +757,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Seven single-weight line icons (`hr-img-7c-icons`: headset, syringe, mind-and-gears, handshake, stethoscope, heart-hands, coins), Caring purple #652D8C, own SVG |
 | Animation / reveal | Panel body expands with a 200 ms height transition |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -735,12 +777,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, clear |
 | Target seconds | 45 |
-| Word count / est. seconds | 99 words / ≈ 45.6 s |
+| Word count / est. seconds | 99 words / ≈ 45.6 s (speaker labels excluded, pauses included) |
 | Cue targets | `intro`, `closer`, `cure`, `cap`, `culture`, `clin`, `care`, `cost` |
 
-> [[cue:intro]] Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. [[pause:0.4]] [[cue:closer]] Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. [[pause:0.4]] [[cue:cure]] Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. [[pause:0.4]] [[cue:cap]] Capabilities: a repeatable model for running and growing clinics, with real governance. [[pause:0.4]] [[cue:culture]] Culture: our mission and values, servant leadership, a culture of excellence. [[pause:0.4]] [[cue:clin]] Clinicians: a caring environment, competitive benefits, room to grow. [[pause:0.4]] [[cue:care]] Care: seamless experience, empathy, loyalty built through My Care. [[pause:0.4]] [[cue:cost]] Cost: competitive cost to serve. [[pause:0.4]] Whichever one you picked, that's your line in.
+> OMAR: [[cue:intro]] Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. [[pause:0.4]] [[cue:closer]] Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. [[pause:0.4]] [[cue:cure]] Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. [[pause:0.4]] [[cue:cap]] Capabilities: a repeatable model for running and growing clinics, with real governance. [[pause:0.4]] [[cue:culture]] Culture: our mission and values, servant leadership, a culture of excellence. [[pause:0.4]] [[cue:clin]] Clinicians: a caring environment, competitive benefits, room to grow. [[pause:0.4]] [[cue:care]] Care: seamless experience, empathy, loyalty built through My Care. [[pause:0.4]] [[cue:cost]] Cost: competitive cost to serve. [[pause:0.4]] Whichever one you picked, that's your line in.
 
 New lexicon terms: My Care — “my care” (plain words, no expansion needed)
 
@@ -762,6 +805,8 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
   "title": "The 7C strategy",
   "section": "B · Our values & strategy",
   "node_id": "hr-sB",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>Seven pillars. Open the ones your role touches — you're not expected to memorise all seven.</p>",
   "items": [
     {
@@ -809,7 +854,7 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-012>",
-  "narration_text": "Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in."
+  "narration_text": "OMAR: Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in."
 }
 ```
 
@@ -856,7 +901,7 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -878,12 +923,13 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 16 words / ≈ 6.9 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?
+> OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?
 
 New lexicon terms: None
 
@@ -944,7 +990,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-013>",
-  "narration_text": "One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?"
+  "narration_text": "OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?"
 }
 ```
 
@@ -991,7 +1037,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Three single-weight line icons (`hr-img-serve-icons`: family group, community ring, briefcase-and-shield), navy #003867, own SVG |
 | Animation / reveal | Cards fade up left to right in narration order |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -1007,12 +1053,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm |
 | Target seconds | 20 |
-| Word count / est. seconds | 44 words / ≈ 19.6 s |
+| Word count / est. seconds | 44 words / ≈ 19.6 s (speaker labels excluded, pauses included) |
 | Cue targets | `patients`, `community`, `corporates` |
 
-> [[cue:patients]] Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. [[pause:0.4]] [[cue:community]] Second, the community around each clinic. [[pause:0.3]] [[cue:corporates]] Third, corporates and insurers. Three groups, one standard.
+> OMAR: [[cue:patients]] Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. [[pause:0.4]] [[cue:community]] Second, the community around each clinic. [[pause:0.3]] [[cue:corporates]] Third, corporates and insurers. Three groups, one standard.
 
 New lexicon terms: None
 
@@ -1034,12 +1081,14 @@ New lexicon terms: None
   "title": "Who we serve",
   "section": "B · Our values & strategy",
   "node_id": "hr-sB",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
   "body_html": "<p><strong>Patients &amp; families</strong> — sick or healthy</p><p><strong>Community</strong></p><p><strong>Corporates &amp; insurers</strong></p>",
   "narration_asset_id": "<hr-aud-014>",
-  "narration_text": "Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
+  "narration_text": "OMAR: Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
   "media_asset_id": "<hr-img-serve-icons>",
   "media_alt": "Three icons: patients and families, the wider community, and corporate and insurance partners."
 }
@@ -1102,7 +1151,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None (numbered year nodes on timeline) |
 | Animation / reveal | Nodes appear in year order as the narration advances |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (branch photos, if cleared, sit on `hr-021`, not here).
 
@@ -1118,12 +1167,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, plain |
 | Target seconds | 30 |
-| Word count / est. seconds | 72 words / ≈ 32.1 s |
+| Word count / est. seconds | 72 words / ≈ 32.1 s (speaker labels excluded, pauses included) |
 | Cue targets | `e2017`, `e2019`, `e2023`, `e2024`, `e2025` |
 
-> We opened our first clinic in North Jeddah in 2017. [[cue:e2017]] [[pause:0.3]] In 2019 we started the employment check-up unit, [[cue:e2019]] our first corporate service. [[pause:0.3]] Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, [[cue:e2023]] our first clinic inside a corporate community. [[pause:0.3]] Riyadh followed in 2024, [[cue:e2024]] a flagship to put the brand on the map. [[pause:0.3]] The last two years added our first community clinics. [[cue:e2025]] Nine years, nine steps, one idea: bring good care closer.
+> OMAR: We opened our first clinic in North Jeddah in 2017. [[cue:e2017]] [[pause:0.3]] In 2019 we started the employment check-up unit, [[cue:e2019]] our first corporate service. [[pause:0.3]] Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, [[cue:e2023]] our first clinic inside a corporate community. [[pause:0.3]] Riyadh followed in 2024, [[cue:e2024]] a flagship to put the brand on the map. [[pause:0.3]] The last two years added our first community clinics. [[cue:e2025]] Nine years, nine steps, one idea: bring good care closer.
 
 New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-C-J-two”
 
@@ -1145,6 +1195,8 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
   "title": "Our story so far",
   "section": "C · Our clinic",
   "node_id": "hr-sC",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>From one clinic in Jeddah to a network across the west and Riyadh.</p>",
   "events": [
     {
@@ -1195,7 +1247,7 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-020>",
-  "narration_text": "We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer."
+  "narration_text": "OMAR: We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer."
 }
 ```
 
@@ -1242,7 +1294,7 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
 | Watermark | None |
 | Icons | Numbered map pin markers (1–7) in Caring purple #652D8C, own SVG |
 | Animation / reveal | Pins pulse gently until opened, then settle |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -1275,12 +1327,13 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, practical |
 | Target seconds | 15 |
-| Word count / est. seconds | 31 words / ≈ 13.3 s |
+| Word count / est. seconds | 31 words / ≈ 13.3 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.
+> OMAR: You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.
 
 New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”; J4 — “J-four”; D1 — “D-one”; R1 — “R-one”; PRC — “P-R-C”
 
@@ -1302,6 +1355,8 @@ New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”;
   "title": "Where we are",
   "section": "C · Our clinic",
   "node_id": "hr-sC",
+  "objective_ids": [],
+  "points": 0,
   "image_asset_id": "<hr-img-map>",
   "image_alt": "Map of My Clinic sites: five in Jeddah, one in Petro-Rabigh, one in Riyadh.",
   "mode": "explore",
@@ -1393,7 +1448,7 @@ New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”;
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-021>",
-  "narration_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
+  "narration_text": "OMAR: You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
   "feedback": {
     "correct_html": "<p>You have explored all seven My Clinic branches across Jeddah, Rabigh and Riyadh.</p>",
     "incorrect_html": "<p>Select each branch pin on the map to explore all seven sites.</p>",
@@ -1445,7 +1500,7 @@ New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”;
 | Watermark | None |
 | Icons | None (portrait / monogram role cards) |
 | Animation / reveal | Cards fade up left to right in narration order |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -1466,12 +1521,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, factual |
 | Target seconds | 20 |
-| Word count / est. seconds | 46 words / ≈ 20.8 s |
+| Word count / est. seconds | 46 words / ≈ 20.8 s (speaker labels excluded, pauses included) |
 | Cue targets | `ceo`, `cmo`, `coo`, `cfo` |
 
-> [[cue:ceo]] Four people lead the company. The CEO sets the direction. [[pause:0.4]] [[cue:cmo]] The CMO owns clinical standards — questions about how we practise medicine land here. [[pause:0.4]] [[cue:coo]] The COO runs the clinics day to day. [[pause:0.3]] [[cue:cfo]] The CFO looks after the money. You'll see their decisions in how your clinic runs.
+> OMAR: [[cue:ceo]] Four people lead the company. The CEO sets the direction. [[pause:0.4]] [[cue:cmo]] The CMO owns clinical standards — questions about how we practise medicine land here. [[pause:0.4]] [[cue:coo]] The COO runs the clinics day to day. [[pause:0.3]] [[cue:cfo]] The CFO looks after the money. You'll see their decisions in how your clinic runs.
 
 New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”; CFO — “C-F-O” (each role is also named in full in the on-screen text)
 
@@ -1493,6 +1549,8 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
   "title": "Meet our leaders",
   "section": "C · Our clinic",
   "node_id": "hr-sC",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
@@ -1527,7 +1585,7 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
     }
   ],
   "narration_asset_id": "<hr-aud-022>",
-  "narration_text": "Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs."
+  "narration_text": "OMAR: Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs."
 }
 ```
 
@@ -1584,7 +1642,7 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
 | Watermark | None |
 | Icons | Two single-weight line icons (`hr-img-award-icons`: trophy and laurel star), Caring purple #652D8C, own SVG |
 | Animation / reveal | 300 ms vertical-axis flip, respects `prefers-reduced-motion` by cross-fading instead |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -1604,12 +1662,13 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Warm, honest |
 | Target seconds | 15 |
-| Word count / est. seconds | 39 words / ≈ 16.7 s |
+| Word count / est. seconds | 39 words / ≈ 16.7 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.
+> OMAR: We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.
 
 New lexicon terms: CBAHI — “see-bah-hee”
 
@@ -1631,6 +1690,8 @@ New lexicon terms: CBAHI — “see-bah-hee”
   "title": "What we've been recognised for",
   "section": "C · Our clinic",
   "node_id": "hr-sC",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>Flip each card. Accreditation is measured, not given — and it has to be earned again.</p>",
   "cards": [
     {
@@ -1666,7 +1727,7 @@ New lexicon terms: CBAHI — “see-bah-hee”
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-023>",
-  "narration_text": "We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards."
+  "narration_text": "OMAR: We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards."
 }
 ```
 
@@ -1713,7 +1774,7 @@ New lexicon terms: CBAHI — “see-bah-hee”
 | Watermark | None |
 | Icons | Four single-weight line icons (`hr-img-ethics-icons`) in navy #003867 + exclamation warning icon in magenta #9D3293, own SVG |
 | Animation / reveal | Grid blocks fade up one by one, then the strip slides up last |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -1729,12 +1790,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Serious, warm |
 | Target seconds | 35 |
-| Word count / est. seconds | 78 words / ≈ 35.1 s |
+| Word count / est. seconds | 78 words / ≈ 35.1 s (speaker labels excluded, pauses included) |
 | Cue targets | `respect`, `integrity`, `accountability`, `innovation`, `report` |
 
-> [[cue:respect]] Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. [[pause:0.4]] [[cue:integrity]] Integrity — be transparent, and disclose any conflict of interest. [[pause:0.4]] [[cue:accountability]] Accountability — a culture where people report safety concerns instead of staying quiet. [[pause:0.4]] [[cue:innovation]] Innovation and collaboration — research and community work that improves outcomes. [[pause:0.5]] [[cue:report]] And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.
+> OMAR: [[cue:respect]] Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. [[pause:0.4]] [[cue:integrity]] Integrity — be transparent, and disclose any conflict of interest. [[pause:0.4]] [[cue:accountability]] Accountability — a culture where people report safety concerns instead of staying quiet. [[pause:0.4]] [[cue:innovation]] Innovation and collaboration — research and community work that improves outcomes. [[pause:0.5]] [[cue:report]] And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.
 
 New lexicon terms: None
 
@@ -1756,12 +1818,14 @@ New lexicon terms: None
   "title": "Our code of ethics",
   "section": "D · Ethics & patients' rights",
   "node_id": "hr-sD",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
   "body_html": "<p><strong>Respect</strong> — uphold the rights, privacy and dignity of patients, families and colleagues.</p><p><strong>Integrity</strong> — transparent practice; disclose any potential conflict of interest.</p><p><strong>Accountability</strong> — a culture that encourages reporting safety concerns and adherence to policy.</p><p><strong>Innovation &amp; collaboration</strong> — support research and community engagement to improve quality and outcomes.</p><p><strong>Ethical dilemma? Incident report within 24 hours + ethics team.</strong> <em>Pending B14 / D8.</em></p>",
   "narration_asset_id": "<hr-aud-030>",
-  "narration_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
+  "narration_text": "OMAR: Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
   "media_asset_id": "<hr-img-ethics-icons>",
   "media_alt": "Four icons for Respect, Integrity, Accountability, and Innovation and collaboration."
 }
@@ -1805,12 +1869,12 @@ New lexicon terms: None
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "D · Ethics & patients' rights", 2 px navy `#003867` header rule |
 | Visual concept | A flat-illustration band across the top that changes with the node — a meeting room, then a corridor, then a quiet desk; the situation text sits on a white card below it and the choices are full-width buttons under that |
 | edumints layout | n/a (`decision_scenario`) |
-| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` progress bar) · companion avatar ring in the character's colour (companions.md §4) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None |
-| Icons | None (flat scene illustrations + mentor avatar) |
+| Icons | None (flat scene illustrations + companion avatar) |
 | Animation / reveal | The situation card fades up on each node change |
-| Character | `mentor-noor` (`hr-char-noor`), circular avatar with Caring purple `#652D8C` ring (navy `#003867` scrubs, plain navy hijab, purple lanyard, plain badge with no logo/text); poses: `explaining` on node 1, `concern` on node 2, `neutral` on node 3 |
+| Companion | Noor · `char-noor-avatar-neutral` above each situation card, swapping to `char-noor-avatar-happy` after the best choice and `char-noor-avatar-concern` after any other choice (shown in the feedback line, after the learner has chosen) · placement L5 avatar, 56 px circle with a 3 px Caring purple `#652D8C` ring, label “Noor · Safety liaison” beside it, above the situation card; never on or beside the choice buttons · tip text n/a · speaks: Noor (scenario host) |
 
 **Imagery**
 
@@ -1819,9 +1883,11 @@ New lexicon terms: None
 | `hr-img-ethics-meeting` | illustration | Flat meeting-room scene: table, four chairs, a laptop and a document; two brand colours | ai-generated | “A small meeting room where a supplier evaluation is being discussed.” | No |
 | `hr-img-ethics-corridor` | illustration | Flat corridor scene: reception desk and a queue of two patients | ai-generated | “A clinic corridor with a reception desk and two patients waiting.” | No |
 | `hr-img-ethics-desk` | illustration | Flat desk scene: laptop showing a blank report form, a cup, a notebook | ai-generated | “A desk with a laptop open on an incident report form.” | No |
-| `hr-char-noor` / `mentor-noor` | character | Program mentor, three poses | ai-generated | “Noor, a senior nurse and safety liaison, speaking.” | No |
+| `char-noor-avatar-neutral` | illustration | Shared programme avatar (Canva media `MAHX-n4HuyU`), cropped to a 56 px circle | ai-generated (programme master, companions.md §3) | “Noor, the safety liaison, listening.” | No |
+| `char-noor-avatar-happy` | illustration | Programme avatar, cropped from `char-noor-success` (companions.md §3: “to make if needed”) | ai-generated (programme master) | “Noor, the safety liaison, smiling.” | No |
+| `char-noor-avatar-concern` | illustration | Programme avatar, cropped from `char-noor-concern` (to make if needed) | ai-generated (programme master) | “Noor, the safety liaison, looking concerned.” | No |
 
-**AI image prompt** (`hr-img-ethics-meeting`, `hr-img-ethics-corridor`, `hr-img-ethics-desk`, `mentor-noor` — per `brand-identity.md` §6):
+**AI image prompt** (`hr-img-ethics-meeting`, `hr-img-ethics-corridor`, `hr-img-ethics-desk` — per `brand-identity.md` §6; the companion is **not** generated here — Noor's avatars are the shared programme assets, see [`companions.md`](../../00_program/characters/companions.md) §3):
 
 ```text
 Flat vector illustration for a healthcare e-learning course, 16:9,
@@ -1829,7 +1895,7 @@ Flat vector illustration for a healthcare e-learning course, 16:9,
 - Scene 2 (hr-img-ethics-corridor): a calm clinic reception desk and corridor with two waiting chairs;
 - Scene 3 (hr-img-ethics-desk): a quiet staff desk with a laptop, a mug and a plain notebook.
 Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic interior, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the safety and induction mentor (Saudi woman in her 30s, navy #003867 scrubs, plain navy hijab, Caring purple #652D8C badge lanyard, plain ID badge with no logo and no text, warm calm expression; poses: explaining, concern, neutral). Modest, culturally appropriate clothing for Saudi Arabia.
+People: none (empty scenes; the companion avatar is layered on by the course).
 No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
 ```
 
@@ -1862,12 +1928,13 @@ No text, no letters, no numbers, no logos, no signage words, no watermarks, no b
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR (co-host — Phase 3 names Noor as host of this scenario) |
 | Tone | Serious, calm |
 | Target seconds | 15 |
-| Word count / est. seconds | 35 words / ≈ 15.0 s |
+| Word count / est. seconds | 35 words / ≈ 15.0 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?
+> NOOR: Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?
 
 New lexicon terms: None
 
@@ -1889,6 +1956,7 @@ New lexicon terms: None
   "title": "A supplier you know",
   "section": "D · Ethics & patients' rights",
   "node_id": "hr-sD",
+  "notes": "Companion: Noor, L5 avatar 56 px with 3 px #652D8C ring and label 'Noor · Safety liaison' above each situation card: char-noor-avatar-neutral; after a choice the feedback line shows char-noor-avatar-happy (best choice) or char-noor-avatar-concern (other choices). Never beside the choice buttons.",
   "objective_ids": [
     "hr-o2"
   ],
@@ -1995,14 +2063,14 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-031>",
-  "narration_text": "Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?"
+  "narration_text": "NOOR: Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?"
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: **B14 / D8** — the 24-hour window appears in `n3b` and in the closing feedback. It must match module 07.
-- Developer notes: the last node's choices carry `goto_node_id: null`, which ends the scenario. `pass_score` 3 is reachable only by `n1b` → `n2a` → `n3b`. Replay resets the running score; the LMS keeps the first recorded attempt's points.
+- Developer notes: Noor's avatar and label are placed by the renderer as described in `notes`; the happy/concern avatar appears only in the feedback line after a choice, never while the learner decides. The last node's choices carry `goto_node_id: null`, which ends the scenario. `pass_score` 3 is reachable only by `n1b` → `n2a` → `n3b`. Replay resets the running score; the LMS keeps the first recorded attempt's points.
 
 ---
 
@@ -2042,7 +2110,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Two single-weight line icons on drop-zone headers (shield-heart for rights, checklist-tick for responsibilities), navy #003867, own SVG |
 | Animation / reveal | Chips settle with a 120 ms spring when dropped |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only interaction).
 
@@ -2064,12 +2132,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?
+> OMAR: Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?
 
 New lexicon terms: None
 
@@ -2163,7 +2232,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-032>",
-  "narration_text": "Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?"
+  "narration_text": "OMAR: Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?"
 }
 ```
 
@@ -2210,7 +2279,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -2232,12 +2301,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 8.6 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?
+> OMAR: Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?
 
 New lexicon terms: None
 
@@ -2298,7 +2368,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-033>",
-  "narration_text": "Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?"
+  "narration_text": "OMAR: Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?"
 }
 ```
 
@@ -2345,7 +2415,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Three single-weight line icons (`hr-img-help-icons`: headset, screen-and-form, document-arrow), Caring purple #652D8C, own SVG |
 | Animation / reveal | Cards fade up left to right |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -2362,12 +2432,13 @@ n/a — unscored content screen. The PDF is a linked resource, not a scored inte
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Practical, warm |
 | Target seconds | 25 |
-| Word count / est. seconds | 63 words / ≈ 27.8 s |
+| Word count / est. seconds | 63 words / ≈ 27.8 s (speaker labels excluded, pauses included) |
 | Cue targets | `desk`, `oracle`, `pdf` |
 
-> [[cue:desk]] Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. [[pause:0.4]] [[cue:oracle]] Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. [[pause:0.4]] [[cue:pdf]] Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.
+> OMAR: [[cue:desk]] Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. [[pause:0.4]] [[cue:oracle]] Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. [[pause:0.4]] [[cue:pdf]] Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.
 
 New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if the PDF title uses it)
 
@@ -2389,12 +2460,14 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
   "title": "Where help lives",
   "section": "E · Your leave",
   "node_id": "hr-sE",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
   "body_html": "<p><strong>Your HR help desk</strong> — one per business unit. <em>Role mailbox addresses pending B6 / D5.</em></p><p><strong>Request everything in Oracle.</strong> If it's a request, it needs a record.</p><p><strong>Full rules:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p>",
   "narration_asset_id": "<hr-aud-040>",
-  "narration_text": "Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
+  "narration_text": "OMAR: Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
   "media_asset_id": "<hr-img-help-icons>",
   "media_alt": "Three icons: HR help desk, Oracle self-service, and the HR Quick Reference PDF."
 }
@@ -2455,7 +2528,7 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
 | Watermark | None |
 | Icons | None (two-letter code chips in Caring purple #652D8C) |
 | Animation / reveal | 200 ms height transition on expand |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (the code chips are CSS, not assets).
 
@@ -2471,12 +2544,13 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Practical |
 | Target seconds | 40 |
-| Word count / est. seconds | 91 words / ≈ 42.0 s |
+| Word count / est. seconds | 91 words / ≈ 42.0 s (speaker labels excluded, pauses included) |
 | Cue targets | `intro`, `annual`, `sick`, `injury`, `maternity`, `exam`, `scientific`, `hajj`, `compass`, `holidays` |
 
-> [[cue:intro]] Nine types. Open the ones you need. [[pause:0.3]] [[cue:annual]] Annual: after probation, five days carried over, used by end of March. [[pause:0.3]] [[cue:sick]] Sick: valid report needed. First thirty days paid in full. [[pause:0.3]] [[cue:injury]] Work injury covers commuting, and has a same-day or next-day deadline. [[pause:0.3]] [[cue:maternity]] Maternity: twelve weeks, starting up to four weeks early. [[pause:0.3]] [[cue:exam]] Exam leave: academic exams only, documents two weeks ahead. [[pause:0.3]] [[cue:scientific]] Scientific: by profession, and can't be carried over. [[pause:0.3]] [[cue:hajj]] Hajj: two years' service and a permit. [[pause:0.3]] [[cue:compass]] Compassionate: marriage, paternity, bereavement. [[pause:0.3]] [[cue:holidays]] Then Eid, Founding Day, National Day. [[pause:0.3]] We'll practise the four people ask about most.
+> OMAR: [[cue:intro]] Nine types. Open the ones you need. [[pause:0.3]] [[cue:annual]] Annual: after probation, five days carried over, used by end of March. [[pause:0.3]] [[cue:sick]] Sick: valid report needed. First thirty days paid in full. [[pause:0.3]] [[cue:injury]] Work injury covers commuting, and has a same-day or next-day deadline. [[pause:0.3]] [[cue:maternity]] Maternity: twelve weeks, starting up to four weeks early. [[pause:0.3]] [[cue:exam]] Exam leave: academic exams only, documents two weeks ahead. [[pause:0.3]] [[cue:scientific]] Scientific: by profession, and can't be carried over. [[pause:0.3]] [[cue:hajj]] Hajj: two years' service and a permit. [[pause:0.3]] [[cue:compass]] Compassionate: marriage, paternity, bereavement. [[pause:0.3]] [[cue:holidays]] Then Eid, Founding Day, National Day. [[pause:0.3]] We'll practise the four people ask about most.
 
 New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts”; TOEFL — “toe-full”
 
@@ -2498,6 +2572,8 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
   "title": "Leave at a glance",
   "section": "E · Your leave",
   "node_id": "hr-sE",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>Nine types. Open the one you need — the full tables are in the Quick Reference.</p>",
   "items": [
     {
@@ -2539,7 +2615,7 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-041>",
-  "narration_text": "Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most."
+  "narration_text": "OMAR: Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most."
 }
 ```
 
@@ -2586,7 +2662,7 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only interaction).
 
@@ -2606,12 +2682,13 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 14 words / ≈ 6.0 s |
+| Word count / est. seconds | 14 words / ≈ 6.0 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Four grades, four entitlements. Match each grade to its annual leave, in working days.
+> OMAR: Four grades, four entitlements. Match each grade to its annual leave, in working days.
 
 New lexicon terms: None
 
@@ -2670,7 +2747,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-042>",
-  "narration_text": "Four grades, four entitlements. Match each grade to its annual leave, in working days."
+  "narration_text": "OMAR: Four grades, four entitlements. Match each grade to its annual leave, in working days."
 }
 ```
 
@@ -2710,16 +2787,20 @@ New lexicon terms: None
 |---|---|
 | Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
-| Visual concept | A five-row vertical ledger on a white card: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action |
+| Visual concept | A five-row vertical ledger on a white card in the left ~62% of the stage: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action; Dr. Omar's half-body `thinking` pose (hand at chin) stands in the right column, as if working the example through with the learner |
 | edumints layout | n/a (`worked_example`) |
 | Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | `fading: "partial"` — actions are visible, rationales sit behind a per-step reveal control |
-| Character | None |
+| Companion | Dr. Omar · `char-omar-thinking` · placement L3 right column, half-body, 320–380 px, bottom-aligned, clear of the ledger and its “Why?” controls · tip text n/a · speaks: Omar (talks through the example) |
 
-**Imagery:** None (the ledger is CSS; no artefact screenshots are needed).
+**Imagery** (the ledger is CSS; no artefact screenshots are needed)
+
+| Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
+|---|---|---|---|---|---|
+| `char-omar-thinking` | illustration | Shared programme companion pose (Canva media `MAHX-jgu1Vk`): half-body, hand at chin; right column, 320–380 px | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, thinking through the example.” | No |
 
 #### 4. Interaction and scoring
 
@@ -2744,12 +2825,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, precise |
 | Target seconds | 40 |
-| Word count / est. seconds | 95 words / ≈ 43.2 s |
+| Word count / est. seconds | 95 words / ≈ 43.2 s (speaker labels excluded, pauses included) |
 | Cue targets | `s1`, `s2`, `s3`, `s4`, `s5` |
 
-> One example, properly. A colleague is off sick forty days in a year, with valid reports. [[cue:s1]] First, she tells her line manager — that's first, not last. [[pause:0.4]] [[cue:s2]] The first thirty days are paid in full. [[pause:0.4]] [[cue:s3]] Ten days fall into the next band, and that's where pay drops. [[pause:0.4]] Note the detail people miss: it's the total in the year that sets the band, not one spell. [[pause:0.5]] [[cue:s4]] Beyond ninety days it's unpaid. [[pause:0.4]] [[cue:s5]] And if the report is from outside My Clinic, the Staff Health Clinic must approve it. [[pause:0.4]] Now: what changes if her report comes from another hospital?
+> OMAR: One example, properly. A colleague is off sick forty days in a year, with valid reports. [[cue:s1]] First, she tells her line manager — that's first, not last. [[pause:0.4]] [[cue:s2]] The first thirty days are paid in full. [[pause:0.4]] [[cue:s3]] Ten days fall into the next band, and that's where pay drops. [[pause:0.4]] Note the detail people miss: it's the total in the year that sets the band, not one spell. [[pause:0.5]] [[cue:s4]] Beyond ninety days it's unpaid. [[pause:0.4]] [[cue:s5]] And if the report is from outside My Clinic, the Staff Health Clinic must approve it. [[pause:0.4]] Now: what changes if her report comes from another hospital?
 
 New lexicon terms: None
 
@@ -2771,6 +2853,9 @@ New lexicon terms: None
   "title": "Forty days of sick leave",
   "section": "E · Your leave",
   "node_id": "hr-sE",
+  "objective_ids": [],
+  "points": 0,
+  "notes": "Companion: Dr. Omar char-omar-thinking, L3 right column half-body 320-380 px, clear of the ledger; below 768 px he drops under the ledger. Alt: 'Dr. Omar, a family physician, thinking through the example.'",
   "fading": "partial",
   "intro_html": "<p>A colleague is off sick for 40 days in one year, with valid medical reports from My Clinic. How is the pay worked out?</p>",
   "steps": [
@@ -2798,14 +2883,14 @@ New lexicon terms: None
   "self_explanation_prompt_html": "<p>What changes if the medical report comes from another hospital?</p>",
   "reveal": "none",
   "narration_asset_id": "<hr-aud-043>",
-  "narration_text": "One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?"
+  "narration_text": "OMAR: One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?"
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: **B1** — the slide says “days 31–90: 25% deducted”. HR must confirm whether that means 75% of salary for days 31–90. The step text says exactly what the slide says and marks it pending; the narration deliberately does not state a percentage.
-- Developer notes: `worked_example` carries no `points`. Do not score this screen.
+- Developer notes: `worked_example` is unscored (`points: 0`). Do not score this screen. Place Omar from the theme/renderer as described in `notes`; below 768 px width he drops under the ledger.
 
 ---
 
@@ -2840,25 +2925,25 @@ New lexicon terms: None
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
 | Visual concept | A flat service-desk illustration band at the top that stays constant; below it a single request card with the colleague's first name, role and question, then full-width choice buttons; a “3 of 4 answered” counter sits in the corner |
 | edumints layout | n/a (`decision_scenario`) |
-| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` progress bar) · companion avatar ring in the character's colour (companions.md §4) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None |
-| Icons | None (flat scene illustration + mentor avatar) |
+| Icons | None (flat scene illustration + companion avatar) |
 | Animation / reveal | Request card fades up on each node change |
-| Character | `mentor-noor` (`hr-char-noor`), circular avatar with Caring purple `#652D8C` ring (navy `#003867` scrubs, plain navy hijab, purple lanyard, plain badge with no logo/text); poses: `explaining` on node 1, `neutral` on nodes 2–4 |
+| Companion | Noor · `char-noor-avatar-neutral` on every node (Phase 3 lists the neutral avatar only) · placement L5 avatar, 56 px circle with a 3 px Caring purple `#652D8C` ring, label “Noor · Safety liaison” beside it, above the request card; never on or beside the choice buttons · tip text n/a · speaks: Noor (leave-desk host) |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `hr-img-leavedesk` | illustration | Flat office-desk scene: a desk, a laptop, a small plant, two chairs; brand colours, white background | ai-generated | “An HR service desk with a laptop and two chairs.” | No |
-| `hr-char-noor` / `mentor-noor` | character | Program mentor, poses `explaining` and `neutral` | ai-generated | “Noor, a senior nurse and safety liaison, at the leave desk.” | No |
+| `char-noor-avatar-neutral` | illustration | Shared programme avatar (Canva media `MAHX-n4HuyU`), cropped to a 56 px circle | ai-generated (programme master, companions.md §3) | “Noor, the safety liaison, hosting the leave desk.” | No |
 
-**AI image prompt** (`hr-img-leavedesk`, `mentor-noor` — per `brand-identity.md` §6):
+**AI image prompt** (`hr-img-leavedesk` — per `brand-identity.md` §6; the companion is **not** generated here — Noor's avatar is the shared programme asset, see [`companions.md`](../../00_program/characters/companions.md) §3):
 
 ```text
 Flat vector illustration for a healthcare e-learning course, 16:9, an HR service desk in a modern clinic office with a laptop, a small indoor plant and two visitor chairs. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic interior, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the safety and induction mentor (Saudi woman in her 30s, navy #003867 scrubs, plain navy hijab, Caring purple #652D8C badge lanyard, plain ID badge with no logo and no text; poses: explaining, neutral). Modest, culturally appropriate clothing for Saudi Arabia.
+People: none (empty desk; the companion avatar is layered on by the course).
 No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
 ```
 
@@ -2895,12 +2980,13 @@ No text, no letters, no numbers, no logos, no signage words, no watermarks, no b
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR (co-host — Phase 3 names Noor as host of this scenario) |
 | Tone | Practical, warm |
 | Target seconds | 15 |
-| Word count / est. seconds | 27 words / ≈ 11.6 s |
+| Word count / est. seconds | 27 words / ≈ 11.6 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.
+> NOOR: Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.
 
 New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — “toe-full”
 
@@ -2922,6 +3008,7 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
   "title": "The leave desk",
   "section": "E · Your leave",
   "node_id": "hr-sE",
+  "notes": "Companion: Noor char-noor-avatar-neutral, L5 avatar 56 px with 3 px #652D8C ring and label 'Noor · Safety liaison' above each request card; never beside the choice buttons. Alt: 'Noor, the safety liaison, hosting the leave desk.'",
   "objective_ids": [
     "hr-o3"
   ],
@@ -3064,14 +3151,14 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-044>",
-  "narration_text": "Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval."
+  "narration_text": "NOOR: Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: **B10** — slide 40's sentence about academic exams looks copied from the exam-leave slide. If HR confirms a different purpose for scientific leave, re-word `n1` and its feedback. **B11** — confirm the two-year service rule and the 10–15 day range for Hajj leave.
-- Developer notes: `pass_score` 3 with four nodes means one wrong answer is tolerated. `n1` deliberately has four choices; the others have three. All four `n1` choices go to `n2`, so no path is short.
+- Developer notes: Noor's avatar and label are placed by the renderer as described in `notes` (no avatar field in the schema). `pass_score` 3 with four nodes means one wrong answer is tolerated. `n1` deliberately has four choices; the others have three. All four `n1` choices go to `n2`, so no path is short.
 
 ---
 
@@ -3111,7 +3198,7 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | Question cross-fades between items |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only practice).
 
@@ -3144,12 +3231,13 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 10 |
-| Word count / est. seconds | 25 words / ≈ 10.7 s |
+| Word count / est. seconds | 25 words / ≈ 10.7 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.
+> OMAR: A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.
 
 New lexicon terms: Eid — “eed”
 
@@ -3458,7 +3546,7 @@ New lexicon terms: Eid — “eed”
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-045>",
-  "narration_text": "A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more."
+  "narration_text": "OMAR: A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more."
 }
 ```
 
@@ -3505,7 +3593,7 @@ New lexicon terms: Eid — “eed”
 | Watermark | None |
 | Icons | None (authored SVG stacked bar `hr-img-gosi-bar`) |
 | Animation / reveal | Bar grows from zero, then the two segment labels fade in, then the total |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -3521,12 +3609,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, practical |
 | Target seconds | 30 |
-| Word count / est. seconds | 62 words / ≈ 27.4 s |
+| Word count / est. seconds | 62 words / ≈ 27.4 s (speaker labels excluded, pauses included) |
 | Cue targets | `what`, `who`, `split` |
 
-> [[cue:what]] GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. [[pause:0.4]] [[cue:who]] It applies to Saudi employees, until retirement at sixty. [[pause:0.4]] [[cue:split]] The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.
+> OMAR: [[cue:what]] GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. [[pause:0.4]] [[cue:who]] It applies to Saudi employees, until retirement at sixty. [[pause:0.4]] [[cue:split]] The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.
 
 New lexicon terms: GOSI — “GO-see”
 
@@ -3548,6 +3637,8 @@ New lexicon terms: GOSI — “GO-see”
   "title": "What GOSI is",
   "section": "F · Pay & social insurance",
   "node_id": "hr-sF",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
@@ -3555,7 +3646,7 @@ New lexicon terms: GOSI — “GO-see”
   "media_asset_id": "<hr-img-gosi-bar>",
   "media_alt": "GOSI contribution: the employee pays 9.75%, My Clinic pays 11.75%, a total of 21.5%.",
   "narration_asset_id": "<hr-aud-050>",
-  "narration_text": "GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours."
+  "narration_text": "OMAR: GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. It applies to Saudi employees, until retirement at sixty. The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours."
 }
 ```
 
@@ -3602,7 +3693,7 @@ New lexicon terms: GOSI — “GO-see”
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | `fading: "partial"` — the arithmetic is visible, the rationale is behind a per-step control |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (the ledger is CSS).
 
@@ -3627,12 +3718,13 @@ New lexicon terms: GOSI — “GO-see”
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, precise |
 | Target seconds | 30 |
-| Word count / est. seconds | 65 words / ≈ 28.7 s |
+| Word count / est. seconds | 65 words / ≈ 28.7 s (speaker labels excluded, pauses included) |
 | Cue targets | `s1`, `s2`, `s3` |
 
-> Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. [[cue:s1]] Add them — GOSI is charged on basic plus housing, so six thousand. [[pause:0.4]] [[cue:s2]] Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. [[pause:0.4]] [[cue:s3]] Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.
+> OMAR: Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. [[cue:s1]] Add them — GOSI is charged on basic plus housing, so six thousand. [[pause:0.4]] [[cue:s2]] Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. [[pause:0.4]] [[cue:s3]] Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.
 
 New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
 
@@ -3654,6 +3746,8 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
   "title": "Working out 585 riyals",
   "section": "F · Pay & social insurance",
   "node_id": "hr-sF",
+  "objective_ids": [],
+  "points": 0,
   "fading": "partial",
   "intro_html": "<p>Basic 4,800 + housing 1,200. What is the monthly GOSI deduction from your salary? <em>Rates pending B12.</em></p>",
   "steps": [
@@ -3675,7 +3769,7 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
   "self_explanation_prompt_html": "<p>Which part of the salary is the percentage applied to?</p>",
   "reveal": "none",
   "narration_asset_id": "<hr-aud-051>",
-  "narration_text": "Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for."
+  "narration_text": "OMAR: Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for."
 }
 ```
 
@@ -3722,7 +3816,7 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -3743,12 +3837,13 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 15 words / ≈ 6.4 s |
+| Word count / est. seconds | 15 words / ≈ 6.4 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?
+> OMAR: Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?
 
 New lexicon terms: None
 
@@ -3800,7 +3895,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-052>",
-  "narration_text": "Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?"
+  "narration_text": "OMAR: Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?"
 }
 ```
 
@@ -3847,7 +3942,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | `fading: "partial"` |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (the ledger is CSS).
 
@@ -3872,12 +3967,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, precise |
 | Target seconds | 35 |
-| Word count / est. seconds | 79 words / ≈ 35.5 s |
+| Word count / est. seconds | 79 words / ≈ 35.5 s (speaker labels excluded, pauses included) |
 | Cue targets | `s1`, `s2`, `s3`, `elig` |
 
-> [[cue:elig]] One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. [[pause:0.4]] [[cue:s1]] Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. [[pause:0.4]] [[cue:s2]] On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. [[pause:0.4]] [[cue:s3]] On a public holiday, multiply by two. Fifty riyals an hour. [[pause:0.4]] Same hourly rate both times. Only the multiplier moves.
+> OMAR: [[cue:elig]] One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. [[pause:0.4]] [[cue:s1]] Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. [[pause:0.4]] [[cue:s2]] On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. [[pause:0.4]] [[cue:s3]] On a public holiday, multiply by two. Fifty riyals an hour. [[pause:0.4]] Same hourly rate both times. Only the multiplier moves.
 
 New lexicon terms: None
 
@@ -3899,6 +3995,8 @@ New lexicon terms: None
   "title": "Working out overtime",
   "section": "F · Pay & social insurance",
   "node_id": "hr-sF",
+  "objective_ids": [],
+  "points": 0,
   "fading": "partial",
   "intro_html": "<p>Basic 6,000. What is your overtime rate on a normal working day, and on a public holiday? <em>Eligibility by grade pending B3.</em></p>",
   "steps": [
@@ -3920,7 +4018,7 @@ New lexicon terms: None
   "self_explanation_prompt_html": "<p>Why is the hourly rate worked out from 240 hours, not 208?</p>",
   "reveal": "none",
   "narration_asset_id": "<hr-aud-053>",
-  "narration_text": "One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves."
+  "narration_text": "OMAR: One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves."
 }
 ```
 
@@ -3967,7 +4065,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -3989,12 +4087,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 8.6 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?
+> OMAR: One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?
 
 New lexicon terms: None
 
@@ -4055,7 +4154,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-054>",
-  "narration_text": "One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?"
+  "narration_text": "OMAR: One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?"
 }
 ```
 
@@ -4102,7 +4201,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None (monogram system tiles O, Q, M, I in navy #003867) |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only interaction).
 
@@ -4122,12 +4221,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Practical |
 | Target seconds | 10 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.
+> OMAR: Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.
 
 New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 
@@ -4196,7 +4296,7 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-060>",
-  "narration_text": "Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system."
+  "narration_text": "OMAR: Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system."
 }
 ```
 
@@ -4238,12 +4338,12 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "G · Systems & licences", 2 px navy `#003867` header rule |
 | Visual concept | A browser-chrome frame holding a full-width screenshot; a numbered instruction bar sits directly above the frame; the correct region is not outlined until the learner asks for a hint, at which point a dashed rectangle appears around it |
 | edumints layout | n/a (`simulation`) |
-| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` progress bar) · companion avatar ring in the character's colour (companions.md §4) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None |
 | Icons | None (Oracle test-account screenshots) |
-| Animation / reveal | The next screenshot cross-fades in on a correct click |
-| Character | None |
+| Animation / reveal | The next screenshot cross-fades in on a correct click; the tip card fades up with the end-of-simulation feedback |
+| Companion | Dr. Omar · `char-omar-avatar-neutral` (40 px) in the end-of-simulation feedback banner, plus an **Omar's tip** card under the banner: 56 px avatar with a 3 px teal `#008C99` ring, white card max 360 px wide with a 4 px teal left edge, label “Omar's tip” · placement L4 feedback avatar / tip **after** the simulation only — not visible during any click step and never over the screenshot · tip text (15 words): “Submitted isn't approved. Check the request status in Oracle before you book flights or hotels.” · speaks: Omar (set-up line on entry; tip line `omar-tip` with the feedback) |
 
 **Imagery**
 
@@ -4254,6 +4354,7 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 | `hr-img-oracle-3` | screenshot | Time and Absences hub with the Add Leaves tile | own (test account — B8) | “Oracle Time and Absences page with an Add Leaves tile.” | No |
 | `hr-img-oracle-4` | screenshot | Add Leaves form with the leave-type drop-down open, showing Annual, Bereavement, Marriage, Scientific, Sick, Study | own (test account — B8) | “Oracle Add Leaves form with the leave-type drop-down open.” | No |
 | `hr-img-oracle-5` | screenshot | Add Leaves form filled, with a Submit button | own (test account — B8) | “Oracle Add Leaves form with dates entered and a Submit button.” | No |
+| `char-omar-avatar-neutral` | illustration | Shared programme avatar (Canva media `MAHX-nPHDkA`), cropped to a circle: 40 px in the feedback banner, 56 px on the tip card | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, giving a tip.” | No |
 
 #### 4. Interaction and scoring
 
@@ -4264,6 +4365,7 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 | Points | 15 |
 | Feedback — correct | That's the whole flow: sign in, Time and Absences, Add Leaves, choose the leave type and dates, submit. Your manager approves it in the same system, so you can see where it's got to. |
 | Feedback — incorrect | Not every step. The route is always the same: sign in, then Time and Absences, then Add Leaves. The last two steps are the form itself. |
+| Tip card (both outcomes) | **Omar's tip:** Submitted isn't approved. Check the request status in Oracle before you book flights or hotels. (spoken differently by Omar — see §5, part `omar-tip`) |
 | Hint | One per step — see the table |
 | Retry / lives | Retry the step; no lives (phase-3 §5) |
 
@@ -4279,12 +4381,17 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) — set-up `omar-1` on entry; tip `omar-tip` with the end-of-simulation feedback |
 | Tone | Practical, calm |
-| Target seconds | 15 |
-| Word count / est. seconds | 27 words / ≈ 11.6 s |
+| Target seconds | 15 — per part: `omar-1` 15, `omar-tip` 9 |
+| Word count / est. seconds | 27 words / ≈ 11.6 s (speaker labels excluded, pauses included); tip line 22 words / ≈ 9.4 s |
 | Cue targets | None |
 
-> Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.
+> OMAR: Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.
+
+*Tip line — played with the end-of-simulation feedback, with the tip card (part `omar-tip`):*
+
+> OMAR: One habit worth building. After you submit, open the request again. Wait until it shows as approved before you book any travel.
 
 New lexicon terms: Oracle — “OR-uh-kul”
 
@@ -4306,6 +4413,7 @@ New lexicon terms: Oracle — “OR-uh-kul”
   "title": "Book your leave in Oracle",
   "section": "G · Systems & licences",
   "node_id": "hr-sG",
+  "notes": "Companion: Dr. Omar char-omar-avatar-neutral (40 px) in the end-of-simulation feedback banner plus the 'Omar's tip' card (56 px avatar, teal #008C99 ring, 4 px teal left edge, max 360 px) — only after the last step, never during a click step. Tip audio: part omar-tip, played with the feedback.",
   "objective_ids": [
     "hr-o5"
   ],
@@ -4417,20 +4525,20 @@ New lexicon terms: Oracle — “OR-uh-kul”
     }
   ],
   "feedback": {
-    "correct_html": "<p>That's the whole flow: sign in, Time and Absences, Add Leaves, choose the leave type and dates, submit. Your manager approves it in the same system, so you can see where it's got to.</p>",
-    "incorrect_html": "<p>Not every step. The route is always the same: sign in, then Time and Absences, then Add Leaves. The last two steps are the form itself.</p>",
+    "correct_html": "<p>That's the whole flow: sign in, Time and Absences, Add Leaves, choose the leave type and dates, submit. Your manager approves it in the same system, so you can see where it's got to.</p><p class=\"companion-tip companion-omar\"><strong>Omar's tip:</strong> Submitted isn't approved. Check the request status in Oracle before you book flights or hotels.</p>",
+    "incorrect_html": "<p>Not every step. The route is always the same: sign in, then Time and Absences, then Add Leaves. The last two steps are the form itself.</p><p class=\"companion-tip companion-omar\"><strong>Omar's tip:</strong> Submitted isn't approved. Check the request status in Oracle before you book flights or hotels.</p>",
     "show_correct_answer": true
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-061>",
-  "narration_text": "Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for."
+  "narration_text": "OMAR: Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: **B8** — every screenshot must come from a test account with no real employee data. Until HRIS supplies them, this screen cannot be built; ship the module without it and add it in a minor version, or replace it with a five-step `sorting` screen (a plan change, because the points and the objective evidence both move).
-- Developer notes: `coords` for `rect` are `[x, y, w, h]` in the image's natural pixels. All five sets above are **provisional** against 1920×1080 screenshots and must be re-measured after the final captures. Record the Oracle release in the asset notes and re-capture when the UI changes (phase-5 trigger).
+- Developer notes: Omar's avatar and tip card render only with the end-of-simulation feedback (the `companion-tip` paragraph); play `MC03-welcome-on-board_hr-061_omar-tip.mp3` with that feedback, not on screen entry. `coords` for `rect` are `[x, y, w, h]` in the image's natural pixels. All five sets above are **provisional** against 1920×1080 screenshots and must be re-measured after the final captures. Record the Oracle release in the asset notes and re-capture when the UI changes (phase-5 trigger).
 
 ---
 
@@ -4470,7 +4578,7 @@ New lexicon terms: Oracle — “OR-uh-kul”
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -4490,12 +4598,13 @@ New lexicon terms: Oracle — “OR-uh-kul”
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Serious |
 | Target seconds | 8 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.
+> OMAR: True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.
 
 New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 
@@ -4533,7 +4642,7 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-062>",
-  "narration_text": "True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work."
+  "narration_text": "OMAR: True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work."
 }
 ```
 
@@ -4580,7 +4689,7 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 | Watermark | None |
 | Icons | Six single-weight line icons inside `hr-img-benefits-wheel` (shield, star, graduation-cap, laptop-home, arrow-up, tag), navy #003867, own SVG |
 | Animation / reveal | Left card fades up, then the wheel segments fill in sequence |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -4605,12 +4714,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Practical, warm |
 | Target seconds | 25 |
-| Word count / est. seconds | 57 words / ≈ 25.2 s |
+| Word count / est. seconds | 57 words / ≈ 25.2 s (speaker labels excluded, pauses included) |
 | Cue targets | `id`, `lost`, `wheel` |
 
-> [[cue:id]] Two quick things. Your ID card: wear it where it can be seen. [[pause:0.4]] [[cue:lost]] Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. [[pause:0.4]] [[cue:wheel]] Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.
+> OMAR: [[cue:id]] Two quick things. Your ID card: wear it where it can be seen. [[pause:0.4]] [[cue:lost]] Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. [[pause:0.4]] [[cue:wheel]] Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.
 
 New lexicon terms: None
 
@@ -4632,6 +4742,8 @@ New lexicon terms: None
   "title": "Your ID card and benefits",
   "section": "H · ID, benefits & dress code",
   "node_id": "hr-sH",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
@@ -4652,7 +4764,7 @@ New lexicon terms: None
     }
   ],
   "narration_asset_id": "<hr-aud-070>",
-  "narration_text": "Two quick things. Your ID card: wear it where it can be seen. Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use."
+  "narration_text": "OMAR: Two quick things. Your ID card: wear it where it can be seen. Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use."
 }
 ```
 
@@ -4699,7 +4811,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | None (flat role-outfit illustrations on drop-zone headers) |
 | Animation / reveal | Chips settle with a 120 ms spring when dropped |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -4716,7 +4828,7 @@ Flat vector illustration for a healthcare e-learning course, 16:9, three standal
 - Figure 1 (hr-img-dress-frontoffice): a front-office clinic receptionist in a smart navy (#003867) clinic uniform;
 - Figure 2 (hr-img-dress-medical): a clinician in navy (#003867) scrubs and a white clinical coat with a stethoscope;
 - Figure 3 (hr-img-dress-backoffice): a back-office staff member in modest formal business attire.
-Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C) on badge lanyards, small touches of magenta (#9D3293) only for nothing. Modest, culturally appropriate clothing for Saudi Arabia, closed professional shoes, plain ID badges with no logos or text.
+Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C) on badge lanyards, small touches of magenta (#9D3293) only for nothing. Modest, culturally appropriate clothing for Saudi Arabia, closed professional shoes, plain ID badges with no logos or text. Generic staff figures with simple faces; they must not resemble the course companions Noor or Dr. Omar (see companions.md).
 No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
 ```
 
@@ -4738,12 +4850,13 @@ No text, no letters, no numbers, no logos, no signage words, no watermarks, no b
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Practical |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 8.6 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.
+> OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.
 
 New lexicon terms: None
 
@@ -4826,7 +4939,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-071>",
-  "narration_text": "Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days."
+  "narration_text": "OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days."
 }
 ```
 
@@ -4873,7 +4986,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Four single-weight line icons (`hr-img-exit-icons`: document-signature, screen-and-form, calendar, envelope-with-certificate), navy #003867, own SVG |
 | Animation / reveal | Steps fade in left to right in narration order |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery**
 
@@ -4889,12 +5002,13 @@ n/a — unscored content screen.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm, matter-of-fact |
 | Target seconds | 25 |
-| Word count / est. seconds | 52 words / ≈ 23.5 s |
+| Word count / est. seconds | 52 words / ≈ 23.5 s (speaker labels excluded, pauses included) |
 | Cue targets | `qiwa`, `oracle`, `notice`, `eos` |
 
-> [[cue:qiwa]] Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. [[pause:0.4]] [[cue:oracle]] Leaving: a resignation is a request, so it goes through Oracle. [[pause:0.4]] [[cue:notice]] Notice is two months, and it runs both ways. [[pause:0.4]] [[cue:eos]] End-of-service benefits and your experience certificate follow within fifteen days of your last day.
+> OMAR: [[cue:qiwa]] Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. [[pause:0.4]] [[cue:oracle]] Leaving: a resignation is a request, so it goes through Oracle. [[pause:0.4]] [[cue:notice]] Notice is two months, and it runs both ways. [[pause:0.4]] [[cue:eos]] End-of-service benefits and your experience certificate follow within fifteen days of your last day.
 
 New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
 
@@ -4916,12 +5030,14 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
   "title": "If you ever leave",
   "section": "I · Contracts & leaving",
   "node_id": "hr-sI",
+  "objective_ids": [],
+  "points": 0,
   "layout": "text",
   "animation": "fade-up",
   "reveal": "auto",
   "body_html": "<p><strong>Accept your contract</strong> on Qiwa.</p><p><strong>Resign</strong> in Oracle.</p><p><strong>Notice: 2 months</strong>, honoured by both parties.</p><p><strong>EOS + experience certificate</strong> within 15 days of your last working day.</p>",
   "narration_asset_id": "<hr-aud-080>",
-  "narration_text": "Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
+  "narration_text": "OMAR: Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
   "media_asset_id": "<hr-img-exit-icons>",
   "media_alt": "Four steps: Qiwa contract, Oracle resignation, two months notice, and end-of-service settlement within 15 days."
 }
@@ -4970,7 +5086,7 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (text-only question).
 
@@ -4992,12 +5108,13 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Calm |
 | Target seconds | 8 |
-| Word count / est. seconds | 16 words / ≈ 6.9 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?
+> OMAR: Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?
 
 New lexicon terms: None
 
@@ -5058,7 +5175,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-081>",
-  "narration_text": "Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?"
+  "narration_text": "OMAR: Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?"
 }
 ```
 
@@ -5105,7 +5222,7 @@ New lexicon terms: None
 | Watermark | None |
 | Icons | Status icons on objective bars (✓ in #1E7B4F for passed, ⚠ in #B42318 for needs review), own SVG |
 | Animation / reveal | Rows fade up in sequence; bars grow from zero |
-| Character | None |
+| Companion | None visible — voice only: Dr. Omar (lead host) narrates; no companion art on this screen |
 
 **Imagery:** None (chart is CSS).
 
@@ -5131,12 +5248,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR (lead host) |
 | Tone | Encouraging |
 | Target seconds | 12 |
-| Word count / est. seconds | 28 words / ≈ 12.0 s |
+| Word count / est. seconds | 28 words / ≈ 12.0 s (speaker labels excluded, pauses included) |
 | Cue targets | None |
 
-> Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.
+> OMAR: Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.
 
 New lexicon terms: None
 
@@ -5158,6 +5276,8 @@ New lexicon terms: None
   "title": "How you did",
   "section": "Z · Close",
   "node_id": "hr-sZ",
+  "objective_ids": [],
+  "points": 0,
   "body_html": "<p>One row per objective. Anything below 70% comes with a suggestion.</p>",
   "weak_threshold": 70,
   "show_total": true,
@@ -5216,7 +5336,7 @@ New lexicon terms: None
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-090>",
-  "narration_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict."
+  "narration_text": "OMAR: Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict."
 }
 ```
 
@@ -5256,20 +5376,22 @@ New lexicon terms: None
 |---|---|
 | Brand layout | L6 Results / close (see `../../00_program/brand/screen-mockups/06-results.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "Z · Close", 2 px navy `#003867` header rule |
-| Visual concept | A five-item checklist on the left, each with a small tick glyph; on the right two stacked action cards — one for the HR Quick Reference download, one for the onboarding survey — and a single line naming the next module |
+| Visual concept | A five-item checklist on the left, each with a small tick glyph; under it two side-by-side action cards — one for the HR Quick Reference download, one for the onboarding survey; Dr. Omar's half-body `success` pose (thumbs up) on the right; a single “Next” line along the bottom names module 07, with Noor's small happy avatar beside it because she hosts that module |
 | edumints layout | n/a (`summary`) |
 | Colours (palette names + hex) | bg `light` (white `#FFFFFF` stage with subtle petal watermark) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` checklist ticks and action cards) · warning none |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; objective labels and body Montserrat Regular/Medium 400/500, 16 px; badges Montserrat Bold 700, 12–14 px; footer 10–12 px. |
 | Watermark | Petal watermark (`mark-navy.png` at 7% opacity, 440 px, cropped off the right edge) |
 | Icons | Checklist tick icons in Caring purple #652D8C + download/external-link line icons in navy #003867, own SVG |
-| Animation / reveal | Checklist ticks in one by one, then the action cards fade up |
-| Character | None |
+| Animation / reveal | Checklist ticks in one by one, then the action cards fade up; Noor's avatar fades in with her line |
+| Companion | **Omar + Noor** — `char-omar-success` half-body, 300–360 px, right side; `char-noor-avatar-happy` 56 px with a 3 px Caring purple `#652D8C` ring on the “Next” line · placement L6 · tip text n/a · speaks: Omar, then Noor (two-voice close; Noor previews module 07) |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `hr-pdf-quickref` | PDF | Same asset as `hr-040` | own | n/a | n/a |
+| `char-omar-success` | illustration | Shared programme companion pose (Canva media `MAHX-llCU5M`): half-body, thumbs up; right side, 300–360 px | ai-generated (programme master, companions.md §3) | “Dr. Omar, a family physician, smiling and giving a thumbs up.” | No |
+| `char-noor-avatar-happy` | illustration | Programme avatar cropped from `char-noor-success` (companions.md §3: “to make if needed”), 56 px circle | ai-generated (programme master) | “Noor, the safety liaison, smiling.” | No |
 
 #### 4. Interaction and scoring
 
@@ -5284,14 +5406,17 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR → NOOR (two-voice screen: parts `omar-1`, `noor-1`; joined into one file with 0.3 s silence) |
 | Tone | Warm |
-| Target seconds | 25 |
-| Word count / est. seconds | 61 words / ≈ 27.0 s |
+| Target seconds | 26 (v0.1: 25) — per part: `omar-1` 19, `noor-1` 7 |
+| Word count / est. seconds | 62 words / ≈ 27.5 s (speaker labels excluded, pauses included) |
 | Cue targets | `list`, `pdf`, `survey`, `next` |
 
-> [[cue:list]] That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. [[pause:0.3]] [[cue:pdf]] Download the HR Quick Reference. [[pause:0.3]] [[cue:survey]] Please complete the onboarding survey — two minutes, and it shapes how we run this day. [[pause:0.3]] [[cue:next]] Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.
+> OMAR: [[cue:list]] That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. [[pause:0.3]] [[cue:pdf]] Download the HR Quick Reference. [[pause:0.3]] [[cue:survey]] And please complete the onboarding survey. Two minutes, and it shapes how we run this day.
 
-New lexicon terms: None
+> NOOR: [[pause:0.3]] [[cue:next]] Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic.
+
+New lexicon terms: Noor — “noor” (rhymes with *tour*); Omar — “OH-mar” (companions.md §5). Other terms: None
 
 #### 6. Accessibility
 
@@ -5311,20 +5436,23 @@ New lexicon terms: None
   "title": "You're ready",
   "section": "Z · Close",
   "node_id": "hr-sZ",
+  "objective_ids": [],
+  "points": 0,
+  "notes": "Companions: Dr. Omar char-omar-success half-body 300-360 px right side; Noor char-noor-avatar-happy 56 px (3 px #652D8C ring) on the 'Next: module 07' line. Audio: omar-1 + noor-1 joined with 0.3 s silence.",
   "show_score": true,
   "show_completion": true,
   "body_html": "<p><strong>You can now:</strong> live the values · raise a concern the right way · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid.</p><p><strong>Keep this:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p><p><strong>Please do:</strong> <a href=\"{{survey_url}}\" target=\"_blank\" rel=\"noopener\">the onboarding survey (2 minutes)</a></p><p><strong>Next:</strong> module 07 — Clinical Governance: Quality, Patient Safety &amp; Risk.</p>",
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<hr-aud-091>",
-  "narration_text": "That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. Download the HR Quick Reference. Please complete the onboarding survey — two minutes, and it shapes how we run this day. Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic."
+  "narration_text": "OMAR: That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. Download the HR Quick Reference. And please complete the onboarding survey. Two minutes, and it shapes how we run this day. NOOR: Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: None on content. HR must supply the live onboarding-survey URL before build; until then use `{{survey_url}}` as a placeholder and confirm in preview that the link opens in a new tab.
-- Developer notes: `{{asset:hr-pdf-quickref}}` is replaced with the real asset URL after `add_asset`. Test both links in preview **and** in the LMS.
+- Developer notes: place Omar and Noor from the theme/renderer as described in `notes`; join `omar-1` and `noor-1` into `MC03-welcome-on-board_hr-091.mp3` with 0.3 s silence (companions.md §5). `{{asset:hr-pdf-quickref}}` is replaced with the real asset URL after `add_asset`. Test both links in preview **and** in the LMS.
 
 ---
 
@@ -5332,51 +5460,53 @@ New lexicon terms: None
 
 ### Screen register
 
-| # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
-|---|---|---|---|---|---|---|---|---|
-| 1 | `hr-000` | `title_slide` | N | 0 | 0 | 31 | 13 | `Draft` |
-| 2 | `hr-001` | `content_slide` | N | 0 | 24 | 85 | 36 | `Draft` |
-| 3 | `hr-002` | `poll` | N | 0 | 12 | 23 | 10 | `Draft` |
-| 4 | `hr-010` | `tabs` | N | 0 | 14 | 81 | 35 | `Draft` |
-| 5 | `hr-011` | `matching` | Y | 10 | 12 | 22 | 9 | `Draft` |
-| 6 | `hr-012` | `accordion` | N | 0 | 15 | 99 | 42 | `Draft` |
-| 7 | `hr-013` | `mcq` | Y | 5 | 0 | 16 | 7 | `Draft` |
-| 8 | `hr-014` | `content_slide` | N | 0 | 10 | 44 | 19 | `Draft` |
-| 9 | `hr-020` | `timeline` | N | 0 | 12 | 72 | 31 | `Draft` |
-| 10 | `hr-021` | `hotspot` | N | 0 | 11 | 31 | 13 | `Draft` |
-| 11 | `hr-022` | `content_slide` | N | 0 | 12 | 46 | 20 | `Draft` |
-| 12 | `hr-023` | `flashcards` | N | 0 | 13 | 39 | 17 | `Draft` |
-| 13 | `hr-030` | `content_slide` | N | 0 | 16 | 78 | 33 | `Draft` |
-| 14 | `hr-031` | `decision_scenario` | Y | 15 | 7 | 35 | 15 | `Draft` |
-| 15 | `hr-032` | `drag_drop` | Y | 10 | 12 | 26 | 11 | `Draft` |
-| 16 | `hr-033` | `mcq` | Y | 5 | 0 | 22 | 9 | `Draft` |
-| 17 | `hr-040` | `content_slide` | N | 0 | 15 | 66 | 28 | `Draft` |
-| 18 | `hr-041` | `accordion` | N | 0 | 14 | 105 | 45 | `Draft` |
-| 19 | `hr-042` | `matching` | Y | 5 | 13 | 14 | 6 | `Draft` |
-| 20 | `hr-043` | `worked_example` | N | 0 | 0 | 95 | 41 | `Draft` |
-| 21 | `hr-044` | `decision_scenario` | Y | 15 | 8 | 27 | 12 | `Draft` |
-| 22 | `hr-045` | `adaptive_practice` | Y | 15 | 12 | 25 | 11 | `Draft` |
-| 23 | `hr-050` | `content_slide` | N | 0 | 21 | 62 | 27 | `Draft` |
-| 24 | `hr-051` | `worked_example` | N | 0 | 0 | 65 | 28 | `Draft` |
-| 25 | `hr-052` | `fill_blank` | Y | 10 | 12 | 15 | 6 | `Draft` |
-| 26 | `hr-053` | `worked_example` | N | 0 | 0 | 79 | 34 | `Draft` |
-| 27 | `hr-054` | `mcq` | Y | 10 | 0 | 20 | 9 | `Draft` |
-| 28 | `hr-060` | `matching` | Y | 10 | 10 | 19 | 8 | `Draft` |
-| 29 | `hr-061` | `simulation` | Y | 15 | 14 | 27 | 12 | `Draft` |
-| 30 | `hr-062` | `true_false` | Y | 5 | 0 | 22 | 9 | `Draft` |
-| 31 | `hr-070` | `content_slide` | N | 0 | 15 | 57 | 24 | `Draft` |
-| 32 | `hr-071` | `drag_drop` | Y | 10 | 9 | 20 | 9 | `Draft` |
-| 33 | `hr-080` | `content_slide` | N | 0 | 21 | 52 | 22 | `Draft` |
-| 34 | `hr-081` | `mcq` | Y | 5 | 0 | 16 | 7 | `Draft` |
-| 35 | `hr-090` | `results_breakdown` | N | 0 | 11 | 33 | 14 | `Draft` |
-| 36 | `hr-091` | `summary` | N | 0 | 21 | 67 | 29 | `Draft` |
-| | **Totals** | | **15** | **145** | **366** | **1590** | **705.1 ≈ 11 min 45 s** | |
+| # | Screen id | Type | Scored | Pts | Speaker(s) | Companion visible | On-screen words | Narration words | Est. sec | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | `hr-000` | `title_slide` | N | 0 | OMAR + NOOR | Omar + Noor | 0 | 46 | 20 | `Draft` |
+| 2 | `hr-001` | `content_slide` | N | 0 | OMAR | Omar | 24 | 85 | 38 | `Draft` |
+| 3 | `hr-002` | `poll` | N | 0 | OMAR | Omar | 12 | 23 | 10 | `Draft` |
+| 4 | `hr-010` | `tabs` | N | 0 | OMAR | — | 14 | 81 | 37 | `Draft` |
+| 5 | `hr-011` | `matching` | Y | 10 | OMAR | — | 12 | 16 | 7 | `Draft` |
+| 6 | `hr-012` | `accordion` | N | 0 | OMAR | — | 15 | 99 | 46 | `Draft` |
+| 7 | `hr-013` | `mcq` | Y | 5 | OMAR | — | 0 | 16 | 7 | `Draft` |
+| 8 | `hr-014` | `content_slide` | N | 0 | OMAR | — | 10 | 44 | 20 | `Draft` |
+| 9 | `hr-020` | `timeline` | N | 0 | OMAR | — | 12 | 72 | 32 | `Draft` |
+| 10 | `hr-021` | `hotspot` | N | 0 | OMAR | — | 11 | 31 | 13 | `Draft` |
+| 11 | `hr-022` | `content_slide` | N | 0 | OMAR | — | 12 | 46 | 21 | `Draft` |
+| 12 | `hr-023` | `flashcards` | N | 0 | OMAR | — | 13 | 39 | 17 | `Draft` |
+| 13 | `hr-030` | `content_slide` | N | 0 | OMAR | — | 16 | 78 | 35 | `Draft` |
+| 14 | `hr-031` | `decision_scenario` | Y | 15 | NOOR | Noor | 7 | 35 | 15 | `Draft` |
+| 15 | `hr-032` | `drag_drop` | Y | 10 | OMAR | — | 12 | 19 | 8 | `Draft` |
+| 16 | `hr-033` | `mcq` | Y | 5 | OMAR | — | 0 | 20 | 9 | `Draft` |
+| 17 | `hr-040` | `content_slide` | N | 0 | OMAR | — | 15 | 63 | 28 | `Draft` |
+| 18 | `hr-041` | `accordion` | N | 0 | OMAR | — | 14 | 91 | 42 | `Draft` |
+| 19 | `hr-042` | `matching` | Y | 5 | OMAR | — | 13 | 14 | 6 | `Draft` |
+| 20 | `hr-043` | `worked_example` | N | 0 | OMAR | Omar | 0 | 95 | 43 | `Draft` |
+| 21 | `hr-044` | `decision_scenario` | Y | 15 | NOOR | Noor | 8 | 27 | 12 | `Draft` |
+| 22 | `hr-045` | `adaptive_practice` | Y | 15 | OMAR | — | 12 | 25 | 11 | `Draft` |
+| 23 | `hr-050` | `content_slide` | N | 0 | OMAR | — | 21 | 62 | 27 | `Draft` |
+| 24 | `hr-051` | `worked_example` | N | 0 | OMAR | — | 0 | 65 | 29 | `Draft` |
+| 25 | `hr-052` | `fill_blank` | Y | 10 | OMAR | — | 12 | 15 | 6 | `Draft` |
+| 26 | `hr-053` | `worked_example` | N | 0 | OMAR | — | 0 | 79 | 36 | `Draft` |
+| 27 | `hr-054` | `mcq` | Y | 10 | OMAR | — | 0 | 20 | 9 | `Draft` |
+| 28 | `hr-060` | `matching` | Y | 10 | OMAR | — | 10 | 19 | 8 | `Draft` |
+| 29 | `hr-061` | `simulation` | Y | 15 | OMAR | Omar | 14 | 49 | 21 | `Draft` |
+| 30 | `hr-062` | `true_false` | Y | 5 | OMAR | — | 0 | 19 | 8 | `Draft` |
+| 31 | `hr-070` | `content_slide` | N | 0 | OMAR | — | 15 | 57 | 25 | `Draft` |
+| 32 | `hr-071` | `drag_drop` | Y | 10 | OMAR | — | 9 | 20 | 9 | `Draft` |
+| 33 | `hr-080` | `content_slide` | N | 0 | OMAR | — | 21 | 52 | 24 | `Draft` |
+| 34 | `hr-081` | `mcq` | Y | 5 | OMAR | — | 0 | 16 | 7 | `Draft` |
+| 35 | `hr-090` | `results_breakdown` | N | 0 | OMAR | — | 11 | 28 | 12 | `Draft` |
+| 36 | `hr-091` | `summary` | N | 0 | OMAR + NOOR | Omar + Noor | 21 | 62 | 28 | `Draft` |
+| | **Totals** | | **15** | **145** | Omar 35 lines · Noor 4 lines | 8 of 36 screens | **366** | **1628** | **722 ≈ 12 min 2 s** | |
+
+Narration words exclude the `OMAR:` / `NOOR:` labels; estimated seconds are words ÷ 140 wpm plus scripted pauses, including the `hr-061` tip line. `lint_narration_script` counts each label as a word, so its total is slightly higher (see [`lint-report.json`](lint-report.json)).
 
 ### Asset list (all screens)
 
 | Asset id | Kind | Used on | Source | Alt text written? | Status |
 |---|---|---|---|---|---|
-| `hr-img-hero` | photo | `hr-000`, `hr-001` | own (consent pending **B6 / D5**) | Yes | to produce |
+| `hr-img-hero` | photo | not placed in v0.2 (was `hr-001`; Omar's pose took the right column) | own (consent pending **B6 / D5**) | Yes | optional — HR decision |
 | `hr-img-values-icons` | SVG ×4 | `hr-010` | own (redrawn from slide 10 icon family) | n/a — decorative | to produce |
 | `hr-img-7c-icons` | SVG ×7 | `hr-012` | own (redrawn from slide 10) | n/a — decorative | to produce |
 | `hr-img-serve-icons` | SVG ×3 | `hr-014` | own | n/a — decorative | to produce |
@@ -5394,8 +5524,10 @@ New lexicon terms: None
 | `hr-img-dress-frontoffice / -medical / -backoffice` | illustrations ×3 | `hr-071` | ai-generated | Yes | to produce |
 | `hr-img-exit-icons` | SVG ×4 | `hr-080` | own | n/a — decorative | to produce |
 | `hr-pdf-quickref` | PDF | `hr-040`, `hr-091` | own (written by HR) | n/a — linked resource | to produce |
-| `mentor-noor / hr-char-noor` | character ×3 poses | `hr-031`, `hr-044` | ai-generated (program master) | Yes | to produce |
-| `hr-aud-000 … hr-aud-091` | audio ×36 | all narrated screens | TTS or human (program **D10**) | transcript = `narration_text` | to produce |
+| `char-omar-welcome`, `-explaining`, `-listening`, `-thinking`, `-success`, `-avatar-neutral` | companion poses (shared programme set) | `hr-000`, `hr-001`, `hr-002`, `hr-043`, `hr-091`, `hr-061` | ai-generated programme masters — [`companions.md`](../../00_program/characters/companions.md) §3 (Canva media ids listed there) | Yes | generated; download transparent PNGs to `00_program/characters/assets/` |
+| `char-noor-welcome`, `-avatar-neutral` | companion poses (shared programme set) | `hr-000`, `hr-031`, `hr-044` | ai-generated programme masters — companions.md §3 | Yes | generated; download transparent PNGs |
+| `char-noor-avatar-happy`, `char-noor-avatar-concern` | companion avatars (shared programme set) | `hr-031`, `hr-091` | crop from `char-noor-success` / `char-noor-concern` (companions.md §3 “to make if needed”) | Yes | to make (programme asset, not module art) |
+| `hr-aud-000 … hr-aud-091` | audio ×36 screen files (+1 feedback clip `hr-061` tip) from 39 recorded lines: Dr. Omar 35, Noor 4 | all narrated screens | two fixed companion voices, provider pending program **D10** | transcript = `narration_text` | to produce (v0.1 single-voice reference clips are superseded) |
 
 ### Open questions for the SME
 
@@ -5429,6 +5561,8 @@ New lexicon terms: None
 | Term | Say it as | Screens |
 |---|---|---|
 | CBAHI | “see-bah-hee” | `hr-023` |
+| Noor | “noor” (rhymes with *tour*) | `hr-000`, `hr-091` (and every `NOOR:` line label) |
+| Omar | “OH-mar” | `hr-000` (and every `OMAR:` line label) |
 | CEO | “C-E-O” | `hr-022` |
 | CFO | “C-F-O” | `hr-022` |
 | CMO | “C-M-O” | `hr-022` |
@@ -5440,8 +5574,8 @@ New lexicon terms: None
 | HRMS | “H-R-M-S” | `hr-040` |
 | Hajj | “hajj” | `hr-041` |
 | IELTS | “eye-elts” | `hr-041`, `hr-044` |
-| J1 | “J-one” | `hr-021` |
-| J2 | “J-two” | `hr-021` |
+| J1 | “J-one” | `hr-000`, `hr-021` |
+| J2 | “J-two” | `hr-000`, `hr-021` |
 | J3 | “J-three” | `hr-021` |
 | J4 | “J-four” | `hr-021` |
 | MCJ1 | “M-C-J-one” | `hr-020` |
@@ -5460,17 +5594,22 @@ New lexicon terms: None
 
 - [x] Every Phase 2 screen has a card, same ids and order (36 of 36)
 - [x] Scored screens and total points match Phase 4 (15 scored, 145 points)
-- [x] Narration total within ±15% of the Phase 3 estimate (701 s vs 780 s → 90%)
-- [x] `review-checklist.md` run on every card (including section H, brand)
+- [x] Narration total within ±15% of the Phase 3 estimate (722 s vs 780 s → 93%)
+- [x] Every spoken line is prefixed `OMAR:` or `NOOR:`; Dr. Omar narrates every screen except the two Phase 3 Noor screens (`hr-031`, `hr-044`) and Noor's turns on `hr-000` and `hr-091`
+- [x] Companions visible only on the 8 screens in the Phase 3 companion table (8 of 36, under one in three); never over a question — `hr-031`/`hr-044` use the L5 scenario avatar, `hr-061` shows Omar only with the end-of-simulation feedback
+- [x] Two-voice screens (`hr-000`, `hr-091`) have 2 turns each and stay under 45 s; Omar's first-week story is used once, on `hr-001`; no other honest story is used in this module
+- [x] Tip card (`hr-061`, 15 words) differs from the spoken tip line; shared `char-noor-*` / `char-omar-*` assets only — no module-specific character art or character AI prompts
+- [x] `review-checklist.md` run on every card (including section H, brand, and section I, companions in narration)
 - [x] No `<angle bracket>` guidance text left (only `<hr-…>` asset placeholders remain)
-- [x] Every JSON block parses and validates against `core/project.py` models (36 of 36)
+- [x] Every JSON block parses and validates against `core/project.py` models (36 of 36) and states `id`, `type`, `node_id`, `points` and `objective_ids`
 - [x] `node_id`, `objective_ids` and `evidence_screen_ids` resolve; no dangling references
 - [x] Hotspot and simulation regions use `rect`/`circle` with the right coordinate arity
 - [x] No two adjacent screens share a type (stronger than the Phase 2 “no three in a row” rule)
-- [ ] Longest unscored run: 6 screens, `hr-014`→`hr-030`. Two of them need learner action (`hr-021` explore-all, `hr-023` flip), so the passive stretch is `hr-014` + `hr-020` + `hr-022` + `hr-030`. **Watch item for `lint_visual_plan`:** if it raises `passive_stretch`, apply the Phase 2 mitigation — move the `hr-030` ethics summary into the `intro_html` of `hr-031` and drop `hr-030` (a plan change).
+- [x] Longest unscored run: 6 screens, `hr-014`→`hr-030`. Two of them need learner action (`hr-021` explore-all, `hr-023` flip), so the passive stretch is `hr-014` + `hr-020` + `hr-022` + `hr-030`. **Watch item for `lint_visual_plan`:** if it raises `passive_stretch`, apply the Phase 2 mitigation — move the `hr-030` ethics summary into the `intro_html` of `hr-031` and drop `hr-030` (a plan change). **v0.2 result:** `lint_visual_plan` raises no `passive_stretch` (0 errors, 0 warnings — [`lint-report.json`](lint-report.json)), so no plan change is needed.
 
 **Carried forward to the next phase**
 
 - Every `⚠ PENDING` marker resolves to a Phase 0 item id and is listed above.
 - `hr-061` cannot be built until **B8** supplies test-account Oracle screenshots.
+- Shipping audio waits for program **D10** (Noor and Dr. Omar voices) and the 30-second voice samples; the v0.1 clips in `audio/` are single-voice reference reads only.
 - The `HR Quick Reference` PDF (`hr-pdf-quickref`) does not exist yet; HR writes it from confirmed policy.

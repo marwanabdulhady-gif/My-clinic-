@@ -1,0 +1,210 @@
+{
+  "module_id": "MC07-clinical-governance",
+  "language": "en",
+  "wpm": 140,
+  "voice": {
+    "provider": "external",
+    "voice_id": null,
+    "persona": "Noor (lead host, senior staff nurse and patient-safety liaison) and Dr. Omar (co-host, family physician) — fixed programme voices, provider pending D10",
+    "gender": null
+  },
+  "lexicon": {
+    "NOOR": "noor",
+    "OMAR": "OH-mar",
+    "Noor": "noor",
+    "Omar": "OH-mar",
+    "IPSG": "I-P-S-G",
+    "FOCUS-PDCA": "focus, P-D-C-A",
+    "MRN": "medical record number",
+    "DOB": "date of birth",
+    "JCI": "J-C-I",
+    "CBAHI": "see-bah-hee",
+    "WHO": "W-H-O"
+  },
+  "segments": [
+    {
+      "screen_id": "qsr-000",
+      "part": "noor",
+      "narration": "NOOR: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting.",
+      "on_screen_text": "Subtitle: Quality, patient safety and risk · Module 07 · Caring",
+      "target_sec": 12.0,
+      "tone": "Warm, steady"
+    },
+    {
+      "screen_id": "qsr-001",
+      "part": "noor",
+      "narration": "NOOR: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.",
+      "on_screen_text": "SECTION 1 OF 7 · “Doing the right things right — the first time, and every time.” ⚠ PENDING B1",
+      "target_sec": 25.0,
+      "tone": "Calm, confident"
+    },
+    {
+      "screen_id": "qsr-002",
+      "part": "noor",
+      "narration": "NOOR: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.",
+      "on_screen_text": "Have you ever noticed something unsafe at work and not said anything? · Anonymous response handling ⚠ PENDING NEW-01",
+      "target_sec": 10.0,
+      "tone": "Warm, honest, non-judgemental"
+    },
+    {
+      "screen_id": "qsr-010",
+      "part": "noor",
+      "narration": "NOOR: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.",
+      "on_screen_text": "Structure → Process → Outcome · Collect valid, reliable data · FOCUS-PDCA improvement cycle ⚠ PENDING B11",
+      "target_sec": 35.0,
+      "tone": "Clear, explanatory"
+    },
+    {
+      "screen_id": "qsr-011",
+      "part": "noor",
+      "narration": "NOOR: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.",
+      "on_screen_text": "Resources · Actions carried out · Patient results",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-012",
+      "part": "noor",
+      "narration": "NOOR: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step.",
+      "on_screen_text": "Nine steps · One repeating cycle · Exact wording ⚠ PENDING B11",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-020",
+      "part": "noor",
+      "narration": "NOOR: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.",
+      "on_screen_text": "Identification · Communication · High-alert medication · Safe procedures · Hand hygiene · Fall prevention ⚠ PENDING B3",
+      "target_sec": 30.0,
+      "tone": "Clear, practical"
+    },
+    {
+      "screen_id": "qsr-021",
+      "part": "noor",
+      "narration": "NOOR: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.",
+      "on_screen_text": "Two fictional records share one full name. Verify before care. ⚠ PENDING B4",
+      "target_sec": 15.0,
+      "tone": "Serious, warm"
+    },
+    {
+      "screen_id": "qsr-022",
+      "part": "noor",
+      "narration": "NOOR: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.",
+      "on_screen_text": "Match each daily practice to one goal. ⚠ PENDING B3–B5",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-023",
+      "part": "noor",
+      "narration": "NOOR: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.",
+      "on_screen_text": "Order the hand-hygiene moments. ⚠ PENDING B10",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-030",
+      "part": "noor",
+      "narration": "NOOR: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score.",
+      "on_screen_text": "Identify · Assess · Manage · Monitor · Report",
+      "target_sec": 8.0,
+      "tone": "Practical"
+    },
+    {
+      "screen_id": "qsr-031",
+      "part": "omar",
+      "narration": "OMAR: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.",
+      "on_screen_text": "Hypothetical case · Impact 4 × likelihood 3 = 12 · Band ⚠ PENDING B6 · Responses: Reduce · Transfer · Accept · Avoid ⚠ PENDING B7",
+      "target_sec": 40.0,
+      "tone": "Calm, explanatory, conversational"
+    },
+    {
+      "screen_id": "qsr-032",
+      "part": "noor",
+      "narration": "NOOR: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.",
+      "on_screen_text": "Impact 5 × likelihood 2 = ___ · Band: ___ ⚠ PENDING B6",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-033",
+      "part": "noor",
+      "narration": "NOOR: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.",
+      "on_screen_text": "Reduce · Transfer · Accept · Avoid — wording ⚠ PENDING B7",
+      "target_sec": 8.0,
+      "tone": "Encouraging"
+    },
+    {
+      "screen_id": "qsr-040",
+      "part": "omar",
+      "narration": "OMAR: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.",
+      "on_screen_text": "Critical / sentinel event · Adverse event · Near miss — terms ⚠ PENDING B8",
+      "target_sec": 35.0,
+      "tone": "Serious, reassuring"
+    },
+    {
+      "screen_id": "qsr-041",
+      "part": "noor",
+      "narration": "NOOR: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.",
+      "on_screen_text": "Critical / sentinel · Adverse · Near miss ⚠ PENDING B8",
+      "target_sec": 8.0,
+      "tone": "Serious, neutral"
+    },
+    {
+      "screen_id": "qsr-042",
+      "part": "noor",
+      "narration": "NOOR: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.",
+      "on_screen_text": "“If you report a near miss you caused, you will be disciplined.” ⚠ PENDING B8",
+      "target_sec": 8.0,
+      "tone": "Reassuring, careful"
+    },
+    {
+      "screen_id": "qsr-050",
+      "part": "noor",
+      "narration": "NOOR: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.",
+      "on_screen_text": "Report: clinical + non-clinical events · When: 24 hours ⚠ PENDING B9/D8 · Where: digital form or email ⚠ PENDING B9 · System review follows",
+      "target_sec": 35.0,
+      "tone": "Clear, practical"
+    },
+    {
+      "screen_id": "qsr-051",
+      "part": "noor",
+      "narration": "NOOR: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.",
+      "on_screen_text": "Fictional near miss · Choose whether, when and where to report · ⚠ PENDING B8/B9/D8",
+      "target_sec": 15.0,
+      "tone": "Serious, supportive"
+    },
+    {
+      "screen_id": "qsr-090",
+      "part": "noor",
+      "narration": "NOOR: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.",
+      "on_screen_text": "Results by objective · Review any area below threshold",
+      "target_sec": 10.0,
+      "tone": "Neutral, encouraging"
+    },
+    {
+      "screen_id": "qsr-091",
+      "part": "noor",
+      "narration": "NOOR: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.",
+      "on_screen_text": "What will you say the next time you notice something unsafe?",
+      "target_sec": 8.0,
+      "tone": "Warm, practical"
+    },
+    {
+      "screen_id": "qsr-092",
+      "part": "noor-1",
+      "narration": "NOOR: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.",
+      "on_screen_text": "Measure quality · apply patient-safety goals · score risk and classify events · follow reporting workflow · approved links ⚠ PENDING B3/B9",
+      "target_sec": 13.0,
+      "tone": "Warm, steady"
+    },
+    {
+      "screen_id": "qsr-092",
+      "part": "omar-1",
+      "narration": "OMAR: And remember, you're the final layer of protection. When you see something, say something.",
+      "on_screen_text": "Measure quality · apply patient-safety goals · score risk and classify events · follow reporting workflow · approved links ⚠ PENDING B3/B9",
+      "target_sec": 7.0,
+      "tone": "Encouraging, firm"
+    }
+  ]
+}

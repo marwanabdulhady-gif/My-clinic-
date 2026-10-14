@@ -1,14 +1,22 @@
 # Narration audio — 03 Welcome On Board
 
-Reference narration for the module, generated so the course team can hear the voice and judge
-pacing before committing to a TTS provider or booking voice talent.
+> **Superseded reference reads — not the companion voices.** These 10 clips were made from the
+> v0.1 single-narrator script, before the course companions existed. Storyboard **v0.2**
+> (2026-10-14) splits the narration between **Dr. Omar** (lead host, 35 lines) and **Noor**
+> (co-host, 4 lines) — see [`../narration-script.json`](../narration-script.json),
+> [`../voice_talent.md`](../voice_talent.md) and
+> [`../../../00_program/characters/companions.md`](../../../00_program/characters/companions.md) §5.
+> The clips are kept only as a pacing and pronunciation reference. **Do not ship them**, and do not
+> treat their voice as Noor's or Dr. Omar's: the two companion voices are still open under program
+> decision **D10**, and each needs an approved 30-second sample before production.
 
-**This is a reference read, not the shipping audio.** The plan's voice route is still open
-(program decision **D10**): external English TTS for release 1, or a human voice for the welcome
-screens (phase-3 §1). Whatever is chosen, one voice is used across all eight packages and every
-file goes through `normalize_audio_asset` so loudness matches.
+What changed since these clips were made: every line now has a speaker (`OMAR:` / `NOOR:`);
+`hr-000` and `hr-091` are two-voice screens (Omar then Noor, joined with 0.3 s silence);
+`hr-001` ends with Omar's first-week story; `hr-031` and `hr-044` are Noor's; `hr-061` has an extra
+Omar tip line played with the end-of-simulation feedback. The `hr-001` and `hr-091` clips below
+therefore no longer match the script.
 
-## Voice used for this reference
+## Voice used for this reference (v0.1, superseded)
 
 | Field | Value |
 |---|---|
@@ -36,13 +44,12 @@ the module's voice rather than just the longest scripts.
 | `MC03-welcome-on-board_hr-080.mp3` | `hr-080` | I · Contracts & leaving | 23.5 |
 | `MC03-welcome-on-board_hr-091.mp3` | `hr-091` | Z · Close | 27.0 |
 
-**Not yet generated:** the other 26 screens. Those are mostly short question set-ups (6–15 s each).
-Say the word and I'll produce them in the next run.
+**Not generated, and not planned in this voice:** the other 26 screens. Shipping audio for all 36 screens is produced in the two companion voices once D10 closes.
 
 ## How these were generated
 
-Each clip is the `tts_text` from
-[`../audio-script-export.json`](../audio-script-export.json), i.e. the narration **with the
+Each clip is the `tts_text` from the **v0.1** version of
+[`../audio-script-export.json`](../audio-script-export.json) (since replaced by the v0.2 two-voice export), i.e. the narration **with the
 pronunciation lexicon applied**. That's deliberate: it's the text that would actually be sent to a
 TTS provider, so listening is a real test of the lexicon.
 
@@ -63,9 +70,10 @@ If any of them comes out as “H dash R” or similar, change the entry to a spe
 
 ## Pacing
 
-The full module is 1,590 words ≈ **705 s (11 min 45 s)** at 140 wpm, against the Phase 3 estimate
-of 13 minutes — 91%, inside the ±15% tolerance. `lint_narration_script` reports **0 errors, 0
-warnings**, so no segment runs past 60 s and every screen is within 15% of its own target.
+v0.1 (these clips): 1,590 words ≈ 705 s. v0.2 script: 1,628 words (speaker labels excluded) ≈ 722 s
+(12 min) at 140 wpm against the Phase 3 estimate of 13 minutes — inside the ±15% tolerance.
+`lint_narration_script` on the v0.2 script reports **0 errors, 0 warnings**
+([`../lint-report.json`](../lint-report.json)).
 
 ## Note on the repo convention
 
