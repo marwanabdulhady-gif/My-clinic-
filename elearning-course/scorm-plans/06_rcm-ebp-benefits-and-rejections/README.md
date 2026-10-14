@@ -25,11 +25,15 @@ The 2026 deck adds two things the script doesn't have: the **Added & Amended ben
 |---|---|
 | 0 — Source lock | [phase-0-source-lock.md](phase-0-source-lock.md) |
 | 1 — Action map & objectives | [phase-1-action-map.md](phase-1-action-map.md) |
-| 2 — Storyboard | [phase-2-storyboard.md](phase-2-storyboard.md) |
+| 2a — Screen list | [phase-2-storyboard.md](phase-2-storyboard.md) |
+| 2b — Screen-by-screen review storyboard | [storyboard/storyboard.md](storyboard/storyboard.md) · [visual review](storyboard/screen-visuals.html) |
+| 3 review artefacts | [narration script](storyboard/narration-script.json) · [visual plan](storyboard/visual-plan.json) · [asset register](storyboard/asset-register.md) · [planning lint report](storyboard/lint-report.json) |
 | 3 — Narration & assets | [phase-3-narration-and-assets.md](phase-3-narration-and-assets.md) |
 | 4 — Build | [phase-4-build.md](phase-4-build.md) |
 | 5 — QA & delivery | [phase-5-qa-and-delivery.md](phase-5-qa-and-delivery.md) |
 
 ## Current status
+
+> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package.
 
 **Blocked on Phase 0**: deck date/version, regulator name (D4), every EBP benefit and limit checked against the official EBP document, anonymised rejection data (D5).

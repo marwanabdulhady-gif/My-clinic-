@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC06-rcm-ebp-benefits-rejections",
+    "screen_count": 15,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC06-rcm-ebp-benefits-rejections",
+    "wpm": 140,
+    "total_est_sec": 281.1,
+    "total_est_min": 4.7,
+    "screens": [
+      {
+        "screen_id": "rcmb-000",
+        "part": null,
+        "words": 31,
+        "est_sec": 13.3
+      },
+      {
+        "screen_id": "rcmb-001",
+        "part": null,
+        "words": 73,
+        "est_sec": 31.3
+      },
+      {
+        "screen_id": "rcmb-010",
+        "part": null,
+        "words": 24,
+        "est_sec": 10.3
+      },
+      {
+        "screen_id": "rcmb-020",
+        "part": null,
+        "words": 89,
+        "est_sec": 38.1
+      },
+      {
+        "screen_id": "rcmb-021",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "rcmb-030",
+        "part": null,
+        "words": 81,
+        "est_sec": 34.7
+      },
+      {
+        "screen_id": "rcmb-031",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "rcmb-040",
+        "part": null,
+        "words": 102,
+        "est_sec": 43.7
+      },
+      {
+        "screen_id": "rcmb-041",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "rcmb-050",
+        "part": null,
+        "words": 72,
+        "est_sec": 30.9
+      },
+      {
+        "screen_id": "rcmb-051",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "rcmb-052",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "rcmb-060",
+        "part": null,
+        "words": 23,
+        "est_sec": 9.9
+      },
+      {
+        "screen_id": "rcmb-090",
+        "part": null,
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "rcmb-091",
+        "part": null,
+        "words": 50,
+        "est_sec": 21.4
+      }
+    ],
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
+}

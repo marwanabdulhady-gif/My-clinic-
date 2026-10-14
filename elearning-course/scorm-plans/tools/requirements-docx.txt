@@ -1,0 +1,4 @@
+# Optional dependencies for export_storyboard_docx.py
+# Install with: python3 -m pip install -r elearning-course/scorm-plans/tools/requirements-docx.txt
+python-docx>=1.1,<2
+Pillow>=10,<13

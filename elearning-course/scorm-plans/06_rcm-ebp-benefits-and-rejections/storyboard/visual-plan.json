@@ -1,0 +1,438 @@
+{
+  "module_id": "MC06-rcm-ebp-benefits-rejections",
+  "module_title": "My Clinic — RCM Part B: New EBP Benefits & Claim-Rejection Analysis",
+  "brand_name": "My Clinic",
+  "audience": "Physicians and RCM staff",
+  "objective": "See the approved Phase 1 observable objectives; each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "rcmb-000",
+      "screen_type": "title_slide",
+      "purpose": "Open",
+      "visual_concept": "Official navy title gradient with supplied white My Clinic logo, large Montserrat course title, and a cropped white petal watermark. Omar is placed l1 half-body bottom-right.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "Official navy title background supplied by My Clinic; no content is baked into it.",
+          "source": "client",
+          "alt_text": "Decorative navy title gradient.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal white logo lock-up.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-welcome at L1 half-body bottom-right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"What's new in the EBP — and why claims get rejected\" · \"RCM Part B\" · policy effective date (B1)",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-001",
+      "screen_type": "content_slide",
+      "purpose": "Frame",
+      "visual_concept": "A clean My Clinic content stage for frame, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "The EBP added new benefits and amended others · Coverage depends on the table of benefits and the documentation · Partial coverage ≠ full approval",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-010",
+      "screen_type": "drag_drop",
+      "purpose": "Sort the benefits",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for sort the benefits.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course.",
+          "source": "svg",
+          "alt_text": "A set of generic line icons for health benefits.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcmb-img-benefit-icons: Line icons per benefit",
+          "source": "svg",
+          "alt_text": "decorative",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Cards: prevention exams · STDs · adult vaccination · home care for inpatients · temporary contraception · telemedicine · menopause/perimenopause cover · kidney transplant · diabetes programme → Added; mental health · optical · congenital anomalies · dental · dialysis …",
+      "animation": "none",
+      "interaction": "Feedback per card",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-020",
+      "screen_type": "tabs",
+      "purpose": "What's covered",
+      "visual_concept": "A white content stage for what's covered, with one open item at a time, navy structure, and a Collaborative burgundy #7C0041 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course.",
+          "source": "svg",
+          "alt_text": "A set of generic line icons for health benefits.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Early exams: mammogram · Pap smear · FIT/colonoscopy · dietary counselling (risk criteria, B7) · FBS/HbA1c · lipids · DEXA · Adult vaccines: Tdap · PCV13 · PPSV23 · influenza · STDs: treatment whatever the mode of infection (list)",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-021",
+      "screen_type": "mcq",
+      "purpose": "Apply",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for apply.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"A 52-year-old with BMI 32 and high cholesterol asks for help with diet to lower her heart risk.\" → covered behavioural/dietary consultation; document BMI and risk factors (B7)",
+      "animation": "none",
+      "interaction": "Distractors explain what's missing",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-030",
+      "screen_type": "accordion",
+      "purpose": "Mental-health benefit",
+      "visual_concept": "A white content stage for mental-health benefit, with one open item at a time, navy structure, and a Collaborative burgundy #7C0041 active-state cue. Noor is placed l3 tip card.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Included conditions (9) · Excluded: hypnosis, rehabilitation · Limit per policy period (B5) · Pre-authorisation for sub-limit services · Document: indication, link symptoms to a valid psychiatric diagnosis, justify referral",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-031",
+      "screen_type": "true_false",
+      "purpose": "Exclusion",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for exclusion.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Hypnosis for alcohol use is covered under the mental-health benefit.\" → False",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-040",
+      "screen_type": "tabs",
+      "purpose": "Five benefits",
+      "visual_concept": "A white content stage for five benefits, with one open item at a time, navy structure, and a Collaborative burgundy #7C0041 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course.",
+          "source": "svg",
+          "alt_text": "A set of generic line icons for health benefits.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Home care for inpatients (wound care, IV meds, catheter care) · Telemedicine (MOH-licensed centre, CHI rules) · Diabetes 360° programme (team + specialist visits) · Women's health (menopausal/perimenopausal hormone therapy) + family planning (hormonal contraceptives, IUD) · Kidney transplant (limit …",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-041",
+      "screen_type": "matching",
+      "purpose": "Key condition or limit",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for key condition or limit.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Mental health ↔ sub-limit per policy period + pre-auth · Kidney transplant ↔ up to the policy limit · Telemedicine ↔ MOH-licensed centre · Home care ↔ after an inpatient stay (wound/IV/catheter) · Family planning ↔ hormonal contraceptives and IUDs …",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-050",
+      "screen_type": "content_slide",
+      "purpose": "Read a log",
+      "visual_concept": "A clean My Clinic content stage for read a log, using a navy header, concise keyword cards and one Collaborative burgundy #7C0041 highlight. Omar is placed l3 right column.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers",
+          "source": "svg",
+          "alt_text": "A log visual.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-explaining at L3 right column.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Rebuilt HTML table, 8 rows, invented claim ids (B8): diagnosis · service · rejection comment. Comments drawn from slide 6: \"pain, unspecified\" · \"fever\" · \"requires pre-authorisation as per policy\" · \"consultation within the free follow-up period\" · \"radiology: two …",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-051",
+      "screen_type": "drag_drop",
+      "purpose": "Classify",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for classify.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "The 8 comments → Documentation · Coding · Policy / pre-auth · Timing / follow-up period · Billing process (categories per B9)",
+      "animation": "none",
+      "interaction": "Feedback explains the cause and the fix",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-052",
+      "screen_type": "decision_scenario",
+      "purpose": "Rework",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Collaborative burgundy #7C0041 progress cue for rework. Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Claim rejected: \"Fever — non-specific diagnosis\". Node 1: resubmit unchanged / bill again / review the note ✔. Node 2: the note shows fever 3 days, dysuria, positive urinalysis → add specific/provisional diagnosis and findings ✔ vs add a second …",
+      "animation": "none",
+      "interaction": "Feedback ties back to Part A",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-060",
+      "screen_type": "adaptive_practice",
+      "purpose": "Covered or not?",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Collaborative burgundy #7C0041 progress cue for covered or not?.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Bank of 15 patient requests across all benefits (e.g. adult influenza vaccine; PCOS hormonal panel; telemedicine follow-up from an unlicensed app; IUD insertion; home IV antibiotics after discharge; bipolar disorder management; hypnosis; DEXA for a postmenopausal woman). max_items 8, target_success …",
+      "animation": "none",
+      "interaction": "Per-item feedback with the rule",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-090",
+      "screen_type": "results_breakdown",
+      "purpose": "Results",
+      "visual_concept": "A calm results panel showing each objective as an HTML progress row, with plain-language next steps and a small companion feedback card.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "rcmb-o1…o3",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "rcmb-091",
+      "screen_type": "summary",
+      "purpose": "Close",
+      "visual_concept": "A confident light closing screen with four short takeaways, the supplied My Clinic logo, and space for the next-module hand-off. Omar + Noor is placed l6.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "rcmb-pdf-ebp: One-page EBP summary from the official document (B3), approved by payer relations",
+          "source": "svg",
+          "alt_text": "Close visual.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-success + char-noor-avatar-happy at L6.",
+          "source": "client",
+          "alt_text": "Omar + Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Know what's new · Document to the benefit's criteria · Check limits and pre-auth · Rework, don't resubmit · Link: EBP one-page summary (PDF)",
+      "animation": "fade-up",
+      "interaction": "show_score",
+      "cue_targets": []
+    }
+  ]
+}

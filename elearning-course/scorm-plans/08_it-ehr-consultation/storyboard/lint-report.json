@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC08-ehr-consultation",
+    "screen_count": 20,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC08-ehr-consultation",
+    "wpm": 140,
+    "total_est_sec": 306.3,
+    "total_est_min": 5.1,
+    "screens": [
+      {
+        "screen_id": "ehr-000",
+        "part": null,
+        "words": 28,
+        "est_sec": 12.0
+      },
+      {
+        "screen_id": "ehr-001",
+        "part": null,
+        "words": 57,
+        "est_sec": 24.4
+      },
+      {
+        "screen_id": "ehr-002",
+        "part": null,
+        "words": 67,
+        "est_sec": 28.7
+      },
+      {
+        "screen_id": "ehr-010",
+        "part": null,
+        "words": 24,
+        "est_sec": 10.3
+      },
+      {
+        "screen_id": "ehr-011",
+        "part": null,
+        "words": 61,
+        "est_sec": 26.1
+      },
+      {
+        "screen_id": "ehr-012",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ehr-020",
+        "part": null,
+        "words": 48,
+        "est_sec": 20.6
+      },
+      {
+        "screen_id": "ehr-030",
+        "part": null,
+        "words": 59,
+        "est_sec": 25.3
+      },
+      {
+        "screen_id": "ehr-031",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "ehr-032",
+        "part": null,
+        "words": 25,
+        "est_sec": 10.7
+      },
+      {
+        "screen_id": "ehr-033",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ehr-034",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ehr-040",
+        "part": null,
+        "words": 24,
+        "est_sec": 10.3
+      },
+      {
+        "screen_id": "ehr-041",
+        "part": null,
+        "words": 30,
+        "est_sec": 12.9
+      },
+      {
+        "screen_id": "ehr-042",
+        "part": null,
+        "words": 47,
+        "est_sec": 20.1
+      },
+      {
+        "screen_id": "ehr-050",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "ehr-051",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "ehr-052",
+        "part": null,
+        "words": 44,
+        "est_sec": 18.9
+      },
+      {
+        "screen_id": "ehr-090",
+        "part": null,
+        "words": 21,
+        "est_sec": 9.0
+      },
+      {
+        "screen_id": "ehr-091",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      }
+    ],
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
+}

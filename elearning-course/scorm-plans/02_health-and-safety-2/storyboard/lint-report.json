@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-10-14",
+  "tool": "edumints-scorm-mcp core.playbook",
+  "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
+  "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "model_validation": {
+    "visual_plan": true,
+    "narration_script": true
+  },
+  "visual_plan": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC02-safety-in-practice",
+    "screen_count": 26,
+    "issues": []
+  },
+  "narration_script": {
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "module_id": "MC02-safety-in-practice",
+    "wpm": 140,
+    "total_est_sec": 400.9,
+    "total_est_min": 6.7,
+    "screens": [
+      {
+        "screen_id": "hs2-000",
+        "part": null,
+        "words": 30,
+        "est_sec": 12.9
+      },
+      {
+        "screen_id": "hs2-001",
+        "part": null,
+        "words": 47,
+        "est_sec": 20.1
+      },
+      {
+        "screen_id": "hs2-010",
+        "part": null,
+        "words": 103,
+        "est_sec": 44.1
+      },
+      {
+        "screen_id": "hs2-011",
+        "part": null,
+        "words": 37,
+        "est_sec": 15.9
+      },
+      {
+        "screen_id": "hs2-012",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-013",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-020",
+        "part": null,
+        "words": 58,
+        "est_sec": 24.9
+      },
+      {
+        "screen_id": "hs2-030",
+        "part": null,
+        "words": 50,
+        "est_sec": 21.4
+      },
+      {
+        "screen_id": "hs2-031",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-032",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-033",
+        "part": null,
+        "words": 59,
+        "est_sec": 25.3
+      },
+      {
+        "screen_id": "hs2-040",
+        "part": null,
+        "words": 45,
+        "est_sec": 19.3
+      },
+      {
+        "screen_id": "hs2-041",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-050",
+        "part": null,
+        "words": 56,
+        "est_sec": 24.0
+      },
+      {
+        "screen_id": "hs2-051",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "hs2-052",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-053",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-060",
+        "part": null,
+        "words": 81,
+        "est_sec": 34.7
+      },
+      {
+        "screen_id": "hs2-061",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-062",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-063",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-064",
+        "part": null,
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "hs2-070",
+        "part": null,
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs2-080",
+        "part": null,
+        "words": 29,
+        "est_sec": 12.4
+      },
+      {
+        "screen_id": "hs2-081",
+        "part": null,
+        "words": 19,
+        "est_sec": 8.1
+      },
+      {
+        "screen_id": "hs2-090",
+        "part": null,
+        "words": 52,
+        "est_sec": 22.3
+      }
+    ],
+    "issues": []
+  },
+  "production_note": "Planning lint only. Phase 0 approval, asset QA, type-specific build JSON and SCORM QA remain required."
+}

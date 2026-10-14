@@ -1,0 +1,40 @@
+{
+  "name": "My Clinic",
+  "language": "en",
+  "colors": {
+    "primary": "#003867",
+    "secondary": "#008C99",
+    "accent": "#9D3293",
+    "dark": "#1F2A37",
+    "light": "#F4F7FA",
+    "surface": "#FFFFFF",
+    "success": "#1E7B4F",
+    "error": "#B42318",
+    "warning": "#8A5A00"
+  },
+  "fonts": {
+    "heading": "Montserrat",
+    "body": "Montserrat",
+    "arabic": "Tajawal"
+  },
+  "logo_asset_id": "brand-logo-horizontal-navy",
+  "logo_alt": "My Clinic logo",
+  "imagery_style": "Clean flat vector illustration in the My Clinic palette: navy outlines, white space, one module colour as a highlight, no gradients, no text and no logos. Diagrams use editable SVG or HTML; EHR screenshots use a test account only.",
+  "voice": {
+    "tone": "warm, calm, precise",
+    "persona": "an experienced colleague coaching a new team member in their first week",
+    "formality": "conversational"
+  },
+  "do": [
+    "Use supplied logo PNGs exactly",
+    "Use Montserrat",
+    "Keep real wording as HTML",
+    "Use colour with labels and icons"
+  ],
+  "dont": [
+    "Never generate the My Clinic logo",
+    "No patient or staff data",
+    "No third-party watermark",
+    "No small white text on teal"
+  ]
+}

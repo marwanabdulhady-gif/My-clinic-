@@ -1,0 +1,420 @@
+{
+  "module_id": "MC04-operations-my-care",
+  "module_title": "My Clinic — Who Does What: Operations & My Care",
+  "brand_name": "My Clinic",
+  "audience": "Front-line, PX and clinical staff",
+  "objective": "See the approved Phase 1 observable objectives; each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "ops-000",
+      "screen_type": "title_slide",
+      "purpose": "Open",
+      "visual_concept": "Official navy title gradient with supplied white My Clinic logo, large Montserrat course title, and a cropped white petal watermark. Omar is placed l1 half-body bottom-right.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "Official navy title background supplied by My Clinic; no content is baked into it.",
+          "source": "client",
+          "alt_text": "Decorative navy title gradient.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal white logo lock-up.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-welcome at L1 half-body bottom-right.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Who Does What\" · \"Operations & My Care\"",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-001",
+      "screen_type": "content_slide",
+      "purpose": "Why it matters",
+      "visual_concept": "A clean My Clinic content stage for why it matters, using a navy header, concise keyword cards and one Responsible magenta #9D3293 highlight. Omar is placed l3 right column.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-explaining at L3 right column.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"Right team, first time.\" · A patient shouldn't have to tell their story twice.",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-002",
+      "screen_type": "hotspot",
+      "purpose": "Patient journey",
+      "visual_concept": "A high-clarity central visual for patient journey, with large keyboard-reachable hotspot markers, a short instruction panel and no text baked into the image.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-journey: Generated native SVG.",
+          "source": "svg",
+          "alt_text": "Patient journey from booking to follow-up.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-journey: 6-stage horizontal journey, icons, team colour tags + text labels",
+          "source": "svg",
+          "alt_text": "\"Patient journey from booking to follow-up.\"",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Horizontal journey: Book → Arrive & register → Consult → Lab / Radiology / Pharmacy → Leave → Follow-up. Each stage shows which team leads (Operations, My Care or both)",
+      "animation": "fade-up",
+      "interaction": "Open all 6 stages",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-010",
+      "screen_type": "accordion",
+      "purpose": "Operations activities",
+      "visual_concept": "A white content stage for operations activities, with one open item at a time, navy structure, and a Responsible magenta #9D3293 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied",
+          "source": "svg",
+          "alt_text": "decorative",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "7 items from slide 2, each with one example (\"Recovery: a patient waited 40 minutes; the PX officer apologises and fixes the next visit\")",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-011",
+      "screen_type": "labeled_diagram",
+      "purpose": "Operations structure",
+      "visual_concept": "A clean My Clinic content stage for operations structure, using a navy header, concise keyword cards and one Responsible magenta #9D3293 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-ops-chart: Generated role-only draft SVG; SME approval B1 required.",
+          "source": "svg",
+          "alt_text": "Draft Operations role structure.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-ops-chart: Role-only Operations chart (from B1)",
+          "source": "svg",
+          "alt_text": "\"Operations structure by role.\"",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Redrawn role-only chart (B1): Director of Operations → PX & Operations Sr. Manager · Patient Access & PX Sr. Manager · Operations Sr. Manager → PX Managers → PXOs/FMs at sites J1–J4, PR1, VIP team, Check-Up Unit, In-Patient",
+      "animation": "fade-up",
+      "interaction": "Labels with one-line role description",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-020",
+      "screen_type": "accordion",
+      "purpose": "My Care activities",
+      "visual_concept": "A white content stage for my care activities, with one open item at a time, navy structure, and a Responsible magenta #9D3293 active-state cue.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied",
+          "source": "svg",
+          "alt_text": "decorative",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "7 items from slide 5, with DMP/CHP expanded (B3)",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-021",
+      "screen_type": "labeled_diagram",
+      "purpose": "My Care structure",
+      "visual_concept": "A clean My Clinic content stage for my care structure, using a navy header, concise keyword cards and one Responsible magenta #9D3293 highlight.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-mycare-chart: Generated role-only draft SVG; SME approval B2 required.",
+          "source": "svg",
+          "alt_text": "Draft My Care role structure.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "ops-img-mycare-chart: Role-only My Care chart (from B2)",
+          "source": "svg",
+          "alt_text": "\"My Care structure by role.\"",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Redrawn role-only chart (B2): Director of Operations → Patient Access & PX Sr. Manager → My Care Manager → Onboarding leaders, site leaders (J1; J2–J4) → Coordinators; QA leader",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-022",
+      "screen_type": "flashcards",
+      "purpose": "Abbreviations",
+      "visual_concept": "A white content stage for abbreviations, with one open item at a time, navy structure, and a Responsible magenta #9D3293 active-state cue. Noor is placed l3 tip card.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
+          "source": "client",
+          "alt_text": "Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "PXO · FM · Coord · DMP · CHP · HHC · PR1 · VIP team (B3)",
+      "animation": "fade-up",
+      "interaction": "Flip",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-030",
+      "screen_type": "drag_drop",
+      "purpose": "Sort the work",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Responsible magenta #9D3293 progress cue for sort the work.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "10 cards → Operations / My Care: lab TAT KPI · clinic look and feel · on-spot complaint at reception · end-to-end journey · support a doctor's inquiry · monthly follow-up call · insurance medication follow-up · hypertension programme booking …",
+      "animation": "none",
+      "interaction": "Feedback on each card; overlap items explained",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-031",
+      "screen_type": "decision_scenario",
+      "purpose": "Who do I call?",
+      "visual_concept": "A calm scenario stage with one decision at a time, spacious white choice cards, a navy header and a Responsible magenta #9D3293 progress cue for who do i call?. Omar is placed l5 avatar.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ops-img-reception-scenario: Generated 2026-10-14 — generic fictional scene; final routing remains subject to B7.",
+          "source": "generate",
+          "alt_text": "A patient talks to a patient-experience officer at a clinic reception desk.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ops-img-scenes-1..4: Reception, phone follow-up, insurance call, pharmacy queue",
+          "source": "generate",
+          "alt_text": "per scene",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar.",
+          "source": "client",
+          "alt_text": "Omar companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "4 nodes (routing per B7): (1) A patient at reception is upset that her lab result isn't ready → Operations / PX officer on site; (2) A diabetic patient asks who will remind him about his 3-month review → My …",
+      "animation": "none",
+      "interaction": "Each choice explains the owner and the role",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-032",
+      "screen_type": "mcq",
+      "purpose": "Escalation",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Responsible magenta #9D3293 progress cue for escalation.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "\"The PX officer can't resolve a complaint on the spot. Who is the next step?\" → site Patient Experience Manager (per B1)",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-033",
+      "screen_type": "matching",
+      "purpose": "Roles",
+      "visual_concept": "A focused question stage with a concise stem, generous white answer cards, a navy header and one Responsible magenta #9D3293 progress cue for roles.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "PXO ↔ \"patient experience on site\" · My Care Coordinator ↔ \"follow-ups and bookings\" · My Care Onboarding Leader ↔ \"enrols patients in My Care\" · Operations Sr. Manager ↔ \"daily operations\" · QA Leader ↔ \"quality of My Care …",
+      "animation": "none",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "ops-090",
+      "screen_type": "summary",
+      "purpose": "Close",
+      "visual_concept": "A confident light closing screen with four short takeaways, the supplied My Clinic logo, and space for the next-module hand-off. Omar + Noor is placed l6.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Approved program companion pose char-omar-success + char-noor-avatar-happy at L6.",
+          "source": "client",
+          "alt_text": "Omar + Noor companion guide supporting this learning moment.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Right team, first time · Link: live staff directory (intranet) · Next: module 05/06 (clinicians) or 08 (EHR)",
+      "animation": "fade-up",
+      "interaction": "show_score",
+      "cue_targets": []
+    }
+  ]
+}
