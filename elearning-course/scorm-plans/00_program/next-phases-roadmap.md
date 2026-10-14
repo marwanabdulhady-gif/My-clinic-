@@ -22,8 +22,14 @@ python3 elearning-course/scorm-plans/tools/normalise_narration.py               
 python3 elearning-course/scorm-plans/tools/lint_planning.py                        # must exit 0
 python3 elearning-course/scorm-plans/tools/build_scorm_structure.py                # structure + summary
 python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py               # client Word pack
+python3 elearning-course/scorm-plans/tools/build_decision_sheet.py                 # decision sheet (after any Phase 0 write-back)
+python3 elearning-course/scorm-plans/tools/export_kickoff_docx.py                  # kick-off pack Word document
 python3 elearning-course/scorm-plans/tools/audit_assets.py                         # must exit 0
 ```
+
+`build_decision_sheet.py` reads the Phase 0 files and `cross-module-decisions.md` and lists only
+**open** rows, so every decision written back removes itself from the sheet — the row count in the
+kick-off pack is the programme's live blocker count.
 
 ---
 
@@ -32,7 +38,7 @@ python3 elearning-course/scorm-plans/tools/audit_assets.py                      
 | # | Chunk | Unblocks | Depends on | Owner | Est. | Status |
 |---|---|---|---|---|---|---|
 | C0 | Tooling, audio schema, branded Word pack, audit | repeatable gates | — | agent | done | **PR #32** |
-| C1 | Phase 0 decision sheet + kick-off pack | everything | — | L2S + My Clinic | 2 d | open |
+| C1 | Phase 0 decision sheet + kick-off pack | everything | — | L2S + My Clinic | done | **PR #33** · sheet ready, kick-off not yet booked |
 | C2 | SME build-detail closure, modules 01–02 | 01–02 Phase 4 fields | C1 | Safety SME + L&D | 3 d | open |
 | C3 | SME build-detail closure, modules 03–04 | 03–04 Phase 4 fields | C1 | HR/Ops SME + L&D | 2 d | open |
 | C4 | SME build-detail closure, modules 05–06 | 05–06 Phase 4 fields | C1 | RCM SME + L&D | 3 d | open |
@@ -56,19 +62,42 @@ Build order stays **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08** (learn
 
 ---
 
-## C1 — Phase 0 decision sheet and kick-off pack
+## C1 — Phase 0 decision sheet and kick-off pack — **shipped in PR #33** (2026-10-14)
 
 **Goal:** one page that lists every open decision with a named owner and a due date, so the
 kick-off meeting closes items instead of discovering them.
 
-**Steps**
-1. Merge the 14 programme decisions (D1–D14), every module B-item, `NEW-01` and the thin-objective
-   choices (G4) into `00_program/decision-sheet.md`: id, question, recommended answer where the
-   plans propose one, owner role, due date, where the decision must be written back.
-2. Attach the client-review pack (9 Word files), the review register CSV and proposal Rev01.
-3. Book the kick-off; record outcomes in the Phase 0 files the same day.
+**What is in the repo now**
 
-**Exit gate:** every row has owner + due date; `audit_assets.py` clean; pack sent.
+| Artefact | Contents | Regenerate with |
+|---|---|---|
+| [`decision-sheet.md`](decision-sheet.md) | **102 open rows** parsed from the eight `phase-0-source-lock.md` files, `cross-module-decisions.md` (D1–D14) and `scorm-structure-summary.json` (G4 thin objectives). Columns: ID, module(s), decision needed, recommended answer (draft), owner role, due date, write-back target, status. | `tools/build_decision_sheet.py` |
+| [`decision-sheet.csv`](decision-sheet.csv) | The same rows, for the owner to fill in and return | same |
+| [`kickoff-pack.md`](kickoff-pack.md) / [`kickoff-pack.docx`](kickoff-pack.docx) | **MC-KO-01 v0.1** — 90-minute run sheet, attendee-role→decision map, pre-reads, the same-day write-back procedure, what the room does *not* decide, then the decision sheet as an attachment | `tools/export_kickoff_docx.py` |
+
+**Due dates the sheet proposes** (kick-off K = Monday **2026-10-19**):
+
+- **2026-10-22 (K+3 wd)** — the **28 tier-1 rows**: Code Orange threshold, code names and extension
+  numbers, radiation dose bands, laser classes, waste-bin colours, spill procedure, licence/ethics
+  rules, incident-reporting wording, and the PHI/DPO items. Phase 3 media for those screens cannot
+  start before these close.
+- **2026-10-26 (K+5 wd)** — the **3 release-gating enablers**: D9 LMS/SCORM version, D10 voices,
+  D11 brand. These gate C6, C8 and every Phase 4 build chunk.
+- **2026-10-30 (end of week 2)** — the remaining **71 tier-2 module facts**: labels, codes, band
+  names, policy numbers and screen wording.
+
+**Still to do — owner actions, not agent work**
+
+1. Book the kick-off for 2026-10-19 and send `kickoff-pack.docx` with the invite, plus the nine
+   client-review Word files, `decision-sheet.csv` and proposal Rev01 (the pre-read list is §4 of the
+   pack).
+2. Run the meeting to the run sheet; each named owner confirms or replaces the recommended answer.
+3. The same day, write every decision into the file named in its **Write back to** column and set
+   the row to `Closed (date)`; rerun `build_decision_sheet.py` + `export_kickoff_docx.py` and the
+   closed rows drop out of the sheet.
+
+**Exit gate:** every row has owner + due date ✅ · `audit_assets.py` clean ✅ · pack sent ⬜ (owner,
+step 1 above).
 **Blocked by:** nothing — this is the chunk that unblocks the rest.
 
 ## C2–C5 — SME build-detail closure (52 register rows)
@@ -82,6 +111,13 @@ answers into Phase 2/Phase 4 and the cards; remove resolved `⚠ PENDING` marker
 owner's written decision exists; rerun the exit-gate chain; mark rows closed in the CSV.
 Module 07 additionally closes the three checks from the v0.2 review: companion beside the unscored
 poll (`qsr-002`), risk-matrix band names (B6) and the closing quote (B1).
+
+**Two lists, one owner.** The [decision sheet](decision-sheet.md) rows for the pair (`01/*` + `02/*`
+for C2, and so on) carry the *facts* the SME must confirm; the register rows carry the *build
+detail* behind them. Run them in the same session, write both answers into the Phase 0/Phase 4
+files, then rerun `build_decision_sheet.py` + `export_kickoff_docx.py` so the closed rows drop out
+of the pack the client holds. The module 07 poll check is sheet row `07/P01`; its band names are
+`07/B6` and its closing quote is `07/B1`.
 
 **Exit gate:** register shows 0 open rows for the pair; `lint_planning.py` and `audit_assets.py`
 exit 0; `scorm-structure.md` regenerated.
@@ -158,7 +194,8 @@ maintenance triggers), and the Rev01 → as-built reconciliation table.
 
 ## Issue index (opened 2026-10-14)
 
-C0 shipped as [PR #32](https://github.com/marwanabdulhady-gif/My-clinic-/pull/32).
+C0 shipped as [PR #32](https://github.com/marwanabdulhady-gif/My-clinic-/pull/32) (merged);
+C1 shipped as [PR #33](https://github.com/marwanabdulhady-gif/My-clinic-/pull/33).
 
 | Chunk | Issue |
 |---|---|
