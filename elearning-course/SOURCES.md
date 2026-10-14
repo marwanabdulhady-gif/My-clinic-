@@ -40,4 +40,4 @@ Folder IDs: HR `1kmAUzAp9SQNvUYG1vl2qApUz7-DI9yJK`, Health & Safety `1DIXItxHIiU
 ## Notes
 
 - The Quality MP4 is committed. The IT MP4 is held back until it is anonymised (see README item 18); re-download it from the Drive ID above when needed.
-- The Markdown modules describe the videos from a low-accuracy offline transcript and keyframes. Re-check the videos before publishing.
+- The Markdown modules describe the videos from 5-second screenshots, OCR, and a low-accuracy offline transcript (Quality). Re-check the videos before publishing.

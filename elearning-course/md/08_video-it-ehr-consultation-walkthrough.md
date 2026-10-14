@@ -6,7 +6,7 @@
 > **Last modified in Drive:** 2026-10-07
 > **Inspection method:**
 > - **Audio check:** the audio track measures **−91 dB throughout** (silent). There is **no narration** in this video. All instructions come from **on-screen captions**.
-> - **Visuals:** 52 screenshots sampled every 10 s. 42 are committed in `media/08_it-ehr-walkthrough/` with a time-coded index in `FRAME_INDEX.md`; 10 were withheld because they show a patient record with personal identifiers. Captions were read from the frames with OCR (RapidOCR).
+> - **Visuals:** 104 screenshots sampled every 5 s. 69 are committed in `media/08_it-ehr-walkthrough/` (`tSSSSs.jpg`); 35 were withheld because they show personal identifiers. The 10-second chunk log is `CHUNKS_10s.md`. On-screen text was read with OCR (RapidOCR) and checked by hand.
 > - **Patient data:** most of the video uses a test record ("Test Simplified Template Launch"). **However, about 1 minute (5:10–6:10) shows a second, non-test patient record** with name, date of birth, record numbers and a radiology report, and 7:10–7:20 and 8:30 show a phone number and an ID number. Those frames are withheld from the repo. Anonymise the recording before any external use.
 
 ---
@@ -77,3 +77,29 @@ By the end of the module, a clinician should be able to:
 6. **Accessibility:** captions are visual only. Add captions/subtitles and narration.
 7. **Version control:** the screens reflect a specific build. Confirm the EHR version before publishing and re-record after any UI change.
 8. **Interactive candidates:** "find the mandatory fields" click-through (00:30 and 07:30), ICD-10 search exercise (01:00), order-to-diagnosis linking drill (03:30–04:30), consultation-summary checklist (06:30–07:30), referral and follow-up set-up (08:00).
+
+---
+
+## 5. Detailed pass by minute (second review)
+
+Full 10-second log: `media/08_it-ehr-walkthrough/CHUNKS_10s.md`. Windows 5:00–7:40 and 8:30–8:38 are **withheld** because they contain personal identifiers; they are summarised at workflow level only.
+
+| Time | Phase | What happens on screen |
+|---|---|---|
+| 0:00–0:30 | Sign in and find the patient | Login with a test user account. The consultation list shows the day's patients, and the test patient is opened. |
+| 0:30–1:10 | Consultation form | Save the basic information and chief complaint. The "Record saved successfully" message appears. The history, past medical history, physical examination and plan-of-care sections are completed. |
+| 1:10–1:40 | Diagnosis | Search for the diagnosis by ICD-10 code or name. Select E11 (type 2 diabetes mellitus) and mark it as the primary problem. Open the consultation summary tab. |
+| 1:40–4:50 | Orders | Open order entry and search by service, item, referral package or order profile. Orders covered: a CBC and TSH (labs), an ECG, a lornoxicam injection (IM/IV), a diclofenac sachet (added to favourites), vitamin D and a hair package (Form Wizard, step 1 of 6), Fevadol (non-formulary: approval needed), and Augmentin. Banners confirm each order ("Ordered successfully") and the screen notes that the order button must be pressed. |
+| 4:50–5:00 | Order management | "Item deleted successfully" appears. The all-orders view lists past orders. |
+| 5:00–6:20 | Withheld | Second patient's record: order history, lab results, radiology report and appointment. Workflow: review the history and allergies before ordering. |
+| 6:20–6:40 | Order processing and summary | Processing status is shown. The consultation summary lists the diagnoses, lab orders, special tests and the medication list. |
+| 6:40–7:00 | Summary and download | "Download and Print" is shown. The visit summary is reviewed. |
+| 7:00–7:40 | Withheld | Visit-summary preview (patient fields) and an SMS screen. Workflow: send educational material by SMS, chosen by department and ICD-10 code (for example E11, with diabetes education leaflets). The phone number is not recorded here. |
+| 7:40–8:20 | Education and referral | The "add patient and family educations" warning appears. The referral form has a speciality, referral type and appointment timing (next available, within a week, two weeks, a month). A referral to endocrinology (internal, 30 September 2024) is saved and listed. |
+| 8:20–8:30 | Close the consultation | "Record saved successfully" and the sick-leave panel are shown. |
+| 8:30–8:38 | Withheld | Sick-leave report. The screen shows that printing is disabled on this page. |
+
+### Points to check before the course goes live
+- The sequence and button names need checking on the live system (the version in the recording may differ).
+- Medicine and lab names are small in several frames. Confirm them against the formulary before they go into quiz questions.
+- Clinical examples (diabetes, anaemia, vitamin D) are illustrations only. Add a disclaimer slide.

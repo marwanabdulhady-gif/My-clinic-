@@ -16,8 +16,8 @@ This folder turns the Google Drive course folder into one detailed Markdown file
 | 04 | top level | `Operations & My Care Structure.pptx` | `md/04_operations-and-my-care-structure.md` | 6 slides | All text read; org-chart reporting lines not in text layer |
 | 05 | RCM/RCM/ | `How to optimize billing via coding , documentation.docx` | `md/05_rcm-billing-documentation-script.md` | Speaker script, 16 sections | Full text read (24 KB) |
 | 06 | RCM/RCM/ | `how to optimize billing via coding ,, documentation  2026.pptx` | `md/06_rcm-billing-documentation-slides-2026.md` | 14 slides | Text plus all images reviewed; slide 6 and EBP figures approximate |
-| 07 | top level | `Quality, Safety and Risk Orientation.mp4` | `md/07_video-quality-safety-and-risk-orientation.md` | 8 min 56 s, narrated | 54 screenshots every 10 s (`media/07_quality-safety-risk/`); 30 s-chunk machine transcript (`transcript_asr_30s.md`, low accuracy) |
-| 08 | top level | `IT.mp4` | `md/08_video-it-ehr-consultation-walkthrough.md` | 8 min 38 s, silent | 52 screenshots every 10 s; 42 committed, 10 withheld (patient identifiers); on-screen text OCR'd, time-coded in `FRAME_INDEX.md` |
+| 07 | top level | `Quality, Safety and Risk Orientation.mp4` | `md/07_video-quality-safety-and-risk-orientation.md` | 8 min 56 s, narrated | 107 screenshots every 5 s (`media/07_quality-safety-risk/`); 10 s chunk log with OCR and machine narration (`CHUNKS_10s.md`, low accuracy) |
+| 08 | top level | `IT.mp4` | `md/08_video-it-ehr-consultation-walkthrough.md` | 8 min 38 s, silent | 104 screenshots every 5 s; 69 committed, 35 withheld (patient identifiers); 10 s chunk log in `CHUNKS_10s.md` |
 
 A short list of Drive IDs is not recorded in these files because they were not all verified. The DOCX ID is `1RAeKs0Pm6Z4K8XfDbHU_Ha-Oza71V15m`.
 
@@ -25,7 +25,7 @@ A short list of Drive IDs is not recorded in these files because they were not a
 
 - **Quality video is committed** (`google_drive/Quality, Safety and Risk Orientation.mp4`, 39 MB, plain Git; Git LFS is not available in this sandbox). It contains no patient data.
 - **IT video is not committed yet** (`google_drive/IT.mp4`, 35 MB, gitignored). It shows a non-test patient record (item 18). Commit it only after the recording is anonymised or the team accepts that risk.
-- **Screenshots** are in `media/` (about 5 MB). The 10 IT frames that show personal identifiers are withheld.
+- **Screenshots** are in `media/` (about 9 MB). 35 IT frames that show personal identifiers are withheld. The Quality frames have no identifiers.
 - **Source IDs and sizes** are in `SOURCES.md`.
 - **Other sources are committed** (about 17 MB in total) so the course team can trace each module to its source.
 
@@ -42,8 +42,8 @@ A short list of Drive IDs is not recorded in these files because they were not a
 9. **Billing script garbled figures.** "Repeating Vitamin D too early not less than 118" and "Repeating HbA1c before 89 day" are not readable. Confirm the intervals.
 10. **EBP counts.** The infographic says 18 added and 10 amended benefits, but shows 10 and 8 headline items. Confirm.
 11. **Operations org chart.** The text layer gives labels, not reporting lines. Count labels (PXOs, FMs, Coords) are not clearly tied to units.
-12. **Quality transcript.** The narration was recognised offline (CMU PocketSphinx, 30 s chunks) and has heavy ASR errors. I could not listen to the audio, so this needs a human listen before any quoted sentence is used in an assessment. Screenshots every 10 s are in `media/07_quality-safety-risk/`.
-13. **IT video.** It has no narration (audio is silent). The on-screen text was OCR'd and time-coded in `media/08_it-ehr-walkthrough/FRAME_INDEX.md`. Plan a voice-over or narration script and check the clinical examples before publishing.
+12. **Quality transcript.** The narration was recognised offline (CMU PocketSphinx, 10 s chunks, log in `CHUNKS_10s.md`) and has heavy ASR errors. I could not listen to the audio, so this needs a human listen before any quoted sentence is used in an assessment. Screenshots every 10 s are in `media/07_quality-safety-risk/`.
+13. **IT video.** It has no narration (audio is silent). On-screen text was OCR'd and logged in 10-second windows in `media/08_it-ehr-walkthrough/CHUNKS_10s.md`. Plan a voice-over or narration script and check the clinical examples before publishing.
 18. **Patient identifiers in the IT video.** Module 08 previously said no real patient data was shown. That was wrong. Around 5:10–6:10 the screen shows a second patient's full record (name, DOB, record numbers, radiology report); 7:10–7:20 and 8:30 show a phone number and an ID number. Those frames are withheld. Blur or re-record that section before the video is used or committed.
 14. **Placeholders.** H&S 2 p.31 has empty contact boxes, and the cover pages of H&S 1 contain `[Facility Name]` and `[Month Year]`.
 15. **Template origin.** H&S 2 PDF metadata says "First Clinic" with a different author. Confirm the branding.
@@ -64,4 +64,4 @@ A short list of Drive IDs is not recorded in these files because they were not a
 - PDFs were read with PyMuPDF text extraction. Image-only pages were reviewed as contact sheets.
 - The PPTX files were read with python-pptx, including grouped shapes, plus the embedded images.
 - The DOCX was read with python-docx.
-- Video audio was checked for speech (Quality has speech; IT is silent). Quality was transcribed with an offline recogniser. IT was reviewed from keyframes only.
+- Video audio was checked for speech (Quality has speech; IT is silent). Quality was transcribed with an offline recogniser in 10 s chunks. IT was reviewed by OCR of screenshots every 5 s and hand-checked; it has no narration.
