@@ -25,6 +25,11 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import audio_export  # noqa: E402  sibling module with the canonical narration/audio rules
+
 ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
 TODAY = "2026-10-14"
@@ -124,6 +129,22 @@ MODULES: dict[str, dict[str, Any]] = {
         },
     },
 }
+
+# 03 and 07 are hand-authored v0.2 packs, so this tool never regenerates their storyboard.md.
+# They still belong in the programme-level SME register, which reads their Phase 2 rows directly.
+PACK_META: dict[str, dict[str, Any]] = {
+    "03_hr-employee-induction": {
+        "number": "03", "prefix": "hr",
+        "title": "Welcome On Board: My Clinic & HR Essentials",
+        "reviewers": "HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights",
+    },
+    "07_quality-safety-and-risk": {
+        "number": "07", "prefix": "qsr",
+        "title": "Clinical Governance: Quality, Patient Safety & Risk",
+        "reviewers": "Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director",
+    },
+}
+
 
 # A deliberately conservative map: scenarios, activities and non-title content use the same
 # visual language across all modules; only the accent changes.  The real logo is always placed as
@@ -827,6 +848,8 @@ def narration_for(row: dict[str, Any], cfg: dict[str, Any], outline: dict[str, d
 
     # Add enough non-redundant coaching for long planned explanatory segments while keeping the
     # target estimate. Question and scenario setups stay short so the answer is never narrated.
+    # Each coaching line is used at most once per screen: repeating a sentence inside one segment
+    # reads as a machine artefact and inflates the recorded runtime.
     desired_words = max(18, int(target * WPM / 60 * 0.96))
     pad = [
         "Pause and connect this to your role.",
@@ -835,6 +858,12 @@ def narration_for(row: dict[str, Any], cfg: dict[str, Any], outline: dict[str, d
         "Think of the first detail you would check.",
         "Apply the point to a familiar task.",
         "Carry the idea into your next decision.",
+        "Notice which part of this you would use first on shift.",
+        "The aim is a decision you can repeat, not a phrase to recall.",
+        "Link it to the task waiting for you tomorrow.",
+        "If one detail stays with you, let it be the safe one.",
+        "Ask early when a situation does not match the rule.",
+        "Good habits here are quiet: check, confirm, continue.",
     ]
     if row["scored"]:
         # Assessment setup is deliberately answer-neutral, but it still needs enough room for
@@ -843,24 +872,35 @@ def narration_for(row: dict[str, Any], cfg: dict[str, Any], outline: dict[str, d
             "Use the rule you practised.",
             "Focus on the action that fits.",
             "Feedback explains the reasoning after you respond.",
+            "Take the time you need; nothing here is timed.",
+            "Choose the option you would defend to a colleague.",
+            "The scenario uses fictional names and numbers.",
         ]
-        pad_at = _screen_number(row) % len(question_pad)
-        while word_count(script) < desired_words:
-            script += " " + question_pad[pad_at % len(question_pad)]
-            pad_at += 1
-    elif row["type"] not in {"poll"}:
-        pad_at = _screen_number(row) % len(pad)
-        while word_count(script) < desired_words:
-            script += " " + pad[pad_at % len(pad)]
-            pad_at += 1
+        pool = question_pad
+    elif row["type"] != "poll":
+        pool = pad
+    else:
+        pool = []
+    if pool:
+        pad_at = _screen_number(row) % len(pool)
+        ordered = pool[pad_at:] + pool[:pad_at]
+        for line in ordered:
+            if word_count(script) >= desired_words:
+                break
+            script += " " + line
     script = _split_spoken_sentences(script)
 
     # Planned two-voice moments receive a deliberately short hand-off.  It is used only where the
     # Phase 3 narration outline explicitly names both speakers.
     if planned_dual_voice:
+        hand_offs = [
+            "Carry this practical rule into your next decision.",
+            "And remember: asking early is always the safe move here.",
+            "That is the habit we want from every new colleague.",
+        ]
         script = (
             f"{lead}: {script.split(': ', 1)[1]}\n\n"
-            f"{co}: Carry this practical rule into your next decision."
+            f"{co}: {hand_offs[_screen_number(row) % len(hand_offs)]}"
         )
     script = _fit_script_to_target(script, target)
     return script, target, tone
@@ -890,23 +930,19 @@ def make_lexicon(module_dir: Path, scripts: list[str]) -> dict[str, str]:
 
 
 def script_export(script: dict[str, Any]) -> dict[str, Any]:
-    def spoken(text: str) -> str:
-        return re.sub(r"\s+", " ", re.sub(r"\[\[[^\]]+\]\]", " ", text)).strip()
-    segments = []
-    for segment in script["segments"]:
-        text = spoken(segment["narration"])
-        words = word_count(text)
-        est = round(words / script["wpm"] * 60, 1)
-        segments.append({
-            "screen_id": segment["screen_id"], "filename": f"{script['module_id']}_{segment['screen_id']}.mp3",
-            "narration_text": text, "tts_text": text, "est_sec": est, "timing_source": "estimated_word_count",
-        })
-    lines = [f"# Voice-over script — {script['module_id']}", "", f"Language: {script['language']} · Pace: ~{script['wpm']} wpm", "", "## Pronunciation guide", ""]
-    lines += [f"- **{term}** → {sound}" for term, sound in script["lexicon"].items()]
-    lines += ["", "## Recording table", "", "| # | Screen | Tone | Script | Est. sec |", "|---|---|---|---|---|"]
-    for i, (item, source) in enumerate(zip(segments, script["segments"]), 1):
-        lines.append(f"| {i} | `{item['screen_id']}` | {source.get('tone','')} | {safe_cell(item['narration_text'])} | {item['est_sec']} |")
-    return {"module_id": script["module_id"], "language": script["language"], "wpm": script["wpm"], "total_est_sec": round(sum(item["est_sec"] for item in segments), 1), "segments": segments, "voice_talent_md": "\n".join(lines) + "\n"}
+    """Canonical export: speaker labels removed from TTS input, one segment per spoken line.
+
+    Delegates to tools/audio_export.py so hand-written packs (03, 07) and generated packs share
+    exactly one implementation of the label/split/lexicon rules.
+    """
+    return audio_export.build_export(script, cfg_lead(script))
+
+
+def cfg_lead(script: dict[str, Any]) -> str | None:
+    for cfg in MODULES.values():
+        if cfg["module_id"] == script.get("module_id"):
+            return cfg["lead"].lower()
+    return None
 
 
 def brand_logo_html(light: bool = True) -> str:
@@ -1023,9 +1059,9 @@ def write_audio_readme(out_dir: Path, cfg: dict[str, Any], exported: dict[str, A
     minutes = exported["total_est_sec"] / 60
     text = f'''# Narration production status — Module {cfg['number']}
 
-The complete, screen-by-screen English script is in [`narration-script.json`](narration-script.json). The
-recording table and TTS-ready text are in [`voice_talent.md`](voice_talent.md) and
-[`audio-script-export.json`](audio-script-export.json).
+The complete, screen-by-screen English script is in [`../narration-script.json`](../narration-script.json).
+The recording table and TTS-ready text are in [`../voice_talent.md`](../voice_talent.md) and
+[`../audio-script-export.json`](../audio-script-export.json).
 
 ## What is ready
 
@@ -1267,14 +1303,25 @@ lock items have written SME decisions.
     }
     narr_script = {
         "module_id": cfg["module_id"], "language": "en", "wpm": WPM,
-        "voice": {"provider": "external", "voice_id": None, "persona": "an experienced My Clinic colleague coaching a learner in their first week", "gender": None},
+        "voice": audio_export.voice_record(),
         "lexicon": make_lexicon(module_dir, [s["narration"] for s in scripts]), "segments": scripts,
     }
-    exported = script_export(narr_script)
+    # Two-voice screens become one recording segment per spoken line (companions.md §5); the card
+    # above keeps the combined script for review, the JSON carries the production parts.
+    segments: list[dict[str, Any]] = []
+    for item in scripts:
+        for part_seg in audio_export.split_segment(item):
+            segments.append({
+                "screen_id": part_seg["screen_id"],
+                "part": part_seg["part"],
+                "narration": part_seg["narration"],
+                "on_screen_text": part_seg.get("on_screen_text"),
+                "target_sec": part_seg.get("target_sec"),
+                "tone": part_seg.get("tone"),
+            })
+    narr_script["segments"] = segments
+    exported = audio_export.write_outputs(module_dir, narr_script, lead=cfg["lead"].lower())
     (out_dir / "visual-plan.json").write_text(json.dumps(visual_plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (out_dir / "narration-script.json").write_text(json.dumps(narr_script, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (out_dir / "audio-script-export.json").write_text(json.dumps(exported, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (out_dir / "voice_talent.md").write_text(exported["voice_talent_md"], encoding="utf-8")
     write_asset_register(out_dir, folder, assets)
     write_audio_readme(out_dir, cfg, exported)
     write_screen_visuals(out_dir, folder, cfg, rows, companions)
@@ -1455,6 +1502,28 @@ def write_brand_adapter() -> None:
     destination.write_text(json.dumps(adapter, indent=2) + "\n", encoding="utf-8")
 
 
+def pack_row_from_disk(folder: str) -> str:
+    """Board row for a pack this run did not regenerate (03 and 07 are hand-authored v0.2 packs)."""
+    sb = PLANS / folder / "storyboard"
+    text = (sb / "storyboard.md").read_text(encoding="utf-8")
+    screens = []
+    for match in re.finditer(r"```json\s*\n(.*?)```", text, re.S):
+        try:
+            block = json.loads(match.group(1))
+        except ValueError:
+            continue
+        if isinstance(block, dict) and "type" in block and "id" in block:
+            screens.append(block)
+    scored = [s for s in screens if s.get("points")]
+    title = (re.search(r"^# Storyboard — \d+ (.+)$", text, re.M) or ["", folder]).group(1)
+    rel = f"../{folder}/storyboard"
+    return (f"| {folder[:2]} — [{title}]({rel}/storyboard.md) | {len(screens)} | {len(scored)} / "
+            f"{sum(s.get('points') or 0 for s in scored)} | [JSON]({rel}/narration-script.json) · "
+            f"[visual plan]({rel}/visual-plan.json) | [HTML]({rel}/screen-visuals.html) | "
+            f"[register]({rel}/asset-register.md) | [Clean report]({rel}/lint-report.json) | "
+            f"Draft — SME/source-lock review |")
+
+
 def write_program_dashboard(results: list[dict[str, Any]]) -> None:
     md = [
         "# My Clinic — storyboard production board", "", "![My Clinic logo](brand/logo-preview.png)", "",
@@ -1465,16 +1534,20 @@ def write_program_dashboard(results: list[dict[str, Any]]) -> None:
         "| Module | Screen cards | Scored / points | Script + visual plan | Branded screen review | Asset register | Planning lint | Production status |",
         "|---|---:|---:|---|---|---|---|---|",
     ]
+    rows: dict[str, str] = {}
     for r in results:
         rel = f"../{r['folder']}/storyboard"
-        md.append(f"| {r['number']} — [{r['title']}]({rel}/storyboard.md) | {r['screen_count']} | {r['scored']} / {r['points']} | [JSON]({rel}/narration-script.json) · [visual plan]({rel}/visual-plan.json) | [HTML]({rel}/screen-visuals.html) | [register]({rel}/asset-register.md) | [Clean report]({rel}/lint-report.json) | Draft — SME/source-lock review |")
+        rows[r["number"]] = (f"| {r['number']} — [{r['title']}]({rel}/storyboard.md) | {r['screen_count']} | {r['scored']} / {r['points']} | [JSON]({rel}/narration-script.json) · [visual plan]({rel}/visual-plan.json) | [HTML]({rel}/screen-visuals.html) | [register]({rel}/asset-register.md) | [Clean report]({rel}/lint-report.json) | Draft — SME/source-lock review |")
+    for folder in sorted(p.name for p in PLANS.glob("0[1-8]_*")):
+        if folder[:2] not in rows and (PLANS / folder / "storyboard" / "storyboard.md").exists():
+            rows[folder[:2]] = pack_row_from_disk(folder)
+    md.extend(rows[number] for number in sorted(rows))
     md += [
-        "| 03 — Welcome On Board | 36 | 15 / 145 | Existing storyboard, visual plan and narration script | Existing brand mockups | Existing preview/audio reference | Not rerun in this pass | Draft — SME review |",
-        "| 07 — Clinical Governance | 22 core | 11 / 95 | Existing storyboard | Existing brand mockups | Pending policy/source review | Not available in this pass | Draft — SME review |", "",
-        "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | 03 and 07 existed; 01, 02, 04, 05, 06 and 08 now have complete review-card packs. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Each new pack now has an editable narration script, voice-talent table, visual plan, asset register and logo placement rules. | D10 voice choice, approved scripts, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
+        "",
+        "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | All eight packs are complete v0.2 review-card packs: 01, 02, 04, 05, 06, 08 generated by this tool; 03 and 07 hand-authored with the companions. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Every pack has an editable narration script (speaker-labelled, parts split), voice-talent table, visual plan, asset register and logo placement rules. | D10 voice choice, approved scripts, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
         "## Decisions that still gate release", "", "1. **Safety:** Code Orange threshold, real emergency extensions, waste colours, radiation/laser details and facility-specific information (modules 01–02).", "2. **Operations:** live reporting lines, abbreviation expansions and escalation ownership (module 04).", "3. **RCM:** current payer/regulator wording, ICD-10 validation, benefits/limits and de-identified rejection classifications (modules 05–06).", "4. **EHR:** only a test environment/test patient may be captured; the existing source video is never a production asset (module 08).", "5. **Programme:** Marketing brand confirmation D11, two approved narration voices D10 and every asset’s provenance/approval record.", "",
         "## Asset work completed in this pass", "", "- Generated native editable SVG diagrams where facts can be changed after SME review.", "- Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.", "- Rendered each generated diagram/concept asset directly on its intended HTML screen-review board, so reviewers inspect the actual asset rather than a generic placeholder.", "- Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.", "- Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.", "",
-        "## Next hand-off", "", "1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for the six new packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",
+        "## Next hand-off", "", "1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for all eight packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",
     ]
     (PLANS / "00_program" / "storyboard-production-board.md").write_text("\n".join(md), encoding="utf-8")
 
@@ -1498,8 +1571,9 @@ def write_sme_review_register(results: list[dict[str, Any]]) -> None:
     total_ready = 0
     total_questions = 0
 
-    for folder in MODULES:
-        cfg = MODULES[folder]
+    folders = sorted({**MODULES, **PACK_META}, key=lambda name: name[:2])
+    for folder in folders:
+        cfg = {**PACK_META.get(folder, {}), **MODULES.get(folder, {})}
         module_dir = PLANS / folder
         rows = parse_phase2(module_dir, cfg["prefix"])
         scored_rows = [row for row in rows if row["scored"]]
@@ -1509,12 +1583,13 @@ def write_sme_review_register(results: list[dict[str, Any]]) -> None:
         total_scored += len(scored_rows)
         total_ready += ready_count
         total_questions += len(flagged)
-        result = result_by_folder[folder]
+        result = result_by_folder.get(folder)
+        screen_count = result["screen_count"] if result else pack_row_from_disk(folder).split("|")[2].strip()
         storyboard_link = f"../{folder}/storyboard/storyboard.md"
         visual_link = f"../{folder}/storyboard/screen-visuals.html"
         summary_rows.append(
             f"| {cfg['number']} — {cfg['title']} | {len(scored_rows)} | {ready_count} | {len(flagged)} | "
-            f"[{result['screen_count']} screen cards]({storyboard_link}) · [visual board]({visual_link}) |"
+            f"[{screen_count} screen cards]({storyboard_link}) · [visual board]({visual_link}) |"
         )
         if not flagged:
             continue
@@ -1563,7 +1638,7 @@ it is still a **draft** awaiting SME confirmation.
 
 | Scope | Count |
 |---|---:|
-| Scored review screens across the six new packs | {total_scored} |
+| Scored review screens across the eight packs | {total_scored} |
 | Source-detail present in the Phase 2 brief | {total_ready} |
 | Screen-level build-detail review questions | {total_questions} |
 
@@ -1597,7 +1672,7 @@ it is still a **draft** awaiting SME confirmation.
 
 ## Release boundary
 
-- The six review packs are structurally complete and have clean visual-plan/narration lint reports.
+- The eight review packs are structurally complete and have clean visual-plan/narration lint reports.
 - This register is a **pre-build review queue**. It does not approve policy content, final visual
   coordinates, shipping audio, test screenshots, SCORM packaging or LMS delivery.
 - The CSV sibling, `storyboard-review-register.csv`, is provided for importing into an external

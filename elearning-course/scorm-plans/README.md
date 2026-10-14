@@ -33,6 +33,22 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 
 **SCORM structure:** [`00_program/scorm-structure.md`](00_program/scorm-structure.md) (LMS curriculum, zip contents, manifest, outline → screen model, LMS data) and one generated `scorm-structure.md` in each module folder.
 
+### Repository tools (deterministic, rerunnable)
+
+| Tool | Produces | Notes |
+|---|---|---|
+| `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards |
+| `tools/normalise_narration.py` | Canonical narration/audio outputs for the hand-authored packs (03, 07) | Same rules as the generator, via `tools/audio_export.py` |
+| `tools/audio_export.py` | Shared rules: speaker labels out of TTS input, one segment per spoken line, lexicon + SSML, voice table | Imported by both tools above |
+| `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |
+| `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
+| `tools/export_storyboard_docx.py` | The nine client-review Word documents | Supplied client logo in the running header, cover band, document control, page numbers |
+| `tools/make_companion_avatars.py` | Interim transparent avatar PNGs in `00_program/characters/assets/` | Crops of approved poses; full-size Canva downloads still outstanding (G6) |
+| `tools/audit_assets.py` | `00_program/asset-template-audit.md` + `asset-audit.json` | Hard failures (missing referenced asset, broken link, label in TTS, incomplete card) exit non-zero |
+
+Recommended order after any approved edit: generator or normaliser → `lint_planning.py` →
+`build_scorm_structure.py` → `export_storyboard_docx.py` → `audit_assets.py`.
+
 Suggested learning path (matches `../README.md` §4):
 `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
 
@@ -73,6 +89,8 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/characters/companions.md`](00_program/characters/companions.md) — **the two course companions, Noor and Dr. Omar**: character bible, poses and AI prompts, placement on screens, voices and script rules, per-module plan
 - [`00_program/scorm-structure.md`](00_program/scorm-structure.md) — **structure of the SCORM packages**: LMS learning path, zip contents, manifest, course outline model, tracking data, versioning
 - [`00_program/programme-status.md`](00_program/programme-status.md) — what is done, gaps, proposal check, next steps
+- [`00_program/asset-template-audit.md`](00_program/asset-template-audit.md) — evidence-based inventory of brand files, companion art, module assets, Word renderings and card templates (regenerate with `tools/audit_assets.py`)
+- [`00_program/next-phases-roadmap.md`](00_program/next-phases-roadmap.md) — the remaining work cut into PR-sized chunks with acceptance criteria
 - [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
@@ -89,7 +107,7 @@ The phases and weeks match the proposal (`../proposal/`, Project Phases). Week 1
 |---|---|---|---|
 | 1–2 | 0 — Kick-off & source lock | Walk SMEs through the v0.2 storyboard pack and review register | Close B-items and D1–D14; confirm LMS + SCORM version (D9), brand (D11) |
 | 2 | 1 — Action map | Final objectives and evidence map (already drafted) | Approve objectives |
-| 3–4 | 2 — Storyboards | Apply Phase 0 decisions; retrofit 03 and complete 07 (status G1–G2); close the 37 register rows | Approve storyboards (**30% payment**) |
+| 3–4 | 2 — Storyboards | Apply Phase 0 decisions; retrofit 03 and complete 07 (status G1–G2); close the 52 register rows | Approve storyboards (**30% payment**) |
 | 4–6 | 3 — Narration & media | Two companion voices (D10), audio, captions, images, companion PNGs, EHR test captures | Approve voices and visuals |
 | 5–7 | 4 — Build | Build 8 packages per `scorm-structure.md`; `lint_course`; previews | Preview review |
 | 7–9 | 5 — QA, LMS, pilot | 81 test cases, SCORM Cloud, LMS test, pilot | Pilot learners, sign-off |

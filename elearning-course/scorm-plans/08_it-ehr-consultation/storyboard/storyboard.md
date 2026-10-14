@@ -363,10 +363,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 67 words / ≈ 28.7 s at 140 wpm |
+| Word count / estimated seconds | 71 words / ≈ 30.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role.
+> OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -472,10 +472,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 24 words / ≈ 10.3 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -583,10 +583,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 61 words / ≈ 26.1 s at 140 wpm |
+| Word count / estimated seconds | 62 words / ≈ 26.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -804,10 +804,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 20 |
-| Word count / estimated seconds | 48 words / ≈ 20.6 s at 140 wpm |
+| Word count / estimated seconds | 50 words / ≈ 21.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -915,10 +915,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
+| Word count / estimated seconds | 66 words / ≈ 28.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1024,10 +1024,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1468,10 +1468,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 24 words / ≈ 10.3 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1582,7 +1582,7 @@ lock items have written SME decisions.
 | Word count / estimated seconds | 30 words / ≈ 12.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1691,10 +1691,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 47 words / ≈ 20.1 s at 140 wpm |
+| Word count / estimated seconds | 46 words / ≈ 19.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context.
+> NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1801,10 +1801,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 34 words / ≈ 14.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Focus on the action that fits.
+> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2295,25 +2295,25 @@ lock items have written SME decisions.
 |---|---|---|---|---|---|---|---|---|
 | 1 | `ehr-000` | `title_slide` | N | 0 | 9 | 28 | 12 | Draft |
 | 2 | `ehr-001` | `content_slide` | N | 0 | 13 | 57 | 24 | Draft |
-| 3 | `ehr-002` | `timeline` | N | 0 | 25 | 67 | 29 | Draft |
-| 4 | `ehr-010` | `simulation` | Y | 5 | 15 | 24 | 10 | Draft |
-| 5 | `ehr-011` | `hotspot` | N | 0 | 20 | 61 | 26 | Draft |
+| 3 | `ehr-002` | `timeline` | N | 0 | 25 | 71 | 30 | Draft |
+| 4 | `ehr-010` | `simulation` | Y | 5 | 15 | 18 | 8 | Draft |
+| 5 | `ehr-011` | `hotspot` | N | 0 | 20 | 62 | 27 | Draft |
 | 6 | `ehr-012` | `mcq` | Y | 5 | 31 | 18 | 8 | Draft |
-| 7 | `ehr-020` | `simulation` | Y | 10 | 39 | 48 | 21 | Draft |
-| 8 | `ehr-030` | `content_slide` | N | 0 | 16 | 59 | 25 | Draft |
-| 9 | `ehr-031` | `simulation` | Y | 15 | 38 | 36 | 15 | Draft |
+| 7 | `ehr-020` | `simulation` | Y | 10 | 39 | 50 | 21 | Draft |
+| 8 | `ehr-030` | `content_slide` | N | 0 | 16 | 66 | 28 | Draft |
+| 9 | `ehr-031` | `simulation` | Y | 15 | 38 | 31 | 13 | Draft |
 | 10 | `ehr-032` | `simulation` | Y | 10 | 24 | 25 | 11 | Draft |
 | 11 | `ehr-033` | `mcq` | Y | 5 | 26 | 18 | 8 | Draft |
 | 12 | `ehr-034` | `mcq` | Y | 5 | 29 | 18 | 8 | Draft |
-| 13 | `ehr-040` | `simulation` | Y | 5 | 18 | 24 | 10 | Draft |
+| 13 | `ehr-040` | `simulation` | Y | 5 | 18 | 18 | 8 | Draft |
 | 14 | `ehr-041` | `simulation` | Y | 10 | 24 | 30 | 13 | Draft |
-| 15 | `ehr-042` | `content_slide` | N | 0 | 14 | 47 | 20 | Draft |
-| 16 | `ehr-050` | `simulation` | Y | 10 | 39 | 36 | 15 | Draft |
+| 15 | `ehr-042` | `content_slide` | N | 0 | 14 | 46 | 20 | Draft |
+| 16 | `ehr-050` | `simulation` | Y | 10 | 39 | 34 | 15 | Draft |
 | 17 | `ehr-051` | `sorting` | Y | 10 | 6 | 18 | 8 | Draft |
 | 18 | `ehr-052` | `content_slide` | N | 0 | 18 | 44 | 19 | Draft |
 | 19 | `ehr-090` | `results_breakdown` | N | 0 | 2 | 21 | 9 | Draft |
 | 20 | `ehr-091` | `summary` | N | 0 | 11 | 36 | 15 | Draft |
-| | **Totals** | | **11** | **90** | | **715** | **306 ≈ 5.1 min** | Draft |
+| | **Totals** | | **11** | **90** | | **709** | **304 ≈ 5.1 min** | Draft |
 
 ### Asset list
 

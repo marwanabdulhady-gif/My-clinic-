@@ -14,9 +14,9 @@ it is still a **draft** awaiting SME confirmation.
 
 | Scope | Count |
 |---|---:|
-| Scored review screens across the six new packs | 69 |
-| Source-detail present in the Phase 2 brief | 32 |
-| Screen-level build-detail review questions | 37 |
+| Scored review screens across the eight packs | 95 |
+| Source-detail present in the Phase 2 brief | 43 |
+| Screen-level build-detail review questions | 52 |
 
 ## Module triage
 
@@ -24,9 +24,11 @@ it is still a **draft** awaiting SME confirmation.
 |---|---:|---:|---:|---|
 | 01 — Facility Management & Safety | 24 | 14 | 10 | [54 screen cards](../01_health-and-safety-1/storyboard/storyboard.md) · [visual board](../01_health-and-safety-1/storyboard/screen-visuals.html) |
 | 02 — Safety in Practice: Hazard, Fire & Chemical Lab | 13 | 6 | 7 | [26 screen cards](../02_health-and-safety-2/storyboard/storyboard.md) · [visual board](../02_health-and-safety-2/storyboard/screen-visuals.html) |
+| 03 — Welcome On Board: My Clinic & HR Essentials | 15 | 7 | 8 | [36 screen cards](../03_hr-employee-induction/storyboard/storyboard.md) · [visual board](../03_hr-employee-induction/storyboard/screen-visuals.html) |
 | 04 — Who Does What: Operations & My Care | 4 | 1 | 3 | [13 screen cards](../04_operations-and-my-care/storyboard/storyboard.md) · [visual board](../04_operations-and-my-care/storyboard/screen-visuals.html) |
 | 05 — RCM Part A: Documentation & ICD-10 Coding That Gets Approved | 10 | 6 | 4 | [21 screen cards](../05_rcm-documentation-and-coding/storyboard/storyboard.md) · [visual board](../05_rcm-documentation-and-coding/storyboard/screen-visuals.html) |
 | 06 — RCM Part B: New EBP Benefits & Claim-Rejection Analysis | 7 | 3 | 4 | [15 screen cards](../06_rcm-ebp-benefits-and-rejections/storyboard/storyboard.md) · [visual board](../06_rcm-ebp-benefits-and-rejections/storyboard/screen-visuals.html) |
+| 07 — Clinical Governance: Quality, Patient Safety & Risk | 11 | 4 | 7 | [22 screen cards](../07_quality-safety-and-risk/storyboard/storyboard.md) · [visual board](../07_quality-safety-and-risk/storyboard/screen-visuals.html) |
 | 08 — EHR Consultation Workflow: Guided Simulation | 11 | 2 | 9 | [20 screen cards](../08_it-ehr-consultation/storyboard/storyboard.md) · [visual board](../08_it-ehr-consultation/storyboard/screen-visuals.html) |
 
 ## Screen-level build-detail queue
@@ -50,6 +52,14 @@ it is still a **draft** awaiting SME confirmation.
 | 02 | [hs2-061](../02_health-and-safety-2/storyboard/storyboard.md#hs2-061) | `matching` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | Safety Manager (lead); EHS; Facilities; Infection Control + L&D/authoring |
 | 02 | [hs2-062](../02_health-and-safety-2/storyboard/storyboard.md#hs2-062) | `mcq` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | Safety Manager (lead); EHS; Facilities; Infection Control + L&D/authoring |
 | 02 | [hs2-063](../02_health-and-safety-2/storyboard/storyboard.md#hs2-063) | `mcq` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | Safety Manager (lead); EHS; Facilities; Infection Control + L&D/authoring |
+| 03 | [hr-011](../03_hr-employee-induction/storyboard/storyboard.md#hr-011) | `matching` | exact answer/route | confirm the exact correct response and plausible distractors | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-031](../03_hr-employee-induction/storyboard/storyboard.md#hr-031) | `decision_scenario` | pass/replay rule | set pass score/lives and no-score-inflation replay behaviour | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-032](../03_hr-employee-induction/storyboard/storyboard.md#hr-032) | `drag_drop` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-042](../03_hr-employee-induction/storyboard/storyboard.md#hr-042) | `matching` | exact answer/route, correct/incorrect feedback copy | confirm the exact correct response and plausible distractors; write source-cited correct and retry rationale | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-045](../03_hr-employee-induction/storyboard/storyboard.md#hr-045) | `adaptive_practice` | exact answer/route | confirm the exact correct response and plausible distractors | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-060](../03_hr-employee-induction/storyboard/storyboard.md#hr-060) | `matching` | exact answer/route, correct/incorrect feedback copy | confirm the exact correct response and plausible distractors; write source-cited correct and retry rationale | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-071](../03_hr-employee-induction/storyboard/storyboard.md#hr-071) | `drag_drop` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
+| 03 | [hr-081](../03_hr-employee-induction/storyboard/storyboard.md#hr-081) | `mcq` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | HR lead (lead); L&D; Communications; Legal/Compliance for ethics and rights + L&D/authoring |
 | 04 | [ops-031](../04_operations-and-my-care/storyboard/storyboard.md#ops-031) | `decision_scenario` | pass/replay rule | set pass score/lives and no-score-inflation replay behaviour | `B7` | Director of Operations (lead); My Care Manager; Patient Experience senior manager + L&D/authoring |
 | 04 | [ops-032](../04_operations-and-my-care/storyboard/storyboard.md#ops-032) | `mcq` | correct/incorrect feedback copy | write source-cited correct and retry rationale | `B1` | Director of Operations (lead); My Care Manager; Patient Experience senior manager + L&D/authoring |
 | 04 | [ops-033](../04_operations-and-my-care/storyboard/storyboard.md#ops-033) | `matching` | exact answer/route, correct/incorrect feedback copy | confirm the exact correct response and plausible distractors; write source-cited correct and retry rationale | See module Phase 0 and programme D11 | Director of Operations (lead); My Care Manager; Patient Experience senior manager + L&D/authoring |
@@ -61,6 +71,13 @@ it is still a **draft** awaiting SME confirmation.
 | 06 | [rcmb-041](../06_rcm-ebp-benefits-and-rejections/storyboard/storyboard.md#rcmb-041) | `matching` | exact answer/route, correct/incorrect feedback copy | confirm the exact correct response and plausible distractors; write source-cited correct and retry rationale | See module Phase 0 and programme D11 | RCM lead (lead); Payer Relations; Coding lead; Data Protection Officer + L&D/authoring |
 | 06 | [rcmb-052](../06_rcm-ebp-benefits-and-rejections/storyboard/storyboard.md#rcmb-052) | `decision_scenario` | pass/replay rule | set pass score/lives and no-score-inflation replay behaviour | See module Phase 0 and programme D11 | RCM lead (lead); Payer Relations; Coding lead; Data Protection Officer + L&D/authoring |
 | 06 | [rcmb-060](../06_rcm-ebp-benefits-and-rejections/storyboard/storyboard.md#rcmb-060) | `adaptive_practice` | exact answer/route | confirm the exact correct response and plausible distractors | See module Phase 0 and programme D11 | RCM lead (lead); Payer Relations; Coding lead; Data Protection Officer + L&D/authoring |
+| 07 | [qsr-021](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-021) | `decision_scenario` | pass/replay rule | set pass score/lives and no-score-inflation replay behaviour | `B4` | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-022](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-022) | `matching` | correct/incorrect feedback copy | write source-cited correct and retry rationale | `B5` | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-023](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-023) | `sorting` | correct/incorrect feedback copy | write source-cited correct and retry rationale | `B10` | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-030](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-030) | `sorting` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-032](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-032) | `fill_blank` | accepted typed-input variants | list case, unit and spelling variants for typed input | `B6` | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-033](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-033) | `matching` | correct/incorrect feedback copy | write source-cited correct and retry rationale | `B7` | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
+| 07 | [qsr-051](../07_quality-safety-and-risk/storyboard/storyboard.md#qsr-051) | `decision_scenario` | pass/replay rule | set pass score/lives and no-score-inflation replay behaviour | See module Phase 0 and programme D11 | Quality Director (lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director + L&D/authoring |
 | 08 | [ehr-010](../08_it-ehr-consultation/storyboard/storyboard.md#ehr-010) | `simulation` | correct/incorrect feedback copy | write source-cited correct and retry rationale | See module Phase 0 and programme D11 | EHR Applications / EHR lead (lead); DPO; Medical Director; Pharmacy lead; RCM lead + L&D/authoring |
 | 08 | [ehr-012](../08_it-ehr-consultation/storyboard/storyboard.md#ehr-012) | `mcq` | correct/incorrect feedback copy | write source-cited correct and retry rationale | `B4` | EHR Applications / EHR lead (lead); DPO; Medical Director; Pharmacy lead; RCM lead + L&D/authoring |
 | 08 | [ehr-031](../08_it-ehr-consultation/storyboard/storyboard.md#ehr-031) | `simulation` | accepted typed-input variants | list case, unit and spelling variants for typed input | `B6` | EHR Applications / EHR lead (lead); DPO; Medical Director; Pharmacy lead; RCM lead + L&D/authoring |
@@ -92,7 +109,7 @@ it is still a **draft** awaiting SME confirmation.
 
 ## Release boundary
 
-- The six review packs are structurally complete and have clean visual-plan/narration lint reports.
+- The eight review packs are structurally complete and have clean visual-plan/narration lint reports.
 - This register is a **pre-build review queue**. It does not approve policy content, final visual
   coordinates, shipping audio, test screenshots, SCORM packaging or LMS delivery.
 - The CSV sibling, `storyboard-review-register.csv`, is provided for importing into an external

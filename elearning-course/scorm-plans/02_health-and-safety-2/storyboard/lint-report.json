@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -21,164 +23,176 @@
     "clean": true,
     "module_id": "MC02-safety-in-practice",
     "wpm": 140,
-    "total_est_sec": 400.9,
-    "total_est_min": 6.7,
+    "total_est_sec": 394.2,
+    "total_est_min": 6.6,
     "screens": [
       {
         "screen_id": "hs2-000",
-        "part": null,
+        "part": "noor",
         "words": 30,
         "est_sec": 12.9
       },
       {
         "screen_id": "hs2-001",
-        "part": null,
+        "part": "noor",
         "words": 47,
         "est_sec": 20.1
       },
       {
         "screen_id": "hs2-010",
-        "part": null,
-        "words": 103,
-        "est_sec": 44.1
+        "part": "noor",
+        "words": 100,
+        "est_sec": 42.9
       },
       {
         "screen_id": "hs2-011",
-        "part": null,
+        "part": "noor",
         "words": 37,
         "est_sec": 15.9
       },
       {
         "screen_id": "hs2-012",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-013",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-020",
-        "part": null,
-        "words": 58,
-        "est_sec": 24.9
+        "part": "noor",
+        "words": 59,
+        "est_sec": 25.3
       },
       {
         "screen_id": "hs2-030",
-        "part": null,
-        "words": 50,
-        "est_sec": 21.4
+        "part": "noor-1",
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "hs2-030",
+        "part": "omar-1",
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "hs2-031",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-032",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-033",
-        "part": null,
+        "part": "noor",
         "words": 59,
         "est_sec": 25.3
       },
       {
         "screen_id": "hs2-040",
-        "part": null,
+        "part": "noor",
         "words": 45,
         "est_sec": 19.3
       },
       {
         "screen_id": "hs2-041",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-050",
-        "part": null,
+        "part": "noor",
         "words": 56,
         "est_sec": 24.0
       },
       {
         "screen_id": "hs2-051",
-        "part": null,
+        "part": "noor",
         "words": 36,
         "est_sec": 15.4
       },
       {
         "screen_id": "hs2-052",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-053",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-060",
-        "part": null,
+        "part": "noor",
         "words": 81,
         "est_sec": 34.7
       },
       {
         "screen_id": "hs2-061",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-062",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-063",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-064",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "noor",
+        "words": 34,
+        "est_sec": 14.6
       },
       {
         "screen_id": "hs2-070",
-        "part": null,
+        "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "hs2-080",
-        "part": null,
+        "part": "noor",
         "words": 29,
         "est_sec": 12.4
       },
       {
         "screen_id": "hs2-081",
-        "part": null,
+        "part": "noor",
         "words": 19,
         "est_sec": 8.1
       },
       {
         "screen_id": "hs2-090",
-        "part": null,
-        "words": 52,
-        "est_sec": 22.3
+        "part": "noor-1",
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "hs2-090",
+        "part": "omar-1",
+        "words": 9,
+        "est_sec": 3.9
       }
     ],
     "issues": []

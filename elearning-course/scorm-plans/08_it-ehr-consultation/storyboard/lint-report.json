@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -21,126 +23,126 @@
     "clean": true,
     "module_id": "MC08-ehr-consultation",
     "wpm": 140,
-    "total_est_sec": 306.3,
+    "total_est_sec": 303.8,
     "total_est_min": 5.1,
     "screens": [
       {
         "screen_id": "ehr-000",
-        "part": null,
+        "part": "omar",
         "words": 28,
         "est_sec": 12.0
       },
       {
         "screen_id": "ehr-001",
-        "part": null,
+        "part": "omar",
         "words": 57,
         "est_sec": 24.4
       },
       {
         "screen_id": "ehr-002",
-        "part": null,
-        "words": 67,
-        "est_sec": 28.7
+        "part": "omar",
+        "words": 71,
+        "est_sec": 30.4
       },
       {
         "screen_id": "ehr-010",
-        "part": null,
-        "words": 24,
-        "est_sec": 10.3
+        "part": "omar",
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "ehr-011",
-        "part": null,
-        "words": 61,
-        "est_sec": 26.1
+        "part": "omar",
+        "words": 62,
+        "est_sec": 26.6
       },
       {
         "screen_id": "ehr-012",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ehr-020",
-        "part": null,
-        "words": 48,
-        "est_sec": 20.6
+        "part": "omar",
+        "words": 50,
+        "est_sec": 21.4
       },
       {
         "screen_id": "ehr-030",
-        "part": null,
-        "words": 59,
-        "est_sec": 25.3
+        "part": "omar",
+        "words": 66,
+        "est_sec": 28.3
       },
       {
         "screen_id": "ehr-031",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "omar",
+        "words": 31,
+        "est_sec": 13.3
       },
       {
         "screen_id": "ehr-032",
-        "part": null,
+        "part": "omar",
         "words": 25,
         "est_sec": 10.7
       },
       {
         "screen_id": "ehr-033",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ehr-034",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ehr-040",
-        "part": null,
-        "words": 24,
-        "est_sec": 10.3
+        "part": "omar",
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "ehr-041",
-        "part": null,
+        "part": "omar",
         "words": 30,
         "est_sec": 12.9
       },
       {
         "screen_id": "ehr-042",
-        "part": null,
-        "words": 47,
-        "est_sec": 20.1
+        "part": "noor",
+        "words": 46,
+        "est_sec": 19.7
       },
       {
         "screen_id": "ehr-050",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "omar",
+        "words": 34,
+        "est_sec": 14.6
       },
       {
         "screen_id": "ehr-051",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ehr-052",
-        "part": null,
+        "part": "omar",
         "words": 44,
         "est_sec": 18.9
       },
       {
         "screen_id": "ehr-090",
-        "part": null,
+        "part": "omar",
         "words": 21,
         "est_sec": 9.0
       },
       {
         "screen_id": "ehr-091",
-        "part": null,
+        "part": "omar",
         "words": 36,
         "est_sec": 15.4
       }

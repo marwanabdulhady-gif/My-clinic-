@@ -1,6 +1,17 @@
 # Voice-over script — MC06-rcm-ebp-benefits-rejections
 
-Language: en · Pace: ~140 wpm
+Language: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.
+
+## Voices
+
+| Voice | Brief | Lines in this module | Provider / voice id |
+|---|---|---|---|
+| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 14 | Pending program **D10** |
+| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 2 | Pending program **D10** |
+
+Neither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.
+
+The speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).
 
 ## Pronunciation guide
 
@@ -24,9 +35,7 @@ Language: en · Pace: ~140 wpm
 - **KPI** → K-P-I
 - **MOH** → M-O-H
 - **NFPA** → N-F-P-A
-- **NOOR** → noor
 - **OHS** → O-H-S
-- **OMAR** → OH-mar
 - **PASS** → pass
 - **PPE** → P-P-E
 - **PXO** → patient experience officer
@@ -41,20 +50,21 @@ Language: en · Pace: ~140 wpm
 
 ## Recording table
 
-| # | Screen | Tone | Script | Est. sec |
-|---|---|---|---|---|
-| 1 | `rcmb-000` | warm | OMAR: Welcome to RCM Part B: New EBP Benefits & Claim-Rejection Analysis. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 13.3 |
-| 2 | `rcmb-001` | calm, practical | OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. | 31.3 |
-| 3 | `rcmb-010` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. | 10.3 |
-| 4 | `rcmb-020` | calm, practical | OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 38.1 |
-| 5 | `rcmb-021` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |
-| 6 | `rcmb-030` | calm, practical | NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 34.7 |
-| 7 | `rcmb-031` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |
-| 8 | `rcmb-040` | calm, practical | OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. | 43.7 |
-| 9 | `rcmb-041` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |
-| 10 | `rcmb-050` | calm, practical | OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 30.9 |
-| 11 | `rcmb-051` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |
-| 12 | `rcmb-052` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |
-| 13 | `rcmb-060` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. | 9.9 |
-| 14 | `rcmb-090` | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 |
-| 15 | `rcmb-091` | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context. NOOR: Carry this practical rule into your next decision. | 21.4 |
+| # | Screen / part | Speaker | Tone | Script | Est. sec | File |
+|---|---|---|---|---|---|---|
+| 1 | `rcmb-000` | omar | warm | OMAR: Welcome to RCM Part B: New EBP Benefits & Claim-Rejection Analysis. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 13.3 | `MC06-rcm-ebp-benefits-rejections_rcmb-000.mp3` |
+| 2 | `rcmb-001` | omar | calm, practical | OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. | 33.0 | `MC06-rcm-ebp-benefits-rejections_rcmb-001.mp3` |
+| 3 | `rcmb-010` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-010.mp3` |
+| 4 | `rcmb-020` | omar | calm, practical | OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. | 39.0 | `MC06-rcm-ebp-benefits-rejections_rcmb-020.mp3` |
+| 5 | `rcmb-021` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-021.mp3` |
+| 6 | `rcmb-030` | noor | calm, practical | NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. | 37.3 | `MC06-rcm-ebp-benefits-rejections_rcmb-030.mp3` |
+| 7 | `rcmb-031` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-031.mp3` |
+| 8 | `rcmb-040` | omar | calm, practical | OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. | 43.3 | `MC06-rcm-ebp-benefits-rejections_rcmb-040.mp3` |
+| 9 | `rcmb-041` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-041.mp3` |
+| 10 | `rcmb-050` | omar | calm, practical | OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 30.9 | `MC06-rcm-ebp-benefits-rejections_rcmb-050.mp3` |
+| 11 | `rcmb-051` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-051.mp3` |
+| 12 | `rcmb-052` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-052.mp3` |
+| 13 | `rcmb-060` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. | 9.9 | `MC06-rcm-ebp-benefits-rejections_rcmb-060.mp3` |
+| 14 | `rcmb-090` | omar | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 | `MC06-rcm-ebp-benefits-rejections_rcmb-090.mp3` |
+| 15 | `rcmb-091/omar-1` | omar | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. | 15.4 | `MC06-rcm-ebp-benefits-rejections_rcmb-091_omar-1.mp3` |
+| 16 | `rcmb-091/noor-1` | noor | confident | NOOR: And remember: asking early is always the safe move here. | 4.7 | `MC06-rcm-ebp-benefits-rejections_rcmb-091_noor-1.mp3` |

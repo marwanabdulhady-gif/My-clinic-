@@ -15,7 +15,7 @@ from pathlib import Path
 from docx import Document
 from docx.enum.section import WD_SECTION
 from docx.enum.style import WD_STYLE_TYPE
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -24,7 +24,9 @@ ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
 OUTPUT = PLANS / "client-review"
 LOGO = PLANS / "00_program" / "brand" / "logo-preview.png"
+LOGO_HORIZONTAL = PLANS / "00_program" / "brand" / "assets" / "logo-horizontal-navy.png"
 DATE = "14 October 2026"
+REVISION = "v0.2"
 
 MODULES = [
     ("01_health-and-safety-1", "01", "Facility_Management_and_Safety", "#008C99"),
@@ -63,6 +65,75 @@ def set_repeat_table_header(row) -> None:
     tr_pr.append(tbl_header)
 
 
+def add_field(paragraph, instruction: str) -> None:
+    """Insert a Word field (PAGE / NUMPAGES) so the footer shows live page numbers."""
+    run = paragraph.add_run()
+    begin = OxmlElement("w:fldChar")
+    begin.set(qn("w:fldCharType"), "begin")
+    instr = OxmlElement("w:instrText")
+    instr.set(qn("xml:space"), "preserve")
+    instr.text = instruction
+    end = OxmlElement("w:fldChar")
+    end.set(qn("w:fldCharType"), "end")
+    run._r.append(begin)
+    run._r.append(instr)
+    run._r.append(end)
+
+
+def brand_header(section, module_number: str | None, doc_id: str) -> None:
+    """Running header: the supplied client logo on every page, document id on the right."""
+    header = section.header
+    header.is_linked_to_previous = False
+    paragraph = header.paragraphs[0]
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    usable = section.page_width - section.left_margin - section.right_margin
+    paragraph.paragraph_format.tab_stops.add_tab_stop(usable, WD_TAB_ALIGNMENT.RIGHT)
+    if LOGO_HORIZONTAL.exists():
+        paragraph.add_run().add_picture(str(LOGO_HORIZONTAL), width=Inches(1.35))
+    run = paragraph.add_run("\tMY CLINIC  |  STORYBOARD REVIEW  |  " + doc_id
+                            + (f"  |  MODULE {module_number}" if module_number else ""))
+    run.font.name = "Montserrat"
+    run.font.size = Pt(7.5)
+    run.font.color.rgb = rgb("5B6B7B")
+
+
+def brand_footer(section, note: str) -> None:
+    footer = section.footer
+    footer.is_linked_to_previous = False
+    paragraph = footer.paragraphs[0]
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    run = paragraph.add_run(note + "   ·   Page ")
+    run.font.name = "Montserrat"
+    run.font.size = Pt(7.5)
+    run.font.color.rgb = rgb("5B6B7B")
+    add_field(paragraph, " PAGE ")
+    mid = paragraph.add_run(" of ")
+    mid.font.name = "Montserrat"
+    mid.font.size = Pt(7.5)
+    mid.font.color.rgb = rgb("5B6B7B")
+    add_field(paragraph, " NUMPAGES ")
+    for item in paragraph.runs:
+        item.font.name = "Montserrat"
+        item.font.size = Pt(7.5)
+        item.font.color.rgb = rgb("5B6B7B")
+
+
+def doc_control_table(doc, rows: list[tuple[str, str]], colour: str) -> None:
+    table = doc.add_table(rows=0, cols=2)
+    table.style = "Light Shading Accent 1"
+    for label, value in rows:
+        cells = table.add_row().cells
+        cells[0].text = label
+        cells[1].text = value
+        set_cell_shading(cells[0], colour.lstrip("#"))
+        for run in cells[0].paragraphs[0].runs:
+            run.font.bold = True
+            run.font.color.rgb = RGBColor(255, 255, 255)
+        for para in cells[1].paragraphs:
+            for run in para.runs:
+                run.font.size = Pt(8.5)
+
+
 def make_doc(module_number: str, module_slug: str, colour: str, source: Path, target: Path) -> None:
     doc = Document()
     section = doc.sections[0]
@@ -88,22 +159,17 @@ def make_doc(module_number: str, module_slug: str, colour: str, source: Path, ta
         code.font.size = Pt(7.5)
         code.paragraph_format.space_after = Pt(2)
 
-    header = section.header.paragraphs[0]
-    header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    header_run = header.add_run("MY CLINIC  |  STORYBOARD REVIEW")
-    header_run.font.name = "Montserrat"
-    header_run.font.size = Pt(7.5)
-    header_run.font.color.rgb = rgb("5B6B7B")
-    footer = section.footer.paragraphs[0]
-    footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    footer_run = footer.add_run(f"Draft for SME review · {DATE} · Module {module_number}")
-    footer_run.font.name = "Montserrat"
-    footer_run.font.size = Pt(7.5)
-    footer_run.font.color.rgb = rgb("5B6B7B")
+    doc_id = f"MC-SB-{module_number} {REVISION}"
+    brand_header(section, module_number, doc_id)
+    brand_footer(section, f"Draft for SME review · {DATE} · {doc_id} · Module {module_number}")
 
+    band = doc.add_table(rows=1, cols=1)
+    set_cell_shading(band.rows[0].cells[0], colour.lstrip("#"))
+    band.rows[0].cells[0].paragraphs[0].add_run("")
     if LOGO.exists():
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.space_before = Pt(10)
         p.add_run().add_picture(str(LOGO), width=Inches(1.72))
     title = doc.add_paragraph()
     title.style = doc.styles["Title"]
@@ -112,8 +178,17 @@ def make_doc(module_number: str, module_slug: str, colour: str, source: Path, ta
     title.add_run(f"My Clinic — Module {module_number} storyboard")
     strap = doc.add_paragraph()
     strap.add_run("Client review document · ").bold = True
-    strap.add_run("Generated from the controlled Markdown storyboard. The Markdown and JSON remain the editable source of truth.")
-    strap.paragraph_format.space_after = Pt(12)
+    strap.add_run("Generated from the controlled Markdown storyboard. The Markdown and JSON remain the editable source of truth. The supplied My Clinic logo appears in the running header of every page and is never regenerated or redrawn.")
+    strap.paragraph_format.space_after = Pt(10)
+    doc_control_table(doc, [
+        ("Document", f"MC-SB-{module_number} · storyboard review rendering"),
+        ("Revision", f"{REVISION} · {DATE}"),
+        ("Status", "Draft for SME review — not approved course content"),
+        ("Source of truth", f"{module_number}_*/storyboard/storyboard.md (Markdown + JSON)"),
+        ("Companion files", "screen-visuals.html · visual-plan.json · narration-script.json · asset-register.md · lint-report.json"),
+        ("Review route", "Named SMEs per the module header, then L&D authoring; open source-lock items stay ⚠ PENDING"),
+    ], colour)
+    doc.add_page_break()
 
     content = source.read_text(encoding="utf-8").splitlines()
     i = 0
@@ -220,10 +295,19 @@ def make_program_pack(target: Path) -> None:
     sec.right_margin = Inches(0.72)
     doc.styles["Normal"].font.name = "Montserrat"
     doc.styles["Normal"].font.size = Pt(10)
+    pack_id = f"MC-SB-00 {REVISION}"
+    brand_header(sec, None, pack_id)
+    brand_footer(sec, f"Client review edition · {DATE} · {pack_id}")
     if LOGO.exists():
         doc.add_picture(str(LOGO), width=Inches(2.05))
     doc.add_heading("My Clinic e-learning storyboard review pack", 0)
-    doc.add_paragraph(f"Client review edition · {DATE}")
+    doc.add_paragraph(f"Client review edition · {DATE} · {pack_id}")
+    doc_control_table(doc, [
+        ("Document", "MC-SB-00 · programme review pack index"),
+        ("Revision", f"{REVISION} · {DATE}"),
+        ("Covers", "Modules 01–08 storyboard renderings plus this index"),
+        ("Status", "Draft for SME review — not approved course content"),
+    ], "003867")
     doc.add_paragraph("This pack indexes the eight controlled storyboard documents. It makes clear what is ready for SME review and what remains blocked by policy, rights, voice or test-environment decisions.")
     doc.add_heading("SME review queue", 1)
     doc.add_paragraph("Use 00_program/storyboard-review-register.md and its CSV sibling alongside this pack. The register routes screen-level interaction detail, visual-hotspot and privacy checks to named review roles; it is a pre-build queue, not an approval record.")

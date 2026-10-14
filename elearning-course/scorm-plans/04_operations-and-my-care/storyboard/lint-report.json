@@ -1,11 +1,13 @@
 {
   "generated_at": "2026-10-14",
-  "tool": "edumints-scorm-mcp core.playbook",
+  "tool": "tools/lint_planning.py — deterministic local port of edumints core.playbook lint rules",
   "tool_revision": "4bbf4591cf8a3ffcb63909fcb69f0547e1654db0",
   "brand_adapter": "../../00_program/brand/brand-kit.edumints.json",
+  "upstream_equivalence": "Rules ported from edumints-scorm-mcp core/playbook.py at the revision above. The MCP server is not reachable from this workspace, so rerun lint_visual_plan and lint_narration_script on the server before Phase 4; this file is not an MCP result.",
   "model_validation": {
     "visual_plan": true,
-    "narration_script": true
+    "narration_script": true,
+    "problems": []
   },
   "visual_plan": {
     "error_count": 0,
@@ -21,86 +23,92 @@
     "clean": true,
     "module_id": "MC04-operations-my-care",
     "wpm": 140,
-    "total_est_sec": 270.9,
-    "total_est_min": 4.5,
+    "total_est_sec": 263.6,
+    "total_est_min": 4.4,
     "screens": [
       {
         "screen_id": "ops-000",
-        "part": null,
+        "part": "omar",
         "words": 29,
         "est_sec": 12.4
       },
       {
         "screen_id": "ops-001",
-        "part": null,
+        "part": "omar",
         "words": 58,
         "est_sec": 24.9
       },
       {
         "screen_id": "ops-002",
-        "part": null,
+        "part": "omar",
         "words": 50,
         "est_sec": 21.4
       },
       {
         "screen_id": "ops-010",
-        "part": null,
-        "words": 94,
-        "est_sec": 40.3
+        "part": "omar",
+        "words": 91,
+        "est_sec": 39.0
       },
       {
         "screen_id": "ops-011",
-        "part": null,
-        "words": 72,
-        "est_sec": 30.9
+        "part": "omar",
+        "words": 73,
+        "est_sec": 31.3
       },
       {
         "screen_id": "ops-020",
-        "part": null,
-        "words": 93,
-        "est_sec": 39.9
+        "part": "omar",
+        "words": 90,
+        "est_sec": 38.6
       },
       {
         "screen_id": "ops-021",
-        "part": null,
+        "part": "omar",
         "words": 59,
         "est_sec": 25.3
       },
       {
         "screen_id": "ops-022",
-        "part": null,
+        "part": "noor",
         "words": 35,
         "est_sec": 15.0
       },
       {
         "screen_id": "ops-030",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ops-031",
-        "part": null,
-        "words": 36,
-        "est_sec": 15.4
+        "part": "omar",
+        "words": 31,
+        "est_sec": 13.3
       },
       {
         "screen_id": "ops-032",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ops-033",
-        "part": null,
+        "part": "omar",
         "words": 18,
         "est_sec": 7.7
       },
       {
         "screen_id": "ops-090",
-        "part": null,
-        "words": 52,
-        "est_sec": 22.3
+        "part": "omar-1",
+        "words": 36,
+        "est_sec": 15.4
+      },
+      {
+        "screen_id": "ops-090",
+        "part": "noor-1",
+        "words": 9,
+        "est_sec": 3.9
       }
     ],
     "issues": []

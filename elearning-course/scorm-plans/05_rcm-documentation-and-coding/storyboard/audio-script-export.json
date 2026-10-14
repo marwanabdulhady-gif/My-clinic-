@@ -2,197 +2,289 @@
   "module_id": "MC05-rcm-documentation-coding",
   "language": "en",
   "wpm": 140,
-  "total_est_sec": 385.0,
+  "voices": {
+    "omar": {
+      "label": "OMAR:",
+      "brief": "Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    },
+    "noor": {
+      "label": "NOOR:",
+      "brief": "Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm",
+      "provider": "external",
+      "voice_id": null,
+      "status": "pending program D10"
+    }
+  },
+  "generated_by": "tools/audio_export.py (edumints core.playbook export rules, rev 4bbf4591)",
+  "total_est_sec": 376.2,
   "segments": [
     {
       "screen_id": "rcma-000",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-000.mp3",
       "narration_text": "OMAR: Welcome to RCM Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
-      "tts_text": "Welcome to RCM Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "tts_text": "Welcome to R-C-M Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">Welcome to <sub alias=\"R-C-M\">RCM</sub> Part A: Documentation &amp; Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.</speak>",
       "est_sec": 12.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-001",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-001.mp3",
       "narration_text": "OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
       "tts_text": "The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "ssml": "<speak xml:lang=\"en\">The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.</speak>",
       "est_sec": 30.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-002",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-002.mp3",
       "narration_text": "OMAR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
       "tts_text": "This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+      "ssml": "<speak xml:lang=\"en\">This reflection is not scored. Choose the response that helps you set one intention for your next shift.</speak>",
       "est_sec": 8.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-010",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-010.mp3",
-      "narration_text": "OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "est_sec": 36.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "tts_text": "What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
+      "est_sec": 34.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-011",
+      "part": "noor",
+      "speaker": "noor",
       "filename": "MC05-rcm-documentation-coding_rcma-011.mp3",
-      "narration_text": "NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "tts_text": "Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
-      "est_sec": 24.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor"
+      "narration_text": "NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "tts_text": "Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "ssml": "<speak xml:lang=\"en\">Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.</speak>",
+      "est_sec": 24.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-012",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-012.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-013",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-013.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-020",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-020.mp3",
-      "narration_text": "OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "tts_text": "Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
-      "est_sec": 36.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+      "tts_text": "Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+      "ssml": "<speak xml:lang=\"en\">Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.</speak>",
+      "est_sec": 33.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-021",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-021.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-022",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-022.mp3",
-      "narration_text": "OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "est_sec": 39.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "tts_text": "Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "ssml": "<speak xml:lang=\"en\">Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.</speak>",
+      "est_sec": 38.1,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-023",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-023.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.</speak>",
       "est_sec": 10.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-030",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-030.mp3",
-      "narration_text": "OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "tts_text": "Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
-      "est_sec": 33.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+      "tts_text": "Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+      "ssml": "<speak xml:lang=\"en\">Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.</speak>",
+      "est_sec": 36.0,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-031",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-031.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised.",
-      "est_sec": 15.4,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 13.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-032",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-032.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-033",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-033.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-040",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-040.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits.",
-      "est_sec": 10.3,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
+      "est_sec": 7.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-041",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-041.mp3",
-      "narration_text": "OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 30.9,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">Coverage changes often. Part B covers what&#x27;s new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 31.3,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-042",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-042.mp3",
       "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
       "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.</speak>",
       "est_sec": 7.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-050",
-      "filename": "MC05-rcm-documentation-coding_rcma-050.mp3",
-      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. NOOR: Carry this practical rule into your next decision.",
-      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. Carry this practical rule into your next decision.",
-      "est_sec": 16.7,
-      "timing_source": "estimated_word_count",
-      "speaker": "noor+omar"
+      "part": "omar-1",
+      "speaker": "omar",
+      "filename": "MC05-rcm-documentation-coding_rcma-050_omar-1.mp3",
+      "narration_text": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "tts_text": "The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "ssml": "<speak xml:lang=\"en\">The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.</speak>",
+      "est_sec": 10.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
+    },
+    {
+      "screen_id": "rcma-050",
+      "part": "noor-1",
+      "speaker": "noor",
+      "filename": "MC05-rcm-documentation-coding_rcma-050_noor-1.mp3",
+      "narration_text": "NOOR: That is the habit we want from every new colleague.",
+      "tts_text": "That is the habit we want from every new colleague.",
+      "ssml": "<speak xml:lang=\"en\">That is the habit we want from every new colleague.</speak>",
+      "est_sec": 4.7,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-090",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-090.mp3",
       "narration_text": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
       "tts_text": "Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+      "ssml": "<speak xml:lang=\"en\">Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.</speak>",
       "est_sec": 9.0,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "cues": [],
+      "timing_source": "estimated_word_count"
     },
     {
       "screen_id": "rcma-091",
+      "part": "omar",
+      "speaker": "omar",
       "filename": "MC05-rcm-documentation-coding_rcma-091.mp3",
-      "narration_text": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
-      "est_sec": 26.1,
-      "timing_source": "estimated_word_count",
-      "speaker": "omar"
+      "narration_text": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "tts_text": "You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "ssml": "<speak xml:lang=\"en\">You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.</speak>",
+      "est_sec": 24.9,
+      "cues": [],
+      "timing_source": "estimated_word_count"
     }
   ],
-  "voice_talent_md": "# Voice-over script — MC05-rcm-documentation-coding\n\nLanguage: en · Pace: ~140 wpm\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **NOOR** → noor\n- **OHS** → O-H-S\n- **OMAR** → OH-mar\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen | Tone | Script | Est. sec |\n|---|---|---|---|---|\n| 1 | `rcma-000` | warm | OMAR: Welcome to RCM Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.0 |\n| 2 | `rcma-001` | calm, practical | OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 30.0 |\n| 3 | `rcma-002` | reflective | OMAR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 |\n| 4 | `rcma-010` | calm, practical | OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 36.0 |\n| 5 | `rcma-011` | calm, practical | NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 24.4 |\n| 6 | `rcma-012` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 7 | `rcma-013` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 8 | `rcma-020` | calm, practical | OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. | 36.4 |\n| 9 | `rcma-021` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 10 | `rcma-022` | calm, practical | OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Apply the point to a familiar task. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 39.4 |\n| 11 | `rcma-023` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. | 10.7 |\n| 12 | `rcma-030` | calm, practical | OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 33.4 |\n| 13 | `rcma-031` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. Use the rule you practised. | 15.4 |\n| 14 | `rcma-032` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 15 | `rcma-033` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 16 | `rcma-040` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. | 10.3 |\n| 17 | `rcma-041` | calm, practical | OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 30.9 |\n| 18 | `rcma-042` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 |\n| 19 | `rcma-050` | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Use the rule you practised. NOOR: Carry this practical rule into your next decision. | 16.7 |\n| 20 | `rcma-090` | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 |\n| 21 | `rcma-091` | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 26.1 |\n"
+  "voice_talent_md": "# Voice-over script — MC05-rcm-documentation-coding\n\nLanguage: en · Pace: ~140 wpm · Two voices: **Dr. Omar** (lead host) and **Noor** (co-host) — [`companions.md`](../../00_program/characters/companions.md) §5.\n\n## Voices\n\n| Voice | Brief | Lines in this module | Provider / voice id |\n|---|---|---|---|\n| **Dr. Omar** (`OMAR:`) | Male, late 30s, friendly, confident and relaxed; international English with a light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 20 | Pending program **D10** |\n| **Noor** (`NOOR:`) | Female, early-to-mid 30s, warm, calm and clear; international English with a light Gulf Arabic accent welcome; smiling but not bubbly; ~140 wpm | 2 | Pending program **D10** |\n\nNeither voice may be cloned from, or resemble, a real My Clinic employee. Record a 30-second sample of each voice reading a “meet your guide” line for approval before producing this module. Once D10 closes, record the provider and voice ids in `00_program/narration-and-lexicon.md` §1 and in `narration-script.json` → `voice`.\n\nThe speaker label (`OMAR:` / `NOOR:`) selects the voice and is **not** spoken; `tts_text` in [`audio-script-export.json`](audio-script-export.json) already has it removed and the lexicon applied. Two-voice screens are recorded as one file per `part` and joined with 0.3 s of silence (companions.md §5).\n\n## Pronunciation guide\n\n- **ALARA** → ah-LAR-ah\n- **AREC** → A-R-E-C\n- **BME** → Biomedical Engineering\n- **BMI** → B-M-I\n- **CBAHI** → see-bah-hee\n- **CCHI** → C-C-H-I\n- **CDI** → C-D-I\n- **CHI** → C-H-I\n- **EBP** → E-B-P\n- **EHR** → E-H-R\n- **ERT** → E-R-T\n- **FMS** → F-M-S\n- **GHS** → G-H-S\n- **HAZMAT** → haz-mat\n- **HPI** → history of present illness\n- **ICD** → I-C-D\n- **ICD-10** → I-C-D ten\n- **KPI** → K-P-I\n- **MOH** → M-O-H\n- **NFPA** → N-F-P-A\n- **OHS** → O-H-S\n- **PASS** → pass\n- **PPE** → P-P-E\n- **PXO** → patient experience officer\n- **RACE** → race\n- **RCM** → R-C-M\n- **RSO** → R-S-O\n- **SAR** → Saudi riyals\n- **SCORM** → scorm\n- **SDS** → S-D-S\n- **SMS** → S-M-S\n- **TAT** → turnaround time\n\n## Recording table\n\n| # | Screen / part | Speaker | Tone | Script | Est. sec | File |\n|---|---|---|---|---|---|---|\n| 1 | `rcma-000` | omar | warm | OMAR: Welcome to RCM Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. | 12.0 | `MC05-rcm-documentation-coding_rcma-000.mp3` |\n| 2 | `rcma-001` | omar | calm, practical | OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. | 30.0 | `MC05-rcm-documentation-coding_rcma-001.mp3` |\n| 3 | `rcma-002` | omar | reflective | OMAR: This reflection is not scored. Choose the response that helps you set one intention for your next shift. | 8.1 | `MC05-rcm-documentation-coding_rcma-002.mp3` |\n| 4 | `rcma-010` | omar | calm, practical | OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 34.7 | `MC05-rcm-documentation-coding_rcma-010.mp3` |\n| 5 | `rcma-011` | noor | calm, practical | NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. | 24.9 | `MC05-rcm-documentation-coding_rcma-011.mp3` |\n| 6 | `rcma-012` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-012.mp3` |\n| 7 | `rcma-013` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-013.mp3` |\n| 8 | `rcma-020` | omar | calm, practical | OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. | 33.9 | `MC05-rcm-documentation-coding_rcma-020.mp3` |\n| 9 | `rcma-021` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-021.mp3` |\n| 10 | `rcma-022` | omar | calm, practical | OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. | 38.1 | `MC05-rcm-documentation-coding_rcma-022.mp3` |\n| 11 | `rcma-023` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. | 10.7 | `MC05-rcm-documentation-coding_rcma-023.mp3` |\n| 12 | `rcma-030` | omar | calm, practical | OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. | 36.0 | `MC05-rcm-documentation-coding_rcma-030.mp3` |\n| 13 | `rcma-031` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond. | 13.3 | `MC05-rcm-documentation-coding_rcma-031.mp3` |\n| 14 | `rcma-032` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-032.mp3` |\n| 15 | `rcma-033` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-033.mp3` |\n| 16 | `rcma-040` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-040.mp3` |\n| 17 | `rcma-041` | omar | calm, practical | OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 31.3 | `MC05-rcm-documentation-coding_rcma-041.mp3` |\n| 18 | `rcma-042` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. | 7.7 | `MC05-rcm-documentation-coding_rcma-042.mp3` |\n| 19 | `rcma-050/omar-1` | omar | encouraging | OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. | 10.7 | `MC05-rcm-documentation-coding_rcma-050_omar-1.mp3` |\n| 20 | `rcma-050/noor-1` | noor | encouraging | NOOR: That is the habit we want from every new colleague. | 4.7 | `MC05-rcm-documentation-coding_rcma-050_noor-1.mp3` |\n| 21 | `rcma-090` | omar | supportive | OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. | 9.0 | `MC05-rcm-documentation-coding_rcma-090.mp3` |\n| 22 | `rcma-091` | omar | confident | OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. | 24.9 | `MC05-rcm-documentation-coding_rcma-091.mp3` |\n"
 }

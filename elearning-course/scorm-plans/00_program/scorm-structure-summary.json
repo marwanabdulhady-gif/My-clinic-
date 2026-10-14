@@ -11,7 +11,7 @@
     "pass_pts": 176,
     "sections": 11,
     "scen": 5,
-    "minutes": 16.1,
+    "minutes": 16.02857142857143,
     "objectives": 10,
     "weak": [
       "hs1-o1",
@@ -33,7 +33,7 @@
     "pass_pts": 116,
     "sections": 7,
     "scen": 3,
-    "minutes": 6.492857142857143,
+    "minutes": 6.378571428571429,
     "objectives": 7,
     "weak": [
       "hs2-o2",
@@ -71,7 +71,7 @@
     "pass_pts": 35,
     "sections": 4,
     "scen": 1,
-    "minutes": 4.428571428571429,
+    "minutes": 4.307142857142857,
     "objectives": 3,
     "weak": [
       "ops-o1",
@@ -91,7 +91,7 @@
     "pass_pts": 80,
     "sections": 6,
     "scen": 2,
-    "minutes": 6.271428571428571,
+    "minutes": 6.121428571428571,
     "objectives": 5,
     "weak": [
       "rcma-o5"
@@ -110,7 +110,7 @@
     "pass_pts": 64,
     "sections": 4,
     "scen": 2,
-    "minutes": 4.578571428571428,
+    "minutes": 4.5928571428571425,
     "objectives": 3,
     "weak": [
       "rcmb-o1"
@@ -148,7 +148,7 @@
     "pass_pts": 72,
     "sections": 6,
     "scen": 7,
-    "minutes": 4.978571428571429,
+    "minutes": 4.935714285714286,
     "objectives": 5,
     "weak": [
       "ehr-o2",

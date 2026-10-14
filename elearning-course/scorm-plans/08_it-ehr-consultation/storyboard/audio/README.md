@@ -1,8 +1,8 @@
 # Narration production status — Module 08
 
-The complete, screen-by-screen English script is in [`narration-script.json`](narration-script.json). The
-recording table and TTS-ready text are in [`voice_talent.md`](voice_talent.md) and
-[`audio-script-export.json`](audio-script-export.json).
+The complete, screen-by-screen English script is in [`../narration-script.json`](../narration-script.json).
+The recording table and TTS-ready text are in [`../voice_talent.md`](../voice_talent.md) and
+[`../audio-script-export.json`](../audio-script-export.json).
 
 ## What is ready
 
