@@ -44,6 +44,7 @@
 
 - Generated native editable SVG diagrams where facts can be changed after SME review.
 - Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.
+- Rendered each generated diagram/concept asset directly on its intended HTML screen-review board, so reviewers inspect the actual asset rather than a generic placeholder.
 - Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.
 - Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.
 

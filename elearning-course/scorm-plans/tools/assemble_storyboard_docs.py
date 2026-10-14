@@ -184,6 +184,33 @@ GENERATED_ASSETS: dict[str, dict[str, dict[str, str]]] = {
     },
 }
 
+# These are the assets shown directly on the HTML visual-review boards.  Keeping the mapping
+# explicit means reviewers see the real generated diagram/concept asset rather than a generic
+# placeholder on the screen where it is intended to be discussed.
+SCREEN_BOARD_ART: dict[str, list[str]] = {
+    "hs1-203": ["hs1-img-arec"],
+    "hs1-305": ["hs1-img-ert"],
+    "hs1-401": ["hs1-img-triangle"],
+    "hs1-404": ["hs1-img-corridor"],
+    "hs1-503": ["hs1-img-nfpa-blank"],
+    "hs1-504": ["hs1-img-nfpa-301w"],
+    "hs1-903": ["hs1-img-alara"],
+    "hs2-011": ["hs2-img-storeroom"],
+    "hs2-032": ["hs2-img-floorplan"],
+    "hs2-063": ["hs2-img-nfpa-230"],
+    "ops-002": ["ops-img-journey"],
+    "ops-011": ["ops-img-ops-chart"],
+    "ops-021": ["ops-img-mycare-chart"],
+    "ops-031": ["ops-img-reception-scenario"],
+    "rcma-001": ["rcma-img-reviewer"],
+    "rcma-011": ["rcma-img-note-weak", "rcma-img-note-strong"],
+    "rcmb-010": ["rcmb-img-benefit-icons"],
+    "rcmb-020": ["rcmb-img-benefit-icons"],
+    "rcmb-040": ["rcmb-img-benefit-icons"],
+    "ehr-000": ["ehr-capture-sheet"],
+    "ehr-001": ["ehr-capture-sheet"],
+}
+
 
 def md_cells(line: str) -> list[str]:
     return [cell.strip() for cell in line.strip().strip("|").split("|")]
@@ -907,16 +934,23 @@ def html_screen_markup(row: dict[str, Any], cfg: dict[str, Any], companion: dict
     elif row["type"] in {"tabs", "accordion", "flashcards", "hotspot"}:
         cards = '<div class="content-cards"><span></span><span></span><span></span></div>'
     generated = GENERATED_ASSETS.get(folder, {})
-    art_html = ""
-    if row["id"] == "hs1-404":
-        art_html = '<img class="art" src="assets/hs1-img-corridor.png" alt="Clinic corridor safety illustration">'
-    elif row["id"] == "hs2-011":
-        art_html = '<img class="art" src="assets/hs2-img-storeroom.png" alt="Store room hazard illustration">'
-    elif row["id"] == "ops-031":
-        art_html = '<img class="art" src="assets/ops-img-reception-scenario.png" alt="Reception scenario illustration">'
+    board_assets = [generated[asset_id] for asset_id in SCREEN_BOARD_ART.get(row["id"], []) if asset_id in generated]
+    asset_ids = SCREEN_BOARD_ART.get(row["id"], [])
+    if len(board_assets) == 1:
+        asset = board_assets[0]
+        asset_class = "art diagram" if asset["file"].endswith(".svg") else "art"
+        art_html = f'<img class="{asset_class}" src="{html.escape(asset["file"])}" alt="{html.escape(asset["alt"])}">'
+    elif len(board_assets) > 1:
+        asset_images = "".join(
+            f'<img src="{html.escape(asset["file"])}" alt="{html.escape(asset["alt"])}">' for asset in board_assets
+        )
+        art_html = f'<div class="art-pair">{asset_images}</div>'
+    else:
+        art_html = ""
+    asset_note = f" · visual asset: {html.escape(', '.join(asset_ids))}" if asset_ids else ""
     return f'''<article class="board" id="{row['id']}">
   <div class="screen {classes}">{brand_logo_html(True)}<div class="header-rule"></div><p class="crumb">{html.escape(layout)} · {html.escape(row['phase_heading'])}</p><h2>{title}</h2><p class="keywords">{content}</p>{art_html}{cards}{companion_html}<div class="progress" style="--accent:{cfg['module_hex']}"></div></div>
-  <div class="caption"><code>{row['id']}</code> · {html.escape(row['type'])} · screen visual reference only · inspect final responsive build before approval</div>
+  <div class="caption"><code>{row['id']}</code> · {html.escape(row['type'])}{asset_note} · screen visual reference only · inspect final responsive build before approval</div>
 </article>'''
 
 
@@ -928,7 +962,7 @@ def write_screen_visuals(out_dir: Path, folder: str, cfg: dict[str, Any], rows: 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root{{--navy:#003867;--ink:#1F2A37;--bg:#F4F7FA;--line:#D9E1E8;--muted:#5B6B7B;--accent:{cfg['module_hex']};}}
-*{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif}} header{{background:var(--navy);color:#fff;padding:42px max(24px,5vw)}}header img{{width:188px;height:auto}}header h1{{font-size:32px;margin:20px 0 6px}}header p{{max-width:850px;color:#C0CED9;line-height:1.5}}main{{max-width:1160px;margin:28px auto;padding:0 24px}}.notice{{border-left:4px solid #9D3293;background:#fff;padding:16px 20px;border-radius:8px;margin-bottom:24px;line-height:1.5}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;align-items:start}}.board{{margin:0}}.screen{{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;padding:30px 40px;box-shadow:0 8px 24px rgba(0,56,103,.08)}}.screen .logo{{width:142px;height:auto;position:absolute;left:40px;top:20px;z-index:2}}.header-rule{{position:absolute;left:40px;right:40px;top:63px;height:2px;background:var(--navy)}}.crumb{{margin:55px 0 10px;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}}.screen h2{{font-size:clamp(18px,2.3vw,30px);line-height:1.15;color:var(--navy);margin:0 0 16px;max-width:70%}}.keywords{{font-size:clamp(12px,1.5vw,16px);line-height:1.45;max-width:60%;margin:0}}.title-screen{{background:linear-gradient(135deg,#003867,#3B6A97);padding:72px 48px;color:#fff}}.title-screen .logo{{left:48px;top:38px;width:192px}}.title-screen h2{{color:#fff;font-size:clamp(28px,4vw,44px);max-width:68%;margin-top:66px}}.title-screen p{{color:#C0CED9}}.chip{{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em}}.watermark{{position:absolute;right:-30px;bottom:-105px;font-size:270px;opacity:.08}}.question .choice-row{{position:absolute;left:40px;right:40px;bottom:40px;display:flex;gap:10px}}.choice-row span{{height:42px;flex:1;border:1px solid #D9E1E8;border-radius:10px;background:#fff}}.scenario{{background:#fff}}.scenario .choice-row span:first-child{{border:2px solid var(--accent)}}.content-cards{{display:flex;gap:10px;margin-top:24px;max-width:66%}}.content-cards span{{height:48px;flex:1;background:#fff;border:1px solid #D9E1E8;border-radius:10px}}.companion{{position:absolute;right:36px;bottom:30px;width:135px;border:1px solid #D9E1E8;background:#fff;border-radius:12px;padding:12px;color:var(--navy);font-size:11px;line-height:1.35}}.companion span{{color:var(--muted)}}.progress{{position:absolute;bottom:0;left:0;width:42%;height:5px;background:var(--accent)}}.art{{position:absolute;right:30px;bottom:30px;width:36%;height:48%;object-fit:cover;border-radius:10px;border:1px solid #D9E1E8}}.caption{{font-size:12px;color:var(--muted);padding:9px 4px;line-height:1.4}}code{{color:#006E78;font-family:ui-monospace,monospace}}@media(max-width:550px){{.grid{{grid-template-columns:1fr}}.screen{{padding:22px}}.screen .logo{{left:22px;top:16px;width:110px}}.header-rule{{left:22px;right:22px;top:52px}}.screen h2{{max-width:88%;margin-top:10px}}.keywords{{max-width:85%}}.choice-row{{left:22px!important;right:22px!important;bottom:22px!important}}.companion{{display:none}}}}
+*{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif}} header{{background:var(--navy);color:#fff;padding:42px max(24px,5vw)}}header img{{width:188px;height:auto}}header h1{{font-size:32px;margin:20px 0 6px}}header p{{max-width:850px;color:#C0CED9;line-height:1.5}}main{{max-width:1160px;margin:28px auto;padding:0 24px}}.notice{{border-left:4px solid #9D3293;background:#fff;padding:16px 20px;border-radius:8px;margin-bottom:24px;line-height:1.5}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;align-items:start}}.board{{margin:0}}.screen{{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;padding:30px 40px;box-shadow:0 8px 24px rgba(0,56,103,.08)}}.screen .logo{{width:142px;height:auto;position:absolute;left:40px;top:20px;z-index:2}}.header-rule{{position:absolute;left:40px;right:40px;top:63px;height:2px;background:var(--navy)}}.crumb{{margin:55px 0 10px;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}}.screen h2{{font-size:clamp(18px,2.3vw,30px);line-height:1.15;color:var(--navy);margin:0 0 16px;max-width:70%}}.keywords{{font-size:clamp(12px,1.5vw,16px);line-height:1.45;max-width:60%;margin:0}}.title-screen{{background:linear-gradient(135deg,#003867,#3B6A97);padding:72px 48px;color:#fff}}.title-screen .logo{{left:48px;top:38px;width:192px}}.title-screen h2{{color:#fff;font-size:clamp(28px,4vw,44px);max-width:68%;margin-top:66px}}.title-screen p{{color:#C0CED9}}.chip{{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em}}.watermark{{position:absolute;right:-30px;bottom:-105px;font-size:270px;opacity:.08}}.question .choice-row{{position:absolute;left:40px;right:40px;bottom:40px;display:flex;gap:10px}}.choice-row span{{height:42px;flex:1;border:1px solid #D9E1E8;border-radius:10px;background:#fff}}.scenario{{background:#fff}}.scenario .choice-row span:first-child{{border:2px solid var(--accent)}}.content-cards{{display:flex;gap:10px;margin-top:24px;max-width:66%}}.content-cards span{{height:48px;flex:1;background:#fff;border:1px solid #D9E1E8;border-radius:10px}}.companion{{position:absolute;right:36px;bottom:30px;width:135px;border:1px solid #D9E1E8;background:#fff;border-radius:12px;padding:12px;color:var(--navy);font-size:11px;line-height:1.35}}.companion span{{color:var(--muted)}}.progress{{position:absolute;bottom:0;left:0;width:42%;height:5px;background:var(--accent)}}.art{{position:absolute;right:30px;bottom:30px;width:36%;height:48%;object-fit:cover;border-radius:10px;border:1px solid #D9E1E8;background:#fff}}.art.diagram{{object-fit:contain;padding:4px}}.art-pair{{position:absolute;right:30px;bottom:30px;width:40%;height:48%;display:flex;gap:8px;padding:5px;background:#fff;border:1px solid #D9E1E8;border-radius:10px}}.art-pair img{{min-width:0;width:50%;height:100%;object-fit:contain}}.caption{{font-size:12px;color:var(--muted);padding:9px 4px;line-height:1.4}}code{{color:#006E78;font-family:ui-monospace,monospace}}@media(max-width:550px){{.grid{{grid-template-columns:1fr}}.screen{{padding:22px}}.screen .logo{{left:22px;top:16px;width:110px}}.header-rule{{left:22px;right:22px;top:52px}}.screen h2{{max-width:88%;margin-top:10px}}.keywords{{max-width:85%}}.choice-row{{left:22px!important;right:22px!important;bottom:22px!important}}.companion{{display:none}}}}
 </style></head><body>
 <header><img src="../../00_program/brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Module {cfg['number']} · screen visual review</h1><p>{html.escape(cfg['title'])} · official client logo and palette applied to every reference screen.</p></header>
 <main><div class="notice"><strong>Review artefact, not a SCORM preview.</strong> These visual boards show layout, client-logo placement, screen hierarchy and the one-module-colour rule. Final content is governed by <code>storyboard.md</code>; screenshots, policy values and hotspot coordinates remain subject to the module’s source lock.</div><div class="grid">{boards}</div></main></body></html>'''
@@ -1439,7 +1473,7 @@ def write_program_dashboard(results: list[dict[str, Any]]) -> None:
         "| 07 — Clinical Governance | 22 core | 11 / 95 | Existing storyboard | Existing brand mockups | Pending policy/source review | Not available in this pass | Draft — SME review |", "",
         "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | 03 and 07 existed; 01, 02, 04, 05, 06 and 08 now have complete review-card packs. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Each new pack now has an editable narration script, voice-talent table, visual plan, asset register and logo placement rules. | D10 voice choice, approved scripts, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
         "## Decisions that still gate release", "", "1. **Safety:** Code Orange threshold, real emergency extensions, waste colours, radiation/laser details and facility-specific information (modules 01–02).", "2. **Operations:** live reporting lines, abbreviation expansions and escalation ownership (module 04).", "3. **RCM:** current payer/regulator wording, ICD-10 validation, benefits/limits and de-identified rejection classifications (modules 05–06).", "4. **EHR:** only a test environment/test patient may be captured; the existing source video is never a production asset (module 08).", "5. **Programme:** Marketing brand confirmation D11, two approved narration voices D10 and every asset’s provenance/approval record.", "",
-        "## Asset work completed in this pass", "", "- Generated native editable SVG diagrams where facts can be changed after SME review.", "- Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.", "- Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.", "- Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.", "",
+        "## Asset work completed in this pass", "", "- Generated native editable SVG diagrams where facts can be changed after SME review.", "- Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.", "- Rendered each generated diagram/concept asset directly on its intended HTML screen-review board, so reviewers inspect the actual asset rather than a generic placeholder.", "- Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.", "- Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.", "",
         "## Next hand-off", "", "1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for the six new packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",
     ]
     (PLANS / "00_program" / "storyboard-production-board.md").write_text("\n".join(md), encoding="utf-8")
