@@ -1,0 +1,159 @@
+[
+  {
+    "num": "01",
+    "name": "01_health-and-safety-1",
+    "title": "My Clinic \u2014 Facility Management & Safety",
+    "scorm": "2004",
+    "screens": 54,
+    "scored": 24,
+    "points": 220,
+    "pass": 80,
+    "pass_pts": 176,
+    "sections": 11,
+    "scen": 5,
+    "minutes": 16.1,
+    "objectives": 10,
+    "weak": [
+      "hs1-o1",
+      "hs1-o6",
+      "hs1-o7",
+      "hs1-o10"
+    ],
+    "zip": "MC_01_FMS_v1.0_2004.zip"
+  },
+  {
+    "num": "02",
+    "name": "02_health-and-safety-2",
+    "title": "My Clinic \u2014 Safety in Practice: Hazard, Fire & Chemical Lab",
+    "scorm": "1.2",
+    "screens": 26,
+    "scored": 13,
+    "points": 145,
+    "pass": 80,
+    "pass_pts": 116,
+    "sections": 7,
+    "scen": 3,
+    "minutes": 6.492857142857143,
+    "objectives": 7,
+    "weak": [
+      "hs2-o2",
+      "hs2-o4",
+      "hs2-o7"
+    ],
+    "zip": "MC_02_SafetyLab_v1.0_1.2.zip"
+  },
+  {
+    "num": "03",
+    "name": "03_hr-employee-induction",
+    "title": "My Clinic \u2014 Welcome On Board: My Clinic & HR Essentials",
+    "scorm": "2004",
+    "screens": 36,
+    "scored": 15,
+    "points": 145,
+    "pass": 70,
+    "pass_pts": 102,
+    "sections": 10,
+    "scen": 4,
+    "minutes": 11.478571428571428,
+    "objectives": 6,
+    "weak": [],
+    "zip": "MC_03_WelcomeOnBoard_v1.0_2004.zip"
+  },
+  {
+    "num": "04",
+    "name": "04_operations-and-my-care",
+    "title": "My Clinic \u2014 Who Does What: Operations & My Care",
+    "scorm": "1.2",
+    "screens": 13,
+    "scored": 4,
+    "points": 50,
+    "pass": 70,
+    "pass_pts": 35,
+    "sections": 4,
+    "scen": 1,
+    "minutes": 4.428571428571429,
+    "objectives": 3,
+    "weak": [
+      "ops-o1",
+      "ops-o3"
+    ],
+    "zip": "MC_04_OpsMyCare_v1.0_1.2.zip"
+  },
+  {
+    "num": "05",
+    "name": "05_rcm-documentation-and-coding",
+    "title": "My Clinic \u2014 RCM Part A: Documentation & ICD-10 Coding That Gets Approved",
+    "scorm": "1.2",
+    "screens": 21,
+    "scored": 10,
+    "points": 100,
+    "pass": 80,
+    "pass_pts": 80,
+    "sections": 6,
+    "scen": 2,
+    "minutes": 6.271428571428571,
+    "objectives": 5,
+    "weak": [
+      "rcma-o5"
+    ],
+    "zip": "MC_05_RCM-A_v1.0_1.2.zip"
+  },
+  {
+    "num": "06",
+    "name": "06_rcm-ebp-benefits-and-rejections",
+    "title": "My Clinic \u2014 RCM Part B: New EBP Benefits & Claim-Rejection Analysis",
+    "scorm": "1.2",
+    "screens": 15,
+    "scored": 7,
+    "points": 80,
+    "pass": 80,
+    "pass_pts": 64,
+    "sections": 4,
+    "scen": 2,
+    "minutes": 4.578571428571428,
+    "objectives": 3,
+    "weak": [
+      "rcmb-o1"
+    ],
+    "zip": "MC_06_RCM-B_v1.0_1.2.zip"
+  },
+  {
+    "num": "07",
+    "name": "07_quality-safety-and-risk",
+    "title": "My Clinic \u2014 Clinical Governance: Quality, Patient Safety & Risk",
+    "scorm": "1.2",
+    "screens": 22,
+    "scored": 11,
+    "points": 95,
+    "pass": 80,
+    "pass_pts": 76,
+    "sections": 7,
+    "scen": 2,
+    "minutes": null,
+    "objectives": 5,
+    "weak": [
+      "qsr-o5"
+    ],
+    "zip": "MC_07_ClinicalGov_v1.0_1.2.zip"
+  },
+  {
+    "num": "08",
+    "name": "08_it-ehr-consultation",
+    "title": "My Clinic \u2014 EHR Consultation Workflow: Guided Simulation",
+    "scorm": "1.2",
+    "screens": 20,
+    "scored": 11,
+    "points": 90,
+    "pass": 80,
+    "pass_pts": 72,
+    "sections": 6,
+    "scen": 7,
+    "minutes": 4.978571428571429,
+    "objectives": 5,
+    "weak": [
+      "ehr-o2",
+      "ehr-o5"
+    ],
+    "zip": "MC_08_EHR_v1.0_1.2.zip"
+  }
+]

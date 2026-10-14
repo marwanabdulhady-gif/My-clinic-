@@ -18,16 +18,20 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 |---|---|---|---|---|---|---|
 | 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Storyboard v0.2 complete — SME/source-lock review |
 | 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Storyboard v0.2 complete — SME/source-lock review |
-| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.1 drafted — SME review |
+| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.1 — companion retrofit and v0.2 pack pending (status G1) |
 | 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Storyboard v0.2 complete — SME/source-lock review |
 | 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Storyboard v0.2 complete — SME/source-lock review |
 | 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Storyboard v0.2 complete — SME/source-lock review |
-| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Storyboard v0.1 drafted — SME/source-lock review |
+| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Storyboard v0.1 cards — JSON, visual board and companions pending (status G2) |
 | 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock/DPO review |
 
 **Why 05 and 06 are two packages, not one.** Both files come from the same RCM session, but they carry different content: 05 (the script) teaches documentation and coding; 06 (the 2026 deck) adds the new EBP benefits and the rejection log. Splitting them avoids repeating the same screens and lets RCM staff take Part B alone.
 
 **Why 01 and 02 are two packages.** 01 is the full knowledge course (nine CBAHI/FMS plans). 02 overlaps on fire and chemicals, so it is planned as an **applied practice lab** (hazard spotting, fire drill game, spill triage, chemical-store escape room) that assumes 01 is done. No screen is copied from 01 into 02.
+
+**Status, gaps and next steps:** [`00_program/programme-status.md`](00_program/programme-status.md) (module × phase grid, proposal check, ordered next actions).
+
+**SCORM structure:** [`00_program/scorm-structure.md`](00_program/scorm-structure.md) (LMS curriculum, zip contents, manifest, outline → screen model, LMS data) and one generated `scorm-structure.md` in each module folder.
 
 Suggested learning path (matches `../README.md` §4):
 `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
@@ -48,7 +52,7 @@ release. Client-shareable Word renderings for all eight modules are in
 
 ## 2. The phase model used in every module folder
 
-Every module folder has the same files, so the team can track all eight packages on one board.
+Every module folder has the same files, so the team can track all eight packages on one board. `scorm-structure.md` in each folder is generated from the storyboard by `tools/build_scorm_structure.py`: the package tree, manifest, every section and screen, objectives and tracking.
 
 **Phase 2 is two steps.** `phase-2-storyboard.md` is the *screen list*: one row per screen — id, type, purpose, points, source. Once the list is approved, the [storyboard template](00_program/storyboard-template/) turns each row into a finished **screen card** in `<module folder>/storyboard/storyboard.md`: full on-screen wording, visual brief, animation/reveal behaviour, interaction and scoring with feedback, the complete narration script, accessibility notes, review build metadata, and companion visual/narration JSON. Write one module per run. The cards, not the list, are what the developer builds from after source lock; type-specific production JSON is completed in Phase 4.
 
@@ -67,6 +71,8 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/brand/brand-identity.md`](00_program/brand/brand-identity.md) — **My Clinic brand identity**: logo files and rules, colours, font, icons, illustration style, AI image prompt template, screen layouts L1–L6 with mockups
 - [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand summary, theme decision, Arabic/RTL plan
 - [`00_program/characters/companions.md`](00_program/characters/companions.md) — **the two course companions, Noor and Dr. Omar**: character bible, poses and AI prompts, placement on screens, voices and script rules, per-module plan
+- [`00_program/scorm-structure.md`](00_program/scorm-structure.md) — **structure of the SCORM packages**: LMS learning path, zip contents, manifest, course outline model, tracking data, versioning
+- [`00_program/programme-status.md`](00_program/programme-status.md) — what is done, gaps, proposal check, next steps
 - [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
@@ -75,22 +81,19 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 
 ---
 
-## 3. Master timeline (indicative)
+## 3. Master timeline (follows the proposal)
 
-Each module can move through its phases independently, but the shared work comes first.
+The phases and weeks match the proposal (`../proposal/`, Project Phases). Week 1 starts at the kick-off meeting. Courses are staggered so SME reviews are spread out; build order **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08**.
 
-| Week | Shared work | Modules |
-|---|---|---|
-| 1 | Brand kit approved; cross-module decisions (Code Orange, codes sheet, regulator name, branch names) | Phase 0 for all 8 |
-| 2 | Two companion voices chosen (Noor, Dr. Omar); both character masters approved | Phase 1–2 for 03, 07, 01 |
-| 3 | — | Phase 3 for 03, 07, 01 · Phase 1–2 for 02, 04, 05, 06 |
-| 4 | Re-capture EHR screenshots on a test patient (module 08) | Phase 4 build for 03, 07 · Phase 3 for 02, 04, 05, 06 |
-| 5 | — | Phase 4 for 01, 02, 04 · Phase 1–3 for 08 |
-| 6 | SCORM Cloud + LMS test round 1 | Phase 5 for 03, 07, 01, 02, 04 · Phase 4 for 05, 06, 08 |
-| 7 | Pilot with 5–8 new starters | Phase 5 for 05, 06, 08 |
-| 8 | Fixes, final sign-off, LMS launch | All |
-
----
+| Weeks | Phase | L2S | My Clinic |
+|---|---|---|---|
+| 1–2 | 0 — Kick-off & source lock | Walk SMEs through the v0.2 storyboard pack and review register | Close B-items and D1–D14; confirm LMS + SCORM version (D9), brand (D11) |
+| 2 | 1 — Action map | Final objectives and evidence map (already drafted) | Approve objectives |
+| 3–4 | 2 — Storyboards | Apply Phase 0 decisions; retrofit 03 and complete 07 (status G1–G2); close the 37 register rows | Approve storyboards (**30% payment**) |
+| 4–6 | 3 — Narration & media | Two companion voices (D10), audio, captions, images, companion PNGs, EHR test captures | Approve voices and visuals |
+| 5–7 | 4 — Build | Build 8 packages per `scorm-structure.md`; `lint_course`; previews | Preview review |
+| 7–9 | 5 — QA, LMS, pilot | 81 test cases, SCORM Cloud, LMS test, pilot | Pilot learners, sign-off |
+| 9–10 | Delivery | Final packages, sources, admin guide | Launch (**final payment**) |
 
 ## 4. What blocks everything (top 6)
 
