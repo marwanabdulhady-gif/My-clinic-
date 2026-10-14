@@ -2,24 +2,56 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My Clinic · Screen review</title>
+<title>My Clinic · Draft slide studio</title>
+<link rel="stylesheet" href="layout-tokens.css">
 <link rel="stylesheet" href="style.css">
 <script id="course-data" type="application/json">__COURSE_DATA__</script>
 <script src="scenario.js" defer></script>
 <script src="player.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#stage">Skip to screen</a>
-<header class="app-header"><img src="assets/brand-logo-horizontal-navy.png" alt="My Clinic"><div><strong>Screen studio</strong><small>Storyboard → branded review</small></div><span class="draft">DRAFT · NOT FOR LEARNER DELIVERY</span></header>
+<a class="skip" href="#stage">Skip to slide</a>
+<header class="app-header">
+  <img src="assets/brand-logo-horizontal-navy.png" alt="My Clinic">
+  <div class="studio-name"><strong>Learning studio</strong><small>Current content · kickoff draft v0.1</small></div>
+  <a class="capture-link" href="review.html">Screenshot gallery ↗</a>
+  <span class="draft"><span aria-hidden="true">●</span> INTERNAL DRAFT · NOT FOR LEARNER DELIVERY</span>
+</header>
 <div class="workspace">
-<aside class="sidebar" aria-label="Course navigation"><label for="module">PACKAGE</label><select id="module"></select><label for="search">FIND A SCREEN</label><input id="search" type="search" placeholder="Title or screen ID"><nav id="outline" aria-label="Screen outline"></nav><p class="sidebar-note">Review preview only. No LMS reporting, approval or completion record.</p></aside>
+<aside class="sidebar" aria-label="Course navigation">
+  <div class="sidebar-heading">REVIEW WORKSPACE <span id="batch-counter">01 / 04</span></div>
+  <label for="module">COURSE PACKAGE</label><select id="module"></select>
+  <label for="search">FIND A SLIDE</label><input id="search" type="search" placeholder="Title or screen ID">
+  <nav id="outline" aria-label="Screen outline"></nav>
+  <p class="sidebar-note">Current storyboards are preserved. Draft checks run in memory only; no LMS record or completion is created.</p>
+</aside>
 <main>
-<div class="review-toolbar"><div><span class="eyebrow" id="module-name"></span><h1 id="screen-name"></h1></div><span id="mode" class="badge"></span></div>
-<section id="stage" tabindex="-1" aria-label="Branded screen"></section>
-<div class="player-bar"><button id="prev" type="button">← Previous</button><span id="position" aria-live="polite"></span><button id="next" type="button">Next →</button></div>
-<div id="warnings" role="status"></div>
-<section class="review-notes"><details open><summary>Narration & transcript</summary><div id="audio"></div><p id="transcript"></p></details><details><summary>Build details & source JSON</summary><p id="metadata"></p><p id="visual"></p><pre id="spec"></pre></details></section>
-<footer>My Clinic internal review · Marketing confirmation D11 pending · Fonts fall back locally if Montserrat is not installed.</footer>
+  <section class="batch-header" aria-label="Draft generation phase">
+    <span class="eyebrow">PHASED SLIDE PRODUCTION</span>
+    <h2 id="batch-title">Draft slide review</h2>
+    <p id="batch-description"></p>
+    <div id="phases" class="phase-track" aria-label="Draft batches"></div>
+  </section>
+  <div class="review-toolbar">
+    <div><span class="eyebrow" id="module-name"></span><h1 id="screen-name"></h1></div>
+    <span id="mode" class="badge"></span>
+  </div>
+  <section id="stage" tabindex="-1" aria-label="Branded draft slide"></section>
+  <div class="player-bar">
+    <button id="prev" type="button">← Previous</button>
+    <span id="position" aria-live="polite"></span>
+    <button id="next" type="button">Next →</button>
+  </div>
+  <div id="pending-facts" class="pending-facts" role="status"></div>
+  <details class="build-warning"><summary>Draft dependencies & missing assets</summary><div id="warnings"></div></details>
+  <section class="review-notes">
+    <details><summary>Narration & transcript <span>Current script · final voice pending D10</span></summary><div id="audio"></div><p id="transcript"></p></details>
+    <details id="production-controls"><summary>Production worksheet & plan alignment <span id="alignment-status"></span></summary>
+      <p id="worksheet-meta"></p><ul id="template-gates"></ul><ul id="input-links"></ul>
+    </details>
+    <details><summary>Slide specification & visual brief</summary><p id="metadata"></p><p id="visual"></p><p id="layout-source"></p><pre id="spec"></pre></details>
+  </section>
+  <footer>My Clinic internal review · Marketing D11 pending · Licensed Montserrat and Tajawal bundled locally. This English draft is not a translated/RTL course.</footer>
 </main>
 </div>
 </body></html>

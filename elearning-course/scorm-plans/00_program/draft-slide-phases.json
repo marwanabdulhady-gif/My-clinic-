@@ -1,0 +1,33 @@
+{
+  "kind": "pre-kickoff-draft-batches",
+  "version": "0.1",
+  "date": "2026-10-14",
+  "production_ready": false,
+  "authority": "Current storyboards, visual/narration plans and course production worksheets. No source-lock, SME, brand, voice or DPO approval is implied.",
+  "phases": [
+    {
+      "id": "1",
+      "title": "Welcome & clinical governance",
+      "modules": ["03_hr-employee-induction", "07_quality-safety-and-risk"],
+      "review_focus": "Establish the shared layouts; review HR and Quality content, companion placement and visible policy dependencies."
+    },
+    {
+      "id": "2",
+      "title": "Health & safety",
+      "modules": ["01_health-and-safety-1", "02_health-and-safety-2"],
+      "review_focus": "Render current teaching briefs, diagrams and practice slots. Leave emergency numbers, spill thresholds and incomplete answer keys pending."
+    },
+    {
+      "id": "3",
+      "title": "Operations & revenue cycle",
+      "modules": ["04_operations-and-my-care", "05_rcm-documentation-and-coding", "06_rcm-ebp-benefits-and-rejections"],
+      "review_focus": "Review current role maps, documentation examples and benefits layouts. Do not infer reporting lines, policy limits or rejection data."
+    },
+    {
+      "id": "4",
+      "title": "EHR guided workflow",
+      "modules": ["08_it-ehr-consultation"],
+      "review_focus": "Render the current workflow and capture placeholders only. Test-account captures and DPO clearance are required; never copy the patient-bearing source video."
+    }
+  ]
+}

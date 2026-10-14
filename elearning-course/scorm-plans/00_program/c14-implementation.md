@@ -23,19 +23,27 @@ execution baseline. They did not close client decisions or authorise final asset
   no fallback answer, target or retry policy is invented.
 - Pending clinical-policy wording is retained. The displayed outcome is not a learner
   pass, module score, client approval or an LMS report. Planned screen points remain untouched.
-- Missing media/character art remains labelled. No source-video patient data is copied;
-  no voices or generated video are produced.
+- Missing media/full-size character art remains labelled. Existing preview-resolution
+  companions are now placed from Phase 3 tables without closing G6. No source-video
+  patient data is copied; no final voices or generated video are produced.
+- **Pre-kickoff drafting batch 1**: 58 current-content slides for 03/07, 61 actual browser
+  captures and an eight-reference comparison gallery. Production worksheets/all six
+  phase plans are required and reconciled; mockup geometry is compiled from HTML;
+  licensed fonts are bundled. [Scope, evidence and next batches](draft-slide-production.md).
 
 The shared preview is supporting infrastructure for C14, not completion of C14 or another
 roadmap chunk. Usage and full coverage limits: [screen-generator.md](screen-generator.md).
 
 ## Local verification (not delivery QA)
 
-- Python generator/unit gate: **8 tests pass**.
+- Repository Python gate: **27 tests pass**, including generator/template/layout/font and stale-capture checks.
 - Node scenario gate: **189 exact authored paths across 4 scenarios pass**, plus state and
   malformed-graph tests.
 - Browser smoke: **207 screens visited**; draft answer checks, scenario keyboard flow,
   policy markers, reset, navigation memory, search, 390px overflow and missing-resource checks.
+- First-batch screenshot gate: **58 slides / 61 PNGs / 58 mobile checks**, local fonts,
+  no browser errors or missing/external requests. Dense slides are full-height captures,
+  not a claim of final 16:9 production pagination.
 - Planning lint: all eight packages **0 errors / 0 warnings**.
 - Asset/link audit: **0 hard failures**.
 
@@ -51,7 +59,8 @@ full accessibility testing, an LMS upload/resume test or a pilot.
 | 03 adaptive practice `hr-045` | not implemented | upstream algorithm contract and approved rules |
 | 03 Oracle simulation `hr-061` | structured review only | approved test captures and target alignment |
 | 07 spatial interactions | structured review only | approved visuals and policy/matrix decisions |
-| Companion placement, cue timing, final audio | not implemented | C7 artwork, C6/D10 voices, C10 media |
+| Companion placement | draft placements implemented from Phase 3, using review art | C7 full-size artwork, visual approval |
+| Cue timing, final audio | not implemented | C6/D10 voices, C10 media |
 | edumints project/spec, theme and tracking | not started | C10 completion, relevant Phase 0 closures, D9 |
 | Server `lint_course` and preview | blocked | actual edumints build + reviewed media |
 | SCORM export / actual LMS / pilot | not started | production exit gate and C18 |

@@ -51,17 +51,21 @@ class GeneratorTests(unittest.TestCase):
 
     def test_html_is_inert_and_text_preserved(self):
         data = sanitize({'body_html': '<p onclick="bad()">Keep <strong>this</strong><script>alert(1)</script><a href="javascript:bad()">link</a><img src=x onerror=bad()></p>',
-                         'items': [{'body_html': '<iframe>drop me</iframe><p>OK</p>'}]})
+                         'items': [{'body_html': '<iframe>drop me</iframe><p>OK</p>'}],
+                         'blocks': [{'html': '<p onclick="bad()">Native text<script>alert(1)</script></p>'}]})
         self.assertEqual(data['body_html'], '<p>Keep <strong>this</strong>link</p>')
         self.assertEqual(data['items'][0]['body_html'], '<p>OK</p>')
+        self.assertEqual(data['blocks'][0]['html'], '<p>Native text</p>')
 
     def test_pending_answer_key_does_not_become_correct(self):
         self.assertEqual(missing_fields({'type':'true_false', 'prompt_html':'Q', 'correct':False}), [])
         self.assertIn('accepted answers', missing_fields({'type':'fill_blank', 'prompt_html':'Q', 'blanks':[{'accepted':[]}]}))
+        self.assertEqual(missing_fields({'type':'content_slide', 'blocks':[{'html':'<p>Native block</p>'}]}), [])
+        self.assertEqual(missing_fields({'type':'poll', 'prompt_html':'Q', 'options':[], 'allow_text':True}), [])
         self.assertIn('correct option', missing_fields({'type':'mcq', 'prompt_html':'Q', 'options':[{'id':'a'}]}))
 
     def test_nested_assets_and_explicit_mapping(self):
-        self.assertEqual(asset_ids({'steps':[{'image_asset_id':'<example>'}]}), {'example'})
+        self.assertEqual(asset_ids({'steps':[{'image_asset_id':'<example>'}], 'blocks':[{'asset_id':'<native>'}]}), {'example', 'native'})
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             asset = root / 'approved-review.png'
