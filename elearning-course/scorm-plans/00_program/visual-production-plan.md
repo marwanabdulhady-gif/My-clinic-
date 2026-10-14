@@ -1,0 +1,60 @@
+# Visual production plan — eight My Clinic packages
+
+**Purpose:** give design and external image/video agents one consistent, source-safe handoff for the eight planned SCORM packages. This supplements, rather than replaces, each screen's `visual-plan.json`, storyboard card and module asset register. Package facts and open decisions remain governed by Phase 0 and the source-lock files.
+
+## Current state and alignment
+
+All eight packages have screen-level `visual-plan.json` files covering their planned screens, their branded review boards and per-screen image/diagram descriptions. The project linter reports zero visual-planning errors and warnings across all eight. Brand identity defines the 960 × 540, 16:9 stage, six reusable layouts, My Clinic palette, logo lock-up and illustration style. The storyboard and Phase 3 files name companions and assets. The missing layer was a consolidated external-agent handoff and a single view of which assets are generated, planned, blocked or not in scope.
+
+The visual plan **does include Noor and Dr. Omar** as approved programme assets. Their profiles, poses, master-image prompts, voice/placement rules and per-module companion table are in [`characters/companions.md`](characters/companions.md). The module-specific `phase-3-narration-and-assets.md` files list the exact screen ids, pose, placement and speaker. Keep these as the source of truth; never create a new likeness or change a character's face, uniform, badge or accent colour.
+
+### Companion assignment by package
+
+- **01 Facility Management & Safety:** Noor leads; Dr. Omar co-hosts. Noor appears on the welcome, tips and safety scenarios; Omar appears on the infusion-pump scenario and selected guide moments.
+- **02 Safety in Practice Lab:** Noor leads; Dr. Omar co-hosts. Use the planned companions on the welcome, blocked-exit/fire drill, spill triage, escape-room prompts and close.
+- **03 Welcome On Board / HR:** Dr. Omar leads; Noor co-hosts. Both appear in the title welcome; Omar leads the narrative; Noor joins ethics/leave moments and selected tips; both appear in the close.
+- **04 Operations & My Care:** Dr. Omar leads; Noor co-hosts. Use the approved welcome, role-routing scenario, abbreviation tip and close placements.
+- **05 RCM Part A:** Dr. Omar leads; Noor co-hosts. Omar hosts the claims story and “Fix the note” game; Noor provides planned documentation hints.
+- **06 RCM Part B:** Dr. Omar leads; Noor co-hosts. Omar hosts the rework scenario; Noor appears in the planned EBP/mental-health tip and selected guide moments.
+- **07 Clinical Governance:** Noor leads; Dr. Omar co-hosts. Noor hosts patient-identification and end-of-shift reporting scenarios; Omar supports the risk and near-miss material.
+- **08 EHR Consultation:** Dr. Omar leads; Noor co-hosts. Omar hosts diagnosis/referral moments; Noor provides the patient-education tip.
+
+Visible-character frequency, screen-specific poses and the “never on an active question” rule remain as set in `companions.md` and each module's Phase 3 companion table. A visual agent must not add a character to a screen just because the character appears in the module.
+
+## Production rules for every visual agent
+
+1. Read `brand/brand-identity.md`, `characters/companions.md`, the target package's `phase-3-narration-and-assets.md`, `storyboard/visual-plan.json`, `storyboard/asset-register.md` and the specific storyboard card before generating anything.
+2. Follow the existing card layout, palette, crop, aspect ratio, screen id and asset id. My Clinic's supplied PNG logo is placed in post-production; **never prompt an image or video model to create the logo, Arabic or English wordmarks, labels, screen text, numbers or captions**.
+3. Keep flat-vector clinic scenes, clear geometry, white space, thin navy `#003867` outlines, light surfaces (`#F4F7FA`, `#C0CED9`) and one module highlight colour. Avoid photo-real people, heavy shadow, gradient, dramatic imagery and decorative detail that can be mistaken for course facts.
+4. People other than Noor and Dr. Omar must be generic fictional figures, modestly dressed and non-identifiable. Do not use staff or patient likenesses, names, claims, MRNs, phone numbers, report values, real chart screenshots or any content copied from the committed original IT video.
+5. For hotspot/spot-the-hazard scenes, include **only** the listed hazards and required answer targets. Have the relevant SME inspect every image before authoring hotspot coordinates or answer feedback.
+6. Keep informative labels, numbers, diagrams and workflow text editable in the SCORM authoring layer or an authored SVG. Do not have image models render exact text or data. Record prompt, generator, generation date, human reviewer, source/provenance and final file id.
+7. Supply a clean master image without text; create responsive crops and accessible alt text during build. Do not bake in quiz answers, outcome reactions, scoring or feedback.
+
+## Asset status and handoff
+
+- **Already present, needs subject-matter review:** `01/.../storyboard/assets/hs1-img-corridor.png` (verify every hazard before positioning hotspots) and `02/.../storyboard/assets/hs2-img-storeroom.png` (Safety Manager to verify the six hotspot targets). `04/.../storyboard/assets/ops-img-reception-scenario.png` exists as a generic fictional scene; routing is still subject to the open B7 decision.
+- **Planned AI illustration work:** eight HR illustrations; four Operations scenes; two Clinical Governance illustrations. Concrete agent briefs are in [`visual-generation-prompts.md`](visual-generation-prompts.md).
+- **Planned authored visuals, not image-model work:** HR icons, map, GOSI bar, benefits wheel and exit icons; Safety Lab/quality diagrams; risk matrix; organizational/process charts. Create these as editable SVG with real text, using the module asset registers and approved source values.
+- **Restricted EHR media:** Module 08 needs new screenshots from a DPO-approved test environment and fictional test patient, not generated pseudo-screenshots or the source video. Complete the capture sheet and provenance record before use.
+- **Programme character set:** the 18 full-size transparent pose/avatar PNGs are still not in `characters/assets/`; five smaller interim avatar files are layout placeholders only. Download the existing approved Canva artwork listed in `companions.md` and replace the interim versions before final media export. Do not regenerate the characters.
+
+## External-agent prompt — still illustration
+
+Copy the applicable asset-specific prompt from [`visual-generation-prompts.md`](visual-generation-prompts.md). Add the following operational instructions when sending it to an image agent:
+
+```text
+Return one clean 16:9 flat-vector master with no embedded text, logo, watermark, caption, visible patient data or UI labels. Preserve the exact objects and visual facts in the asset brief; do not add extra hazards or clinically actionable content. Use the approved My Clinic palette and style. Do not generate Noor or Dr. Omar unless this is a character-master/pose request; for a planned companion pose, use the approved master as the reference and preserve the character exactly. Deliver the editable/highest-resolution source plus PNG preview, note tool/model and date, and flag any element that needs SME verification. Do not invent policy, medical, HR or payer facts.
+```
+
+## Optional video / motion prompt (not in Rev01 deliverable scope)
+
+The approved proposal specifies SCORM screens, scenarios and guided simulations; it does not define standalone AI video deliverables. Do not silently replace screens, narrations, scenarios, seat time or priced deliverables with generated video. If the owner chooses to add a short silent loop as a non-essential visual layer, use this bounded prompt and seek separate client/SME approval before production:
+
+```text
+Create a silent 8–12 second 16:9 loopable flat-vector motion background for the approved My Clinic induction screen [SCREEN ID / ASSET ID]. Animate only [ONE safe movement from that screen's existing visual concept]. Use navy #003867 outlines, clean white/off-white space, the package's one approved value colour, and calm even lighting. No voice, dialogue, text, letters, numbers, logo, captions, readable screens, patient identifiers, real staff likenesses, unsafe action, injury or new hazards. Do not reveal an answer or imply an unapproved clinical, HR or safety policy. Preserve ample clear space for separately overlaid course text and the approved logo. Deliver a loopable MP4 and source/settings; report any generated text-like artifacts. This is optional enhancement only; the storyboard's approved static design remains the reference.
+```
+
+## Visual approval gate
+
+Before a visual becomes a build asset: compare it with the referenced card and prompt; verify no text-like artifacts or unintended risk; confirm the composition leaves room for title, controls and captions; confirm the character asset is an approved pose; have an SME review clinical/safety truth; add provenance and meaningful alt text; then rerun `tools/audit_assets.py` and `tools/lint_planning.py`. A pass on automated planning lint does not approve the image's policy or clinical content.

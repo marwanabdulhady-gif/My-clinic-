@@ -46,9 +46,12 @@ This remains **planning and draft review**, not a production course build. A [lo
 | `tools/export_storyboard_docx.py` | The nine client-review Word documents | Supplied client logo in the running header, cover band, document control, page numbers |
 | `tools/make_companion_avatars.py` | Interim transparent avatar PNGs in `00_program/characters/assets/` | Crops of approved poses; full-size Canva downloads still outstanding (G6) |
 | `tools/audit_assets.py` | `00_program/asset-template-audit.md` + `asset-audit.json` | Hard failures (missing referenced asset, broken link, label in TTS, incomplete card) exit non-zero |
+| `tools/build_decision_sheet.py` | `00_program/decision-sheet.md` + `decision-sheet.csv` | Parses the eight `phase-0-source-lock.md` files, `cross-module-decisions.md` and `scorm-structure-summary.json`; lists **open** rows only (102 as at 2026-10-14) with owner role, due date and write-back target. Rerun after any Phase 0 write-back — closed rows drop out |
+| `tools/export_kickoff_docx.py` | `00_program/kickoff-pack.docx` (`MC-KO-01 v0.1`) | Kick-off run sheet + decision sheet as one branded Word file; reuses the header, footer and Markdown renderer from `export_storyboard_docx.py` |
 
 Recommended order after any approved edit: generator or normaliser → `lint_planning.py` →
-`build_scorm_structure.py` → `export_storyboard_docx.py` → `audit_assets.py`.
+`build_scorm_structure.py` → `export_storyboard_docx.py` → `build_decision_sheet.py` →
+`export_kickoff_docx.py` → `audit_assets.py`.
 
 Suggested learning path (matches `../README.md` §4):
 `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
@@ -92,8 +95,16 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/programme-status.md`](00_program/programme-status.md) — what is done, gaps, proposal check, next steps
 - [`00_program/asset-template-audit.md`](00_program/asset-template-audit.md) — evidence-based inventory of brand files, companion art, module assets, Word renderings and card templates (regenerate with `tools/audit_assets.py`)
 - [`00_program/next-phases-roadmap.md`](00_program/next-phases-roadmap.md) — the remaining work cut into PR-sized chunks with acceptance criteria
+- [`00_program/decision-sheet.md`](00_program/decision-sheet.md) — **every open decision in one list** (generated): id, owner role, due date, write-back file. Tier 1 = 28 safety/PHI/incident rows (due 2026-10-22), tier 3 = D9/D10/D11 (2026-10-26), tier 2 = 71 module facts (2026-10-30). Regenerate with `tools/build_decision_sheet.py`
+- [`00_program/kickoff-pack.md`](00_program/kickoff-pack.md) — **Phase 0 kick-off pack `MC-KO-01 v0.1`**: 90-minute run sheet, who must be in the room and which decisions they own, pre-reads, the same-day write-back procedure; rendered to [`kickoff-pack.docx`](00_program/kickoff-pack.docx) for the client
 - [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
+- [`00_program/narration-production-plan.md`](00_program/narration-production-plan.md) — production workflow and copy-ready external audio-agent handoff; final voices remain blocked by D10
+- [`00_program/visual-production-plan.md`](00_program/visual-production-plan.md) and [`00_program/visual-generation-prompts.md`](00_program/visual-generation-prompts.md) — character-aware visual handoff, image prompts, pending assets and optional video prompt
+- [`00_program/scenario-design-plan.md`](00_program/scenario-design-plan.md) and [`00_program/gamification-plan.md`](00_program/gamification-plan.md) — proposal-aligned scenario inventory, game mechanics, retries, scoring and accessibility
+- [`00_program/client-context.md`](00_program/client-context.md) — researched public context for My Clinic KSA, with current website discrepancies and approval cautions
+- [`00_program/plan-audit.md`](00_program/plan-audit.md) — proposal-to-plan verdict, current test results and remaining release blockers
+- [`00_program/course-templates/`](00_program/course-templates/) — blank production worksheet plus one prefilled handoff template for each of the eight SCORM packages
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
 - [`00_program/cross-module-decisions.md`](00_program/cross-module-decisions.md) — decisions that affect several modules (emergency codes, Code Orange threshold, branch names, regulator name, personal data)
 - [`00_program/storyboard-template/`](00_program/storyboard-template/) — full storyboard template, screen-type guide, worked examples and review checklist for the agent that writes each module's screen-by-screen storyboard
