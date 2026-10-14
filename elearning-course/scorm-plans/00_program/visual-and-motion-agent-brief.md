@@ -16,6 +16,8 @@ The course design is already mostly interactive. Do not turn every screen into a
 
 > **Audit correction (14 October 2026).** The first version of this brief counted only the scene images that the v0.2 storyboard cards reference (12/13). The Phase 3 asset manifests, and proposal Rev01, also need **9 HSE scene images**, **4 client safety photos** and **31 EHR screenshots**, which the generated v0.2 cards for 01, 02 and 08 left out (gap G10 in `programme-status.md`). Rev01 sells HSE "≈26 diagrams and illustrations (… scenario scenes)", "clickable illustrations" of a corridor **and a treatment room**, and "≈35 new screenshots" for EHR. The table below is the corrected minimum that still delivers Rev01.
 
+**G10 implementation update:** the planned visual references have now been restored to modules 01, 02 and 08. The owner selected the **full six-scene drill**. See [g10-visual-restoration.md](g10-visual-restoration.md) for the manifests, regression tests and remaining production gates. No images or screenshots were produced or approved in that fix.
+
 ### Minimum asset inventory (delivers Rev01, nothing more)
 
 | # | Asset | Ids | Screens | Route | Count | Gate before making it |

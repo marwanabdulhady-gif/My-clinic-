@@ -8,11 +8,15 @@ storyboard narration script. Rerun after any approved storyboard change:
 
     python3 elearning-course/scorm-plans/tools/build_scorm_structure.py
 """
+import argparse
 import glob
 import json
 import os
 import re
 from collections import OrderedDict
+from pathlib import Path
+from assemble_storyboard_docs import parse_assets
+from planned_visual_assets import assets_for_screen, is_visual
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SCORED_TYPES_HINT = "★ = scored"
@@ -52,7 +56,7 @@ def course_settings(p4):
 def narration(module_dir, sb_text):
     path = os.path.join(module_dir, "storyboard", "narration-script.json")
     if os.path.exists(path):
-        segs = json.load(open(path))["segments"]
+        segs = json.loads(Path(path).read_text())["segments"]
         words, speakers = {}, {}
         for s in segs:
             t = s.get("narration", "")
@@ -77,10 +81,10 @@ def build(module_dir):
     name = os.path.basename(module_dir)
     num = name[:2]
     sb_path = os.path.join(module_dir, "storyboard", "storyboard.md")
-    sb = open(sb_path).read()
-    p2 = open(os.path.join(module_dir, "phase-2-storyboard.md")).read()
-    p4 = open(os.path.join(module_dir, "phase-4-build.md")).read()
-    readme = open(os.path.join(module_dir, "README.md")).read()
+    sb = Path(sb_path).read_text()
+    p2 = (Path(module_dir) / "phase-2-storyboard.md").read_text()
+    p4 = (Path(module_dir) / "phase-4-build.md").read_text()
+    readme = (Path(module_dir) / "README.md").read_text()
     settings = course_settings(p4)
     screens = blocks(sb)
     prefix = screens[0]["id"].split("-")[0]
@@ -145,12 +149,18 @@ def build(module_dir):
     w("├── runtime/")
     w("│   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)")
     w("└── assets/")
-    img_ids = sorted(set(re.findall(rf"`({prefix}-(?:img|tbl|pdf|vid|cap)[a-z0-9-]*)`", sb + p2)))
+    planned_assets = parse_assets(Path(module_dir))
+    inactive_optional = {asset['id'] for asset in planned_assets if asset['optional'] and
+                         not any(assets_for_screen([asset], screen['id']) for screen in screens)}
+    planned_visual_ids = {asset['id'] for screen in screens
+                         for asset in assets_for_screen(planned_assets, screen['id']) if is_visual(asset)}
+    img_ids = sorted((set(re.findall(rf"`({prefix}-(?:img|shot|tbl|pdf|vid|cap)[a-z0-9-]*)`", sb + p2)) |
+                      planned_visual_ids) - inactive_optional)
     if os.path.isdir(os.path.join(module_dir, "storyboard", "assets")):
         img_ids = sorted(set(img_ids) | {os.path.splitext(f)[0] for f in os.listdir(os.path.join(module_dir, "storyboard", "assets"))})
     for i in img_ids:
         w(f"    ├── {i}.*")
-    char_ids = sorted(set(re.findall(r"`(char-(?:noor|omar)-[a-z-]+)", p2 + open(os.path.join(module_dir, 'phase-3-narration-and-assets.md')).read())))
+    char_ids = sorted(set(re.findall(r"`(char-(?:noor|omar)-[a-z-]+)", p2 + (Path(module_dir) / 'phase-3-narration-and-assets.md').read_text())))
     for c in char_ids:
         w(f"    ├── {c}.png")
     if narrated:
@@ -251,12 +261,21 @@ def build(module_dir):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('modules', nargs='*', help='Optional module folders; summary always covers all eight.')
+    args = parser.parse_args()
+    folders = sorted(glob.glob(os.path.join(ROOT, '0[1-8]_*')))
+    unknown = set(args.modules) - {os.path.basename(d) for d in folders}
+    if unknown:
+        parser.error('Unknown module folders: ' + ', '.join(sorted(unknown)))
     results = []
-    for d in sorted(glob.glob(os.path.join(ROOT, "0[1-8]_*"))):
+    for d in folders:
         r = build(d)
-        open(os.path.join(d, "scorm-structure.md"), "w").write(r.pop("text"))
+        text = r.pop('text')
+        if not args.modules or os.path.basename(d) in args.modules:
+            (Path(d) / 'scorm-structure.md').write_text(text)
         results.append(r)
-    json.dump(results, open(os.path.join(ROOT, "00_program", "scorm-structure-summary.json"), "w"), indent=2)
+    (Path(ROOT) / "00_program" / "scorm-structure-summary.json").write_text(json.dumps(results, indent=2))
     for r in results:
         print(r)
 

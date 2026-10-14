@@ -28,6 +28,13 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
       assert.equal(await page.locator('#screen-name').innerText(), screen.title);
       count++;
     }
+    await go('02_health-and-safety-2', 'hs2-030');
+    assert.equal(await page.locator('#stage .planned-scene-list .panel').count(), 6, 'Full drill requires six visible scene slots');
+    assert.match(await page.locator('#stage').innerText(), /hs2-img-drill-6/);
+    await go('08_it-ehr-consultation', 'ehr-031');
+    assert.equal(await page.locator('#stage .planned-scene-list .panel').count(), 6, 'Medication simulation requires six capture slots');
+    await go('08_it-ehr-consultation', 'ehr-011');
+    assert.match(await page.locator('#stage').innerText(), /ehr-shot-form/);
     const hr = '03_hr-employee-induction';
     await go(hr, 'hr-013');
     await page.locator('#stage input[value="0"]').check();

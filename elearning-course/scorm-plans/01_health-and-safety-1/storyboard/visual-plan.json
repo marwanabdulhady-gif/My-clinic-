@@ -134,6 +134,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-8plans: 4×2 grid, one line icon per plan, label under each; hotspot rects per tile Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"Eight Facility Management and Safety plans shown as icons.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Icon grid of 8 plans (own SVG). Each region opens: purpose + 4 main functions",
@@ -249,6 +256,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-arec: 4-stage circular arrow, brand colours Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"AREC cycle: Anticipate, Recognise, Evaluate, Control.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Circular SVG: Anticipate → Recognise → Evaluate → Control",
@@ -357,6 +371,13 @@
           "decorative": false
         },
         {
+          "kind": "diagram",
+          "description": "hs1-img-codes-chips: 11 colour chips with code names printed Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "(decorative — name is in text)",
+          "decorative": false
+        },
+        {
           "kind": "illustration",
           "description": "Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.",
           "source": "client",
@@ -454,6 +475,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ert: Incident Commander centre, 5 team nodes Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"Emergency Response Team: Safety, Security, Nursing, Facility, Operation.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "ERT diagram: Safety · Security · Nursing · Facility · Operation around an Incident Commander",
@@ -476,6 +504,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-triangle: Fire triangle with three labelled sides Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"Fire triangle: heat, fuel and oxygen.\"",
           "decorative": false
         }
       ],
@@ -744,6 +779,69 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-1: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-2: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-3: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-4: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-5: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-6: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-7: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-8: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-ghs-9: 9 GHS pictograms redrawn (red diamond, black symbol) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "name of each pictogram",
+          "decorative": false
         }
       ],
       "on_screen_text": "9 pairs: pictogram (own SVG via left_html image or name) ↔ hazard",
@@ -767,6 +865,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-nfpa-blank: Generic NFPA 704 diamond, quadrants without labels Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"Empty NFPA hazard diamond with four quadrants.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Place 4 labels: Health (blue) · Flammability (red) · Reactivity (yellow) · Special (white)",
@@ -789,6 +894,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-nfpa-301w: Diamond with 3/0/1/W Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"NFPA diamond: health 3, flammability 0, reactivity 1, special W.\"",
           "decorative": false
         }
       ],
@@ -835,6 +947,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hs1-img-eyewash: Own photo of a My Clinic eyewash/shower unit Placement: Screen visual; production placement reviewed by the SME. PENDING My Clinic photo permission and Facilities/EHS approval of the pictured unit.",
+          "source": "client",
+          "alt_text": "\"Combined eyewash and emergency shower station.\"",
           "decorative": false
         },
         {
@@ -965,6 +1084,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs1-img-treatment-room: Room with sockets, UPS monitor, extension, valve, vent Placement: Screen visual; production placement reviewed by the SME. PENDING 01 B6; Facilities confirms equipment, sockets and visual targets before illustration/hotspots.",
+          "source": "generate",
+          "alt_text": "\"Treatment room showing sockets, a valve and an air vent.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Treatment-room illustration: red emergency socket (per B6), standard socket, UPS-backed monitor, unauthorised extension (crossed), water shut-off valve, HVAC vent in isolation room",
@@ -1033,6 +1159,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs1-img-pump-label: Infusion pump with an overdue inspection label (fictional dates); label dates and overdue status in editable HTML, not AI-rendered lettering. Placement: Screen visual; production placement reviewed by the SME. PENDING Biomedical/Facilities confirmation of the inspection-label rule; fictional dates in an editable HTML overlay.",
+          "source": "generate",
+          "alt_text": "\"Infusion pump with an overdue inspection label.\"",
           "decorative": false
         },
         {
@@ -1132,6 +1265,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs1-img-alara: Source icon with time/distance/shield labels Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"ALARA: time, distance, shielding.\"",
           "decorative": false
         }
       ],

@@ -317,15 +317,29 @@
     "01_health-and-safety-1": {
       "assets": {
         "referenced": {
+          "hs1-img-8plans": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
           "hs1-img-alara": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs1-img-arec": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-codes-chips": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs1-img-corridor": [
             "asset-register.md",
@@ -336,22 +350,98 @@
           "hs1-img-ert": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-eyewash": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-1": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-2": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-3": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-4": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-5": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-6": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-7": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-8": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-ghs-9": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs1-img-nfpa-301w": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs1-img-nfpa-blank": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-pump-label": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs1-img-treatment-room": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs1-img-triangle": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
           ]
         },
         "on_disk": [
@@ -364,7 +454,22 @@
           "hs1-img-triangle"
         ],
         "missing_files": [],
-        "planned_not_built": [],
+        "planned_not_built": [
+          "hs1-img-8plans",
+          "hs1-img-codes-chips",
+          "hs1-img-eyewash",
+          "hs1-img-ghs-1",
+          "hs1-img-ghs-2",
+          "hs1-img-ghs-3",
+          "hs1-img-ghs-4",
+          "hs1-img-ghs-5",
+          "hs1-img-ghs-6",
+          "hs1-img-ghs-7",
+          "hs1-img-ghs-8",
+          "hs1-img-ghs-9",
+          "hs1-img-pump-label",
+          "hs1-img-treatment-room"
+        ],
         "orphans": [],
         "svg_issues": []
       },
@@ -389,15 +494,143 @@
     "02_health-and-safety-2": {
       "assets": {
         "referenced": {
+          "hs2-img-codes": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-1": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-2": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-3": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-4": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-5": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-drill-6": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-extinguisher": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
           "hs2-img-floorplan": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-1": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-2": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-3": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-4": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-5": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-6": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-7": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-8": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-ghs-9": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-kit-bio": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-kit-chem": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs2-img-nfpa-230": [
             "asset-register.md",
             "screen-visuals.html",
-            "storyboard.md"
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-register": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "hs2-img-spill-photo": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
           ],
           "hs2-img-storeroom": [
             "asset-register.md",
@@ -412,7 +645,29 @@
           "hs2-img-storeroom"
         ],
         "missing_files": [],
-        "planned_not_built": [],
+        "planned_not_built": [
+          "hs2-img-codes",
+          "hs2-img-drill-1",
+          "hs2-img-drill-2",
+          "hs2-img-drill-3",
+          "hs2-img-drill-4",
+          "hs2-img-drill-5",
+          "hs2-img-drill-6",
+          "hs2-img-extinguisher",
+          "hs2-img-ghs-1",
+          "hs2-img-ghs-2",
+          "hs2-img-ghs-3",
+          "hs2-img-ghs-4",
+          "hs2-img-ghs-5",
+          "hs2-img-ghs-6",
+          "hs2-img-ghs-7",
+          "hs2-img-ghs-8",
+          "hs2-img-ghs-9",
+          "hs2-img-kit-bio",
+          "hs2-img-kit-chem",
+          "hs2-img-register",
+          "hs2-img-spill-photo"
+        ],
         "orphans": [],
         "svg_issues": []
       },
@@ -1011,8 +1266,7 @@
           ],
           "ehr-pdf-quickref": [
             "asset-register.md",
-            "storyboard.md",
-            "visual-plan.json"
+            "storyboard.md"
           ],
           "ehr-vid-walkthrough": [
             "asset-register.md",

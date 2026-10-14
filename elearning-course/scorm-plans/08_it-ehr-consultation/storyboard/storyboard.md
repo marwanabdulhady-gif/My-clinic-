@@ -117,7 +117,7 @@ change must be proposed in Phase 2/4 before a build starts.
 |---|---|---|---|---|---|
 | `Official navy title background supplied by My Clinic; no content is baked into it.` | photo | Official navy title background supplied by My Clinic; no content is baked into it. | own / official My Clinic asset | Decorative navy title gradient. | Yes |
 | `Supplied My Clinic horizontal white logo lock-up.` | icon | Supplied My Clinic horizontal white logo lock-up. | own / official My Clinic asset | My Clinic logo. | No |
-| `ehr-capture-sheet` | diagram | ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets. | own SVG | Checklist showing safe test-environment screenshot requirements. | No |
+| `ehr-capture-sheet` | diagram | ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets. | own SVG, final content review required | Checklist showing safe test-environment screenshot requirements. | No |
 | `Approved program companion pose char-omar-welcome at L1 half-body bottom-right.` | illustration | Approved program companion pose char-omar-welcome at L1 half-body bottom-right. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -228,7 +228,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ehr-capture-sheet` | diagram | ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets. | own SVG | Checklist showing safe test-environment screenshot requirements. | No |
+| `ehr-capture-sheet` | diagram | ehr-capture-sheet: Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets. | own SVG, final content review required | Checklist showing safe test-environment screenshot requirements. | No |
 | `Approved program companion pose char-omar-explaining at L3 right column.` | illustration | Approved program companion pose char-omar-explaining at L3 right column. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -448,6 +448,8 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-list` | screenshot | ehr-shot-list: Today's consultation list, test patient only, 1920×1080 at 125% zoom Placement: ehr-010 step 1 · consultation list PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | "Today's consultation list with one test patient." | No |
+| `ehr-shot-form` | screenshot | ehr-shot-form: Consultation form with all sections visible (may need 2 crops) Placement: ehr-010 step 2; reused on ehr-011 for mandatory-field exploration PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields. | test capture, DPO review pending | "Consultation form showing mandatory sections." | No |
 
 #### 4. Interaction and scoring
 
@@ -502,7 +504,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 5,
   "narration_script_id": "ehr-010",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-list> — ehr-010 step 1 · consultation list. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-form> — ehr-010 step 2; reused on ehr-011 for mandatory-field exploration. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields."
 }
 ```
 
@@ -559,6 +562,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-form` | screenshot | ehr-shot-form: Consultation form with all sections visible (may need 2 crops) Placement: ehr-010 step 2; reused on ehr-011 for mandatory-field exploration PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields. | test capture, DPO review pending | "Consultation form showing mandatory sections." | No |
 
 #### 4. Interaction and scoring
 
@@ -611,7 +615,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ehr-011",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-form> — ehr-010 step 2; reused on ehr-011 for mandatory-field exploration. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields."
 }
 ```
 
@@ -779,6 +784,11 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-dx-1` | screenshot | ehr-shot-dx-1: Add Diagnosis dialog; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Add Diagnosis dialog PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing add diagnosis dialog; no real identifiers. | No |
+| `ehr-shot-dx-2` | screenshot | ehr-shot-dx-2: Diagnosis search with draft E11 input; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Diagnosis search with draft E11 input PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing diagnosis search with draft e11 input; no real identifiers. | No |
+| `ehr-shot-dx-3` | screenshot | ehr-shot-dx-3: Diagnosis results; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Diagnosis results PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing diagnosis results; no real identifiers. | No |
+| `ehr-shot-dx-4` | screenshot | ehr-shot-dx-4: Primary diagnosis details, onset and chronicity; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Primary diagnosis details, onset and chronicity PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing primary diagnosis details, onset and chronicity; no real identifiers. | No |
+| `ehr-shot-dx-5` | screenshot | ehr-shot-dx-5: Diagnosis favourites star; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Diagnosis favourites star PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing diagnosis favourites star; no real identifiers. | No |
 | `Approved program companion pose char-omar-avatar-neutral + tip card at L5 avatar above the simulation.` | illustration | Approved program companion pose char-omar-avatar-neutral + tip card at L5 avatar above the simulation. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -834,7 +844,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "ehr-020",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-dx-1> — Step 1 · Add Diagnosis dialog. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-dx-2> — Step 2 · Diagnosis search with draft E11 input. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-dx-3> — Step 3 · Diagnosis results. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-dx-4> — Step 4 · Primary diagnosis details, onset and chronicity. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-dx-5> — Step 5 · Diagnosis favourites star. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed."
 }
 ```
 
@@ -1000,6 +1011,12 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-order-1` | screenshot | ehr-shot-order-1: Order search; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Order search PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing order search; no real identifiers. | No |
+| `ehr-shot-order-2` | screenshot | ehr-shot-order-2: Drug-name search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Drug-name search using the approved B6 example PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing drug-name search using the approved b6 example; no real identifiers. | No |
+| `ehr-shot-order-3` | screenshot | ehr-shot-order-3: Medication route, dose, frequency and duration fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Medication route, dose, frequency and duration fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing medication route, dose, frequency and duration fields; no real identifiers. | No |
+| `ehr-shot-order-4` | screenshot | ehr-shot-order-4: Assessed-diagnosis selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Assessed-diagnosis selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing assessed-diagnosis selection; no real identifiers. | No |
+| `ehr-shot-order-5` | screenshot | ehr-shot-order-5: Patient-instructions fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Patient-instructions fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing patient-instructions fields; no real identifiers. | No |
+| `ehr-shot-order-6` | screenshot | ehr-shot-order-6: Order submission control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 6 · Order submission control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing order submission control; no real identifiers. | No |
 
 #### 4. Interaction and scoring
 
@@ -1054,7 +1071,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 15,
   "narration_script_id": "ehr-031",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-order-1> — Step 1 · Order search. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-order-2> — Step 2 · Drug-name search using the approved B6 example. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-order-3> — Step 3 · Medication route, dose, frequency and duration fields. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-order-4> — Step 4 · Assessed-diagnosis selection. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-order-5> — Step 5 · Patient-instructions fields. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-order-6> — Step 6 · Order submission control. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples."
 }
 ```
 
@@ -1111,6 +1129,10 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-wizard-1` | screenshot | ehr-shot-wizard-1: Package search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Package search using the approved B6 example PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing package search using the approved b6 example; no real identifiers. | No |
+| `ehr-shot-wizard-2` | screenshot | ehr-shot-wizard-2: Form Wizard item review; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Form Wizard item review PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing form wizard item review; no real identifiers. | No |
+| `ehr-shot-wizard-3` | screenshot | ehr-shot-wizard-3: Form Wizard item removal; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Form Wizard item removal PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing form wizard item removal; no real identifiers. | No |
+| `ehr-shot-wizard-4` | screenshot | ehr-shot-wizard-4: Form Wizard finalisation; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Form Wizard finalisation PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples. | test capture, DPO review pending | Test-patient EHR screen showing form wizard finalisation; no real identifiers. | No |
 
 #### 4. Interaction and scoring
 
@@ -1165,7 +1187,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "ehr-032",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-wizard-1> — Step 1 · Package search using the approved B6 example. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-wizard-2> — Step 2 · Form Wizard item review. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-wizard-3> — Step 3 · Form Wizard item removal. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.; <ehr-shot-wizard-4> — Step 4 · Form Wizard finalisation. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples."
 }
 ```
 
@@ -1444,6 +1467,9 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-summary-1` | screenshot | ehr-shot-summary-1: Consultation Summary entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Consultation Summary entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing consultation summary entry; no real identifiers. | No |
+| `ehr-shot-summary-2` | screenshot | ehr-shot-summary-2: Lab orders, special tests and referrals in summary; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Lab orders, special tests and referrals in summary PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing lab orders, special tests and referrals in summary; no real identifiers. | No |
+| `ehr-shot-summary-3` | screenshot | ehr-shot-summary-3: Download and Print control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Download and Print control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. | test capture, DPO review pending | Test-patient EHR screen showing download and print control; no real identifiers. | No |
 
 #### 4. Interaction and scoring
 
@@ -1498,7 +1524,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 5,
   "narration_script_id": "ehr-040",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-summary-1> — Step 1 · Consultation Summary entry. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-summary-2> — Step 2 · Lab orders, special tests and referrals in summary. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.; <ehr-shot-summary-3> — Step 3 · Download and Print control. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed."
 }
 ```
 
@@ -1555,6 +1582,11 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-sms-1` | screenshot | ehr-shot-sms-1: Send SMS educational-material entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Send SMS educational-material entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only. | test capture, DPO review pending | Test-patient EHR screen showing send sms educational-material entry; no real identifiers. | No |
+| `ehr-shot-sms-2` | screenshot | ehr-shot-sms-2: SMS department selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · SMS department selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only. | test capture, DPO review pending | Test-patient EHR screen showing sms department selection; no real identifiers. | No |
+| `ehr-shot-sms-3` | screenshot | ehr-shot-sms-3: SMS diagnosis-code search; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · SMS diagnosis-code search PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only. | test capture, DPO review pending | Test-patient EHR screen showing sms diagnosis-code search; no real identifiers. | No |
+| `ehr-shot-sms-4` | screenshot | ehr-shot-sms-4: SMS leaflet selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · SMS leaflet selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only. | test capture, DPO review pending | Test-patient EHR screen showing sms leaflet selection; no real identifiers. | No |
+| `ehr-shot-sms-5` | screenshot | ehr-shot-sms-5: SMS Send control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · SMS Send control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only. | test capture, DPO review pending | Test-patient EHR screen showing sms send control; no real identifiers. | No |
 
 #### 4. Interaction and scoring
 
@@ -1609,7 +1641,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "ehr-041",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-sms-1> — Step 1 · Send SMS educational-material entry. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.; <ehr-shot-sms-2> — Step 2 · SMS department selection. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.; <ehr-shot-sms-3> — Step 3 · SMS diagnosis-code search. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.; <ehr-shot-sms-4> — Step 4 · SMS leaflet selection. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.; <ehr-shot-sms-5> — Step 5 · SMS Send control. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only."
 }
 ```
 
@@ -1776,6 +1809,12 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `ehr-shot-ref-1` | screenshot | ehr-shot-ref-1: Referral entry; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 1 · Referral entry PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing referral entry; no real identifiers. | No |
+| `ehr-shot-ref-2` | screenshot | ehr-shot-ref-2: Referral specialty selection; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 2 · Referral specialty selection PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing referral specialty selection; no real identifiers. | No |
+| `ehr-shot-ref-3` | screenshot | ehr-shot-ref-3: Referral-reason field; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 3 · Referral-reason field PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing referral-reason field; no real identifiers. | No |
+| `ehr-shot-ref-4` | screenshot | ehr-shot-ref-4: Referral type and timing fields; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 4 · Referral type and timing fields PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing referral type and timing fields; no real identifiers. | No |
+| `ehr-shot-ref-5` | screenshot | ehr-shot-ref-5: Follow-up toggle and interval; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 5 · Follow-up toggle and interval PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing follow-up toggle and interval; no real identifiers. | No |
+| `ehr-shot-ref-6` | screenshot | ehr-shot-ref-6: Referral Save control; capture in approved test environment, 1920×1080 at 125% zoom. Placement: Step 6 · Referral Save control PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason. | test capture, DPO review pending | Test-patient EHR screen showing referral save control; no real identifiers. | No |
 | `Approved program companion pose char-omar-avatar-neutral at L5 avatar.` | illustration | Approved program companion pose char-omar-avatar-neutral at L5 avatar. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -1831,7 +1870,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "ehr-050",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ehr-shot-ref-1> — Step 1 · Referral entry. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.; <ehr-shot-ref-2> — Step 2 · Referral specialty selection. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.; <ehr-shot-ref-3> — Step 3 · Referral-reason field. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.; <ehr-shot-ref-4> — Step 4 · Referral type and timing fields. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.; <ehr-shot-ref-5> — Step 5 · Follow-up toggle and interval. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.; <ehr-shot-ref-6> — Step 6 · Referral Save control. PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason."
 }
 ```
 
@@ -2217,7 +2257,6 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ehr-pdf-quickref` | illustration | ehr-pdf-quickref: 1-page EHR consultation quick-reference card | own SVG | Close visual. | No |
 | `Approved program companion pose char-omar-success at L6 right.` | illustration | Approved program companion pose char-omar-success at L6 right. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -2320,9 +2359,41 @@ lock items have written SME decisions.
 | Asset id | Kind | Used on | Source | Alt text written? | Status |
 |---|---|---|---|---|---|
 | `ehr-capture-sheet` | diagram | Generated file | own | Yes | Generated capture checklist only; not an EHR screenshot and not a substitute for B2 test-environment assets. |
+| `ehr-shot-list` | screenshot | ehr-010 | own (test env) | Yes | Planned |
+| `ehr-shot-form` | screenshot | ehr-010, 011 | own | Yes | Planned |
+| `ehr-shot-dx-1` | screenshots | ehr-020 | own | Yes | Planned |
+| `ehr-shot-dx-2` | screenshots | ehr-020 | own | Yes | Planned |
+| `ehr-shot-dx-3` | screenshots | ehr-020 | own | Yes | Planned |
+| `ehr-shot-dx-4` | screenshots | ehr-020 | own | Yes | Planned |
+| `ehr-shot-dx-5` | screenshots | ehr-020 | own | Yes | Planned |
+| `ehr-shot-order-1` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-order-2` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-order-3` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-order-4` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-order-5` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-order-6` | screenshots | ehr-031 | own | Yes | Planned |
+| `ehr-shot-wizard-1` | screenshots | ehr-032 | own | Yes | Planned |
+| `ehr-shot-wizard-2` | screenshots | ehr-032 | own | Yes | Planned |
+| `ehr-shot-wizard-3` | screenshots | ehr-032 | own | Yes | Planned |
+| `ehr-shot-wizard-4` | screenshots | ehr-032 | own | Yes | Planned |
+| `ehr-shot-summary-1` | screenshots | ehr-040 | own | Yes | Planned |
+| `ehr-shot-summary-2` | screenshots | ehr-040 | own | Yes | Planned |
+| `ehr-shot-summary-3` | screenshots | ehr-040 | own | Yes | Planned |
+| `ehr-shot-sms-1` | screenshots | ehr-041 | own | Yes | Planned |
+| `ehr-shot-sms-2` | screenshots | ehr-041 | own | Yes | Planned |
+| `ehr-shot-sms-3` | screenshots | ehr-041 | own | Yes | Planned |
+| `ehr-shot-sms-4` | screenshots | ehr-041 | own | Yes | Planned |
+| `ehr-shot-sms-5` | screenshots | ehr-041 | own | Yes | Planned |
+| `ehr-shot-ref-1` | screenshots | ehr-050 | own | Yes | Planned |
+| `ehr-shot-ref-2` | screenshots | ehr-050 | own | Yes | Planned |
+| `ehr-shot-ref-3` | screenshots | ehr-050 | own | Yes | Planned |
+| `ehr-shot-ref-4` | screenshots | ehr-050 | own | Yes | Planned |
+| `ehr-shot-ref-5` | screenshots | ehr-050 | own | Yes | Planned |
+| `ehr-shot-ref-6` | screenshots | ehr-050 | own | Yes | Planned |
 | `ehr-pdf-quickref` | PDF | ehr-091 | own | n/a | Planned |
-| `ehr-vid-walkthrough (optional)` | MP4 + VTT | ehr-060 | own | Yes | Planned |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `ehr-vid-walkthrough` | MP4 + VTT | ehr-060 | own | Yes | Planned |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
 
 ### Open questions for the SME
 

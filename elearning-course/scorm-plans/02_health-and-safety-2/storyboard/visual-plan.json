@@ -187,6 +187,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-codes: 12 cards, EN + AR text in HTML, colour chip SVG only Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "decorative chip",
+          "decorative": false
         }
       ],
       "on_screen_text": "10 colour codes + 2 announcements; front EN + AR name and colour chip, back meaning + extension (D2). Code Blue 2222",
@@ -209,6 +216,48 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-1: Smoke in a consultation room with an unnamed patient. Placement: Node 1 · Rescue PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Consultation room with smoke and an unnamed patient; no real person or identifier.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-2: Call point and phone; call-script wording is editable HTML after approval. Placement: Node 2 · Alarm PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Fire alarm call point beside a telephone; labels and call script are separate editable text.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-3: Oxygen cylinder and alcohol rub; containment cues follow the signed node list. Placement: Node 3 · Contain PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Consultation-room scene with an oxygen cylinder, alcohol rub and a door.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-4: Small bin fire versus spreading fire; depict both states in separate editable layers. Placement: Node 4 · Extinguish or evacuate PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Bin-fire scene with a separate spreading-fire state for the authored decision.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-5: Stairwell with evacuation chair and an unnamed wheelchair user; no real floor plan. Placement: Node 5 · Evacuate PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Generic stairwell with an evacuation chair and an unnamed wheelchair user.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-drill-6: Generic assembly point; local names and all-clear wording remain editable. Placement: Node 6 · Assembly point PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+          "source": "generate",
+          "alt_text": "Generic outdoor assembly point with unnamed colleagues waiting.",
           "decorative": false
         },
         {
@@ -263,6 +312,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-floorplan: Generic single-floor plan, Zones A–E, legend icons, \"you are here\" marker Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"Generic evacuation floor plan with zones A to E.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Generic own floor plan (Zones A–E). Place 6 labels: call point · extinguisher · fire hose reel · fire blanket · evacuation route · assembly point (\"you are here\" given)",
@@ -308,6 +364,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hs2-img-extinguisher: My Clinic dry-powder extinguisher, label legible, 3:4 crop Placement: Screen visual; production placement reviewed by the SME. PENDING client photo permission and EHS/Safety equipment review; kit procedure also awaits 02 B4.",
+          "source": "client",
+          "alt_text": "\"Dry-powder fire extinguisher with its label.\"",
           "decorative": false
         }
       ],
@@ -377,6 +440,20 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hs2-img-kit-chem: Real My Clinic kits, same angle and size Placement: Left comparison image PENDING client photo permission and EHS/Safety equipment review; kit procedure also awaits 02 B4.",
+          "source": "client",
+          "alt_text": "Chemical spill kit supplied by My Clinic; equipment and colour await EHS review.",
+          "decorative": false
+        },
+        {
+          "kind": "photo",
+          "description": "hs2-img-kit-bio: Real My Clinic kits, same angle and size Placement: Right comparison image PENDING client photo permission and EHS/Safety equipment review; kit procedure also awaits 02 B4.",
+          "source": "client",
+          "alt_text": "Biological spill kit supplied by My Clinic; equipment and colour await EHS review.",
           "decorative": false
         }
       ],
@@ -454,6 +531,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-register: Rebuilt from the anonymised register (B5); real text, not a screenshot Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "n/a (HTML)",
+          "decorative": false
         }
       ],
       "on_screen_text": "Anonymised register table (5 rows, from B5): name · hazard class · purpose · quantity · SDS ✓ · NFPA H/F/R/S. Callouts on the SDS and NFPA columns",
@@ -476,6 +560,69 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-1: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-2: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-3: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-4: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-5: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-6: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-7: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-8: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-ghs-9: Reuse module 01 assets hs1-img-ghs- Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "names",
           "decorative": false
         }
       ],
@@ -500,6 +647,13 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-register: Rebuilt from the anonymised register (B5); real text, not a screenshot Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "n/a (HTML)",
+          "decorative": false
         }
       ],
       "on_screen_text": "Row: \"Surface disinfectant X — SDS ✘\". \"You need it for a cleaning task now. What do you do?\" → don't use; report the missing SDS to your supervisor / EHS",
@@ -523,6 +677,20 @@
           "source": "client",
           "alt_text": "My Clinic logo.",
           "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-register: Rebuilt from the anonymised register (B5); real text, not a screenshot Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "n/a (HTML)",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-nfpa-230: Diamond 2-3-0 Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"NFPA diamond: health 2, flammability 3, reactivity 0.\"",
+          "decorative": false
         }
       ],
       "on_screen_text": "Row shows NFPA 2-3-0. \"Where must it be stored?\" → approved flammable cabinet, away from heat",
@@ -545,6 +713,27 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-register: Rebuilt from the anonymised register (B5); real text, not a screenshot Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "n/a (HTML)",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "hs2-img-nfpa-230: Diamond 2-3-0 Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "\"NFPA diamond: health 2, flammability 3, reactivity 0.\"",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "hs2-img-spill-photo: Spill with a measuring cue (e.g. a 1 L bottle on its side, more than half gone) Placement: Screen visual; production placement reviewed by the SME. PENDING D1 / 02 B1 threshold; EHS signs volume cue and puzzle context before illustration.",
+          "source": "generate",
+          "alt_text": "\"Large disinfectant spill from a one-litre bottle.\"",
           "decorative": false
         },
         {

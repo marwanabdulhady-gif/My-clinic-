@@ -27,8 +27,29 @@ MC_02_SafetyLab_v1.0_1.2.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── hs2-img-codes.*
+    ├── hs2-img-drill-1.*
+    ├── hs2-img-drill-2.*
+    ├── hs2-img-drill-3.*
+    ├── hs2-img-drill-4.*
+    ├── hs2-img-drill-5.*
+    ├── hs2-img-drill-6.*
+    ├── hs2-img-extinguisher.*
     ├── hs2-img-floorplan.*
+    ├── hs2-img-ghs-1.*
+    ├── hs2-img-ghs-2.*
+    ├── hs2-img-ghs-3.*
+    ├── hs2-img-ghs-4.*
+    ├── hs2-img-ghs-5.*
+    ├── hs2-img-ghs-6.*
+    ├── hs2-img-ghs-7.*
+    ├── hs2-img-ghs-8.*
+    ├── hs2-img-ghs-9.*
+    ├── hs2-img-kit-bio.*
+    ├── hs2-img-kit-chem.*
     ├── hs2-img-nfpa-230.*
+    ├── hs2-img-register.*
+    ├── hs2-img-spill-photo.*
     ├── hs2-img-storeroom.*
     ├── char-noor-avatar.png
     ├── char-noor-avatar-neutral.png

@@ -1,0 +1,81 @@
+{
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-030",
+  "status": "Planned — not generated or approved",
+  "scene_count": 6,
+  "variant": "Full six-scene drill; no lean reduction",
+  "assets": [
+    {
+      "id": "hs2-img-drill-1",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Smoke in a consultation room with an unnamed patient.",
+      "source": "ai-generated (same style set)",
+      "alt": "Consultation room with smoke and an unnamed patient; no real person or identifier.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 1 · Rescue"
+    },
+    {
+      "id": "hs2-img-drill-2",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Call point and phone; call-script wording is editable HTML after approval.",
+      "source": "ai-generated (same style set)",
+      "alt": "Fire alarm call point beside a telephone; labels and call script are separate editable text.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 2 · Alarm"
+    },
+    {
+      "id": "hs2-img-drill-3",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Oxygen cylinder and alcohol rub; containment cues follow the signed node list.",
+      "source": "ai-generated (same style set)",
+      "alt": "Consultation-room scene with an oxygen cylinder, alcohol rub and a door.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 3 · Contain"
+    },
+    {
+      "id": "hs2-img-drill-4",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Small bin fire versus spreading fire; depict both states in separate editable layers.",
+      "source": "ai-generated (same style set)",
+      "alt": "Bin-fire scene with a separate spreading-fire state for the authored decision.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 4 · Extinguish or evacuate"
+    },
+    {
+      "id": "hs2-img-drill-5",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Stairwell with evacuation chair and an unnamed wheelchair user; no real floor plan.",
+      "source": "ai-generated (same style set)",
+      "alt": "Generic stairwell with an evacuation chair and an unnamed wheelchair user.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 5 · Evacuate"
+    },
+    {
+      "id": "hs2-img-drill-6",
+      "kind": "illustrations",
+      "screens": "hs2-030",
+      "brief": "Generic assembly point; local names and all-clear wording remain editable.",
+      "source": "ai-generated (same style set)",
+      "alt": "Generic outdoor assembly point with unnamed colleagues waiting.",
+      "manifest_id": "hs2-img-drill-1..6",
+      "optional": false,
+      "gate": "PENDING D1/D2 and 02 B2/B8 as applicable; Safety Manager signs all six nodes/scenes, code wording and assembly-point treatment.",
+      "placement": "Node 6 · Assembly point"
+    }
+  ]
+}

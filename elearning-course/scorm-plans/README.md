@@ -37,12 +37,13 @@ This remains **planning and draft review**, not a production course build. A [lo
 
 | Tool | Produces | Notes |
 |---|---|---|
-| `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards |
+| `tools/assemble_storyboard_docs.py` | The six generated review packs (01, 02, 04, 05, 06, 08): cards, visual plan, narration, audio export, voice table, asset register, visual board; plus the production board and SME register | Never touches the hand-authored 03/07 storyboards; [G10 restoration](00_program/g10-visual-restoration.md) adds 02 drill and 08 capture manifests |
 | `tools/normalise_narration.py` | Canonical narration/audio outputs for the hand-authored packs (03, 07) | Same rules as the generator, via `tools/audio_export.py` |
 | `tools/audio_export.py` | Shared rules: speaker labels out of TTS input, one segment per spoken line, lexicon + SSML, voice table | Imported by both tools above |
 | `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |
 | `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
 | `tools/generate_screens.py` | Ignored `.generated/screens/`: offline branded HTML preview + generation report | [Usage and coverage](00_program/screen-generator.md); draft review only, not SCORM or approval |
+| `tools/prepare_asset_approval_handoff.py` | [G10 approval packet](00_program/asset-approval-handoff/README.md), 44-row response template and request JSON | Prepared, not submitted or approved; preserves human responses |
 | `tools/export_storyboard_docx.py` | The nine client-review Word documents | Supplied client logo in the running header, cover band, document control, page numbers |
 | `tools/make_companion_avatars.py` | Interim transparent avatar PNGs in `00_program/characters/assets/` | Crops of approved poses; full-size Canva downloads still outstanding (G6) |
 | `tools/audit_assets.py` | `00_program/asset-template-audit.md` + `asset-audit.json` | Hard failures (missing referenced asset, broken link, label in TTS, incomplete card) exit non-zero |

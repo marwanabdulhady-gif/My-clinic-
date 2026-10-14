@@ -27,12 +27,26 @@ MC_01_FMS_v1.0_2004.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── hs1-img-8plans.*
     ├── hs1-img-alara.*
     ├── hs1-img-arec.*
+    ├── hs1-img-codes-chips.*
     ├── hs1-img-corridor.*
     ├── hs1-img-ert.*
+    ├── hs1-img-eyewash.*
+    ├── hs1-img-ghs-1.*
+    ├── hs1-img-ghs-2.*
+    ├── hs1-img-ghs-3.*
+    ├── hs1-img-ghs-4.*
+    ├── hs1-img-ghs-5.*
+    ├── hs1-img-ghs-6.*
+    ├── hs1-img-ghs-7.*
+    ├── hs1-img-ghs-8.*
+    ├── hs1-img-ghs-9.*
     ├── hs1-img-nfpa-301w.*
     ├── hs1-img-nfpa-blank.*
+    ├── hs1-img-pump-label.*
+    ├── hs1-img-treatment-room.*
     ├── hs1-img-triangle.*
     ├── char-noor-avatar-concern.png
     ├── char-noor-avatar-neutral.png
