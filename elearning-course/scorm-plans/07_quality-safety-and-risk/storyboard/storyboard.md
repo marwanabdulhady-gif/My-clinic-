@@ -3,7 +3,19 @@
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
 > Screen-by-screen storyboard for the 22 core screens in [`../phase-2-storyboard.md`](../phase-2-storyboard.md), in the same order and with the same ids. `qsr-060` is explicitly optional in Phase 2 and is deferred from the 22-screen / 95-point baseline; it remains an optional post-approval change, not a core screen.
-> Written against [`../../00_program/storyboard-template/README.md`](../../00_program/storyboard-template/README.md) and `brand-identity.md`.
+> Written against [`../../00_program/storyboard-template/README.md`](../../00_program/storyboard-template/README.md), `brand-identity.md` and the character bible `companions.md`.
+
+> **Review pack v0.2 · 2026-10-14.** v0.2 keeps the 22 hand-written v0.1 cards, ids, order, types,
+> node ids and the 11 scored screens / 95 points unchanged, and adds the programme companions
+> (Noor as lead host, Dr. Omar as co-host) exactly as the Phase 2 and Phase 3 companion tables place
+> them, speaker-tagged narration, and the pack files below. It is a review artefact, **not an approved
+> policy or production SCORM package**; every `⚠ PENDING` item stays open.
+
+**Companion documents:** [`screen-visuals.html`](screen-visuals.html) ·
+[`visual-plan.json`](visual-plan.json) · [`narration-script.json`](narration-script.json) ·
+[`audio-script-export.json`](audio-script-export.json) · [`voice_talent.md`](voice_talent.md) ·
+[`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json) ·
+character bible [`companions.md`](../../00_program/characters/companions.md).
 
 ---
 
@@ -13,8 +25,8 @@
 |---|---|
 | Module | 07 — My Clinic — Clinical Governance: Quality, Patient Safety & Risk |
 | Module prefix | `qsr-` |
-| Storyboard version | `v0.1` |
-| Author | Arena agent, prepared for Quality / Risk / L&D review |
+| Storyboard version | `v0.2` |
+| Author | Arena agent, prepared for Quality / Risk / L&D review; v0.2 companion and pack pass |
 | Date | 2026-10-14 |
 | Status | `Draft — ready for SME review` (content depending on open Phase 0 decisions is explicitly pending) |
 | SME reviewer (role) | Quality Director (SME lead); Patient Safety Officer / Risk Manager; Infection Control lead; Nursing Director; L&D human-listen reviewer |
@@ -50,6 +62,33 @@
 | `qsr-sF` | F · Reporting | `qsr-050`–`qsr-051` |
 | `qsr-sG` | G · Close | `qsr-090`–`qsr-092` |
 
+### Companions in this module
+
+Lead host **Noor** (senior staff nurse and patient-safety liaison) narrates every narrated screen; co-host
+**Dr. Omar** (family physician) speaks only where he is visible. Art is the shared programme set
+`char-noor-*` / `char-omar-*` ([`companions.md`](../../00_program/characters/companions.md) §3) — there is
+no module-specific character art and no module character prompt.
+
+| Screen | Visible | Pose / asset | Placement | Speaks |
+|---|---|---|---|---|
+| `qsr-000` | Noor | `char-noor-welcome` | L1 portrait card, bottom-right | Noor — welcome |
+| `qsr-002` | Noor | `char-noor-listening` | L4 beside the poll (never over the options) | Noor — speak-up story |
+| `qsr-021` | Noor | `char-noor-avatar-concern → -happy / -concern` | L5 scenario avatar | Noor — “Which Mohammed?” story |
+| `qsr-031` | Dr. Omar | `char-omar-thinking` | L3 right column | Omar — risk-matrix worked example |
+| `qsr-040` | Dr. Omar | `char-omar-avatar-neutral` + tip card | L3 tip card, bottom-left | Omar — iceberg and near-miss tip |
+| `qsr-051` | Noor | `char-noor-avatar-neutral → -happy / -concern` | L5 scenario avatar | Noor — end-of-shift scenario |
+| `qsr-092` | Noor + Dr. Omar | `char-noor-success` + `char-omar-avatar-happy` | L6 | Noor then Omar — two-voice close |
+
+Visible on 7 of 22 screens (≈ 1 in 3). No companion appears on a scored question screen; on the
+unscored `qsr-002` poll Noor stands beside the options as Phase 3 places her.
+
+### Version history
+
+| Version | Date | Change |
+|---|---|---|
+| `v0.1` | 2026-10-14 | 22 hand-written cards; a module-only mentor character with its own AI prompts. |
+| `v0.2` | 2026-10-14 | Shared companions applied per Phase 2/3; module character art and prompts removed; narration tagged `NOOR:` / `OMAR:` with Noor's two honest stories on `qsr-002` and `qsr-021`; Dr. Omar on `qsr-031`, `qsr-040`, `qsr-092`; pack files and native SVG diagrams added. |
+
 ### Shared build conventions
 
 | Convention | Value |
@@ -60,8 +99,8 @@
 | Typography | Montserrat per brand identity §3; no text below 14 px except footer/captions/compact label roles. |
 | Watermark | Title, section opener and close only; never behind questions or body text. |
 | Pending facts | No unresolved policy value is to be treated as approved; retain `⚠ PENDING B# / decision ID` until the owning SME closes it. |
-| Narration | 140 wpm target; sentences ≤25 words; question screens are set-up only; `narration_text` is the script without markup. |
-| Audio placeholder | IDs use the pattern `qsr-aud-###`; production route/voice remains pending D10. |
+| Narration | 140 wpm target; sentences ≤25 words; question screens are set-up only. Every spoken line starts `NOOR:` or `OMAR:` (Phase 3 Speaker column); `narration_text` is the script without markup, keeping the speaker names (“Noor: …”). |
+| Audio placeholder | IDs use the pattern `qsr-aud-###`, one file per screen. The two-voice `qsr-092` is recorded as `noor-1` + `omar-1` and joined with 0.3 s silence (companions.md §5). Provider and voice ids remain pending D10. |
 | Evidence links | Every scored screen sets `evidence_screen_ids` to a teaching screen, not itself. |
 | Assessment density | 11 fixed scored screens across 5 objectives are intentional in this 25-minute compliance course; each question is explicitly objective-mapped, and repeated practice covers distinct skills rather than drawing from an exam pool. |
 | Fictional data | Scenario names, record numbers and incident details are fictional training data only. |
@@ -104,14 +143,14 @@ No changes to the 22 core Phase 2 screens, their order, scored-screen count or P
 |---|---|
 | Brand layout | L1 Title (see `../../00_program/brand/screen-mockups/01-title.png`) |
 | Logo | `logo-horizontal-white.png`, 48 px tall, top-left (48 px from left, 40 px from top) |
-| Visual concept | Official navy title gradient with the supplied white logo at upper left, a Caring-purple module chip, and a large white petal watermark cropped at the right; no photo and no generated logo. |
+| Visual concept | Official navy title gradient with the supplied white logo at upper left, a Caring-purple module chip and the title block on the left; Noor (`char-noor-welcome`) waves from a white rounded portrait card at bottom-right, with the large white petal watermark cropped behind it at the right edge; no photo and no generated logo. |
 | edumints layout | n/a (`title_slide`) |
 | Colours (palette names + hex) | bg navy gradient `#003867 → #3B6A97` · title white `#FFFFFF` · subtitle mist `#C0CED9` · module chip Caring purple `#652D8C` · no warning colour. |
 | Typography (Montserrat) | Course title Montserrat Bold 700, 40 px; subtitle Montserrat Regular 400, 18–20 px; module chip Montserrat Bold 700, 12–14 px; footer 10–12 px. |
 | Watermark | Supplied `mark-white.png`, 8–10% opacity, 520 px, cropped off the right edge. |
 | Icons | None; only the supplied five-petal watermark. |
 | Animation / reveal | Title fades up, followed by subtitle; no timed reveal is required for completion. |
-| Character | None. |
+| Companion | Noor · pose `char-noor-welcome` · placement L1: half-body in a white rounded portrait card (16 px radius, 4 px Caring-purple `#652D8C` top edge, “Noor · Senior staff nurse & patient-safety liaison” under the image), about 190 × 300 px, bottom-right · tip text n/a |
 
 **Imagery**
 
@@ -120,6 +159,7 @@ No changes to the 22 core Phase 2 screens, their order, scored-screen count or P
 | `brand-background-title-navy` | background | Supplied `00_program/brand/assets/background-title-navy.png`, official 16:9 navy title background. | own (official My Clinic brand asset) | Decorative navy gradient background. | Yes |
 | `brand-logo-horizontal-white` | image | Supplied white logo lock-up, unchanged, 48 px tall at top-left. | own (official My Clinic brand asset) | My Clinic logo. | No |
 | `brand-mark-white` | icon | Supplied white five-petal mark, 8–10% opacity, 520 px, cropped off right edge. | own (official My Clinic brand asset) | Decorative white petal watermark. | Yes |
+| `char-noor-welcome` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-noor-welcome.jpg`); half-body in a 190 × 300 px white portrait card, bottom-right. | ai-generated programme asset, Canva media `MAHX-pFaNMU`, made from the approved master (companions.md §3); no module prompt | Noor, the safety liaison, smiling and waving in welcome. | No |
 
 #### 4. Interaction and scoring
 
@@ -129,12 +169,13 @@ n/a — title screen; no interaction and no score.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Warm, steady |
 | Target seconds | 12 |
-| Word count / est. seconds | 32 words / ≈ 13.7 s at 140 wpm |
+| Word count / est. seconds | 30 spoken words / ≈ 12.9 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Welcome to My Clinic's clinical governance orientation. You will connect everyday decisions with quality, patient safety, risk management and reporting. The goal is safer care through actions you can use on shift.
+> NOOR: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting.
 
 New lexicon terms: None.
 
@@ -157,12 +198,15 @@ New lexicon terms: None.
   "subtitle": "Quality, patient safety and risk",
   "section": "A · Welcome",
   "node_id": "qsr-sA",
+  "objective_ids": [],
+  "points": 0,
   "background_asset_id": "<brand-background-title-navy>",
   "body_html": "<p class=\"course-chip\">MODULE 07 · CARING</p>",
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-000>",
-  "narration_text": "Welcome to My Clinic's clinical governance orientation. You will connect everyday decisions with quality, patient safety, risk management and reporting. The goal is safer care through actions you can use on shift."
+  "notes": "Companion: Noor, char-noor-welcome, L1 portrait card bottom-right (alt: Noor, the safety liaison, smiling and waving in welcome.). Speaker: Noor.",
+  "narration_text": "Noor: Hello, I'm Noor, a senior nurse and patient-safety liaison. Welcome to clinical governance: how My Clinic protects patients every day. You'll link daily decisions to quality, safety, risk and reporting."
 }
 ```
 
@@ -208,7 +252,7 @@ New lexicon terms: None.
 | Watermark | Supplied `mark-navy.png`, 6–8% opacity, 440 px, cropped off the right edge. |
 | Icons | Supplied Caring value tile with its white line icon; tile is decorative and the word “Caring” is real text. |
 | Animation / reveal | Quote fades in after the section marker; reduced-motion mode uses no movement. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery**
 
@@ -225,12 +269,13 @@ n/a — unscored section opener.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Calm, confident |
 | Target seconds | 25 |
-| Word count / est. seconds | 60 words / ≈ 25.7 s at 140 wpm |
+| Word count / est. seconds | 60 spoken words / ≈ 25.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.
+> NOOR: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan.
 
 New lexicon terms: None. The source quotation remains pending B1.
 
@@ -252,6 +297,8 @@ New lexicon terms: None. The source quotation remains pending B1.
   "title": "The quality standard",
   "section": "A · Welcome",
   "node_id": "qsr-sA",
+  "objective_ids": [],
+  "points": 0,
   "body_html": "<p class=\"section-marker\">SECTION 1 OF 7</p><blockquote>“Doing the right things right — the first time, and every time.” <strong>⚠ PENDING B1</strong></blockquote>",
   "media_asset_id": "<brand-value-tile-caring-purple>",
   "media_alt": "Decorative Caring value tile with a white line icon; the value name is text.",
@@ -259,7 +306,7 @@ New lexicon terms: None. The source quotation remains pending B1.
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-001>",
-  "narration_text": "Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan."
+  "narration_text": "Noor: Clinical governance connects the way a service is organised with the way care is delivered and the results patients experience. It asks teams to use reliable information, learn from problems and improve practice over time. Keep one question in mind: what helps the next patient receive safe, consistent care? The standard is a daily way of working, not a slogan."
 }
 ```
 
@@ -298,16 +345,20 @@ New lexicon terms: None. The source quotation remains pending B1.
 |---|---|
 | Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), 2 px navy `#003867` rule |
-| Visual concept | Three white response cards sit below a short reflection question; an optional private reflection note appears after submission, with no score or progress penalty. |
+| Visual concept | Three white response cards sit below a short reflection question in the left two-thirds; Noor (`char-noor-listening`, holding a tablet) stands in the right column beside the cards while she tells her speak-up story; an optional private reflection note appears after submission, with no score or progress penalty. |
 | edumints layout | n/a (`poll`). |
 | Colours (palette names + hex) | bg off-white `#F4F7FA` · cards white `#FFFFFF` with line `#D9E1E8` · stem navy `#003867` · body ink `#1F2A37` · highlight Caring purple `#652D8C` · correct `#1E7B4F` with ✓ + “Correct” · incorrect `#B42318` with an icon + words; never colour alone. |
 | Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options/feedback Montserrat Regular or Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None (questions have no watermark). |
 | Icons | None; text-only choices keep attention on the reflection. |
 | Animation / reveal | Cards fade up together; no timed movement. |
-| Character | None. |
+| Companion | Noor · pose `char-noor-listening` · placement L4: half-body about 300 px tall in the right column beside the poll, never over the response cards (unscored reflection, so there is no answer to give away) · tip text n/a |
 
-**Imagery:** None for this interaction/content card; only the logo specified above is present.
+**Imagery**
+
+| Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
+|---|---|---|---|---|---|
+| `char-noor-listening` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-noor-listening.jpg`); half-body about 300 px tall, right column beside the poll. | ai-generated programme asset, Canva media `MAHX-v3i0kY`, made from the approved master (companions.md §3); no module prompt | Noor, the safety liaison, holding a tablet and listening. | No |
 
 #### 4. Interaction and scoring
 
@@ -323,12 +374,15 @@ New lexicon terms: None. The source quotation remains pending B1.
 
 | Field | Value |
 |---|---|
-| Tone | Warm, non-judgemental |
+| Speaker(s) | NOOR |
+| Tone | Warm, honest, non-judgemental |
 | Target seconds | 10 |
-| Word count / est. seconds | 20 words / ≈ 8.6 s at 140 wpm |
+| Word count / est. seconds | 24 spoken words / ≈ 10.3 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> This reflection is for you, not a test. Choose the response that feels closest, or pass; no explanation is required.
+> NOOR: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass.
+
+Companion note: Noor's speak-up story (companions.md §1) is used once, here, before the unscored poll.
 
 New lexicon terms: None.
 
@@ -350,6 +404,8 @@ New lexicon terms: None.
   "title": "Speak up safely",
   "section": "A · Welcome",
   "node_id": "qsr-sA",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>Have you ever noticed something unsafe at work and not said anything?</p><p><strong>Anonymous response handling ⚠ PENDING NEW-01</strong></p>",
   "options": [
     {
@@ -370,7 +426,8 @@ New lexicon terms: None.
   "reflection_html": "<p>This reflection is not scored. Continue to the practice screens.</p>",
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-002>",
-  "narration_text": "This reflection is for you, not a test. Choose the response that feels closest, or pass; no explanation is required."
+  "notes": "Companion: Noor, char-noor-listening, right column beside the poll, never over the options (alt: Noor, the safety liaison, holding a tablet and listening.). Speaker: Noor.",
+  "narration_text": "Noor: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass."
 }
 ```
 
@@ -416,13 +473,13 @@ New lexicon terms: None.
 | Watermark | None (never behind body content). |
 | Icons | Three small own-SVG line icons: clinic/resources, team process, patient outcome; navy with a Caring-purple connector. |
 | Animation / reveal | The three labels reveal left to right; the cycle badge appears last. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `qsr-img-spo` | svg | Own 960×540 diagram: Structure → Process → Outcome with separate callout labels; small improvement-cycle badge. | own | Diagram linking structure, processes and outcomes, with a separate improvement-cycle callout. | No |
+| `qsr-img-spo` | svg | Own 1600×900 SVG draft ([`assets/qsr-img-spo.svg`](assets/qsr-img-spo.svg)): Structure → Processes → Outcomes blocks with arrows, a “valid, reliable data” bar and an improvement-cycle badge (step names pending B11); callout anchors match the build labels. | own | Diagram linking structure, processes and outcomes, with a separate improvement-cycle callout. | No |
 
 #### 4. Interaction and scoring
 
@@ -437,12 +494,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Clear, explanatory |
 | Target seconds | 35 |
-| Word count / est. seconds | 77 words / ≈ 33.0 s at 140 wpm |
+| Word count / est. seconds | 77 spoken words / ≈ 33 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.
+> NOOR: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time.
 
 New lexicon terms: None; do not speak the initials unless the pronunciation guide is applied.
 
@@ -464,6 +522,8 @@ New lexicon terms: None; do not speak the initials unless the pronunciation guid
   "title": "How quality is measured",
   "section": "B · The quality standard",
   "node_id": "qsr-sB",
+  "objective_ids": [],
+  "points": 0,
   "image_asset_id": "<qsr-img-spo>",
   "image_alt": "Diagram linking structure, processes and outcomes, with a separate improvement-cycle callout.",
   "prompt_html": "<p>Collect valid, reliable data that reflects actual performance.</p><p>FOCUS-PDCA improvement cycle: exact step names ⚠ PENDING B11.</p>",
@@ -472,20 +532,20 @@ New lexicon terms: None; do not speak the initials unless the pronunciation guid
     {
       "id": "structure",
       "text": "Structure — resources and setting",
-      "x": 170,
-      "y": 470
+      "x": 300,
+      "y": 540
     },
     {
       "id": "process",
       "text": "Process — how work is performed",
-      "x": 500,
-      "y": 470
+      "x": 800,
+      "y": 540
     },
     {
       "id": "outcome",
       "text": "Outcome — results for patients",
-      "x": 830,
-      "y": 470
+      "x": 1300,
+      "y": 540
     }
   ],
   "reveal": "auto",
@@ -495,7 +555,7 @@ New lexicon terms: None; do not speak the initials unless the pronunciation guid
     "incorrect_html": "<p>Review each labelled stage and the relationship shown by the arrows.</p>",
     "show_correct_answer": true
   },
-  "narration_text": "Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time."
+  "narration_text": "Noor: Start with structure: the resources and setting available to provide care. Processes describe what the team does and how consistently it is done. Outcomes describe the results for patients. The three layers connect, but they answer different questions. Reliable, valid data helps a team understand actual performance rather than rely on impressions. The improvement cycle shown here connects measurement to action; confirm its approved step names before production. The arrow shows how measurement supports improvement over time."
 }
 ```
 
@@ -541,7 +601,7 @@ New lexicon terms: None; do not speak the initials unless the pronunciation guid
 | Watermark | None (questions have no watermark). |
 | Icons | Three small own-family line icons for resource, action and result; navy outline, Caring-purple focus state. |
 | Animation / reveal | None; all items are available immediately. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -560,12 +620,13 @@ New lexicon terms: None; do not speak the initials unless the pronunciation guid
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / est. seconds | 18 spoken words / ≈ 7.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.
+> NOOR: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking.
 
 New lexicon terms: `HbA1c` → “H-B-A-one-C” (master lexicon); it appears in a measure label, not narration.
 
@@ -653,7 +714,7 @@ New lexicon terms: `HbA1c` → “H-B-A-one-C” (master lexicon); it appears in
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-011>",
-  "narration_text": "Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking."
+  "narration_text": "Noor: Classify each measure as resources, actions or patient results. Apply the definitions from the previous screen before checking."
 }
 ```
 
@@ -699,7 +760,7 @@ New lexicon terms: `HbA1c` → “H-B-A-one-C” (master lexicon); it appears in
 | Watermark | None (questions have no watermark). |
 | Icons | No separate imagery; the return arrow is a simple own line element in navy. |
 | Animation / reveal | None; position communicates sequence. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -717,12 +778,13 @@ New lexicon terms: `HbA1c` → “H-B-A-one-C” (master lexicon); it appears in
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 21 words / ≈ 9.0 s at 140 wpm |
+| Word count / est. seconds | 19 spoken words / ≈ 8.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Arrange the nine named steps in order and show how the last begins the next cycle. Do not skip a step.
+> NOOR: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step.
 
 New lexicon terms: `FOCUS-PDCA` → “focus, P-D-C-A” (master lexicon).
 
@@ -797,7 +859,7 @@ New lexicon terms: `FOCUS-PDCA` → “focus, P-D-C-A” (master lexicon).
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-012>",
-  "narration_text": "Arrange the nine named steps in order and show how the last begins the next cycle. Do not skip a step."
+  "narration_text": "Noor: Arrange the nine steps in order and show how the last begins the next cycle. Don't skip a step."
 }
 ```
 
@@ -843,7 +905,7 @@ New lexicon terms: `FOCUS-PDCA` → “focus, P-D-C-A” (master lexicon).
 | Watermark | None (never behind body content). |
 | Icons | Six own-SVG line icons in one family: identity card, speech bubble, medication vial, procedure checklist, clean hands, and fall-prevention symbol; navy outlines and Caring-purple highlights. |
 | Animation / reveal | Unvisited panels receive a gentle outline; visited panels use a check icon and text label. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery**
 
@@ -865,12 +927,13 @@ New lexicon terms: `FOCUS-PDCA` → “focus, P-D-C-A” (master lexicon).
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Clear, practical |
 | Target seconds | 30 |
-| Word count / est. seconds | 75 words / ≈ 32.1 s at 140 wpm |
+| Word count / est. seconds | 75 spoken words / ≈ 32.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.
+> NOOR: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action.
 
 New lexicon terms: None; say “International Patient Safety Goals” in full if needed.
 
@@ -892,6 +955,7 @@ New lexicon terms: None; say “International Patient Safety Goals” in full if
   "title": "Six patient-safety goals",
   "section": "C · Patient safety goals",
   "node_id": "qsr-sC",
+  "objective_ids": [],
   "image_asset_id": "<qsr-img-pillars>",
   "image_alt": "Six icon panels represent the six patient-safety goals; panel names and practices are also available as text.",
   "prompt_html": "<p>Open all six goals. Draft practice wording requires policy confirmation ⚠ PENDING B3.</p>",
@@ -979,7 +1043,7 @@ New lexicon terms: None; say “International Patient Safety Goals” in full if
     "incorrect_html": "<p>Open the remaining goal panels to complete the exploration.</p>",
     "show_correct_answer": true
   },
-  "narration_text": "Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action."
+  "narration_text": "Noor: Patient safety is supported by six linked goals, not one reminder. Each goal names an area where teams can reduce avoidable risk. Open every pillar and read the practice paired with it. The exact wording, numbering and several details still need policy confirmation, so these descriptions are marked for review before release. Use the approved facility language once it is confirmed. The exercise is meant to help you connect a goal with a daily action."
 }
 ```
 
@@ -1018,52 +1082,36 @@ New lexicon terms: None; say “International Patient Safety Goals” in full if
 |---|---|
 | Brand layout | L5 Scenario (see `../../00_program/brand/screen-mockups/05-scenario.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), 2 px navy `#003867` rule |
-| Visual concept | A fictional wristband illustration sits left of a three-node decision; two cards show the same name and different fictional record numbers, and the mentor appears at the final decision. |
+| Visual concept | Noor's 56 px scenario avatar (purple ring, “Noor · Safety liaison”) sits above the situation; a text-free wristband illustration sits left of the three-node decision and two cards show the same name with different fictional record numbers; the avatar changes from concern on the intro to happy or concern after each choice. |
 | edumints layout | n/a (`decision_scenario`). |
 | Colours (palette names + hex) | bg white `#FFFFFF` · header navy `#003867` · cards white `#FFFFFF` with line `#D9E1E8` · highlight Caring purple `#652D8C` · feedback success `#1E7B4F` / error `#B42318` with icons + words. |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices/feedback Montserrat Regular or Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None (scenario screens have no watermark). |
 | Icons | No extra icons beyond the shared line family; the wristband itself is a text-free illustration. |
 | Animation / reveal | Situation card fades between nodes; choices remain still and keyboard focus is visible. |
-| Character | `mentor-noor`, concern pose on the final node only; fictional character, no real staff likeness. |
+| Companion | Noor · pose `char-noor-avatar-concern` on the intro → `char-noor-avatar-happy` after a best choice / `-avatar-concern` after an unsafe one · placement L5 scenario avatar, 56 px with a 3 px purple `#652D8C` ring and “Noor · Safety liaison” above the situation · tip text n/a |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `qsr-img-wristbands` | illustration | Two plain, unprinted patient wristbands side by side; no names or numbers inside image (fictional identifiers remain HTML text). | ai-generated | Two blank patient wristbands side by side; the fictional name and record numbers are provided as accessible HTML text. | No |
-| `qsr-char-noor` | character | Approved fictional mentor master, neutral pose; create and approve this master before any pose variant. | ai-generated | Approved fictional character Noor, a senior safety mentor, in a neutral pose. | No |
-| `qsr-char-noor-concern` | character | Concern pose derived only from the approved qsr-char-noor master; used at the final scenario node. | ai-generated | Noor looks concerned and asks the colleague to verify both records. | No |
+| `char-noor-avatar-concern` | character | Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation. | programme asset to make: crop from `char-noor-concern` (MAHX-hFE0aQ) (companions.md §3); no module prompt | Noor, the safety liaison, looking concerned. | No |
+| `char-noor-avatar-happy` | character | Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation. | programme asset to make: crop from `char-noor-success` (MAHX-jiR90M) (companions.md §3); no module prompt | Noor, the safety liaison, smiling. | No |
 
 
-**AI image prompt** (filled from `brand-identity.md` §6; use one standalone image per asset; no logo/text):
+**AI image prompt** (filled from `brand-identity.md` §6; `qsr-img-wristbands` only; no logo/text):
 
 Asset `qsr-img-wristbands`:
 
 ```text
-Flat vector illustration for a healthcare e-learning course, 16:9, two clean patient wristbands placed side by side on a pale clinical surface; both bands have blank, unprinted ID panels with no markings. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic context suggested only by the clean, bright surface, lots of white space, soft even lighting, no shadows or very soft flat shadows.
+Flat vector illustration for a healthcare e-learning course, 16:9, two clean patient wristbands placed side by side on a pale clinical surface; both bands have blank, unprinted ID panels with no markings. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), no magenta. Modern Saudi outpatient clinic context suggested only by the clean, bright surface, lots of white space, soft even lighting, no shadows or very soft flat shadows.
 People: no people. Modest, culturally appropriate clothing for Saudi Arabia.
 No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
 Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra medical devices, labels, printed marks, logos, text, dark or dramatic lighting, blood, injury, distorted hands, Western hospital stereotypes.
 ```
 
-Asset `qsr-char-noor master`:
-
-```text
-Flat vector illustration for a healthcare e-learning course, 16:9, one circular head-and-shoulders portrait of a fictional staff safety mentor in a neutral, warm pose, simple clean white background. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic feel, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, a fictional senior nurse and safety liaison, Saudi woman in her 30s, navy scrubs, plain navy hijab, purple lanyard, plain ID badge with no logo and no text. Modest, culturally appropriate clothing for Saudi Arabia.
-No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
-Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra people, text, logos, altered face, distorted hands, dramatic lighting, blood or injury, Western hospital stereotypes.
-```
-
-Asset `qsr-char-noor-concern`:
-
-```text
-Flat vector illustration for a healthcare e-learning course, 16:9, one circular head-and-shoulders portrait derived from the approved fictional Noor master, with a calm concerned expression and white background. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the approved fictional safety mentor; preserve the same face, clothing and proportions as the master: Saudi woman in her 30s, navy scrubs, plain navy hijab, purple lanyard, plain ID badge with no logo and no text; concern pose. Modest, culturally appropriate clothing for Saudi Arabia.
-No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
-Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra people, text, logos, altered face, distorted hands, dramatic lighting, blood or injury, Western hospital stereotypes.
-```
+Companion art: shared programme poses only (`char-noor-*`, companions.md §3). No module-specific character prompt; never re-prompt Noor.
 
 #### 4. Interaction and scoring
 
@@ -1080,12 +1128,15 @@ Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extr
 
 | Field | Value |
 |---|---|
-| Tone | Serious, reassuring |
+| Speaker(s) | NOOR |
+| Tone | Serious, warm |
 | Target seconds | 15 |
-| Word count / est. seconds | 35 words / ≈ 15.0 s at 140 wpm |
+| Word count / est. seconds | 34 spoken words / ≈ 14.6 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Two fictional records share the same full name. Before any care continues, decide which approved identifiers you must check, and what you would do if both records still match. Follow the facility rule, not assumption.
+> NOOR: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match.
+
+Companion note: Noor's honest story (companions.md §1) is used once, here; it sets up the scene and does not name the identifiers the learner must choose.
 
 New lexicon terms: `MRN` → “medical record number”; say the term in full in narration.
 
@@ -1178,8 +1229,8 @@ New lexicon terms: `MRN` → “medical record number”; say the term in full i
     },
     {
       "id": "n3",
-      "image_asset_id": "<qsr-char-noor-concern>",
-      "image_alt": "Noor, the fictional safety mentor, calmly asks the colleague to verify both records.",
+      "image_asset_id": "<qsr-img-wristbands>",
+      "image_alt": "Two blank wristbands; the fictional name and record numbers are shown as accessible HTML text.",
       "prompt_html": "<p>A colleague says, “It’s the older one.” What do you do?</p>",
       "choices": [
         {
@@ -1213,14 +1264,15 @@ New lexicon terms: `MRN` → “medical record number”; say the term in full i
     "incorrect_html": "<p>Revisit the approved identifier policy and the reasons each shortcut is unsafe.</p>",
     "show_correct_answer": true
   },
-  "narration_text": "Two fictional records share the same full name. Before any care continues, decide which approved identifiers you must check, and what you would do if both records still match. Follow the facility rule, not assumption."
+  "notes": "Companion: Noor L5 scenario avatar above the situation — char-noor-avatar-concern on intro, char-noor-avatar-happy / char-noor-avatar-concern after each choice. Speaker: Noor (honest story, companions.md §1).",
+  "narration_text": "Noor: I once nearly drew blood from the wrong Mr Al-Harbi. The wristband stopped me. Now two fictional patients share one full name. Decide what you check, and what you do if both names match."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: B4: Nursing Director to confirm the two identifiers and third-identifier rule when names match. Confirm the source examples after B1. Fictional values must remain explicitly labelled as training data.
-- Developer notes: Create and approve the neutral `qsr-char-noor` master first, then derive the concern pose. The Screen model allows one image per node: use the wristband illustration on nodes 1–2 and the approved mentor concern pose on node 3; render all name/MRN values in accessible HTML.
+- Developer notes: Use `qsr-img-wristbands` on all three nodes (the Screen model allows one image per node) and render every name/MRN value as accessible HTML. Noor's avatar is L5 template chrome above the situation, not a node image: `char-noor-avatar-concern` on the intro, `-avatar-happy` after a best choice, `-avatar-concern` after an unsafe one. Her honest story is used only on this screen in the programme (companions.md §1). Companion art is the shared programme set — no module-specific character prompt.
 
 
 ### `qsr-022` — Practice meets goal
@@ -1259,7 +1311,7 @@ New lexicon terms: `MRN` → “medical record number”; say the term in full i
 | Watermark | None (questions have no watermark). |
 | Icons | None; keep every pair as text so the learner matches meaning rather than icon colour. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -1277,12 +1329,13 @@ New lexicon terms: `MRN` → “medical record number”; say the term in full i
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / est. seconds | 18 spoken words / ≈ 7.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.
+> NOOR: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording.
 
 New lexicon terms: None.
 
@@ -1351,7 +1404,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-022>",
-  "narration_text": "Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording."
+  "narration_text": "Noor: Match each workplace practice with its patient-safety goal. Use each goal once, then check against the approved wording."
 }
 ```
 
@@ -1397,7 +1450,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | One small own line icon for clean hands; navy outline with Caring-purple focus state. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -1415,12 +1468,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / est. seconds | 18 spoken words / ≈ 7.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.
+> NOOR: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one.
 
 New lexicon terms: None.
 
@@ -1479,7 +1533,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-023>",
-  "narration_text": "Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one."
+  "narration_text": "Noor: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one."
 }
 ```
 
@@ -1525,7 +1579,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | No separate image; numbered track and arrows are built from HTML/CSS. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -1543,12 +1597,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Practical |
 | Target seconds | 8 |
-| Word count / est. seconds | 21 words / ≈ 9.0 s at 140 wpm |
+| Word count / est. seconds | 20 spoken words / ≈ 8.6 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. This is a sequence, not a score.
+> NOOR: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score.
 
 New lexicon terms: None.
 
@@ -1607,7 +1662,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-030>",
-  "narration_text": "Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. This is a sequence, not a score."
+  "narration_text": "Noor: Arrange the risk-management lifecycle from the first step through reporting, using the agreed labels. It's a sequence, not a score."
 }
 ```
 
@@ -1646,20 +1701,21 @@ New lexicon terms: None.
 |---|---|
 | Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), 2 px navy `#003867` rule |
-| Visual concept | A white calculation ledger shows impact, likelihood and product; a 5×5 matrix placeholder sits beside the final score, with band text left blank until B6 closes. |
+| Visual concept | A white calculation ledger on the left reveals impact, likelihood and product step by step, with the draft 5×5 matrix (score in every cell, band names pending B6) at step 4; Dr. Omar (`char-omar-thinking`, hand at chin) stands half-body in the right column while he talks the example through. |
 | edumints layout | n/a (`worked_example`). |
 | Colours (palette names + hex) | bg white `#FFFFFF` · headings navy `#003867` · body ink `#1F2A37` · highlight Caring purple `#652D8C` for the score line · risk-band colours/labels ⚠ PENDING B6; no unconfirmed bands shown. |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
 | Watermark | None (never behind body content). |
 | Icons | Own 5×5 matrix SVG (labels and any colours only after B6); no AI-generated diagrams. |
 | Animation / reveal | Reveal each worked step in order; the band remains a placeholder until policy confirmation. |
-| Character | None. |
+| Companion | Dr. Omar · pose `char-omar-thinking` · placement L3 right column, half-body 320–380 px tall; the worked steps stay in the left column · tip text n/a |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `qsr-img-matrix` | svg | Own 5×5 impact × likelihood matrix; include score and approved band labels in every cell only after B6; presently a production placeholder. | own | Risk matrix showing impact multiplied by likelihood on a 1-to-5 scale; exact band labels and colours are pending B6. | No |
+| `qsr-img-matrix` | svg | Own 1600×900 SVG draft ([`assets/qsr-img-matrix.svg`](assets/qsr-img-matrix.svg)): 5×5 impact × likelihood grid with the score in every cell and a band-name slot in every cell reading “band ⚠ B6”; cells stay neutral (no band colours) until the Risk Manager supplies names, thresholds and colours; the 4 × 3 = 12 cell is outlined. | own | Risk matrix showing impact multiplied by likelihood on a 1-to-5 scale; exact band labels and colours are pending B6. | No |
+| `char-omar-thinking` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-omar-thinking.jpg`); half-body 320–380 px tall, right column. | ai-generated programme asset, Canva media `MAHX-jgu1Vk`, made from the approved master (companions.md §3); no module prompt | Dr. Omar, the family physician, with his hand at his chin, thinking through the risk score. | No |
 
 #### 4. Interaction and scoring
 
@@ -1675,12 +1731,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
-| Tone | Calm, explanatory |
+| Speaker(s) | OMAR |
+| Tone | Calm, explanatory, conversational |
 | Target seconds | 40 |
-| Word count / est. seconds | 103 words / ≈ 44.1 s at 140 wpm |
+| Word count / est. seconds | 102 spoken words / ≈ 43.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Consider a hypothetical stock-control risk, not a report of a real clinic event. Items past their expiry date are found twice in a fictional clinic refrigerator. We estimate impact as four because the example could affect a product’s effectiveness, and likelihood as three for this practice case. Multiply the two values to reach twelve. The matrix band for twelve cannot be supplied until the corporate matrix is confirmed. Then choose a response that lowers the risk and explain the control. A second check and a stock-control routine are teaching examples, not approved local procedures; Quality and Risk must confirm the action and terminology.
+> OMAR: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them.
 
 New lexicon terms: None.
 
@@ -1702,6 +1759,8 @@ New lexicon terms: None.
   "title": "Score a risk",
   "section": "D · Risk management",
   "node_id": "qsr-sD",
+  "objective_ids": [],
+  "points": 0,
   "intro_html": "<p><strong>Hypothetical case only—not a My Clinic event.</strong> Expired stock is found twice in a fictional clinic refrigerator. Risk lifecycle: identify → assess → manage → monitor → report.</p>",
   "steps": [
     {
@@ -1731,7 +1790,8 @@ New lexicon terms: None.
   "self_explanation_prompt_html": "<p>What control could reduce impact or likelihood in this hypothetical case? This is an unscored reflection.</p>",
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-031>",
-  "narration_text": "Consider a hypothetical stock-control risk, not a report of a real clinic event. Items past their expiry date are found twice in a fictional clinic refrigerator. We estimate impact as four because the example could affect a product’s effectiveness, and likelihood as three for this practice case. Multiply the two values to reach twelve. The matrix band for twelve cannot be supplied until the corporate matrix is confirmed. Then choose a response that lowers the risk and explain the control. A second check and a stock-control routine are teaching examples, not approved local procedures; Quality and Risk must confirm the action and terminology."
+  "notes": "Companion: Dr. Omar, char-omar-thinking, L3 right column half-body (alt: Dr. Omar, the family physician, with his hand at his chin, thinking through the risk score.). Speaker: Omar.",
+  "narration_text": "Omar: Let's score one together. It's a made-up case: expired items turn up twice this month in a clinic fridge. Impact first. A patient could get a vaccine that doesn't work, so we call impact four. It has already happened twice, so likelihood is three. Four times three gives twelve. Honestly, the number alone doesn't tell you what to do. The band for twelve comes from our corporate matrix, which Risk is still confirming. Then choose a response that lowers the risk, such as a weekly checklist with a second check. Treat those controls as teaching examples until Quality and Risk approve them."
 }
 ```
 
@@ -1777,7 +1837,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | No imagery; the multiplication sign and blank labels are text. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -1796,12 +1856,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / est. seconds | 18 spoken words / ≈ 7.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.
+> NOOR: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band.
 
 New lexicon terms: None.
 
@@ -1852,7 +1913,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-032>",
-  "narration_text": "Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band."
+  "narration_text": "Noor: Calculate the score from the impact and likelihood values, then use the confirmed matrix to supply its band."
 }
 ```
 
@@ -1898,7 +1959,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | None; plain text keeps distinctions available to screen readers. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -1916,12 +1977,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s at 140 wpm |
+| Word count / est. seconds | 19 spoken words / ≈ 8.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.
+> NOOR: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning.
 
 New lexicon terms: None.
 
@@ -1980,7 +2042,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-033>",
-  "narration_text": "Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning."
+  "narration_text": "Noor: Match each risk response with the action it describes. Use the policy-approved terms once confirmed, then check your reasoning."
 }
 ```
 
@@ -2010,7 +2072,7 @@ New lexicon terms: None.
 |---|---|
 | Title | The safety iceberg |
 | Body / keywords | Critical / sentinel event · Adverse event · Near miss — terms ⚠ PENDING B8 |
-| Word count (excl. title) | 10 |
+| Word count (excl. title) | 10 (+ 19-word tip card) |
 | Instruction | n/a (display diagram). |
 
 #### 3. Visual design
@@ -2019,20 +2081,21 @@ New lexicon terms: None.
 |---|---|
 | Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), 2 px navy `#003867` rule |
-| Visual concept | A simple iceberg has one labelled tip, one waterline layer and one larger submerged area; every category is attached to both a label and a location. |
+| Visual concept | A simple iceberg fills the right two-thirds with one labelled tip, one waterline layer and one larger submerged area, each category attached to both a label and a location; Omar's tip card (56 px avatar, teal ring, 4 px teal left edge, label “Omar's tip”) sits bottom-left, clear of the diagram labels. |
 | edumints layout | n/a (`labeled_diagram`, `mode: "display"`). |
 | Colours (palette names + hex) | bg white `#FFFFFF` · headings navy `#003867` · body ink `#1F2A37` · Caring purple `#652D8C` for connector lines · all category names are text; category thresholds remain ⚠ PENDING B8. |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
 | Watermark | None (never behind body content). |
 | Icons | Own SVG iceberg silhouette with line callouts; no emoji or colour-only bands. |
 | Animation / reveal | Labels reveal from top to bottom; respect reduced-motion preferences. |
-| Character | None. |
+| Companion | Dr. Omar · pose `char-omar-avatar-neutral` + tip card · placement L3 tip card bottom-left: 56 px avatar with a 3 px teal `#008C99` ring, white card max 360 px wide with a 4 px teal left edge, label “Omar's tip” · tip text (19 words, differs from the narration): “Caught it before it reached the patient? Report it anyway. It costs nothing and protects the next person.” |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `qsr-img-iceberg` | svg | Own iceberg diagram with three layers and separate real-text callouts; labels/definitions require B8 approval. | own | Iceberg with three labelled positions for critical or sentinel events, adverse events and near misses; exact terms are pending B8. | No |
+| `qsr-img-iceberg` | svg | Own 1600×900 SVG draft ([`assets/qsr-img-iceberg.svg`](assets/qsr-img-iceberg.svg)): iceberg with tip, below-waterline and deep layers, separate real-text callouts; terms pending B8; callout anchors match the build labels. | own | Iceberg with three labelled positions for critical or sentinel events, adverse events and near misses; exact terms are pending B8. | No |
+| `char-omar-avatar-neutral` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-omar-avatar-neutral.jpg`); 56 px circular avatar on the tip card, teal ring, bottom-left. | ai-generated programme asset, Canva media `MAHX-nPHDkA`, made from the approved master (companions.md §3); no module prompt | Dr. Omar, the family physician. | No |
 
 #### 4. Interaction and scoring
 
@@ -2047,12 +2110,15 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | OMAR |
 | Tone | Serious, reassuring |
 | Target seconds | 35 |
-| Word count / est. seconds | 73 words / ≈ 31.3 s at 140 wpm |
+| Word count / est. seconds | 69 spoken words / ≈ 29.6 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Think of an iceberg as a way to show that reported harm is only part of a wider picture. At the surface are the most serious events; below are events that reach someone and cause harm; deeper down are events caught before harm occurs. The exact facility terms, thresholds and examples are still pending review. Near misses can reveal a weak process before someone is hurt. Report through the approved route once confirmed.
+> OMAR: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk.
+
+Companion note: Tip-card text summarises; the spoken line explains (companions.md §4).
 
 New lexicon terms: None.
 
@@ -2074,6 +2140,8 @@ New lexicon terms: None.
   "title": "The safety iceberg",
   "section": "E · Incidents",
   "node_id": "qsr-sE",
+  "objective_ids": [],
+  "points": 0,
   "image_asset_id": "<qsr-img-iceberg>",
   "image_alt": "Iceberg with three labelled positions for critical or sentinel events, adverse events and near misses; exact terms are pending B8.",
   "prompt_html": "<p>Event names and definitions are draft pending incident-policy confirmation. ⚠ PENDING B8</p>",
@@ -2082,20 +2150,20 @@ New lexicon terms: None.
     {
       "id": "critical",
       "text": "Critical incident / sentinel event ⚠ PENDING B8",
-      "x": 500,
-      "y": 130
+      "x": 560,
+      "y": 215
     },
     {
       "id": "adverse",
       "text": "Adverse event — harm reached a person ⚠ PENDING B8",
-      "x": 500,
-      "y": 510
+      "x": 560,
+      "y": 430
     },
     {
       "id": "near-miss",
       "text": "Near miss — caught before harm ⚠ PENDING B8",
-      "x": 500,
-      "y": 860
+      "x": 560,
+      "y": 720
     }
   ],
   "reveal": "auto",
@@ -2105,7 +2173,8 @@ New lexicon terms: None.
     "incorrect_html": "<p>Review the three labelled layers and confirm their definitions with the policy owner.</p>",
     "show_correct_answer": true
   },
-  "narration_text": "Think of an iceberg as a way to show that reported harm is only part of a wider picture. At the surface are the most serious events; below are events that reach someone and cause harm; deeper down are events caught before harm occurs. The exact facility terms, thresholds and examples are still pending review. Near misses can reveal a weak process before someone is hurt. Report through the approved route once confirmed."
+  "notes": "Companion: Dr. Omar tip card bottom-left — char-omar-avatar-neutral, label \"Omar's tip\": Caught it before it reached the patient? Report it anyway. It costs nothing and protects the next person. Speaker: Omar.",
+  "narration_text": "Omar: Picture an iceberg. At the tip are the most serious events, the ones everyone hears about. Just below the waterline are events that reach a patient and cause harm. The biggest part sits deep down: near misses, caught before any harm. Here's what helped me. I treat every near miss as a free lesson about a weak process. The exact terms and examples are still being confirmed by Risk."
 }
 ```
 
@@ -2151,7 +2220,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | None; category targets use headings and text rather than coloured bands. |
 | Animation / reveal | None. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -2169,12 +2238,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Serious, neutral |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 8.6 s at 140 wpm |
+| Word count / est. seconds | 20 spoken words / ≈ 8.6 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.
+> NOOR: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation.
 
 New lexicon terms: None.
 
@@ -2257,7 +2327,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-041>",
-  "narration_text": "Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation."
+  "narration_text": "Noor: Classify each fictional event by what happened and whether harm reached the person. The labels remain subject to policy confirmation."
 }
 ```
 
@@ -2303,7 +2373,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | Feedback uses a check or caution icon from the shared line family, with words. |
 | Animation / reveal | Feedback banner appears after submission; no motion is required. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -2321,12 +2391,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Reassuring, careful |
 | Target seconds | 8 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s at 140 wpm |
+| Word count / est. seconds | 19 spoken words / ≈ 8.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.
+> NOOR: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation.
 
 New lexicon terms: None.
 
@@ -2364,7 +2435,7 @@ New lexicon terms: None.
   },
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-042>",
-  "narration_text": "Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation."
+  "narration_text": "Noor: Consider the statement carefully. Decide whether it reflects the open, non-punitive culture described in the source, pending policy confirmation."
 }
 ```
 
@@ -2410,7 +2481,7 @@ New lexicon terms: None.
 | Watermark | None (never behind body content). |
 | Icons | Three own line icons in navy: clinical care, facility/equipment, reporting workflow; icons supplement, not replace, the text. |
 | Animation / reveal | Cards reveal in reading order; pending time/channel callouts remain visible. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -2422,12 +2493,13 @@ n/a — unscored content screen. The reporting rule and channel are pending poli
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Clear, practical |
 | Target seconds | 35 |
-| Word count / est. seconds | 75 words / ≈ 32.1 s at 140 wpm |
+| Word count / est. seconds | 75 spoken words / ≈ 32.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.
+> NOOR: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions.
 
 New lexicon terms: None.
 
@@ -2449,6 +2521,8 @@ New lexicon terms: None.
   "title": "Report an event",
   "section": "F · Reporting",
   "node_id": "qsr-sF",
+  "objective_ids": [],
+  "points": 0,
   "body_html": "",
   "layout": "text",
   "blocks": [
@@ -2465,7 +2539,7 @@ New lexicon terms: None.
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-050>",
-  "narration_text": "Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions."
+  "narration_text": "Noor: Reportable events include clinical concerns and problems affecting facilities, equipment, laboratories, fire safety or security. The source describes a digital report through the intranet or by email, followed by review, grading and escalation. The exact reporting channel and time limit require confirmation. The current draft shows a 24-hour window. Do not rely on it until the policy owner confirms it and aligns the wording with Module 03. Add factual details and immediate actions, not assumptions."
 }
 ```
 
@@ -2504,52 +2578,25 @@ New lexicon terms: None.
 |---|---|
 | Brand layout | L5 Scenario (see `../../00_program/brand/screen-mockups/05-scenario.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), 2 px navy `#003867` rule |
-| Visual concept | A 19:00 end-of-shift scene card sits beside Noor’s concern-to-success portrait sequence; each decision stays on the right in large buttons. |
+| Visual concept | A 19:00 end-of-shift situation card sits on the left with Noor's 56 px scenario avatar (purple ring, “Noor · Safety liaison”) above it; her avatar starts neutral and changes to happy or concern after each choice; each decision stays on the right in large buttons. |
 | edumints layout | n/a (`decision_scenario`). |
 | Colours (palette names + hex) | bg white `#FFFFFF` · headings navy `#003867` · body ink `#1F2A37` · highlight Caring purple `#652D8C` · feedback success `#1E7B4F` / error `#B42318` with icon + explanatory words. |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices/feedback Montserrat Regular or Medium 400/500, 16 px; footer 10–12 px. |
 | Watermark | None (scenario screens have no watermark). |
 | Icons | No extra icons; a clock label “19:00” is HTML text and not encoded in an image. |
 | Animation / reveal | Node text fades between choices; provide a reduced-motion setting. |
-| Character | `mentor-noor` appears as a small avatar: concern at start, explaining for timing, success on the debrief; poses derive from one approved fictional master. |
+| Companion | Noor · pose `char-noor-avatar-neutral` on the intro → `char-noor-avatar-happy` after a best choice / `-avatar-concern` after an unsafe one · placement L5 scenario avatar, 56 px with a 3 px purple `#652D8C` ring and “Noor · Safety liaison” above the situation · tip text n/a |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `qsr-char-noor-concern` | character | Pose derived from the approved mentor master; concern at the start of the scenario. | ai-generated | Noor looks concerned while considering the near miss. | No |
-| `qsr-char-noor-explaining` | character | Pose derived from the approved mentor master; explaining the timing choice. | ai-generated | Noor explains the reporting timing. | No |
-| `qsr-char-noor-success` | character | Pose derived from the approved mentor master; supportive success pose at completion. | ai-generated | Noor gives a calm, supportive acknowledgement. | No |
+| `char-noor-avatar-neutral` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-noor-avatar-neutral.jpg`); 56 px circular scenario avatar, purple ring, above the situation. | ai-generated programme asset, Canva media `MAHX-n4HuyU`, made from the approved master (companions.md §3); no module prompt | Noor, the safety liaison. | No |
+| `char-noor-avatar-happy` | character | Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation. | programme asset to make: crop from `char-noor-success` (MAHX-jiR90M) (companions.md §3); no module prompt | Noor, the safety liaison, smiling. | No |
+| `char-noor-avatar-concern` | character | Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation. | programme asset to make: crop from `char-noor-concern` (MAHX-hFE0aQ) (companions.md §3); no module prompt | Noor, the safety liaison, looking concerned. | No |
 
 
-**AI image prompt** (filled from `brand-identity.md` §6; use one standalone image per asset; no logo/text):
-
-Asset `qsr-char-noor-concern`:
-
-```text
-Flat vector illustration for a healthcare e-learning course, 16:9, one circular head-and-shoulders portrait derived from the approved fictional Noor master on a clean white background. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic feel, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the approved fictional safety mentor; preserve the same face, clothing and proportions as the master: Saudi woman in her 30s, navy scrubs, plain navy hijab, purple lanyard, plain ID badge with no logo and no text; concern pose. Modest, culturally appropriate clothing for Saudi Arabia.
-No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
-Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra people, text, logos, altered face, distorted hands, dramatic lighting, blood or injury, Western hospital stereotypes.
-```
-
-Asset `qsr-char-noor-explaining`:
-
-```text
-Flat vector illustration for a healthcare e-learning course, 16:9, one circular head-and-shoulders portrait derived from the approved fictional Noor master on a clean white background. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic feel, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the approved fictional safety mentor; preserve the same face, clothing and proportions as the master: Saudi woman in her 30s, navy scrubs, plain navy hijab, purple lanyard, plain ID badge with no logo and no text; explaining pose. Modest, culturally appropriate clothing for Saudi Arabia.
-No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
-Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra people, text, logos, altered face, distorted hands, dramatic lighting, blood or injury, Western hospital stereotypes.
-```
-
-Asset `qsr-char-noor-success`:
-
-```text
-Flat vector illustration for a healthcare e-learning course, 16:9, one circular head-and-shoulders portrait derived from the approved fictional Noor master on a clean white background. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic feel, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-People: Noor, the approved fictional safety mentor; preserve the same face, clothing and proportions as the master: Saudi woman in her 30s, navy scrubs, plain navy hijab, purple lanyard, plain ID badge with no logo and no text; supportive success pose. Modest, culturally appropriate clothing for Saudi Arabia.
-No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
-Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extra people, text, logos, altered face, distorted hands, dramatic lighting, blood or injury, Western hospital stereotypes.
-```
+No AI image prompt: this card uses only the shared programme companion avatars (`char-noor-*`, companions.md §3).
 
 #### 4. Interaction and scoring
 
@@ -2566,12 +2613,13 @@ Negative prompt: photorealism, 3D render, gradients, neon colours, clutter, extr
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Serious, supportive |
 | Target seconds | 15 |
-| Word count / est. seconds | 38 words / ≈ 16.3 s at 140 wpm |
+| Word count / est. seconds | 38 spoken words / ≈ 16.3 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.
+> NOOR: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy.
 
 New lexicon terms: None.
 
@@ -2606,8 +2654,6 @@ New lexicon terms: None.
   "nodes": [
     {
       "id": "n1",
-      "image_asset_id": "<qsr-char-noor-concern>",
-      "image_alt": "Noor looks concerned while considering the near miss.",
       "prompt_html": "<p>No patient was harmed. What should happen next?</p>",
       "choices": [
         {
@@ -2635,8 +2681,6 @@ New lexicon terms: None.
     },
     {
       "id": "n2",
-      "image_asset_id": "<qsr-char-noor-explaining>",
-      "image_alt": "Noor explains the reporting timing.",
       "prompt_html": "<p>When should you submit the report?</p>",
       "choices": [
         {
@@ -2664,8 +2708,6 @@ New lexicon terms: None.
     },
     {
       "id": "n3",
-      "image_asset_id": "<qsr-char-noor-success>",
-      "image_alt": "Noor gives a calm, supportive acknowledgement.",
       "prompt_html": "<p>Which channel and description should you use?</p>",
       "choices": [
         {
@@ -2699,14 +2741,15 @@ New lexicon terms: None.
     "incorrect_html": "<p>Revisit the approved incident-reporting procedure and the current time window.</p>",
     "show_correct_answer": true
   },
-  "narration_text": "A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy."
+  "notes": "Companion: Noor L5 scenario avatar above the situation — char-noor-avatar-neutral on intro, char-noor-avatar-happy / char-noor-avatar-concern after each choice. Speaker: Noor.",
+  "narration_text": "Noor: A fictional near miss happened near the end of a tiring shift. No one was harmed, but the risk was real. Choose what to do next, then decide when and where the report belongs under the confirmed policy."
 }
 ```
 
 #### 8. Notes for SME and developer
 
 - Open questions: B8/B9/D8: confirm near-miss reportability, the 24-hour window, official system/email channel and consistent wording with module 03 before release.
-- Developer notes: All data and event details are fictional. Confirm the player supports distinct node images; if not, use the approved mentor master consistently rather than inventing a composite image.
+- Developer notes: All data and event details are fictional. Noor's avatar is L5 template chrome above the situation: `char-noor-avatar-neutral` on the intro, `-avatar-happy` after a best choice, `-avatar-concern` after an unsafe one; it never covers the choice buttons. The nodes carry no image; the 19:00 time and situation stay as HTML text. Companion art is the shared programme set — no module-specific character prompt.
 
 
 ### `qsr-090` — Your results
@@ -2745,7 +2788,7 @@ New lexicon terms: None.
 | Watermark | None on results; closing summary uses supplied `mark-navy.png` at 6–8% opacity, 440 px, cropped off the right edge. |
 | Icons | A check icon for passed and warning icon for needs review; shared single-weight own line icons, never colour alone. |
 | Animation / reveal | Bars grow from zero only when motion is allowed; reduce-motion shows final values immediately. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -2762,12 +2805,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Neutral, encouraging |
 | Target seconds | 10 |
-| Word count / est. seconds | 25 words / ≈ 10.7 s at 140 wpm |
+| Word count / est. seconds | 25 spoken words / ≈ 10.7 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.
+> NOOR: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt.
 
 New lexicon terms: None.
 
@@ -2789,6 +2833,8 @@ New lexicon terms: None.
   "title": "Your results",
   "section": "G · Close",
   "node_id": "qsr-sG",
+  "objective_ids": [],
+  "points": 0,
   "body_html": "<p>Passing score: 80% (76/95 points). Review the objective advice shown below.</p>",
   "sections": [
     {
@@ -2837,7 +2883,7 @@ New lexicon terms: None.
   "show_total": true,
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-090>",
-  "narration_text": "Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt."
+  "narration_text": "Noor: Review your results by objective and notice where your choices were strongest. A lower result points to the topic to revisit before your next attempt."
 }
 ```
 
@@ -2883,7 +2929,7 @@ New lexicon terms: None.
 | Watermark | None (questions have no watermark). |
 | Icons | None; text-only reflection. |
 | Animation / reveal | Text field appears with no movement. |
-| Character | None. |
+| Companion | None — voice only (Noor narrates; no companion visible). |
 
 **Imagery:** None for this interaction/content card; only the logo specified above is present.
 
@@ -2901,12 +2947,13 @@ New lexicon terms: None.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Warm, practical |
 | Target seconds | 8 |
-| Word count / est. seconds | 19 words / ≈ 8.1 s at 140 wpm |
+| Word count / est. seconds | 19 spoken words / ≈ 8.1 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.
+> NOOR: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it.
 
 New lexicon terms: None.
 
@@ -2928,6 +2975,8 @@ New lexicon terms: None.
   "title": "Make a commitment",
   "section": "G · Close",
   "node_id": "qsr-sG",
+  "objective_ids": [],
+  "points": 0,
   "prompt_html": "<p>What will you say the next time you notice something unsafe?</p>",
   "options": [],
   "multi": false,
@@ -2935,7 +2984,7 @@ New lexicon terms: None.
   "reflection_html": "<p>Do not enter patient or staff identifying information. Response storage/privacy behaviour is pending confirmation. ⚠ PENDING NEW-01 / D9.</p>",
   "reveal": "none",
   "narration_asset_id": "<qsr-aud-091>",
-  "narration_text": "Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it."
+  "narration_text": "Noor: Think of one calm sentence you could use if you noticed something unsafe. You may pass on sharing it."
 }
 ```
 
@@ -2974,20 +3023,22 @@ New lexicon terms: None.
 |---|---|
 | Brand layout | L6 Results / close (see `../../00_program/brand/screen-mockups/06-results.png`) |
 | Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header) |
-| Visual concept | A four-item checklist sits beside two action cards for the approved incident system and IPSG policy; a faint petal watermark sits behind the empty right margin. |
+| Visual concept | A four-item checklist sits beside two action cards for the approved incident system and IPSG policy; Noor (`char-noor-success`, thumbs up) stands half-body at the right with Dr. Omar's 56 px avatar (teal ring) beside his closing line; a faint petal watermark is cropped off the right edge behind Noor. |
 | edumints layout | n/a (`summary`). |
 | Colours (palette names + hex) | bg white `#FFFFFF` · headings navy `#003867` · body ink `#1F2A37` · Caring purple `#652D8C` for checklist ticks and action cards · magenta `#9D3293` only for pending rule callout. |
 | Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; objective labels/body Montserrat Regular or Medium 400/500, 16 px; status chips Montserrat Bold 700, 12–14 px; footer 10–12 px. |
 | Watermark | None on results; closing summary uses supplied `mark-navy.png` at 6–8% opacity, 440 px, cropped off the right edge. |
 | Icons | Shared single-weight tick and link icons, navy/Caring purple, own SVG; each action card also has a text label. |
 | Animation / reveal | Checklist ticks appear in order; action cards fade in last; reduced-motion displays all items at once. |
-| Character | None. |
+| Companion | Noor + Dr. Omar · poses `char-noor-success` + `char-omar-avatar-happy` · placement L6: Noor half-body 300–360 px at the right; Omar's 56 px avatar (3 px teal `#008C99` ring) beside his closing line · tip text n/a · two-voice close (2 turns, ≈ 19 s) |
 
 **Imagery**
 
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `brand-mark-navy` | icon | Supplied five-petal watermark, 6–8% opacity, 440 px, cropped off right edge. | own (official My Clinic brand asset) | Decorative petal watermark. | Yes |
+| `char-noor-success` | character | Shared programme companion pose (preview: `00_program/characters/previews/char-noor-success.jpg`); Noor half-body 300–360 px right; Omar 56 px avatar with teal ring. | ai-generated programme asset, Canva media `MAHX-jiR90M`, made from the approved master (companions.md §3); no module prompt | Noor, the safety liaison, smiling and giving a thumbs up. | No |
+| `char-omar-avatar-happy` | character | Shared programme companion avatar, cropped to a circle; Noor half-body 300–360 px right; Omar 56 px avatar with teal ring. | programme asset to make: crop from `char-omar-success` (MAHX-llCU5M) (companions.md §3); no module prompt | Dr. Omar, the family physician, smiling. | No |
 
 #### 4. Interaction and scoring
 
@@ -2997,12 +3048,17 @@ n/a — unscored summary screen.
 
 | Field | Value |
 |---|---|
-| Tone | Warm, steady |
-| Target seconds | 20 |
-| Word count / est. seconds | 53 words / ≈ 22.7 s at 140 wpm |
+| Speaker(s) | NOOR / OMAR (two-voice close: `noor-1` → `omar-1`, joined with 0.3 s silence; 2 turns ≤ 45 s) |
+| Tone | Warm, steady → Encouraging, firm |
+| Target seconds | 20 (noor-1 13 · omar-1 7) |
+| Word count / est. seconds | 43 spoken words / ≈ 18.4 s at 140 wpm (speaker tag excluded) |
 | Cue targets | None |
 
-> You have practised linking quality measures, patient-safety goals, risk thinking, event classification and incident reporting. Some local details still await policy confirmation. Before using the course at work, check the approved reporting channel and current policy links. If something seems unsafe, follow the confirmed process and share facts so the team can learn.
+> NOOR: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them.
+>
+> OMAR: And remember, you're the final layer of protection. When you see something, say something.
+
+Companion note: “When you see something, say something” is the source-video line Phase 3 keeps as a quote; confirm it in the B1 listen before audio production.
 
 New lexicon terms: None.
 
@@ -3024,12 +3080,15 @@ New lexicon terms: None.
   "title": "Ready to protect patients",
   "section": "G · Close",
   "node_id": "qsr-sG",
+  "objective_ids": [],
+  "points": 0,
   "body_html": "<ul><li>Describe how quality is measured and improved.</li><li>Apply the approved patient-safety goals and verify identity.</li><li>Score a risk, choose an approved response and classify events.</li><li>Follow the confirmed incident-reporting workflow.</li></ul><p><strong>“When you see something, say something.” ⚠ PENDING B1</strong></p><p>Approved IPSG policy link ⚠ PENDING B3 · Approved incident-system link ⚠ PENDING B9.</p>",
   "show_score": true,
   "show_completion": true,
   "reveal": "auto",
   "narration_asset_id": "<qsr-aud-092>",
-  "narration_text": "You have practised linking quality measures, patient-safety goals, risk thinking, event classification and incident reporting. Some local details still await policy confirmation. Before using the course at work, check the approved reporting channel and current policy links. If something seems unsafe, follow the confirmed process and share facts so the team can learn."
+  "notes": "Companions: Noor char-noor-success half-body right + Dr. Omar char-omar-avatar-happy avatar. Two-voice close: noor-1 then omar-1, joined with 0.3 s silence into one file.",
+  "narration_text": "Noor: You've practised measuring quality, checking identity, scoring risk and reporting what you notice. Some local details still await sign-off, so check the approved links before you rely on them. Omar: And remember, you're the final layer of protection. When you see something, say something."
 }
 ```
 
@@ -3045,31 +3104,33 @@ New lexicon terms: None.
 
 ### Screen register
 
-| # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
-|---|---|---|---|---:|---:|---:|---:|---|
-| 1 | `qsr-000` | `title_slide` | N | — | 9 | 32 | 13.7 | Draft |
-| 2 | `qsr-001` | `content_slide` | N | — | 17 | 60 | 25.7 | Draft |
-| 3 | `qsr-002` | `poll` | N | — | 17 | 20 | 8.6 | Draft |
-| 4 | `qsr-010` | `labeled_diagram` | N | — | 12 | 77 | 33.0 | Draft |
-| 5 | `qsr-011` | `drag_drop` | Y | 10 | 6 | 18 | 7.7 | Draft |
-| 6 | `qsr-012` | `sorting` | Y | 5 | 9 | 21 | 9.0 | Draft |
-| 7 | `qsr-020` | `hotspot` | N | — | 12 | 75 | 32.1 | Draft |
-| 8 | `qsr-021` | `decision_scenario` | Y | 15 | 12 | 35 | 15.0 | Draft |
-| 9 | `qsr-022` | `matching` | Y | 10 | 10 | 18 | 7.7 | Draft |
-| 10 | `qsr-023` | `sorting` | Y | 5 | 6 | 18 | 7.7 | Draft |
-| 11 | `qsr-030` | `sorting` | Y | 5 | 5 | 21 | 9.0 | Draft |
-| 12 | `qsr-031` | `worked_example` | N | — | 17 | 103 | 44.1 | Draft |
-| 13 | `qsr-032` | `fill_blank` | Y | 5 | 7 | 18 | 7.7 | Draft |
-| 14 | `qsr-033` | `matching` | Y | 10 | 7 | 19 | 8.1 | Draft |
-| 15 | `qsr-040` | `labeled_diagram` | N | — | 10 | 73 | 31.3 | Draft |
-| 16 | `qsr-041` | `drag_drop` | Y | 10 | 7 | 20 | 8.6 | Draft |
-| 17 | `qsr-042` | `true_false` | Y | 5 | 14 | 19 | 8.1 | Draft |
-| 18 | `qsr-050` | `content_slide` | N | — | 20 | 75 | 32.1 | Draft |
-| 19 | `qsr-051` | `decision_scenario` | Y | 15 | 14 | 38 | 16.3 | Draft |
-| 20 | `qsr-090` | `results_breakdown` | N | — | 8 | 25 | 10.7 | Draft |
-| 21 | `qsr-091` | `poll` | N | — | 11 | 19 | 8.1 | Draft |
-| 22 | `qsr-092` | `summary` | N | — | 18 | 53 | 22.7 | Draft |
-| | **Totals** | | **11 scored** | **95** | **248** | **857** | **367.3 s ≈ 6.1 min** | |
+| # | Screen id | Type | Scored | Pts | Speaker(s) | Companion visible | On-screen words | Narration words | Est. sec | Status |
+|---|---|---|---|---:|---|---|---:|---:|---:|---|
+| 1 | `qsr-000` | `title_slide` | N | — | Noor | Noor | 9 | 30 | 12.9 | Draft |
+| 2 | `qsr-001` | `content_slide` | N | — | Noor | — | 17 | 60 | 25.7 | Draft |
+| 3 | `qsr-002` | `poll` | N | — | Noor | Noor | 17 | 24 | 10.3 | Draft |
+| 4 | `qsr-010` | `labeled_diagram` | N | — | Noor | — | 12 | 77 | 33.0 | Draft |
+| 5 | `qsr-011` | `drag_drop` | Y | 10 | Noor | — | 6 | 18 | 7.7 | Draft |
+| 6 | `qsr-012` | `sorting` | Y | 5 | Noor | — | 9 | 19 | 8.1 | Draft |
+| 7 | `qsr-020` | `hotspot` | N | — | Noor | — | 12 | 75 | 32.1 | Draft |
+| 8 | `qsr-021` | `decision_scenario` | Y | 15 | Noor | Noor | 12 | 34 | 14.6 | Draft |
+| 9 | `qsr-022` | `matching` | Y | 10 | Noor | — | 10 | 18 | 7.7 | Draft |
+| 10 | `qsr-023` | `sorting` | Y | 5 | Noor | — | 6 | 18 | 7.7 | Draft |
+| 11 | `qsr-030` | `sorting` | Y | 5 | Noor | — | 5 | 20 | 8.6 | Draft |
+| 12 | `qsr-031` | `worked_example` | N | — | Omar | Dr. Omar | 17 | 102 | 43.7 | Draft |
+| 13 | `qsr-032` | `fill_blank` | Y | 5 | Noor | — | 7 | 18 | 7.7 | Draft |
+| 14 | `qsr-033` | `matching` | Y | 10 | Noor | — | 7 | 19 | 8.1 | Draft |
+| 15 | `qsr-040` | `labeled_diagram` | N | — | Omar | Dr. Omar | 10 | 69 | 29.6 | Draft |
+| 16 | `qsr-041` | `drag_drop` | Y | 10 | Noor | — | 7 | 20 | 8.6 | Draft |
+| 17 | `qsr-042` | `true_false` | Y | 5 | Noor | — | 14 | 19 | 8.1 | Draft |
+| 18 | `qsr-050` | `content_slide` | N | — | Noor | — | 20 | 75 | 32.1 | Draft |
+| 19 | `qsr-051` | `decision_scenario` | Y | 15 | Noor | Noor | 14 | 38 | 16.3 | Draft |
+| 20 | `qsr-090` | `results_breakdown` | N | — | Noor | — | 8 | 25 | 10.7 | Draft |
+| 21 | `qsr-091` | `poll` | N | — | Noor | — | 11 | 19 | 8.1 | Draft |
+| 22 | `qsr-092` | `summary` | N | — | Noor / Omar | Noor + Dr. Omar | 18 | 43 | 18.4 | Draft |
+| | **Totals** | | **11 scored** | **95** | Noor 20 lines · Omar 3 lines | 7 screens | **248** | **840** | **359.8 s ≈ 6.0 min** | |
+
+Narration words exclude the `NOOR:` / `OMAR:` tag. Phase 3 estimate ~7 minutes; scripted 6.0 minutes (-14 %, within ±15 %). Every segment is under 60 s; the two-voice close is 2 turns / ≈ 18.4 s.
 
 
 ### Asset list (all screens)
@@ -3081,16 +3142,21 @@ New lexicon terms: None.
 | `brand-mark-white` | icon | `qsr-000` | own (official My Clinic brand asset) | Yes | Use supplied asset |
 | `brand-value-tile-caring-purple` | image | `qsr-001` | own (official My Clinic brand asset) | Yes | Use supplied asset |
 | `brand-mark-navy` | icon | `qsr-001`, `qsr-092` | own (official My Clinic brand asset) | Yes | Use supplied asset |
-| `qsr-img-spo` | svg | `qsr-010` | own | Yes | To produce / review |
+| `qsr-img-spo` | svg | `qsr-010` | own | Yes | Draft generated: [`assets/qsr-img-spo.svg`](assets/qsr-img-spo.svg) — review B11 badge wording |
 | `qsr-img-pillars` | svg | `qsr-020` | own | Yes | To produce / review |
 | `qsr-img-wristbands` | illustration | `qsr-021` | ai-generated | Yes | To produce / review |
-| `qsr-char-noor` | character | `qsr-021` | ai-generated | Yes | To produce / review |
-| `qsr-char-noor-concern` | character | `qsr-021`, `qsr-051` | ai-generated | Yes | To produce / review |
-| `qsr-img-matrix` | svg | `qsr-031` | own | Yes | To produce / review |
-| `qsr-img-iceberg` | svg | `qsr-040` | own | Yes | To produce / review |
-| `qsr-char-noor-explaining` | character | `qsr-051` | ai-generated | Yes | To produce / review |
-| `qsr-char-noor-success` | character | `qsr-051` | ai-generated | Yes | To produce / review |
-| `qsr-aud-*` | audio | `qsr-000`, `qsr-001`, `qsr-002`, `qsr-010`, `qsr-011`, `qsr-012`, `qsr-020`, `qsr-021`, `qsr-022`, `qsr-023`, `qsr-030`, `qsr-031`, `qsr-032`, `qsr-033`, `qsr-040`, `qsr-041`, `qsr-042`, `qsr-050`, `qsr-051`, `qsr-090`, `qsr-091`, `qsr-092` | ai-generated / human voice (D10 pending) | Transcript in every card | Narration scripted; provider/voice not approved |
+| `qsr-img-matrix` | svg | `qsr-031`, `qsr-032` | own | Yes | Draft generated: [`assets/qsr-img-matrix.svg`](assets/qsr-img-matrix.svg) — scores final; band names/colours pending B6 |
+| `qsr-img-iceberg` | svg | `qsr-040` | own | Yes | Draft generated: [`assets/qsr-img-iceberg.svg`](assets/qsr-img-iceberg.svg) — terms pending B8 |
+| `char-noor-welcome` | character (programme) | `qsr-000` | ai-generated programme asset (Canva `MAHX-pFaNMU`) | Yes | Generated; download PNG with transparent background |
+| `char-noor-listening` | character (programme) | `qsr-002` | ai-generated programme asset (Canva `MAHX-v3i0kY`) | Yes | Generated; download PNG with transparent background |
+| `char-noor-avatar-neutral` | character (programme) | `qsr-051` | ai-generated programme asset (Canva `MAHX-n4HuyU`) | Yes | Generated |
+| `char-noor-avatar-concern` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-concern` (Canva `MAHX-hFE0aQ`) | Yes | To make (companions.md §3) |
+| `char-noor-avatar-happy` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-success` (Canva `MAHX-jiR90M`) | Yes | To make (companions.md §3) |
+| `char-noor-success` | character (programme) | `qsr-092` | ai-generated programme asset (Canva `MAHX-jiR90M`) | Yes | Generated; download PNG with transparent background |
+| `char-omar-thinking` | character (programme) | `qsr-031` | ai-generated programme asset (Canva `MAHX-jgu1Vk`) | Yes | Generated; download PNG with transparent background |
+| `char-omar-avatar-neutral` | character (programme) | `qsr-040` | ai-generated programme asset (Canva `MAHX-nPHDkA`) | Yes | Generated |
+| `char-omar-avatar-happy` | character (programme) | `qsr-092` | crop from `char-omar-success` (Canva `MAHX-llCU5M`) | Yes | To make (companions.md §3) |
+| `qsr-aud-*` | audio | `qsr-000`, `qsr-001`, `qsr-002`, `qsr-010`, `qsr-011`, `qsr-012`, `qsr-020`, `qsr-021`, `qsr-022`, `qsr-023`, `qsr-030`, `qsr-031`, `qsr-032`, `qsr-033`, `qsr-040`, `qsr-041`, `qsr-042`, `qsr-050`, `qsr-051`, `qsr-090`, `qsr-091`, `qsr-092` | ai-generated / human voice (D10 pending): Noor + Dr. Omar | Transcript in every card | Narration scripted and speaker-tagged; `qsr-092` is two lines joined; provider/voice not approved |
 | `qsr-vid-speakup` | video + WebVTT | `qsr-060 (optional, deferred)` | own (in-house recording only) | Transcript/captions required | Not in baseline; approval, recording and captions pending |
 
 
@@ -3115,7 +3181,12 @@ New lexicon terms: None.
 
 ### Lexicon additions
 
-No new pronunciation terms added. This module uses terms already in the master lexicon: `IPSG`, `FOCUS-PDCA`, `MRN`, `DOB`, `JCI`, `CBAHI`, `WHO`, and `HbA1c` (only where they occur in text/audio).
+| Term | Say it as | Screens |
+|---|---|---|
+| Noor | “noor” (rhymes with *tour*) | `qsr-000` and every Noor line (speaker tag) |
+| Omar | “OH-mar” | `qsr-031`, `qsr-040`, `qsr-092` (speaker tag) |
+
+Both come from the master lexicon (`narration-and-lexicon.md` §4). The module also carries the master entries for `IPSG`, `FOCUS-PDCA`, `MRN`, plus Phase 3's `DOB`, `JCI`, `CBAHI` and `WHO`, in `narration-script.json`; none of these is spoken in the current script.
 
 ### Self-check
 
@@ -3125,3 +3196,9 @@ No new pronunciation terms added. This module uses terms already in the master l
 - [x] Review checklist applied to every card; open items are named at card level and in the SME table.
 - [x] No invented clinical/policy facts are presented as final; all open policy dependencies are marked `⚠ PENDING`.
 - [x] Brand fields are present on every card: L1–L6, supplied logo/position, palette/hex, Montserrat sizes, watermark, icons and prompts for every AI-generated asset.
+- [x] v0.2: companions applied exactly per the Phase 2/3 tables (7 screens); shared `char-noor-*` / `char-omar-*` ids only; the v0.1 module-only mentor ids and character prompts are removed.
+- [x] v0.2: every narration line is prefixed `NOOR:` or `OMAR:`; Dr. Omar speaks only on `qsr-031`, `qsr-040` and `qsr-092`; the two-voice close is 2 turns and under 45 s.
+- [x] v0.2: Noor's honest stories are used once each, on `qsr-002` and `qsr-021` only; no companion appears over a question or gives away an answer.
+- [x] v0.2: every JSON build block parses and carries `id`, `type`, `node_id`, `points` and `objective_ids`; `narration_text` matches the script without markup.
+- [ ] Avatar crops `char-noor-avatar-concern`, `char-noor-avatar-happy`, `char-omar-avatar-happy` still to make (companions.md §3).
+- [ ] D10 voice route and 30-second samples of both voices — **not yet**.

@@ -1,0 +1,662 @@
+{
+  "module_id": "MC07-clinical-governance",
+  "module_title": "My Clinic — Clinical Governance: Quality, Patient Safety & Risk",
+  "brand_name": "My Clinic",
+  "audience": "All clinical staff; recommended for all staff",
+  "objective": "See the approved Phase 1 observable objectives (qsr-o1 to qsr-o5); each scored screen is objective-mapped in storyboard.md.",
+  "screens": [
+    {
+      "screen_id": "qsr-000",
+      "screen_type": "title_slide",
+      "purpose": "Open: orient new clinical staff to the purpose of this module and its patient-safety focus.",
+      "visual_concept": "Official navy title gradient with the supplied white logo at upper left, a Caring-purple module chip and the title block on the left; Noor (char-noor-welcome) waves from a white rounded portrait card at bottom-right, with the large white petal watermark cropped behind it at the right edge; no photo and no generated logo.",
+      "layout": "L1 Title",
+      "background_role": "primary",
+      "text_role": "on_primary",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "photo",
+          "description": "brand-background-title-navy: Supplied 00_program/brand/assets/background-title-navy.png, official 16:9 navy title background.",
+          "source": "client",
+          "alt_text": "Decorative navy gradient background.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-white: Supplied white logo lock-up, unchanged, 48 px tall at top-left.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "brand-mark-white: Supplied white five-petal mark, 8–10% opacity, 520 px, cropped off right edge.",
+          "source": "client",
+          "alt_text": "Decorative white petal watermark.",
+          "decorative": true
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-welcome: Shared programme companion pose (preview: 00_program/characters/previews/char-noor-welcome.jpg); half-body in a 190 × 300 px white portrait card, bottom-right.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling and waving in welcome.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Subtitle: Quality, patient safety and risk · Module 07 · Caring",
+      "animation": "fade",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-001",
+      "screen_type": "content_slide",
+      "purpose": "Explain: introduce the expected quality standard before the learner practises how quality is measured.",
+      "visual_concept": "White section-opener stage with a 200 px official Caring value tile at left, “SECTION 1 OF 7” in small ambitious-dark text, the large navy headline and source quote in HTML, and a faint petal watermark cropped at the right.",
+      "layout": "L2 Section opener",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "brand-value-tile-caring-purple: Supplied value-tile-caring-purple.png, official square tile with white line icon; word “Caring” remains HTML text.",
+          "source": "client",
+          "alt_text": "Decorative Caring value tile with white line icon.",
+          "decorative": true
+        },
+        {
+          "kind": "icon",
+          "description": "brand-mark-navy: Supplied five-petal watermark at 6–8% opacity, 440 px, cropped off right edge.",
+          "source": "client",
+          "alt_text": "Decorative petal watermark.",
+          "decorative": true
+        }
+      ],
+      "on_screen_text": "SECTION 1 OF 7 · “Doing the right things right — the first time, and every time.” ⚠ PENDING B1",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-002",
+      "screen_type": "poll",
+      "purpose": "Reflect: make speaking up a normal topic without assessing or reporting the learner’s response.",
+      "visual_concept": "Three white response cards sit below a short reflection question in the left two-thirds; Noor (char-noor-listening, holding a tablet) stands in the right column beside the cards while she tells her speak-up story; an optional private reflection note appears after submission, with no score or progress penalty.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-listening: Shared programme companion pose (preview: 00_program/characters/previews/char-noor-listening.jpg); half-body about 300 px tall, right column beside the poll.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, holding a tablet and listening.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Have you ever noticed something unsafe at work and not said anything? · Anonymous response handling ⚠ PENDING NEW-01",
+      "animation": "fade-up",
+      "interaction": "Choose Yes, No or Not sure; you may continue without answering.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-010",
+      "screen_type": "labeled_diagram",
+      "purpose": "Explain: show the linked Structure → Process → Outcome model and introduce continuous improvement.",
+      "visual_concept": "Three linked blocks run left to right across a white stage; a small separate cycle badge connects measurement to improvement without obscuring the model.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "qsr-img-spo: Own 1600×900 SVG draft (assets/qsr-img-spo.svg): Structure → Processes → Outcomes blocks with arrows, a “valid, reliable data” bar and an improvement-cycle badge (step names pending B11); callout anchors match the build labels.",
+          "source": "svg",
+          "alt_text": "Diagram linking structure, processes and outcomes, with a separate improvement-cycle callout.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Structure → Process → Outcome · Collect valid, reliable data · FOCUS-PDCA improvement cycle ⚠ PENDING B11",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-011",
+      "screen_type": "drag_drop",
+      "purpose": "Check: distinguish structural resources, work processes and patient outcomes.",
+      "visual_concept": "Seven compact measure cards sit above three equal labelled targets; the target order is fixed and keyboard placement is available.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Resources · Actions carried out · Patient results",
+      "animation": "none",
+      "interaction": "Place each illustrative measure in Structure, Process or Outcome, then check.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-012",
+      "screen_type": "sorting",
+      "purpose": "Check: order the approved FOCUS-PDCA improvement-cycle steps.",
+      "visual_concept": "Nine numbered text cards form one vertical sequence with a curved return arrow from Act to Find; numbering appears only after checking.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Nine steps · One repeating cycle · Exact wording ⚠ PENDING B11",
+      "animation": "none",
+      "interaction": "Arrange the steps in order, then check how the final step begins the next cycle.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-020",
+      "screen_type": "hotspot",
+      "purpose": "Explore: connect each of the six patient-safety goals to its draft everyday practice.",
+      "visual_concept": "Six separate icon panels form a 3-by-2 grid; opening a panel reveals its practice in a nearby text card, and a counter tracks panels visited.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "qsr-img-pillars: Own 960×540 six-panel icon grid; no baked text; hotspots align with six panels; details remain HTML.",
+          "source": "svg",
+          "alt_text": "Six icon panels represent identification, communication, high-alert medicines, safe procedures, hand hygiene and fall prevention; panel names and practices are also text.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Identification · Communication · High-alert medication · Safe procedures · Hand hygiene · Fall prevention ⚠ PENDING B3",
+      "animation": "fade-up",
+      "interaction": "Open all six goal panels and read the draft practice for each.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-021",
+      "screen_type": "decision_scenario",
+      "purpose": "Practise: identify the intended patient when two records share a name and correct an unsafe shortcut.",
+      "visual_concept": "Noor's 56 px scenario avatar (purple ring, “Noor · Safety liaison”) sits above the situation; a text-free wristband illustration sits left of the three-node decision and two cards show the same name with different fictional record numbers; the avatar changes from concern on the intro to happy or concern after each choice.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "qsr-img-wristbands: Two plain, unprinted patient wristbands side by side; no names or numbers inside image (fictional identifiers remain HTML text).",
+          "source": "generate",
+          "alt_text": "Two blank patient wristbands side by side; the fictional name and record numbers are provided as accessible HTML text.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-avatar-concern: Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, looking concerned.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-avatar-happy: Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Two fictional records share one full name. Verify before care. ⚠ PENDING B4",
+      "animation": "none",
+      "interaction": "Choose what you would do at each decision point before the blood test proceeds.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-022",
+      "screen_type": "matching",
+      "purpose": "Check: connect common patient-safety practices to the goal they support.",
+      "visual_concept": "Six practice cards line up on the left and six goal labels on the right; long labels wrap without truncation.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Match each daily practice to one goal. ⚠ PENDING B3–B5",
+      "animation": "none",
+      "interaction": "Match each practice with the patient-safety goal it supports.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-023",
+      "screen_type": "sorting",
+      "purpose": "Check: order the five hand-hygiene moments around patient care.",
+      "visual_concept": "Five numbered cards form a loop around a simple patient-contact marker; each stage is a text label and the loop arrow is decorative.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Order the hand-hygiene moments. ⚠ PENDING B10",
+      "animation": "none",
+      "interaction": "Arrange the five moments in the order shown in the approved hand-hygiene guidance.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-030",
+      "screen_type": "sorting",
+      "purpose": "Check: sequence the risk-management lifecycle from identification to reporting.",
+      "visual_concept": "Five labelled stage cards sit in one vertical column; a narrow number track appears only after the answer is checked.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Identify · Assess · Manage · Monitor · Report",
+      "animation": "none",
+      "interaction": "Put the risk-management lifecycle in order.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-031",
+      "screen_type": "worked_example",
+      "purpose": "Explain: model impact × likelihood, then locate the result and choose a response without inventing local bands.",
+      "visual_concept": "A white calculation ledger on the left reveals impact, likelihood and product step by step, with the draft 5×5 matrix (score in every cell, band names pending B6) at step 4; Dr. Omar (char-omar-thinking, hand at chin) stands half-body in the right column while he talks the example through.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "qsr-img-matrix: Own 1600×900 SVG draft (assets/qsr-img-matrix.svg): 5×5 impact × likelihood grid with the score in every cell and a band-name slot in every cell reading “band ⚠ B6”; cells stay neutral (no band colours) until the Risk Manager supplies names, thresholds and colours; the 4 × 3 = 12 cell is outlined.",
+          "source": "svg",
+          "alt_text": "Risk matrix showing impact multiplied by likelihood on a 1-to-5 scale; exact band labels and colours are pending B6.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-omar-thinking: Shared programme companion pose (preview: 00_program/characters/previews/char-omar-thinking.jpg); half-body 320–380 px tall, right column.",
+          "source": "client",
+          "alt_text": "Dr. Omar, the family physician, with his hand at his chin, thinking through the risk score.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Hypothetical case · Impact 4 × likelihood 3 = 12 · Band ⚠ PENDING B6 · Responses: Reduce · Transfer · Accept · Avoid ⚠ PENDING B7",
+      "animation": "fade-up",
+      "interaction": "Follow the worked steps; consider a control in the reflection prompt.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-032",
+      "screen_type": "fill_blank",
+      "purpose": "Practise: multiply impact by likelihood and read the resulting band from the approved matrix.",
+      "visual_concept": "A large equation with two labelled blanks sits above a small matrix preview; the band field stays visibly blocked pending B6.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Impact 5 × likelihood 2 = ___ · Band: ___ ⚠ PENDING B6",
+      "animation": "none",
+      "interaction": "Enter the numeric score and the matching band from the approved risk matrix.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-033",
+      "screen_type": "matching",
+      "purpose": "Check: distinguish the four proposed risk responses by the action they describe.",
+      "visual_concept": "Four response names appear in one column and four action cards in another; no response is distinguished by colour.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Reduce · Transfer · Accept · Avoid — wording ⚠ PENDING B7",
+      "animation": "none",
+      "interaction": "Match each response with the action it describes.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-040",
+      "screen_type": "labeled_diagram",
+      "purpose": "Explain: show the source’s iceberg metaphor for event visibility and distinguish the draft event categories.",
+      "visual_concept": "A simple iceberg fills the right two-thirds with one labelled tip, one waterline layer and one larger submerged area, each category attached to both a label and a location; Omar's tip card (56 px avatar, teal ring, 4 px teal left edge, label “Omar's tip”) sits bottom-left, clear of the diagram labels.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "qsr-img-iceberg: Own 1600×900 SVG draft (assets/qsr-img-iceberg.svg): iceberg with tip, below-waterline and deep layers, separate real-text callouts; terms pending B8; callout anchors match the build labels.",
+          "source": "svg",
+          "alt_text": "Iceberg with three labelled positions for critical or sentinel events, adverse events and near misses; exact terms are pending B8.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-omar-avatar-neutral: Shared programme companion pose (preview: 00_program/characters/previews/char-omar-avatar-neutral.jpg); 56 px circular avatar on the tip card, teal ring, bottom-left.",
+          "source": "client",
+          "alt_text": "Dr. Omar, the family physician.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Critical / sentinel event · Adverse event · Near miss — terms ⚠ PENDING B8",
+      "animation": "fade-up",
+      "interaction": null,
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-041",
+      "screen_type": "drag_drop",
+      "purpose": "Check: distinguish draft critical/sentinel events, adverse events and near misses.",
+      "visual_concept": "Six short event cards sit above three labelled target columns; the full event text stays visible while moving.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Critical / sentinel · Adverse · Near miss ⚠ PENDING B8",
+      "animation": "none",
+      "interaction": "Classify each fictional event by what happened and whether harm reached a person.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-042",
+      "screen_type": "true_false",
+      "purpose": "Check: recognise the source’s draft non-punitive reporting principle without promising immunity from policy.",
+      "visual_concept": "One large statement sits above two equal True/False cards; neither option is preselected.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "“If you report a near miss you caused, you will be disciplined.” ⚠ PENDING B8",
+      "animation": "none",
+      "interaction": "Decide whether the statement matches the policy-approved reporting culture.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-050",
+      "screen_type": "content_slide",
+      "purpose": "Explain: identify reportable clinical and non-clinical examples, draft timing, reporting route and follow-up.",
+      "visual_concept": "Three white cards group reportable examples, when/where to submit, and what happens next; the 24-hour line is a magenta callout marked pending.",
+      "layout": "L3 Content",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Report: clinical + non-clinical events · When: 24 hours ⚠ PENDING B9/D8 · Where: digital form or email ⚠ PENDING B9 · System review follows",
+      "animation": "fade-up",
+      "interaction": "Read the draft workflow; use only the confirmed channel and timing at work.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-051",
+      "screen_type": "decision_scenario",
+      "purpose": "Practise: decide whether, when and where to report a fictional near miss at the end of a tiring shift.",
+      "visual_concept": "A 19:00 end-of-shift situation card sits on the left with Noor's 56 px scenario avatar (purple ring, “Noor · Safety liaison”) above it; her avatar starts neutral and changes to happy or concern after each choice; each decision stays on the right in large buttons.",
+      "layout": "L5 Scenario",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-avatar-neutral: Shared programme companion pose (preview: 00_program/characters/previews/char-noor-avatar-neutral.jpg); 56 px circular scenario avatar, purple ring, above the situation.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-avatar-happy: Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-avatar-concern: Shared programme companion avatar, cropped to a circle; 56 px circular scenario avatar, purple ring, above the situation.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, looking concerned.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Fictional near miss · Choose whether, when and where to report · ⚠ PENDING B8/B9/D8",
+      "animation": "none",
+      "interaction": "Choose a safe next step at each node, then select a timing and channel.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-090",
+      "screen_type": "results_breakdown",
+      "purpose": "Close: show the learner’s score and performance by each of the five objectives.",
+      "visual_concept": "Five objective rows show a label, score bar and points earned; a navy score ring names PASSED or NOT YET in words.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Results by objective · Review any area below threshold",
+      "animation": "fade-up",
+      "interaction": "Review your objective bars and any advice shown.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-091",
+      "screen_type": "poll",
+      "purpose": "Reflect: invite the learner to rehearse a sentence for a future safety concern; do not score it.",
+      "visual_concept": "One open text field sits below the prompt; the screen shows a clear Skip option and a no-score note.",
+      "layout": "L4 Question",
+      "background_role": "surface",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "What will you say the next time you notice something unsafe?",
+      "animation": "fade-up",
+      "interaction": "Write a short sentence or continue without sharing.",
+      "cue_targets": []
+    },
+    {
+      "screen_id": "qsr-092",
+      "screen_type": "summary",
+      "purpose": "Close: restate the practical skills, point to the approved policy and incident channel, and reinforce speaking up.",
+      "visual_concept": "A four-item checklist sits beside two action cards for the approved incident system and IPSG policy; Noor (char-noor-success, thumbs up) stands half-body at the right with Dr. Omar's 56 px avatar (teal ring) beside his closing line; a faint petal watermark is cropped off the right edge behind Noor.",
+      "layout": "L6 Results / close",
+      "background_role": "light",
+      "text_role": "dark",
+      "accent_role": "secondary",
+      "imagery": [
+        {
+          "kind": "icon",
+          "description": "brand-logo-horizontal-navy: supplied My Clinic horizontal navy logo lock-up in the header.",
+          "source": "client",
+          "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "icon",
+          "description": "brand-mark-navy: Supplied five-petal watermark, 6–8% opacity, 440 px, cropped off right edge.",
+          "source": "client",
+          "alt_text": "Decorative petal watermark.",
+          "decorative": true
+        },
+        {
+          "kind": "illustration",
+          "description": "char-noor-success: Shared programme companion pose (preview: 00_program/characters/previews/char-noor-success.jpg); Noor half-body 300–360 px right; Omar 56 px avatar with teal ring.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling and giving a thumbs up.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "char-omar-avatar-happy: Shared programme companion avatar, cropped to a circle; Noor half-body 300–360 px right; Omar 56 px avatar with teal ring.",
+          "source": "client",
+          "alt_text": "Dr. Omar, the family physician, smiling.",
+          "decorative": false
+        }
+      ],
+      "on_screen_text": "Measure quality · apply patient-safety goals · score risk and classify events · follow reporting workflow · approved links ⚠ PENDING B3/B9",
+      "animation": "fade-up",
+      "interaction": "Use the approved policy links and reporting channel after they are supplied.",
+      "cue_targets": []
+    }
+  ]
+}

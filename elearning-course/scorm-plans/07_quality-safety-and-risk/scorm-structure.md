@@ -15,7 +15,7 @@
 | Pass mark | 80% = **76 / 95 points** |
 | Screens | 22 in 7 outline sections |
 | Scored screens | 11 · scenarios, games and simulations: 2 |
-| Narration | `storyboard/narration-script.json` not produced yet — see §6 |
+| Narration | 22 narrated screens · ≈6.0 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 5 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -40,7 +40,7 @@ MC_07_ClinicalGov_v1.0_1.2.zip
     ├── char-noor-welcome.png
     ├── char-omar-avatar-neutral.png
     ├── char-omar-thinking.png
-    ├── qsr-aud-<screen>.mp3   # one per narrated screen, normalised
+    ├── qsr-aud-<screen>.mp3   # × 22, one per narrated screen, normalised
     ├── brand: logo PNGs, title background, petal watermark
     └── PROVENANCE.json        # written when media provenance is recorded
 ```
@@ -76,9 +76,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-000` | `title_slide` | Clinical governance |  | — | 🗣 Noor | per card |
-| 2 | `qsr-001` | `content_slide` | The quality standard |  | — | — | per card |
-| 3 | `qsr-002` | `poll` | Speak up safely |  | — | 🗣 Noor | per card |
+| 1 | `qsr-000` | `title_slide` | Clinical governance |  | — | 🗣 Noor | Noor · 13 s |
+| 2 | `qsr-001` | `content_slide` | The quality standard |  | — | — | Noor · 26 s |
+| 3 | `qsr-002` | `poll` | Speak up safely |  | — | 🗣 Noor | Noor · 10 s |
 
 ### `qsr-sB` — B · The quality standard
 
@@ -86,9 +86,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-010` | `labeled_diagram` | How quality is measured |  | — | — | per card |
-| 2 | `qsr-011` ★ | `drag_drop` | Classify the measures | 10 | qsr-o1 | — | per card |
-| 3 | `qsr-012` ★ | `sorting` | FOCUS-PDCA: order the steps | 5 | qsr-o1 | — | per card |
+| 1 | `qsr-010` | `labeled_diagram` | How quality is measured |  | — | — | Noor · 33 s |
+| 2 | `qsr-011` ★ | `drag_drop` | Classify the measures | 10 | qsr-o1 | — | Noor · 8 s |
+| 3 | `qsr-012` ★ | `sorting` | FOCUS-PDCA: order the steps | 5 | qsr-o1 | — | Noor · 8 s |
 
 ### `qsr-sC` — C · Patient safety goals
 
@@ -96,10 +96,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-020` | `hotspot` | Six patient-safety goals |  | — | — | per card |
-| 2 | `qsr-021` ★ | `decision_scenario` | Which patient? | 15 | qsr-o2 | 🗣 Noor | per card |
-| 3 | `qsr-022` ★ | `matching` | Practice meets goal | 10 | qsr-o2 | — | per card |
-| 4 | `qsr-023` ★ | `sorting` | Five moments | 5 | qsr-o2 | — | per card |
+| 1 | `qsr-020` | `hotspot` | Six patient-safety goals |  | — | — | Noor · 32 s |
+| 2 | `qsr-021` ★ | `decision_scenario` | Which patient? | 15 | qsr-o2 | 🗣 Noor | Noor · 15 s |
+| 3 | `qsr-022` ★ | `matching` | Practice meets goal | 10 | qsr-o2 | — | Noor · 8 s |
+| 4 | `qsr-023` ★ | `sorting` | Five moments | 5 | qsr-o2 | — | Noor · 8 s |
 
 ### `qsr-sD` — D · Risk management
 
@@ -107,10 +107,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-030` ★ | `sorting` | Risk-management lifecycle | 5 | qsr-o3 | — | per card |
-| 2 | `qsr-031` | `worked_example` | Score a risk |  | — | 🗣 Omar | per card |
-| 3 | `qsr-032` ★ | `fill_blank` | Calculate the risk score | 5 | qsr-o3 | — | per card |
-| 4 | `qsr-033` ★ | `matching` | Choose the risk response | 10 | qsr-o3 | — | per card |
+| 1 | `qsr-030` ★ | `sorting` | Risk-management lifecycle | 5 | qsr-o3 | — | Noor · 9 s |
+| 2 | `qsr-031` | `worked_example` | Score a risk |  | — | 🗣 Omar | Omar · 44 s |
+| 3 | `qsr-032` ★ | `fill_blank` | Calculate the risk score | 5 | qsr-o3 | — | Noor · 8 s |
+| 4 | `qsr-033` ★ | `matching` | Choose the risk response | 10 | qsr-o3 | — | Noor · 8 s |
 
 ### `qsr-sE` — E · Incidents
 
@@ -118,9 +118,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-040` | `labeled_diagram` | The safety iceberg |  | — | 🗣 Omar | per card |
-| 2 | `qsr-041` ★ | `drag_drop` | Classify the event | 10 | qsr-o4 | — | per card |
-| 3 | `qsr-042` ★ | `true_false` | A just culture? | 5 | qsr-o4 | — | per card |
+| 1 | `qsr-040` | `labeled_diagram` | The safety iceberg |  | — | 🗣 Omar | Omar · 30 s |
+| 2 | `qsr-041` ★ | `drag_drop` | Classify the event | 10 | qsr-o4 | — | Noor · 9 s |
+| 3 | `qsr-042` ★ | `true_false` | A just culture? | 5 | qsr-o4 | — | Noor · 8 s |
 
 ### `qsr-sF` — F · Reporting
 
@@ -128,8 +128,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-050` | `content_slide` | Report an event |  | — | — | per card |
-| 2 | `qsr-051` ★ | `decision_scenario` | End-of-shift near miss | 15 | qsr-o5 | 🗣 Noor | per card |
+| 1 | `qsr-050` | `content_slide` | Report an event |  | — | — | Noor · 32 s |
+| 2 | `qsr-051` ★ | `decision_scenario` | End-of-shift near miss | 15 | qsr-o5 | 🗣 Noor | Noor · 16 s |
 
 ### `qsr-sG` — G · Close
 
@@ -137,9 +137,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `qsr-090` | `results_breakdown` | Your results |  | — | — | per card |
-| 2 | `qsr-091` | `poll` | Make a commitment |  | — | — | per card |
-| 3 | `qsr-092` | `summary` | Ready to protect patients |  | — | 🗣 Noor + Omar | per card |
+| 1 | `qsr-090` | `results_breakdown` | Your results |  | — | — | Noor · 11 s |
+| 2 | `qsr-091` | `poll` | Make a commitment |  | — | — | Noor · 8 s |
+| 3 | `qsr-092` | `summary` | Ready to protect patients |  | — | 🗣 Noor + Omar | Noor/Omar · 18 s |
 
 ## 5. Objectives, evidence and scoring
 

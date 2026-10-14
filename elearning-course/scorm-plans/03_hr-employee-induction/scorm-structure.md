@@ -15,7 +15,7 @@
 | Pass mark | 70% = **102 / 145 points** |
 | Screens | 36 in 10 outline sections |
 | Scored screens | 15 · scenarios, games and simulations: 4 |
-| Narration | 36 narrated screens · ≈11.0 min at 140 wpm (from `narration-script.json`) |
+| Narration | 36 narrated screens · ≈11.7 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 6 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -107,7 +107,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-000` | `title_slide` | Welcome On Board |  | — | 🗣 Both | Noor · 9 s |
+| 1 | `hr-000` | `title_slide` | Welcome On Board |  | — | 🗣 Both | Noor/Omar · 20 s |
 | 2 | `hr-001` | `content_slide` | Why we exist |  | — | 🗣 Omar | Omar · 37 s |
 | 3 | `hr-002` | `poll` | One million riyals |  | — | 🗣 Omar | Omar · 10 s |
 
@@ -177,7 +177,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `hr-060` ★ | `matching` | Which system? | 10 | hr-o5 | — | Omar · 8 s |
-| 2 | `hr-061` ★ | `simulation` | Book your leave in Oracle | 15 | hr-o5 | 🗣 Omar | Omar · 9 s |
+| 2 | `hr-061` ★ | `simulation` | Book your leave in Oracle | 15 | hr-o5 | 🗣 Omar | Omar · 21 s |
 | 3 | `hr-062` ★ | `true_false` | Thirty days left | 5 | hr-o5 | — | Omar · 8 s |
 
 ### `hr-sH` — H · ID, benefits & dress code
@@ -205,7 +205,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `hr-090` | `results_breakdown` | How you did |  | — | — | Omar · 12 s |
-| 2 | `hr-091` | `summary` | You're ready |  | — | 🗣 Omar + Noor | Noor · 7 s |
+| 2 | `hr-091` | `summary` | You're ready |  | — | 🗣 Omar + Noor | Noor/Omar · 27 s |
 
 ## 5. Objectives, evidence and scoring
 
