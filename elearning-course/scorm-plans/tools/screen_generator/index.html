@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Clinic · Screen review</title>
+<link rel="stylesheet" href="style.css">
+<script id="course-data" type="application/json">__COURSE_DATA__</script>
+<script src="player.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#stage">Skip to screen</a>
+<header class="app-header"><img src="assets/brand-logo-horizontal-navy.png" alt="My Clinic"><div><strong>Screen studio</strong><small>Storyboard → branded review</small></div><span class="draft">DRAFT · NOT FOR LEARNER DELIVERY</span></header>
+<div class="workspace">
+<aside class="sidebar" aria-label="Course navigation"><label for="module">PACKAGE</label><select id="module"></select><label for="search">FIND A SCREEN</label><input id="search" type="search" placeholder="Title or screen ID"><nav id="outline" aria-label="Screen outline"></nav><p class="sidebar-note">Review preview only. No LMS reporting, approval or completion record.</p></aside>
+<main>
+<div class="review-toolbar"><div><span class="eyebrow" id="module-name"></span><h1 id="screen-name"></h1></div><span id="mode" class="badge"></span></div>
+<section id="stage" tabindex="-1" aria-label="Branded screen"></section>
+<div class="player-bar"><button id="prev" type="button">← Previous</button><span id="position" aria-live="polite"></span><button id="next" type="button">Next →</button></div>
+<div id="warnings" role="status"></div>
+<section class="review-notes"><details open><summary>Narration & transcript</summary><div id="audio"></div><p id="transcript"></p></details><details><summary>Build details & source JSON</summary><p id="metadata"></p><p id="visual"></p><pre id="spec"></pre></details></section>
+<footer>My Clinic internal review · Marketing confirmation D11 pending · Fonts fall back locally if Montserrat is not installed.</footer>
+</main>
+</div>
+</body></html>

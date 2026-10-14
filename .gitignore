@@ -2,3 +2,6 @@
 # Quality video is committed. IT video was committed on owner decision despite patient identifiers (README item 18).
 __pycache__/
 *.pyc
+
+# Local screen previews and review media are reproducible, not release artifacts.
+.generated/
