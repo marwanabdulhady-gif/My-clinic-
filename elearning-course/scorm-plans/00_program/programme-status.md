@@ -98,6 +98,7 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 9. **Interim companion avatars.** `tools/make_companion_avatars.py` derives the three missing avatar crops (`char-noor-avatar-happy/concern`, `char-omar-avatar-happy`) from approved poses and copies the two neutral avatars as transparent PNGs.
 10. **Repeatable evidence.** `tools/audit_assets.py` (asset/template/logo/link audit) and `tools/lint_planning.py` (local port of the edumints planning lint) make the two quality gates rerunnable in this workspace; both are clean as at 2026-10-14.
 11. **SME register completed.** The build-detail queue now covers all eight packs (52 screen-level questions, was 37 across six).
+12. **One decision list instead of nine.** `tools/build_decision_sheet.py` merges the 14 programme decisions (D1–D14), every module B-item, `NEW-01`, the thin-objective choices (G4) and the module 07 poll check into [`decision-sheet.md`](decision-sheet.md) + CSV: **102 open rows**, each with an owner role, a due date and the exact file to write the answer back to. Rows disappear from the sheet as soon as they are closed in the source file, so the count is the live blocker count. [`kickoff-pack.md`](kickoff-pack.md) (`MC-KO-01 v0.1`, rendered to `kickoff-pack.docx`) adds the 90-minute run sheet, the attendee-role→decision map and the same-day write-back procedure.
 
 ---
 
@@ -105,13 +106,14 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 
 | Step | Action | Owner | Unblocks |
 |---|---|---|---|
-| 1 | Send the client-review Word pack and the review register to My Clinic; book the Phase 0 kick-off | L2S | everything |
+| 1 | Book the Phase 0 kick-off for **2026-10-19 (proposed)** and send [`kickoff-pack.docx`](kickoff-pack.docx) with the invite, plus the client-review Word pack, [`decision-sheet.csv`](decision-sheet.csv) and proposal Rev01 | L2S | everything |
+| 1b | Write every kick-off outcome into the file named in its **Write back to** column the same day: **28 tier-1 rows by 2026-10-22**, D9/D10/D11 by 2026-10-26, the **71 tier-2 rows by 2026-10-30**; rerun `build_decision_sheet.py` + `export_kickoff_docx.py` after each write-back so closed rows drop out | My Clinic owners + L2S | C2–C9 |
 | 2 | ~~Issue proposal Rev01 (§3 fixes)~~ ✅ done — send Rev01 with the storyboard pack as evidence | L2S | contract |
 | 3 | ~~Retrofit 03 and complete 07 to v0.2 (G1, G2)~~ ✅ done; ~~split the 7 two-voice segments (G3)~~ ✅ done for all eight packs | Storyboard agent | Phase 3 audio |
 | 3b | Work the chunked implementation queue in [`next-phases-roadmap.md`](next-phases-roadmap.md) (one PR per chunk) | L2S + agent | Phases 3–5 |
-| 4 | Close D9 (LMS, SCORM version), D10 (voices), D11 (brand) | My Clinic L&D / Marketing | Phase 3 and 4 |
-| 5 | Close module B-items and D1–D8, D12–D14 with named SMEs; update Phase 0 files and cards | SMEs | Phase 2 approval |
-| 6 | Close the 52 register rows (G5); decide on thin objectives (G4) | SMEs + L&D | Phase 4 build fields |
+| 4 | Close D9 (LMS, SCORM version), D10 (voices), D11 (brand) — sheet tier 3, due 2026-10-26 | My Clinic L&D / Marketing | Phase 3 and 4 |
+| 5 | Close module B-items and D1–D8, D12–D14 with named SMEs; update Phase 0 files and cards — sheet tier 1 (28 rows, due 2026-10-22) and tier 2 (71 rows, due 2026-10-30) | SMEs | Phase 2 approval |
+| 6 | Close the 52 register rows (G5); decide the thin objectives (G4, one sheet row per module) | SMEs + L&D | Phase 4 build fields |
 | 7 | Download companion PNGs (G6); record and approve two 30-second voice samples | Marwan / course owner | Phase 3 |
 | 8 | Module 08: test environment, test patient, 2-hour capture session, DPO review | IT + DPO | 08 build |
 | 9 | Phase 3: produce narration audio (normalised), final images, captions; rerun `lint_narration_script` and `lint_authoring_plan(stage="planning")` | L2S | Phase 4 |

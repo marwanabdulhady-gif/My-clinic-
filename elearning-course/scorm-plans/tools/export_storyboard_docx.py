@@ -190,7 +190,12 @@ def make_doc(module_number: str, module_slug: str, colour: str, source: Path, ta
     ], colour)
     doc.add_page_break()
 
-    content = source.read_text(encoding="utf-8").splitlines()
+    render_markdown_body(doc, source.read_text(encoding="utf-8").splitlines(), colour)
+    doc.save(target)
+
+
+def render_markdown_body(doc, content: list[str], colour: str) -> None:
+    """Render controlled Markdown (tables, headings, quotes, code fences) into the document body."""
     i = 0
     in_code = False
     table_buffer: list[list[str]] = []
@@ -283,7 +288,6 @@ def make_doc(module_number: str, module_slug: str, colour: str, source: Path, ta
         p.add_run(clean_inline(line))
         i += 1
     flush_table()
-    doc.save(target)
 
 
 def make_program_pack(target: Path) -> None:
