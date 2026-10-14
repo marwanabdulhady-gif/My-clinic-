@@ -10,6 +10,7 @@ This is the exact sequence Claude (the MCP client) follows for each package. Too
 | 2 | 1 | `get_playbook('reference')`, `get_playbook('authoring')` | `authoring-plan.json` (draft) |
 | 3 | 2 | `brand_to_theme(brand)` (once for the program) | `00_program/theme_tokens.json` |
 | 4 | 2 | `lint_visual_plan(plan, brand)` | `visual-plan.json` + lint report |
+| 4b | 2 | Write `storyboard/storyboard.md` from the approved screen list (no server call — this is authoring, not compiling) | `storyboard/storyboard.md`, one card per screen |
 | 5 | 3 | `lint_narration_script(script, plan)` → `export_audio_script(script)` | `narration-script.json`, `voice_talent.md` |
 | 6 | 3 | `lint_authoring_plan(plan, stage="planning")` | lint report |
 | 7 | 3 | **STOP — human approval** of storyboard, visuals, narration, activities | approval record in `phase-5-qa-and-delivery.md` |
@@ -21,6 +22,24 @@ This is the exact sequence Claude (the MCP client) follows for each package. Too
 | 13 | 5 | `lint_authoring_plan(plan, stage="delivery")` | lint report |
 | 14 | 5 | `build_package(project_id)` → `validate_package` | SCORM zip (stored outside Git) |
 | 15 | 5 | `export_qti(project_id)` (optional, for the question bank) | QTI 2.1 zip |
+
+### Step 4b — the storyboard cards
+
+`storyboard/storyboard.md` is written from the approved `phase-2-storyboard.md`, using the
+[storyboard template](../00_program/storyboard-template/). One module per run. Rules that have
+held up so far on module 03:
+
+- **Keep the screen ids and order exactly as the screen list.** The storyboard is downstream of it.
+- **Every JSON block must validate before the storyboard is handed over.** The screen-type guide
+  lists the fields, but the field names that matter are the ones in the server's `core/project.py`.
+  Validate each block by loading `core/project.py` and running `TypeAdapter(Screen).validate_python(d)`
+  over it, rather than eyeballing the JSON.
+- **Derive `narration_text` from the narration script, don't type it twice.** Strip the
+  `[[cue:…]]` and `[[pause:…]]` markup programmatically. Hand-typed copies drift.
+- **Recompute the narration timings after writing**, at 140 wpm, and check each screen against the
+  Phase 3 target (±15%) and the module total against the Phase 3 audio estimate.
+- **Set `evidence_screen_ids` on every scored screen.** It is the only authoritative K1 evidence
+  link; without it `lint_course`'s anti-slop pass falls back to a heuristic.
 
 Planning files (`visual-plan.json`, `narration-script.json`, `authoring-plan.json`, `course-spec.json`) are saved in each module folder under `build/` when Phase 2–4 start. Built SCORM zips and media are **not** committed (size); store them in Drive with the version number.
 

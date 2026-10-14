@@ -1,4 +1,10 @@
-# Phase 2 — Storyboard (03 Welcome On Board)
+# Phase 2 — Screen list (03 Welcome On Board)
+
+> This is the **screen list**: one row per screen. It is the input to
+> [`storyboard/storyboard.md`](storyboard/storyboard.md), which turns each row into a finished
+> screen card (on-screen text, visuals and animation, interaction and scoring, full narration,
+> accessibility, build JSON). **v0.1 of the storyboard is written and in SME review.**
+> Do not add, remove or reorder rows without updating the storyboard in the same change.
 
 Gate: `lint_visual_plan(plan, brand)`. ★ = scored. "Src" = slide in `HR.pptx`.
 

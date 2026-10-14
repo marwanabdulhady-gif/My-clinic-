@@ -2,9 +2,33 @@
 
 Gates: `lint_narration_script` → `export_audio_script` → `lint_authoring_plan(stage="planning")` → **STOP for approval**.
 
+## 0. Status: narration script drafted
+
+The narration for all 36 screens is written and lives in
+[`storyboard/storyboard.md`](storyboard/storyboard.md) (§5 of each card). The machine-readable
+outputs below are generated from those cards, so the storyboard stays the single source of truth.
+
+| File | What it is |
+|---|---|
+| [`storyboard/narration-script.json`](storyboard/narration-script.json) | `NarrationScript` — 36 segments with `on_screen_text`, `target_sec` and tone, plus the module lexicon. Input to `lint_narration_script`. |
+| [`storyboard/audio-script-export.json`](storyboard/audio-script-export.json) | Output of `export_audio_script`: per screen `tts_text` (lexicon applied), `ssml`, `narration_text` (captions), filename, `est_sec` and estimated cue times. |
+| [`storyboard/voice_talent.md`](storyboard/voice_talent.md) | Voice-over table for human review or a voice actor. |
+
+`lint_narration_script` result: **0 errors, 0 warnings** (36 segments, 1,590 words, 705 s ≈ 11 min 45 s at 140 wpm).
+
+**Reference audio:** [`storyboard/audio/`](storyboard/audio/) — 10 clips, one per section, ~5 min,
+generated from the `tts_text` of the export (lexicon applied, so it's a real test of the
+pronunciations). See [`storyboard/audio/README.md`](storyboard/audio/README.md) for what to listen
+for. Voice route is still open (program **D10**) — this is a reference read, not the shipping audio.
+
+Still to do in this phase: `visual-plan.json` (Phase 2 exit gate), the remaining 26 audio clips, and
+`lint_authoring_plan(stage="planning")`.
+
 ## 1. Voice
 
 This module is the learner's first contact with My Clinic. Option to use a **human voice** (or a short welcome video from the CEO/HR head, recorded in-house) for `hr-000`/`hr-001` only; TTS for the rest. Decide in Phase 0 (program D10).
+
+**Reference voice (2026-10-14):** an English (GB) feminine voice, warm and coaching, ~140 wpm. Used only for the reference read in `storyboard/audio/`. It is **not** the production provider choice — that stays open until **D10** closes. When it closes, record the provider and voice id here, because the same voice must be used across all eight packages.
 
 ## 2. Narration outline
 
