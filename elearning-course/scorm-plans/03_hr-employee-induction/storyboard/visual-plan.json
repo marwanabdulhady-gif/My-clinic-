@@ -9,7 +9,7 @@
       "screen_id": "hr-000",
       "screen_type": "title_slide",
       "purpose": "Open: make the learner welcome and say what the next 45 minutes give them",
-      "visual_concept": "Official navy gradient cover with supplied white My Clinic lock-up at upper left, purple module chip, large white petal watermark cropped off the right edge, white title and mist subtitle; no photograph or generated logo.",
+      "visual_concept": "Official navy gradient background (background-title-navy.png, #003867 → #3B6A97) with the supplied white five-petal watermark (mark-white.png) cropped off the right edge; supplied white My Clinic logo top-left; Caring purple #652D8C module chip above the white Montserrat Bold title and mist #C0CED9 subtitle on the left; \"Meet your guides\": two white rounded portrait cards bottom-right, side by side — Dr. Omar (char-omar-welcome) and Noor (char-noor-welcome) waving — with name and role under each (mockup 07-meet-your-guides.png); tagline bottom-left; no photograph or generated logo",
       "layout": "L1 Title (n/a (`title_slide`))",
       "background_role": "primary",
       "text_role": "on_primary",
@@ -35,6 +35,20 @@
           "source": "client",
           "alt_text": null,
           "decorative": true
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-welcome (companions.md §3) — L1 duo, bottom-right (mockup 07); speaks: Omar + Noor.",
+          "source": "client",
+          "alt_text": "Dr. Omar, a family physician, smiling and waving hello.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-noor-welcome (companions.md §3) — L1 duo, bottom-right (mockup 07); speaks: Omar + Noor.",
+          "source": "client",
+          "alt_text": "Noor, a senior nurse and patient-safety liaison, smiling and waving hello.",
+          "decorative": false
         }
       ],
       "on_screen_text": null,
@@ -46,18 +60,18 @@
       "screen_id": "hr-001",
       "screen_type": "content_slide",
       "purpose": "Explain: the purpose, mission and goal, in plain words, and why it matters on the job",
-      "visual_concept": "Three stacked statement blocks on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top",
-      "layout": "L3 Content (`full_media` with the hero photo behind a 60% `light` scrim, text blocks left-aligned over it)",
+      "visual_concept": "Three stacked statement blocks in the left column on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top; Dr. Omar's half-body explaining pose stands in the right column, hand presenting towards the statements (companions.md §4 intro screen: the lead host replaces the illustration)",
+      "layout": "L3 Content (`text_media` — statements left, Dr. Omar half-body right column)",
       "background_role": "light",
       "text_role": "dark",
       "accent_role": "secondary",
       "imagery": [
         {
-          "kind": "photo",
-          "description": "hr-img-hero: Reused from `hr-000`, darker crop, scrim applied in the theme, not baked in",
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-explaining (companions.md §3) — L3 right column, half-body; speaks: Omar.",
           "source": "client",
-          "alt_text": null,
-          "decorative": true
+          "alt_text": "Dr. Omar, a family physician, presenting the clinic's purpose, mission and goal.",
+          "decorative": false
         }
       ],
       "on_screen_text": "**Purpose** — helping people live longer, healthier, happier lives · **Mission** — the world's most customer-centric healthcare company · **Goal** — outstanding patient experience + excellent clinical outcomes",
@@ -73,12 +87,20 @@
       "screen_id": "hr-002",
       "screen_type": "poll",
       "purpose": "Explore: an unscored icebreaker that makes the learner commit to something they care about before any policy appears",
-      "visual_concept": "Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other”",
+      "visual_concept": "Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other”; Dr. Omar's small half-body listening pose (holding a tablet) stands beside the option area on the right, outside the cards — this is an unscored icebreaker, not a question",
       "layout": "L4 Question (n/a (`poll`))",
       "background_role": "surface",
       "text_role": "dark",
       "accent_role": "secondary",
-      "imagery": [],
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-listening (companions.md §3) — L3 small, beside the poll; speaks: Omar.",
+          "source": "client",
+          "alt_text": "Dr. Omar, a family physician, listening with a tablet in his hand.",
+          "decorative": false
+        }
+      ],
       "on_screen_text": "If you had one million Saudi riyals, where would you spend it?",
       "animation": "none",
       "interaction": "Pick the one closest to you, or write your own.",
@@ -401,9 +423,23 @@
         },
         {
           "kind": "illustration",
-          "description": "hr-char-noor` / `mentor-noor: Program mentor, three poses",
-          "source": "generate",
-          "alt_text": "Noor, a senior nurse and safety liaison, speaking.",
+          "description": "Shared programme companion asset char-noor-avatar-neutral (companions.md §3) — L5 avatar; speaks: Noor.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, listening.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-noor-avatar-happy (companions.md §3) — L5 avatar; speaks: Noor.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-noor-avatar-concern (companions.md §3) — L5 avatar; speaks: Noor.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, looking concerned.",
           "decorative": false
         }
       ],
@@ -514,12 +550,20 @@
       "screen_id": "hr-043",
       "screen_type": "worked_example",
       "purpose": "Explain: walk the sick-leave pay bands end to end, then ask the learner to predict the one variation that matters",
-      "visual_concept": "A five-row vertical ledger on a white card: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action",
+      "visual_concept": "A five-row vertical ledger on a white card in the left ~62% of the stage: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action; Dr. Omar's half-body thinking pose (hand at chin) stands in the right column, as if working the example through with the learner",
       "layout": "L3 Content (n/a (`worked_example`))",
       "background_role": "light",
       "text_role": "dark",
       "accent_role": "secondary",
-      "imagery": [],
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-thinking (companions.md §3) — L3 right column; speaks: Omar.",
+          "source": "client",
+          "alt_text": "Dr. Omar, a family physician, thinking through the example.",
+          "decorative": false
+        }
+      ],
       "on_screen_text": null,
       "animation": "none",
       "interaction": "Reveal why each step is taken, one step at a time.",
@@ -550,9 +594,9 @@
         },
         {
           "kind": "illustration",
-          "description": "hr-char-noor` / `mentor-noor: Program mentor, poses `explaining` and `neutral`",
-          "source": "generate",
-          "alt_text": "Noor, a senior nurse and safety liaison, at the leave desk.",
+          "description": "Shared programme companion asset char-noor-avatar-neutral (companions.md §3) — L5 avatar; speaks: Noor.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, hosting the leave desk.",
           "decorative": false
         }
       ],
@@ -731,6 +775,13 @@
           "source": "screenshot",
           "alt_text": "Oracle Add Leaves form with dates entered and a Submit button.",
           "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-avatar-neutral (companions.md §3) — L4 feedback avatar / tip after the simulation; speaks: Omar.",
+          "source": "client",
+          "alt_text": "Dr. Omar, a family physician, giving a tip.",
+          "decorative": false
         }
       ],
       "on_screen_text": "Five steps. These screenshots come from a test account, so nothing here is real.",
@@ -886,12 +937,27 @@
       "screen_id": "hr-091",
       "screen_type": "summary",
       "purpose": "Close: say what the learner can now do, and hand them the two things they need next",
-      "visual_concept": "A five-item checklist on the left, each with a small tick glyph; on the right two stacked action cards — one for the HR Quick Reference download, one for the onboarding survey — and a single line naming the next module",
+      "visual_concept": "A five-item checklist on the left, each with a small tick glyph; under it two side-by-side action cards — one for the HR Quick Reference download, one for the onboarding survey; Dr. Omar's half-body success pose (thumbs up) on the right; a single “Next” line along the bottom names module 07, with Noor's small happy avatar beside it because she hosts that module",
       "layout": "L6 Results / close (n/a (`summary`))",
       "background_role": "light",
       "text_role": "dark",
       "accent_role": "secondary",
-      "imagery": [],
+      "imagery": [
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-omar-success (companions.md §3) — L6; speaks: Omar + Noor.",
+          "source": "client",
+          "alt_text": "Dr. Omar, a family physician, smiling and giving a thumbs up.",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "Shared programme companion asset char-noor-avatar-happy (companions.md §3) — L6; speaks: Omar + Noor.",
+          "source": "client",
+          "alt_text": "Noor, the safety liaison, smiling.",
+          "decorative": false
+        }
+      ],
       "on_screen_text": "You can now: live the values · raise a concern · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid",
       "animation": "fade-up",
       "interaction": null,

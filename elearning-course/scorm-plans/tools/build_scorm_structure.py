@@ -56,10 +56,11 @@ def narration(module_dir, sb_text):
         words, speakers = {}, {}
         for s in segs:
             t = s.get("narration", "")
-            speakers[s["screen_id"]] = sorted(set(re.findall(r"\b(NOOR|OMAR):", t)))
+            sid = s["screen_id"]
+            speakers[sid] = sorted(set(speakers.get(sid, [])) | set(re.findall(r"\b(NOOR|OMAR):", t)))
             t = re.sub(r"\[\[.*?\]\]", "", t)
             t = re.sub(r"\b(NOOR|OMAR):", "", t)
-            words[s["screen_id"]] = len(t.split())
+            words[sid] = words.get(sid, 0) + len(t.split())
         return words, speakers, "narration-script.json"
     return {}, {}, None
 

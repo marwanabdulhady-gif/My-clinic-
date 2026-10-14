@@ -11,14 +11,15 @@ outputs below are generated from those cards, so the storyboard stays the single
 | File | What it is |
 |---|---|
 | [`storyboard/visual-plan.json`](storyboard/visual-plan.json) | `VisualPlan` — 36 screens with brand roles, layouts `L1`–`L6`, imagery, `on_screen_text`, `cue_targets`. `lint_visual_plan(plan, brand)` → **0 errors, 0 warnings**. |
-| [`storyboard/narration-script.json`](storyboard/narration-script.json) | `NarrationScript` — 36 segments with `on_screen_text`, `target_sec` and tone, plus the module lexicon. Input to `lint_narration_script`. |
-| [`storyboard/audio-script-export.json`](storyboard/audio-script-export.json) | Output of `export_audio_script`: per screen `tts_text` (lexicon applied), `ssml`, `narration_text` (captions), filename, `est_sec` and estimated cue times. |
-| [`storyboard/voice_talent.md`](storyboard/voice_talent.md) | Voice-over table for human review or a voice actor. |
+| [`storyboard/narration-script.json`](storyboard/narration-script.json) | `NarrationScript` — 39 speaker-tagged segments for 36 screens (`part` = `omar` / `noor` / `omar-1` / `noor-1` / `omar-tip`) with `on_screen_text`, `target_sec` and tone, plus the module lexicon (incl. Noor, Omar). Input to `lint_narration_script`. |
+| [`storyboard/audio-script-export.json`](storyboard/audio-script-export.json) | Output of `export_audio_script`: per line `tts_text` (lexicon applied, speaker label removed), `ssml`, `narration_text` (captions, speaker kept), `speaker`, per-line `filename`, per-screen `screen_file`, `est_sec` and estimated cue times. |
+| [`storyboard/voice_talent.md`](storyboard/voice_talent.md) | Voice-over tables for the two voices (Dr. Omar, Noor) and the two-voice join instructions; provider pending D10. |
+| [`storyboard/asset-register.md`](storyboard/asset-register.md) · [`storyboard/screen-visuals.html`](storyboard/screen-visuals.html) · [`storyboard/lint-report.json`](storyboard/lint-report.json) | v0.2 review-pack files: asset hand-off (shared companion assets, brand assets, planned module assets), branded screen review board with companion previews, and the planning lint report. |
 
 `lint_visual_plan(plan, brand)` result: **0 errors, 0 warnings** (36 screens).
-`lint_narration_script(script, plan)` result: **0 errors, 0 warnings** (36 segments, 1,590 words, 705 s ≈ 11 min 45 s at 140 wpm).
+`lint_narration_script(script, plan)` result (v0.2): **0 errors, 0 warnings** (39 segments, 1,628 words excluding speaker labels, ≈ 12 min at 140 wpm; the lint's own estimate, which counts each label as a word, is 738 s ≈ 12.3 min).
 
-**Reference audio:** [`storyboard/audio/`](storyboard/audio/) — 10 clips, one per section, ~5 min,
+**Reference audio (v0.1, superseded — single voice, made before the companions):** [`storyboard/audio/`](storyboard/audio/) — 10 clips, one per section, ~5 min,
 generated from the `tts_text` of the export (lexicon applied, so it's a real test of the
 pronunciations). See [`storyboard/audio/README.md`](storyboard/audio/README.md) for what to listen
 for. Voice route is still open (program **D10**) — this is a reference read, not the shipping audio.
@@ -51,7 +52,7 @@ Character bible: [`../00_program/characters/companions.md`](../00_program/charac
 - Visible on 8 screens (about one in three or fewer). Not visible on question screens except as a feedback avatar.
 - Spoken lines in scripts are prefixed `OMAR:` / `NOOR:`; two-voice screens are split into one segment per line (`part` = `omar-1`, `noor-1`, …) and joined into one audio file per screen (companions.md §5).
 - Character images are the shared program assets `char-noor-*` / `char-omar-*` (companions.md §3); no module-specific character art.
-- **Storyboard v0.1 and its narration script (`storyboard/`) were written before the companions existed** and use a single narrator. In the next revision: prefix lines with `OMAR:` / `NOOR:` per the table above, add the `hr-000` duo introduction, change `mentor-noor` to the `char-noor-*` asset ids, and re-export the audio script.
+- **Done in storyboard v0.2 (2026-10-14):** every line in `storyboard/` is prefixed `OMAR:` / `NOOR:` per the table above (Dr. Omar 35 lines, Noor 4); the `hr-000` duo introduction and the `hr-091` two-voice close are split into `omar-1` / `noor-1` parts; Omar's first-week story is on `hr-001`; the `hr-061` tip has its own `omar-tip` line; the old module-only mentor art is replaced by the shared `char-noor-*` / `char-omar-*` asset ids; and `narration-script.json`, `audio-script-export.json`, `voice_talent.md`, `visual-plan.json`, `asset-register.md`, `screen-visuals.html` and `lint-report.json` were regenerated (lint 0 errors, 0 warnings). The v0.1 reference clips in `storyboard/audio/` are single-voice and superseded.
 
 ## 2. Narration outline
 

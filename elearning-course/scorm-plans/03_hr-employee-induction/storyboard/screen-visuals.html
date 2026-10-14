@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Clinic — Module 03 visual storyboard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+:root{--navy:#003867;--ink:#1F2A37;--bg:#F4F7FA;--line:#D9E1E8;--muted:#5B6B7B;--accent:#652D8C;--omar:#008C99;--noor:#652D8C;--surface:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+header{background:var(--navy);color:#fff;padding:42px max(16px,5vw)}header img{width:188px;max-width:60%;height:auto}header h1{font-size:clamp(24px,4vw,32px);margin:20px 0 6px}header p{max-width:850px;color:#C0CED9;line-height:1.5}
+main{max-width:1160px;margin:28px auto;padding:0 16px}.notice{border-left:4px solid var(--accent);background:#fff;padding:16px 20px;border-radius:8px;margin-bottom:16px;line-height:1.5}
+.guides{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 24px}.guides figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;gap:12px;align-items:center;flex:1 1 260px}.guides img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--c)}.guides figcaption{font-size:13px;line-height:1.45}.guides b{color:var(--navy)}
+.filter{margin:0 0 18px;font-size:14px}.filter label{cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:start}.board{margin:0}
+.screen{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;padding:30px 40px;box-shadow:0 8px 24px rgba(0,56,103,.08)}
+.screen .logo{width:142px;height:auto;position:absolute;left:40px;top:20px;z-index:2}.header-rule{position:absolute;left:40px;right:40px;top:63px;height:2px;background:var(--navy)}
+.crumb{margin:55px 0 10px;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}
+.screen h2{font-size:clamp(18px,2.3vw,28px);line-height:1.15;color:var(--navy);margin:0 0 12px;max-width:70%}.keywords{font-size:clamp(11px,1.3vw,14px);line-height:1.45;max-width:60%;margin:0}
+.title-screen{background:linear-gradient(135deg,#003867,#3B6A97);padding:72px 48px;color:#fff}.title-screen .logo{left:48px;top:34px;width:180px}.title-screen h2{color:#fff;font-size:clamp(24px,3.6vw,40px);max-width:55%;margin-top:56px}.title-screen .sub{color:#C0CED9;max-width:50%}
+.chip{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em;margin:0}
+.watermark{position:absolute;right:-40px;bottom:-120px;font-size:300px;opacity:.08;line-height:1}
+.choice-row{position:absolute;left:40px;right:40px;bottom:36px;display:flex;gap:10px}.choice-row span{height:40px;flex:1;border:1px solid var(--line);border-radius:10px;background:#fff}
+.scenario .choice-row span:first-child{border:2px solid var(--accent)}.content-cards{display:flex;gap:10px;margin-top:20px;max-width:60%}.content-cards span{height:46px;flex:1;background:#fff;border:1px solid var(--line);border-radius:10px}
+.with-companion .choice-row{right:34%}.progress{position:absolute;bottom:0;left:0;width:42%;height:5px;background:var(--accent)}
+.halfbody{position:absolute;right:28px;bottom:0;height:78%;max-width:30%;object-fit:contain;object-position:bottom}.halfbody.small{height:56%}
+.duo{position:absolute;right:28px;bottom:26px;display:flex;gap:10px;height:72%}.pcard{margin:0;background:#fff;border-radius:16px;border-top:4px solid var(--c);width:clamp(70px,13vw,120px);display:flex;flex-direction:column;overflow:hidden}.pcard.omar{--c:var(--omar)}.pcard.noor{--c:var(--noor)}
+.pcard img{flex:1;min-height:0;width:100%;object-fit:cover;object-position:top}.pcard figcaption{color:var(--navy);font-weight:600;font-size:clamp(8px,1vw,12px);padding:5px 6px;line-height:1.2}.pcard figcaption span{display:block;font-weight:400;color:var(--muted)}
+.avatar{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--c);background:#fff;flex:none}
+.avatar-row{position:absolute;right:40px;top:78px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--navy)}.avatar-row.noor,.next-line{--c:var(--noor)}
+.tip{--c:var(--omar);position:absolute;left:40px;bottom:90px;max-width:62%;display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-left:4px solid var(--omar);border-radius:10px;padding:8px 10px}.tip p{margin:0;font-size:clamp(10px,1.2vw,13px);line-height:1.4}.tip b{display:block;color:var(--navy)}
+.next-line{position:absolute;left:40px;bottom:18px;display:flex;gap:8px;align-items:center;font-size:12px;font-weight:600;color:var(--navy)}.next-line .avatar{width:36px;height:36px}
+.caption{font-size:12px;color:var(--muted);padding:9px 4px;line-height:1.45}code{color:#006E78;font-family:ui-monospace,monospace}
+body.only-comp .board:not(.has-comp){display:none}
+@media(max-width:600px){.screen{padding:20px}.screen .logo{left:16px;top:14px;width:96px}.header-rule{left:16px;right:16px;top:44px}.crumb{margin-top:38px}.screen h2{max-width:64%;font-size:16px}.keywords{display:none}.choice-row{left:16px;right:16px;bottom:16px}.title-screen{padding:56px 20px}.title-screen .logo{left:20px}.tip{left:16px;bottom:64px;max-width:86%}.avatar-row{right:16px;top:52px}.next-line{left:16px}}
+</style></head><body>
+<header><img src="../../00_program/brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Module 03 · screen visual review</h1><p>Welcome On Board: My Clinic &amp; HR Essentials · storyboard v0.2 (2026-10-14) · module colour Caring purple #652D8C · lead host Dr. Omar, co-host Noor.</p></header>
+<main><div class="notice"><strong>Review artefact, not a SCORM preview.</strong> These boards show layout (L1–L6), client-logo placement, screen hierarchy, the one-module-colour rule and where the course companions appear. Final wording is governed by <a href="storyboard.md"><code>storyboard.md</code></a>; companion images are low-resolution previews of the shared programme assets (<a href="../../00_program/characters/companions.md"><code>companions.md</code></a> §3). Policy values, Oracle screenshots (B8) and hotspot coordinates remain subject to the module's source lock.</div>
+<div class="guides"><figure style="--c:#008C99"><img src="../../00_program/characters/previews/char-omar-avatar-neutral.jpg" alt="Dr. Omar, a family physician."><figcaption><b>Dr. Omar · lead host</b><br>Narrates every screen except Noor's lines · visible on 6 screens · teal #008C99 accents</figcaption></figure><figure style="--c:#652D8C"><img src="../../00_program/characters/previews/char-noor-avatar-neutral.jpg" alt="Noor, a senior nurse and safety liaison."><figcaption><b>Noor · co-host</b><br>Hosts the ethics scenario and the leave desk; second voice on the welcome and close · visible on 4 screens</figcaption></figure></div>
+<p class="filter"><label><input type="checkbox" id="only"> Show only the 8 companion screens</label></p>
+<div class="grid">
+<article class="board has-comp" id="hr-000">
+  <div class="screen title-screen"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><p class="chip">MODULE 03</p><h2>Welcome On Board</h2><p class="sub">My Clinic &amp; HR essentials · about 45 minutes</p><span class="watermark">✿</span><div class="duo"><figure class="pcard omar"><img class="" src="../../00_program/characters/previews/char-omar-welcome.jpg" alt="Dr. Omar, a family physician, smiling and waving hello."><figcaption>Dr. Omar<span>Family physician</span></figcaption></figure><figure class="pcard noor"><img class="" src="../../00_program/characters/previews/char-noor-welcome.jpg" alt="Noor, a senior nurse and patient-safety liaison, smiling and waving hello."><figcaption>Noor<span>Senior nurse</span></figcaption></figure></div></div>
+  <div class="caption"><code>hr-000</code> · <code>title_slide</code> · L1 Title · voice: Dr. Omar + Noor · companion: Omar + Noor · <code>char-omar-welcome + char-noor-welcome (= char-duo-welcome)</code> · L1 duo, bottom-right (mockup 07)</div>
+</article>
+<article class="board has-comp" id="hr-001">
+  <div class="screen content with-companion"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · A · Welcome</p><h2>Why we exist</h2><p class="keywords">Purpose — helping people live longer, healthier, happier lives · Mission — the world&#x27;s most customer-centric healthcare company · Goal — outstanding patient experience + </p><img class="halfbody" src="../../00_program/characters/previews/char-omar-explaining.jpg" alt="Dr. Omar, a family physician, presenting the clinic&#x27;s purpose, mission and goal."><div class="progress"></div></div>
+  <div class="caption"><code>hr-001</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · companion: Omar · <code>char-omar-explaining</code> · L3 right column, half-body</div>
+</article>
+<article class="board has-comp" id="hr-002">
+  <div class="screen question with-companion"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · A · Welcome</p><h2>One million riyals</h2><p class="keywords">If you had one million Saudi riyals, where would you spend it?</p><div class="choice-row"><span></span><span></span><span></span></div><img class="halfbody small" src="../../00_program/characters/previews/char-omar-listening.jpg" alt="Dr. Omar, a family physician, listening with a tablet in his hand."><div class="progress"></div></div>
+  <div class="caption"><code>hr-002</code> · <code>poll</code> · L4 Question · voice: Dr. Omar · companion: Omar · <code>char-omar-listening</code> · L3 small, beside the poll</div>
+</article>
+<article class="board" id="hr-010">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · B · Our values &amp; strategy</p><h2>Our four values</h2><p class="keywords">Values are behaviours. Open each one and look for something you already do.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-010</code> · <code>tabs</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-011">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · B · Our values &amp; strategy</p><h2>Values in action</h2><p class="keywords">Six things people did this week. Match each one to the value behind it.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-011</code> · <code>matching</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-012">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · B · Our values &amp; strategy</p><h2>The 7C strategy</h2><p class="keywords">Seven pillars. Open the ones your role touches — you&#x27;re not expected to memorise all seven.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-012</code> · <code>accordion</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-013">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · B · Our values &amp; strategy</p><h2>Which pillar?</h2><p class="keywords">(stem only — see prompt below)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-013</code> · <code>mcq</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-014">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · B · Our values &amp; strategy</p><h2>Who we serve</h2><p class="keywords">Patients &amp; families — sick or healthy · Community · Corporates &amp; insurers</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-014</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-020">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C · Our clinic</p><h2>Our story so far</h2><p class="keywords">From one clinic in Jeddah to a network across the west and Riyadh.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-020</code> · <code>timeline</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-021">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C · Our clinic</p><h2>Where we are</h2><p class="keywords">Seven sites. You&#x27;ll hear these codes every day — open each pin.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-021</code> · <code>hotspot</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-022">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C · Our clinic</p><h2>Meet our leaders</h2><p class="keywords">Chief Executive Officer · Chief Medical Officer · Chief Operating Officer · Chief Finance Officer</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-022</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-023">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C · Our clinic</p><h2>What we&#x27;ve been recognised for</h2><p class="keywords">Flip each card. Accreditation is measured, not given — and it has to be earned again.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-023</code> · <code>flashcards</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-030">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · D · Ethics &amp; patients&#x27; rights</p><h2>Our code of ethics</h2><p class="keywords">Respect · Integrity · Accountability · Innovation &amp; collaboration · Ethical dilemma? Incident report within 24 hours + ethics team.</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-030</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board has-comp" id="hr-031">
+  <div class="screen scenario"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L5 Scenario · D · Ethics &amp; patients&#x27; rights</p><h2>A supplier you know</h2><p class="keywords">Three moments, three decisions. Nobody is watching.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="avatar-row noor"><img class="avatar" src="../../00_program/characters/previews/char-noor-avatar-neutral.jpg" alt="Noor, the safety liaison, listening."><span><b>Noor</b> · Safety liaison</span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-031</code> · <code>decision_scenario</code> · L5 Scenario · voice: Noor · companion: Noor · <code>char-noor-avatar-neutral → -concern / -happy</code> · L5 avatar</div>
+</article>
+<article class="board" id="hr-032">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · D · Ethics &amp; patients&#x27; rights</p><h2>Rights or responsibilities?</h2><p class="keywords">Nine statements from the notice in reception. Sort them into the right column.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-032</code> · <code>drag_drop</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-033">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · D · Ethics &amp; patients&#x27; rights</p><h2>She said no</h2><p class="keywords">(stem only — the stem is the prompt, not body copy)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-033</code> · <code>mcq</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-040">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · E · Your leave</p><h2>Where help lives</h2><p class="keywords">Your HR help desk — one per business unit · Request everything in Oracle · Full rules: HR Quick Reference PDF</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-040</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-041">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · E · Your leave</p><h2>Leave at a glance</h2><p class="keywords">Nine types. Open the one you need — the full tables are in the Quick Reference.</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-041</code> · <code>accordion</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-042">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · E · Your leave</p><h2>How many days?</h2><p class="keywords">Four grades, four entitlements. Match each grade to its annual leave, in working days.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-042</code> · <code>matching</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board has-comp" id="hr-043">
+  <div class="screen content with-companion"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · E · Your leave</p><h2>Forty days of sick leave</h2><p class="keywords">(problem statement in intro_html; steps carry their own text)</p><div class="content-cards"><span></span><span></span><span></span></div><img class="halfbody" src="../../00_program/characters/previews/char-omar-thinking.jpg" alt="Dr. Omar, a family physician, thinking through the example."><div class="progress"></div></div>
+  <div class="caption"><code>hr-043</code> · <code>worked_example</code> · L3 Content · voice: Dr. Omar · companion: Omar · <code>char-omar-thinking</code> · L3 right column</div>
+</article>
+<article class="board has-comp" id="hr-044">
+  <div class="screen scenario"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L5 Scenario · E · Your leave</p><h2>The leave desk</h2><p class="keywords">Four colleagues, four questions. You&#x27;re the one they&#x27;ve asked.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="avatar-row noor"><img class="avatar" src="../../00_program/characters/previews/char-noor-avatar-neutral.jpg" alt="Noor, the safety liaison, hosting the leave desk."><span><b>Noor</b> · Safety liaison</span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-044</code> · <code>decision_scenario</code> · L5 Scenario · voice: Noor · companion: Noor · <code>char-noor-avatar-neutral</code> · L5 avatar</div>
+</article>
+<article class="board" id="hr-045">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · E · Your leave</p><h2>Leave rules: quick practice</h2><p class="keywords">Answer until the practice says you&#x27;re ready. It stops early if you&#x27;ve got it.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-045</code> · <code>adaptive_practice</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-050">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · F · Pay &amp; social insurance</p><h2>What GOSI is</h2><p class="keywords">General Organization for Social Insurance · Saudi employees only · 9.75% you + 11.75% My Clinic = 21.5% of basic + housing</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-050</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-051">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · F · Pay &amp; social insurance</p><h2>Working out 585 riyals</h2><p class="keywords">(problem statement in intro_html)</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-051</code> · <code>worked_example</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-052">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · F · Pay &amp; social insurance</p><h2>Your turn</h2><p class="keywords">Basic 6,000 + housing 1,500. Your monthly GOSI deduction = ___ SAR</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-052</code> · <code>fill_blank</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-053">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · F · Pay &amp; social insurance</p><h2>Working out overtime</h2><p class="keywords">(problem statement in intro_html)</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-053</code> · <code>worked_example</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-054">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · F · Pay &amp; social insurance</p><h2>Four hours on Tuesday</h2><p class="keywords">(stem only)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-054</code> · <code>mcq</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-060">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · G · Systems &amp; licences</p><h2>Which system?</h2><p class="keywords">Six tasks, four systems. Match each task to where it happens.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-060</code> · <code>matching</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board has-comp" id="hr-061">
+  <div class="screen scenario"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L5 Scenario · G · Systems &amp; licences</p><h2>Book your leave in Oracle</h2><p class="keywords">Five steps. These screenshots come from a test account, so nothing here is real.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="tip omar"><img class="avatar" src="../../00_program/characters/previews/char-omar-avatar-neutral.jpg" alt="Dr. Omar, a family physician, giving a tip."><p><b>Omar's tip</b> Submitted isn't approved. Check the request status in Oracle before you book flights or hotels.</p></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-061</code> · <code>simulation</code> · L5 Scenario · voice: Dr. Omar · companion: Omar · <code>char-omar-avatar-neutral + tip card</code> · L4 feedback avatar / tip after the simulation</div>
+</article>
+<article class="board" id="hr-062">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · G · Systems &amp; licences</p><h2>Thirty days left</h2><p class="keywords">(statement only)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-062</code> · <code>true_false</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-070">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · H · ID, benefits &amp; dress code</p><h2>Your ID card and benefits</h2><p class="keywords">Lost card → email HR. Replacement fee ⚠ PENDING B4. Damaged card → replaced free.</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-070</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-071">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · H · ID, benefits &amp; dress code</p><h2>What do you wear?</h2><p class="keywords">Six rules, three groups. Place each rule where it applies.</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-071</code> · <code>drag_drop</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-080">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · I · Contracts &amp; leaving</p><h2>If you ever leave</h2><p class="keywords">Accept your contract on Qiwa · Resign in Oracle · Notice: 2 months both ways · EOS + experience certificate within 15 days</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-080</code> · <code>content_slide</code> · L3 Content · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-081">
+  <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · I · Contracts &amp; leaving</p><h2>Three weeks&#x27; notice</h2><p class="keywords">(stem only)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-081</code> · <code>mcq</code> · L4 Question · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board" id="hr-090">
+  <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L6 Results / close · Z · Close</p><h2>How you did</h2><p class="keywords">One row per objective. Anything below 70% comes with a suggestion.</p><div class="progress"></div></div>
+  <div class="caption"><code>hr-090</code> · <code>results_breakdown</code> · L6 Results / close · voice: Dr. Omar · no companion visible · voice only</div>
+</article>
+<article class="board has-comp" id="hr-091">
+  <div class="screen content with-companion"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L6 Results / close · Z · Close</p><h2>You&#x27;re ready</h2><p class="keywords">You can now: live the values · raise a concern · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid</p><img class="halfbody" src="../../00_program/characters/previews/char-omar-success.jpg" alt="Dr. Omar, a family physician, smiling and giving a thumbs up."><div class="next-line"><img class="avatar" src="../../00_program/characters/previews/char-noor-success.jpg" alt="Noor, the safety liaison, smiling."><span>Next: module 07 with Noor</span></div><div class="progress"></div></div>
+  <div class="caption"><code>hr-091</code> · <code>summary</code> · L6 Results / close · voice: Dr. Omar + Noor · companion: Omar + Noor · <code>char-omar-success + char-noor-avatar-happy</code> · L6</div>
+</article>
+</div></main>
+<script>document.getElementById('only').addEventListener('change',function(e){document.body.classList.toggle('only-comp',e.target.checked)});</script>
+</body></html>

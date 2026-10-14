@@ -15,7 +15,7 @@
 | Pass mark | 70% = **102 / 145 points** |
 | Screens | 36 in 10 outline sections |
 | Scored screens | 15 · scenarios, games and simulations: 4 |
-| Narration | 36 narrated screens · ≈11.5 min at 140 wpm (from `narration-script.json`) |
+| Narration | 36 narrated screens · ≈11.0 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 6 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -107,9 +107,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-000` | `title_slide` | Welcome On Board |  | — | 🗣 Both | untagged · 13 s |
-| 2 | `hr-001` | `content_slide` | Why we exist |  | — | 🗣 Omar | untagged · 37 s |
-| 3 | `hr-002` | `poll` | One million riyals |  | — | 🗣 Omar | untagged · 10 s |
+| 1 | `hr-000` | `title_slide` | Welcome On Board |  | — | 🗣 Both | Noor · 9 s |
+| 2 | `hr-001` | `content_slide` | Why we exist |  | — | 🗣 Omar | Omar · 37 s |
+| 3 | `hr-002` | `poll` | One million riyals |  | — | 🗣 Omar | Omar · 10 s |
 
 ### `hr-sB` — B · Our values & strategy
 
@@ -117,11 +117,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-010` | `tabs` | Our four values |  | — | — | untagged · 35 s |
-| 2 | `hr-011` ★ | `matching` | Values in action | 10 | hr-o1 | — | untagged · 7 s |
-| 3 | `hr-012` | `accordion` | The 7C strategy |  | — | — | untagged · 43 s |
-| 4 | `hr-013` ★ | `mcq` | Which pillar? | 5 | hr-o1 | — | untagged · 7 s |
-| 5 | `hr-014` | `content_slide` | Who we serve |  | — | — | untagged · 19 s |
+| 1 | `hr-010` | `tabs` | Our four values |  | — | — | Omar · 35 s |
+| 2 | `hr-011` ★ | `matching` | Values in action | 10 | hr-o1 | — | Omar · 7 s |
+| 3 | `hr-012` | `accordion` | The 7C strategy |  | — | — | Omar · 43 s |
+| 4 | `hr-013` ★ | `mcq` | Which pillar? | 5 | hr-o1 | — | Omar · 7 s |
+| 5 | `hr-014` | `content_slide` | Who we serve |  | — | — | Omar · 19 s |
 
 ### `hr-sC` — C · Our clinic
 
@@ -129,10 +129,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-020` | `timeline` | Our story so far |  | — | — | untagged · 31 s |
-| 2 | `hr-021` | `hotspot` | Where we are |  | — | — | untagged · 13 s |
-| 3 | `hr-022` | `content_slide` | Meet our leaders |  | — | — | untagged · 20 s |
-| 4 | `hr-023` | `flashcards` | What we've been recognised for |  | — | — | untagged · 17 s |
+| 1 | `hr-020` | `timeline` | Our story so far |  | — | — | Omar · 31 s |
+| 2 | `hr-021` | `hotspot` | Where we are |  | — | — | Omar · 13 s |
+| 3 | `hr-022` | `content_slide` | Meet our leaders |  | — | — | Omar · 20 s |
+| 4 | `hr-023` | `flashcards` | What we've been recognised for |  | — | — | Omar · 17 s |
 
 ### `hr-sD` — D · Ethics & patients' rights
 
@@ -140,10 +140,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-030` | `content_slide` | Our code of ethics |  | — | — | untagged · 35 s |
-| 2 | `hr-031` ★ | `decision_scenario` | A supplier you know | 15 | hr-o2 | 🗣 Noor | untagged · 15 s |
-| 3 | `hr-032` ★ | `drag_drop` | Rights or responsibilities? | 10 | hr-o2 | — | untagged · 8 s |
-| 4 | `hr-033` ★ | `mcq` | She said no | 5 | hr-o2 | — | untagged · 9 s |
+| 1 | `hr-030` | `content_slide` | Our code of ethics |  | — | — | Omar · 35 s |
+| 2 | `hr-031` ★ | `decision_scenario` | A supplier you know | 15 | hr-o2 | 🗣 Noor | Noor · 15 s |
+| 3 | `hr-032` ★ | `drag_drop` | Rights or responsibilities? | 10 | hr-o2 | — | Omar · 8 s |
+| 4 | `hr-033` ★ | `mcq` | She said no | 5 | hr-o2 | — | Omar · 9 s |
 
 ### `hr-sE` — E · Your leave
 
@@ -151,12 +151,12 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-040` | `content_slide` | Where help lives |  | — | — | untagged · 27 s |
-| 2 | `hr-041` | `accordion` | Leave at a glance |  | — | — | untagged · 39 s |
-| 3 | `hr-042` ★ | `matching` | How many days? | 5 | hr-o3 | — | untagged · 6 s |
-| 4 | `hr-043` | `worked_example` | Forty days of sick leave |  | — | 🗣 Omar | untagged · 41 s |
-| 5 | `hr-044` ★ | `decision_scenario` | The leave desk | 15 | hr-o3 | 🗣 Noor | untagged · 12 s |
-| 6 | `hr-045` ★ | `adaptive_practice` | Leave rules: quick practice | 15 | hr-o3 | — | untagged · 11 s |
+| 1 | `hr-040` | `content_slide` | Where help lives |  | — | — | Omar · 27 s |
+| 2 | `hr-041` | `accordion` | Leave at a glance |  | — | — | Omar · 39 s |
+| 3 | `hr-042` ★ | `matching` | How many days? | 5 | hr-o3 | — | Omar · 6 s |
+| 4 | `hr-043` | `worked_example` | Forty days of sick leave |  | — | 🗣 Omar | Omar · 41 s |
+| 5 | `hr-044` ★ | `decision_scenario` | The leave desk | 15 | hr-o3 | 🗣 Noor | Noor · 12 s |
+| 6 | `hr-045` ★ | `adaptive_practice` | Leave rules: quick practice | 15 | hr-o3 | — | Omar · 11 s |
 
 ### `hr-sF` — F · Pay & social insurance
 
@@ -164,11 +164,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-050` | `content_slide` | What GOSI is |  | — | — | untagged · 27 s |
-| 2 | `hr-051` | `worked_example` | Working out 585 riyals |  | — | — | untagged · 28 s |
-| 3 | `hr-052` ★ | `fill_blank` | Your turn | 10 | hr-o4 | — | untagged · 6 s |
-| 4 | `hr-053` | `worked_example` | Working out overtime |  | — | — | untagged · 35 s |
-| 5 | `hr-054` ★ | `mcq` | Four hours on Tuesday | 10 | hr-o4 | — | untagged · 9 s |
+| 1 | `hr-050` | `content_slide` | What GOSI is |  | — | — | Omar · 27 s |
+| 2 | `hr-051` | `worked_example` | Working out 585 riyals |  | — | — | Omar · 28 s |
+| 3 | `hr-052` ★ | `fill_blank` | Your turn | 10 | hr-o4 | — | Omar · 6 s |
+| 4 | `hr-053` | `worked_example` | Working out overtime |  | — | — | Omar · 35 s |
+| 5 | `hr-054` ★ | `mcq` | Four hours on Tuesday | 10 | hr-o4 | — | Omar · 9 s |
 
 ### `hr-sG` — G · Systems & licences
 
@@ -176,9 +176,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-060` ★ | `matching` | Which system? | 10 | hr-o5 | — | untagged · 8 s |
-| 2 | `hr-061` ★ | `simulation` | Book your leave in Oracle | 15 | hr-o5 | 🗣 Omar | untagged · 12 s |
-| 3 | `hr-062` ★ | `true_false` | Thirty days left | 5 | hr-o5 | — | untagged · 8 s |
+| 1 | `hr-060` ★ | `matching` | Which system? | 10 | hr-o5 | — | Omar · 8 s |
+| 2 | `hr-061` ★ | `simulation` | Book your leave in Oracle | 15 | hr-o5 | 🗣 Omar | Omar · 9 s |
+| 3 | `hr-062` ★ | `true_false` | Thirty days left | 5 | hr-o5 | — | Omar · 8 s |
 
 ### `hr-sH` — H · ID, benefits & dress code
 
@@ -186,8 +186,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-070` | `content_slide` | Your ID card and benefits |  | — | — | untagged · 25 s |
-| 2 | `hr-071` ★ | `drag_drop` | What do you wear? | 10 | hr-o6 | — | untagged · 9 s |
+| 1 | `hr-070` | `content_slide` | Your ID card and benefits |  | — | — | Omar · 25 s |
+| 2 | `hr-071` ★ | `drag_drop` | What do you wear? | 10 | hr-o6 | — | Omar · 9 s |
 
 ### `hr-sI` — I · Contracts & leaving
 
@@ -195,8 +195,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-080` | `content_slide` | If you ever leave |  | — | — | untagged · 22 s |
-| 2 | `hr-081` ★ | `mcq` | Three weeks' notice | 5 | hr-o6 | — | untagged · 7 s |
+| 1 | `hr-080` | `content_slide` | If you ever leave |  | — | — | Omar · 22 s |
+| 2 | `hr-081` ★ | `mcq` | Three weeks' notice | 5 | hr-o6 | — | Omar · 7 s |
 
 ### `hr-sZ` — Z · Close
 
@@ -204,8 +204,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hr-090` | `results_breakdown` | How you did |  | — | — | untagged · 12 s |
-| 2 | `hr-091` | `summary` | You're ready |  | — | 🗣 Omar + Noor | untagged · 27 s |
+| 1 | `hr-090` | `results_breakdown` | How you did |  | — | — | Omar · 12 s |
+| 2 | `hr-091` | `summary` | You're ready |  | — | 🗣 Omar + Noor | Noor · 7 s |
 
 ## 5. Objectives, evidence and scoring
 
