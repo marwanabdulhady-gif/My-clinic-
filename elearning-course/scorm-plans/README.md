@@ -101,6 +101,7 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/narration-production-plan.md`](00_program/narration-production-plan.md) — production workflow and copy-ready external audio-agent handoff; final voices remain blocked by D10
 - [`00_program/visual-production-plan.md`](00_program/visual-production-plan.md) and [`00_program/visual-generation-prompts.md`](00_program/visual-generation-prompts.md) — character-aware visual handoff, image prompts, pending assets and optional video prompt
+- [`00_program/visual-and-motion-agent-brief.md`](00_program/visual-and-motion-agent-brief.md) — recommended cast, minimal asset list, video-count decision, HyperFrames/Remotion choice and copy-ready image/audio/motion-agent instructions
 - [`00_program/scenario-design-plan.md`](00_program/scenario-design-plan.md) and [`00_program/gamification-plan.md`](00_program/gamification-plan.md) — proposal-aligned scenario inventory, game mechanics, retries, scoring and accessibility
 - [`00_program/client-context.md`](00_program/client-context.md) — researched public context for My Clinic KSA, with current website discrepancies and approval cautions
 - [`00_program/plan-audit.md`](00_program/plan-audit.md) — proposal-to-plan verdict, current test results and remaining release blockers
