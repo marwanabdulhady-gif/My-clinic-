@@ -52,6 +52,7 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
 - [`00_program/cross-module-decisions.md`](00_program/cross-module-decisions.md) — decisions that affect several modules (emergency codes, Code Orange threshold, branch names, regulator name, personal data)
+- [`00_program/storyboard-template/`](00_program/storyboard-template/) — full storyboard template, screen-type guide, worked examples and review checklist for the agent that writes each module's screen-by-screen storyboard
 
 ---
 

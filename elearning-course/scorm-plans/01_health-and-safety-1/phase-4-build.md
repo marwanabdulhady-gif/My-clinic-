@@ -115,10 +115,14 @@ Ids, text and structure are final; wording is subject to SME review.
 **Capstone game (`hs1-950`)** — mechanics block
 ```json
 { "type": "game", "id": "hs1-950", "template": "case_sim", "points": 25, "pass_score": 2,
-  "mechanics": { "score": { "start": 0 }, "lives": { "max": 3 }, "hint": { "per_node": 1 } },
+  "mechanics": {
+    "score": { "id": "score", "start": 0 },
+    "lives": { "id": "lives", "start": 3 },
+    "hints": { "id": "hint", "hints": [ { "text": "People first, then the hazard.", "cost": 0 } ] }
+  },
   "intro_html": "<p>One afternoon shift. Three things go wrong. Your decisions decide how it ends.</p>" }
 ```
-*Exact `mechanics` and `rules` keys follow `docs/GAME-PATTERNS.md` at build time; confirm with `list_screen_types`.*
+*Node and choice structure (`content_html`, `choices[].to`, `on_choose`) follows `examples/games/lab-safety-game.en.json` in the edumints repo and `../00_program/storyboard-template/screen-type-guide.md`.*
 
 ## 5. Build order
 
