@@ -1,6 +1,6 @@
 # Video — IT: EHR Consultation Workflow Walkthrough (Module Source)
 
-> **Source file:** `google_drive/IT.mp4` *(not committed to git yet — it contains a non-test patient record; see README §3, item 18)*
+> **Source file:** `google_drive/IT.mp4` *(committed to git on owner decision — it contains non-test patient identifiers; see README §3, item 18)*
 > **Drive folder:** top level of the course folder
 > **Size:** 35,459,607 bytes · **Duration:** 8 min 38 s · **Video:** 1920×912
 > **Last modified in Drive:** 2026-10-07

@@ -24,7 +24,7 @@ A short list of Drive IDs is not recorded in these files because they were not a
 ## 2. Repository decisions
 
 - **Quality video is committed** (`google_drive/Quality, Safety and Risk Orientation.mp4`, 39 MB, plain Git; Git LFS is not available in this sandbox). It contains no patient data.
-- **IT video is not committed yet** (`google_drive/IT.mp4`, 35 MB, gitignored). It shows a non-test patient record (item 18). Commit it only after the recording is anonymised or the team accepts that risk.
+- **IT video is committed** (`google_drive/IT.mp4`, 35 MB) on the owner's decision. It shows non-test patient identifiers (item 18). The identifiers stay in the branch history until it is rewritten. Anonymise the file before sharing outside the team.
 - **Screenshots** are in `media/` (about 9 MB). 35 IT frames that show personal identifiers are withheld. The Quality frames have no identifiers.
 - **Source IDs and sizes** are in `SOURCES.md`.
 - **Other sources are committed** (about 17 MB in total) so the course team can trace each module to its source.
