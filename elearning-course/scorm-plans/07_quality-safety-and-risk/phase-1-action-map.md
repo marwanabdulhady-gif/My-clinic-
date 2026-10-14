@@ -40,5 +40,5 @@ Fewer preventable patient-safety events and more near-miss reports, submitted on
 
 ## 5. Pedagogy notes
 
-- **Human vulnerability** fits this module: the welcome poll asks (anonymously) whether the learner has ever stayed silent about something unsafe; the mentor shares a short honest story of a near miss she reported. This makes speaking up normal.
+- **Human vulnerability** fits this module: the welcome poll asks (anonymously) whether the learner has ever stayed silent about something unsafe; Noor shares a short honest story of a near miss she reported. This makes speaking up normal.
 - Every abstract model (S-P-O, PDCA, matrix, iceberg) is followed immediately by one concrete decision.

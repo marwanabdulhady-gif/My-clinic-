@@ -2,6 +2,21 @@
 
 Gate: `lint_visual_plan(plan, brand)`. ★ = scored. "Src" = page in `Health & Safety 2.pdf` (or `01` for a module 01 page).
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Noor**, co-host **Dr. Omar** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| hs2-000 | Noor (`char-noor-welcome`) | L1 half-body bottom-right |
+| hs2-011 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| hs2-030 | Noor + Omar (`char-noor-avatar (host); char-omar-avatar (node 2)`) | L5 avatar |
+| hs2-052 | Omar (`char-omar-avatar-neutral → -happy / -concern`) | L5 avatar |
+| hs2-064 | Noor (`char-noor-tip (hints)`) | L5 avatar beside hint text |
+| hs2-090 | Noor + Omar (`char-noor-success + char-omar-avatar-happy`) | L6 |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## Part A — Welcome & risk
 
 | Id | Type | Purpose | On screen | Interaction / feedback | Pts | Src |

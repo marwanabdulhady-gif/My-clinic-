@@ -6,29 +6,46 @@ Gates: `lint_narration_script` → `export_audio_script` → `lint_authoring_pla
 
 The source video is silent. Narration is **light**: a short spoken intro on each simulation screen (why this step matters), then the learner follows on-screen instructions. Simulations have `lock_until_complete: false`. Every instruction is in text, so the module works with sound off.
 
+## Companions in this module (Noor and Dr. Omar)
+
+Character bible: [`../00_program/characters/companions.md`](../00_program/characters/companions.md). **Lead host: Omar** (narrates every narrated screen unless listed below). **Co-host: Noor**.
+
+| Screen | Visible | Pose / asset | Placement (brand layout) | Speaks | What they do |
+|---|---|---|---|---|---|
+| ehr-000 | Omar | `char-omar-welcome` | L1 half-body bottom-right | Omar | Welcome |
+| ehr-001 | Omar | `char-omar-explaining` | L3 right column | Omar | Why complete, specific, linked |
+| ehr-020 | Omar | `char-omar-avatar-neutral + tip card` | L5 avatar above the simulation | Omar | Diagnosis story (companions.md §1) |
+| ehr-042 | Noor | `char-noor-avatar-neutral + tip card` | L3 tip card | Noor | Tip: a two-minute education talk saves a phone call later |
+| ehr-050 | Omar | `char-omar-avatar-neutral` | L5 avatar | Omar | Referral simulation intro |
+| ehr-091 | Omar | `char-omar-success` | L6 right | Omar | Close |
+
+- Visible on 6 screens (about one in three or fewer). Not visible on question screens except as a feedback avatar.
+- Spoken lines in scripts are prefixed `OMAR:` / `NOOR:`; two-voice screens are split into one segment per line (`part` = `omar-1`, `noor-1`, …) and joined into one audio file per screen (companions.md §5).
+- Character images are the shared program assets `char-noor-*` / `char-omar-*` (companions.md §3); no module-specific character art.
+
 ## 2. Narration outline
 
-| Screen | Sec | Narration intent |
-|---|---|---|
-| ehr-000 | 12 | You'll practise a full consultation on a test patient; mistakes are safe here. |
-| ehr-001 | 25 | Complete, specific, linked — on the day. Read the disclaimer. |
-| ehr-002 | 30 | The nine steps at a glance. |
-| ehr-010 | 10 | Start from today's list. |
-| ehr-011 | 25 | The mandatory sections; save as you go. |
-| ehr-012 | 8 | Set up. |
-| ehr-020 | 20 | Search by code or name; the primary diagnosis drives everything after it. Mentor: "My first week, I typed 'diabetes' and picked the first line. It wasn't the one I meant." |
-| ehr-030 | 25 | Five ways to find an order; the Form Wizard checks a package before you commit. |
-| ehr-031 | 15 | Link every medication to the diagnosis you assessed. |
-| ehr-032 | 10 | Review the package; remove what you don't need. |
-| ehr-033 / 034 | 8 each | Set up. |
-| ehr-040 | 10 | The summary is the record the patient takes home. |
-| ehr-041 | 12 | Education by SMS, matched to the diagnosis code. |
-| ehr-042 | 20 | Patient & family education is required before you finish. |
-| ehr-050 | 15 | Internal referral and follow-up. |
-| ehr-051 | 8 | Set up. |
-| ehr-052 | 20 | Completing the encounter; where to get help. |
-| ehr-090 | 10 | Read your results. |
-| ehr-091 | 15 | Close. |
+| Screen | Speaker | Sec | Narration intent |
+|---|---|---|---|
+| ehr-000 | Omar | 12 | You'll practise a full consultation on a test patient; mistakes are safe here. |
+| ehr-001 | Omar | 25 | Complete, specific, linked — on the day. Read the disclaimer. |
+| ehr-002 | Omar | 30 | The nine steps at a glance. |
+| ehr-010 | Omar | 10 | Start from today's list. |
+| ehr-011 | Omar | 25 | The mandatory sections; save as you go. |
+| ehr-012 | Omar | 8 | Set up. |
+| ehr-020 | Omar | 20 | Search by code or name; the primary diagnosis drives everything after it. Omar's story: "My first week, I typed 'diabetes' and picked the first line. It wasn't the one I meant." |
+| ehr-030 | Omar | 25 | Five ways to find an order; the Form Wizard checks a package before you commit. |
+| ehr-031 | Omar | 15 | Link every medication to the diagnosis you assessed. |
+| ehr-032 | Omar | 10 | Review the package; remove what you don't need. |
+| ehr-033 / 034 | Omar | 8 each | Set up. |
+| ehr-040 | Omar | 10 | The summary is the record the patient takes home. |
+| ehr-041 | Omar | 12 | Education by SMS, matched to the diagnosis code. |
+| ehr-042 | Noor | 20 | Patient & family education is required before you finish. |
+| ehr-050 | Omar | 15 | Internal referral and follow-up. |
+| ehr-051 | Omar | 8 | Set up. |
+| ehr-052 | Omar | 20 | Completing the encounter; where to get help. |
+| ehr-090 | Omar | 10 | Read your results. |
+| ehr-091 | Omar | 15 | Close. |
 
 Estimated audio: ~5 minutes.
 
@@ -50,6 +67,7 @@ EHR, ICD-10, E11, HPI, CBC, TSH, ECG, SMS, IM/IV ("I-M, I-V"), drug names approv
 | ehr-shot-ref-1..6 | screenshots | ehr-050 | Referral and follow-up | own | per step |
 | ehr-pdf-quickref | PDF | ehr-091 | 1-page EHR consultation quick-reference card | own | n/a |
 | ehr-vid-walkthrough *(optional)* | MP4 + VTT | ehr-060 | Screen recording on test patient + voice-over; rendered outside the server (over the 60 s `render_motion_video` limit), uploaded with `add_asset` | own | transcript |
+| char-noor-* / char-omar-* | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." |
 | ehr-aud-* | audio | narrated screens | TTS | ai-generated | transcript |
 
 **Screenshot rules:** test environment only; fictional names, MRNs, phone and ID numbers; DPO reviews every image before upload; record the EHR version in each asset's notes. `media/08_it-ehr-walkthrough/` frames are **reference only**.

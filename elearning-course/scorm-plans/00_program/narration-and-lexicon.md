@@ -10,20 +10,27 @@ Playbook topics: `narration`, `audio`, `characters` · Gates: `lint_narration_sc
 | **Human voice talent** using `voice_talent.md` from `export_audio_script` | Optional for 03 (HR welcome) and 07 (Quality) if leadership wants a human voice | Budget, consent form |
 | Server Piper TTS | **Not for release 1.** The Docker image ships a Turkish voice only | — |
 
-Whatever the route: one voice for all eight packages, and `normalize_audio_asset` on every file so loudness matches.
+Whatever the route: **two fixed voices for all eight packages**, one for each companion, and `normalize_audio_asset` on every file so loudness matches.
+
+| Companion | Voice brief | Leads |
+|---|---|---|
+| **Noor** (`noor`) | Female, early-to-mid 30s, warm, calm, clear; international English, light Gulf Arabic accent welcome; ~140 wpm | 01, 02, 07 |
+| **Dr. Omar** (`omar`) | Male, late 30s, friendly, confident, relaxed; international English, light Gulf Arabic accent welcome; medium-low pitch; ~140 wpm | 03, 04, 05, 06, 08 |
+
+Provider and voice ids are recorded here when decision D10 is closed. Approve a 30-second sample of each voice before producing any module. Full rules: [`characters/companions.md`](characters/companions.md) §5.
 
 Do **not** reuse the Quality video's narration voice. It may be synthetic and its consent status is unknown (module 07 source note 5).
 
 ## 2. Writing rules (from the playbook, applied)
 
 1. Write for the ear: sentences of 25 words or fewer, contractions, one idea per sentence.
-2. Talk to one person ("you"), present tense, active voice. Persona: an experienced colleague on your first week.
+2. Talk to one person ("you"), present tense, active voice. Persona: an experienced colleague on your first week — in practice, the module's lead companion (Noor or Dr. Omar).
 3. The screen shows keywords; the narration explains. Never read the screen word for word.
 4. No interface talk ("click Next", "as you can see on this slide").
 5. First screen of each module says why it matters on the job. Last screen says what you can now do.
 6. Question screens: set up the situation and stop. Never narrate the answer. Feedback goes in the screen's feedback fields.
 7. Pace: **140 words per minute** (English). Each segment under 60 seconds; split longer ones.
-8. Human vulnerability where it fits: the mentor can admit a past mistake ("In my first month I nearly…"). Keep it short and real, never dramatic about patient harm.
+8. Human vulnerability where it fits: the companions (Noor, Dr. Omar) can admit a past mistake — see the honest stories in `characters/companions.md` §1 ("In my first month I nearly…"). Keep it short and real, never dramatic about patient harm.
 
 ## 3. Markup
 
@@ -36,6 +43,8 @@ Every module copies the entries it uses into its `narration-script.json`. Add ne
 
 | Term | Say it as | Modules |
 |---|---|---|
+| Noor | "noor" (rhymes with *tour*) | all |
+| Omar | "OH-mar" | all |
 | CBAHI | "see-bah-hee" (confirm local usage) | 01, 03 |
 | MOH | "M-O-H" | 01, 02, 06 |
 | ISO 45001 | "I-S-O forty-five thousand and one" | 01 |
@@ -101,11 +110,12 @@ Every module copies the entries it uses into its `narration-script.json`. Add ne
 
 ICD-10 codes are spoken letter-by-letter plus number, e.g. K52 → "K fifty-two".
 
-## 5. Characters (optional, shared)
+## 5. Companion characters
 
-| Id | Role | Identity | Variants |
-|---|---|---|---|
-| `mentor-noor` | Coach / narrator persona | Fictional senior nurse and safety liaison, Saudi woman in her 30s, navy scrubs, plain navy hijab, plain ID badge with no logo or text, purple (#652D8C) lanyard, calm warm expression. Flat vector style from `brand/brand-identity.md` §6. | neutral, explaining, concern, success, hint |
-| `newstarter-faisal` | Learner stand-in for scenarios | Fictional new staff member in business attire (front office) or scrubs (clinical scenes). | neutral, thinking, concern |
+Two fictional guides appear in every course: **Noor** (senior staff nurse and patient-safety liaison) and **Dr. Omar** (family physician and onboarding champion). Their identity, look, poses, assets, voices, speaking rules, honest stories and per-module plan are in **[`characters/companions.md`](characters/companions.md)**.
 
-Rules: no real staff likeness; one approved master image before any variant; same face, clothes and proportions in every pose; alt text on each use. Characters appear on scenario screens only, never as decoration on every slide (minimalist rule).
+Script rules in short:
+- The module's **lead host narrates** every narrated screen; the co-host speaks only where the module's Phase 3 companion table says so.
+- Prefix every line `NOOR:` or `OMAR:`. Two-voice screens: one segment per line (`part` = `noor-1`, `omar-1`, …), joined into one audio file per screen with 0.3 s gaps, then normalised.
+- `narration_text` keeps the speaker names for captions and transcripts.
+- Lexicon: **Noor** → "noor" (rhymes with *tour*); **Omar** → "OH-mar".

@@ -27,7 +27,7 @@ Write one storyboard file per module, with one completed screen card for **every
 1. `../../README.md` (scorm-plans overview) and `../cross-module-decisions.md`.
 2. The module's `README.md`, `phase-0-source-lock.md`, `phase-1-action-map.md`, `phase-2-storyboard.md`, `phase-3-narration-and-assets.md`, `phase-4-build.md`.
 3. The module's source file in `elearning-course/md/` (the Phase 2 *Src* column gives the page, slide or time). Facts come **only** from this source or from closed Phase 0 decisions.
-4. **`../brand/brand-identity.md` — the My Clinic brand identity (mandatory).** Logo files and placement, colour palette and the module colour, Montserrat type scale, icons, illustration style, the **AI image prompt template**, and the six screen layouts L1–L6 with mockups in `../brand/screen-mockups/`. Then `../brand-and-theme.md`, `../narration-and-lexicon.md` (voice, writing rules, lexicon) and `../build-pipeline.md` (settings, limits).
+4. **`../characters/companions.md` — the two companion characters (mandatory)**: who they are, poses and asset ids, placement, voices and script rules. Then **`../brand/brand-identity.md` — the My Clinic brand identity (mandatory).** Logo files and placement, colour palette and the module colour, Montserrat type scale, icons, illustration style, the **AI image prompt template**, and the six screen layouts L1–L6 with mockups in `../brand/screen-mockups/`. Then `../brand-and-theme.md`, `../narration-and-lexicon.md` (voice, writing rules, lexicon) and `../build-pipeline.md` (settings, limits).
 5. `screen-type-guide.md` and `example-screens.md` in this folder.
 
 ## 3. Rules (do not break)
@@ -39,7 +39,7 @@ Write one storyboard file per module, with one completed screen card for **every
 5. **Every scored screen** has: correct answer(s), feedback for correct and incorrect (and per choice for scenarios), `objective_ids`, `points` matching Phase 4.
 6. **Every meaningful image** has alt text; decorative images are marked decorative. Colour is never the only way to tell things apart.
 7. **Only supported edumints screen types** (see `screen-type-guide.md`). Hotspot regions are `rect` or `circle` only.
-8. **Mentor character** (`mentor-noor`) appears only where Phase 3 lists it.
+8. **Companions (Noor and Dr. Omar)** follow `../characters/companions.md`: the lead host narrates; each character appears and speaks only where the module's Phase 3 "Companions in this module" table says; every spoken line is prefixed `NOOR:` / `OMAR:`.
 9. Write in **plain, warm, professional English** (British spelling, as in the source decks).
 10. **Brand identity is mandatory.** Every card names its layout (L1–L6), the logo file and position, the module colour and the colour roles from `../brand/brand-identity.md`. Use only palette colours.
 11. **Never ask an image tool to draw the logo or the words "My Clinic".** The logo is always the supplied PNG in `../brand/assets/`. Images must contain no text.
@@ -85,6 +85,8 @@ Module folder: elearning-course/scorm-plans/<01_health-and-safety-1>/
    Follow elearning-course/scorm-plans/00_program/brand/brand-identity.md for every screen:
    layout L1–L6, logo file and position, module colour, palette, Montserrat sizes, and the
    AI image prompt template. Never generate the logo; never put text in images.
+   Use the companions Noor and Dr. Omar exactly as in 00_program/characters/companions.md and
+   the module's Phase 3 companion table; prefix every spoken line NOOR: or OMAR:.
 6. Run review-checklist.md on every card and fill the module summary tables.
 7. Commit the file on a new branch and open a pull request titled
    "Storyboard: <module title> v0.1".

@@ -41,7 +41,7 @@ Three finished cards showing the expected level of detail: an explain screen, a 
 | Watermark | None |
 | Icons | Flame, fuel log and O₂ line icons, navy, own SVG |
 | Animation / reveal | Labels reveal in narration order: heat → fuel → oxygen → smoke |
-| Character | None |
+| Companion | None |
 
 **Imagery**
 
@@ -61,12 +61,13 @@ Three finished cards showing the expected level of detail: an explain screen, a 
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR (lead host, module 01) |
 | Tone | Calm, clear |
 | Target seconds | 30 |
 | Word count / est. seconds | 74 words / ≈ 32 s |
 | Cue targets | `heat`, `fuel`, `oxygen`, `smoke` |
 
-> Every fire needs three things. [[cue:heat]] Heat to start it, [[cue:fuel]] something to burn, [[cue:oxygen]] and oxygen to keep it going. Take away any one of them and the fire stops. That's the idea behind every way we fight fire. [[pause:0.5]] [[cue:smoke]] But here's what catches people out. In a building, it's usually the smoke that kills, not the flames. Smoke moves faster than fire along corridors and through ducts. That's why RACE puts rescue and closing doors first.
+> NOOR: Every fire needs three things. [[cue:heat]] Heat to start it, [[cue:fuel]] something to burn, [[cue:oxygen]] and oxygen to keep it going. Take away any one of them and the fire stops. That's the idea behind every way we fight fire. [[pause:0.5]] [[cue:smoke]] But here's what catches people out. In a building, it's usually the smoke that kills, not the flames. Smoke moves faster than fire along corridors and through ducts. That's why RACE puts rescue and closing doors first.
 
 New lexicon terms: None (RACE already in the master lexicon)
 
@@ -138,7 +139,7 @@ New lexicon terms: None (RACE already in the master lexicon)
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | None |
+| Companion | None |
 
 **Imagery:** None (text-only interaction).
 
@@ -158,12 +159,13 @@ New lexicon terms: None (RACE already in the master lexicon)
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Encouraging |
 | Target seconds | 8 |
 | Word count / est. seconds | 16 words / ≈ 7 s |
 | Cue targets | None |
 
-> You've just seen smoke coming from a room. Four things need to happen. In what order?
+> NOOR: You've just seen smoke coming from a room. Four things need to happen. In what order?
 
 New lexicon terms: None
 
@@ -235,11 +237,11 @@ New lexicon terms: None
 | Logo | `logo-horizontal-navy.png`, 30 px, header top-left; "Decision n of 3" right |
 | Visual concept | One illustration per node: corridor with a small hand-rub bottle leaking; store room floor with a large tipped disinfectant container; lab bench with a small reagent bottle marked with the skull GHS pictogram |
 | edumints layout | n/a (decision_scenario) |
-| Colours (palette names + hex) | bg white #FFFFFF · situation text ink #1F2A37 · choice cards white with #D9E1E8 border · highlight Ambitious teal #008C99 · mentor ring Caring purple #652D8C · feedback green/red with icon + words |
+| Colours (palette names + hex) | bg white #FFFFFF · situation text ink #1F2A37 · choice cards white with #D9E1E8 border · highlight Ambitious teal #008C99 · companion ring (Noor purple #652D8C) · feedback green/red with icon + words |
 | Watermark | None |
 | Icons | None |
 | Animation / reveal | None |
-| Character | `mentor-noor` (concern) on the intro only |
+| Companion | Noor · `char-noor-avatar-concern` on the intro, `-happy` / `-concern` after each choice · scenario avatar above the situation (L5) · tip text n/a |
 
 **Imagery**
 
@@ -285,12 +287,13 @@ watermarks, no brand names.
 
 | Field | Value |
 |---|---|
+| Speaker(s) | NOOR |
 | Tone | Serious, calm |
 | Target seconds | 15 |
 | Word count / est. seconds | 28 words / ≈ 12 s |
 | Cue targets | None |
 
-> Spills happen every week in a clinic. Most are small. A few need the whole facility to respond. You'll see three. For each one, decide what you'd do.
+> NOOR: Spills happen every week in a clinic. Most are small. A few need the whole facility to respond. You'll see three. For each one, decide what you'd do.
 
 New lexicon terms: None
 

@@ -4,6 +4,21 @@ Gate: `lint_visual_plan`. ★ = scored. "Src" = time in `IT.mp4` (for the **work
 
 Simulation steps use `regions` (click) or `input_accepted` (type). Each step has `instruction_html`, `image_alt` and `hint_html`.
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Dr. Omar**, co-host **Noor** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| ehr-000 | Omar (`char-omar-welcome`) | L1 half-body bottom-right |
+| ehr-001 | Omar (`char-omar-explaining`) | L3 right column |
+| ehr-020 | Omar (`char-omar-avatar-neutral + tip card`) | L5 avatar above the simulation |
+| ehr-042 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| ehr-050 | Omar (`char-omar-avatar-neutral`) | L5 avatar |
+| ehr-091 | Omar (`char-omar-success`) | L6 right |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## A — Intro & workflow map
 
 | Id | Type | Purpose | On screen | Interaction / feedback | Pts | Src |

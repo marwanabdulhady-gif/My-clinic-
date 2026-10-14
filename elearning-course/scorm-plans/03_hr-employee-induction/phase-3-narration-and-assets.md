@@ -30,45 +30,65 @@ This module is the learner's first contact with My Clinic. Option to use a **hum
 
 **Reference voice (2026-10-14):** an English (GB) feminine voice, warm and coaching, ~140 wpm. Used only for the reference read in `storyboard/audio/`. It is **not** the production provider choice — that stays open until **D10** closes. When it closes, record the provider and voice id here, because the same voice must be used across all eight packages.
 
+## Companions in this module (Noor and Dr. Omar)
+
+Character bible: [`../00_program/characters/companions.md`](../00_program/characters/companions.md). **Lead host: Omar** (narrates every narrated screen unless listed below). **Co-host: Noor**.
+
+| Screen | Visible | Pose / asset | Placement (brand layout) | Speaks | What they do |
+|---|---|---|---|---|---|
+| hr-000 | Both | `char-duo-welcome` | L1 duo, bottom-right (mockup 07) | Omar + Noor | "Meet your guides": both introduce themselves (first course in the learning path) |
+| hr-001 | Omar | `char-omar-explaining` | L3 right column, half-body | Omar | First-week story (companions.md §1) |
+| hr-002 | Omar | `char-omar-listening` | L3 small, beside the poll | Omar | Invites the icebreaker |
+| hr-031 | Noor | `char-noor-avatar-neutral → -concern / -happy` | L5 avatar | Noor | Ethics scenario host (as in the v0.1 storyboard) |
+| hr-043 | Omar | `char-omar-thinking` | L3 right column | Omar | Talks through the sick-leave worked example |
+| hr-044 | Noor | `char-noor-avatar-neutral` | L5 avatar | Noor | Leave-desk host (as in the v0.1 storyboard) |
+| hr-061 | Omar | `char-omar-avatar-neutral + tip card` | L4 feedback avatar / tip after the simulation | Omar | Tip: check the request status before you book travel |
+| hr-091 | Omar + Noor | `char-omar-success + char-noor-avatar-happy` | L6 | Omar + Noor | Two-voice close; Noor previews module 07 |
+
+- Visible on 8 screens (about one in three or fewer). Not visible on question screens except as a feedback avatar.
+- Spoken lines in scripts are prefixed `OMAR:` / `NOOR:`; two-voice screens are split into one segment per line (`part` = `omar-1`, `noor-1`, …) and joined into one audio file per screen (companions.md §5).
+- Character images are the shared program assets `char-noor-*` / `char-omar-*` (companions.md §3); no module-specific character art.
+- **Storyboard v0.1 and its narration script (`storyboard/`) were written before the companions existed** and use a single narrator. In the next revision: prefix lines with `OMAR:` / `NOOR:` per the table above, add the `hr-000` duo introduction, change `mentor-noor` to the `char-noor-*` asset ids, and re-export the audio script.
+
 ## 2. Narration outline
 
-| Screen | Sec | Narration intent |
-|---|---|---|
-| hr-000 | 15 | Warm welcome; what the next 45 minutes give you. |
-| hr-001 | 35 | Why My Clinic exists, in plain words; a short honest line: "Everyone here remembers their own first week — and how much there was to take in." |
-| hr-002 | 10 | Invite the icebreaker; no right answer. |
-| hr-010 | 40 | Values are behaviours, not posters; one example for each. |
-| hr-011 | 8 | Set up. |
-| hr-012 | 45 | The 7Cs explain where the company is going; find the pillar your role touches most. |
-| hr-013 | 8 | Set up. |
-| hr-014 | 20 | Who we serve, including people who are healthy today. |
-| hr-020 | 30 | From one clinic in 2017 to a network; what each step added. |
-| hr-021 | 15 | Explore the branches; you'll hear their codes (J1, J2…) every day. |
-| hr-022 | 20 | The leadership team and what each role looks after. |
-| hr-023 | 15 | Recognition we're proud of — and that we have to keep earning. |
-| hr-030 | 35 | The four ethics values; when in doubt, ask and report within 24 hours. |
-| hr-031 | 15 | Set up the supplier evaluation. |
-| hr-032 / 033 | 8 each | Set up. |
-| hr-040 | 25 | Where help lives: your HR mailbox, Oracle, and the quick-reference PDF. |
-| hr-041 | 40 | A quick tour of leave types; you'll practise the ones people ask about most. |
-| hr-042 | 8 | Set up. |
-| hr-043 | 40 | Talk through the sick-leave example step by step. |
-| hr-044 | 15 | Set up the leave desk: four colleagues, four questions. |
-| hr-045 | 10 | Set up adaptive practice: it stops early if you've got it. |
-| hr-050 | 30 | What GOSI is and why the deduction protects you. |
-| hr-051 | 30 | Work through 585 riyals aloud. |
-| hr-052 | 8 | Set up. |
-| hr-053 | 35 | Hourly rate first, then the multiplier. |
-| hr-054 | 8 | Set up. |
-| hr-060 | 10 | Set up: one system per task. |
-| hr-061 | 15 | Set up the simulation. |
-| hr-062 | 8 | Set up. |
-| hr-070 | 25 | ID card care; the benefits you can use from day one. |
-| hr-071 | 8 | Set up. |
-| hr-080 | 25 | Contracts on Qiwa; if you ever leave, how to do it well. |
-| hr-081 | 8 | Set up. |
-| hr-090 | 12 | Read your results. |
-| hr-091 | 25 | What you can now do; please complete the onboarding survey. |
+| Screen | Speaker | Sec | Narration intent |
+|---|---|---|---|
+| hr-000 | Omar + Noor | 15 | Warm welcome; what the next 45 minutes give you. |
+| hr-001 | Omar | 35 | Why My Clinic exists, in plain words; a short honest line: "Everyone here remembers their own first week — and how much there was to take in." |
+| hr-002 | Omar | 10 | Invite the icebreaker; no right answer. |
+| hr-010 | Omar | 40 | Values are behaviours, not posters; one example for each. |
+| hr-011 | Omar | 8 | Set up. |
+| hr-012 | Omar | 45 | The 7Cs explain where the company is going; find the pillar your role touches most. |
+| hr-013 | Omar | 8 | Set up. |
+| hr-014 | Omar | 20 | Who we serve, including people who are healthy today. |
+| hr-020 | Omar | 30 | From one clinic in 2017 to a network; what each step added. |
+| hr-021 | Omar | 15 | Explore the branches; you'll hear their codes (J1, J2…) every day. |
+| hr-022 | Omar | 20 | The leadership team and what each role looks after. |
+| hr-023 | Omar | 15 | Recognition we're proud of — and that we have to keep earning. |
+| hr-030 | Omar | 35 | The four ethics values; when in doubt, ask and report within 24 hours. |
+| hr-031 | Noor | 15 | Set up the supplier evaluation. |
+| hr-032 / 033 | Omar | 8 each | Set up. |
+| hr-040 | Omar | 25 | Where help lives: your HR mailbox, Oracle, and the quick-reference PDF. |
+| hr-041 | Omar | 40 | A quick tour of leave types; you'll practise the ones people ask about most. |
+| hr-042 | Omar | 8 | Set up. |
+| hr-043 | Omar | 40 | Talk through the sick-leave example step by step. |
+| hr-044 | Noor | 15 | Set up the leave desk: four colleagues, four questions. |
+| hr-045 | Omar | 10 | Set up adaptive practice: it stops early if you've got it. |
+| hr-050 | Omar | 30 | What GOSI is and why the deduction protects you. |
+| hr-051 | Omar | 30 | Work through 585 riyals aloud. |
+| hr-052 | Omar | 8 | Set up. |
+| hr-053 | Omar | 35 | Hourly rate first, then the multiplier. |
+| hr-054 | Omar | 8 | Set up. |
+| hr-060 | Omar | 10 | Set up: one system per task. |
+| hr-061 | Omar | 15 | Set up the simulation. |
+| hr-062 | Omar | 8 | Set up. |
+| hr-070 | Omar | 25 | ID card care; the benefits you can use from day one. |
+| hr-071 | Omar | 8 | Set up. |
+| hr-080 | Omar | 25 | Contracts on Qiwa; if you ever leave, how to do it well. |
+| hr-081 | Omar | 8 | Set up. |
+| hr-090 | Omar | 12 | Read your results. |
+| hr-091 | Omar + Noor | 25 | What you can now do; please complete the onboarding survey. |
 
 Estimated audio: ~13 minutes.
 
@@ -89,7 +109,7 @@ GOSI, SCFHS, Mumaris, Qiwa, HRMS, Oracle ("OR-uh-kul"), SAR, HHC, MCJ1 ("M-C-J-o
 | hr-img-oracle-1..5 | screenshots | hr-061 | Test-account screenshots, 1920×1080, no real names (B8) | own | per step, e.g. "Oracle Time and Absences page." |
 | hr-img-dress | illustrations ×3 | hr-071 feedback | Front office, medical team, back office outfits (replaces slide 58 art) | ai-generated | per role |
 | hr-pdf-quickref | PDF | hr-040, hr-091 | **HR Quick Reference** (2 pages): leave tables, GOSI, overtime, contacts — written by HR from confirmed policy | own | n/a |
-| hr-char-noor | character | hr-031, hr-044 | Program mentor (explaining, concern) | ai-generated | per pose |
+| char-noor-* / char-omar-* | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Noor, the safety liaison, explaining." |
 | hr-aud-* | audio | narrated screens | TTS (or human for hr-000/001) | ai-generated / own | transcript |
 
 ## 5. Activity plans

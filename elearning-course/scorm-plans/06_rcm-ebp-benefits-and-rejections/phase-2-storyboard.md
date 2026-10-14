@@ -2,6 +2,20 @@
 
 Gate: `lint_visual_plan`. ★ = scored. "Src" = slide in the 2026 deck. All benefit wording is **subject to B3**.
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Dr. Omar**, co-host **Noor** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| rcmb-000 | Omar (`char-omar-welcome`) | L1 half-body bottom-right |
+| rcmb-030 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| rcmb-050 | Omar (`char-omar-explaining`) | L3 right column |
+| rcmb-052 | Omar (`char-omar-avatar-neutral → -happy / -concern`) | L5 avatar |
+| rcmb-091 | Omar + Noor (`char-omar-success + char-noor-avatar-happy`) | L6 |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## A — Intro
 
 | Id | Type | Purpose | On screen | Interaction / feedback | Pts | Src |

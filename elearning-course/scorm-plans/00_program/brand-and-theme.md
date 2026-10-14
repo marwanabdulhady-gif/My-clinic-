@@ -52,7 +52,7 @@ Contrast gate: `brand_to_theme` will flag teal #008C99 for small text (4.0 : 1).
 | L2 Section opener | White + petal watermark | Navy | Module-colour tile |
 | L3 Content | White | Ink / Navy headings | Module colour bullets; magenta callout (max one) |
 | L4 Question | Off-white | Ink / Navy stem | Selected option navy; feedback green/red with icon + words |
-| L5 Scenario | White | Ink | Mentor ring purple |
+| L5 Scenario | White | Ink | Companion avatar ring (Noor purple / Omar teal) |
 | L6 Results / close | Off-white | Navy | Weak objectives flagged with icon + text |
 
 Emergency-code colours are content, shown as small chips next to the printed name, never as backgrounds.
