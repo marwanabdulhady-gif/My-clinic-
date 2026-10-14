@@ -16,6 +16,7 @@ rights and PHI decisions must be closed by the named SMEs before production buil
 from __future__ import annotations
 
 import argparse
+import csv
 import html
 import json
 import re
@@ -561,6 +562,50 @@ def retry_for(row: dict[str, Any]) -> str:
     if lives:
         return f"Untimed and keyboard-operable; {lives.group(0)}; retry/score handling is finalised in Phase 4."
     return "Untimed and keyboard-operable; allow retry unless the approved Phase 4/LMS policy says otherwise."
+
+
+def interaction_detail_gaps(row: dict[str, Any]) -> list[str]:
+    """Identify build-detail questions without judging or changing the source facts.
+
+    These are routing flags for the SME/authoring review register.  A flag means Phase 2 needs a
+    more explicit build field before Phase 4; it never means that an answer, policy rule or local
+    threshold should be invented by the generator.
+    """
+    if not row["scored"]:
+        return []
+    on_screen = row["on_screen"]
+    source = f"{on_screen} {row['interaction']}"
+    lower = source.lower()
+    gaps: list[str] = []
+    answer_signals = ("→" in on_screen or "✔" in on_screen or bool(re.search(r"\b(?:pairs?|labels?|nodes?|puzzles?|steps?)\b", on_screen, flags=re.I)))
+    if not answer_signals:
+        gaps.append("exact answer/route")
+    if not re.search(r"\b(?:feedback|debrief|wrong options?|consequences?|explains?|explained|why)\b", lower):
+        gaps.append("correct/incorrect feedback copy")
+    if row["type"] in {"decision_scenario", "game"} and not re.search(r"\b(?:pass[_ ]?score|score|lives?)\b", lower):
+        gaps.append("pass/replay rule")
+    # A simulation only needs accepted input variants when it asks the learner to type/search.
+    if row["type"] in {"fill_blank", "escape_room"} or (row["type"] == "simulation" and re.search(r"\b(?:type|input|search)\b", on_screen, flags=re.I)):
+        if not re.search(r"\b(?:accepted|aliases?|variants?|input_accepted)\b", lower):
+            gaps.append("accepted typed-input variants")
+    return gaps
+
+
+def _source_lock_ids(row: dict[str, Any]) -> list[str]:
+    return sorted(set(re.findall(r"\b(?:B|D)\d+\b", f"{row['on_screen']} {row['interaction']} {row['source']}")))
+
+
+def _review_action(gaps: list[str]) -> str:
+    clauses = []
+    if "exact answer/route" in gaps:
+        clauses.append("confirm the exact correct response and plausible distractors")
+    if "correct/incorrect feedback copy" in gaps:
+        clauses.append("write source-cited correct and retry rationale")
+    if "pass/replay rule" in gaps:
+        clauses.append("set pass score/lives and no-score-inflation replay behaviour")
+    if "accepted typed-input variants" in gaps:
+        clauses.append("list case, unit and spelling variants for typed input")
+    return "; ".join(clauses)
 
 
 def _tidy_intent(intent: str) -> str:
@@ -1257,7 +1302,8 @@ lock items have written SME decisions.
 
 **Companion documents:** [`screen-visuals.html`](screen-visuals.html) ·
 [`visual-plan.json`](visual-plan.json) · [`narration-script.json`](narration-script.json) ·
-[`voice_talent.md`](voice_talent.md) · [`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json).
+[`voice_talent.md`](voice_talent.md) · [`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json) ·
+[`programme SME/build-detail register`](../../00_program/storyboard-review-register.md).
 
 ---
 
@@ -1380,6 +1426,7 @@ def write_program_dashboard(results: list[dict[str, Any]]) -> None:
         "# My Clinic — storyboard production board", "", "![My Clinic logo](brand/logo-preview.png)", "",
         f"> Consolidated review status as at **{TODAY}**. This is a production-documentation board, not a statement that policy, clinical, payer or EHR content is approved.", "",
         "**Client-shareable Word renderings:** [`../client-review/README.md`](../client-review/README.md). The Markdown/JSON/HTML files below remain the editable production source.", "",
+        "**SME/build-detail queue:** [`storyboard-review-register.md`](storyboard-review-register.md) · [`CSV import`](storyboard-review-register.csv).", "",
         "## What is now documented", "",
         "| Module | Screen cards | Scored / points | Script + visual plan | Branded screen review | Asset register | Planning lint | Production status |",
         "|---|---:|---:|---|---|---|---|---|",
@@ -1393,13 +1440,144 @@ def write_program_dashboard(results: list[dict[str, Any]]) -> None:
         "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | 03 and 07 existed; 01, 02, 04, 05, 06 and 08 now have complete review-card packs. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Each new pack now has an editable narration script, voice-talent table, visual plan, asset register and logo placement rules. | D10 voice choice, approved scripts, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
         "## Decisions that still gate release", "", "1. **Safety:** Code Orange threshold, real emergency extensions, waste colours, radiation/laser details and facility-specific information (modules 01–02).", "2. **Operations:** live reporting lines, abbreviation expansions and escalation ownership (module 04).", "3. **RCM:** current payer/regulator wording, ICD-10 validation, benefits/limits and de-identified rejection classifications (modules 05–06).", "4. **EHR:** only a test environment/test patient may be captured; the existing source video is never a production asset (module 08).", "5. **Programme:** Marketing brand confirmation D11, two approved narration voices D10 and every asset’s provenance/approval record.", "",
         "## Asset work completed in this pass", "", "- Generated native editable SVG diagrams where facts can be changed after SME review.", "- Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.", "- Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.", "- Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.", "",
-        "## Next hand-off", "", "1. Circulate the relevant `storyboard/storyboard.md` and `screen-visuals.html` file to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for the six new packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",
+        "## Next hand-off", "", "1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for the six new packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",
     ]
     (PLANS / "00_program" / "storyboard-production-board.md").write_text("\n".join(md), encoding="utf-8")
 
     cards = "\n".join(f'<li><a href="../{r["folder"]}/storyboard/screen-visuals.html">{html.escape(r["number"] + " — " + r["title"])}</a><span>{r["screen_count"]} review boards · {r["scored"]} scored screens · {r["points"]} points</span></li>' for r in results)
-    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Clinic storyboard production board</title><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');*{{box-sizing:border-box}}body{{margin:0;background:#F4F7FA;color:#1F2A37;font-family:Montserrat,Arial,sans-serif}}header{{background:linear-gradient(135deg,#003867,#3B6A97);color:#fff;padding:54px max(26px,8vw)}}header img{{width:205px}}h1{{font-size:38px;margin:30px 0 8px}}header p{{color:#C0CED9;max-width:720px;line-height:1.55}}main{{max-width:980px;margin:32px auto;padding:0 24px}}.notice{{background:white;border-left:5px solid:#9D3293;padding:18px;border-radius:10px;line-height:1.55}}ul{{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}}li{{background:#fff;border:1px solid #D9E1E8;border-radius:14px;padding:22px;min-height:120px}}a{{color:#003867;font-weight:700;font-size:18px;text-decoration:none}}span{{display:block;color:#5B6B7B;font-size:13px;line-height:1.45;margin-top:10px}}.steps{{background:#fff;border-radius:14px;padding:24px;line-height:1.75}}code{{color:#006E78}}</style></head><body><header><img src="brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Storyboard production board</h1><p>Branded review documents, narration scripts, visual plans and asset hand-offs for the My Clinic e-learning programme.</p></header><main><section class="notice"><strong>Review before production.</strong> The visual work is ready to inspect; open Phase 0 facts, voices, test-environment captures and policy decisions are intentionally not represented as approved course content. <a href="../client-review/README.md">Open the client Word review-pack index.</a></section><h2>Branded screen review boards</h2><ul>{cards}</ul><section class="steps"><h2>Next hand-off</h2><ol><li>SMEs review the matching screen-card document and visual board.</li><li>Owners close the source-lock decisions in writing.</li><li>Approve Noor and Dr. Omar samples before shipping-audio production.</li><li>Build only after planning lint and source approval are clean.</li></ol></section></main></body></html>'''
+    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Clinic storyboard production board</title><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');*{{box-sizing:border-box}}body{{margin:0;background:#F4F7FA;color:#1F2A37;font-family:Montserrat,Arial,sans-serif}}header{{background:linear-gradient(135deg,#003867,#3B6A97);color:#fff;padding:54px max(26px,8vw)}}header img{{width:205px}}h1{{font-size:38px;margin:30px 0 8px}}header p{{color:#C0CED9;max-width:720px;line-height:1.55}}main{{max-width:980px;margin:32px auto;padding:0 24px}}.notice{{background:white;border-left:5px solid:#9D3293;padding:18px;border-radius:10px;line-height:1.55}}ul{{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}}li{{background:#fff;border:1px solid #D9E1E8;border-radius:14px;padding:22px;min-height:120px}}a{{color:#003867;font-weight:700;font-size:18px;text-decoration:none}}span{{display:block;color:#5B6B7B;font-size:13px;line-height:1.45;margin-top:10px}}.steps{{background:#fff;border-radius:14px;padding:24px;line-height:1.75}}code{{color:#006E78}}</style></head><body><header><img src="brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Storyboard production board</h1><p>Branded review documents, narration scripts, visual plans and asset hand-offs for the My Clinic e-learning programme.</p></header><main><section class="notice"><strong>Review before production.</strong> The visual work is ready to inspect; open Phase 0 facts, voices, test-environment captures and policy decisions are intentionally not represented as approved course content. <a href="../client-review/README.md">Open the client Word review-pack index.</a> <a href="storyboard-review-register.md">Open the SME/build-detail queue.</a></section><h2>Branded screen review boards</h2><ul>{cards}</ul><section class="steps"><h2>Next hand-off</h2><ol><li>SMEs review the matching screen-card document and visual board.</li><li>Owners close the source-lock decisions in writing.</li><li>Approve Noor and Dr. Omar samples before shipping-audio production.</li><li>Build only after planning lint and source approval are clean.</li></ol></section></main></body></html>'''
     (PLANS / "00_program" / "storyboard-production-board.html").write_text(page, encoding="utf-8")
+
+
+def write_sme_review_register(results: list[dict[str, Any]]) -> None:
+    """Create a source-safe queue for the authoring details that SME review must close.
+
+    This is deliberately a review register rather than an approval log.  It gives the named SMEs
+    a finite, screen-level queue while leaving policy facts and final build objects under their
+    existing Phase 0/4 controls.
+    """
+    result_by_folder = {item["folder"]: item for item in results}
+    summary_rows: list[str] = []
+    detail_rows: list[str] = []
+    csv_rows: list[dict[str, str]] = []
+    total_scored = 0
+    total_ready = 0
+    total_questions = 0
+
+    for folder in MODULES:
+        cfg = MODULES[folder]
+        module_dir = PLANS / folder
+        rows = parse_phase2(module_dir, cfg["prefix"])
+        scored_rows = [row for row in rows if row["scored"]]
+        flagged = [(row, interaction_detail_gaps(row)) for row in scored_rows]
+        flagged = [(row, gaps) for row, gaps in flagged if gaps]
+        ready_count = len(scored_rows) - len(flagged)
+        total_scored += len(scored_rows)
+        total_ready += ready_count
+        total_questions += len(flagged)
+        result = result_by_folder[folder]
+        storyboard_link = f"../{folder}/storyboard/storyboard.md"
+        visual_link = f"../{folder}/storyboard/screen-visuals.html"
+        summary_rows.append(
+            f"| {cfg['number']} — {cfg['title']} | {len(scored_rows)} | {ready_count} | {len(flagged)} | "
+            f"[{result['screen_count']} screen cards]({storyboard_link}) · [visual board]({visual_link}) |"
+        )
+        if not flagged:
+            continue
+        for row, gaps in flagged:
+            dependency_ids = _source_lock_ids(row)
+            dependency = ", ".join(f"`{item}`" for item in dependency_ids) if dependency_ids else "See module Phase 0 and programme D11"
+            action = _review_action(gaps)
+            card_link = f"[{row['id']}]({storyboard_link}#{row['id']})"
+            detail_rows.append(
+                f"| {cfg['number']} | {card_link} | `{row['type']}` | {safe_cell(', '.join(gaps))} | "
+                f"{safe_cell(action)} | {dependency} | {safe_cell(cfg['reviewers'])} + L&D/authoring |"
+            )
+            csv_rows.append({
+                "module": cfg["number"],
+                "module_title": cfg["title"],
+                "screen_id": row["id"],
+                "screen_type": row["type"],
+                "build_detail_to_close": "; ".join(gaps),
+                "requested_action": action,
+                "source_lock_ids": ", ".join(dependency_ids),
+                "review_owner": f"{cfg['reviewers']} + L&D/authoring",
+                "screen_card": storyboard_link + "#" + row["id"],
+                "status": "Open — review required before Phase 4",
+            })
+
+    visual_checks = [
+        ("01", "`hs1-404` / `hs1-img-corridor.png`", "Confirm all intended safety cues are factually depicted, then measure keyboard-reachable hotspot regions against the approved final image.", "Safety Manager + Facilities"),
+        ("02", "`hs2-011` / `hs2-img-storeroom.png`", "Confirm all six hazards, especially the blocked exit and extinguisher cue, are visually unambiguous before scored hotspot coordinates are set.", "Safety Manager + EHS"),
+        ("04", "`ops-031` / `ops-img-reception-scenario.png`", "Confirm neutral, fictional reception context and route any role/routing wording through the Operations SME; do not add personal data.", "Director of Operations + DPO"),
+        ("08", "All simulation captures", "Capture only a test environment and fictional test patient. Verify every click region, label and typed-input variant after capture.", "EHR Applications lead + DPO + Medical Director"),
+    ]
+    visual_rows = "\n".join(f"| {module} | {asset} | {safe_cell(check)} | {owner} |" for module, asset, check, owner in visual_checks)
+    markdown = f'''# My Clinic — SME review and build-detail register
+
+> **Review routing record · {TODAY}.** This register consolidates screen-level authoring details
+> that need review before Phase 4. It is not an approval log and does not turn an open source value
+> into course policy. Record final policy/source decisions in each module’s Phase 0 file and in
+> [`cross-module-decisions.md`](cross-module-decisions.md), then regenerate the affected pack.
+
+## What this register checks
+
+The register tests whether a **scored** Phase 2 row contains the source detail needed to make a
+specific build object: an answer/route, feedback cue, any pass/replay rule, and typed-input variants
+where the task asks the learner to type. A row not listed in the queue has source detail present;
+it is still a **draft** awaiting SME confirmation.
+
+| Scope | Count |
+|---|---:|
+| Scored review screens across the six new packs | {total_scored} |
+| Source-detail present in the Phase 2 brief | {total_ready} |
+| Screen-level build-detail review questions | {total_questions} |
+
+## Module triage
+
+| Module | Scored screens | Source-detail present | Build-detail questions | Review artefacts |
+|---|---:|---:|---:|---|
+{chr(10).join(summary_rows)}
+
+## Screen-level build-detail queue
+
+| Module | Screen | Type | Detail to close | Requested action | Source-lock reference | Review owner |
+|---|---|---|---|---|---|---|
+{chr(10).join(detail_rows) if detail_rows else '| — | — | — | No screen-level build-detail question identified. | — | — | — |'}
+
+### How to close a row
+
+1. The named domain SME confirms the controlled source detail and any associated Phase 0 decision.
+2. L&D/authoring writes the concrete type-specific field(s): options/pairs, answer variants,
+   feedback, branching paths, pass/replay rules or simulation regions.
+3. Update the Phase 2/3/4 plan where appropriate, regenerate the review pack, rerun the visual
+   and narration lint, and mark the row closed in the team’s tracker.
+4. Do **not** infer a local threshold, payer rule, system label, extension number or clinical fact
+   merely to clear this queue.
+
+## Visual and privacy sign-off queue
+
+| Module | Asset / screen | Check required | Review owner |
+|---|---|---|---|
+{visual_rows}
+
+## Release boundary
+
+- The six review packs are structurally complete and have clean visual-plan/narration lint reports.
+- This register is a **pre-build review queue**. It does not approve policy content, final visual
+  coordinates, shipping audio, test screenshots, SCORM packaging or LMS delivery.
+- The CSV sibling, `storyboard-review-register.csv`, is provided for importing into an external
+  tracker; `status` is intentionally initialised to **Open — review required before Phase 4**.
+'''
+    program_dir = PLANS / "00_program"
+    (program_dir / "storyboard-review-register.md").write_text(markdown, encoding="utf-8")
+    with (program_dir / "storyboard-review-register.csv").open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=[
+            "module", "module_title", "screen_id", "screen_type", "build_detail_to_close",
+            "requested_action", "source_lock_ids", "review_owner", "screen_card", "status",
+        ], lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(csv_rows)
 
 
 def main() -> None:
@@ -1416,6 +1594,7 @@ def main() -> None:
     # only in the all-modules run so a one-module correction does not hide the rest.
     if not args.modules:
         write_program_dashboard(results)
+        write_sme_review_register(results)
     print(json.dumps(results, indent=2))
 
 

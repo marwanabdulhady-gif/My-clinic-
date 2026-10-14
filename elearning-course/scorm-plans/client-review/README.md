@@ -2,6 +2,8 @@
 
 These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.
 
+Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.
+
 To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.
 
 | File | Contents |

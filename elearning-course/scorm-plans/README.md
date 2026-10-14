@@ -40,7 +40,9 @@ screen-card storyboard, branded HTML visual board, editable narration script, vi
 export, asset register and planning lint report. The visual-plan and narration-script reports are clean
 for those six packs; this is a **documentation-quality result only**, not SME/policy approval or a build
 release. Client-shareable Word renderings for all eight modules are in
-[`client-review/`](client-review/).
+[`client-review/`](client-review/). The screen-level authoring and visual sign-off queue is in
+[`00_program/storyboard-review-register.md`](00_program/storyboard-review-register.md) with a
+[tracker-import CSV](00_program/storyboard-review-register.csv).
 
 ---
 

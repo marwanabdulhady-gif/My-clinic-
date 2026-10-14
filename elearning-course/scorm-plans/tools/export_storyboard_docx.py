@@ -225,6 +225,8 @@ def make_program_pack(target: Path) -> None:
     doc.add_heading("My Clinic e-learning storyboard review pack", 0)
     doc.add_paragraph(f"Client review edition · {DATE}")
     doc.add_paragraph("This pack indexes the eight controlled storyboard documents. It makes clear what is ready for SME review and what remains blocked by policy, rights, voice or test-environment decisions.")
+    doc.add_heading("SME review queue", 1)
+    doc.add_paragraph("Use 00_program/storyboard-review-register.md and its CSV sibling alongside this pack. The register routes screen-level interaction detail, visual-hotspot and privacy checks to named review roles; it is a pre-build queue, not an approval record.")
     doc.add_heading("Review documents", 1)
     table = doc.add_table(rows=1, cols=4)
     table.style = "Light Shading Accent 1"
@@ -268,7 +270,7 @@ def main() -> None:
         exported.append(target.name)
     overview = OUTPUT / "MyClinic_Elearning_Storyboard_Review_Pack_v0.2.docx"
     make_program_pack(overview)
-    readme = ["# My Clinic — client-review documents", "", "These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.", "", "To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.", "", "| File | Contents |", "|---|---|"]
+    readme = ["# My Clinic — client-review documents", "", "These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.", "", "Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.", "", "To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.", "", "| File | Contents |", "|---|---|"]
     readme.append(f"| [{overview.name}]({overview.name}) | Programme overview, review route and release gates |")
     for filename in exported:
         readme.append(f"| [{filename}]({filename}) | Complete module screen cards, visual specification, narration and hand-off notes |")

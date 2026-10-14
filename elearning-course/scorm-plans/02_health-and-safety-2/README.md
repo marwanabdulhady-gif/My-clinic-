@@ -34,6 +34,6 @@ Health & Safety 2 covers much of the same ground as module 01 but as posters and
 
 ## Current status
 
-> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package.
+> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package. Use the [programme SME/build-detail review register](../00_program/storyboard-review-register.md) to route the remaining screen-level authoring and visual checks.
 
 **Blocked on Phase 0**: Code Orange (D1), extensions (D2), template origin (D12), blank spill-kit page (p.29), chemical register details (p.25).

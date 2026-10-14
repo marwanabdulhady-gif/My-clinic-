@@ -6,6 +6,8 @@
 
 **Client-shareable Word renderings:** [`../client-review/README.md`](../client-review/README.md). The Markdown/JSON/HTML files below remain the editable production source.
 
+**SME/build-detail queue:** [`storyboard-review-register.md`](storyboard-review-register.md) · [`CSV import`](storyboard-review-register.csv).
+
 ## What is now documented
 
 | Module | Screen cards | Scored / points | Script + visual plan | Branded screen review | Asset register | Planning lint | Production status |
@@ -47,7 +49,7 @@
 
 ## Next hand-off
 
-1. Circulate the relevant `storyboard/storyboard.md` and `screen-visuals.html` file to each named SME.
+1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.
 2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.
 3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.
 4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.

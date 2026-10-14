@@ -9,7 +9,8 @@
 
 **Companion documents:** [`screen-visuals.html`](screen-visuals.html) ·
 [`visual-plan.json`](visual-plan.json) · [`narration-script.json`](narration-script.json) ·
-[`voice_talent.md`](voice_talent.md) · [`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json).
+[`voice_talent.md`](voice_talent.md) · [`asset-register.md`](asset-register.md) · [`lint-report.json`](lint-report.json) ·
+[`programme SME/build-detail register`](../../00_program/storyboard-review-register.md).
 
 ---
 

@@ -34,6 +34,6 @@ The 2026 deck adds two things the script doesn't have: the **Added & Amended ben
 
 ## Current status
 
-> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package.
+> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package. Use the [programme SME/build-detail review register](../00_program/storyboard-review-register.md) to route the remaining screen-level authoring and visual checks.
 
 **Blocked on Phase 0**: deck date/version, regulator name (D4), every EBP benefit and limit checked against the official EBP document, anonymised rejection data (D5).

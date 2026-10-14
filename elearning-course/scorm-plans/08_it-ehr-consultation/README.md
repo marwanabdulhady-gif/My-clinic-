@@ -34,6 +34,6 @@ The source is a silent screen recording of a full consultation in the clinic EHR
 
 ## Current status
 
-> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package.
+> **Storyboard review pack v0.2 is ready for SME review.** It contains a complete card for every Phase 2 screen, branded visual board, editable narration script, visual plan, asset register and a clean visual-plan/narration planning-lint report. It is **not** policy approval, shipping audio or a SCORM package. Use the [programme SME/build-detail review register](../00_program/storyboard-review-register.md) to route the remaining screen-level authoring and visual checks.
 
 **Blocked on Phase 0**: test environment and test patient for new screenshots (D6), EHR version and button names, formulary names, clinical disclaimer approval. **Do not use `IT.mp4` or its frames in any deliverable.**
