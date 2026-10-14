@@ -1,0 +1,94 @@
+# My Clinic — SCORM Module Plans (edumints-scorm-mcp)
+
+This folder holds the **production plans** for turning each source Markdown file in `../md/` into an interactive SCORM package with the [edumints-scorm-mcp](https://github.com/marwanabdulhady-gif/edumints-scorm-mcp) server.
+
+It is **planning only**. Nothing here has been built, voiced, or uploaded to an LMS yet. Every plan follows the server's authoring playbook (`playbook/README.md` in the edumints repo): brand → visual plan → narration → assets → approval → build → QA.
+
+- **Author** = the AI client (Claude) plus the course team.
+- **Compiler** = the edumints server. It validates, renders and packages. It never generates content.
+- **Approver** = the My Clinic subject-matter experts (SMEs) named in each Phase 0.
+
+---
+
+## 1. Package map (one SCORM package per source file)
+
+| # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Status |
+|---|---|---|---|---|---|---|
+| 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Plan ready, blocked on Phase 0 |
+| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Plan ready, blocked on Phase 0 |
+| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Plan ready, blocked on Phase 0 |
+| 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Plan ready, blocked on Phase 0 |
+| 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Plan ready, blocked on Phase 0 |
+| 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Plan ready, blocked on Phase 0 |
+| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Plan ready, blocked on Phase 0 |
+| 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Plan ready, blocked on Phase 0 and PHI removal |
+
+**Why 05 and 06 are two packages, not one.** Both files come from the same RCM session, but they carry different content: 05 (the script) teaches documentation and coding; 06 (the 2026 deck) adds the new EBP benefits and the rejection log. Splitting them avoids repeating the same screens and lets RCM staff take Part B alone.
+
+**Why 01 and 02 are two packages.** 01 is the full knowledge course (nine CBAHI/FMS plans). 02 overlaps on fire and chemicals, so it is planned as an **applied practice lab** (hazard spotting, fire drill game, spill triage, chemical-store escape room) that assumes 01 is done. No screen is copied from 01 into 02.
+
+Suggested learning path (matches `../README.md` §4):
+`03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`
+
+---
+
+## 2. The phase model used in every module folder
+
+Every module folder has the same files, so the team can track all eight packages on one board.
+
+| Phase | File | What it produces | Exit gate (must be true to move on) |
+|---|---|---|---|
+| **0 — Source lock** | `phase-0-source-lock.md` | Resolved conflicts, verified facts, permissions, SME owners | Every **blocking** item has a written decision from the named owner |
+| **1 — Action map & objectives** | `phase-1-action-map.md` | Business goal, observable behaviours, practice activities, objective → evidence map, seat-time budget | SME agrees the objectives and the assessed evidence |
+| **2 — Storyboard** | `phase-2-storyboard.md` | Screen-by-screen plan: id, section, edumints screen type, content, interaction, scoring, source page | `lint_visual_plan` clean (errors fixed, warnings justified); SME and course owner approve |
+| **3 — Narration & assets** | `phase-3-narration-and-assets.md` | Narration outline per screen, pronunciation lexicon, asset manifest with provenance, characters, video plan | `lint_narration_script` and `lint_authoring_plan(stage="planning")` clean; voice and visuals approved |
+| **4 — Build** | `phase-4-build.md` | Course settings, outline, objectives, tracking, spec snippets for the key interactions, MCP tool sequence | `lint_course` has no errors; preview reviewed |
+| **5 — QA & delivery** | `phase-5-qa-and-delivery.md` | Module-specific test cases, LMS test, pilot, sign-off, maintenance triggers | `validate_package` passes, SCORM Cloud / LMS test passes, SME sign-off recorded |
+
+Shared rules that apply to every phase live in [`00_program/`](00_program/):
+
+- [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand kit, theme, minimalist visual rules, Arabic/RTL plan
+- [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
+- [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
+- [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
+- [`00_program/cross-module-decisions.md`](00_program/cross-module-decisions.md) — decisions that affect several modules (emergency codes, Code Orange threshold, branch names, regulator name, personal data)
+
+---
+
+## 3. Master timeline (indicative)
+
+Each module can move through its phases independently, but the shared work comes first.
+
+| Week | Shared work | Modules |
+|---|---|---|
+| 1 | Brand kit approved; cross-module decisions (Code Orange, codes sheet, regulator name, branch names) | Phase 0 for all 8 |
+| 2 | Voice route chosen (English TTS or voice talent); master character approved | Phase 1–2 for 03, 07, 01 |
+| 3 | — | Phase 3 for 03, 07, 01 · Phase 1–2 for 02, 04, 05, 06 |
+| 4 | Re-capture EHR screenshots on a test patient (module 08) | Phase 4 build for 03, 07 · Phase 3 for 02, 04, 05, 06 |
+| 5 | — | Phase 4 for 01, 02, 04 · Phase 1–3 for 08 |
+| 6 | SCORM Cloud + LMS test round 1 | Phase 5 for 03, 07, 01, 02, 04 · Phase 4 for 05, 06, 08 |
+| 7 | Pilot with 5–8 new starters | Phase 5 for 05, 06, 08 |
+| 8 | Fixes, final sign-off, LMS launch | All |
+
+---
+
+## 4. What blocks everything (top 6)
+
+These are the items from `../README.md` §3 that stop more than one package. Details and owners are in [`00_program/cross-module-decisions.md`](00_program/cross-module-decisions.md).
+
+1. **Patient identifiers in `IT.mp4`** (module 08). The video must not be used in any package. Module 08 is planned around new screenshots of a test patient.
+2. **Code Orange threshold** (modules 01, 02). One rule is needed: recommended *≥ 500 mL or any highly toxic/reactive/explosive substance*.
+3. **Emergency code sheet and extensions** (modules 01, 02). One naming set and the real extension numbers (the decks show "5555" as a placeholder).
+4. **Regulator name: CCHI vs CHI** (modules 05, 06).
+5. **NotebookLM watermark / licence** on the Quality video (module 07). The plan rebuilds the content natively, so the video is optional.
+6. **Brand kit** (all). Never invent My Clinic colours; take them from the brand guide or approved materials.
+
+---
+
+## 5. How to use these plans with Claude + edumints
+
+1. Connect the MCP client to the edumints server (hosted `https://scorm.edumints.com/mcp` or self-hosted Docker).
+2. Open the module folder. Close Phase 0 with the SMEs.
+3. Ask Claude to run Phase 1–3 for that module, using the plan file as the brief. Claude calls `get_playbook`, `lint_visual_plan`, `lint_narration_script` and `lint_authoring_plan`, and **stops for your approval** at the end of Phase 3.
+4. Phase 4: Claude builds with `create_project` / `add_screen` (or `build_from_spec`), using `language: "en"` (the server default is Turkish).
+5. Phase 5: run the QA checklist, test in SCORM Cloud and your LMS, and record sign-off.
