@@ -169,6 +169,9 @@ has provenance; `asset-template-audit.md` shows no planned-not-built asset left 
 
 ## C14–C17 — Phase 4 build (per module group)
 
+**C14 preparatory implementation started:** [local branded review tooling and scenario playback](c14-implementation.md).
+This is a draft-preview slice, not a completed Phase 4 build; C10 and the production exit gate remain blocked.
+
 **Goal:** one edumints project per package built exactly per its `scorm-structure.md`
 (outline, objectives, points, tracking), `language: "en"`, `lint_course` clean, preview reviewed.
 
