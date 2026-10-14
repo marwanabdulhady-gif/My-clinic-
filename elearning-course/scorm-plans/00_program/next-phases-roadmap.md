@@ -185,6 +185,8 @@ C0 shipped as [PR #32](https://github.com/marwanabdulhady-gif/My-clinic-/pull/32
 ## Issue and PR convention
 
 - Issue title: `C<n> — <chunk name>`; body: the chunk section above plus the module list.
+  (Issues #13–#31 are open. The `roadmap-chunk` label exists in the repository but the current
+  integration token cannot attach labels, so the issue titles carry the chunk id instead.)
 - PR title matches the issue; PR body links the issue and pastes the exit-gate output.
 - A PR never mixes chunks: reviewable size is the point. If a chunk grows past ~400 changed lines
   of documentation, split it by module.
