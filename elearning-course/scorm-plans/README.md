@@ -4,7 +4,7 @@
 
 This folder holds the **production plans** for turning each source Markdown file in `../md/` into an interactive SCORM package with the [edumints-scorm-mcp](https://github.com/marwanabdulhady-gif/edumints-scorm-mcp) server.
 
-This remains **planning and draft review**, not a production course build. A [local branded screen generator](00_program/screen-generator.md) now renders review previews from storyboard cards; no SCORM package has been built, voiced, or uploaded to an LMS yet. Every plan follows the server's authoring playbook (`playbook/README.md` in the edumints repo): brand → visual plan → narration → assets → approval → build → QA.
+This remains **planning and draft review**, not a production course build. A [local branded slide generator](00_program/screen-generator.md) now renders review previews from the required storyboards, phase plans and production worksheets, using the supplied mockup geometry; [pre-kickoff batch 1](00_program/draft-slide-production.md) covers 03/07 (58 slides with 61 real browser captures); no SCORM package has been built, voiced, or uploaded to an LMS yet. Every plan follows the server's authoring playbook (`playbook/README.md` in the edumints repo): brand → visual plan → narration → assets → approval → build → QA.
 
 - **Author** = the AI client (Claude) plus the course team.
 - **Compiler** = the edumints server. It validates, renders and packages. It never generates content.
@@ -42,7 +42,8 @@ This remains **planning and draft review**, not a production course build. A [lo
 | `tools/audio_export.py` | Shared rules: speaker labels out of TTS input, one segment per spoken line, lexicon + SSML, voice table | Imported by both tools above |
 | `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |
 | `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
-| `tools/generate_screens.py` | Ignored `.generated/screens/`: offline branded HTML preview + generation report | [Usage and coverage](00_program/screen-generator.md); draft review only, not SCORM or approval |
+| `tools/generate_screens.py` | Ignored `.generated/screens/`: offline branded HTML preview + layout/input/alignment report | [Four drafting batches](00_program/draft-slide-production.md), required worksheets/plans, compiled mockup metrics, bundled fonts; draft review only |
+| `tools/browser/capture_slides.cjs` | Ignored review gallery, actual browser PNGs, overview and capture/QA report | One capture per current slide plus selected interaction states; reference→draft comparisons; not production QA or approval |
 | `tools/prepare_asset_approval_handoff.py` | [G10 approval packet](00_program/asset-approval-handoff/README.md), 44-row response template and request JSON | Prepared, not submitted or approved; preserves human responses |
 | `tools/export_storyboard_docx.py` | The nine client-review Word documents | Supplied client logo in the running header, cover band, document control, page numbers |
 | `tools/make_companion_avatars.py` | Interim transparent avatar PNGs in `00_program/characters/assets/` | Crops of approved poses; full-size Canva downloads still outstanding (G6) |

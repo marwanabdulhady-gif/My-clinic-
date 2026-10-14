@@ -1,0 +1,50 @@
+{
+  "source_repository": "https://github.com/google/fonts",
+  "source_commit": "6159c1997ff813fb7d14a4cebeb2ebfedd7b6dc9",
+  "retrieved": "2026-10-14",
+  "license": "SIL Open Font License 1.1",
+  "files": [
+    {
+      "filename": "Montserrat-Variable.ttf",
+      "source_path": "ofl/montserrat/Montserrat[wght].ttf",
+      "github_blob_sha": "c97aca18592834d8706549c279cb8d5ac5d85f69",
+      "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+      "size": 744936
+    },
+    {
+      "filename": "Montserrat-OFL.txt",
+      "source_path": "ofl/montserrat/OFL.txt",
+      "github_blob_sha": "fe576a2ee1f96353b05d030c0b7620d525cc53a8",
+      "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+      "size": 4400
+    },
+    {
+      "filename": "Tajawal-Regular.ttf",
+      "source_path": "ofl/tajawal/Tajawal-Regular.ttf",
+      "github_blob_sha": "d23d25b8b68db86d5b727d181c2008fd874216eb",
+      "sha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19",
+      "size": 60364
+    },
+    {
+      "filename": "Tajawal-Medium.ttf",
+      "source_path": "ofl/tajawal/Tajawal-Medium.ttf",
+      "github_blob_sha": "96dee5410d185adfa57475bb02695c11f8836208",
+      "sha256": "1ff8bd943a261c9dd7906bdb1993cab87b6d925a7fb5f848cdb51ed301531090",
+      "size": 62280
+    },
+    {
+      "filename": "Tajawal-Bold.ttf",
+      "source_path": "ofl/tajawal/Tajawal-Bold.ttf",
+      "github_blob_sha": "71e1488e90215abcc8aedc541d94a2bcbec574f3",
+      "sha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7",
+      "size": 59988
+    },
+    {
+      "filename": "Tajawal-OFL.txt",
+      "source_path": "ofl/tajawal/OFL.txt",
+      "github_blob_sha": "76c01b50a1da8b3ae44a6f05c2e0d6ccb1cac5b9",
+      "sha256": "9b584984f9db0ee30347391a76eff9c0a6b03dc450c3c6afe3757a2cb3a4db87",
+      "size": 4464
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Preserve upstream font/license bytes for the pinned provenance checksums.
+*.ttf binary
+# Upstream OFL files include original CRLF and/or trailing whitespace.
+*-OFL.txt -text -whitespace

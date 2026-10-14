@@ -5,16 +5,20 @@ const $ = id => document.getElementById(id);
 const cache = new Map();
 let moduleIndex = 0, screenIndex = 0;
 const el = (tag, cls, text) => {const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n;};
-// Only pre-sanitized *_html fields from the generator are inserted as HTML.
+Object.entries({primary:'primary', ink:'dark', light:'light', success:'success', error:'error'}).forEach(([variable, color]) => document.documentElement.style.setProperty('--' + variable, DATA.brand.colors[color]));
+// Only pre-sanitized *_html / block.html fields from the generator are inserted as HTML.
 const rich = (value, cls = '') => {const n = el('div', cls); n.innerHTML = value || ''; return n;};
 const button = (text, fn, cls = '') => {const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', fn); return b;};
 const plainHTML = html => rich(html).textContent;
-const assetURL = id => DATA.assets[(id || '').replace(/^<|>$/g, '')];
+const assetKey = id => (id || '').replace(/^<|>$/g, '');
+const assetURL = id => DATA.assets[assetKey(id)] || DATA.preview_assets[assetKey(id)];
 
 function media(id, alt) {
   const url = assetURL(id);
   if (url && /\.(png|jpe?g|webp|svg)$/i.test(url)) {
-    const img = el('img'); img.src = url; img.alt = alt || ''; return img;
+    const img = el('img'); img.src = url; img.alt = alt || '';
+    if (!DATA.assets[assetKey(id)] && DATA.preview_assets[assetKey(id)]) img.dataset.reviewArt = 'true';
+    return img;
   }
   const box = el('div', 'asset-placeholder');
   box.append(el('strong', '', 'Asset pending'), el('div', '', id || 'No asset assigned'), el('p', '', alt || 'Production visual is not yet supplied.'));
@@ -23,7 +27,8 @@ function media(id, alt) {
 
 function feedbackBox() {const box = el('div', 'feedback'); box.setAttribute('role', 'status'); box.hidden = true; return box;}
 function feedback(box, screen, correct, custom) {
-  box.hidden = false; box.replaceChildren(el('strong', '', correct ? '✓ Correct for this draft' : '↻ Review this choice'));
+  box.hidden = false; box.classList.toggle('positive', correct); box.classList.toggle('negative', !correct);
+  box.replaceChildren(el('strong', '', correct ? '✓ Correct for this draft' : '↻ Review this choice'));
   box.append(rich(custom || (screen.feedback || {})[correct ? 'correct_html' : 'incorrect_html'] || '<p>No authored feedback supplied.</p>'));
   box.append(el('small', 'result-note', 'Draft answer check only — no completion or LMS score is recorded.'));
 }
@@ -40,12 +45,13 @@ function choiceQuestion(s) {
     label.append(input, rich(o.text_html)); field.append(label);
   });
   form.append(field);
+  if (s.type === 'poll' && s.allow_text && !options.length) form.append(rich(s.reflection_html, 'review-only'));
   if (s.allow_text) {const label = el('label', '', 'Optional reflection'); const text = el('textarea'); text.setAttribute('aria-label', 'Optional reflection'); label.append(text); form.append(label);}
   const box = feedbackBox(); const submit = el('button', 'submit', s.type === 'poll' ? 'Reflect' : 'Check draft answer'); submit.type = 'submit';
   form.append(submit, box);
   form.addEventListener('submit', event => {
     event.preventDefault(); const chosen = [...field.querySelectorAll('input:checked')].map(i => Number(i.value));
-    if (!chosen.length) {box.hidden = false; box.textContent = 'Choose an option first.'; return;}
+    if (!chosen.length && options.length) {box.hidden = false; box.textContent = 'Choose an option first.'; return;}
     if (s.type === 'poll') {box.hidden = false; box.replaceChildren(rich(s.reflection_html || '<p>Reflection selected. This poll is unscored.</p>')); return;}
     const correct = options.every((o, i) => Boolean(o.correct) === chosen.includes(i));
     const custom = chosen.length === 1 ? options[chosen[0]].feedback_html : null;
@@ -92,32 +98,47 @@ function decisionScenario(s) {
     root.append(el('div', 'review-only', 'Scenario wiring pending: ' + error.message), reviewContent(s));
     return root;
   }
-  const banner = el('div', 'review-only', 'Fictional draft scenario · policies and answer keys still require SME approval. No LMS score or pass is recorded.');
+  const banner = el('div', 'review-only', 'Fictional draft scenario · SME approval pending · no LMS score or pass is recorded.');
   const content = el('div'); root.append(banner, content);
   function draw(focus = false) {
     const state = engine.snapshot(); content.replaceChildren();
     const heading = el('h3', '', state.finished ? 'Draft scenario review complete' : `Decision ${state.trace.length + (state.selected ? 0 : 1)} · ${state.node.id}`);
-    heading.tabIndex = -1; content.append(heading);
+    heading.tabIndex = -1;
     if (state.finished) {
-      content.append(el('p', 'result-note', `Authored branch total: ${state.total}${Number.isFinite(s.pass_score) ? ' · authored scenario threshold: ' + s.pass_score : ''}. This is not a course score or approval.`));
+      content.append(heading, el('p', 'result-note', `Authored branch total: ${state.total}${Number.isFinite(s.pass_score) ? ' · authored scenario threshold: ' + s.pass_score : ''}. This is not a course score or approval.`));
       const log = el('ol'); state.trace.forEach(t => log.append(el('li', '', `${t.node_id} → ${t.choice_id} · authored delta ${t.score_delta}`))); content.append(log);
       content.append(button('Reset draft scenario', () => {engine.reset(); draw(true);}));
     } else {
-      content.append(rich(state.node.prompt_html, 'prompt'));
-      if (state.node.image_asset_id) {const scene = el('div', 'scenario-scene'); scene.append(media(state.node.image_asset_id, state.node.image_alt)); content.append(scene);}
+      const grid = el('div', 'scenario-layout'); const scene = el('div', 'scenario-scene');
+      if (state.node.image_asset_id) scene.append(media(state.node.image_asset_id, state.node.image_alt));
+      else scene.append(el('div', 'asset-placeholder', 'No scene image is supplied for this authored decision.'));
+      const decision = el('div', 'scenario-decision');
+      const host = companionAssets(s).find(id => id.includes('avatar'));
+      if (host) {
+        let pose = host;
+        if (state.selected && /after (?:a|each) choice|reacts|feedback/i.test(s.notes || '')) {
+          const best = Math.max(...state.node.choices.map(c => c.score_delta));
+          const who = host.includes('noor') ? 'noor' : 'omar';
+          const target = `char-${who}-avatar-${state.selected.score_delta === best ? 'happy' : 'concern'}`;
+          if (assetURL(target)) pose = target;
+        }
+        decision.append(companionCard(pose, true));
+      }
+      decision.append(heading, rich(state.node.prompt_html, 'prompt'));
       const choices = el('div', 'options');
       state.node.choices.forEach(choice => {
         const b = button('', () => {engine.choose(choice.id); draw(true);}, 'scenario-choice');
         b.append(rich(choice.text_html)); b.disabled = Boolean(state.selected);
         if (state.selected && state.selected.id === choice.id) b.setAttribute('aria-pressed', 'true');
         choices.append(b);
-      }); content.append(choices);
+      }); decision.append(choices);
       if (state.selected) {
         const box = feedbackBox(); box.hidden = false;
         box.append(el('strong', '', 'Authored draft feedback'), rich(state.selected.feedback_html));
-        content.append(box, button(state.selected.goto_node_id === null ? 'Review draft outcome' : 'Continue scenario', () => {engine.advance(); draw(true);}, 'submit'));
+        decision.append(box, button(state.selected.goto_node_id === null ? 'Review draft outcome' : 'Continue scenario', () => {engine.advance(); draw(true);}, 'submit'));
       }
-      content.append(button('Reset draft scenario', () => {engine.reset(); draw(true);}, 'scenario-reset'));
+      decision.append(button('Reset draft scenario', () => {engine.reset(); draw(true);}, 'scenario-reset'));
+      grid.append(scene, decision); content.append(grid);
     }
     if (focus) heading.focus();
   }
@@ -156,6 +177,7 @@ function reviewContent(s) {
   function itemCard(item, index) {
     const box = el('div', 'step');
     box.append(el('h3', '', item.title || item.id || `Step ${index + 1}`));
+    if (item.text) box.append(el('p', '', item.text));
     for (const key of ['prompt_html', 'instruction_html', 'action_html', 'text_html', 'label_html', 'body_html', 'rationale_html', 'hint_html', 'explain_html', 'scaffold_html']) if (item[key]) box.append(rich(item[key]));
     if (item.image_asset_id) box.append(media(item.image_asset_id, item.image_alt));
     for (const key of ['choices', 'options', 'regions']) {
@@ -170,6 +192,26 @@ function reviewContent(s) {
   }
   if (s.image_asset_id) root.append(media(s.image_asset_id, s.image_alt));
   if (root.children.length === 1) root.append(el('p', '', s._brief || 'No production interaction detail supplied. Review the source JSON below.'));
+  return root;
+}
+
+function authoredBlocks(s) {
+  const root = el('div', 'content-blocks');
+  (s.blocks || []).forEach(block => {
+    if (block.html) root.append(rich(block.html, 'content'));
+    if (block.asset_id) {
+      const withheld = /pending consent/i.test(block.caption || '');
+      const consent = (block.caption || '').match(/pending consent\s+([BD]\d+)/i);
+      const caption = withheld ? `Portrait and identifying caption withheld · consent ${consent ? consent[1] : 'decision'} pending.` : block.caption || '';
+      const figure = el('figure', 'asset-block');
+      if (withheld) {
+        const placeholder = el('div', 'asset-placeholder');
+        placeholder.append(el('strong', '', 'Consent-dependent portrait pending'), el('span', '', assetKey(block.asset_id)), el('p', '', 'No real staff portrait or identifying caption is shown in this draft.'));
+        figure.append(placeholder);
+      } else figure.append(media(block.asset_id, caption));
+      figure.append(el('figcaption', '', caption)); root.append(figure);
+    }
+  });
   return root;
 }
 
@@ -192,8 +234,8 @@ function screenContent(s) {
   }
   switch (s.type) {
     case 'content_slide': case 'summary': {
-      const content = rich(s.body_html, 'content'); const id = s.media_asset_id || s.image_asset_id;
-      if (id) {const layout = el('div', 'media-layout'); const image = el('div', 'media'); image.append(media(id, s.media_alt || s.image_alt)); layout.append(content, image); body.append(layout);} else body.append(content);
+      const content = s.body_html ? rich(s.body_html, 'content') : authoredBlocks(s); const id = s.media_asset_id || s.image_asset_id;
+      if (id) {if (s.layout === 'text_media') content.prepend(el('h2', '', s.title)); const layout = el('div', 'media-layout'); const image = el('div', 'media'); image.append(media(id, s.media_alt || s.image_alt)); layout.append(content, image); body.append(layout);} else body.append(content);
       break;
     }
     case 'mcq': case 'true_false': case 'poll': body.append(choiceQuestion(s)); break;
@@ -205,8 +247,14 @@ function screenContent(s) {
     case 'flashcards': body.append(flashcards(s)); break;
     case 'timeline': s.events.forEach(e => {const box = el('div', 'timeline-event'); box.append(el('small', '', e.date), el('h3', '', e.title), rich(e.body_html)); body.append(box);}); break;
     case 'worked_example':
-      s.steps.forEach((step, i) => {const box = el('div', 'step'); box.append(el('small', 'eyebrow', `STEP ${i + 1}`), rich(step.action_html)); const d = el('details'); d.append(el('summary', '', 'Why this step?'), rich(step.rationale_html)); box.append(d); body.append(box);});
+      s.steps.forEach((step, i) => {const box = el('div', 'step'); box.append(el('small', 'eyebrow', `STEP ${i + 1}`), rich(step.action_html)); const d = el('details'); d.append(el('summary', '', 'Why this step?'), rich(step.rationale_html)); box.append(d);
+        if (step.artifact_asset_id) {const artifact = el('figure', 'worked-artifact'); artifact.append(media(step.artifact_asset_id, step.artifact_caption), el('figcaption', '', step.artifact_caption || 'Authored example artifact')); box.append(artifact);}
+        body.append(box);});
       if (s.self_explanation_prompt_html) {body.append(rich(s.self_explanation_prompt_html)); const text = el('textarea'); text.setAttribute('aria-label', 'Unscored reflection'); body.append(text);} break;
+    case 'labeled_diagram':
+      if (s.mode === 'display') body.append(displayDiagram(s));
+      else body.append(reviewContent(s));
+      break;
     case 'results_breakdown':
       body.append(el('div', 'review-only', 'Results layout only. This preview does not calculate a course score or grant a pass.'), rich(s.body_html));
       s.sections.forEach(section => {const d = el('details', 'accordion-item'); d.append(el('summary', '', section.title), el('p', 'result-note', `Evidence: ${(section.screen_ids || []).join(', ')}`), rich(section.advice_html)); body.append(d);}); break;
@@ -215,17 +263,101 @@ function screenContent(s) {
   return body;
 }
 
+// Companion placements come from each package's Phase 3 table, not arbitrary decoration.
+function companionIdentity(id) {
+  const noor = id.includes('noor');
+  return {name: noor ? 'Noor' : 'Dr. Omar', role: noor ? 'Senior nurse · Safety liaison' : 'Family physician',
+          color: noor ? '#652D8C' : '#006E78'};
+}
+function companionCard(id, avatar = false) {
+  const who = companionIdentity(id); const box = el('div', avatar ? 'companion-avatar-row' : 'companion-card');
+  box.style.setProperty('--character', who.color);
+  const frame = el('div', avatar ? 'avatar-frame' : 'portrait-frame');
+  frame.append(media(id, `${who.name}, ${who.role.toLowerCase()}, in the planned companion pose.`));
+  const caption = el('div', 'companion-caption');
+  caption.append(el('strong', '', who.name), el('small', '', who.role));
+  if (!avatar && !DATA.assets[id]) caption.append(el('small', 'review-art-note', 'Review art · full-size G6 pending'));
+  box.append(frame, caption); return box;
+}
+function companionAssets(s) {return (s._companion.assets || []).filter(id => id !== 'char-duo-welcome');}
+function displayDiagram(s) {
+  const root = el('div', 'diagram-layout'); const labels = el('div', 'diagram-labels');
+  (s.labels || []).forEach((label, i) => {
+    const row = el('div', 'diagram-label'); row.append(el('span', 'label-number', String(i + 1)), el('p', '', label.text || label.id)); labels.append(row);
+  });
+  const figure = el('figure', 'diagram-figure'); figure.append(media(s.image_asset_id, s.image_alt));
+  figure.append(el('figcaption', '', 'Current authored SVG · labels repeated as readable text'));
+  root.append(labels, figure); return root;
+}
+function tipCard(s) {
+  // Only the exact tip written in the card is used. Do not shorten/invent dialogue.
+  const match = (s.notes || '').match(/label ["“]([^"”]+)["”]:\s*(.*?)(?:\s*Speaker:|$)/);
+  const id = companionAssets(s).find(a => a.includes('avatar'));
+  if (!match || !id) return null;
+  const who = companionIdentity(id), tip = el('div', 'companion-tip');
+  tip.style.setProperty('--character', who.color);
+  const avatar = el('div', 'avatar-frame'); avatar.append(media(id, `${who.name}, companion guide.`));
+  const text = el('div', 'tip-copy'); text.append(el('strong', '', match[1]), el('p', '', match[2].trim()));
+  tip.append(avatar, text); return tip;
+}
+function resultsContent(m, s) {
+  const root = el('div', 'results-layout'); const total = el('div', 'result-total');
+  const ring = el('div', 'empty-score-ring'); ring.append(el('strong', '', '—'), el('span', '', 'NOT SCORED'));
+  total.append(ring, el('p', '', 'Layout preview only'), el('small', '', 'No pass or completion is awarded.'));
+  total.append(el('p', 'planned-pass', 'Planned settings: ' + m.contract.identity['SCORM/completion/pass mark']));
+  const sections = el('div', 'objective-results'); sections.append(rich(s.body_html));
+  (s.sections || []).forEach(section => {
+    const row = el('details', 'objective-row'); const summary = el('summary');
+    const heading = el('div', 'objective-heading'); heading.append(el('span', '', section.title), el('small', '', 'NOT RUN'));
+    summary.append(heading, el('div', 'unscored-bar'));
+    row.append(summary, el('p', 'result-note', `Evidence: ${(section.screen_ids || []).join(', ')}`), rich(section.advice_html)); sections.append(row);
+  });
+  root.append(total, sections); return root;
+}
 function buildScreen(m, s) {
-  if (s.type === 'title_slide') {
-    const title = el('div', 'title-screen'); const logo = el('img', 'logo'); logo.src = assetURL('brand-logo-horizontal-white'); logo.alt = 'My Clinic';
-    title.append(logo, el('span', 'module-chip', m.id.slice(0, 2) + ' · ' + (s.section || 'Welcome')), el('h2', '', s.title));
-    title.append(el('p', 'subtitle', s.subtitle || s._brief || ''));
-    title.append(el('p', 'tagline', DATA.brand.logo.tagline)); return title;
+  const root = el('div', `slide layout-${s._layout.id}`);
+  root.dataset.screenId = s.id; root.dataset.layout = s._layout.id;
+  root.dataset.reference = s._layout.reference_id;
+  const hosts = companionAssets(s);
+  const progress = el('div', 'slide-progress'); progress.style.width = ((m.screens.indexOf(s) + 1) / m.screens.length * 100) + '%';
+  if (s._layout.id === 'L1') {
+    root.classList.add('title-screen'); if (hosts.length > 1) root.classList.add('with-duo');
+    const logo = media('brand-logo-horizontal-white', 'My Clinic'); logo.className = 'logo';
+    const copy = el('div', 'title-copy');
+    copy.append(el('span', 'module-chip', `Module ${m.id.slice(0, 2)} · ${m.contract.identity['Commercial course group']}`), el('h2', '', s.title), el('p', 'subtitle', s.subtitle || s._brief || ''));
+    root.append(logo, copy);
+    if (hosts.length) {const portraits = el('div', 'title-companions'); hosts.forEach(id => portraits.append(companionCard(id))); root.append(portraits);}
+    root.append(el('p', 'tagline', DATA.brand.logo.tagline), el('span', 'title-draft', `DRAFT · ${s.id}`)); return root;
   }
-  const root = el('div'); const header = el('div', 'screen-header'); const logo = el('img'); logo.src = assetURL('brand-logo-horizontal-navy'); logo.alt = 'My Clinic';
-  header.append(logo, el('span', '', s.section || ''));
-  const content = el('div', 'screen-body'); content.append(el('h2', '', s.title), screenContent(s));
-  const foot = el('div', 'screen-footer'); foot.append(el('span', '', DATA.brand.logo.tagline), el('span', '', s.id)); root.append(header, content, foot); return root;
+  if (s._layout.id === 'L2') {
+    root.classList.add('section-opener');
+    const tile = el('div', 'section-tile');
+    if (s.media_asset_id) tile.append(media(s.media_asset_id, s.media_alt));
+    else tile.append(el('span', '', m.id.slice(0, 2)));
+    const text = el('div', 'section-copy'), quote = rich(s.body_html || '', 'section-quote');
+    const marker = quote.querySelector('p');
+    if (marker && /^SECTION \d/.test(marker.textContent)) {text.append(el('span', 'section-marker', marker.textContent)); marker.remove();}
+    text.append(el('h2', '', s.title), quote);
+    if (!s.body_html && s._brief) text.append(el('p', '', s._brief));
+    const logo = media('brand-logo-horizontal-navy', 'My Clinic'); logo.className = 'section-logo';
+    root.append(tile, text, logo, el('span', 'section-id', `DRAFT · ${s.id}`), progress); return root;
+  }
+  const header = el('div', 'screen-header'); const logo = media('brand-logo-horizontal-navy', 'My Clinic');
+  header.append(logo, el('span', 'breadcrumb', s.section || ''), el('span', 'slide-context', s.type.replaceAll('_', ' ')));
+  const content = el('div', 'screen-body');
+  if (!(s.type === 'content_slide' && s.layout === 'text_media' && (s.media_asset_id || s.image_asset_id))) content.append(el('h2', '', s.title));
+  if (['L4', 'L5'].includes(s._layout.id)) content.append(el('div', 'screen-instruction', s.points ? `DRAFT PRACTICE · ${s.points} PLANNED POINTS · NO LMS SCORE` : 'UNSCORED REFLECTION'));
+  let body = s.type === 'results_breakdown' && s._mode !== 'brief' ? resultsContent(m, s) : screenContent(s);
+  const placement = (s._companion.placement || '').toLowerCase();
+  const alreadyPlaced = s.media_asset_id && hosts.includes(assetKey(s.media_asset_id));
+  if (hosts.length && !alreadyPlaced && !placement.includes('avatar') && !placement.includes('tip') && !['L5'].includes(s._layout.id)) {
+    const layout = el('div', `host-layout${s.type === 'poll' ? ' poll-host' : ''}`); const hostsBox = el('div', 'inline-hosts');
+    hosts.forEach(id => hostsBox.append(companionCard(id, id.includes('avatar')))); layout.append(body, hostsBox); body = layout;
+  }
+  content.append(body);
+  if (placement.includes('tip') && !placement.includes('feedback')) {const tip = tipCard(s); if (tip) content.append(tip);}
+  const foot = el('div', 'screen-footer'); foot.append(el('span', '', m.title), el('span', '', `DRAFT · ${s.id}`));
+  root.append(header, content, foot, progress); return root;
 }
 
 function outline() {
@@ -243,6 +375,7 @@ function outline() {
 function render() {
   const m = DATA.modules[moduleIndex], s = m.screens[screenIndex];
   document.documentElement.style.setProperty('--secondary', m.color);
+  document.documentElement.style.setProperty('--secondary-text', m.color.toUpperCase() === '#008C99' ? DATA.brand.value_colors.ambitious_dark : m.color);
   $('module').value = String(moduleIndex); $('module-name').textContent = m.title; $('screen-name').textContent = s.title;
   $('mode').textContent = ({rendered:'RENDERED DRAFT', brief:'BUILD DETAIL PENDING', review:'INTERACTION REVIEW'})[s._mode];
   const key = `${m.id}/${s.id}`; if (!cache.has(key)) cache.set(key, buildScreen(m, s));
@@ -250,15 +383,25 @@ function render() {
   $('position').textContent = `${screenIndex + 1} / ${m.screens.length} · ${s.id}`;
   $('prev').disabled = screenIndex === 0; $('next').disabled = screenIndex === m.screens.length - 1;
   const warnings = [];
+  const pending = $('pending-facts');
+  pending.textContent = s._pending.length ? '⚠ Content awaiting confirmation: ' + s._pending.join(', ') + '. Current wording is retained for kickoff review, not approved policy.' : '';
+  pending.hidden = !s._pending.length;
+  if (s._withheld.length) warnings.push('Consent-dependent portraits/captions withheld: ' + s._withheld.map(item => item.asset_id).join(', '));
   if (s._missing.length) warnings.push('Missing build fields: ' + s._missing.join(', '));
   if (s._unresolved.length) warnings.push('Assets pending: ' + s._unresolved.join(', '));
-  if (s.notes && /char-/.test(s.notes)) warnings.push('Companion placement remains in authoring notes; full-size approved art/layout not yet wired.');
+  if (s.notes && /char-/.test(s.notes)) warnings.push('Planned companion placement uses existing review-resolution art. Full-size artwork and G6 handoff remain pending.');
   $('warnings').textContent = warnings.join('\n');
   $('transcript').textContent = s.narration_text || 'No narration supplied.';
   $('audio').replaceChildren(); const url = assetURL(s.narration_asset_id);
   if (url && /\.(mp3|wav|ogg)$/i.test(url)) {const a = el('audio'); a.controls = true; a.preload = 'none'; a.src = url; $('audio').append(a);}
   $('metadata').textContent = `${m.source}\nScreen: ${s.id} · Type: ${s.type} · Planned points: ${s.points || 0}\nObjectives: ${(s.objective_ids || []).join(', ') || 'none'}\nEvidence: ${(s.evidence_screen_ids || []).join(', ') || 'none'}\n${s.notes || ''}`;
   $('visual').textContent = s._visual;
+  $('layout-source').textContent = `${s._layout.description} · Reference ${s._layout.reference_image} · Geometry compiled from supplied mockups.html. Dense slides expand vertically rather than hiding content.`;
+  const contract = m.contract;
+  $('alignment-status').textContent = contract.alignment === 'matched' ? 'COUNTS & ORDER MATCHED · NOT APPROVAL' : 'ALIGNMENT NEEDS REVIEW';
+  $('worksheet-meta').textContent = `${contract.worksheet}\n${contract.identity.Audience} · ${contract.identity['Seat-time estimate']}\n${contract.actual.screens} screens · ${contract.actual.scored} scored drafts · ${contract.actual.points} planned points\n${contract.issues.join('\n')}`;
+  $('template-gates').replaceChildren(...contract.gates.map(g => el('li', '', (g.checked ? '☑ ' : '☐ ') + g.text)));
+  $('input-links').replaceChildren(...contract.inputs.map(input => {const li = el('li'); const a = el('a', '', input.path.replace('elearning-course/scorm-plans/', '')); a.href = 'reference/inputs/' + input.path; a.target = '_blank'; a.rel = 'noopener'; li.append(a, el('small', '', ` · SHA256 ${input.sha256.slice(0, 12)}`)); return li;}));
   $('spec').textContent = JSON.stringify(Object.fromEntries(Object.entries(s).filter(([key]) => !key.startsWith('_'))), null, 2);
   document.title = `${s.id} · My Clinic screen review`; outline();
 }
@@ -266,7 +409,7 @@ function render() {
 function navigate(mi, si) {
   moduleIndex = mi; screenIndex = si;
   const hash = '#' + DATA.modules[mi].id + '/' + DATA.modules[mi].screens[si].id;
-  // Replace avoids duplicating course-navigation state in browser history.
+  // Hash links support deep-linking and browser back/forward without storing learner data.
   if (location.hash !== hash) {location.hash = hash;} else render();
 }
 function route() {
@@ -276,6 +419,11 @@ function route() {
   const si = DATA.modules[moduleIndex].screens.findIndex(s => s.id === sid); screenIndex = si >= 0 ? si : 0;
   render();
 }
+const phase = DATA.report.phase;
+$('batch-counter').textContent = phase ? `0${phase.id} / 04` : `${DATA.modules.length} PACKAGES`;
+$('batch-title').textContent = phase ? `Phase ${phase.id} · ${phase.title}` : 'Current-content slide review';
+$('batch-description').textContent = `${DATA.report.screen_count} current-content slides · ${DATA.modules.length} packages · Storyboards, phase plans and production worksheets required. ${phase ? phase.review_focus : 'Unresolved production gates remain open.'}`;
+DATA.report.phase_plan.phases.forEach(p => {const item = el('div', `phase-item${phase && p.id === phase.id ? ' active' : ''}`); item.append(el('strong', '', `0${p.id}`), el('span', '', p.title), el('small', '', phase && p.id === phase.id ? 'CURRENT BATCH' : 'QUEUED')); $('phases').append(item);});
 DATA.modules.forEach((m, i) => {const o = el('option', '', m.title); o.value = String(i); $('module').append(o);});
 $('module').addEventListener('change', () => {$('search').value = ''; navigate(Number($('module').value), 0);});
 $('search').addEventListener('input', outline);

@@ -1,14 +1,8 @@
 // Optional browser gate. Supply Playwright and a Chromium binary; see generator docs.
 const assert = require('node:assert/strict');
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const {launchBrowser} = require('../browser/runtime.cjs');
 (async () => {
-  const launch = {headless:true};
-  if (process.env.CHROMIUM_MODULE) {
-    const imported = await import(process.env.CHROMIUM_MODULE);
-    const binary = imported.default || imported;
-    launch.executablePath = await binary.executablePath(); launch.args = binary.args;
-  } else if (process.env.CHROMIUM_EXECUTABLE) launch.executablePath = process.env.CHROMIUM_EXECUTABLE;
-  const browser = await chromium.launch(launch);
+  const browser = await launchBrowser();
   try {
     const page = await browser.newPage({viewport:{width:1440,height:1000}});
     const errors = [], failed = [];

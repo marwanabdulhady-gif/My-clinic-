@@ -34,9 +34,10 @@
 | Proposal (6 courses, USD 9,000) | ✅ Rev01 (narration ~60 min, 26 scenarios, guide characters) · see §3 |
 | Cross-module decisions D1–D14 | 🔒 all 14 open |
 | Voices (D10), LMS + SCORM version (D9) | 🔒 open |
+| Pre-kickoff current-content slide drafting | 🟡 [Batch 1: 03/07, 58 slides / 61 actual browser captures](draft-slide-production.md); required plans/templates and mockup geometry; later draft batches queued |
 | Any SCORM project, build, package or LMS test | ⬜ none yet |
 
-**In one line:** design is complete to storyboard level for all eight packages (207 core screens, 95 scored). Nothing can move to voice, media or build until My Clinic closes the Phase 0 items and D9–D11.
+**In one line:** design is complete to storyboard level for all eight packages (207 core screens, 95 scored). Production cannot move to final voice/media or SCORM build until My Clinic closes the Phase 0 items and D9–D11. Pre-kickoff browser drafts use current content with those dependencies visibly pending; they do not close the production gates.
 
 ---
 
