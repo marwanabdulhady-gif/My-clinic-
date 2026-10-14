@@ -5,8 +5,8 @@
 This implements the corrected inventory in [PR #37](https://github.com/marwanabdulhady-gif/My-clinic-/pull/37)
 and [visual-and-motion-agent-brief.md](visual-and-motion-agent-brief.md). The selected scope is the
 **full six-scene Code Red drill**, not the lean three-scene alternative. No additional named
-characters, voices or required videos are introduced. PR #37's content was incorporated locally
-for this work; that is not a GitHub merge or an approval of the asset brief.
+characters, voices or required videos are introduced. PR #37's audited brief is now merged
+and superseded PR #36 is closed. A merge does not constitute client approval of the assets.
 
 ## Restored references
 
@@ -96,6 +96,15 @@ are byte-for-byte unchanged by this pass.
   shared-form placement; existing draft interactions and mobile/keyboard checks still pass.
 - The three module Word review documents and programme overview were regenerated. Their
   asset descriptions remain planning instructions, not pictures or screenshot evidence.
+
+## Next approval handoff prepared
+
+The [asset approval handoff](asset-approval-handoff/README.md) and its response template now
+cover **44 pending rows: 13 safety visuals (including all six drill scenes) and 31 EHR shots**.
+The packet has not been sent; no reviewer names, signed decisions or approvals are recorded.
+Generate it with `tools/prepare_asset_approval_handoff.py`. The generator refuses to overwrite
+human responses. The course owner must route it to named Safety/Facilities/Biomedical and
+EHR/DPO reviewers, then record their written decisions in Phase 0 before producing assets.
 
 **Still needed:** client decisions, scene/photo production and permissions, Safety/EHR/DPO
 review, approved character downloads, final audio, production game/simulation fields, asset

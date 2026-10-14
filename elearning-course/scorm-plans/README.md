@@ -43,6 +43,7 @@ This remains **planning and draft review**, not a production course build. A [lo
 | `tools/lint_planning.py` | `storyboard/lint-report.json` for all eight packs | Local port of the edumints `lint_visual_plan` / `lint_narration_script` rules (rev `4bbf4591`); the report states the server lint must still be rerun before Phase 4 |
 | `tools/build_scorm_structure.py` | `<module>/scorm-structure.md` + `00_program/scorm-structure-summary.json` | Rerun after any storyboard change |
 | `tools/generate_screens.py` | Ignored `.generated/screens/`: offline branded HTML preview + generation report | [Usage and coverage](00_program/screen-generator.md); draft review only, not SCORM or approval |
+| `tools/prepare_asset_approval_handoff.py` | [G10 approval packet](00_program/asset-approval-handoff/README.md), 44-row response template and request JSON | Prepared, not submitted or approved; preserves human responses |
 | `tools/export_storyboard_docx.py` | The nine client-review Word documents | Supplied client logo in the running header, cover band, document control, page numbers |
 | `tools/make_companion_avatars.py` | Interim transparent avatar PNGs in `00_program/characters/assets/` | Crops of approved poses; full-size Canva downloads still outstanding (G6) |
 | `tools/audit_assets.py` | `00_program/asset-template-audit.md` + `asset-audit.json` | Hard failures (missing referenced asset, broken link, label in TTS, incomplete card) exit non-zero |
