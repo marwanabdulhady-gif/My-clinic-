@@ -15,7 +15,7 @@ It is **planning only**. Nothing here has been built, voiced, or uploaded to an 
 | # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Status |
 |---|---|---|---|---|---|---|
 | 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Plan ready, blocked on Phase 0 |
-| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~30 min | Plan ready, blocked on Phase 0 |
+| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Plan ready, blocked on Phase 0 |
 | 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Plan ready, blocked on Phase 0 |
 | 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Plan ready, blocked on Phase 0 |
 | 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Plan ready, blocked on Phase 0 |

@@ -5,6 +5,7 @@ This folder turns the Google Drive course folder into one detailed Markdown file
 - **Source folder:** Google Drive `15HyVEiMlgNqjr2tQa1QjVxJ0v-TuFmgj` (subfolders: `HR`, `Health & Safety`, `RCM/RCM`, and top-level files)
 - **Local copies of sources:** `../google_drive/` (flattened; original file names kept)
 - **Markdown modules:** `md/`
+- **SCORM production plans (phased, one folder per module):** `scorm-plans/`
 
 ## 1. Source → Markdown map
 
