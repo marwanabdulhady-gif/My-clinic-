@@ -63,8 +63,9 @@ captures. Build cannot start until the tier-1 and tier-3 rows are closed.
    the module's `phase-0-source-lock.md` (§2 row + §4 verified-facts register) for B*/NEW*.
 2. Status becomes `Closed (YYYY-MM-DD)` in that file.
 3. L2S reruns the gate chain (roadmap §standard exit gate): generator/normaliser → `lint_planning.py`
-   → `build_scorm_structure.py` → `export_storyboard_docx.py` → `audit_assets.py`, and regenerates
-   `decision-sheet.md` so the row disappears from the open list.
+   → `build_scorm_structure.py` → `export_storyboard_docx.py` → `build_decision_sheet.py` (the closed
+   row disappears from the open list) → `export_kickoff_docx.py` → `audit_assets.py`, which must exit
+   clean.
 4. If a decision changes a screen (wording, number, branch name), the same PR updates the Phase 2
    row and the storyboard card — never the card alone.
 
