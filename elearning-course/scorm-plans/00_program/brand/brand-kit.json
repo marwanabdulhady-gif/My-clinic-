@@ -52,7 +52,7 @@
   "do": [
     "Place the supplied logo files exactly; navy on light, white on navy",
     "One idea per screen; keywords on screen, explanation in narration",
-    "Navy for structure, one module colour for highlights, magenta only for warnings and key numbers",
+    "Navy for structure and the assigned module colour for highlights; Operations & My Care uses responsible magenta as its module colour, while other modules reserve magenta for warnings and key numbers",
     "Real HTML text; images contain no text",
     "Feedback shown with icon, words and colour"
   ],
