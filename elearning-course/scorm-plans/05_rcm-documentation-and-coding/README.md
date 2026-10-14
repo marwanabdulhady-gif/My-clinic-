@@ -1,10 +1,13 @@
 # 05 — RCM Part A: Documentation & ICD-10 Coding That Gets Approved (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/05_rcm-billing-documentation-script.md` (speaker script, `How to optimize billing via coding , documentation.docx`) |
 | Package title | My Clinic — RCM Part A: Documentation & ICD-10 Coding That Gets Approved |
 | Module prefix / ids | `rcma-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Collaborative burgundy #7C0041**; layouts L1–L6 |
 | Audience | Physicians and dentists; optional for nurses, coders and RCM staff |
 | Seat time | ~25 minutes |
 | SCORM | 1.2 |

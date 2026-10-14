@@ -31,7 +31,7 @@ Planning files (`visual-plan.json`, `narration-script.json`, `authoring-plan.jso
 | `language` | `"en"` | **Required.** The server default is `"tr"`. |
 | `scorm_version` | `"2004"` for 01, 03 (long, many interactions); `"1.2"` for the others | SCORM 1.2 limits `suspend_data` to 4,096 characters; long modules risk losing resume state. Switch all to `"1.2"` only if the LMS cannot run 2004. **Confirm the LMS in Phase 0.** |
 | `layout_mode` | `"stage"` (16:9, 960×540) | Matches the source decks; the player reflows on small screens. |
-| `theme` | program theme tokens + `style-minimal` | See `brand-and-theme.md`. |
+| `theme` | `brand_to_theme(brand/brand-kit.json)` + `style-minimal`; module colour as `secondary` | See `brand/brand-identity.md` §2 and §8. |
 | `theme_mode` | `"light"` | |
 | `tracking.completion_rule` | `"viewed_all_and_passed"` for compliance modules (01, 02, 07, 08); see each module's Phase 4 | Proves exposure *and* competence. |
 | `tracking.passing_score` | 80 (compliance) / 70 (orientation) | Set per module. |

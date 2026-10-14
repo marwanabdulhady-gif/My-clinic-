@@ -1,0 +1,66 @@
+{
+  "name": "My Clinic",
+  "source": "Sampled from official My Clinic decks (HR.pptx company template; Operations & My Care Structure.pptx). Confirm with Marketing (decision D11).",
+  "colors": {
+    "primary": "#003867",
+    "secondary": "#008C99",
+    "accent": "#9D3293",
+    "dark": "#1F2A37",
+    "light": "#F4F7FA",
+    "surface": "#FFFFFF",
+    "success": "#1E7B4F",
+    "error": "#B42318",
+    "warning": "#8A5A00"
+  },
+  "value_colors": {
+    "caring": "#652D8C",
+    "ambitious": "#008C99",
+    "ambitious_dark": "#006E78",
+    "responsible": "#9D3293",
+    "collaborative": "#7C0041",
+    "lilac": "#946CAF",
+    "mist": "#C0CED9"
+  },
+  "module_colors": {
+    "01_health-and-safety-1": "#008C99",
+    "02_health-and-safety-2": "#008C99",
+    "03_hr-employee-induction": "#652D8C",
+    "04_operations-and-my-care": "#9D3293",
+    "05_rcm-documentation-and-coding": "#7C0041",
+    "06_rcm-ebp-benefits-and-rejections": "#7C0041",
+    "07_quality-safety-and-risk": "#652D8C",
+    "08_it-ehr-consultation": "#006E78"
+  },
+  "fonts": {
+    "heading": "Montserrat",
+    "body": "Montserrat",
+    "arabic": "Tajawal"
+  },
+  "logo": {
+    "on_light": "assets/logo-horizontal-navy.png",
+    "on_dark": "assets/logo-horizontal-white.png",
+    "mark_on_light": "assets/mark-navy.png",
+    "mark_on_dark": "assets/mark-white.png",
+    "tagline": "Where your health matters"
+  },
+  "imagery_style": "Clean flat vector illustration in the My Clinic palette: navy outlines and shapes, white space, one module colour as highlight, light blue-grey secondary shapes, no gradients, no text, no logos. Diagrams are own SVG with real text. Software screenshots from test accounts only.",
+  "voice": {
+    "tone": "warm, calm, precise",
+    "persona": "an experienced colleague coaching a new team member in their first week",
+    "formality": "conversational-professional"
+  },
+  "do": [
+    "Place the supplied logo files exactly; navy on light, white on navy",
+    "One idea per screen; keywords on screen, explanation in narration",
+    "Navy for structure, one module colour for highlights, magenta only for warnings and key numbers",
+    "Real HTML text; images contain no text",
+    "Feedback shown with icon, words and colour"
+  ],
+  "dont": [
+    "Never AI-generate or redraw the logo or the words My Clinic",
+    "No logo on teal, purple, magenta, burgundy or photos",
+    "No small white text on teal; no small teal text on white (use #006E78)",
+    "No watermark behind questions or body text",
+    "No real patient or staff data; no third-party watermarks"
+  ]
+}

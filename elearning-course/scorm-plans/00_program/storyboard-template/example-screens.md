@@ -1,5 +1,7 @@
 # Example screen cards (module 01)
 
+![My Clinic logo](../brand/logo-preview.png)
+
 Three finished cards showing the expected level of detail: an explain screen, a scored sort and a scored scenario. Copy this depth for every screen. Values marked `⚠ PENDING` show how to handle open Phase 0 items.
 
 ---
@@ -31,9 +33,13 @@ Three finished cards showing the expected level of detail: an explain screen, a 
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px, header top-left, breadcrumb "4 · Fire safety", navy rule |
 | Visual concept | Large equilateral triangle centred on a light background; each side labelled Heat, Fuel, Oxygen with a line icon; a grey smoke band drifts across the bottom with the warning text |
-| Layout | n/a (labeled_diagram) |
-| Colour roles | bg `light` · text `dark` · accent `accent` on the smoke warning only |
+| edumints layout | n/a (labeled_diagram) |
+| Colours (palette names + hex) | bg white #FFFFFF · headings navy #003867 · body ink #1F2A37 · highlight Ambitious teal #008C99 (triangle sides, label dots) · warning magenta #9D3293 (smoke callout only) |
+| Watermark | None |
+| Icons | Flame, fuel log and O₂ line icons, navy, own SVG |
 | Animation / reveal | Labels reveal in narration order: heat → fuel → oxygen → smoke |
 | Character | None |
 
@@ -124,9 +130,13 @@ New lexicon terms: None (RACE already in the master lexicon)
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px, header top-left, breadcrumb "4 · Fire safety · Check" |
 | Visual concept | Four white step cards stacked vertically, each with a bold first letter tile (R, A, C, E) hidden until checked, on a light background |
-| Layout | n/a (sorting) |
-| Colour roles | bg `light` · text `dark` · accent none |
+| edumints layout | n/a (sorting) |
+| Colours (palette names + hex) | bg off-white #F4F7FA · stem navy #003867 · cards white with #D9E1E8 border · letter tiles Ambitious teal #008C99 with white bold text (24 px) · feedback green #1E7B4F / red #B42318 with icon + words |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -221,9 +231,13 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L5 Scenario (see `../brand/screen-mockups/05-scenario.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px, header top-left; "Decision n of 3" right |
 | Visual concept | One illustration per node: corridor with a small hand-rub bottle leaking; store room floor with a large tipped disinfectant container; lab bench with a small reagent bottle marked with the skull GHS pictogram |
-| Layout | n/a (decision_scenario) |
-| Colour roles | bg `surface` · text `dark` · accent none (feedback uses `success`/`error`) |
+| edumints layout | n/a (decision_scenario) |
+| Colours (palette names + hex) | bg white #FFFFFF · situation text ink #1F2A37 · choice cards white with #D9E1E8 border · highlight Ambitious teal #008C99 · mentor ring Caring purple #652D8C · feedback green/red with icon + words |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | `mentor-noor` (concern) on the intro only |
 
@@ -233,7 +247,20 @@ New lexicon terms: None
 |---|---|---|---|---|---|
 | `hs1-img-spill-1` | illustration | Corridor floor, small puddle from a 200 mL hand-rub bottle; flat brand style | ai-generated | A small hand-rub bottle leaking in a corridor. | No |
 | `hs1-img-spill-2` | illustration | Store room, large container of surface disinfectant on its side, wide spill | ai-generated | A large container of surface disinfectant spilled across a store-room floor. | No |
-| `hs1-img-spill-3` | illustration | Lab bench, small reagent bottle with the GHS skull pictogram, a few drops spilled | ai-generated | A few drops spilled from a reagent bottle labelled with the acute toxicity pictogram. | No |
+| `hs1-img-spill-3` | illustration | Lab bench, small reagent bottle with the GHS skull pictogram, a few drops spilled | ai-generated (pictogram added afterwards as own SVG) | A few drops spilled from a reagent bottle labelled with the acute toxicity pictogram. | No |
+
+**AI image prompt** (`hs1-img-spill-2`; the other two follow the same pattern):
+
+```text
+Flat vector illustration for a healthcare e-learning course, 16:9, a clean store room in a modern
+Saudi outpatient clinic: metal shelves with closed white containers, and one large container of
+surface disinfectant tipped over on the floor with a wide spill spreading across the tiles.
+Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light
+blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour teal #008C99 on the shelves, small touch
+of magenta (#9D3293) on the spill edge to draw attention. Bright and calm, lots of white space,
+soft even lighting. No people. No text, no letters, no numbers, no logos, no signage words, no
+watermarks, no brand names.
+```
 
 #### 4. Interaction and scoring
 

@@ -1,10 +1,13 @@
 # 01 — Facility Management & Safety (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/01_health-and-safety-1_facility-management-and-safety.md` (from `Health & Safety 1.pdf`, 65 pages, 9 modules) |
 | Package title | My Clinic — Facility Management & Safety |
 | Module prefix / ids | `hs1-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Ambitious teal #008C99**; layouts L1–L6 |
 | Audience | All new staff, clinical and non-clinical, in their first week |
 | Seat time | ~55 minutes (9 short sections of 4–8 minutes; learners can pause and resume) |
 | SCORM | 2004 4th edition (long module, many interactions; fall back to 1.2 if the LMS needs it) |
