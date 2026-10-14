@@ -2,6 +2,21 @@
 
 Gate: `lint_visual_plan`. ★ = scored. "Src" = section of the speaker script.
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Dr. Omar**, co-host **Noor** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| rcma-000 | Omar (`char-omar-welcome`) | L1 half-body bottom-right |
+| rcma-001 | Omar (`char-omar-explaining`) | L3 right column |
+| rcma-011 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| rcma-031 | Omar (`char-omar-avatar-thinking → -happy / -concern`) | L5 avatar |
+| rcma-050 | Omar + Noor (`char-omar-avatar (host); char-noor-tip (hints)`) | L5 |
+| rcma-091 | Omar (`char-omar-success`) | L6 right |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## A — Why it matters
 
 | Id | Type | Purpose | On screen | Interaction / feedback | Pts | Src |

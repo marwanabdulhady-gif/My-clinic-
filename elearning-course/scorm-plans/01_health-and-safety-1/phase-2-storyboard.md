@@ -4,6 +4,27 @@ Gate: `lint_visual_plan(plan, brand)`. On-screen text stays under 25 words where
 
 Screen types used: only the 31 supported edumints types. Rows marked ★ are scored.
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Noor**, co-host **Dr. Omar** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| hs1-000 | Noor (`char-noor-welcome`) | L1 half-body bottom-right |
+| hs1-001 | Noor (`char-noor-explaining`) | L3 right column, half-body |
+| hs1-205 | Noor (`char-noor-avatar-neutral → -happy / -concern`) | L5 avatar above situation |
+| hs1-206 | Omar (`char-omar-avatar-neutral + tip card`) | L3 tip card bottom-left |
+| hs1-301 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| hs1-409 | Noor (`char-noor-avatar-neutral → -happy / -concern`) | L5 avatar |
+| hs1-506 | Omar (`char-omar-avatar-neutral + tip card`) | L3 tip card |
+| hs1-507 | Noor (`char-noor-avatar-concern (intro)`) | L5 avatar |
+| hs1-802 | Omar (`char-omar-avatar-neutral → -happy / -concern`) | L5 avatar |
+| hs1-950 | Noor + Omar (`char-noor-explaining; char-omar-avatar in node 3`) | L5 |
+| hs1-980 | Noor (`char-noor-success`) | L6 right, half-body |
+| hs1-990 | Noor + Omar (`char-noor-success + char-omar-avatar-happy`) | L6 |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## Section 0 — Welcome
 
 | Id | Type | Purpose | On screen (keywords) | Interaction / feedback | Pts | Src |

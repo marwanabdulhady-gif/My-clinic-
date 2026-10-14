@@ -82,7 +82,7 @@
 | Watermark | `<petal watermark (L1, L2, close only) / none>` |
 | Icons | `<line icons used, colour, provenance>` |
 | Animation / reveal | `<none / auto reveal in narration order / click reveal>` |
-| Character | `<mentor-noor pose, or "None">` |
+| Companion | `<None / Noor / Dr. Omar / both>` · pose asset `<char-noor-explaining, char-omar-avatar-happy…>` · placement `<half-body right / tip card bottom-left / scenario avatar / feedback avatar>` · tip text `<≤ 25 words or n/a>` — from the module's Phase 3 companion table |
 
 **Imagery**
 
@@ -93,7 +93,7 @@
 **AI image prompt** (only for `ai-generated` assets — fill the template in `brand-identity.md` §6; delete if none):
 
 ```text
-<filled prompt: scene, module colour hex, people (none / mentor-noor pose), "No text, no letters, no numbers, no logos…">
+<filled prompt: scene, module colour hex, people (none / Noor or Dr. Omar from the approved master), "No text, no letters, no numbers, no logos…">
 ```
 
 #### 4. Interaction and scoring
@@ -123,12 +123,13 @@ Scenario / game nodes (delete if not used):
 
 | Field | Value |
 |---|---|
+| Speaker(s) | `<NOOR / OMAR / both — lead host unless Phase 3 says otherwise>` |
 | Tone | `<calm / warm / serious / encouraging>` |
 | Target seconds | `<from phase-3>` |
 | Word count / est. seconds | `<n words> / <n ÷ 140 × 60 s>` |
 | Cue targets | `<element ids used in [[cue:id]], or none>` |
 
-> `<Full narration script. Use [[cue:id]] and [[pause:1.0]] markup. Question screens: set up the situation only.>`
+> `<Full narration script. Prefix every line NOOR: or OMAR:. Use [[cue:id]] and [[pause:1.0]] markup. Question screens: set up the situation only.>`
 
 New lexicon terms: `<term → pronunciation, or "None">`
 

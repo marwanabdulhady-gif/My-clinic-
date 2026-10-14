@@ -24,7 +24,7 @@ Run this on **every** screen card before handing in a module storyboard. These c
 - [ ] Every non-decorative image has alt text; decorative images are marked.
 - [ ] Asset ids reuse Phase 3 ids where they exist; new assets have a brief and a provenance source (`own`, `ai-generated`, `cc0`, `public-domain`, `local`).
 - [ ] Hotspot regions are `rect` or `circle`.
-- [ ] Mentor character used only where Phase 3 lists it.
+- [ ] Companions (Noor / Dr. Omar) appear only where the module's Phase 3 companion table lists them.
 
 ## D. Interaction and scoring
 
@@ -70,4 +70,12 @@ Run this on **every** screen card before handing in a module storyboard. These c
 - [ ] Petal watermark only on L1, L2 or closing screens.
 - [ ] Icons are single-weight line icons from one family, with provenance.
 - [ ] AI images have a filled prompt from §6 and pass the review (only the briefed elements, no text, palette colours).
-- [ ] Mentor character matches the character description (navy scrubs, navy hijab, purple lanyard, no logo on badge).
+- [ ] Companions match `../characters/companions.md` (Noor: navy hijab, navy scrubs, white coat, purple lanyard; Dr. Omar: beard, white coat, blue-grey shirt, stethoscope, teal lanyard; badges blank); pose assets come from the approved masters.
+
+## I. Companions in narration
+
+- [ ] Every spoken line prefixed `NOOR:` or `OMAR:`; the lead host narrates unless Phase 3 names the co-host.
+- [ ] Co-host speaks only where visible or planned; two-voice screens ≤ 2 turns and ≤ 45 s.
+- [ ] Each honest story used once only, on its listed screen.
+- [ ] Tip-card text (≤ 25 words) differs from the spoken line.
+- [ ] Companions never give away an answer or appear over a question.

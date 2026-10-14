@@ -18,6 +18,20 @@ Gate: `lint_visual_plan`. ★ = scored. "Src" = slide in `Operations & My Care S
 | ops-033 ★ | `matching` | Roles | PXO ↔ "patient experience on site" · My Care Coordinator ↔ "follow-ups and bookings" · My Care Onboarding Leader ↔ "enrols patients in My Care" · Operations Sr. Manager ↔ "daily operations" · QA Leader ↔ "quality of My Care calls/service" | | 10 | 3, 6 |
 | ops-090 | `summary` | Close | Right team, first time · Link: live staff directory (intranet) · Next: module 05/06 (clinicians) or 08 (EHR) | `show_score` | | — |
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Dr. Omar**, co-host **Noor** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| ops-000 | Omar (`char-omar-welcome`) | L1 half-body bottom-right |
+| ops-001 | Omar (`char-omar-explaining`) | L3 right column |
+| ops-022 | Noor (`char-noor-avatar-neutral + tip card`) | L3 tip card |
+| ops-031 | Omar (`char-omar-avatar-neutral → -happy / -concern`) | L5 avatar |
+| ops-090 | Omar + Noor (`char-omar-success + char-noor-avatar-happy`) | L6 |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## Flow check
 
 - Passive run `ops-010`→`ops-022` = 5 screens (accordion, diagram, accordion, diagram, flashcards). If `passive_stretch` fires, move `ops-030` (sort) between `ops-011` and `ops-020`: learners sort Operations items first, then My Care items in a second `drag_drop`. Decide after lint.

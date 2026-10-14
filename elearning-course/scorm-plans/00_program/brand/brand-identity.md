@@ -48,7 +48,7 @@ The edumints player adds its own control bar; the logo sits inside the course st
 | Token | Hex | Name / meaning | Role in the courses | Contrast (on white) |
 |---|---|---|---|---|
 | `navy` | **#003867** | My Clinic Navy (logo, title backgrounds) | Primary: titles, headings, header rule, buttons, progress, logo | 11.9 : 1 ✅ any text |
-| `caring` | **#652D8C** | Purple — value *Caring* | Mentor character accent, HR course identity | 9.1 : 1 ✅ any text |
+| `caring` | **#652D8C** | Purple — value *Caring* | Noor's accent colour, HR course identity | 9.1 : 1 ✅ any text |
 | `ambitious` | **#008C99** | Teal — value *Ambitious* | Tiles, chips, bullets, icons, large text only | 4.0 : 1 ⚠ large/bold text and graphics only |
 | `ambitious-dark` | **#006E78** | Darker teal (derived for text) | Small teal text: labels, "SECTION 4 OF 9", links | 6.0 : 1 ✅ any text |
 | `responsible` | **#9D3293** | Magenta — value *Responsible* | **Accent**: key warnings, key numbers, callout bars | 6.3 : 1 ✅ any text |
@@ -143,7 +143,7 @@ Sentence case for titles ("The fire triangle"), not Title Case. Numbers as digit
 | Scenes for scenarios (corridor, store room, consultation room) | AI-generated flat illustration from the prompt template below, reviewed by a human | Photoreal AI people, stock clichés |
 | Equipment (extinguisher, eyewash, spill kits, pumps) | My Clinic's **own photos** (with permission) or flat illustration | Photos from the internet |
 | Software screens (Oracle, EHR) | Real screenshots from **test accounts** only | Any screenshot with real names, MRNs, phones or IDs |
-| People | The approved mentor character `mentor-noor` and `newstarter-faisal` | Real staff likeness without written consent |
+| People | The two approved companions **Noor** and **Dr. Omar** (`../characters/companions.md`), and generic people seen from behind or at a distance | Real staff likeness without written consent |
 
 ### AI image prompt template (copy, then fill the `{…}` parts)
 
@@ -154,7 +154,7 @@ geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (
 surfaces, one highlight colour {MODULE COLOUR HEX, e.g. teal #008C99}, small touches of magenta
 (#9D3293) only for {WARNING ELEMENT or "nothing"}. Modern Saudi outpatient clinic interior, bright and
 calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
-{PEOPLE: "no people" | "Noor, the safety mentor (see character sheet)" | "one staff member seen from
+{PEOPLE: "no people" | "Noor" or "Dr. Omar" (use the approved master as character reference — see ../characters/companions.md) | "one staff member seen from
 behind"}. Modest, culturally appropriate clothing for Saudi Arabia.
 No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
 ```
@@ -163,12 +163,14 @@ No text, no letters, no numbers, no logos, no signage words, no watermarks, no b
 
 After generating: check that **only the elements in the brief** appear (very important for hazard-spotting scenes), that nothing in the image looks like text, and that the colours match. Regenerate or edit until it passes. Record the prompt, tool and date in the asset's provenance note.
 
-### Mentor character (`mentor-noor`)
+### Companion characters (Noor and Dr. Omar)
 
-- Fictional senior nurse and safety liaison, Saudi woman in her 30s, **navy scrubs**, white lab coat optional, **plain navy hijab**, plain ID badge with **no logo and no text**, warm calm expression.
-- Same flat style as the scenes; navy outline; purple (`caring` #652D8C) as her accent colour (badge lanyard).
-- Make **one master image first**, get it approved, then create poses (neutral, explaining, concern, success, hint) from that master.
-- Shown as a circular avatar (48–64 px) with a purple ring on scenario screens, or half-body on intro screens. Never on every screen.
+Two fictional guides appear across all courses. **Everything about them — look, poses, asset ids, AI prompts, placement, voices and script rules — is in [`../characters/companions.md`](../characters/companions.md).** In short:
+
+- **Noor**: senior staff nurse, navy hijab, navy scrubs with short white coat, **purple** (#652D8C) lanyard. Leads 01, 02, 07.
+- **Dr. Omar**: family physician, short beard, white coat over blue-grey shirt, stethoscope, **teal** (#008C99) lanyard. Leads 03, 04, 05, 06, 08.
+- Badges carry no logo or text. Style: polished flat vector with subtle soft shading (the one exception to "flat only"). Masters and 16 poses are generated — see the character sheet `../characters/character-sheet.png`; every pose is made from the master.
+- Placement: half-body on title, intro and closing screens; 48–64 px avatar with a ring in their colour on scenarios and tip cards; never over a question while the learner answers. Visible on about one screen in three at most.
 
 ---
 
@@ -186,6 +188,8 @@ Reference mockups (rendered from [`screen-mockups/mockups.html`](screen-mockups/
 | **L4 Question** | ![](screen-mockups/04-question.png) | `mcq`, `true_false`, `fill_blank`, `matching`, `sorting`, `drag_drop`, `labeled_diagram` (quiz), `hotspot` (quiz), `poll`, `adaptive_practice` |
 | **L5 Scenario** | ![](screen-mockups/05-scenario.png) | `decision_scenario`, `game`, `escape_room`, `simulation` (screenshot replaces the illustration) |
 | **L6 Results / close** | ![](screen-mockups/06-results.png) | `results_breakdown`, `summary` |
+| **Companions: meet your guides** | ![](screen-mockups/07-meet-your-guides.png) | Title of `hr-000` (duo); lead host half-body on other titles |
+| **Companions: tip card** | ![](screen-mockups/08-companion-tip.png) | Tip cards on L3 screens |
 
 ### Layout specs
 
@@ -195,7 +199,7 @@ Reference mockups (rendered from [`screen-mockups/mockups.html`](screen-mockups/
 | L2 Section opener | White + navy petal watermark right | None (logo bottom-left) | 200 px value tile in module colour with white line icon (left), "SECTION n OF N" (ambitious-dark), section title 40 px navy, 3–5 keywords | Icon only |
 | L3 Content | White | Navy logo + breadcrumb + navy rule | Left ≈ 45%: title + keywords (≤ 45 words) + optional magenta callout; right ≈ 45%: one diagram/illustration in a 16 px-radius frame | One image max |
 | L4 Question | Off-white `bg` | Navy logo + breadcrumb ("Section · Check") + rule | "QUESTION · n POINTS" label, stem (h2), options as cards (2 × 2 grid for short options, 1 column for long), feedback banner with icon + text, navy "Continue" bottom-right | Optional small image above options |
-| L5 Scenario | White | Navy logo + breadcrumb + rule + "Decision n of N" (right) | Left ≈ 42%: scene illustration or screenshot; right: mentor avatar, situation (17 px semibold), choices as full-width cards | One scene per node |
+| L5 Scenario | White | Navy logo + breadcrumb + rule + "Decision n of N" (right) | Left ≈ 42%: scene illustration or screenshot; right: companion avatar (Noor or Dr. Omar), situation (17 px semibold), choices as full-width cards | One scene per node |
 | L6 Results | Off-white `bg` | Navy logo + "Your results" + rule | Score ring (navy) with PASSED/NOT YET in words, one bar per objective, weak ones flagged ⚠ + text, buttons | None |
 
 The edumints player draws the real controls, menus and interactions; the mockups show the **visual target** (colours, spacing, hierarchy). The theme tokens in `brand-kit.json` carry the colours and fonts into the player.

@@ -8,6 +8,23 @@
 
 Gate: `lint_visual_plan(plan, brand)`. ★ = scored. "Src" = slide in `HR.pptx`.
 
+## Companions on screen (Noor and Dr. Omar)
+
+Lead host **Dr. Omar**, co-host **Noor** — see [`../00_program/characters/companions.md`](../00_program/characters/companions.md). The companion is part of the visual design on these screens (full detail, poses and spoken lines in `phase-3-narration-and-assets.md`, "Companions in this module"):
+
+| Screen | Companion | Placement |
+|---|---|---|
+| hr-000 | Both (`char-duo-welcome`) | L1 duo, bottom-right (mockup 07) |
+| hr-001 | Omar (`char-omar-explaining`) | L3 right column, half-body |
+| hr-002 | Omar (`char-omar-listening`) | L3 small, beside the poll |
+| hr-031 | Noor (`char-noor-avatar-neutral → -concern / -happy`) | L5 avatar |
+| hr-043 | Omar (`char-omar-thinking`) | L3 right column |
+| hr-044 | Noor (`char-noor-avatar-neutral`) | L5 avatar |
+| hr-061 | Omar (`char-omar-avatar-neutral + tip card`) | L4 feedback avatar / tip after the simulation |
+| hr-091 | Omar + Noor (`char-omar-success + char-noor-avatar-happy`) | L6 |
+
+All other screens: no companion visible; the lead host's voice narrates.
+
 ## A — Welcome
 
 | Id | Type | Purpose | On screen | Interaction / feedback | Pts | Src |

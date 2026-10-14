@@ -54,6 +54,7 @@ Shared rules that apply to every phase live in [`00_program/`](00_program/):
 
 - [`00_program/brand/brand-identity.md`](00_program/brand/brand-identity.md) — **My Clinic brand identity**: logo files and rules, colours, font, icons, illustration style, AI image prompt template, screen layouts L1–L6 with mockups
 - [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand summary, theme decision, Arabic/RTL plan
+- [`00_program/characters/companions.md`](00_program/characters/companions.md) — **the two course companions, Noor and Dr. Omar**: character bible, poses and AI prompts, placement on screens, voices and script rules, per-module plan
 - [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
@@ -69,7 +70,7 @@ Each module can move through its phases independently, but the shared work comes
 | Week | Shared work | Modules |
 |---|---|---|
 | 1 | Brand kit approved; cross-module decisions (Code Orange, codes sheet, regulator name, branch names) | Phase 0 for all 8 |
-| 2 | Voice route chosen (English TTS or voice talent); master character approved | Phase 1–2 for 03, 07, 01 |
+| 2 | Two companion voices chosen (Noor, Dr. Omar); both character masters approved | Phase 1–2 for 03, 07, 01 |
 | 3 | — | Phase 3 for 03, 07, 01 · Phase 1–2 for 02, 04, 05, 06 |
 | 4 | Re-capture EHR screenshots on a test patient (module 08) | Phase 4 build for 03, 07 · Phase 3 for 02, 04, 05, 06 |
 | 5 | — | Phase 4 for 01, 02, 04 · Phase 1–3 for 08 |
