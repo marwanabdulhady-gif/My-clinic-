@@ -11,6 +11,7 @@ This is the exact sequence Claude (the MCP client) follows for each package. Too
 | 3 | 2 | `brand_to_theme(brand)` (once for the program) | `00_program/theme_tokens.json` |
 | 4 | 2 | `lint_visual_plan(plan, brand)` | `visual-plan.json` + lint report |
 | 4b | 2 | Write `storyboard/storyboard.md` from the approved screen list (no server call — this is authoring, not compiling) | `storyboard/storyboard.md`, one card per screen |
+| 4c | 2 | `python3 elearning-course/scorm-plans/tools/build_scorm_structure.py` (no server call) — regenerates each module's SCORM structure from the storyboard | `<module>/scorm-structure.md` |
 | 5 | 3 | `lint_narration_script(script, plan)` → `export_audio_script(script)` | `narration-script.json`, `voice_talent.md` |
 | 6 | 3 | `lint_authoring_plan(plan, stage="planning")` | lint report |
 | 7 | 3 | **STOP — human approval** of storyboard, visuals, narration, activities | approval record in `phase-5-qa-and-delivery.md` |
