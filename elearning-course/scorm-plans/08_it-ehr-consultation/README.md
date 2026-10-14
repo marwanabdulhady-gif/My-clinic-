@@ -1,10 +1,13 @@
 # 08 — EHR Consultation Workflow: Guided Simulation (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/08_video-it-ehr-consultation-walkthrough.md` (from `IT.mp4`, 8 min 38 s, **silent**, contains patient identifiers) |
 | Package title | My Clinic — EHR Consultation Workflow: Guided Simulation |
 | Module prefix / ids | `ehr-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Dark teal #006E78**; layouts L1–L6 |
 | Audience | Physicians and clinical staff who document consultations in the clinic EHR |
 | Seat time | ~25 minutes |
 | SCORM | 1.2 |

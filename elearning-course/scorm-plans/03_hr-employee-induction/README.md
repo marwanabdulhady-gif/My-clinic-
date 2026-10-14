@@ -1,10 +1,13 @@
 # 03 — Welcome On Board: My Clinic & HR Essentials (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/03_hr-employee-induction.md` (from `HR.pptx`, 62 slides, marked *Confidential*) |
 | Package title | My Clinic — Welcome On Board: My Clinic & HR Essentials |
 | Module prefix / ids | `hr-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Caring purple #652D8C**; layouts L1–L6 |
 | Audience | All new employees (clinical and non-clinical), day 1–3 |
 | Seat time | ~45 minutes |
 | SCORM | 2004 4th edition |

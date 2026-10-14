@@ -1,10 +1,13 @@
 # 06 — RCM Part B: New EBP Benefits & Claim-Rejection Analysis (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/06_rcm-billing-documentation-slides-2026.md` (`how to optimize billing via coding ,, documentation  2026.pptx`, 14 slides) |
 | Package title | My Clinic — RCM Part B: New EBP Benefits & Claim-Rejection Analysis |
 | Module prefix / ids | `rcmb-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Collaborative burgundy #7C0041**; layouts L1–L6 |
 | Audience | Physicians, dentists, RCM/insurance staff, front-office approvals team |
 | Seat time | ~20 minutes |
 | SCORM | 1.2 |

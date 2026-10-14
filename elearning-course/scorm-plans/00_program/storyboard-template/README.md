@@ -1,5 +1,7 @@
 # Storyboard template: brief for the storyboarding agent
 
+![My Clinic logo](../brand/logo-preview.png)
+
 This folder is everything an AI agent (or a human designer) needs to write the **full, screen-by-screen storyboard** for each module. It turns the one-line rows in each module's `phase-2-storyboard.md` into complete screen cards that a developer can build in edumints without asking questions.
 
 | File | What it is |
@@ -25,7 +27,7 @@ Write one storyboard file per module, with one completed screen card for **every
 1. `../../README.md` (scorm-plans overview) and `../cross-module-decisions.md`.
 2. The module's `README.md`, `phase-0-source-lock.md`, `phase-1-action-map.md`, `phase-2-storyboard.md`, `phase-3-narration-and-assets.md`, `phase-4-build.md`.
 3. The module's source file in `elearning-course/md/` (the Phase 2 *Src* column gives the page, slide or time). Facts come **only** from this source or from closed Phase 0 decisions.
-4. `../brand-and-theme.md` (colour roles, minimalist rules), `../narration-and-lexicon.md` (voice, writing rules, lexicon), `../build-pipeline.md` (settings, limits).
+4. **`../brand/brand-identity.md` — the My Clinic brand identity (mandatory).** Logo files and placement, colour palette and the module colour, Montserrat type scale, icons, illustration style, the **AI image prompt template**, and the six screen layouts L1–L6 with mockups in `../brand/screen-mockups/`. Then `../brand-and-theme.md`, `../narration-and-lexicon.md` (voice, writing rules, lexicon) and `../build-pipeline.md` (settings, limits).
 5. `screen-type-guide.md` and `example-screens.md` in this folder.
 
 ## 3. Rules (do not break)
@@ -39,6 +41,9 @@ Write one storyboard file per module, with one completed screen card for **every
 7. **Only supported edumints screen types** (see `screen-type-guide.md`). Hotspot regions are `rect` or `circle` only.
 8. **Mentor character** (`mentor-noor`) appears only where Phase 3 lists it.
 9. Write in **plain, warm, professional English** (British spelling, as in the source decks).
+10. **Brand identity is mandatory.** Every card names its layout (L1–L6), the logo file and position, the module colour and the colour roles from `../brand/brand-identity.md`. Use only palette colours.
+11. **Never ask an image tool to draw the logo or the words "My Clinic".** The logo is always the supplied PNG in `../brand/assets/`. Images must contain no text.
+12. For every AI-generated image, write the **filled prompt** from the brand prompt template in the card. Diagrams are briefed as own SVG with real text, not AI images.
 
 ## 4. Workflow for each module
 
@@ -77,6 +82,9 @@ Module folder: elearning-course/scorm-plans/<01_health-and-safety-1>/
 4. Write one complete screen card for every screen in the module's phase-2-storyboard.md,
    in the same order and with the same ids. Match the detail in example-screens.md.
 5. Never invent facts. Mark anything that depends on an open Phase 0 item as ⚠ PENDING <id>.
+   Follow elearning-course/scorm-plans/00_program/brand/brand-identity.md for every screen:
+   layout L1–L6, logo file and position, module colour, palette, Montserrat sizes, and the
+   AI image prompt template. Never generate the logo; never put text in images.
 6. Run review-checklist.md on every card and fill the module summary tables.
 7. Commit the file on a new branch and open a pull request titled
    "Storyboard: <module title> v0.1".

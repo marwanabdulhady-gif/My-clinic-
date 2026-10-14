@@ -1,10 +1,13 @@
 # 07 — Clinical Governance: Quality, Patient Safety & Risk (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/07_video-quality-safety-and-risk-orientation.md` (from `Quality, Safety and Risk Orientation.mp4`, 8 min 56 s, narrated; screenshots in `../../media/07_quality-safety-risk/`) |
 | Package title | My Clinic — Clinical Governance: Quality, Patient Safety & Risk |
 | Module prefix / ids | `qsr-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Caring purple #652D8C**; layouts L1–L6 |
 | Audience | All clinical staff (and recommended for all staff) |
 | Seat time | ~25 minutes |
 | SCORM | 1.2 |

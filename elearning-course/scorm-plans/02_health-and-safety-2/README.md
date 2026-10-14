@@ -1,10 +1,13 @@
 # 02 — Safety in Practice: Hazard, Fire & Chemical Lab (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` (from `Health & Safety 2.pdf`, 31 pages, mostly visual) |
 | Package title | My Clinic — Safety in Practice: Hazard, Fire & Chemical Lab |
 | Module prefix / ids | `hs2-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Ambitious teal #008C99**; layouts L1–L6 |
 | Audience | All new staff; best taken right after module 01 |
 | Seat time | ~33 minutes |
 | SCORM | 1.2 |

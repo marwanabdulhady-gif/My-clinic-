@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Clinic e-learning screen mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003867; --navy-2:#0F4470; --caring:#652D8C; --ambitious:#008C99; --ambitious-dark:#006E78;
+    --responsible:#9D3293; --collab:#7C0041; --lilac:#946CAF;
+    --ink:#1F2A37; --muted:#5B6B7B; --line:#D9E1E8; --bg:#F4F7FA; --surface:#FFFFFF;
+    --mist:#C0CED9; --success:#1E7B4F; --success-bg:#E8F5EE; --error:#B42318; --error-bg:#FDECEA;
+    --module:var(--ambitious);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e9edf1;font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);padding:24px;display:flex;flex-direction:column;gap:24px;align-items:center}
+  .stage{width:960px;height:540px;position:relative;overflow:hidden;background:var(--surface);box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  .wm{position:absolute;opacity:.07;pointer-events:none}
+  .hdr{position:absolute;left:0;right:0;top:0;height:64px;display:flex;align-items:center;padding:0 40px;gap:16px}
+  .hdr img{height:30px}
+  .hdr .crumb{font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+  .rule{position:absolute;left:40px;right:40px;top:64px;height:2px;background:var(--navy)}
+  .ftr{position:absolute;left:40px;right:40px;bottom:16px;display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
+  .progress{position:absolute;left:0;bottom:0;height:4px;background:var(--module)}
+  h1{font-weight:700;color:var(--navy);font-size:30px;line-height:1.15}
+  h2{font-weight:600;color:var(--navy);font-size:24px;line-height:1.2}
+  .chip{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--module);padding:6px 12px;border-radius:999px}
+  .ph{background:repeating-linear-gradient(135deg,#EEF2F6 0 12px,#E6ECF2 12px 24px);border:1.5px dashed var(--mist);border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:12px;padding:16px;line-height:1.4}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 22px;border-radius:999px;background:var(--navy);color:#fff;font-weight:600;font-size:13px}
+  .ann{width:960px;font-size:13px;color:#33414f;line-height:1.5}
+  .ann b{color:var(--navy)}
+</style>
+</head>
+<body>
+
+<!-- 1 TITLE -->
+<div class="ann"><b>1 · Title screen (title_slide)</b> — navy brand background, white logo top-left, course title in white Montserrat Bold, module colour chip, tagline bottom-left.</div>
+<div class="stage" id="s1" style="background:linear-gradient(120deg,#003867 0%,#003867 55%,#3B6A97 100%)">
+  <img src="../assets/logo-horizontal-white.png" style="position:absolute;left:48px;top:40px;height:48px">
+  <img src="../assets/mark-white.png" class="wm" style="right:-70px;top:60px;height:520px;opacity:.10">
+  <div style="position:absolute;left:48px;top:190px;width:600px">
+    <span class="chip" style="--module:var(--ambitious)">Course 1 · HSE</span>
+    <div style="font-size:40px;font-weight:700;color:#fff;line-height:1.1;margin-top:18px">Facility Management<br>&amp; Safety</div>
+    <div style="font-size:16px;font-weight:400;color:#C0CED9;margin-top:14px">Your first-week safety essentials · 9 short sections</div>
+  </div>
+  <div style="position:absolute;left:48px;bottom:36px;font-size:12px;color:#8FB4D9;font-weight:500;letter-spacing:.04em">Where your health matters</div>
+</div>
+
+<!-- 2 SECTION OPENER -->
+<div class="ann"><b>2 · Section opener (content_slide, full_media)</b> — white, large module-colour value tile with a white line icon, section number and title in navy, petal watermark at right.</div>
+<div class="stage" id="s2">
+  <img src="../assets/mark-navy.png" class="wm" style="right:-80px;top:40px;height:520px">
+  <div style="position:absolute;left:80px;top:150px;width:200px;height:200px;border-radius:4px;background:var(--ambitious);display:flex;align-items:center;justify-content:center">
+    <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 5 4.5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-7.5Z"/></svg>
+  </div>
+  <div style="position:absolute;left:320px;top:170px;width:520px">
+    <div style="font-size:14px;font-weight:700;color:var(--ambitious-dark);letter-spacing:.12em">SECTION 4 OF 9</div>
+    <div style="font-size:40px;font-weight:700;color:var(--navy);margin-top:10px;line-height:1.1">Fire safety</div>
+    <div style="font-size:15px;color:var(--muted);margin-top:14px;line-height:1.5">Fire triangle · RACE &amp; PASS · Evacuation · What not to bring in</div>
+  </div>
+  <img src="../assets/logo-horizontal-navy.png" style="position:absolute;left:40px;bottom:28px;height:26px">
+  <div class="progress" style="width:40%"></div>
+</div>
+
+<!-- 3 CONTENT -->
+<div class="ann"><b>3 · Content screen (content_slide, text_media)</b> — header with navy logo + section breadcrumb and navy rule (as in the official decks), keywords left, one illustration right, footer with module and screen id.</div>
+<div class="stage" id="s3">
+  <div class="hdr"><img src="../assets/logo-horizontal-navy.png"><span class="crumb">4 · Fire safety</span></div>
+  <div class="rule"></div>
+  <div style="position:absolute;left:40px;top:96px;width:430px">
+    <h1>The fire triangle</h1>
+    <div style="margin-top:22px;display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;gap:12px;align-items:center"><span style="width:10px;height:10px;border-radius:50%;background:var(--ambitious)"></span><span style="font-size:18px;font-weight:600">Heat</span><span style="font-size:14px;color:var(--muted)">ignition source</span></div>
+      <div style="display:flex;gap:12px;align-items:center"><span style="width:10px;height:10px;border-radius:50%;background:var(--ambitious)"></span><span style="font-size:18px;font-weight:600">Fuel</span><span style="font-size:14px;color:var(--muted)">anything that burns</span></div>
+      <div style="display:flex;gap:12px;align-items:center"><span style="width:10px;height:10px;border-radius:50%;background:var(--ambitious)"></span><span style="font-size:18px;font-weight:600">Oxygen</span><span style="font-size:14px;color:var(--muted)">keeps it burning</span></div>
+    </div>
+    <div style="margin-top:26px;border-left:4px solid var(--responsible);padding:10px 14px;background:#F8EEF7;border-radius:0 8px 8px 0;font-size:15px;font-weight:600;color:var(--ink)">Smoke, not flame, is the leading cause of death.</div>
+  </div>
+  <div class="ph" style="position:absolute;right:40px;top:96px;width:400px;height:360px">Diagram: fire triangle (own SVG)<br>navy lines · teal labels · white background<br>alt text required</div>
+  <div class="ftr"><span>Facility Management &amp; Safety</span><span>hs1-401</span></div>
+  <div class="progress" style="width:42%"></div>
+</div>
+
+<!-- 4 QUESTION -->
+<div class="ann"><b>4 · Question screen (mcq / true_false)</b> — light background, question card, option cards with clear selected state, feedback banner after submit (green/red + icon + text, never colour alone).</div>
+<div class="stage" id="s4" style="background:var(--bg)">
+  <div class="hdr"><img src="../assets/logo-horizontal-navy.png"><span class="crumb">4 · Fire safety · Check</span></div>
+  <div class="rule"></div>
+  <div style="position:absolute;left:40px;right:40px;top:92px">
+    <div style="font-size:12px;font-weight:700;color:var(--ambitious-dark);letter-spacing:.1em">QUESTION · 5 POINTS</div>
+    <h2 style="margin-top:8px;max-width:760px">Smoke in Room 3. Patients on the same floor are not in danger yet. What is your first move?</h2>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="card" style="padding:14px 16px;display:flex;gap:12px;align-items:center;border:2px solid var(--navy)"><span style="width:18px;height:18px;border-radius:50%;border:5px solid var(--navy)"></span><span style="font-size:14px;font-weight:600">Move patients through the fire doors to the next compartment</span></div>
+      <div class="card" style="padding:14px 16px;display:flex;gap:12px;align-items:center"><span style="width:18px;height:18px;border-radius:50%;border:2px solid var(--mist)"></span><span style="font-size:14px">Take patients down in the lift</span></div>
+      <div class="card" style="padding:14px 16px;display:flex;gap:12px;align-items:center"><span style="width:18px;height:18px;border-radius:50%;border:2px solid var(--mist)"></span><span style="font-size:14px">Evacuate the whole building</span></div>
+      <div class="card" style="padding:14px 16px;display:flex;gap:12px;align-items:center"><span style="width:18px;height:18px;border-radius:50%;border:2px solid var(--mist)"></span><span style="font-size:14px">Wait for the fire team</span></div>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:12px;align-items:flex-start;background:var(--success-bg);border-left:4px solid var(--success);padding:12px 14px;border-radius:0 8px 8px 0">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E7B4F" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg>
+      <div style="font-size:13px;line-height:1.45"><b style="color:var(--success)">Correct.</b> Horizontal evacuation is the first response for most fires: same floor, through fire doors, away from the smoke.</div>
+    </div>
+  </div>
+  <div style="position:absolute;right:40px;bottom:40px"><span class="btn">Continue</span></div>
+  <div class="ftr"><span>Facility Management &amp; Safety</span><span>hs1-407</span></div>
+  <div class="progress" style="width:46%"></div>
+</div>
+
+<!-- 5 SCENARIO -->
+<div class="ann"><b>5 · Scenario screen (decision_scenario / game)</b> — scene illustration left, mentor avatar and situation right, choices as full-width buttons; lives/score shown as text plus icon.</div>
+<div class="stage" id="s5">
+  <div class="hdr"><img src="../assets/logo-horizontal-navy.png"><span class="crumb">5 · Hazardous materials · Scenario</span>
+    <span style="margin-left:auto;font-size:12px;font-weight:600;color:var(--navy)">Decision 2 of 3</span></div>
+  <div class="rule"></div>
+  <div class="ph" style="position:absolute;left:40px;top:92px;width:400px;height:380px">Scene illustration: store room, large tipped disinfectant container<br>flat style · brand palette · no text in image<br>alt text required</div>
+  <div style="position:absolute;left:470px;right:40px;top:92px">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div style="width:48px;height:48px;border-radius:50%;background:#E6ECF2;border:2px solid var(--caring);display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--muted)">Noor</div>
+      <div style="font-size:12px;color:var(--muted)"><b style="color:var(--caring)">Noor</b> · Safety mentor</div>
+    </div>
+    <div style="margin-top:14px;font-size:17px;font-weight:600;line-height:1.4;color:var(--ink)">A large container of surface disinfectant tips over. Most of it is on the floor. What do you do?</div>
+    <div style="margin-top:18px;display:flex;flex-direction:column;gap:10px">
+      <div class="card" style="padding:13px 16px;font-size:14px;font-weight:500">Call the cleaning supervisor</div>
+      <div class="card" style="padding:13px 16px;font-size:14px;font-weight:500">Isolate the area, warn others and activate Code Orange</div>
+      <div class="card" style="padding:13px 16px;font-size:14px;font-weight:500">Mop it up yourself before anyone slips</div>
+    </div>
+  </div>
+  <div class="ftr"><span>Facility Management &amp; Safety</span><span>hs1-507</span></div>
+  <div class="progress" style="width:55%"></div>
+</div>
+
+<!-- 6 RESULTS -->
+<div class="ann"><b>6 · Results / summary (results_breakdown / summary)</b> — score with pass status in words, one bar per objective (navy fill, weak ones flagged with icon and text), next steps.</div>
+<div class="stage" id="s6" style="background:var(--bg)">
+  <div class="hdr"><img src="../assets/logo-horizontal-navy.png"><span class="crumb">Your results</span></div>
+  <div class="rule"></div>
+  <div style="position:absolute;left:40px;top:100px;width:250px;text-align:center">
+    <div style="width:180px;height:180px;margin:0 auto;border-radius:50%;background:conic-gradient(var(--navy) 0 86%,#DCE4EC 86% 100%);display:flex;align-items:center;justify-content:center">
+      <div style="width:140px;height:140px;border-radius:50%;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center"><div style="font-size:38px;font-weight:700;color:var(--navy)">86%</div><div style="font-size:12px;color:var(--success);font-weight:700">PASSED</div></div>
+    </div>
+    <div style="font-size:13px;color:var(--muted);margin-top:14px">Pass mark 80%</div>
+  </div>
+  <div style="position:absolute;left:330px;right:40px;top:100px;display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:20px">By section</h2>
+    <div style="font-size:13px"><div style="display:flex;justify-content:space-between"><span>The eight FMS plans</span><b>100%</b></div><div style="height:8px;background:#DCE4EC;border-radius:4px;margin-top:4px"><div style="width:100%;height:8px;background:var(--navy);border-radius:4px"></div></div></div>
+    <div style="font-size:13px"><div style="display:flex;justify-content:space-between"><span>Fire safety</span><b>90%</b></div><div style="height:8px;background:#DCE4EC;border-radius:4px;margin-top:4px"><div style="width:90%;height:8px;background:var(--navy);border-radius:4px"></div></div></div>
+    <div style="font-size:13px"><div style="display:flex;justify-content:space-between"><span>⚠ Hazardous materials — revisit this section</span><b style="color:var(--error)">60%</b></div><div style="height:8px;background:#DCE4EC;border-radius:4px;margin-top:4px"><div style="width:60%;height:8px;background:var(--responsible);border-radius:4px"></div></div></div>
+    <div style="font-size:13px"><div style="display:flex;justify-content:space-between"><span>Radiation &amp; laser</span><b>100%</b></div><div style="height:8px;background:#DCE4EC;border-radius:4px;margin-top:4px"><div style="width:100%;height:8px;background:var(--navy);border-radius:4px"></div></div></div>
+  </div>
+  <div style="position:absolute;right:40px;bottom:40px;display:flex;gap:10px"><span class="btn" style="background:#fff;color:var(--navy);border:1.5px solid var(--navy)">Review hazmat</span><span class="btn">Finish</span></div>
+  <div class="ftr"><span>Facility Management &amp; Safety</span><span>hs1-980</span></div>
+  <div class="progress" style="width:100%"></div>
+</div>
+
+</body>
+</html>

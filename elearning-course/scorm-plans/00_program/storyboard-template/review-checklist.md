@@ -58,3 +58,16 @@ Run this on **every** screen card before handing in a module storyboard. These c
 - [ ] JSON block is valid (quotes, commas, brackets) and uses field names from `screen-type-guide.md`.
 - [ ] `id`, `node_id`, `section` match the module header outline.
 - [ ] Planned asset ids are written as `<asset-id>` placeholders, not invented server ids.
+
+## H. Brand identity (`../brand/brand-identity.md`)
+
+- [ ] Layout L1–L6 named and matches the screen type table in §7.
+- [ ] Logo: supplied PNG only, right colourway (navy on light, white on navy), right size and position; one logo per screen.
+- [ ] No logo, "My Clinic" text or any other text requested from an image model.
+- [ ] Colours only from the palette; navy for structure, the **module colour** as the single highlight, magenta only for warnings/key numbers.
+- [ ] Contrast: no small white text on teal; small teal text uses #006E78.
+- [ ] Montserrat sizes from §3; nothing below 14 px except the footer.
+- [ ] Petal watermark only on L1, L2 or closing screens.
+- [ ] Icons are single-weight line icons from one family, with provenance.
+- [ ] AI images have a filled prompt from §6 and pass the review (only the briefed elements, no text, palette colours).
+- [ ] Mentor character matches the character description (navy scrubs, navy hijab, purple lanyard, no logo on badge).

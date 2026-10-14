@@ -105,7 +105,7 @@ ICD-10 codes are spoken letter-by-letter plus number, e.g. K52 → "K fifty-two"
 
 | Id | Role | Identity | Variants |
 |---|---|---|---|
-| `mentor-noor` | Coach / narrator persona | Fictional senior nurse and safety liaison, Saudi, professional scrubs with a plain ID badge (no real logo until approved), modest hijab, calm expression. Flat illustration in brand colours. | neutral, explaining, concern, success, hint |
+| `mentor-noor` | Coach / narrator persona | Fictional senior nurse and safety liaison, Saudi woman in her 30s, navy scrubs, plain navy hijab, plain ID badge with no logo or text, purple (#652D8C) lanyard, calm warm expression. Flat vector style from `brand/brand-identity.md` §6. | neutral, explaining, concern, success, hint |
 | `newstarter-faisal` | Learner stand-in for scenarios | Fictional new staff member in business attire (front office) or scrubs (clinical scenes). | neutral, thinking, concern |
 
 Rules: no real staff likeness; one approved master image before any variant; same face, clothes and proportions in every pose; alt text on each use. Characters appear on scenario screens only, never as decoration on every slide (minimalist rule).

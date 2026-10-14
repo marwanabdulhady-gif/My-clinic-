@@ -14,7 +14,7 @@ These decisions affect more than one package. Record the final answer here **onc
 | D8 | **Incident reporting window** — 24 hours (Quality video and HR ethics slide) | 03, 07 | Confirm against the incident-reporting policy; keep the same wording in both modules. | Quality / Risk Manager | Open | |
 | D9 | **LMS and SCORM version** | all | Which LMS (Moodle, Cornerstone, TalentLMS, …)? Does it run SCORM 2004 4th edition? | L&D / IT | Open | |
 | D10 | **Voice route and provider** | all | External English TTS for release 1 (see `narration-and-lexicon.md`). | Course owner | Open | |
-| D11 | **Brand kit** | all | Brand guide from Marketing (see `brand-and-theme.md`). | Marketing | Open | |
+| D11 | **Brand kit** | all | Brand taken from My Clinic's own decks (`brand/brand-identity.md`): navy #003867, value colours, Montserrat, logo files. Marketing to confirm or send the official guide. | Marketing | Open — draft in use | |
 | D12 | **Template origin of H&S 2** ("First Clinic" metadata) [15] | 02 | Do not reuse H&S 2 template art until confirmed. | Safety & Security Manager | Open | |
 | D13 | **Clinical Risk and Infection Control sessions** (on the HR agenda but no source) [5] | 03, program | Out of scope for these eight packages. Flag as a gap in the induction curriculum. | L&D | Open | |
 | D14 | **Completion record / acknowledgement form** (H&S 1 page 65 asks staff to sign) | 01, 03 | Use an LMS attestation step after the SCORM package, or a final `poll` screen + LMS e-signature. | L&D | Open | |

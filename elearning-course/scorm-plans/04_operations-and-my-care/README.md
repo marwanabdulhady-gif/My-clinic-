@@ -1,10 +1,13 @@
 # 04 — Who Does What: Operations & My Care (SCORM plan)
 
+![My Clinic logo](../00_program/brand/logo-preview.png)
+
 | Item | Value |
 |---|---|
 | Source | `../../md/04_operations-and-my-care-structure.md` (from `Operations & My Care Structure.pptx`, 6 slides) |
 | Package title | My Clinic — Who Does What: Operations & My Care |
 | Module prefix / ids | `ops-` |
+| Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Responsible magenta #9D3293**; layouts L1–L6 |
 | Audience | Front-line, patient-experience and clinical staff |
 | Seat time | ~15 minutes |
 | SCORM | 1.2 |

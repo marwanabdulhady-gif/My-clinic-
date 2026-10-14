@@ -1,5 +1,7 @@
 # My Clinic — SCORM Module Plans (edumints-scorm-mcp)
 
+![My Clinic logo](00_program/brand/logo-preview.png)
+
 This folder holds the **production plans** for turning each source Markdown file in `../md/` into an interactive SCORM package with the [edumints-scorm-mcp](https://github.com/marwanabdulhady-gif/edumints-scorm-mcp) server.
 
 It is **planning only**. Nothing here has been built, voiced, or uploaded to an LMS yet. Every plan follows the server's authoring playbook (`playbook/README.md` in the edumints repo): brand → visual plan → narration → assets → approval → build → QA.
@@ -50,7 +52,8 @@ Every module folder has the same files, so the team can track all eight packages
 
 Shared rules that apply to every phase live in [`00_program/`](00_program/):
 
-- [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand kit, theme, minimalist visual rules, Arabic/RTL plan
+- [`00_program/brand/brand-identity.md`](00_program/brand/brand-identity.md) — **My Clinic brand identity**: logo files and rules, colours, font, icons, illustration style, AI image prompt template, screen layouts L1–L6 with mockups
+- [`00_program/brand-and-theme.md`](00_program/brand-and-theme.md) — brand summary, theme decision, Arabic/RTL plan
 - [`00_program/build-pipeline.md`](00_program/build-pipeline.md) — exact edumints tool sequence, SCORM settings, naming, file layout, known server limits
 - [`00_program/narration-and-lexicon.md`](00_program/narration-and-lexicon.md) — voice, pace, writing rules, master pronunciation lexicon
 - [`00_program/qa-checklist.md`](00_program/qa-checklist.md) — common QA checklist and sign-off record
@@ -85,7 +88,7 @@ These are the items from `../README.md` §3 that stop more than one package. Det
 3. **Emergency code sheet and extensions** (modules 01, 02). One naming set and the real extension numbers (the decks show "5555" as a placeholder).
 4. **Regulator name: CCHI vs CHI** (modules 05, 06).
 5. **NotebookLM watermark / licence** on the Quality video (module 07). The plan rebuilds the content natively, so the video is optional.
-6. **Brand kit** (all). Never invent My Clinic colours; take them from the brand guide or approved materials.
+6. **Brand kit** (all). The logo, colours and font are now taken from My Clinic's own decks (`00_program/brand/`); Marketing confirms them (D11).
 
 ---
 

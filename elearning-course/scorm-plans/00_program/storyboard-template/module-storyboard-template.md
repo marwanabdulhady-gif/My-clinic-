@@ -1,5 +1,7 @@
 # Storyboard — <NN> <Module title>
 
+![My Clinic logo](../../00_program/brand/logo-preview.png)
+
 > Copy this file to `<module folder>/storyboard/storyboard.md`. Replace everything in `<angle brackets>`. Repeat the **screen card** (section B) once per screen in `phase-2-storyboard.md`, in the same order.
 
 ---
@@ -20,6 +22,9 @@
 | SCORM / completion / pass mark | `<from phase-4 §1>` |
 | Scored screens / total points | `<count> / <points from phase-4 §3>` |
 | Source file | `elearning-course/md/<file>.md` |
+| Brand | My Clinic — `00_program/brand/brand-identity.md` (version/date read: `<date>`) |
+| Module colour | `<name + hex from brand-identity.md §2, e.g. Ambitious teal #008C99>` |
+| Theme | `brand_to_theme(00_program/brand/brand-kit.json)` + `style-minimal`; module colour as `secondary` |
 | Phase 0 items still open | `<list ids, e.g. B1, B4, D1>` |
 
 ### Objectives covered
@@ -69,9 +74,13 @@
 
 | Field | Value |
 |---|---|
+| Brand layout | `<L1 Title / L2 Section opener / L3 Content / L4 Question / L5 Scenario / L6 Results — see brand-identity.md §7>` |
+| Logo | `<file + size + position from brand-identity.md §1, e.g. logo-horizontal-navy.png, 30 px, header top-left>` |
 | Visual concept | `<≥ 6 words a designer can act on: subject, composition, what moves>` |
-| Layout | `<text / text_media / media_text / full_media / n/a for interaction types>` |
-| Colour roles | bg `<light/surface/primary>` · text `<dark/on_primary>` · accent `<accent/none>` |
+| edumints layout | `<text / text_media / media_text / full_media / n/a for interaction types>` |
+| Colours (palette names + hex) | bg `<white #FFFFFF / off-white #F4F7FA / navy gradient>` · headings `<navy #003867>` · body `<ink #1F2A37>` · highlight `<module colour>` · warning `<magenta #9D3293 or none>` |
+| Watermark | `<petal watermark (L1, L2, close only) / none>` |
+| Icons | `<line icons used, colour, provenance>` |
 | Animation / reveal | `<none / auto reveal in narration order / click reveal>` |
 | Character | `<mentor-noor pose, or "None">` |
 
@@ -80,6 +89,12 @@
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `<from phase-3 asset manifest, or new id>` | `<svg / illustration / photo / screenshot / icon>` | `<what it shows, size, crop>` | `<own / ai-generated / cc0 / local>` | `<meaningful alt text>` | `<Yes/No>` |
+
+**AI image prompt** (only for `ai-generated` assets — fill the template in `brand-identity.md` §6; delete if none):
+
+```text
+<filled prompt: scene, module colour hex, people (none / mentor-noor pose), "No text, no letters, no numbers, no logos…">
+```
 
 #### 4. Interaction and scoring
 
@@ -181,5 +196,5 @@ New lexicon terms: `<term → pronunciation, or "None">`
 - [ ] Every Phase 2 screen has a card, same ids and order
 - [ ] Scored screens and total points match Phase 4
 - [ ] Narration total within ±15% of the Phase 3 estimate
-- [ ] `review-checklist.md` run on every card
+- [ ] `review-checklist.md` run on every card (including section H, brand)
 - [ ] No `<angle bracket>` text left
