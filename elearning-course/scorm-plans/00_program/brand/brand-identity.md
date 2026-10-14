@@ -65,7 +65,7 @@ The edumints player adds its own control bar; the logo sits inside the course st
 
 ### Colour rules
 
-- **60-30-10:** about 60% white/off-white, 30% navy, 10% one value colour (the module colour, below) plus magenta for warnings.
+- **60-30-10:** about 60% white/off-white, 30% navy, 10% one value colour (the module colour, below). Responsible magenta is also the assigned module colour for Operations & My Care; in other modules, reserve magenta for warnings and key numbers rather than adding it as a second highlight.
 - **White text** is allowed on navy, purple, magenta and burgundy. On teal, white text must be **≥ 18.7 px bold or ≥ 24 px regular** (contrast 4.0 : 1).
 - **Emergency-code colours** (Code Red, Orange, Blue…) are *content*, not brand colours. Show them only as small colour chips next to the printed code name.
 - **Never use colour alone** to carry meaning (correct/incorrect, risk bands, NFPA quadrants, waste bins). Add text, an icon or position.
