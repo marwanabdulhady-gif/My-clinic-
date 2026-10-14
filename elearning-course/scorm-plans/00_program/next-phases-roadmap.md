@@ -31,7 +31,7 @@ python3 elearning-course/scorm-plans/tools/audit_assets.py                      
 
 | # | Chunk | Unblocks | Depends on | Owner | Est. | Status |
 |---|---|---|---|---|---|---|
-| C0 | Tooling, audio schema, branded Word pack, audit (this PR) | repeatable gates | — | agent | done | **in this PR** |
+| C0 | Tooling, audio schema, branded Word pack, audit | repeatable gates | — | agent | done | **PR #32** |
 | C1 | Phase 0 decision sheet + kick-off pack | everything | — | L2S + My Clinic | 2 d | open |
 | C2 | SME build-detail closure, modules 01–02 | 01–02 Phase 4 fields | C1 | Safety SME + L&D | 3 d | open |
 | C3 | SME build-detail closure, modules 03–04 | 03–04 Phase 4 fields | C1 | HR/Ops SME + L&D | 2 d | open |
@@ -155,6 +155,32 @@ maintenance triggers), and the Rev01 → as-built reconciliation table.
 **Exit gate:** delivery checklist in each Phase 5 file complete; final payment milestone met.
 
 ---
+
+## Issue index (opened 2026-10-14)
+
+C0 shipped as [PR #32](https://github.com/marwanabdulhady-gif/My-clinic-/pull/32).
+
+| Chunk | Issue |
+|---|---|
+| C1 | [#13](https://github.com/marwanabdulhady-gif/My-clinic-/issues/13) |
+| C2 | [#20](https://github.com/marwanabdulhady-gif/My-clinic-/issues/20) |
+| C3 | [#21](https://github.com/marwanabdulhady-gif/My-clinic-/issues/21) |
+| C4 | [#22](https://github.com/marwanabdulhady-gif/My-clinic-/issues/22) |
+| C5 | [#23](https://github.com/marwanabdulhady-gif/My-clinic-/issues/23) |
+| C6 | [#14](https://github.com/marwanabdulhady-gif/My-clinic-/issues/14) |
+| C7 | [#15](https://github.com/marwanabdulhady-gif/My-clinic-/issues/15) |
+| C8 | [#16](https://github.com/marwanabdulhady-gif/My-clinic-/issues/16) |
+| C9 | [#17](https://github.com/marwanabdulhady-gif/My-clinic-/issues/17) |
+| C10 | [#24](https://github.com/marwanabdulhady-gif/My-clinic-/issues/24) |
+| C11 | [#25](https://github.com/marwanabdulhady-gif/My-clinic-/issues/25) |
+| C12 | [#26](https://github.com/marwanabdulhady-gif/My-clinic-/issues/26) |
+| C13 | [#27](https://github.com/marwanabdulhady-gif/My-clinic-/issues/27) |
+| C14 | [#28](https://github.com/marwanabdulhady-gif/My-clinic-/issues/28) |
+| C15 | [#29](https://github.com/marwanabdulhady-gif/My-clinic-/issues/29) |
+| C16 | [#30](https://github.com/marwanabdulhady-gif/My-clinic-/issues/30) |
+| C17 | [#31](https://github.com/marwanabdulhady-gif/My-clinic-/issues/31) |
+| C18 | [#18](https://github.com/marwanabdulhady-gif/My-clinic-/issues/18) |
+| C19 | [#19](https://github.com/marwanabdulhady-gif/My-clinic-/issues/19) |
 
 ## Issue and PR convention
 
