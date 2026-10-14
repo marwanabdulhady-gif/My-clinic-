@@ -26,23 +26,29 @@ The HR deck is a full-day classroom induction: company story, values, the 7C str
 | 0 — Source lock | [phase-0-source-lock.md](phase-0-source-lock.md) |
 | 1 — Action map & objectives | [phase-1-action-map.md](phase-1-action-map.md) |
 | 2a — Screen list | [phase-2-storyboard.md](phase-2-storyboard.md) |
-| 2b — Storyboard cards | [storyboard/storyboard.md](storyboard/storyboard.md) — **v0.1 drafted, in SME review** |
+| 2b — Storyboard cards | [storyboard/storyboard.md](storyboard/storyboard.md) — **v0.1 drafted (brand identity applied), in SME review** |
+| 2b — Visual plan (JSON) | [storyboard/visual-plan.json](storyboard/visual-plan.json) — **`lint_visual_plan` clean (0 errors, 0 warnings)** |
 | 3 — Narration & assets | [phase-3-narration-and-assets.md](phase-3-narration-and-assets.md) |
 | 4 — Build | [phase-4-build.md](phase-4-build.md) |
 | 5 — QA & delivery | [phase-5-qa-and-delivery.md](phase-5-qa-and-delivery.md) |
 
 ## Current status
 
-**Storyboard v0.1 drafted — in SME review.** All 36 screens have a finished card: on-screen wording, visual brief, animation/reveal, interaction and scoring with feedback, full narration script, accessibility notes, and the edumints JSON for each screen. Totals: 36 screens · 15 scored · 145 points · 366 on-screen words · 1,636 narration words (≈ 11 min 41 s of audio, inside the Phase 3 budget). Every JSON block validates against the server's `core/project.py` models.
+**Storyboard v0.1 drafted — in SME review.** All 36 screens have a finished card in [`storyboard/storyboard.md`](storyboard/storyboard.md) with the full My Clinic brand identity applied (`L1`–`L6` layouts, logo specs, Caring purple `#652D8C`, petal watermarks, line icons, AI image prompts): on-screen wording, visual brief, animation/reveal, interaction and scoring with feedback, full narration script, accessibility notes, and the edumints JSON for each screen. Totals: 36 screens · 15 scored · 145 points · 366 on-screen words · 1,590 narration words (≈ 11 min 45 s of audio, inside the Phase 3 budget). Every JSON block validates against the server's `core/project.py` models.
+
+**Visual plan done**: [`storyboard/visual-plan.json`](storyboard/visual-plan.json) generated from the storyboard and validated with `lint_visual_plan(plan, brand)` → **0 errors, 0 warnings**.
+
+**Technical integration note**: the inspected edumints `BrandVoice.formality` schema accepts `formal`, `neutral` or `conversational`, while the unchanged official `brand-kit.json` says `conversational-professional`. Linting used an in-memory `conversational` mapping only; no brand-kit value was changed. Resolve the adapter/schema mapping before calling `brand_to_theme` in the production build.
 
 **Still blocked on Phase 0**: HR policy confirmations (sick-leave pay B1, compassionate leave wording B2, ID-card penalty B4, overtime by grade B3, GOSI rates B12, SCFHS rule B13), branch names (B5/D3), personal-data policy (B6/D5), awards wording (B7), and the Oracle test account (B8 — this one blocks building `hr-061`).
 
 **Narration done**: all 36 scripts written in the storyboard; `narration-script.json`,
-`audio-script-export.json` and `voice_talent.md` generated from them. `lint_narration_script`
+`audio-script-export.json` and `voice_talent.md` generated from them. `lint_narration_script(script, plan)`
 reports **0 errors, 0 warnings** (1,590 words, ~11 min 45 s of audio).
 
 **Reference audio**: 10 clips, one per section (~5 min), in `storyboard/audio/` — enough to judge
 the voice and the pacing. Voice route still open (program **D10**).
 
-**Not yet started**: `visual-plan.json` (the Phase 2 exit gate), the remaining 26 audio clips, and
-`lint_authoring_plan(stage="planning")`. Then the build (Phase 4).
+**Authoring-plan quality gate**: a planning-stage draft assembled from the storyboard, narration and visual plan was checked with `lint_authoring_plan(stage="planning")` → **0 errors, 0 warnings**. The draft is not persisted as `authoring-plan.json` yet; save it when Phase 3 resumes after SME review.
+
+**Not yet started**: the remaining 26 optional audio clips. Then proceed to the human approval gate and the build (Phase 4).

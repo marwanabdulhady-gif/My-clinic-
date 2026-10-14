@@ -1,5 +1,7 @@
 # Storyboard — 03 Welcome On Board: My Clinic & HR Essentials
 
+![My Clinic logo](../../00_program/brand/logo-preview.png)
+
 > Screen-by-screen storyboard for module 03. One card per screen listed in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md), same ids, same order.
 > Written against [`../../00_program/storyboard-template/README.md`](../../00_program/storyboard-template/README.md).
@@ -18,10 +20,13 @@
 | Status | `Draft — ready for SME review` |
 | SME reviewer (role) | HR Business Partner / Head of Human Capital (SME lead); Corporate Communications for screens `hr-020`–`hr-023` |
 | Audience | All new employees (clinical and non-clinical), day 1–3 |
-| Seat-time budget | ~46 minutes (phase-1 §4: A 3 · B 6 · C 5 · D 6 · E 10 · F 6 · G 5 · H 2 · I 2 · Close 1) |
+| Seat-time budget | Proposal target ~45 minutes; Phase 1 allocation ~46 minutes (A 3 · B 6 · C 5 · D 6 · E 10 · F 6 · G 5 · H 2 · I 2 · Close 1); reconcile the 1-minute difference at SME review / pilot. |
 | SCORM / completion / pass mark | SCORM 2004 4th ed · `viewed_all_and_passed` · passing score **70** (= 102 of 145 points) |
 | Scored screens / total points | 15 / 145 |
 | Source file | `elearning-course/md/03_hr-employee-induction.md` (from `HR.pptx`, 62 slides, *Confidential*) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (version/date read: `2026-10-14`) |
+| Module colour | Caring purple `#652D8C` |
+| Theme | `brand_to_theme(00_program/brand/brand-kit.json)` + `style-minimal`; module colour `#652D8C` as `secondary` |
 | Phase 0 items still open | B1, B2, B3, B4, B5/D3, B6/D5, B7, B8, B9, B10, B11, B12, B13, B14/D8 |
 
 ### Objectives covered
@@ -101,9 +106,14 @@
 
 | Field | Value |
 |---|---|
-| Visual concept | Full-bleed My Clinic clinic photo, softly blurred, with a `primary` colour wash; title block left-aligned on the lower third, generous white space above |
-| Layout | n/a (`title_slide`) |
-| Colour roles | bg `primary` · text `on_primary` · accent none |
+| Brand layout | L1 Title (see `../../00_program/brand/screen-mockups/01-title.png`) |
+| Logo | `logo-horizontal-white.png`, 48 px tall, top-left (48 px from left, 40 px from top) |
+| Visual concept | Official navy gradient background (`background-title-navy.png`, `#003867 → #3B6A97`) with the supplied white five-petal watermark (`mark-white.png`) cropped off the right edge; supplied white My Clinic logo top-left; Caring purple `#652D8C` module chip above the white Montserrat Bold title and mist `#C0CED9` subtitle; tagline bottom-left; no photograph or generated logo |
+| edumints layout | n/a (`title_slide`) |
+| Colours (palette names + hex) | bg `primary` (navy gradient `#003867 → #3B6A97`) · text `on_primary` (white `#FFFFFF`, subtitle mist `#C0CED9`) · highlight `secondary` (Caring purple `#652D8C` module chip) · warning none |
+| Typography (Montserrat) | Title Montserrat Bold 700, 40 px; subtitle Montserrat Regular 400, 18–20 px; module chip Montserrat Bold 700, 12–14 px; footer/tagline 10–12 px. |
+| Watermark | Petal watermark (`mark-white.png` at 10% opacity, 520 px, cropped off the right edge) |
+| Icons | None |
 | Animation / reveal | Title fades up, then the subtitle 0.4 s later |
 | Character | None |
 
@@ -111,7 +121,9 @@
 
 | Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `hr-img-hero` | photo | 1920×1080, real My Clinic reception or team photo, consented or replaced with an own-brand illustration | own (consent pending B6/D5) | Decorative background: the My Clinic reception area. | Yes |
+| `brand-background-title-navy` | background | Supplied `00_program/brand/assets/background-title-navy.png`; official 16:9 navy gradient; no added content | own (official My Clinic brand asset) | Decorative background. | Yes |
+| `brand-logo-horizontal-white` | image | Supplied `00_program/brand/assets/logo-horizontal-white.png`; unmodified white lock-up, 48 px high | own (official My Clinic brand asset) | My Clinic logo. | No |
+| `brand-mark-white` | icon | Supplied `00_program/brand/assets/mark-white.png`; five-petal watermark, 520 px, 10% opacity, cropped off right edge | own (official My Clinic brand asset) | Decorative watermark. | Yes |
 
 #### 4. Interaction and scoring
 
@@ -149,7 +161,7 @@ New lexicon terms: None
   "subtitle": "My Clinic & HR essentials · about 45 minutes",
   "section": "A · Welcome",
   "node_id": "hr-sA",
-  "background_asset_id": "<hr-img-hero>",
+  "background_asset_id": "<brand-background-title-navy>",
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<hr-aud-000>",
@@ -160,7 +172,7 @@ New lexicon terms: None
 #### 8. Notes for SME and developer
 
 - Open questions: Does HR want the real CEO welcome video here instead of a still (phase-3 §1, program D10)? If yes, this becomes a `video` screen and the narration moves to the video transcript.
-- Developer notes: `hr-img-hero` must not show identifiable staff or patients until B6/D5 is closed. Until then use the program's generic clinic illustration and mark the asset `provisional`.
+- Developer notes: use the supplied `background-title-navy.png`, `logo-horizontal-white.png` and `mark-white.png` from `00_program/brand/assets/` unchanged. No photograph, generated logo, or extra wordmark is used on this title screen.
 
 ---
 
@@ -191,9 +203,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "A · Welcome", 2 px navy `#003867` header rule |
 | Visual concept | Three stacked statement blocks on an off-white field, each with a small line icon (heart, globe-and-heart, shield-check); the purpose block is largest and sits alone at the top |
-| Layout | `full_media` with the hero photo behind a 60% `light` scrim, text blocks left-aligned over it |
-| Colour roles | bg `light` · text `dark` · accent none |
+| edumints layout | `full_media` with the hero photo behind a 60% `light` scrim, text blocks left-aligned over it |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Single-weight line icons (heart, globe-and-heart, shield-check), 24 px grid, 1.5 px stroke, Caring purple #652D8C, own SVG |
 | Animation / reveal | Blocks reveal in narration order: purpose → mission → goal |
 | Character | None |
 
@@ -283,9 +300,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "A · Welcome · Check", 2 px navy `#003867` header rule |
 | Visual concept | Five large tappable option cards in a single row on small screens, two rows on wide; each card has a line icon above a one-word label; a free-text box slides in under the row labelled “Other” |
-| Layout | n/a (`poll`) |
-| Colour roles | bg `surface` · text `dark` · accent on the selected card only |
+| edumints layout | n/a (`poll`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Single-weight line icons on the five poll cards (family, plane, book, hands, speech-bubble), navy #003867, own SVG |
 | Animation / reveal | Cards fade up in sequence over 0.6 s; the reflection panel fades in after submitting |
 | Character | None |
 
@@ -334,11 +356,26 @@ New lexicon terms: None
   "node_id": "hr-sA",
   "prompt_html": "<p>If you had one million Saudi riyals, where would you spend it?</p>",
   "options": [
-    { "id": "a", "text_html": "Family" },
-    { "id": "b", "text_html": "Travel" },
-    { "id": "c", "text_html": "Learning" },
-    { "id": "d", "text_html": "Giving back" },
-    { "id": "e", "text_html": "Other" }
+    {
+      "id": "a",
+      "text_html": "Family"
+    },
+    {
+      "id": "b",
+      "text_html": "Travel"
+    },
+    {
+      "id": "c",
+      "text_html": "Learning"
+    },
+    {
+      "id": "d",
+      "text_html": "Giving back"
+    },
+    {
+      "id": "e",
+      "text_html": "Other"
+    }
   ],
   "multi": false,
   "allow_text": true,
@@ -392,9 +429,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
-| Visual concept | Four horizontal tab labels across the top with one line icon each; the active panel shows the theme line in large type and the actions as a plain bulleted list with no bullets, one per row |
-| Layout | n/a (`tabs`) |
-| Colour roles | bg `light` · text `dark` · accent underlines the active tab only (1 of 4 = 25% of the tab strip, well under the 10% screen-area rule) |
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "B · Our values & strategy", 2 px navy `#003867` header rule |
+| Visual concept | Four horizontal tab labels across the top; each tab uses its supplied official square value tile with white line icon, and the active panel shows the theme line in large type plus the actions as plain HTML text |
+| edumints layout | n/a (`tabs`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Four supplied official value tiles (`value-tile-collaborative-burgundy.png`, `value-tile-responsible-magenta.png`, `value-tile-ambitious-teal.png`, `value-tile-caring-purple.png`); use the white line icons in the supplied assets; do not redraw |
 | Animation / reveal | Panel content fades up on each tab change |
 | Character | None |
 
@@ -402,7 +444,10 @@ New lexicon terms: None
 
 | Asset id | Kind | Description / brief | Source | Alt text | Decorative? |
 |---|---|---|---|---|---|
-| `hr-img-values-icons` | SVG ×4 | Line icons: two figures (Collaborative), shield-check (Responsible), chevron-up (Ambitious), heart-in-hand (Caring). Redrawn from slide 10's icon family in brand colours. | own | Decorative — each tab is labelled in text. | Yes |
+| `brand-value-tile-collaborative-burgundy` | image | Supplied `00_program/brand/assets/value-tile-collaborative-burgundy.png`; official burgundy square with white line icon | own (official My Clinic brand asset) | Decorative; the tab label carries the value name. | Yes |
+| `brand-value-tile-responsible-magenta` | image | Supplied `00_program/brand/assets/value-tile-responsible-magenta.png`; official magenta square with white line icon | own (official My Clinic brand asset) | Decorative; the tab label carries the value name. | Yes |
+| `brand-value-tile-ambitious-teal` | image | Supplied `00_program/brand/assets/value-tile-ambitious-teal.png`; official teal square with white line icon | own (official My Clinic brand asset) | Decorative; the tab label carries the value name. | Yes |
+| `brand-value-tile-caring-purple` | image | Supplied `00_program/brand/assets/value-tile-caring-purple.png`; official Caring purple square with white line icon | own (official My Clinic brand asset) | Decorative; the tab label carries the value name. | Yes |
 
 #### 4. Interaction and scoring
 
@@ -445,18 +490,30 @@ New lexicon terms: None
   "node_id": "hr-sB",
   "prompt_html": "<p>Values are behaviours. Open each one and look for something you already do.</p>",
   "tabs": [
-    { "label": "Collaborative",
+    {
+      "label": "Collaborative",
       "body_html": "<p><strong>Unites diverse</strong></p><p>Act together · Treat everyone with respect · Be transparent · Embrace diverse perspectives · Deliver outstanding results</p>",
-      "image_asset_id": "<hr-img-values-icons-collab>", "image_alt": "Decorative icon." },
-    { "label": "Responsible",
+      "image_asset_id": "<brand-value-tile-collaborative-burgundy>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "label": "Responsible",
       "body_html": "<p><strong>Creating a culture of accountability</strong></p><p>Own our decisions and actions · Make things happen · Demonstrate high professional standards · Hold yourself and each other accountable</p>",
-      "image_asset_id": "<hr-img-values-icons-resp>", "image_alt": "Decorative icon." },
-    { "label": "Ambitious",
+      "image_asset_id": "<brand-value-tile-responsible-magenta>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "label": "Ambitious",
       "body_html": "<p><strong>Set new standards</strong></p><p>Go above and beyond · Make new possibilities happen · Challenge the status quo · Become industry shapers · Deliver outstanding results</p>",
-      "image_asset_id": "<hr-img-values-icons-amb>", "image_alt": "Decorative icon." },
-    { "label": "Caring",
+      "image_asset_id": "<brand-value-tile-ambitious-teal>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "label": "Caring",
       "body_html": "<p><strong>Putting empathy first</strong></p><p>Act with empathy · Everyone matters · Love our customers · Deliver with quality</p>",
-      "image_asset_id": "<hr-img-values-icons-care>", "image_alt": "Decorative icon." }
+      "image_asset_id": "<brand-value-tile-caring-purple>",
+      "image_alt": "Decorative icon."
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-010>",
@@ -467,7 +524,7 @@ New lexicon terms: None
 #### 8. Notes for SME and developer
 
 - Open questions: None. All eight action phrases are verbatim from slide 9.
-- Developer notes: the four icons are one asset family (`hr-img-values-icons`) uploaded as four assets; the build ids above use the `-collab` / `-resp` suffix convention from phase-3 §4.
+- Developer notes: import the four supplied `value-tile-*.png` files from `00_program/brand/assets/` as four assets. Keep the tabs’ value names as HTML text; the square tiles are decorative icon art.
 
 ---
 
@@ -498,9 +555,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "B · Our values & strategy · Check", 2 px navy `#003867` header rule |
 | Visual concept | Two columns: six plain white action cards on the left, four value tiles on the right; a drawn connector line follows the learner's pointer while a card is selected |
-| Layout | n/a (`matching`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt; `success` / `error` only in the result state |
+| edumints layout | n/a (`matching`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (text and value-colour badge cards) |
 | Animation / reveal | None |
 | Character | None |
 
@@ -549,17 +611,45 @@ New lexicon terms: None
   "title": "Values in action",
   "section": "B · Our values & strategy",
   "node_id": "hr-sB",
-  "objective_ids": ["hr-o1"],
+  "objective_ids": [
+    "hr-o1"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-010"],
+  "evidence_screen_ids": [
+    "hr-010"
+  ],
   "prompt_html": "<p>Six things people did this week. Match each one to the value behind it.</p>",
   "pairs": [
-    { "id": "p1", "left_html": "You admit a scheduling mistake to your manager and fix it.", "right_html": "Responsible" },
-    { "id": "p2", "left_html": "You ask a colleague in another department for their view before you decide.", "right_html": "Collaborative" },
-    { "id": "p3", "left_html": "You stay with an anxious patient until the nurse arrives.", "right_html": "Caring" },
-    { "id": "p4", "left_html": "You suggest a faster way to book follow-up appointments.", "right_html": "Ambitious" },
-    { "id": "p5", "left_html": "You share the reason for a delay with the team instead of staying quiet.", "right_html": "Collaborative" },
-    { "id": "p6", "left_html": "You check your own work against the professional standard before you sign it off.", "right_html": "Responsible" }
+    {
+      "id": "p1",
+      "left_html": "You admit a scheduling mistake to your manager and fix it.",
+      "right_html": "Responsible"
+    },
+    {
+      "id": "p2",
+      "left_html": "You ask a colleague in another department for their view before you decide.",
+      "right_html": "Collaborative"
+    },
+    {
+      "id": "p3",
+      "left_html": "You stay with an anxious patient until the nurse arrives.",
+      "right_html": "Caring"
+    },
+    {
+      "id": "p4",
+      "left_html": "You suggest a faster way to book follow-up appointments.",
+      "right_html": "Ambitious"
+    },
+    {
+      "id": "p5",
+      "left_html": "You share the reason for a delay with the team instead of staying quiet.",
+      "right_html": "Collaborative"
+    },
+    {
+      "id": "p6",
+      "left_html": "You check your own work against the professional standard before you sign it off.",
+      "right_html": "Responsible"
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Notice that Responsible and Collaborative each appear twice: the values overlap in real work, and one action can show more than one.</p>",
@@ -616,9 +706,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "B · Our values & strategy", 2 px navy `#003867` header rule |
 | Visual concept | Seven collapsed rows in a single column, each with a line icon, the pillar name in caps and a chevron; expanding a row reveals the headline line and the key points as a wrapped keyword row |
-| Layout | n/a (`accordion`) |
-| Colour roles | bg `light` · text `dark` · accent on the chevron of the open panel only |
+| edumints layout | n/a (`accordion`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Seven single-weight line icons (`hr-img-7c-icons`: headset, syringe, mind-and-gears, handshake, stethoscope, heart-hands, coins), Caring purple #652D8C, own SVG |
 | Animation / reveal | Panel body expands with a 200 ms height transition |
 | Character | None |
 
@@ -669,13 +764,48 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
   "node_id": "hr-sB",
   "prompt_html": "<p>Seven pillars. Open the ones your role touches — you're not expected to memorise all seven.</p>",
   "items": [
-    { "title": "Closer", "body_html": "<p><strong>Convenient &amp; easy access</strong></p><p>Convenient physical access · Community clinics &amp; HHC · Digital access &amp; services · Call centre &amp; telemedicine</p>", "image_asset_id": "<hr-img-7c-closer>", "image_alt": "Decorative icon." },
-    { "title": "Cure", "body_html": "<p><strong>Tackle the biggest healthcare challenge</strong></p><p>The best Saudi doctors · Focus on clinical outcomes · Centres of excellence · Prevention &amp; wellbeing</p>", "image_asset_id": "<hr-img-7c-cure>", "image_alt": "Decorative icon." },
-    { "title": "Capabilities", "body_html": "<p><strong>A repeatable business model</strong></p><p>Repeatable operations &amp; expansion · Robust governance &amp; compliance · Peopleware, software, hardware · Competitive cost to serve</p>", "image_asset_id": "<hr-img-7c-capabilities>", "image_alt": "Decorative icon." },
-    { "title": "Culture", "body_html": "<p><strong>The way we do things around here</strong></p><p>Mission, values &amp; beliefs · Servant leadership · A culture of excellence</p>", "image_asset_id": "<hr-img-7c-culture>", "image_alt": "Decorative icon." },
-    { "title": "Clinicians", "body_html": "<p><strong>An attractive doctor value proposition</strong></p><p>Caring environment · Competitive benefits · Growth &amp; development</p>", "image_asset_id": "<hr-img-7c-clinicians>", "image_alt": "Decorative icon." },
-    { "title": "Care", "body_html": "<p><strong>A legendary service &amp; care</strong></p><p>Seamless experience · Empathy &amp; compassion · Loyalty through My Care · Service &amp; advocacy mindset</p>", "image_asset_id": "<hr-img-7c-care>", "image_alt": "Decorative icon." },
-    { "title": "Cost", "body_html": "<p><strong>Competitive cost to serve</strong></p><p>Revenue-cycle management · Operational efficiency · Overhead management</p>", "image_asset_id": "<hr-img-7c-cost>", "image_alt": "Decorative icon." }
+    {
+      "title": "Closer",
+      "body_html": "<p><strong>Convenient &amp; easy access</strong></p><p>Convenient physical access · Community clinics &amp; HHC · Digital access &amp; services · Call centre &amp; telemedicine</p>",
+      "image_asset_id": "<hr-img-7c-closer>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Cure",
+      "body_html": "<p><strong>Tackle the biggest healthcare challenge</strong></p><p>The best Saudi doctors · Focus on clinical outcomes · Centres of excellence · Prevention &amp; wellbeing</p>",
+      "image_asset_id": "<hr-img-7c-cure>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Capabilities",
+      "body_html": "<p><strong>A repeatable business model</strong></p><p>Repeatable operations &amp; expansion · Robust governance &amp; compliance · Peopleware, software, hardware · Competitive cost to serve</p>",
+      "image_asset_id": "<hr-img-7c-capabilities>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Culture",
+      "body_html": "<p><strong>The way we do things around here</strong></p><p>Mission, values &amp; beliefs · Servant leadership · A culture of excellence</p>",
+      "image_asset_id": "<hr-img-7c-culture>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Clinicians",
+      "body_html": "<p><strong>An attractive doctor value proposition</strong></p><p>Caring environment · Competitive benefits · Growth &amp; development</p>",
+      "image_asset_id": "<hr-img-7c-clinicians>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Care",
+      "body_html": "<p><strong>A legendary service &amp; care</strong></p><p>Seamless experience · Empathy &amp; compassion · Loyalty through My Care · Service &amp; advocacy mindset</p>",
+      "image_asset_id": "<hr-img-7c-care>",
+      "image_alt": "Decorative icon."
+    },
+    {
+      "title": "Cost",
+      "body_html": "<p><strong>Competitive cost to serve</strong></p><p>Revenue-cycle management · Operational efficiency · Overhead management</p>",
+      "image_asset_id": "<hr-img-7c-cost>",
+      "image_alt": "Decorative icon."
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-012>",
@@ -717,9 +847,14 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "B · Our values & strategy · Check", 2 px navy `#003867` header rule |
 | Visual concept | Stem in large type at the top; four plain option rows beneath, each a radio control plus a single sentence; no imagery, so the decision is the only thing on screen |
-| Layout | n/a (`mcq`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`mcq`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -770,19 +905,36 @@ New lexicon terms: None
   "title": "Which pillar?",
   "section": "B · Our values & strategy",
   "node_id": "hr-sB",
-  "objective_ids": ["hr-o1"],
+  "objective_ids": [
+    "hr-o1"
+  ],
   "points": 5,
-  "evidence_screen_ids": ["hr-012"],
+  "evidence_screen_ids": [
+    "hr-012"
+  ],
   "prompt_html": "<p>My Care follow-up calls that build patient loyalty support which pillar?</p>",
   "options": [
-    { "id": "a", "text_html": "Care", "correct": true,
-      "feedback_html": "<p>Care. My Care follow-up calls are named in the Care pillar under “build loyalty through My Care”. Loyalty is a service and relationship outcome, not an access outcome.</p>" },
-    { "id": "b", "text_html": "Closer",
-      "feedback_html": "<p>Closer covers <em>access</em>: physical, community and home health care, digital services, and the call centre and telemedicine. A phone call is access; a follow-up call that builds loyalty is Care.</p>" },
-    { "id": "c", "text_html": "Culture",
-      "feedback_html": "<p>Culture is mission, values and servant leadership. It shapes how we behave, not this service.</p>" },
-    { "id": "d", "text_html": "Cost",
-      "feedback_html": "<p>Cost is about cost to serve: revenue cycle, efficiency and overhead. Loyalty work sits on the service side.</p>" }
+    {
+      "id": "a",
+      "text_html": "Care",
+      "correct": true,
+      "feedback_html": "<p>Care. My Care follow-up calls are named in the Care pillar under “build loyalty through My Care”. Loyalty is a service and relationship outcome, not an access outcome.</p>"
+    },
+    {
+      "id": "b",
+      "text_html": "Closer",
+      "feedback_html": "<p>Closer covers <em>access</em>: physical, community and home health care, digital services, and the call centre and telemedicine. A phone call is access; a follow-up call that builds loyalty is Care.</p>"
+    },
+    {
+      "id": "c",
+      "text_html": "Culture",
+      "feedback_html": "<p>Culture is mission, values and servant leadership. It shapes how we behave, not this service.</p>"
+    },
+    {
+      "id": "d",
+      "text_html": "Cost",
+      "feedback_html": "<p>Cost is about cost to serve: revenue cycle, efficiency and overhead. Loyalty work sits on the service side.</p>"
+    }
   ],
   "multi_select": false,
   "feedback": {
@@ -830,9 +982,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "B · Our values & strategy", 2 px navy `#003867` header rule |
 | Visual concept | Three equal cards side by side, each with one line icon above a short label and a one-line caption; the first card is annotated “sick or healthy” in a smaller line |
-| Layout | `text` |
-| Colour roles | bg `light` · text `dark` · accent none |
+| edumints layout | `text` |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Three single-weight line icons (`hr-img-serve-icons`: family group, community ring, briefcase-and-shield), navy #003867, own SVG |
 | Animation / reveal | Cards fade up left to right in narration order |
 | Character | None |
 
@@ -882,7 +1039,9 @@ New lexicon terms: None
   "reveal": "auto",
   "body_html": "<p><strong>Patients &amp; families</strong> — sick or healthy</p><p><strong>Community</strong></p><p><strong>Corporates &amp; insurers</strong></p>",
   "narration_asset_id": "<hr-aud-014>",
-  "narration_text": "Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard."
+  "narration_text": "Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
+  "media_asset_id": "<hr-img-serve-icons>",
+  "media_alt": "Three icons: patients and families, the wider community, and corporate and insurance partners."
 }
 ```
 
@@ -934,9 +1093,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "C · Our clinic", 2 px navy `#003867` header rule |
 | Visual concept | A single horizontal axis with nine year nodes; the active node lifts and its caption card slides in beneath the axis; a thin progress line fills as the learner moves along |
-| Layout | n/a (`timeline`) |
-| Colour roles | bg `light` · text `dark` · accent on the progress line and active node only |
+| edumints layout | n/a (`timeline`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (numbered year nodes on timeline) |
 | Animation / reveal | Nodes appear in year order as the narration advances |
 | Character | None |
 
@@ -983,15 +1147,51 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
   "node_id": "hr-sC",
   "prompt_html": "<p>From one clinic in Jeddah to a network across the west and Riyadh.</p>",
   "events": [
-    { "date": "2017", "title": "MCJ1 opens", "body_html": "<p>Our first full-service outpatient clinic, in North Jeddah.</p>" },
-    { "date": "2018", "title": "New products", "body_html": "<p>New products launched, widening what one clinic could offer.</p>" },
-    { "date": "2019", "title": "Corporate check-ups", "body_html": "<p>The employment check-up unit starts — our first corporate service line.</p>" },
-    { "date": "2021", "title": "MCJ2 opens", "body_html": "<p>Our second full-service outpatient clinic, in East Jeddah.</p>" },
-    { "date": "2022", "title": "Dental centre", "body_html": "<p>My Clinic Dental (D1) opens in Jeddah.</p>" },
-    { "date": "2023", "title": "Petro-Rabigh", "body_html": "<p>PRC opens — our first clinic inside a corporate community.</p>" },
-    { "date": "2024", "title": "Riyadh", "body_html": "<p>R1 opens: a flagship clinic in Riyadh to establish the brand.</p>" },
-    { "date": "2025", "title": "J3 opens", "body_html": "<p>Our first community clinic in Jeddah. <em>Name pending decision B5 / D3.</em></p>" },
-    { "date": "2026", "title": "J4 opens", "body_html": "<p>Our second community clinic in Jeddah. <em>Name pending decision B5 / D3.</em></p>" }
+    {
+      "date": "2017",
+      "title": "MCJ1 opens",
+      "body_html": "<p>Our first full-service outpatient clinic, in North Jeddah.</p>"
+    },
+    {
+      "date": "2018",
+      "title": "New products",
+      "body_html": "<p>New products launched, widening what one clinic could offer.</p>"
+    },
+    {
+      "date": "2019",
+      "title": "Corporate check-ups",
+      "body_html": "<p>The employment check-up unit starts — our first corporate service line.</p>"
+    },
+    {
+      "date": "2021",
+      "title": "MCJ2 opens",
+      "body_html": "<p>Our second full-service outpatient clinic, in East Jeddah.</p>"
+    },
+    {
+      "date": "2022",
+      "title": "Dental centre",
+      "body_html": "<p>My Clinic Dental (D1) opens in Jeddah.</p>"
+    },
+    {
+      "date": "2023",
+      "title": "Petro-Rabigh",
+      "body_html": "<p>PRC opens — our first clinic inside a corporate community.</p>"
+    },
+    {
+      "date": "2024",
+      "title": "Riyadh",
+      "body_html": "<p>R1 opens: a flagship clinic in Riyadh to establish the brand.</p>"
+    },
+    {
+      "date": "2025",
+      "title": "J3 opens",
+      "body_html": "<p>Our first community clinic in Jeddah. <em>Name pending decision B5 / D3.</em></p>"
+    },
+    {
+      "date": "2026",
+      "title": "J4 opens",
+      "body_html": "<p>Our second community clinic in Jeddah. <em>Name pending decision B5 / D3.</em></p>"
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-020>",
@@ -1033,9 +1233,14 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "C · Our clinic", 2 px navy `#003867` header rule |
 | Visual concept | Minimal outline map of western Saudi Arabia with an inset for Riyadh; seven numbered pins; each pin opens a small card with the code, the branch type, the city and the year; a counter shows “3 of 7” |
-| Layout | n/a (`hotspot`) |
-| Colour roles | bg `light` · text `dark` · accent on unvisited pins only (they dim to neutral once opened) |
+| edumints layout | n/a (`hotspot`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Numbered map pin markers (1–7) in Caring purple #652D8C, own SVG |
 | Animation / reveal | Pins pulse gently until opened, then settle |
 | Character | None |
 
@@ -1103,24 +1308,97 @@ New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”;
   "require_all": true,
   "prompt_html": "<p>Seven sites. You'll hear these codes every day — open each pin.</p>",
   "regions": [
-    { "id": "j1", "shape": "rect", "coords": [300, 150, 90, 60], "label_html": "J1 — North Jeddah",
-      "feedback_html": "<p>Our first full-service outpatient clinic. Opened 2017.</p>" },
-    { "id": "j2", "shape": "rect", "coords": [430, 190, 90, 60], "label_html": "J2 — East Jeddah",
-      "feedback_html": "<p>Our second full-service outpatient clinic. Opened 2021.</p>" },
-    { "id": "d1", "shape": "rect", "coords": [350, 250, 90, 60], "label_html": "D1 — Dental Centre",
-      "feedback_html": "<p>Our dental centre in Jeddah. Opened 2022.</p>" },
-    { "id": "j3", "shape": "rect", "coords": [280, 300, 90, 60], "label_html": "J3 — community clinic",
-      "feedback_html": "<p>Our first community clinic in Jeddah. Opened 2025. Name pending decision B5 / D3.</p>" },
-    { "id": "j4", "shape": "rect", "coords": [300, 380, 90, 60], "label_html": "J4 — community clinic",
-      "feedback_html": "<p>Our second community clinic in Jeddah. Opened 2026. Name pending decision B5 / D3.</p>" },
-    { "id": "prc", "shape": "circle", "coords": [250, 470, 32], "label_html": "PRC — Petro-Rabigh",
-      "feedback_html": "<p>Our clinic in Petro-Rabigh. Opened 2023.</p>" },
-    { "id": "r1", "shape": "circle", "coords": [980, 300, 32], "label_html": "R1 — Riyadh",
-      "feedback_html": "<p>Our first clinic in Riyadh — a flagship. Opened 2024.</p>" }
+    {
+      "id": "j1",
+      "shape": "rect",
+      "coords": [
+        300,
+        150,
+        90,
+        60
+      ],
+      "label_html": "J1 — North Jeddah",
+      "feedback_html": "<p>Our first full-service outpatient clinic. Opened 2017.</p>"
+    },
+    {
+      "id": "j2",
+      "shape": "rect",
+      "coords": [
+        430,
+        190,
+        90,
+        60
+      ],
+      "label_html": "J2 — East Jeddah",
+      "feedback_html": "<p>Our second full-service outpatient clinic. Opened 2021.</p>"
+    },
+    {
+      "id": "d1",
+      "shape": "rect",
+      "coords": [
+        350,
+        250,
+        90,
+        60
+      ],
+      "label_html": "D1 — Dental Centre",
+      "feedback_html": "<p>Our dental centre in Jeddah. Opened 2022.</p>"
+    },
+    {
+      "id": "j3",
+      "shape": "rect",
+      "coords": [
+        280,
+        300,
+        90,
+        60
+      ],
+      "label_html": "J3 — community clinic",
+      "feedback_html": "<p>Our first community clinic in Jeddah. Opened 2025. Name pending decision B5 / D3.</p>"
+    },
+    {
+      "id": "j4",
+      "shape": "rect",
+      "coords": [
+        300,
+        380,
+        90,
+        60
+      ],
+      "label_html": "J4 — community clinic",
+      "feedback_html": "<p>Our second community clinic in Jeddah. Opened 2026. Name pending decision B5 / D3.</p>"
+    },
+    {
+      "id": "prc",
+      "shape": "circle",
+      "coords": [
+        250,
+        470,
+        32
+      ],
+      "label_html": "PRC — Petro-Rabigh",
+      "feedback_html": "<p>Our clinic in Petro-Rabigh. Opened 2023.</p>"
+    },
+    {
+      "id": "r1",
+      "shape": "circle",
+      "coords": [
+        980,
+        300,
+        32
+      ],
+      "label_html": "R1 — Riyadh",
+      "feedback_html": "<p>Our first clinic in Riyadh — a flagship. Opened 2024.</p>"
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-021>",
-  "narration_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one."
+  "narration_text": "You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.",
+  "feedback": {
+    "correct_html": "<p>You have explored all seven My Clinic branches across Jeddah, Rabigh and Riyadh.</p>",
+    "incorrect_html": "<p>Select each branch pin on the map to explore all seven sites.</p>",
+    "show_correct_answer": true
+  }
 }
 ```
 
@@ -1158,9 +1436,14 @@ New lexicon terms: J1 — “J-one”; J2 — “J-two”; J3 — “J-three”;
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "C · Our clinic", 2 px navy `#003867` header rule |
 | Visual concept | Four portrait cards in one row; each is a soft-cornered square with the role printed under it and a one-line “looks after” caption; no names until consent is recorded |
-| Layout | `text` (blocks: caption, image, caption, image …) |
-| Colour roles | bg `light` · text `dark` · accent none |
+| edumints layout | `text` (blocks: caption, image, caption, image …) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (portrait / monogram role cards) |
 | Animation / reveal | Cards fade up left to right in narration order |
 | Character | None |
 
@@ -1214,14 +1497,34 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
   "animation": "fade-up",
   "reveal": "auto",
   "blocks": [
-    { "html": "<p>Chief Executive Officer — sets the direction and answers to the board.</p>" },
-    { "asset_id": "<hr-img-leaders-ceo>", "caption": "Abdullah Alghamdi, Chief Executive Officer. Portrait pending consent B6." },
-    { "html": "<p>Chief Medical Officer — owns clinical standards and outcomes.</p>" },
-    { "asset_id": "<hr-img-leaders-cmo>", "caption": "Dr Ahmed Al Zahrani, Chief Medical Officer. Portrait pending consent B6." },
-    { "html": "<p>Chief Operating Officer — runs the clinics day to day.</p>" },
-    { "asset_id": "<hr-img-leaders-coo>", "caption": "Hesham Abdulwahab, Chief Operating Officer. Portrait pending consent B6." },
-    { "html": "<p>Chief Finance Officer — looks after the money that makes it possible.</p>" },
-    { "asset_id": "<hr-img-leaders-cfo>", "caption": "Richard Thompson, Chief Finance Officer. Portrait pending consent B6." }
+    {
+      "html": "<p>Chief Executive Officer — sets the direction and answers to the board.</p>"
+    },
+    {
+      "asset_id": "<hr-img-leaders-ceo>",
+      "caption": "Abdullah Alghamdi, Chief Executive Officer. Portrait pending consent B6."
+    },
+    {
+      "html": "<p>Chief Medical Officer — owns clinical standards and outcomes.</p>"
+    },
+    {
+      "asset_id": "<hr-img-leaders-cmo>",
+      "caption": "Dr Ahmed Al Zahrani, Chief Medical Officer. Portrait pending consent B6."
+    },
+    {
+      "html": "<p>Chief Operating Officer — runs the clinics day to day.</p>"
+    },
+    {
+      "asset_id": "<hr-img-leaders-coo>",
+      "caption": "Hesham Abdulwahab, Chief Operating Officer. Portrait pending consent B6."
+    },
+    {
+      "html": "<p>Chief Finance Officer — looks after the money that makes it possible.</p>"
+    },
+    {
+      "asset_id": "<hr-img-leaders-cfo>",
+      "caption": "Richard Thompson, Chief Finance Officer. Portrait pending consent B6."
+    }
   ],
   "narration_asset_id": "<hr-aud-022>",
   "narration_text": "Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs."
@@ -1272,9 +1575,14 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "C · Our clinic", 2 px navy `#003867` header rule |
 | Visual concept | Five cards in a shallow fan across the middle of the stage; flipping one rotates it on its vertical axis to reveal the back; the flipped card stays face-up and slides to the back of the fan |
-| Layout | n/a (`flashcards`) |
-| Colour roles | bg `light` · text `dark` · accent on the flip control only |
+| edumints layout | n/a (`flashcards`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Two single-weight line icons (`hr-img-award-icons`: trophy and laurel star), Caring purple #652D8C, own SVG |
 | Animation / reveal | 300 ms vertical-axis flip, respects `prefers-reduced-motion` by cross-fading instead |
 | Character | None |
 
@@ -1325,21 +1633,36 @@ New lexicon terms: CBAHI — “see-bah-hee”
   "node_id": "hr-sC",
   "prompt_html": "<p>Flip each card. Accreditation is measured, not given — and it has to be earned again.</p>",
   "cards": [
-    { "front_html": "CBAHI accreditation",
+    {
+      "front_html": "CBAHI accreditation",
       "back_html": "Accredited by CBAHI, the Central Board for Accreditation of Healthcare Institutions. MCJ1 scored 98.67 in 2022 and MCJ2 scored 100 in 2023. <em>Pending B7.</em>",
-      "front_asset_id": "<hr-img-award-star>", "front_alt": "Decorative icon." },
-    { "front_html": "Best Clinical Patient Outcome",
+      "front_asset_id": "<hr-img-award-star>",
+      "front_alt": "Decorative icon."
+    },
+    {
+      "front_html": "Best Clinical Patient Outcome",
       "back_html": "Best Clinical Patient Outcome, 2019–2020. <em>Pending B7.</em>",
-      "front_asset_id": "<hr-img-award-trophy>", "front_alt": "Decorative icon." },
-    { "front_html": "Best new clinic for customer service",
+      "front_asset_id": "<hr-img-award-trophy>",
+      "front_alt": "Decorative icon."
+    },
+    {
+      "front_html": "Best new clinic for customer service",
       "back_html": "Best new clinic for customer service, 2018. <em>Pending B7.</em>",
-      "front_asset_id": "<hr-img-award-star>", "front_alt": "Decorative icon." },
-    { "front_html": "Best New Premium Clinic",
+      "front_asset_id": "<hr-img-award-star>",
+      "front_alt": "Decorative icon."
+    },
+    {
+      "front_html": "Best New Premium Clinic",
       "back_html": "Best New Premium Clinic, 2018–19. <em>Pending B7.</em>",
-      "front_asset_id": "<hr-img-award-trophy>", "front_alt": "Decorative icon." },
-    { "front_html": "Most innovative corporate wellness initiative",
+      "front_asset_id": "<hr-img-award-trophy>",
+      "front_alt": "Decorative icon."
+    },
+    {
+      "front_html": "Most innovative corporate wellness initiative",
       "back_html": "Most innovative corporate wellness initiative in Saudi Arabia, 2019. <em>Pending B7.</em>",
-      "front_asset_id": "<hr-img-award-star>", "front_alt": "Decorative icon." }
+      "front_asset_id": "<hr-img-award-star>",
+      "front_alt": "Decorative icon."
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-023>",
@@ -1381,9 +1704,14 @@ New lexicon terms: CBAHI — “see-bah-hee”
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "D · Ethics & patients' rights", 2 px navy `#003867` header rule |
 | Visual concept | Four value blocks in a 2×2 grid with one line icon each; a single full-width warning strip below the grid carries the 24-hour rule, set in `dark` on an `accent`-tinted panel, with an exclamation icon so the meaning is not carried by colour |
-| Layout | `text` |
-| Colour roles | bg `light` · text `dark` · accent on the bottom strip only (one strip, well under 10%) |
+| edumints layout | `text` |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C`) · warning `accent` (Responsible magenta `#9D3293` on the key rule/figure callout only) |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Four single-weight line icons (`hr-img-ethics-icons`) in navy #003867 + exclamation warning icon in magenta #9D3293, own SVG |
 | Animation / reveal | Grid blocks fade up one by one, then the strip slides up last |
 | Character | None |
 
@@ -1433,7 +1761,9 @@ New lexicon terms: None
   "reveal": "auto",
   "body_html": "<p><strong>Respect</strong> — uphold the rights, privacy and dignity of patients, families and colleagues.</p><p><strong>Integrity</strong> — transparent practice; disclose any potential conflict of interest.</p><p><strong>Accountability</strong> — a culture that encourages reporting safety concerns and adherence to policy.</p><p><strong>Innovation &amp; collaboration</strong> — support research and community engagement to improve quality and outcomes.</p><p><strong>Ethical dilemma? Incident report within 24 hours + ethics team.</strong> <em>Pending B14 / D8.</em></p>",
   "narration_asset_id": "<hr-aud-030>",
-  "narration_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone."
+  "narration_text": "Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
+  "media_asset_id": "<hr-img-ethics-icons>",
+  "media_alt": "Four icons for Respect, Integrity, Accountability, and Innovation and collaboration."
 }
 ```
 
@@ -1471,11 +1801,16 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L5 Scenario (see `../../00_program/brand/screen-mockups/05-scenario.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "D · Ethics & patients' rights", 2 px navy `#003867` header rule |
 | Visual concept | A flat-illustration band across the top that changes with the node — a meeting room, then a corridor, then a quiet desk; the situation text sits on a white card below it and the choices are full-width buttons under that |
-| Layout | n/a (`decision_scenario`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the decision; `success` / `error` tints in the outcome line only |
+| edumints layout | n/a (`decision_scenario`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (flat scene illustrations + mentor avatar) |
 | Animation / reveal | The situation card fades up on each node change |
-| Character | `mentor-noor`, pose `explaining` on node 1, `concern` on node 2, `neutral` on node 3. Uses the program master character (`narration-and-lexicon.md` §5); phase-3 §4 lists the module-local id `hr-char-noor` for the same asset. |
+| Character | `mentor-noor` (`hr-char-noor`), circular avatar with Caring purple `#652D8C` ring (navy `#003867` scrubs, plain navy hijab, purple lanyard, plain badge with no logo/text); poses: `explaining` on node 1, `concern` on node 2, `neutral` on node 3 |
 
 **Imagery**
 
@@ -1485,6 +1820,18 @@ New lexicon terms: None
 | `hr-img-ethics-corridor` | illustration | Flat corridor scene: reception desk and a queue of two patients | ai-generated | “A clinic corridor with a reception desk and two patients waiting.” | No |
 | `hr-img-ethics-desk` | illustration | Flat desk scene: laptop showing a blank report form, a cup, a notebook | ai-generated | “A desk with a laptop open on an incident report form.” | No |
 | `hr-char-noor` / `mentor-noor` | character | Program mentor, three poses | ai-generated | “Noor, a senior nurse and safety liaison, speaking.” | No |
+
+**AI image prompt** (`hr-img-ethics-meeting`, `hr-img-ethics-corridor`, `hr-img-ethics-desk`, `mentor-noor` — per `brand-identity.md` §6):
+
+```text
+Flat vector illustration for a healthcare e-learning course, 16:9,
+- Scene 1 (hr-img-ethics-meeting): a modern clinic meeting room with a conference table, four chairs, a closed laptop and a plain folder;
+- Scene 2 (hr-img-ethics-corridor): a calm clinic reception desk and corridor with two waiting chairs;
+- Scene 3 (hr-img-ethics-desk): a quiet staff desk with a laptop, a mug and a plain notebook.
+Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic interior, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
+People: Noor, the safety and induction mentor (Saudi woman in her 30s, navy #003867 scrubs, plain navy hijab, Caring purple #652D8C badge lanyard, plain ID badge with no logo and no text, warm calm expression; poses: explaining, concern, neutral). Modest, culturally appropriate clothing for Saudi Arabia.
+No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
+```
 
 #### 4. Interaction and scoring
 
@@ -1542,49 +1889,104 @@ New lexicon terms: None
   "title": "A supplier you know",
   "section": "D · Ethics & patients' rights",
   "node_id": "hr-sD",
-  "objective_ids": ["hr-o2"],
+  "objective_ids": [
+    "hr-o2"
+  ],
   "points": 15,
-  "evidence_screen_ids": ["hr-030"],
+  "evidence_screen_ids": [
+    "hr-030"
+  ],
   "pass_score": 3,
   "start_node_id": "n1",
   "intro_html": "<p>Three moments, three decisions. Nobody is watching.</p>",
   "nodes": [
-    { "id": "n1",
+    {
+      "id": "n1",
       "prompt_html": "<p>You're on a panel evaluating three suppliers for a clinic fit-out. One bidder is your cousin's company. The evaluation starts in an hour.</p>",
       "image_asset_id": "<hr-img-ethics-meeting>",
       "image_alt": "A small meeting room where a supplier evaluation is being discussed.",
       "choices": [
-        { "id": "n1a", "text_html": "Say nothing — you can score their bid fairly.", "score_delta": 0, "goto_node_id": "n2",
-          "feedback_html": "<p>Even a fair score looks compromised. Integrity means disclosing a potential conflict of interest before the work starts, in procurement as much as in recruitment.</p>" },
-        { "id": "n1b", "text_html": "Declare the conflict in writing to the panel chair and step back from scoring that bid.", "score_delta": 1, "goto_node_id": "n2",
-          "feedback_html": "<p>Right. You disclose the potential conflict and remove yourself from the decision. Nobody has to guess afterwards, including you.</p>" },
-        { "id": "n1c", "text_html": "Step out of the meeting quietly and say nothing.", "score_delta": 0, "goto_node_id": "n2",
-          "feedback_html": "<p>Leaving is better than scoring, but silence doesn't help: the panel still doesn't know why, and the conflict stays undocumented. Declare it, then step back.</p>" }
-      ] },
-    { "id": "n2",
+        {
+          "id": "n1a",
+          "text_html": "Say nothing — you can score their bid fairly.",
+          "score_delta": 0,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Even a fair score looks compromised. Integrity means disclosing a potential conflict of interest before the work starts, in procurement as much as in recruitment.</p>"
+        },
+        {
+          "id": "n1b",
+          "text_html": "Declare the conflict in writing to the panel chair and step back from scoring that bid.",
+          "score_delta": 1,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Right. You disclose the potential conflict and remove yourself from the decision. Nobody has to guess afterwards, including you.</p>"
+        },
+        {
+          "id": "n1c",
+          "text_html": "Step out of the meeting quietly and say nothing.",
+          "score_delta": 0,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Leaving is better than scoring, but silence doesn't help: the panel still doesn't know why, and the conflict stays undocumented. Declare it, then step back.</p>"
+        }
+      ]
+    },
+    {
+      "id": "n2",
       "prompt_html": "<p>A colleague from another department asks you to “help” a patient skip the queue, and offers you a gift.</p>",
       "image_asset_id": "<hr-img-ethics-corridor>",
       "image_alt": "A clinic corridor with a reception desk and two patients waiting.",
       "choices": [
-        { "id": "n2a", "text_html": "Decline, and explain that access to care is not something we trade.", "score_delta": 1, "goto_node_id": "n3",
-          "feedback_html": "<p>Right. Fair access is part of Respect — every patient in that queue is waiting for the same reason. A gift makes it a transaction.</p>" },
-        { "id": "n2b", "text_html": "Do it once, then return the gift.", "score_delta": 0, "goto_node_id": "n3",
-          "feedback_html": "<p>Returning the gift afterwards doesn't undo it. Someone else waited longer because of a favour, and the gift makes it a transaction.</p>" },
-        { "id": "n2c", "text_html": "Ask the patient to wait outside and slot them in when it's quiet.", "score_delta": 0, "goto_node_id": "n3",
-          "feedback_html": "<p>Quiet or not, that patient is still moving ahead of people who waited. Decline, and say why.</p>" }
-      ] },
-    { "id": "n3",
+        {
+          "id": "n2a",
+          "text_html": "Decline, and explain that access to care is not something we trade.",
+          "score_delta": 1,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Right. Fair access is part of Respect — every patient in that queue is waiting for the same reason. A gift makes it a transaction.</p>"
+        },
+        {
+          "id": "n2b",
+          "text_html": "Do it once, then return the gift.",
+          "score_delta": 0,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Returning the gift afterwards doesn't undo it. Someone else waited longer because of a favour, and the gift makes it a transaction.</p>"
+        },
+        {
+          "id": "n2c",
+          "text_html": "Ask the patient to wait outside and slot them in when it's quiet.",
+          "score_delta": 0,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Quiet or not, that patient is still moving ahead of people who waited. Decline, and say why.</p>"
+        }
+      ]
+    },
+    {
+      "id": "n3",
       "prompt_html": "<p>A week later you're not sure whether something you saw counts as an ethical issue. Nobody else has raised it.</p>",
       "image_asset_id": "<hr-img-ethics-desk>",
       "image_alt": "A desk with a laptop open on an incident report form.",
       "choices": [
-        { "id": "n3a", "text_html": "Wait until you're certain before involving anyone.", "score_delta": 0, "goto_node_id": null,
-          "feedback_html": "<p>Waiting is the common mistake. The policy doesn't ask you to be certain; it asks you to act on the dilemma you have.</p>" },
-        { "id": "n3b", "text_html": "Raise it with a colleague or the committee, and complete an incident report within 24 hours so the ethics team can advise.", "score_delta": 1, "goto_node_id": null,
-          "feedback_html": "<p>Right. Consult colleagues for anything beyond your expertise, and complete an incident report within twenty-four hours so the ethics team can guide you. That's Accountability working.</p>" },
-        { "id": "n3c", "text_html": "Mention it informally to your line manager and leave it there.", "score_delta": 0, "goto_node_id": null,
-          "feedback_html": "<p>A quiet word is a start, but it leaves no record and no route to advice. Report it within twenty-four hours and bring the ethics team in.</p>" }
-      ] }
+        {
+          "id": "n3a",
+          "text_html": "Wait until you're certain before involving anyone.",
+          "score_delta": 0,
+          "goto_node_id": null,
+          "feedback_html": "<p>Waiting is the common mistake. The policy doesn't ask you to be certain; it asks you to act on the dilemma you have.</p>"
+        },
+        {
+          "id": "n3b",
+          "text_html": "Raise it with a colleague or the committee, and complete an incident report within 24 hours so the ethics team can advise.",
+          "score_delta": 1,
+          "goto_node_id": null,
+          "feedback_html": "<p>Right. Consult colleagues for anything beyond your expertise, and complete an incident report within twenty-four hours so the ethics team can guide you. That's Accountability working.</p>"
+        },
+        {
+          "id": "n3c",
+          "text_html": "Mention it informally to your line manager and leave it there.",
+          "score_delta": 0,
+          "goto_node_id": null,
+          "feedback_html": "<p>A quiet word is a start, but it leaves no record and no route to advice. Report it within twenty-four hours and bring the ethics team in.</p>"
+        }
+      ]
+    }
   ],
   "feedback": {
     "correct_html": "<p>Three out of three. You declared the conflict, you held the line on queue-jumping, and you used the reporting route instead of guessing. That is Integrity and Accountability as behaviour, not as a poster.</p>",
@@ -1631,9 +2033,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "D · Ethics & patients' rights · Check", 2 px navy `#003867` header rule |
 | Visual concept | Two tall drop zones side by side with plain headings and one line icon each; nine draggable chips sit in a wrap row below; a placed chip shows a 1 px border and a small position number |
-| Layout | n/a (`drag_drop`) |
-| Colour roles | bg `surface` · text `dark` · accent on the drop-zone hover outline only |
+| edumints layout | n/a (`drag_drop`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Two single-weight line icons on drop-zone headers (shield-heart for rights, checklist-tick for responsibilities), navy #003867, own SVG |
 | Animation / reveal | Chips settle with a 120 ms spring when dropped |
 | Character | None |
 
@@ -1684,24 +2091,70 @@ New lexicon terms: None
   "title": "Rights or responsibilities?",
   "section": "D · Ethics & patients' rights",
   "node_id": "hr-sD",
-  "objective_ids": ["hr-o2"],
+  "objective_ids": [
+    "hr-o2"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-030"],
+  "evidence_screen_ids": [
+    "hr-030"
+  ],
   "prompt_html": "<p>Nine statements from the notice in reception. Sort them into the right column.</p>",
   "targets": [
-    { "id": "right", "label_html": "Patient right" },
-    { "id": "resp", "label_html": "Patient responsibility" }
+    {
+      "id": "right",
+      "label_html": "Patient right"
+    },
+    {
+      "id": "resp",
+      "label_html": "Patient responsibility"
+    }
   ],
   "items": [
-    { "id": "it1", "text_html": "Access to care regardless of race, gender or disability", "correct_target_id": "right" },
-    { "id": "it2", "text_html": "Information and informed consent before treatment", "correct_target_id": "right" },
-    { "id": "it3", "text_html": "Privacy and confidentiality", "correct_target_id": "right" },
-    { "id": "it4", "text_html": "Pain management", "correct_target_id": "right" },
-    { "id": "it5", "text_html": "Refuse treatment after understanding the risks", "correct_target_id": "right" },
-    { "id": "it6", "text_html": "Ask for a patient advocacy representative", "correct_target_id": "right" },
-    { "id": "it7", "text_html": "Give accurate health information", "correct_target_id": "resp" },
-    { "id": "it8", "text_html": "Follow the treatment plan and attend appointments", "correct_target_id": "resp" },
-    { "id": "it9", "text_html": "Respect other patients and staff", "correct_target_id": "resp" }
+    {
+      "id": "it1",
+      "text_html": "Access to care regardless of race, gender or disability",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it2",
+      "text_html": "Information and informed consent before treatment",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it3",
+      "text_html": "Privacy and confidentiality",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it4",
+      "text_html": "Pain management",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it5",
+      "text_html": "Refuse treatment after understanding the risks",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it6",
+      "text_html": "Ask for a patient advocacy representative",
+      "correct_target_id": "right"
+    },
+    {
+      "id": "it7",
+      "text_html": "Give accurate health information",
+      "correct_target_id": "resp"
+    },
+    {
+      "id": "it8",
+      "text_html": "Follow the treatment plan and attend appointments",
+      "correct_target_id": "resp"
+    },
+    {
+      "id": "it9",
+      "text_html": "Respect other patients and staff",
+      "correct_target_id": "resp"
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Six rights and three responsibilities. The full notice is posted in the reception area if you ever need to point someone to it.</p>",
@@ -1748,9 +2201,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "D · Ethics & patients' rights · Check", 2 px navy `#003867` header rule |
 | Visual concept | Stem in large type; four plain option rows; no imagery, so the decision carries the screen |
-| Layout | n/a (`mcq`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`mcq`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -1801,19 +2259,36 @@ New lexicon terms: None
   "title": "She said no",
   "section": "D · Ethics & patients' rights",
   "node_id": "hr-sD",
-  "objective_ids": ["hr-o2"],
+  "objective_ids": [
+    "hr-o2"
+  ],
   "points": 5,
-  "evidence_screen_ids": ["hr-032"],
+  "evidence_screen_ids": [
+    "hr-030"
+  ],
   "prompt_html": "<p>A patient refuses a blood test after the doctor has explained the risks. What is the right response?</p>",
   "options": [
-    { "id": "a", "text_html": "Respect the refusal, check she understood the risks, document it, and tell the doctor", "correct": true,
-      "feedback_html": "<p>Right. Refusal of treatment is a patient right once the risks are understood. Your job is to check understanding, document the refusal, and inform the doctor.</p>" },
-    { "id": "b", "text_html": "Ask the clinic manager to persuade her to agree",
-      "feedback_html": "<p>Bringing in a manager to talk her round turns a right into pressure. She can refuse once she understands the risks.</p>" },
-    { "id": "c", "text_html": "Take the sample anyway, because the doctor ordered it",
-      "feedback_html": "<p>Proceeding against a competent patient's refusal is not consent. Stop and escalate to the doctor instead.</p>" },
-    { "id": "d", "text_html": "Ask a family member to consent instead",
-      "feedback_html": "<p>A family member cannot replace her consent. Only she can decide, once she understands the risks.</p>" }
+    {
+      "id": "a",
+      "text_html": "Respect the refusal, check she understood the risks, document it, and tell the doctor",
+      "correct": true,
+      "feedback_html": "<p>Right. Refusal of treatment is a patient right once the risks are understood. Your job is to check understanding, document the refusal, and inform the doctor.</p>"
+    },
+    {
+      "id": "b",
+      "text_html": "Ask the clinic manager to persuade her to agree",
+      "feedback_html": "<p>Bringing in a manager to talk her round turns a right into pressure. She can refuse once she understands the risks.</p>"
+    },
+    {
+      "id": "c",
+      "text_html": "Take the sample anyway, because the doctor ordered it",
+      "feedback_html": "<p>Proceeding against a competent patient's refusal is not consent. Stop and escalate to the doctor instead.</p>"
+    },
+    {
+      "id": "d",
+      "text_html": "Ask a family member to consent instead",
+      "feedback_html": "<p>A family member cannot replace her consent. Only she can decide, once she understands the risks.</p>"
+    }
   ],
   "multi_select": false,
   "feedback": {
@@ -1861,9 +2336,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
 | Visual concept | Three cards in a row, each with a line icon and a short label; the third card carries a download affordance and a small PDF glyph; beneath them a single line states the rule “if it's a request, it goes through Oracle” |
-| Layout | `text` |
-| Colour roles | bg `light` · text `dark` · accent on the third card's download affordance only |
+| edumints layout | `text` |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Three single-weight line icons (`hr-img-help-icons`: headset, screen-and-form, document-arrow), Caring purple #652D8C, own SVG |
 | Animation / reveal | Cards fade up left to right |
 | Character | None |
 
@@ -1914,7 +2394,9 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
   "reveal": "auto",
   "body_html": "<p><strong>Your HR help desk</strong> — one per business unit. <em>Role mailbox addresses pending B6 / D5.</em></p><p><strong>Request everything in Oracle.</strong> If it's a request, it needs a record.</p><p><strong>Full rules:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p>",
   "narration_asset_id": "<hr-aud-040>",
-  "narration_text": "Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this."
+  "narration_text": "Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
+  "media_asset_id": "<hr-img-help-icons>",
+  "media_alt": "Three icons: HR help desk, Oracle self-service, and the HR Quick Reference PDF."
 }
 ```
 
@@ -1964,9 +2446,14 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
 | Visual concept | Nine collapsed rows, each with a two-letter code chip on the left (AN, SK, WI, MA, EX, SC, HJ, CO, OH), the leave name, and a chevron; expanding shows one sentence of plain text plus a single “watch out” line where a rule trips people up |
-| Layout | n/a (`accordion`) |
-| Colour roles | bg `light` · text `dark` · accent on the chevron of the open panel only |
+| edumints layout | n/a (`accordion`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (two-letter code chips in Caring purple #652D8C) |
 | Animation / reveal | 200 ms height transition on expand |
 | Character | None |
 
@@ -2013,15 +2500,42 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
   "node_id": "hr-sE",
   "prompt_html": "<p>Nine types. Open the one you need — the full tables are in the Quick Reference.</p>",
   "items": [
-    { "title": "Annual", "body_html": "<p>After probation, with your line manager's approval. Carry over up to 5 days; use them by end of March (consulting-room physicians: end of June). <em>Pending B9.</em></p>" },
-    { "title": "Sick", "body_html": "<p>Tell your line manager. Valid medical report required. First 30 days full pay; days 31–90 <em>pending B1</em>; days 91–120 unpaid.</p>" },
-    { "title": "Work injury", "body_html": "<p>Covers work hours and commuting. <strong>Report to your line manager and HR the same day or the next day.</strong></p>" },
-    { "title": "Maternity", "body_html": "<p>12 weeks. You may start up to 4 weeks before the expected delivery date.</p>" },
-    { "title": "Exam", "body_html": "<p>Paid, for <strong>academic</strong> exams only. Actual exam days only. Documents at least 2 weeks in advance. IELTS, TOEFL and similar are not eligible.</p>" },
-    { "title": "Scientific", "body_html": "<p>Paid days per profession each year, for academic exams. Needs the MD's pre-approval. <strong>Cannot be carried over.</strong> <em>Pending B10.</em></p>" },
-    { "title": "Hajj", "body_html": "<p>Muslim employees with two full years of service. 10–15 days including Eid. Hajj permit copy required. <em>Pending B11.</em></p>" },
-    { "title": "Compassionate", "body_html": "<p>Marriage 5 days · paternity 3 · immediate relative 5 · sibling 3 · death of a husband <em>pending B2</em>.</p>" },
-    { "title": "Official holidays", "body_html": "<p>Eid al-Fitr 4 days · Eid al-Adha 4 days · Founding Day 22 February · National Day 23 September.</p>" }
+    {
+      "title": "Annual",
+      "body_html": "<p>After probation, with your line manager's approval. Carry over up to 5 days; use them by end of March (consulting-room physicians: end of June). <em>Pending B9.</em></p>"
+    },
+    {
+      "title": "Sick",
+      "body_html": "<p>Tell your line manager. Valid medical report required. First 30 days full pay; days 31–90 <em>pending B1</em>; days 91–120 unpaid.</p>"
+    },
+    {
+      "title": "Work injury",
+      "body_html": "<p>Covers work hours and commuting. <strong>Report to your line manager and HR the same day or the next day.</strong></p>"
+    },
+    {
+      "title": "Maternity",
+      "body_html": "<p>12 weeks. You may start up to 4 weeks before the expected delivery date.</p>"
+    },
+    {
+      "title": "Exam",
+      "body_html": "<p>Paid, for <strong>academic</strong> exams only. Actual exam days only. Documents at least 2 weeks in advance. IELTS, TOEFL and similar are not eligible.</p>"
+    },
+    {
+      "title": "Scientific",
+      "body_html": "<p>Paid days per profession each year, for academic exams. Needs the MD's pre-approval. <strong>Cannot be carried over.</strong> <em>Pending B10.</em></p>"
+    },
+    {
+      "title": "Hajj",
+      "body_html": "<p>Muslim employees with two full years of service. 10–15 days including Eid. Hajj permit copy required. <em>Pending B11.</em></p>"
+    },
+    {
+      "title": "Compassionate",
+      "body_html": "<p>Marriage 5 days · paternity 3 · immediate relative 5 · sibling 3 · death of a husband <em>pending B2</em>.</p>"
+    },
+    {
+      "title": "Official holidays",
+      "body_html": "<p>Eid al-Fitr 4 days · Eid al-Adha 4 days · Founding Day 22 February · National Day 23 September.</p>"
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-041>",
@@ -2063,9 +2577,14 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave · Check", 2 px navy `#003867` header rule |
 | Visual concept | Two columns: four grade tiles on the left (H, G, F and Consultant, A to E) and four number tiles on the right (30, 27, 25, 22); a connector line follows the selection |
-| Layout | n/a (`matching`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`matching`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -2114,15 +2633,35 @@ New lexicon terms: None
   "title": "How many days?",
   "section": "E · Your leave",
   "node_id": "hr-sE",
-  "objective_ids": ["hr-o3"],
+  "objective_ids": [
+    "hr-o3"
+  ],
   "points": 5,
-  "evidence_screen_ids": ["hr-041"],
+  "evidence_screen_ids": [
+    "hr-041"
+  ],
   "prompt_html": "<p>Four grades, four entitlements. Match each grade to its annual leave, in working days. <em>Entitlement pending B9.</em></p>",
   "pairs": [
-    { "id": "p1", "left_html": "Grade H", "right_html": "30 working days" },
-    { "id": "p2", "left_html": "Grade G", "right_html": "27 working days" },
-    { "id": "p3", "left_html": "Grade F and Consultant", "right_html": "25 working days" },
-    { "id": "p4", "left_html": "Grades A to E", "right_html": "22 working days" }
+    {
+      "id": "p1",
+      "left_html": "Grade H",
+      "right_html": "30 working days"
+    },
+    {
+      "id": "p2",
+      "left_html": "Grade G",
+      "right_html": "27 working days"
+    },
+    {
+      "id": "p3",
+      "left_html": "Grade F and Consultant",
+      "right_html": "25 working days"
+    },
+    {
+      "id": "p4",
+      "left_html": "Grades A to E",
+      "right_html": "22 working days"
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Entitlement rises with grade: 30, 27, 25 and 22 working days. Your contract and the Quick Reference both show your own grade.</p>",
@@ -2169,9 +2708,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
 | Visual concept | A five-row vertical ledger on a white card: each row has a day band on the left, the action in the middle and a “Why?” control on the right; revealing a row slides its rationale panel open beneath the action |
-| Layout | n/a (`worked_example`) |
-| Colour roles | bg `light` · text `dark` · accent on the “Why?” control only |
+| edumints layout | n/a (`worked_example`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | `fading: "partial"` — actions are visible, rationales sit behind a per-step reveal control |
 | Character | None |
 
@@ -2230,16 +2774,26 @@ New lexicon terms: None
   "fading": "partial",
   "intro_html": "<p>A colleague is off sick for 40 days in one year, with valid medical reports from My Clinic. How is the pay worked out?</p>",
   "steps": [
-    { "action_html": "<p><strong>Days 1–30</strong> — tell your line manager you are unwell.</p>",
-      "rationale_html": "<p>Notification is the first requirement. Sick leave is accepted only with a valid medical report, and your manager needs to know today, not at the end of it.</p>" },
-    { "action_html": "<p><strong>Days 1–30</strong> — full salary.</p>",
-      "rationale_html": "<p>The first thirty days of valid sick leave in a year are paid in full.</p>" },
-    { "action_html": "<p><strong>Days 31–40</strong> — reduced pay. <em>Per the slide as written: 25% deducted, so 75% of salary. Pending B1.</em></p>",
-      "rationale_html": "<p>The second band cuts pay by a quarter. Continuous and separated periods count the same way, so the band follows the total days in the year, not one absence.</p>" },
-    { "action_html": "<p><strong>Days 91–120</strong> — unpaid.</p>",
-      "rationale_html": "<p>The bands run 1–30, 31–90 and 91–120. Forty days never reaches this band, but it's the ceiling you should know.</p>" },
-    { "action_html": "<p>Check the report: from outside My Clinic, it needs <strong>Staff Health Clinic approval</strong>.</p>",
-      "rationale_html": "<p>Reports from My Clinic are accepted as they are. Anything from another provider has to be approved, or the leave isn't valid.</p>" }
+    {
+      "action_html": "<p><strong>Days 1–30</strong> — tell your line manager you are unwell.</p>",
+      "rationale_html": "<p>Notification is the first requirement. Sick leave is accepted only with a valid medical report, and your manager needs to know today, not at the end of it.</p>"
+    },
+    {
+      "action_html": "<p><strong>Days 1–30</strong> — full salary.</p>",
+      "rationale_html": "<p>The first thirty days of valid sick leave in a year are paid in full.</p>"
+    },
+    {
+      "action_html": "<p><strong>Days 31–40</strong> — reduced pay. <em>Per the slide as written: 25% deducted, so 75% of salary. Pending B1.</em></p>",
+      "rationale_html": "<p>The second band cuts pay by a quarter. Continuous and separated periods count the same way, so the band follows the total days in the year, not one absence.</p>"
+    },
+    {
+      "action_html": "<p><strong>Days 91–120</strong> — unpaid.</p>",
+      "rationale_html": "<p>The bands run 1–30, 31–90 and 91–120. Forty days never reaches this band, but it's the ceiling you should know.</p>"
+    },
+    {
+      "action_html": "<p>Check the report: from outside My Clinic, it needs <strong>Staff Health Clinic approval</strong>.</p>",
+      "rationale_html": "<p>Reports from My Clinic are accepted as they are. Anything from another provider has to be approved, or the leave isn't valid.</p>"
+    }
   ],
   "self_explanation_prompt_html": "<p>What changes if the medical report comes from another hospital?</p>",
   "reveal": "none",
@@ -2282,11 +2836,16 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L5 Scenario (see `../../00_program/brand/screen-mockups/05-scenario.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave", 2 px navy `#003867` header rule |
 | Visual concept | A flat service-desk illustration band at the top that stays constant; below it a single request card with the colleague's first name, role and question, then full-width choice buttons; a “3 of 4 answered” counter sits in the corner |
-| Layout | n/a (`decision_scenario`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the decision |
+| edumints layout | n/a (`decision_scenario`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (flat scene illustration + mentor avatar) |
 | Animation / reveal | Request card fades up on each node change |
-| Character | `mentor-noor`, pose `explaining` on node 1 and `neutral` on nodes 2–4 |
+| Character | `mentor-noor` (`hr-char-noor`), circular avatar with Caring purple `#652D8C` ring (navy `#003867` scrubs, plain navy hijab, purple lanyard, plain badge with no logo/text); poses: `explaining` on node 1, `neutral` on nodes 2–4 |
 
 **Imagery**
 
@@ -2294,6 +2853,14 @@ New lexicon terms: None
 |---|---|---|---|---|---|
 | `hr-img-leavedesk` | illustration | Flat office-desk scene: a desk, a laptop, a small plant, two chairs; brand colours, white background | ai-generated | “An HR service desk with a laptop and two chairs.” | No |
 | `hr-char-noor` / `mentor-noor` | character | Program mentor, poses `explaining` and `neutral` | ai-generated | “Noor, a senior nurse and safety liaison, at the leave desk.” | No |
+
+**AI image prompt** (`hr-img-leavedesk`, `mentor-noor` — per `brand-identity.md` §6):
+
+```text
+Flat vector illustration for a healthcare e-learning course, 16:9, an HR service desk in a modern clinic office with a laptop, a small indoor plant and two visitor chairs. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Modern Saudi outpatient clinic interior, bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
+People: Noor, the safety and induction mentor (Saudi woman in her 30s, navy #003867 scrubs, plain navy hijab, Caring purple #652D8C badge lanyard, plain ID badge with no logo and no text; poses: explaining, neutral). Modest, culturally appropriate clothing for Saudi Arabia.
+No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
+```
 
 #### 4. Interaction and scoring
 
@@ -2355,63 +2922,140 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
   "title": "The leave desk",
   "section": "E · Your leave",
   "node_id": "hr-sE",
-  "objective_ids": ["hr-o3"],
+  "objective_ids": [
+    "hr-o3"
+  ],
   "points": 15,
-  "evidence_screen_ids": ["hr-041"],
+  "evidence_screen_ids": [
+    "hr-041"
+  ],
   "pass_score": 3,
   "start_node_id": "n1",
   "intro_html": "<p>Four colleagues, four questions. You're the one they've asked.</p>",
   "nodes": [
-    { "id": "n1",
+    {
+      "id": "n1",
       "prompt_html": "<p><strong>Yousuf</strong> is a lab technician. He asks for two days of scientific leave, and he already has the MD's pre-approval for his documents. How many days can he take this year?</p>",
       "image_asset_id": "<hr-img-leavedesk>",
       "image_alt": "An HR service desk with a laptop and two chairs.",
       "choices": [
-        { "id": "n1a", "text_html": "Two days — that's the technician allowance, and unused days can't be carried over.", "score_delta": 1, "goto_node_id": "n2",
-          "feedback_html": "<p>Right. Scientific leave is 2 days a year for lab and radiology technicians, 3 for nurses, 4 for pharmacists, 5 for other physicians and dentists, and 7 for consultants. It also can't be carried over.</p>" },
-        { "id": "n1b", "text_html": "Seven days — that's the allowance.", "score_delta": 0, "goto_node_id": "n2",
-          "feedback_html": "<p>Seven days is the consultants' allowance. Technicians get two. The allowance follows the profession, not the request.</p>" },
-        { "id": "n1c", "text_html": "None — scientific leave is only for consultants and physicians.", "score_delta": 0, "goto_node_id": "n2",
-          "feedback_html": "<p>Not so. Every profession in the table has an allowance; technicians have the smallest, at two days a year.</p>" },
-        { "id": "n1d", "text_html": "Two days now, and he can carry the rest into next year.", "score_delta": 0, "goto_node_id": "n2",
-          "feedback_html": "<p>The days are right, the carry-over isn't. Scientific leave cannot be carried over — unused days are lost.</p>" }
-      ] },
-    { "id": "n2",
+        {
+          "id": "n1a",
+          "text_html": "Two days — that's the technician allowance, and unused days can't be carried over.",
+          "score_delta": 1,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Right. Scientific leave is 2 days a year for lab and radiology technicians, 3 for nurses, 4 for pharmacists, 5 for other physicians and dentists, and 7 for consultants. It also can't be carried over.</p>"
+        },
+        {
+          "id": "n1b",
+          "text_html": "Seven days — that's the allowance.",
+          "score_delta": 0,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Seven days is the consultants' allowance. Technicians get two. The allowance follows the profession, not the request.</p>"
+        },
+        {
+          "id": "n1c",
+          "text_html": "None — scientific leave is only for consultants and physicians.",
+          "score_delta": 0,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>Not so. Every profession in the table has an allowance; technicians have the smallest, at two days a year.</p>"
+        },
+        {
+          "id": "n1d",
+          "text_html": "Two days now, and he can carry the rest into next year.",
+          "score_delta": 0,
+          "goto_node_id": "n2",
+          "feedback_html": "<p>The days are right, the carry-over isn't. Scientific leave cannot be carried over — unused days are lost.</p>"
+        }
+      ]
+    },
+    {
+      "id": "n2",
       "prompt_html": "<p><strong>Amal</strong> is a nurse. She asks for exam leave to sit IELTS next month, and she has her documents ready.</p>",
       "image_asset_id": "<hr-img-leavedesk>",
       "image_alt": "An HR service desk with a laptop and two chairs.",
       "choices": [
-        { "id": "n2a", "text_html": "Refuse: IELTS is not an academic examination, and it's named as not eligible.", "score_delta": 1, "goto_node_id": "n3",
-          "feedback_html": "<p>Right. Exam leave is paid leave for academic examinations only, and IELTS, TOEFL and Microsoft certifications are named as not eligible. Having the documents ready doesn't change eligibility.</p>" },
-        { "id": "n2b", "text_html": "Approve it — she has her documents in on time.", "score_delta": 0, "goto_node_id": "n3",
-          "feedback_html": "<p>Documents matter, but eligibility comes first. IELTS is not an academic examination and is named as not eligible.</p>" },
-        { "id": "n2c", "text_html": "Approve half the exam days as a goodwill gesture.", "score_delta": 0, "goto_node_id": "n3",
-          "feedback_html": "<p>Well meant, but the rule is about the type of exam, not the number of days. IELTS is not eligible, so there are no days to approve.</p>" }
-      ] },
-    { "id": "n3",
+        {
+          "id": "n2a",
+          "text_html": "Refuse: IELTS is not an academic examination, and it's named as not eligible.",
+          "score_delta": 1,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Right. Exam leave is paid leave for academic examinations only, and IELTS, TOEFL and Microsoft certifications are named as not eligible. Having the documents ready doesn't change eligibility.</p>"
+        },
+        {
+          "id": "n2b",
+          "text_html": "Approve it — she has her documents in on time.",
+          "score_delta": 0,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Documents matter, but eligibility comes first. IELTS is not an academic examination and is named as not eligible.</p>"
+        },
+        {
+          "id": "n2c",
+          "text_html": "Approve half the exam days as a goodwill gesture.",
+          "score_delta": 0,
+          "goto_node_id": "n3",
+          "feedback_html": "<p>Well meant, but the rule is about the type of exam, not the number of days. IELTS is not eligible, so there are no days to approve.</p>"
+        }
+      ]
+    },
+    {
+      "id": "n3",
       "prompt_html": "<p><strong>Reem</strong> is a pharmacist with one full year of service. She asks for Hajj leave and has her Hajj permit ready.</p>",
       "image_asset_id": "<hr-img-leavedesk>",
       "image_alt": "An HR service desk with a laptop and two chairs.",
       "choices": [
-        { "id": "n3a", "text_html": "Not yet — Hajj leave needs two full years of continuous service.", "score_delta": 1, "goto_node_id": "n4",
-          "feedback_html": "<p>Right. Two full years of continuous service is the eligibility rule, and one year doesn't meet it. The permit is needed, but it doesn't shorten the service requirement.</p>" },
-        { "id": "n3b", "text_html": "Yes — one year of service is enough.", "score_delta": 0, "goto_node_id": "n4",
-          "feedback_html": "<p>It isn't. Hajj leave is for Muslim employees with two full years of continuous service.</p>" },
-        { "id": "n3c", "text_html": "Yes, now that she has the Hajj permit.", "score_delta": 0, "goto_node_id": "n4",
-          "feedback_html": "<p>The permit is a requirement, not a substitute. Without two full years of service she isn't eligible, permit or not.</p>" }
-      ] },
-    { "id": "n4",
+        {
+          "id": "n3a",
+          "text_html": "Not yet — Hajj leave needs two full years of continuous service.",
+          "score_delta": 1,
+          "goto_node_id": "n4",
+          "feedback_html": "<p>Right. Two full years of continuous service is the eligibility rule, and one year doesn't meet it. The permit is needed, but it doesn't shorten the service requirement.</p>"
+        },
+        {
+          "id": "n3b",
+          "text_html": "Yes — one year of service is enough.",
+          "score_delta": 0,
+          "goto_node_id": "n4",
+          "feedback_html": "<p>It isn't. Hajj leave is for Muslim employees with two full years of continuous service.</p>"
+        },
+        {
+          "id": "n3c",
+          "text_html": "Yes, now that she has the Hajj permit.",
+          "score_delta": 0,
+          "goto_node_id": "n4",
+          "feedback_html": "<p>The permit is a requirement, not a substitute. Without two full years of service she isn't eligible, permit or not.</p>"
+        }
+      ]
+    },
+    {
+      "id": "n4",
       "prompt_html": "<p><strong>Sara</strong> is a receptionist. She slipped on the way into work this morning and her ankle is painful. What does she need to do?</p>",
       "image_asset_id": "<hr-img-leavedesk>",
       "image_alt": "An HR service desk with a laptop and two chairs.",
       "choices": [
-        { "id": "n4a", "text_html": "Tell her line manager and HR today or tomorrow — commuting is covered as a work injury.", "score_delta": 1, "goto_node_id": null,
-          "feedback_html": "<p>Right. Work injury covers commuting as well as work hours, and the deadline is the same day or the following day. HR then reports the case to GOSI.</p>" },
-        { "id": "n4b", "text_html": "Wait and see whether she needs time off before reporting it.", "score_delta": 0, "goto_node_id": null,
-          "feedback_html": "<p>Waiting is the mistake this rule exists to prevent. The report has to go to her line manager and HR the same day or the next day, whether or not she ends up taking time off.</p>" },
-        { "id": "n4c", "text_html": "Tell her commuting accidents aren't covered.", "score_delta": 0, "goto_node_id": null,
-          "feedback_html": "<p>They are. Work injury applies during work hours and while commuting to and from work, for Saudi and expatriate employees alike.</p>" }
-      ] }
+        {
+          "id": "n4a",
+          "text_html": "Tell her line manager and HR today or tomorrow — commuting is covered as a work injury.",
+          "score_delta": 1,
+          "goto_node_id": null,
+          "feedback_html": "<p>Right. Work injury covers commuting as well as work hours, and the deadline is the same day or the following day. HR then reports the case to GOSI.</p>"
+        },
+        {
+          "id": "n4b",
+          "text_html": "Wait and see whether she needs time off before reporting it.",
+          "score_delta": 0,
+          "goto_node_id": null,
+          "feedback_html": "<p>Waiting is the mistake this rule exists to prevent. The report has to go to her line manager and HR the same day or the next day, whether or not she ends up taking time off.</p>"
+        },
+        {
+          "id": "n4c",
+          "text_html": "Tell her commuting accidents aren't covered.",
+          "score_delta": 0,
+          "goto_node_id": null,
+          "feedback_html": "<p>They are. Work injury applies during work hours and while commuting to and from work, for Saudi and expatriate employees alike.</p>"
+        }
+      ]
+    }
   ],
   "feedback": {
     "correct_html": "<p>Three or four. You checked eligibility before you answered, which is the whole job at this desk: type of leave, who qualifies, and what document is missing.</p>",
@@ -2458,9 +3102,14 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "E · Your leave · Check", 2 px navy `#003867` header rule |
 | Visual concept | One question at a time, centred, with three option rows; a thin progress strip at the top fills as items are answered and a small “est. 3 more” hint appears once the estimator has enough data |
-| Layout | n/a (`adaptive_practice`) |
-| Colour roles | bg `surface` · text `dark` · accent on the progress strip only |
+| edumints layout | n/a (`adaptive_practice`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | Question cross-fades between items |
 | Character | None |
 
@@ -2522,63 +3171,285 @@ New lexicon terms: Eid — “eed”
   "title": "Leave rules: quick practice",
   "section": "E · Your leave",
   "node_id": "hr-sE",
-  "objective_ids": ["hr-o3"],
+  "objective_ids": [
+    "hr-o3"
+  ],
   "points": 15,
-  "evidence_screen_ids": ["hr-041"],
+  "evidence_screen_ids": [
+    "hr-041"
+  ],
   "max_items": 6,
   "target_success": 0.7,
   "pass_ratio": 0.6,
-  "adaptive": { "strategy": "elo" },
+  "adaptive": {
+    "strategy": "elo"
+  },
   "prompt_html": "<p>Answer until the practice says you're ready. It stops early if you've got it.</p>",
   "items": [
-    { "id": "q1", "difficulty": 0.25, "prompt_html": "<p>How many unused annual leave days can you carry over?</p>",
-      "options": [ { "id": "a", "text_html": "Up to 5", "correct": true }, { "id": "b", "text_html": "Up to 10" }, { "id": "c", "text_html": "All of them" } ],
+    {
+      "id": "q1",
+      "difficulty": 0.2,
+      "prompt_html": "<p>How many unused annual leave days can you carry over?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "Up to 5",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "Up to 10"
+        },
+        {
+          "id": "c",
+          "text_html": "All of them"
+        }
+      ],
       "explain_html": "<p>Carry-over is capped at 5 days. Anything above that is lost at the end of the carry-over window.</p>",
-      "scaffold_html": "<p>The cap is a small number — single digits.</p>" },
-    { "id": "q2", "difficulty": 0.35, "prompt_html": "<p>Carried-over annual leave must be used by when?</p>",
-      "options": [ { "id": "a", "text_html": "End of March", "correct": true }, { "id": "b", "text_html": "End of June" }, { "id": "c", "text_html": "End of the year" } ],
+      "scaffold_html": "<p>The cap is a small number — single digits.</p>"
+    },
+    {
+      "id": "q2",
+      "difficulty": 0.35,
+      "prompt_html": "<p>Carried-over annual leave must be used by when?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "End of March",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "End of June"
+        },
+        {
+          "id": "c",
+          "text_html": "End of the year"
+        }
+      ],
       "explain_html": "<p>Carried-over leave has to be used by the end of March of the following year.</p>",
-      "scaffold_html": "<p>It's the end of a spring month.</p>" },
-    { "id": "q3", "difficulty": 0.65, "prompt_html": "<p>A consulting-room physician carries over leave. By when must it be used?</p>",
-      "options": [ { "id": "a", "text_html": "End of March" }, { "id": "b", "text_html": "End of June", "correct": true }, { "id": "c", "text_html": "End of the year" } ],
+      "scaffold_html": "<p>It's the end of a spring month.</p>"
+    },
+    {
+      "id": "q3",
+      "difficulty": 0.65,
+      "prompt_html": "<p>A consulting-room physician carries over leave. By when must it be used?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "End of March"
+        },
+        {
+          "id": "b",
+          "text_html": "End of June",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text_html": "End of the year"
+        }
+      ],
       "explain_html": "<p>Consulting-room physicians have a later deadline: the end of June.</p>",
-      "scaffold_html": "<p>This group gets three months more than everyone else.</p>" },
-    { "id": "q4", "difficulty": 0.3, "prompt_html": "<p>How long is maternity leave?</p>",
-      "options": [ { "id": "a", "text_html": "12 weeks", "correct": true }, { "id": "b", "text_html": "10 weeks" }, { "id": "c", "text_html": "8 weeks" } ],
+      "scaffold_html": "<p>This group gets three months more than everyone else.</p>"
+    },
+    {
+      "id": "q4",
+      "difficulty": 0.3,
+      "prompt_html": "<p>How long is maternity leave?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "12 weeks",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "10 weeks"
+        },
+        {
+          "id": "c",
+          "text_html": "8 weeks"
+        }
+      ],
       "explain_html": "<p>Maternity leave is 12 weeks.</p>",
-      "scaffold_html": "<p>It's measured in weeks, not months — and it's the longest of the three options.</p>" },
-    { "id": "q5", "difficulty": 0.6, "prompt_html": "<p>How early can maternity leave start?</p>",
-      "options": [ { "id": "a", "text_html": "Up to 2 weeks before the due date" }, { "id": "b", "text_html": "Up to 4 weeks before the due date", "correct": true }, { "id": "c", "text_html": "On the due date only" } ],
+      "scaffold_html": "<p>It's measured in weeks, not months — and it's the longest of the three options.</p>"
+    },
+    {
+      "id": "q5",
+      "difficulty": 0.6,
+      "prompt_html": "<p>How early can maternity leave start?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "Up to 2 weeks before the due date"
+        },
+        {
+          "id": "b",
+          "text_html": "Up to 4 weeks before the due date",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text_html": "On the due date only"
+        }
+      ],
       "explain_html": "<p>You may start up to 4 weeks before the expected delivery date.</p>",
-      "scaffold_html": "<p>The allowance is measured in weeks before the due date.</p>" },
-    { "id": "q6", "difficulty": 0.5, "prompt_html": "<p>Exam leave documents must be submitted how far in advance?</p>",
-      "options": [ { "id": "a", "text_html": "At least 2 weeks", "correct": true }, { "id": "b", "text_html": "At least 1 week" }, { "id": "c", "text_html": "On the day of the exam" } ],
+      "scaffold_html": "<p>The allowance is measured in weeks before the due date.</p>"
+    },
+    {
+      "id": "q6",
+      "difficulty": 0.5,
+      "prompt_html": "<p>Exam leave documents must be submitted how far in advance?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "At least 2 weeks",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "At least 1 week"
+        },
+        {
+          "id": "c",
+          "text_html": "On the day of the exam"
+        }
+      ],
       "explain_html": "<p>Documents — the exam schedule and course schedule, plus a result transcript afterwards — must go in at least two weeks in advance.</p>",
-      "scaffold_html": "<p>Think in weeks, and it's more than one.</p>" },
-    { "id": "q7", "difficulty": 0.25, "prompt_html": "<p>How many days of leave for your own marriage?</p>",
-      "options": [ { "id": "a", "text_html": "5 calendar days", "correct": true }, { "id": "b", "text_html": "3 days" }, { "id": "c", "text_html": "10 days" } ],
+      "scaffold_html": "<p>Think in weeks, and it's more than one.</p>"
+    },
+    {
+      "id": "q7",
+      "difficulty": 0.25,
+      "prompt_html": "<p>How many days of leave for your own marriage?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "5 calendar days",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "3 days"
+        },
+        {
+          "id": "c",
+          "text_html": "10 days"
+        }
+      ],
       "explain_html": "<p>Marriage leave is 5 calendar days.</p>",
-      "scaffold_html": "<p>Marriage attracts the same number of days as bereavement of an immediate relative.</p>" },
-    { "id": "q8", "difficulty": 0.3, "prompt_html": "<p>How many days of paternity leave?</p>",
-      "options": [ { "id": "a", "text_html": "3 days", "correct": true }, { "id": "b", "text_html": "5 days" }, { "id": "c", "text_html": "7 days" } ],
+      "scaffold_html": "<p>Marriage attracts the same number of days as bereavement of an immediate relative.</p>"
+    },
+    {
+      "id": "q8",
+      "difficulty": 0.3,
+      "prompt_html": "<p>How many days of paternity leave?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "3 days",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "5 days"
+        },
+        {
+          "id": "c",
+          "text_html": "7 days"
+        }
+      ],
       "explain_html": "<p>Paternity leave is 3 days.</p>",
-      "scaffold_html": "<p>It's the same number as bereavement of a sibling.</p>" },
-    { "id": "q9", "difficulty": 0.45, "prompt_html": "<p>Bereavement leave for the death of a sibling?</p>",
-      "options": [ { "id": "a", "text_html": "3 calendar days", "correct": true }, { "id": "b", "text_html": "5 calendar days" }, { "id": "c", "text_html": "10 calendar days" } ],
+      "scaffold_html": "<p>It's the same number as bereavement of a sibling.</p>"
+    },
+    {
+      "id": "q9",
+      "difficulty": 0.45,
+      "prompt_html": "<p>Bereavement leave for the death of a sibling?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "3 calendar days",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "5 calendar days"
+        },
+        {
+          "id": "c",
+          "text_html": "10 calendar days"
+        }
+      ],
       "explain_html": "<p>Death of a sibling is 3 calendar days. Death of an immediate relative — spouse, parent or child — is 5.</p>",
-      "scaffold_html": "<p>Immediate relatives attract more days than siblings.</p>" },
-    { "id": "q10", "difficulty": 0.2, "prompt_html": "<p>How many days is each Eid holiday?</p>",
-      "options": [ { "id": "a", "text_html": "4 days each", "correct": true }, { "id": "b", "text_html": "3 days each" }, { "id": "c", "text_html": "5 days each" } ],
+      "scaffold_html": "<p>Immediate relatives attract more days than siblings.</p>"
+    },
+    {
+      "id": "q10",
+      "difficulty": 0.2,
+      "prompt_html": "<p>How many days is each Eid holiday?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "4 days each",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "3 days each"
+        },
+        {
+          "id": "c",
+          "text_html": "5 days each"
+        }
+      ],
       "explain_html": "<p>Eid al-Fitr and Eid al-Adha are each 4 days.</p>",
-      "scaffold_html": "<p>Both Eids are the same length.</p>" },
-    { "id": "q11", "difficulty": 0.4, "prompt_html": "<p>When is Founding Day?</p>",
-      "options": [ { "id": "a", "text_html": "22 February", "correct": true }, { "id": "b", "text_html": "23 September" }, { "id": "c", "text_html": "1 January" } ],
+      "scaffold_html": "<p>Both Eids are the same length.</p>"
+    },
+    {
+      "id": "q11",
+      "difficulty": 0.2,
+      "prompt_html": "<p>When is Founding Day?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "22 February",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "23 September"
+        },
+        {
+          "id": "c",
+          "text_html": "1 January"
+        }
+      ],
       "explain_html": "<p>Founding Day is 22 February. National Day is 23 September — the two are easy to swap.</p>",
-      "scaffold_html": "<p>It's a February date, and the other national holiday falls in September.</p>" },
-    { "id": "q12", "difficulty": 0.55, "prompt_html": "<p>Can unused scientific leave be carried over?</p>",
-      "options": [ { "id": "a", "text_html": "No, never", "correct": true }, { "id": "b", "text_html": "Yes, up to 5 days" }, { "id": "c", "text_html": "Yes, with the MD's approval" } ],
+      "scaffold_html": "<p>It's a February date, and the other national holiday falls in September.</p>"
+    },
+    {
+      "id": "q12",
+      "difficulty": 0.75,
+      "prompt_html": "<p>Can unused scientific leave be carried over?</p>",
+      "options": [
+        {
+          "id": "a",
+          "text_html": "No, never",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text_html": "Yes, up to 5 days"
+        },
+        {
+          "id": "c",
+          "text_html": "Yes, with the MD's approval"
+        }
+      ],
       "explain_html": "<p>Scientific leave cannot be carried over. It also needs the MD's pre-approval, but approval doesn't create a carry-over.</p>",
-      "scaffold_html": "<p>Approval and carry-over are two different rules; only one of them is mentioned in the source.</p>" }
+      "scaffold_html": "<p>Approval and carry-over are two different rules; only one of them is mentioned in the source.</p>"
+    }
   ],
   "feedback": {
     "correct_html": "<p>You've got the leave numbers. Carry-over, maternity, compassionate and the holidays are the four people ask about most — they're all in the Quick Reference.</p>",
@@ -2625,9 +3496,14 @@ New lexicon terms: Eid — “eed”
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "F · Pay & social insurance", 2 px navy `#003867` header rule |
 | Visual concept | A horizontal stacked bar split 9.75 / 11.75 across the full width, labelled “you” and “My Clinic” under each segment and “21.5% total” above; beneath it a single line naming what the contribution buys |
-| Layout | `text` |
-| Colour roles | bg `light` · text `dark` · accent on the “you” segment only (the number that appears on the payslip) |
+| edumints layout | `text` |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C`) · warning `accent` (Responsible magenta `#9D3293` on the key rule/figure callout only) |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (authored SVG stacked bar `hr-img-gosi-bar`) |
 | Animation / reveal | Bar grows from zero, then the two segment labels fade in, then the total |
 | Character | None |
 
@@ -2717,9 +3593,14 @@ New lexicon terms: GOSI — “GO-see”
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "F · Pay & social insurance", 2 px navy `#003867` header rule |
 | Visual concept | A three-row calculation ledger: each row shows one line of arithmetic in large mono-ish numerals with a “Why?” control to the right; the final row is boxed and carries the answer in the accent colour plus a SAR label |
-| Layout | n/a (`worked_example`) |
-| Colour roles | bg `light` · text `dark` · accent on the final answer row only |
+| edumints layout | n/a (`worked_example`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | `fading: "partial"` — the arithmetic is visible, the rationale is behind a per-step control |
 | Character | None |
 
@@ -2776,12 +3657,20 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
   "fading": "partial",
   "intro_html": "<p>Basic 4,800 + housing 1,200. What is the monthly GOSI deduction from your salary? <em>Rates pending B12.</em></p>",
   "steps": [
-    { "action_html": "<p>Add basic and housing: 4,800 + 1,200 = <strong>6,000</strong>.</p>",
-      "rationale_html": "<p>GOSI is charged on basic salary <strong>plus housing allowance</strong>, not on basic alone and not on total pay with allowances and bonuses.</p>" },
-    { "action_html": "<p>Apply the employee rate: 6,000 × <strong>9.75%</strong>.</p>",
-      "rationale_html": "<p>Only your share is deducted from your salary. The company's 11.75% is paid on top and never appears as a deduction on your payslip.</p>" },
-    { "action_html": "<p>Result: <strong>585 SAR</strong> deducted each month.</p>",
-      "rationale_html": "<p>6,000 × 0.0975 = 585. This is the line you'll see on your payslip.</p>" }
+    {
+      "action_html": "<p>Add basic and housing: 4,800 + 1,200 = <strong>6,000</strong>.</p>",
+      "rationale_html": "<p>GOSI is charged on basic salary <strong>plus housing allowance</strong>, not on basic alone and not on total pay with allowances and bonuses.</p>"
+    },
+    {
+      "action_html": "<p>Apply the employee rate: 6,000 × <strong>9.75%</strong>.</p>",
+      "rationale_html": "<p>Only your share is deducted from your salary. The company's 11.75% is paid on top and never appears as a deduction on your payslip.</p>"
+    },
+    {
+      "action_html": "<p>Result: <strong>585 SAR</strong> deducted each month.</p>",
+      "rationale_html": "<p>6,000 × 0.0975 = 585. This is the line you'll see on your payslip.</p>",
+      "artifact_asset_id": "<hr-img-gosi-bar>",
+      "artifact_caption": "Your 9.75% employee share (585 SAR) sits alongside My Clinic's 11.75% contribution."
+    }
   ],
   "self_explanation_prompt_html": "<p>Which part of the salary is the percentage applied to?</p>",
   "reveal": "none",
@@ -2824,9 +3713,14 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "F · Pay & social insurance · Check", 2 px navy `#003867` header rule |
 | Visual concept | A large centred equation with a single inline input at the blank; beneath it a small muted line reminding the learner of the two inputs, and nothing else — no imagery to distract from the arithmetic |
-| Layout | n/a (`fill_blank`) |
-| Colour roles | bg `surface` · text `dark` · accent on the input's focus ring only |
+| edumints layout | n/a (`fill_blank`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -2876,13 +3770,28 @@ New lexicon terms: None
   "title": "Your turn",
   "section": "F · Pay & social insurance",
   "node_id": "hr-sF",
-  "objective_ids": ["hr-o4"],
+  "objective_ids": [
+    "hr-o4"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-051"],
+  "evidence_screen_ids": [
+    "hr-051"
+  ],
   "case_sensitive": false,
   "prompt_html": "<p>Basic 6,000 + housing 1,500. Your monthly GOSI deduction = ___ SAR. <em>Rates pending B12.</em></p>",
   "blanks": [
-    { "id": "b1", "accepted": ["731.25", "731.25 SAR", "731.25 SR", "731.25 riyals", "731.25 Saudi riyals", "731", "731 SAR"] }
+    {
+      "id": "b1",
+      "accepted": [
+        "731.25",
+        "731.25 SAR",
+        "731.25 SR",
+        "731.25 riyals",
+        "731.25 Saudi riyals",
+        "731",
+        "731 SAR"
+      ]
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Basic 6,000 + housing 1,500 = 7,500, and 7,500 × 9.75% = <strong>731.25 SAR</strong> a month.</p>",
@@ -2929,9 +3838,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "F · Pay & social insurance", 2 px navy `#003867` header rule |
 | Visual concept | A three-row ledger like `hr-051`, but the third row forks into two stacked results — “normal day ×1.5” and “public holiday ×2” — so the learner sees one rate and two multipliers |
-| Layout | n/a (`worked_example`) |
-| Colour roles | bg `light` · text `dark` · accent on the two result figures only |
+| edumints layout | n/a (`worked_example`) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` on active tabs/chevrons/pins/progress) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | `fading: "partial"` |
 | Character | None |
 
@@ -2988,12 +3902,20 @@ New lexicon terms: None
   "fading": "partial",
   "intro_html": "<p>Basic 6,000. What is your overtime rate on a normal working day, and on a public holiday? <em>Eligibility by grade pending B3.</em></p>",
   "steps": [
-    { "action_html": "<p>Hourly rate: 6,000 ÷ (30 × 8) = 6,000 ÷ 240 = <strong>25 SAR/hour</strong>.</p>",
-      "rationale_html": "<p>The formula uses a 30-day month at 8 hours a day, so 240 hours. Everything else in the calculation hangs off this one number.</p>" },
-    { "action_html": "<p>Normal working day: 25 × 1.5 = <strong>37.50 SAR/hour</strong>.</p>",
-      "rationale_html": "<p>Overtime on a normal working day is paid at time and a half.</p>" },
-    { "action_html": "<p>Public holiday: 25 × 2 = <strong>50 SAR/hour</strong>.</p>",
-      "rationale_html": "<p>Overtime on a public holiday is paid at double time. Note it's the same hourly rate — only the multiplier changes.</p>" }
+    {
+      "action_html": "<p>Hourly rate: 6,000 ÷ (30 × 8) = 6,000 ÷ 240 = <strong>25 SAR/hour</strong>.</p>",
+      "rationale_html": "<p>The formula uses a 30-day month at 8 hours a day, so 240 hours. Everything else in the calculation hangs off this one number.</p>",
+      "artifact_asset_id": "<hr-img-gosi-bar>",
+      "artifact_caption": "Hourly rate = basic salary ÷ 30 days ÷ 8 hours, then multiplied by 1.5 (regular) or 2.0 (public holiday)."
+    },
+    {
+      "action_html": "<p>Normal working day: 25 × 1.5 = <strong>37.50 SAR/hour</strong>.</p>",
+      "rationale_html": "<p>Overtime on a normal working day is paid at time and a half.</p>"
+    },
+    {
+      "action_html": "<p>Public holiday: 25 × 2 = <strong>50 SAR/hour</strong>.</p>",
+      "rationale_html": "<p>Overtime on a public holiday is paid at double time. Note it's the same hourly rate — only the multiplier changes.</p>"
+    }
   ],
   "self_explanation_prompt_html": "<p>Why is the hourly rate worked out from 240 hours, not 208?</p>",
   "reveal": "none",
@@ -3036,9 +3958,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "F · Pay & social insurance · Check", 2 px navy `#003867` header rule |
 | Visual concept | Stem in large type; four plain option rows, each a single amount; no imagery, so the arithmetic carries the screen |
-| Layout | n/a (`mcq`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`mcq`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -3089,19 +4016,36 @@ New lexicon terms: None
   "title": "Four hours on Tuesday",
   "section": "F · Pay & social insurance",
   "node_id": "hr-sF",
-  "objective_ids": ["hr-o4"],
+  "objective_ids": [
+    "hr-o4"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-053"],
+  "evidence_screen_ids": [
+    "hr-053"
+  ],
   "prompt_html": "<p>Basic 6,000. You work 4 overtime hours on a normal working day. What is the overtime pay?</p>",
   "options": [
-    { "id": "a", "text_html": "150 SAR", "correct": true,
-      "feedback_html": "<p>Right. Hourly rate is 6,000 ÷ 240 = 25, then 25 × 1.5 × 4 hours = 150 SAR.</p>" },
-    { "id": "b", "text_html": "100 SAR",
-      "feedback_html": "<p>That's 25 × 4. You've worked out the plain hourly pay and left out the time-and-a-half multiplier.</p>" },
-    { "id": "c", "text_html": "200 SAR",
-      "feedback_html": "<p>That's 25 × 2 × 4. Double time is for a public holiday, not a normal working day.</p>" },
-    { "id": "d", "text_html": "240 SAR",
-      "feedback_html": "<p>That doesn't come from the formula. Go back to the hourly rate first: 6,000 ÷ 240.</p>" }
+    {
+      "id": "a",
+      "text_html": "150 SAR",
+      "correct": true,
+      "feedback_html": "<p>Right. Hourly rate is 6,000 ÷ 240 = 25, then 25 × 1.5 × 4 hours = 150 SAR.</p>"
+    },
+    {
+      "id": "b",
+      "text_html": "100 SAR",
+      "feedback_html": "<p>That's 25 × 4. You've worked out the plain hourly pay and left out the time-and-a-half multiplier.</p>"
+    },
+    {
+      "id": "c",
+      "text_html": "200 SAR",
+      "feedback_html": "<p>That's 25 × 2 × 4. Double time is for a public holiday, not a normal working day.</p>"
+    },
+    {
+      "id": "d",
+      "text_html": "240 SAR",
+      "feedback_html": "<p>That doesn't come from the formula. Go back to the hourly rate first: 6,000 ÷ 240.</p>"
+    }
   ],
   "multi_select": false,
   "feedback": {
@@ -3149,9 +4093,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "G · Systems & licences · Check", 2 px navy `#003867` header rule |
 | Visual concept | Two columns: six task cards on the left, four system tiles on the right, each system tile carrying a small monogram (O, Q, M, I); a connector line follows the selection |
-| Layout | n/a (`matching`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`matching`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (monogram system tiles O, Q, M, I in navy #003867) |
 | Animation / reveal | None |
 | Character | None |
 
@@ -3200,17 +4149,45 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
   "title": "Which system?",
   "section": "G · Systems & licences",
   "node_id": "hr-sG",
-  "objective_ids": ["hr-o5"],
+  "objective_ids": [
+    "hr-o5"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-040"],
+  "evidence_screen_ids": [
+    "hr-040"
+  ],
   "prompt_html": "<p>Six tasks, four systems. Match each task to where it happens.</p>",
   "pairs": [
-    { "id": "p1", "left_html": "Request annual leave", "right_html": "Oracle" },
-    { "id": "p2", "left_html": "Ask for an employment certificate", "right_html": "Oracle" },
-    { "id": "p3", "left_html": "Accept your employment contract", "right_html": "Qiwa" },
-    { "id": "p4", "left_html": "Renew your professional licence", "right_html": "Mumaris (SCFHS)" },
-    { "id": "p5", "left_html": "Read the employee guide and corporate discounts", "right_html": "Intranet" },
-    { "id": "p6", "left_html": "Resign", "right_html": "Oracle" }
+    {
+      "id": "p1",
+      "left_html": "Request annual leave",
+      "right_html": "Oracle"
+    },
+    {
+      "id": "p2",
+      "left_html": "Ask for an employment certificate",
+      "right_html": "Oracle"
+    },
+    {
+      "id": "p3",
+      "left_html": "Accept your employment contract",
+      "right_html": "Qiwa"
+    },
+    {
+      "id": "p4",
+      "left_html": "Renew your professional licence",
+      "right_html": "Mumaris (SCFHS)"
+    },
+    {
+      "id": "p5",
+      "left_html": "Read the employee guide and corporate discounts",
+      "right_html": "Intranet"
+    },
+    {
+      "id": "p6",
+      "left_html": "Resign",
+      "right_html": "Oracle"
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Three of the six run through Oracle, because they're all requests that need a record. Contracts are accepted on Qiwa, licences are renewed on Mumaris, and the guide lives on the intranet.</p>",
@@ -3257,9 +4234,14 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 
 | Field | Value |
 |---|---|
+| Brand layout | L5 Scenario (see `../../00_program/brand/screen-mockups/05-scenario.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "G · Systems & licences", 2 px navy `#003867` header rule |
 | Visual concept | A browser-chrome frame holding a full-width screenshot; a numbered instruction bar sits directly above the frame; the correct region is not outlined until the learner asks for a hint, at which point a dashed rectangle appears around it |
-| Layout | n/a (`simulation`) |
-| Colour roles | bg `surface` · text `dark` · accent on the hint rectangle only |
+| edumints layout | n/a (`simulation`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` stage and choice cards with `#D9E1E8` border) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` mentor avatar ring and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; situation Montserrat SemiBold 600, 17 px; choices Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (Oracle test-account screenshots) |
 | Animation / reveal | The next screenshot cross-fades in on a correct click |
 | Character | None |
 
@@ -3324,36 +4306,115 @@ New lexicon terms: Oracle — “OR-uh-kul”
   "title": "Book your leave in Oracle",
   "section": "G · Systems & licences",
   "node_id": "hr-sG",
-  "objective_ids": ["hr-o5"],
+  "objective_ids": [
+    "hr-o5"
+  ],
   "points": 15,
-  "evidence_screen_ids": ["hr-060"],
+  "evidence_screen_ids": [
+    "hr-040"
+  ],
   "prompt_html": "<p>Five steps. These screenshots come from a test account, so nothing here is real.</p>",
   "steps": [
-    { "image_asset_id": "<hr-img-oracle-1>",
+    {
+      "image_asset_id": "<hr-img-oracle-1>",
       "image_alt": "Oracle sign-in page with empty username and password fields and a Sign In button.",
       "instruction_html": "<p>Sign in to Oracle.</p>",
-      "regions": [ { "id": "signin", "shape": "rect", "coords": [1180, 620, 180, 56], "correct": true, "label_html": "Sign In" } ],
-      "hint_html": "<p>Use the <em>Sign In</em> button under the password field.</p>" },
-    { "image_asset_id": "<hr-img-oracle-2>",
+      "regions": [
+        {
+          "id": "signin",
+          "shape": "rect",
+          "coords": [
+            1180,
+            620,
+            180,
+            56
+          ],
+          "correct": true,
+          "label_html": "Sign In"
+        }
+      ],
+      "hint_html": "<p>Use the <em>Sign In</em> button under the password field.</p>"
+    },
+    {
+      "image_asset_id": "<hr-img-oracle-2>",
       "image_alt": "Oracle home page with a Time and Absences tile in the quick actions area.",
       "instruction_html": "<p>Open the area where you manage your time and leave.</p>",
-      "regions": [ { "id": "timeabs", "shape": "rect", "coords": [260, 300, 320, 200], "correct": true, "label_html": "Time and Absences" } ],
-      "hint_html": "<p>Look for <em>Time and Absences</em> in the quick actions.</p>" },
-    { "image_asset_id": "<hr-img-oracle-3>",
+      "regions": [
+        {
+          "id": "timeabs",
+          "shape": "rect",
+          "coords": [
+            260,
+            300,
+            320,
+            200
+          ],
+          "correct": true,
+          "label_html": "Time and Absences"
+        }
+      ],
+      "hint_html": "<p>Look for <em>Time and Absences</em> in the quick actions.</p>"
+    },
+    {
+      "image_asset_id": "<hr-img-oracle-3>",
       "image_alt": "Oracle Time and Absences page with an Add Leaves tile.",
       "instruction_html": "<p>Open the page where you add a new leave request.</p>",
-      "regions": [ { "id": "addleaves", "shape": "rect", "coords": [420, 310, 220, 140], "correct": true, "label_html": "Add Leaves" } ],
-      "hint_html": "<p>Look for <em>Add Leaves</em> under Time and Absences.</p>" },
-    { "image_asset_id": "<hr-img-oracle-4>",
+      "regions": [
+        {
+          "id": "addleaves",
+          "shape": "rect",
+          "coords": [
+            420,
+            310,
+            220,
+            140
+          ],
+          "correct": true,
+          "label_html": "Add Leaves"
+        }
+      ],
+      "hint_html": "<p>Look for <em>Add Leaves</em> under Time and Absences.</p>"
+    },
+    {
+      "image_asset_id": "<hr-img-oracle-4>",
       "image_alt": "Oracle Add Leaves form with the leave-type drop-down open.",
       "instruction_html": "<p>Choose <em>Annual</em> from the leave-type list.</p>",
-      "regions": [ { "id": "leavetype", "shape": "rect", "coords": [300, 260, 420, 60], "correct": true, "label_html": "Leave type" } ],
-      "hint_html": "<p>The leave type is a drop-down near the top of the form.</p>" },
-    { "image_asset_id": "<hr-img-oracle-5>",
+      "regions": [
+        {
+          "id": "leavetype",
+          "shape": "rect",
+          "coords": [
+            300,
+            260,
+            420,
+            60
+          ],
+          "correct": true,
+          "label_html": "Leave type"
+        }
+      ],
+      "hint_html": "<p>The leave type is a drop-down near the top of the form.</p>"
+    },
+    {
+      "image_asset_id": "<hr-img-oracle-5>",
       "image_alt": "Oracle Add Leaves form with dates entered and a Submit button.",
       "instruction_html": "<p>Send the request.</p>",
-      "regions": [ { "id": "submit", "shape": "rect", "coords": [1500, 900, 180, 56], "correct": true, "label_html": "Submit" } ],
-      "hint_html": "<p><em>Submit</em> sits at the bottom of the form.</p>" }
+      "regions": [
+        {
+          "id": "submit",
+          "shape": "rect",
+          "coords": [
+            1500,
+            900,
+            180,
+            56
+          ],
+          "correct": true,
+          "label_html": "Submit"
+        }
+      ],
+      "hint_html": "<p><em>Submit</em> sits at the bottom of the form.</p>"
+    }
   ],
   "feedback": {
     "correct_html": "<p>That's the whole flow: sign in, Time and Absences, Add Leaves, choose the leave type and dates, submit. Your manager approves it in the same system, so you can see where it's got to.</p>",
@@ -3400,9 +4461,14 @@ New lexicon terms: Oracle — “OR-uh-kul”
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "G · Systems & licences · Check", 2 px navy `#003867` header rule |
 | Visual concept | The statement in large type centred, with two wide side-by-side buttons beneath labelled True and False; no imagery, so the judgement carries the screen |
-| Layout | n/a (`true_false`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`true_false`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -3451,9 +4517,13 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
   "title": "Thirty days left",
   "section": "G · Systems & licences",
   "node_id": "hr-sG",
-  "objective_ids": ["hr-o5"],
+  "objective_ids": [
+    "hr-o5"
+  ],
   "points": 5,
-  "evidence_screen_ids": ["hr-060"],
+  "evidence_screen_ids": [
+    "hr-040"
+  ],
   "prompt_html": "<p>If your professional licence will expire in less than 30 days without renewal, HR may suspend you from work. <em>Pending B13.</em></p>",
   "correct": true,
   "feedback": {
@@ -3501,9 +4571,14 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "H · ID, benefits & dress code", 2 px navy `#003867` header rule |
 | Visual concept | A two-card row: the left card shows an ID badge with a small warning line about lost cards; the right card is a six-segment benefits wheel, each segment labelled with a one- or two-word benefit and a line icon |
-| Layout | `text` (blocks: image, caption, image, caption) |
-| Colour roles | bg `light` · text `dark` · accent on the lost-card warning line only |
+| edumints layout | `text` (blocks: image, caption, image, caption) |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C`) · warning `accent` (Responsible magenta `#9D3293` on the key rule/figure callout only) |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Six single-weight line icons inside `hr-img-benefits-wheel` (shield, star, graduation-cap, laptop-home, arrow-up, tag), navy #003867, own SVG |
 | Animation / reveal | Left card fades up, then the wheel segments fill in sequence |
 | Character | None |
 
@@ -3513,6 +4588,14 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 |---|---|---|---|---|---|
 | `hr-img-idcard` | illustration | Flat ID badge on a lanyard, first name only, no real logo until approved | ai-generated | “A My Clinic staff ID badge on a lanyard.” | No |
 | `hr-img-benefits-wheel` | SVG | 600×600 six-segment wheel: health insurance, performance bonus, development, hybrid work, internal advancement, discounts; labels as real text | own | “Benefits wheel: health insurance, annual performance bonuses, employee development, hybrid work, internal advancement and discounts.” | No |
+
+**AI image prompt** (`hr-img-idcard` — per `brand-identity.md` §6):
+
+```text
+Flat vector illustration for a healthcare e-learning course, 16:9, a vertical staff ID badge holder suspended on a Caring purple (#652D8C) fabric lanyard with a simple silhouette avatar icon and horizontal placeholder bars inside the card frame. Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C), small touches of magenta (#9D3293) only for nothing. Bright and calm, lots of white space, soft even lighting, no shadows or very soft flat shadows.
+People: no people (silhouette icon on badge only).
+No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
+```
 
 #### 4. Interaction and scoring
 
@@ -3553,10 +4636,20 @@ New lexicon terms: None
   "animation": "fade-up",
   "reveal": "auto",
   "blocks": [
-    { "html": "<p><strong>Lost card</strong> — email HR. Replacement fee <em>pending B4</em>.</p><p><strong>Damaged card</strong> — replaced free of charge.</p>" },
-    { "asset_id": "<hr-img-idcard>", "caption": "A My Clinic staff ID badge on a lanyard." },
-    { "html": "<p><strong>Benefits from day one:</strong> health insurance · annual performance bonuses · employee development · hybrid work policy · internal advancement · discounts.</p>" },
-    { "asset_id": "<hr-img-benefits-wheel>", "caption": "Benefits wheel: health insurance, annual performance bonuses, employee development, hybrid work, internal advancement and discounts." }
+    {
+      "html": "<p><strong>Lost card</strong> — email HR. Replacement fee <em>pending B4</em>.</p><p><strong>Damaged card</strong> — replaced free of charge.</p>"
+    },
+    {
+      "asset_id": "<hr-img-idcard>",
+      "caption": "A My Clinic staff ID badge on a lanyard."
+    },
+    {
+      "html": "<p><strong>Benefits from day one:</strong> health insurance · annual performance bonuses · employee development · hybrid work policy · internal advancement · discounts.</p>"
+    },
+    {
+      "asset_id": "<hr-img-benefits-wheel>",
+      "caption": "Benefits wheel: health insurance, annual performance bonuses, employee development, hybrid work, internal advancement and discounts."
+    }
   ],
   "narration_asset_id": "<hr-aud-070>",
   "narration_text": "Two quick things. Your ID card: wear it where it can be seen. Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use."
@@ -3597,9 +4690,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "H · ID, benefits & dress code · Check", 2 px navy `#003867` header rule |
 | Visual concept | Three drop zones in a row, each headed by a small flat figure illustration showing the outfit; six draggable chips sit in a wrap row beneath; a placed chip shows a border and an index number |
-| Layout | n/a (`drag_drop`) |
-| Colour roles | bg `surface` · text `dark` · accent on the drop-zone hover outline only |
+| edumints layout | n/a (`drag_drop`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None (flat role-outfit illustrations on drop-zone headers) |
 | Animation / reveal | Chips settle with a 120 ms spring when dropped |
 | Character | None |
 
@@ -3610,6 +4708,17 @@ New lexicon terms: None
 | `hr-img-dress-frontoffice` | illustration | Flat figure in a clinic uniform, standing, neutral background | ai-generated | “A front-office colleague in the clinic uniform.” | No |
 | `hr-img-dress-medical` | illustration | Flat figure in scrubs and a coat, with a stethoscope | ai-generated | “A clinical colleague in scrubs and a coat.” | No |
 | `hr-img-dress-backoffice` | illustration | Flat figure in business attire | ai-generated | “A back-office colleague in business attire.” | No |
+
+**AI image prompt** (`hr-img-dress-frontoffice`, `hr-img-dress-medical`, `hr-img-dress-backoffice` — per `brand-identity.md` §6):
+
+```text
+Flat vector illustration for a healthcare e-learning course, 16:9, three standalone full-length character figures on neutral white cards:
+- Figure 1 (hr-img-dress-frontoffice): a front-office clinic receptionist in a smart navy (#003867) clinic uniform;
+- Figure 2 (hr-img-dress-medical): a clinician in navy (#003867) scrubs and a white clinical coat with a stethoscope;
+- Figure 3 (hr-img-dress-backoffice): a back-office staff member in modest formal business attire.
+Clean minimalist style, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one highlight colour Caring purple (#652D8C) on badge lanyards, small touches of magenta (#9D3293) only for nothing. Modest, culturally appropriate clothing for Saudi Arabia, closed professional shoes, plain ID badges with no logos or text.
+No text, no letters, no numbers, no logos, no signage words, no watermarks, no brand names.
+```
 
 #### 4. Interaction and scoring
 
@@ -3656,22 +4765,59 @@ New lexicon terms: None
   "title": "What do you wear?",
   "section": "H · ID, benefits & dress code",
   "node_id": "hr-sH",
-  "objective_ids": ["hr-o6"],
+  "objective_ids": [
+    "hr-o6"
+  ],
   "points": 10,
-  "evidence_screen_ids": ["hr-070"],
+  "evidence_screen_ids": [
+    "hr-070"
+  ],
   "prompt_html": "<p>Six rules, three groups. Place each rule where it applies.</p>",
   "targets": [
-    { "id": "front", "label_html": "Front office" },
-    { "id": "medical", "label_html": "Medical team" },
-    { "id": "back", "label_html": "Back office" }
+    {
+      "id": "front",
+      "label_html": "Front office"
+    },
+    {
+      "id": "medical",
+      "label_html": "Medical team"
+    },
+    {
+      "id": "back",
+      "label_html": "Back office"
+    }
   ],
   "items": [
-    { "id": "it1", "text_html": "Uniform for every shift", "correct_target_id": "front" },
-    { "id": "it2", "text_html": "Scrubs and coat", "correct_target_id": "medical" },
-    { "id": "it3", "text_html": "Business attire", "correct_target_id": "back" },
-    { "id": "it4", "text_html": "Minimal jewellery", "correct_target_id": "medical" },
-    { "id": "it5", "text_html": "Professional shoes", "correct_target_id": "medical" },
-    { "id": "it6", "text_html": "No casual days", "correct_target_id": "back" }
+    {
+      "id": "it1",
+      "text_html": "Uniform for every shift",
+      "correct_target_id": "front"
+    },
+    {
+      "id": "it2",
+      "text_html": "Scrubs and coat",
+      "correct_target_id": "medical"
+    },
+    {
+      "id": "it3",
+      "text_html": "Business attire",
+      "correct_target_id": "back"
+    },
+    {
+      "id": "it4",
+      "text_html": "Minimal jewellery",
+      "correct_target_id": "medical"
+    },
+    {
+      "id": "it5",
+      "text_html": "Professional shoes",
+      "correct_target_id": "medical"
+    },
+    {
+      "id": "it6",
+      "text_html": "No casual days",
+      "correct_target_id": "back"
+    }
   ],
   "feedback": {
     "correct_html": "<p>Right. Front office wears the clinic uniform. The medical team wears scrubs and a coat with professional shoes and minimal jewellery. Back office is business attire, with no casual days.</p>",
@@ -3718,9 +4864,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L3 Content (see `../../00_program/brand/screen-mockups/03-content.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "I · Contracts & leaving", 2 px navy `#003867` header rule |
 | Visual concept | A short horizontal four-step strip — Qiwa, Oracle, two months, 15 days — with an arrow between each; each step carries a one-line caption beneath it and a small line icon above |
-| Layout | `text` |
-| Colour roles | bg `light` · text `dark` · accent on the “2 months” figure only |
+| edumints layout | `text` |
+| Colours (palette names + hex) | bg `light` (off-white `#F4F7FA` / card surface white `#FFFFFF`) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C`) · warning `accent` (Responsible magenta `#9D3293` on the key rule/figure callout only) |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; body Montserrat Regular 400, 16 px (14 px minimum); labels Montserrat Bold 700, 11–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Four single-weight line icons (`hr-img-exit-icons`: document-signature, screen-and-form, calendar, envelope-with-certificate), navy #003867, own SVG |
 | Animation / reveal | Steps fade in left to right in narration order |
 | Character | None |
 
@@ -3770,7 +4921,9 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
   "reveal": "auto",
   "body_html": "<p><strong>Accept your contract</strong> on Qiwa.</p><p><strong>Resign</strong> in Oracle.</p><p><strong>Notice: 2 months</strong>, honoured by both parties.</p><p><strong>EOS + experience certificate</strong> within 15 days of your last working day.</p>",
   "narration_asset_id": "<hr-aud-080>",
-  "narration_text": "Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day."
+  "narration_text": "Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. Leaving: a resignation is a request, so it goes through Oracle. Notice is two months, and it runs both ways. End-of-service benefits and your experience certificate follow within fifteen days of your last day.",
+  "media_asset_id": "<hr-img-exit-icons>",
+  "media_alt": "Four steps: Qiwa contract, Oracle resignation, two months notice, and end-of-service settlement within 15 days."
 }
 ```
 
@@ -3808,9 +4961,14 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
 
 | Field | Value |
 |---|---|
+| Brand layout | L4 Question (see `../../00_program/brand/screen-mockups/04-question.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "I · Contracts & leaving · Check", 2 px navy `#003867` header rule |
 | Visual concept | Stem in large type; four plain option rows; no imagery, so the decision carries the screen |
-| Layout | n/a (`mcq`) |
-| Colour roles | bg `surface` · text `dark` · accent none during the attempt |
+| edumints layout | n/a (`mcq`) |
+| Colours (palette names + hex) | bg `surface` (white `#FFFFFF` cards on off-white `#F4F7FA` stage, `#D9E1E8` border) · stem `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` chip and progress bar) · feedback `success` `#1E7B4F` / `error` `#B42318` with icon + words |
+| Typography (Montserrat) | Question label Montserrat Bold 700, 11–14 px; stem Montserrat SemiBold 600, 20–24 px; options and feedback Montserrat Regular/Medium 400/500, 16 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | None |
 | Animation / reveal | None |
 | Character | None |
 
@@ -3861,19 +5019,36 @@ New lexicon terms: None
   "title": "Three weeks' notice",
   "section": "I · Contracts & leaving",
   "node_id": "hr-sI",
-  "objective_ids": ["hr-o6"],
+  "objective_ids": [
+    "hr-o6"
+  ],
   "points": 5,
-  "evidence_screen_ids": ["hr-080"],
+  "evidence_screen_ids": [
+    "hr-080"
+  ],
   "prompt_html": "<p>You accept a new job starting in 3 weeks. What happens with your notice?</p>",
   "options": [
-    { "id": "a", "text_html": "You must serve the contractual 2 months unless My Clinic agrees otherwise; submit the resignation in Oracle", "correct": true,
-      "feedback_html": "<p>Right. The notice period is two months and it binds both sides, unless My Clinic agrees to something different. And a resignation is a request, so it goes in through Oracle.</p>" },
-    { "id": "b", "text_html": "You can leave in 3 weeks — a new job overrides the notice period",
-      "feedback_html": "<p>A new job doesn't override the contract. The two months stands unless My Clinic agrees to shorten it.</p>" },
-    { "id": "c", "text_html": "Email your manager; Oracle is only for leave requests",
-      "feedback_html": "<p>Oracle isn't only for leave. Resignation, letters and certificates are all service requests, and they need a record.</p>" },
-    { "id": "d", "text_html": "Give one month: notice is shorter for grades A to E",
-      "feedback_html": "<p>The notice period in your contract isn't set by grade in this policy. Assume two months unless your contract says otherwise.</p>" }
+    {
+      "id": "a",
+      "text_html": "You must serve the contractual 2 months unless My Clinic agrees otherwise; submit the resignation in Oracle",
+      "correct": true,
+      "feedback_html": "<p>Right. The notice period is two months and it binds both sides, unless My Clinic agrees to something different. And a resignation is a request, so it goes in through Oracle.</p>"
+    },
+    {
+      "id": "b",
+      "text_html": "You can leave in 3 weeks — a new job overrides the notice period",
+      "feedback_html": "<p>A new job doesn't override the contract. The two months stands unless My Clinic agrees to shorten it.</p>"
+    },
+    {
+      "id": "c",
+      "text_html": "Email your manager; Oracle is only for leave requests",
+      "feedback_html": "<p>Oracle isn't only for leave. Resignation, letters and certificates are all service requests, and they need a record.</p>"
+    },
+    {
+      "id": "d",
+      "text_html": "Give one month: notice is shorter for grades A to E",
+      "feedback_html": "<p>The notice period in your contract isn't set by grade in this policy. Assume two months unless your contract says otherwise.</p>"
+    }
   ],
   "multi_select": false,
   "feedback": {
@@ -3921,9 +5096,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L6 Results / close (see `../../00_program/brand/screen-mockups/06-results.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "Your results", 2 px navy `#003867` header rule |
 | Visual concept | Six rows, each with the objective name, a thin bar showing the percentage, and the points earned over points available; any row below the threshold expands to show one line of advice beneath it |
-| Layout | n/a (`results_breakdown`) |
-| Colour roles | bg `surface` · text `dark` · accent on the advice rows only |
+| edumints layout | n/a (`results_breakdown`) |
+| Colours (palette names + hex) | bg `surface` (off-white `#F4F7FA` stage, white `#FFFFFF` breakdown rows) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` objective bars) · weak objectives flagged with `error` `#B42318` + ⚠ icon + text |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; objective labels and body Montserrat Regular/Medium 400/500, 16 px; badges Montserrat Bold 700, 12–14 px; footer 10–12 px. |
+| Watermark | None |
+| Icons | Status icons on objective bars (✓ in #1E7B4F for passed, ⚠ in #B42318 for needs review), own SVG |
 | Animation / reveal | Rows fade up in sequence; bars grow from zero |
 | Character | None |
 
@@ -3982,18 +5162,57 @@ New lexicon terms: None
   "weak_threshold": 70,
   "show_total": true,
   "sections": [
-    { "title": "Values & strategy", "screen_ids": ["hr-011", "hr-013"],
-      "advice_html": "<p>Revisit the four values and the 7C pillars. The one to remember: Care is where My Care and patient loyalty sit.</p>" },
-    { "title": "Ethics & patients' rights", "screen_ids": ["hr-031", "hr-032", "hr-033"],
-      "advice_html": "<p>Disclose conflicts early, never trade access to care, and when you're unsure, report within 24 hours. A right is what the patient can expect; a responsibility is what we ask of them.</p>" },
-    { "title": "Leave", "screen_ids": ["hr-042", "hr-044", "hr-045"],
-      "advice_html": "<p>Check three things on every request: the type of leave, the eligibility rule, and the document. The tables are in the HR Quick Reference.</p>" },
-    { "title": "Pay & social insurance", "screen_ids": ["hr-052", "hr-054"],
-      "advice_html": "<p>GOSI is basic plus housing × 9.75%. Overtime is basic ÷ 240, then × 1.5, or × 2 on a public holiday.</p>" },
-    { "title": "Systems & licences", "screen_ids": ["hr-060", "hr-061", "hr-062"],
-      "advice_html": "<p>Requests go through Oracle. Contracts on Qiwa, licences on Mumaris, guides on the intranet. Renew your licence well before it expires.</p>" },
-    { "title": "ID, dress code & contracts", "screen_ids": ["hr-071", "hr-081"],
-      "advice_html": "<p>Front office wears the uniform, the medical team wears scrubs and a coat, back office is business attire. Notice is two months both ways.</p>" }
+    {
+      "title": "Values & strategy",
+      "screen_ids": [
+        "hr-011",
+        "hr-013"
+      ],
+      "advice_html": "<p>Revisit the four values and the 7C pillars. The one to remember: Care is where My Care and patient loyalty sit.</p>"
+    },
+    {
+      "title": "Ethics & patients' rights",
+      "screen_ids": [
+        "hr-031",
+        "hr-032",
+        "hr-033"
+      ],
+      "advice_html": "<p>Disclose conflicts early, never trade access to care, and when you're unsure, report within 24 hours. A right is what the patient can expect; a responsibility is what we ask of them.</p>"
+    },
+    {
+      "title": "Leave",
+      "screen_ids": [
+        "hr-042",
+        "hr-044",
+        "hr-045"
+      ],
+      "advice_html": "<p>Check three things on every request: the type of leave, the eligibility rule, and the document. The tables are in the HR Quick Reference.</p>"
+    },
+    {
+      "title": "Pay & social insurance",
+      "screen_ids": [
+        "hr-052",
+        "hr-054"
+      ],
+      "advice_html": "<p>GOSI is basic plus housing × 9.75%. Overtime is basic ÷ 240, then × 1.5, or × 2 on a public holiday.</p>"
+    },
+    {
+      "title": "Systems & licences",
+      "screen_ids": [
+        "hr-060",
+        "hr-061",
+        "hr-062"
+      ],
+      "advice_html": "<p>Requests go through Oracle. Contracts on Qiwa, licences on Mumaris, guides on the intranet. Renew your licence well before it expires.</p>"
+    },
+    {
+      "title": "ID, dress code & contracts",
+      "screen_ids": [
+        "hr-071",
+        "hr-081"
+      ],
+      "advice_html": "<p>Front office wears the uniform, the medical team wears scrubs and a coat, back office is business attire. Notice is two months both ways.</p>"
+    }
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-090>",
@@ -4035,9 +5254,14 @@ New lexicon terms: None
 
 | Field | Value |
 |---|---|
+| Brand layout | L6 Results / close (see `../../00_program/brand/screen-mockups/06-results.png`) |
+| Logo | `logo-horizontal-navy.png`, 30 px tall, header top-left (40 px from left, vertically centred in the 64 px header), breadcrumb "Z · Close", 2 px navy `#003867` header rule |
 | Visual concept | A five-item checklist on the left, each with a small tick glyph; on the right two stacked action cards — one for the HR Quick Reference download, one for the onboarding survey — and a single line naming the next module |
-| Layout | n/a (`summary`) |
-| Colour roles | bg `light` · text `dark` · accent on the two action cards only |
+| edumints layout | n/a (`summary`) |
+| Colours (palette names + hex) | bg `light` (white `#FFFFFF` stage with subtle petal watermark) · headings `primary` (navy `#003867`) · body `dark` (ink `#1F2A37`) · highlight `secondary` (Caring purple `#652D8C` checklist ticks and action cards) · warning none |
+| Typography (Montserrat) | Screen title Montserrat Bold 700, 28–30 px; objective labels and body Montserrat Regular/Medium 400/500, 16 px; badges Montserrat Bold 700, 12–14 px; footer 10–12 px. |
+| Watermark | Petal watermark (`mark-navy.png` at 7% opacity, 440 px, cropped off the right edge) |
+| Icons | Checklist tick icons in Caring purple #652D8C + download/external-link line icons in navy #003867, own SVG |
 | Animation / reveal | Checklist ticks in one by one, then the action cards fade up |
 | Character | None |
 
@@ -4237,7 +5461,7 @@ New lexicon terms: None
 - [x] Every Phase 2 screen has a card, same ids and order (36 of 36)
 - [x] Scored screens and total points match Phase 4 (15 scored, 145 points)
 - [x] Narration total within ±15% of the Phase 3 estimate (701 s vs 780 s → 90%)
-- [x] `review-checklist.md` run on every card
+- [x] `review-checklist.md` run on every card (including section H, brand)
 - [x] No `<angle bracket>` guidance text left (only `<hr-…>` asset placeholders remain)
 - [x] Every JSON block parses and validates against `core/project.py` models (36 of 36)
 - [x] `node_id`, `objective_ids` and `evidence_screen_ids` resolve; no dangling references
