@@ -123,7 +123,7 @@ n/a — title slide, no interaction and no score.
 |---|---|
 | Tone | Warm |
 | Target seconds | 15 |
-| Word count / est. seconds | 31 words / ≈ 13 s |
+| Word count / est. seconds | 31 words / ≈ 13.3 s |
 | Cue targets | None |
 
 > Welcome to My Clinic. Over the next forty-five minutes you'll meet who we are, and the HR rules you'll actually use in your first month. Nothing here is a memory test.
@@ -213,7 +213,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Warm, calm |
 | Target seconds | 35 |
-| Word count / est. seconds | 85 words / ≈ 36 s |
+| Word count / est. seconds | 85 words / ≈ 37.6 s |
 | Cue targets | `purpose`, `mission`, `goal` |
 
 > [[cue:purpose]] Our purpose is simple to say and hard to do: we help people live longer, healthier, happier lives. That includes people who are well today and come in for a check-up. [[pause:0.4]] [[cue:mission]] Our mission is to be the world's most customer-centric healthcare company. Customer-centric isn't a slogan — it's why a receptionist, a nurse and an analyst all get asked the same question: did this help the patient? [[pause:0.4]] [[cue:goal]] Our goal follows from that: outstanding patient experience, alongside excellent clinical outcomes. [[pause:0.4]] Everyone here remembers their own first week.
@@ -307,7 +307,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Warm, light |
 | Target seconds | 10 |
-| Word count / est. seconds | 23 words / ≈ 10 s |
+| Word count / est. seconds | 23 words / ≈ 9.9 s |
 | Cue targets | None |
 
 > Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.
@@ -418,7 +418,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Warm, direct |
 | Target seconds | 40 |
-| Word count / est. seconds | 81 words / ≈ 35 s |
+| Word count / est. seconds | 81 words / ≈ 36.7 s |
 | Cue targets | `intro`, `collab`, `resp`, `amb`, `care` |
 
 > [[cue:intro]] Every clinic has values on a wall. Ours only matter if you can see them in what people do. [[pause:0.4]] [[cue:collab]] Collaborative: we act together, treat everyone with respect, and stay transparent. [[pause:0.4]] [[cue:resp]] Responsible: own your decisions, make things happen, and hold each other to the same standard. [[pause:0.4]] [[cue:amb]] Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. [[pause:0.4]] [[cue:care]] Caring: act with empathy, because everyone matters. [[pause:0.4]] As you go on, think which of these you already do without being asked.
@@ -524,10 +524,10 @@ New lexicon terms: None
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 22 words / ≈ 9 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s |
 | Cue targets | None |
 
-> Here are six things people did this week. Match each one to the value behind it. Two values appear more than once.
+> Here are six things people did this week. Match each one to the value behind it.
 
 New lexicon terms: None
 
@@ -568,7 +568,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-011>",
-  "narration_text": "Here are six things people did this week. Match each one to the value behind it. Two values appear more than once."
+  "narration_text": "Here are six things people did this week. Match each one to the value behind it."
 }
 ```
 
@@ -642,7 +642,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Calm, clear |
 | Target seconds | 45 |
-| Word count / est. seconds | 99 words / ≈ 42 s |
+| Word count / est. seconds | 99 words / ≈ 45.6 s |
 | Cue targets | `intro`, `closer`, `cure`, `cap`, `culture`, `clin`, `care`, `cost` |
 
 > [[cue:intro]] Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. [[pause:0.4]] [[cue:closer]] Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. [[pause:0.4]] [[cue:cure]] Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. [[pause:0.4]] [[cue:cap]] Capabilities: a repeatable model for running and growing clinics, with real governance. [[pause:0.4]] [[cue:culture]] Culture: our mission and values, servant leadership, a culture of excellence. [[pause:0.4]] [[cue:clin]] Clinicians: a caring environment, competitive benefits, room to grow. [[pause:0.4]] [[cue:care]] Care: seamless experience, empathy, loyalty built through My Care. [[pause:0.4]] [[cue:cost]] Cost: competitive cost to serve. [[pause:0.4]] Whichever one you picked, that's your line in.
@@ -745,7 +745,7 @@ New lexicon terms: My Care — “my care” (plain words, no expansion needed)
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 16 words / ≈ 7 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s |
 | Cue targets | None |
 
 > One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?
@@ -852,7 +852,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Warm |
 | Target seconds | 20 |
-| Word count / est. seconds | 44 words / ≈ 19 s |
+| Word count / est. seconds | 44 words / ≈ 19.6 s |
 | Cue targets | `patients`, `community`, `corporates` |
 
 > [[cue:patients]] Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. [[pause:0.4]] [[cue:community]] Second, the community around each clinic. [[pause:0.3]] [[cue:corporates]] Third, corporates and insurers. Three groups, one standard.
@@ -956,7 +956,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Warm, plain |
 | Target seconds | 30 |
-| Word count / est. seconds | 72 words / ≈ 31 s |
+| Word count / est. seconds | 72 words / ≈ 32.1 s |
 | Cue targets | `e2017`, `e2019`, `e2023`, `e2024`, `e2025` |
 
 > We opened our first clinic in North Jeddah in 2017. [[cue:e2017]] [[pause:0.3]] In 2019 we started the employment check-up unit, [[cue:e2019]] our first corporate service. [[pause:0.3]] Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, [[cue:e2023]] our first clinic inside a corporate community. [[pause:0.3]] Riyadh followed in 2024, [[cue:e2024]] a flagship to put the brand on the map. [[pause:0.3]] The last two years added our first community clinics. [[cue:e2025]] Nine years, nine steps, one idea: bring good care closer.
@@ -1072,7 +1072,7 @@ New lexicon terms: PRC — “P-R-C”; MCJ1 — “M-C-J-one”; MCJ2 — “M-
 |---|---|
 | Tone | Warm, practical |
 | Target seconds | 15 |
-| Word count / est. seconds | 31 words / ≈ 13 s |
+| Word count / est. seconds | 31 words / ≈ 13.3 s |
 | Cue targets | None |
 
 > You'll hear these codes every day, so it's worth knowing what they mean. Open all seven pins. J one, J two, D one, J three, J four, P-R-C and R one.
@@ -1185,7 +1185,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Warm, factual |
 | Target seconds | 20 |
-| Word count / est. seconds | 46 words / ≈ 20 s |
+| Word count / est. seconds | 46 words / ≈ 20.8 s |
 | Cue targets | `ceo`, `cmo`, `coo`, `cfo` |
 
 > [[cue:ceo]] Four people lead the company. The CEO sets the direction. [[pause:0.4]] [[cue:cmo]] The CMO owns clinical standards — questions about how we practise medicine land here. [[pause:0.4]] [[cue:coo]] The COO runs the clinics day to day. [[pause:0.3]] [[cue:cfo]] The CFO looks after the money. You'll see their decisions in how your clinic runs.
@@ -1298,7 +1298,7 @@ New lexicon terms: CEO — “C-E-O”; CMO — “C-M-O”; COO — “C-O-O”
 |---|---|
 | Tone | Warm, honest |
 | Target seconds | 15 |
-| Word count / est. seconds | 39 words / ≈ 17 s |
+| Word count / est. seconds | 39 words / ≈ 16.7 s |
 | Cue targets | None |
 
 > We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.
@@ -1403,7 +1403,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Serious, warm |
 | Target seconds | 35 |
-| Word count / est. seconds | 78 words / ≈ 33 s |
+| Word count / est. seconds | 78 words / ≈ 35.1 s |
 | Cue targets | `respect`, `integrity`, `accountability`, `innovation`, `report` |
 
 > [[cue:respect]] Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. [[pause:0.4]] [[cue:integrity]] Integrity — be transparent, and disclose any conflict of interest. [[pause:0.4]] [[cue:accountability]] Accountability — a culture where people report safety concerns instead of staying quiet. [[pause:0.4]] [[cue:innovation]] Innovation and collaboration — research and community work that improves outcomes. [[pause:0.5]] [[cue:report]] And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.
@@ -1517,7 +1517,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Serious, calm |
 | Target seconds | 15 |
-| Word count / est. seconds | 35 words / ≈ 15 s |
+| Word count / est. seconds | 35 words / ≈ 15.0 s |
 | Cue targets | None |
 
 > Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?
@@ -1659,10 +1659,10 @@ New lexicon terms: None
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 26 words / ≈ 11 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s |
 | Cue targets | None |
 
-> Nine statements from the notice posted in reception. Sort each one: is it something the patient can expect from us, or something we ask of them?
+> Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?
 
 New lexicon terms: None
 
@@ -1710,7 +1710,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-032>",
-  "narration_text": "Nine statements from the notice posted in reception. Sort each one: is it something the patient can expect from us, or something we ask of them?"
+  "narration_text": "Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?"
 }
 ```
 
@@ -1776,10 +1776,10 @@ New lexicon terms: None
 |---|---|
 | Tone | Calm |
 | Target seconds | 8 |
-| Word count / est. seconds | 22 words / ≈ 9 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s |
 | Cue targets | None |
 
-> Last one in this section. A patient refuses a blood test after the doctor has explained the risks. What do you do?
+> Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?
 
 New lexicon terms: None
 
@@ -1823,7 +1823,7 @@ New lexicon terms: None
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-033>",
-  "narration_text": "Last one in this section. A patient refuses a blood test after the doctor has explained the risks. What do you do?"
+  "narration_text": "Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?"
 }
 ```
 
@@ -1884,10 +1884,10 @@ n/a — unscored content screen. The PDF is a linked resource, not a scored inte
 |---|---|
 | Tone | Practical, warm |
 | Target seconds | 25 |
-| Word count / est. seconds | 66 words / ≈ 28 s |
+| Word count / est. seconds | 63 words / ≈ 27.8 s |
 | Cue targets | `desk`, `oracle`, `pdf` |
 
-> [[cue:desk]] Before the rules, where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. [[pause:0.4]] [[cue:oracle]] Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. [[pause:0.4]] [[cue:pdf]] Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.
+> [[cue:desk]] Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. [[pause:0.4]] [[cue:oracle]] Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. [[pause:0.4]] [[cue:pdf]] Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.
 
 New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if the PDF title uses it)
 
@@ -1914,7 +1914,7 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
   "reveal": "auto",
   "body_html": "<p><strong>Your HR help desk</strong> — one per business unit. <em>Role mailbox addresses pending B6 / D5.</em></p><p><strong>Request everything in Oracle.</strong> If it's a request, it needs a record.</p><p><strong>Full rules:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p>",
   "narration_asset_id": "<hr-aud-040>",
-  "narration_text": "Before the rules, where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this."
+  "narration_text": "Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this."
 }
 ```
 
@@ -1986,10 +1986,10 @@ New lexicon terms: Oracle — “OR-uh-kul”; HRMS — “H-R-M-S” (only if t
 |---|---|
 | Tone | Practical |
 | Target seconds | 40 |
-| Word count / est. seconds | 105 words / ≈ 45 s |
+| Word count / est. seconds | 91 words / ≈ 42.0 s |
 | Cue targets | `intro`, `annual`, `sick`, `injury`, `maternity`, `exam`, `scientific`, `hajj`, `compass`, `holidays` |
 
-> [[cue:intro]] Nine types. Open the ones you need and move on. [[pause:0.4]] [[cue:annual]] Annual: starts after probation, up to five days carried over, used by end of March. [[pause:0.4]] [[cue:sick]] Sick: needs a valid report. First thirty days paid in full. [[pause:0.4]] [[cue:injury]] Work injury covers commuting too, and has a hard deadline — same day or next day. [[pause:0.4]] [[cue:maternity]] Maternity: twelve weeks, starting up to four weeks early. [[pause:0.4]] [[cue:exam]] Exam leave: academic exams only, documents two weeks ahead. [[pause:0.4]] [[cue:scientific]] Scientific: depends on your profession, and can't be carried over. [[pause:0.4]] [[cue:hajj]] Hajj: two years' service and a permit. [[pause:0.4]] [[cue:compass]] Compassionate: marriage, paternity and bereavement. [[pause:0.4]] [[cue:holidays]] Then Eid, Founding Day, National Day. [[pause:0.4]] We'll practise the four people ask about most.
+> [[cue:intro]] Nine types. Open the ones you need. [[pause:0.3]] [[cue:annual]] Annual: after probation, five days carried over, used by end of March. [[pause:0.3]] [[cue:sick]] Sick: valid report needed. First thirty days paid in full. [[pause:0.3]] [[cue:injury]] Work injury covers commuting, and has a same-day or next-day deadline. [[pause:0.3]] [[cue:maternity]] Maternity: twelve weeks, starting up to four weeks early. [[pause:0.3]] [[cue:exam]] Exam leave: academic exams only, documents two weeks ahead. [[pause:0.3]] [[cue:scientific]] Scientific: by profession, and can't be carried over. [[pause:0.3]] [[cue:hajj]] Hajj: two years' service and a permit. [[pause:0.3]] [[cue:compass]] Compassionate: marriage, paternity, bereavement. [[pause:0.3]] [[cue:holidays]] Then Eid, Founding Day, National Day. [[pause:0.3]] We'll practise the four people ask about most.
 
 New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts”; TOEFL — “toe-full”
 
@@ -2025,7 +2025,7 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-041>",
-  "narration_text": "Nine types. Open the ones you need and move on. Annual: starts after probation, up to five days carried over, used by end of March. Sick: needs a valid report. First thirty days paid in full. Work injury covers commuting too, and has a hard deadline — same day or next day. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: depends on your profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity and bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most."
+  "narration_text": "Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most."
 }
 ```
 
@@ -2089,7 +2089,7 @@ New lexicon terms: Hajj — “hajj”; Eid — “eed”; IELTS — “eye-elts
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 14 words / ≈ 6 s |
+| Word count / est. seconds | 14 words / ≈ 6.0 s |
 | Cue targets | None |
 
 > Four grades, four entitlements. Match each grade to its annual leave, in working days.
@@ -2202,7 +2202,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Calm, precise |
 | Target seconds | 40 |
-| Word count / est. seconds | 95 words / ≈ 41 s |
+| Word count / est. seconds | 95 words / ≈ 43.2 s |
 | Cue targets | `s1`, `s2`, `s3`, `s4`, `s5` |
 
 > One example, properly. A colleague is off sick forty days in a year, with valid reports. [[cue:s1]] First, she tells her line manager — that's first, not last. [[pause:0.4]] [[cue:s2]] The first thirty days are paid in full. [[pause:0.4]] [[cue:s3]] Ten days fall into the next band, and that's where pay drops. [[pause:0.4]] Note the detail people miss: it's the total in the year that sets the band, not one spell. [[pause:0.5]] [[cue:s4]] Beyond ninety days it's unpaid. [[pause:0.4]] [[cue:s5]] And if the report is from outside My Clinic, the Staff Health Clinic must approve it. [[pause:0.4]] Now: what changes if her report comes from another hospital?
@@ -2330,7 +2330,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Practical, warm |
 | Target seconds | 15 |
-| Word count / est. seconds | 27 words / ≈ 12 s |
+| Word count / est. seconds | 27 words / ≈ 11.6 s |
 | Cue targets | None |
 
 > Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.
@@ -2497,7 +2497,7 @@ New lexicon terms: GOSI — “GO-see”; IELTS — “eye-elts”; TOEFL — �
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 10 |
-| Word count / est. seconds | 25 words / ≈ 11 s |
+| Word count / est. seconds | 25 words / ≈ 10.7 s |
 | Cue targets | None |
 
 > A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.
@@ -2647,7 +2647,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Calm, practical |
 | Target seconds | 30 |
-| Word count / est. seconds | 62 words / ≈ 27 s |
+| Word count / est. seconds | 62 words / ≈ 27.4 s |
 | Cue targets | `what`, `who`, `split` |
 
 > [[cue:what]] GOSI is the General Organization for Social Insurance — the government body for social protection in Saudi Arabia. [[pause:0.4]] [[cue:who]] It applies to Saudi employees, until retirement at sixty. [[pause:0.4]] [[cue:split]] The split matters: you pay nine point seven five per cent of basic plus housing. My Clinic pays eleven point seven five. So the real contribution is twenty-one point five, and most of it isn't yours.
@@ -2748,7 +2748,7 @@ New lexicon terms: GOSI — “GO-see”
 |---|---|
 | Tone | Calm, precise |
 | Target seconds | 30 |
-| Word count / est. seconds | 65 words / ≈ 28 s |
+| Word count / est. seconds | 65 words / ≈ 28.7 s |
 | Cue targets | `s1`, `s2`, `s3` |
 
 > Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. [[cue:s1]] Add them — GOSI is charged on basic plus housing, so six thousand. [[pause:0.4]] [[cue:s2]] Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. [[pause:0.4]] [[cue:s3]] Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.
@@ -2851,7 +2851,7 @@ New lexicon terms: SAR — say “Saudi riyals” (never “S-A-R”)
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 15 words / ≈ 6 s |
+| Word count / est. seconds | 15 words / ≈ 6.4 s |
 | Cue targets | None |
 
 > Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?
@@ -2960,7 +2960,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Calm, precise |
 | Target seconds | 35 |
-| Word count / est. seconds | 79 words / ≈ 34 s |
+| Word count / est. seconds | 79 words / ≈ 35.5 s |
 | Cue targets | `s1`, `s2`, `s3`, `elig` |
 
 > [[cue:elig]] One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. [[pause:0.4]] [[cue:s1]] Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. [[pause:0.4]] [[cue:s2]] On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. [[pause:0.4]] [[cue:s3]] On a public holiday, multiply by two. Fifty riyals an hour. [[pause:0.4]] Same hourly rate both times. Only the multiplier moves.
@@ -3064,7 +3064,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 9 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s |
 | Cue targets | None |
 
 > One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?
@@ -3175,7 +3175,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Practical |
 | Target seconds | 10 |
-| Word count / est. seconds | 19 words / ≈ 8 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s |
 | Cue targets | None |
 
 > Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.
@@ -3299,7 +3299,7 @@ New lexicon terms: Qiwa — “KEE-wa”; Mumaris — “mu-MAH-ris”; SCFHS �
 |---|---|
 | Tone | Practical, calm |
 | Target seconds | 15 |
-| Word count / est. seconds | 27 words / ≈ 12 s |
+| Word count / est. seconds | 27 words / ≈ 11.6 s |
 | Cue targets | None |
 
 > Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.
@@ -3426,10 +3426,10 @@ New lexicon terms: Oracle — “OR-uh-kul”
 |---|---|
 | Tone | Serious |
 | Target seconds | 8 |
-| Word count / est. seconds | 22 words / ≈ 9 s |
+| Word count / est. seconds | 19 words / ≈ 8.1 s |
 | Cue targets | None |
 
-> True or false: if your professional licence will expire in less than thirty days without renewal, HR may suspend you from work.
+> True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.
 
 New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
 
@@ -3463,7 +3463,7 @@ New lexicon terms: Mumaris — “mu-MAH-ris”; SCFHS — “S-C-F-H-S”
   },
   "reveal": "none",
   "narration_asset_id": "<hr-aud-062>",
-  "narration_text": "True or false: if your professional licence will expire in less than thirty days without renewal, HR may suspend you from work."
+  "narration_text": "True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work."
 }
 ```
 
@@ -3524,7 +3524,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Practical, warm |
 | Target seconds | 25 |
-| Word count / est. seconds | 57 words / ≈ 24 s |
+| Word count / est. seconds | 57 words / ≈ 25.2 s |
 | Cue targets | `id`, `lost`, `wheel` |
 
 > [[cue:id]] Two quick things. Your ID card: wear it where it can be seen. [[pause:0.4]] [[cue:lost]] Lose it, and you email HR — there's a replacement fee. Damage it, and it's replaced free. [[pause:0.4]] [[cue:wheel]] Second, what you can use from day one: health insurance, performance bonuses, development, the hybrid work policy, internal advancement and discounts. Look at the ones you'd actually use.
@@ -3631,7 +3631,7 @@ New lexicon terms: None
 |---|---|
 | Tone | Practical |
 | Target seconds | 8 |
-| Word count / est. seconds | 20 words / ≈ 9 s |
+| Word count / est. seconds | 20 words / ≈ 8.6 s |
 | Cue targets | None |
 
 > Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.
@@ -3740,7 +3740,7 @@ n/a — unscored content screen.
 |---|---|
 | Tone | Calm, matter-of-fact |
 | Target seconds | 25 |
-| Word count / est. seconds | 52 words / ≈ 22 s |
+| Word count / est. seconds | 52 words / ≈ 23.5 s |
 | Cue targets | `qiwa`, `oracle`, `notice`, `eos` |
 
 > [[cue:qiwa]] Two ends of one story. Starting: you accept your contract on Qiwa, the Ministry of Human Resources platform. [[pause:0.4]] [[cue:oracle]] Leaving: a resignation is a request, so it goes through Oracle. [[pause:0.4]] [[cue:notice]] Notice is two months, and it runs both ways. [[pause:0.4]] [[cue:eos]] End-of-service benefits and your experience certificate follow within fifteen days of your last day.
@@ -3836,7 +3836,7 @@ New lexicon terms: Qiwa — “KEE-wa”; EOS — say “end of service”
 |---|---|
 | Tone | Calm |
 | Target seconds | 8 |
-| Word count / est. seconds | 16 words / ≈ 7 s |
+| Word count / est. seconds | 16 words / ≈ 6.9 s |
 | Cue targets | None |
 
 > Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?
@@ -3953,10 +3953,10 @@ New lexicon terms: None
 |---|---|
 | Tone | Encouraging |
 | Target seconds | 12 |
-| Word count / est. seconds | 33 words / ≈ 14 s |
+| Word count / est. seconds | 28 words / ≈ 12.0 s |
 | Cue targets | None |
 
-> Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. This isn't a verdict on your first week — it's a list of where to look next.
+> Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict.
 
 New lexicon terms: None
 
@@ -3997,7 +3997,7 @@ New lexicon terms: None
   ],
   "reveal": "none",
   "narration_asset_id": "<hr-aud-090>",
-  "narration_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. This isn't a verdict on your first week — it's a list of where to look next."
+  "narration_text": "Here's where you landed, objective by objective. Anything under seventy per cent has a note beside it. It's a list of where to look next, not a verdict."
 }
 ```
 
@@ -4062,10 +4062,10 @@ New lexicon terms: None
 |---|---|
 | Tone | Warm |
 | Target seconds | 25 |
-| Word count / est. seconds | 67 words / ≈ 29 s |
+| Word count / est. seconds | 61 words / ≈ 27.0 s |
 | Cue targets | `list`, `pdf`, `survey`, `next` |
 
-> [[cue:list]] That's the induction. You can now live the values, raise a concern the right way, answer the leave and pay questions people ask, and use the right system for each task. [[pause:0.5]] [[cue:pdf]] Download the HR Quick Reference and keep it handy. [[pause:0.4]] [[cue:survey]] Please complete the onboarding survey — two minutes, and it changes how we run this day. [[pause:0.4]] [[cue:next]] Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.
+> [[cue:list]] That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. [[pause:0.3]] [[cue:pdf]] Download the HR Quick Reference. [[pause:0.3]] [[cue:survey]] Please complete the onboarding survey — two minutes, and it shapes how we run this day. [[pause:0.3]] [[cue:next]] Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic.
 
 New lexicon terms: None
 
@@ -4093,7 +4093,7 @@ New lexicon terms: None
   "animation": "fade-up",
   "reveal": "auto",
   "narration_asset_id": "<hr-aud-091>",
-  "narration_text": "That's the induction. You can now live the values, raise a concern the right way, answer the leave and pay questions people ask, and use the right system for each task. Download the HR Quick Reference and keep it handy. Please complete the onboarding survey — two minutes, and it changes how we run this day. Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic."
+  "narration_text": "That's the induction. You can now live the values, raise a concern the right way, and answer the leave and pay questions. You'll also know which system to use. Download the HR Quick Reference. Please complete the onboarding survey — two minutes, and it shapes how we run this day. Next: clinical governance, quality, patient safety and risk. Welcome to My Clinic."
 }
 ```
 
@@ -4146,7 +4146,7 @@ New lexicon terms: None
 | 34 | `hr-081` | `mcq` | Y | 5 | 0 | 16 | 7 | `Draft` |
 | 35 | `hr-090` | `results_breakdown` | N | 0 | 11 | 33 | 14 | `Draft` |
 | 36 | `hr-091` | `summary` | N | 0 | 21 | 67 | 29 | `Draft` |
-| | **Totals** | | **15** | **145** | **366** | **1636** | **701 ≈ 11 min 41 s** | |
+| | **Totals** | | **15** | **145** | **366** | **1590** | **705.1 ≈ 11 min 45 s** | |
 
 ### Asset list (all screens)
 

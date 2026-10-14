@@ -34,4 +34,12 @@ The HR deck is a full-day classroom induction: company story, values, the 7C str
 
 **Still blocked on Phase 0**: HR policy confirmations (sick-leave pay B1, compassionate leave wording B2, ID-card penalty B4, overtime by grade B3, GOSI rates B12, SCFHS rule B13), branch names (B5/D3), personal-data policy (B6/D5), awards wording (B7), and the Oracle test account (B8 — this one blocks building `hr-061`).
 
-**Not yet started**: Phase 3 machine-readable outputs (`visual-plan.json`, `narration-script.json`) and the narration audio.
+**Narration done**: all 36 scripts written in the storyboard; `narration-script.json`,
+`audio-script-export.json` and `voice_talent.md` generated from them. `lint_narration_script`
+reports **0 errors, 0 warnings** (1,590 words, ~11 min 45 s of audio).
+
+**Reference audio**: 10 clips, one per section (~5 min), in `storyboard/audio/` — enough to judge
+the voice and the pacing. Voice route still open (program **D10**).
+
+**Not yet started**: `visual-plan.json` (the Phase 2 exit gate), the remaining 26 audio clips, and
+`lint_authoring_plan(stage="planning")`. Then the build (Phase 4).
