@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from generate_screens import PLANS, generate, load_cards, missing_fields, sanitize, asset_ids
+from generate_screens import PLANS, generate, load_cards, missing_fields, sanitize, asset_ids, scenario_issues
 
 
 class GeneratorTests(unittest.TestCase):
@@ -36,7 +36,7 @@ class GeneratorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as a, tempfile.TemporaryDirectory() as b:
             generate([module], Path(a))
             generate([module], Path(b))
-            for name in ['index.html', 'generation-report.json', 'player.js', 'style.css']:
+            for name in ['index.html', 'generation-report.json', 'player.js', 'scenario.js', 'style.css']:
                 self.assertEqual((Path(a) / name).read_bytes(), (Path(b) / name).read_bytes())
 
     def test_invalid_json_duplicate_and_unknown_type_fail(self):
@@ -76,6 +76,24 @@ class GeneratorTests(unittest.TestCase):
             mapping.write_text('{"bad/path":"approved-review.png"}')
             with self.assertRaises(ValueError):
                 generate([PLANS / '03_hr-employee-induction'], out, mapping)
+
+    def test_authored_scenario_graphs_and_invalid_branches(self):
+        import copy
+        scenarios = [s for name in ['03_hr-employee-induction', '07_quality-safety-and-risk']
+                     for s in load_cards(PLANS / name / 'storyboard/storyboard.md')
+                     if s['type'] == 'decision_scenario']
+        self.assertEqual(len(scenarios), 4)
+        for scenario in scenarios:
+            self.assertEqual(scenario_issues(scenario), [])
+        for field, value in [('goto_node_id', 'missing'), ('goto_node_id', {}),
+                             ('score_delta', True), ('score_delta', float('inf')),
+                             ('feedback_html', '')]:
+            invalid = copy.deepcopy(scenarios[0])
+            invalid['nodes'][0]['choices'][0][field] = value
+            self.assertTrue(scenario_issues(invalid))
+        invalid = copy.deepcopy(scenarios[0])
+        invalid['nodes'][-1]['choices'][0]['goto_node_id'] = invalid['start_node_id']
+        self.assertTrue(scenario_issues(invalid))
 
     def test_output_cannot_overwrite_sources(self):
         for output in [PLANS, PLANS / '03_hr-employee-induction', PLANS.parents[1], PLANS.parents[2]]:

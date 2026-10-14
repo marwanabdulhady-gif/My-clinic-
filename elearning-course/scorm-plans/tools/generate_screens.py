@@ -7,6 +7,7 @@ import hashlib
 import html
 from html.parser import HTMLParser
 import json
+import math
 from pathlib import Path
 import re
 import shutil
@@ -16,9 +17,9 @@ PLANS = Path(__file__).resolve().parents[1]
 TEMPLATES = Path(__file__).resolve().parent / 'screen_generator'
 BRAND = PLANS / '00_program' / 'brand'
 # These are deliberately not presented as production implementations.
-REVIEW_ONLY = {'decision_scenario', 'adaptive_practice', 'simulation', 'escape_room',
+REVIEW_ONLY = {'adaptive_practice', 'simulation', 'escape_room',
                'game', 'hotspot', 'labeled_diagram', 'image_compare', 'sorting'}
-INTERACTIVE = {'mcq', 'true_false', 'poll', 'matching', 'drag_drop', 'fill_blank'}
+INTERACTIVE = {'mcq', 'true_false', 'poll', 'matching', 'drag_drop', 'fill_blank', 'decision_scenario'}
 KNOWN = REVIEW_ONLY | INTERACTIVE | {'title_slide', 'content_slide', 'summary',
         'tabs', 'accordion', 'flashcards', 'timeline', 'worked_example', 'results_breakdown'}
 
@@ -104,6 +105,58 @@ def load_cards(path):
     return cards
 
 
+def scenario_issues(card):
+    """Reject incomplete graphs instead of inventing targets or retry mechanics."""
+    nodes = card.get('nodes', [])
+    if not isinstance(nodes, list) or not nodes:
+        return ['scenario nodes']
+    by_id = {}
+    for node in nodes:
+        if not isinstance(node, dict) or not isinstance(node.get('id'), str) or not node['id'] or node['id'] in by_id:
+            return ['unique scenario node IDs']
+        by_id[node['id']] = node
+    if not isinstance(card.get('start_node_id'), str) or card['start_node_id'] not in by_id:
+        return ['valid scenario start node']
+    for node in nodes:
+        choices = node.get('choices')
+        if not node.get('prompt_html') or not isinstance(choices, list) or not choices:
+            return ['scenario prompts and choices']
+        seen = set()
+        for choice in choices:
+            if not isinstance(choice, dict) or not isinstance(choice.get('id'), str) or not choice['id'] or choice['id'] in seen:
+                return ['unique scenario choice IDs']
+            seen.add(choice['id'])
+            if not choice.get('text_html') or not choice.get('feedback_html'):
+                return ['authored scenario choice text and feedback']
+            delta = choice.get('score_delta')
+            if isinstance(delta, bool) or not isinstance(delta, (int, float)) or not math.isfinite(delta):
+                return ['authored finite scenario score deltas']
+            if 'goto_node_id' not in choice or (choice['goto_node_id'] is not None and
+                (not isinstance(choice['goto_node_id'], str) or choice['goto_node_id'] not in by_id)):
+                return ['valid scenario branch targets']
+    visiting, visited = set(), set()
+
+    def visit(nid):
+        if nid in visiting:
+            return False
+        if nid in visited:
+            return True
+        visiting.add(nid)
+        for choice in by_id[nid]['choices']:
+            target = choice['goto_node_id']
+            if target is not None and not visit(target):
+                return False
+        visiting.remove(nid)
+        visited.add(nid)
+        return True
+
+    if not visit(card['start_node_id']):
+        return ['acyclic scenario (production retry logic required)']
+    if len(visited) != len(by_id):
+        return ['reachable scenario nodes']
+    return []
+
+
 def missing_fields(card):
     t = card['type']
     requirements = {
@@ -113,7 +166,7 @@ def missing_fields(card):
         'flashcards': ['cards'], 'timeline': ['events'], 'worked_example': ['steps'],
         'matching': ['pairs'], 'drag_drop': ['items', 'targets'],
         'fill_blank': ['prompt_html', 'blanks'], 'results_breakdown': ['sections'],
-        'decision_scenario': ['nodes'], 'simulation': ['steps'],
+        'decision_scenario': ['nodes', 'start_node_id'], 'simulation': ['steps'],
         'adaptive_practice': ['items'], 'hotspot': ['regions'],
     }
     missing = [k for k in requirements.get(t, []) if k not in card or card[k] in (None, '', [])]
@@ -121,6 +174,8 @@ def missing_fields(card):
         missing.append('correct option')
     if t == 'fill_blank' and any(not b.get('accepted') for b in card.get('blanks', [])):
         missing.append('accepted answers')
+    if t == 'decision_scenario':
+        missing.extend(scenario_issues(card))
     return missing
 
 
@@ -225,7 +280,7 @@ def generate(modules, output, asset_map=None):
     serialized = json.dumps(payload, ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
     template = (TEMPLATES / 'index.html').read_text()
     (output / 'index.html').write_text(template.replace('__COURSE_DATA__', serialized))
-    for filename in ['player.js', 'style.css']:
+    for filename in ['player.js', 'scenario.js', 'style.css']:
         shutil.copyfile(TEMPLATES / filename, output / filename)
     (output / 'generation-report.json').write_text(json.dumps(report, indent=2) + '\n')
     return report

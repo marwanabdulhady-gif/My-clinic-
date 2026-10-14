@@ -49,6 +49,22 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     assert.match(await page.locator('#stage .feedback').innerText(), /Correct for this draft/);
     await go('07_quality-safety-and-risk', 'qsr-032');
     assert.equal(await page.locator('#stage .submit').count(), 0, 'Pending risk band must not be graded');
+    await go(hr, 'hr-031');
+    for (const index of [1, 0, 1]) {
+      const choice = page.locator('#stage .scenario-choice').nth(index);
+      await choice.focus(); await page.keyboard.press('Enter');
+      assert.equal(await page.locator('#stage .scenario-choice:not(:disabled)').count(), 0);
+      assert.match(await page.locator('#stage .feedback').innerText(), /Authored draft feedback/);
+      const next = page.getByRole('button', {name: /Continue scenario|Review draft outcome/});
+      await next.focus(); await page.keyboard.press('Enter');
+    }
+    assert.match(await page.locator('#stage').innerText(), /Authored branch total: 3/);
+    await page.getByRole('button', {name:'Reset draft scenario', exact:true}).click();
+    assert.equal(await page.locator('#stage .scenario-choice:not(:disabled)').count(), 3);
+    assert.match(await page.locator('#stage').innerText(), /Decision 1/);
+    await go('07_quality-safety-and-risk', 'qsr-021');
+    await page.locator('#stage .scenario-choice').first().click();
+    assert.match(await page.locator('#stage .feedback').innerText(), /PENDING B4/);
     await go(hr, 'hr-061');
     assert.match(await page.locator('#stage').innerText(), /production logic/i);
     await go(hr, 'hr-001');

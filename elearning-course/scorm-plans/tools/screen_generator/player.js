@@ -85,6 +85,45 @@ function fillQuestion(s) {
   return form;
 }
 
+function decisionScenario(s) {
+  const root = el('div', 'scenario-player');
+  let engine;
+  try {engine = MyClinicScenario.create(s);} catch (error) {
+    root.append(el('div', 'review-only', 'Scenario wiring pending: ' + error.message), reviewContent(s));
+    return root;
+  }
+  const banner = el('div', 'review-only', 'Fictional draft scenario · policies and answer keys still require SME approval. No LMS score or pass is recorded.');
+  const content = el('div'); root.append(banner, content);
+  function draw(focus = false) {
+    const state = engine.snapshot(); content.replaceChildren();
+    const heading = el('h3', '', state.finished ? 'Draft scenario review complete' : `Decision ${state.trace.length + (state.selected ? 0 : 1)} · ${state.node.id}`);
+    heading.tabIndex = -1; content.append(heading);
+    if (state.finished) {
+      content.append(el('p', 'result-note', `Authored branch total: ${state.total}${Number.isFinite(s.pass_score) ? ' · authored scenario threshold: ' + s.pass_score : ''}. This is not a course score or approval.`));
+      const log = el('ol'); state.trace.forEach(t => log.append(el('li', '', `${t.node_id} → ${t.choice_id} · authored delta ${t.score_delta}`))); content.append(log);
+      content.append(button('Reset draft scenario', () => {engine.reset(); draw(true);}));
+    } else {
+      content.append(rich(state.node.prompt_html, 'prompt'));
+      if (state.node.image_asset_id) {const scene = el('div', 'scenario-scene'); scene.append(media(state.node.image_asset_id, state.node.image_alt)); content.append(scene);}
+      const choices = el('div', 'options');
+      state.node.choices.forEach(choice => {
+        const b = button('', () => {engine.choose(choice.id); draw(true);}, 'scenario-choice');
+        b.append(rich(choice.text_html)); b.disabled = Boolean(state.selected);
+        if (state.selected && state.selected.id === choice.id) b.setAttribute('aria-pressed', 'true');
+        choices.append(b);
+      }); content.append(choices);
+      if (state.selected) {
+        const box = feedbackBox(); box.hidden = false;
+        box.append(el('strong', '', 'Authored draft feedback'), rich(state.selected.feedback_html));
+        content.append(box, button(state.selected.goto_node_id === null ? 'Review draft outcome' : 'Continue scenario', () => {engine.advance(); draw(true);}, 'submit'));
+      }
+      content.append(button('Reset draft scenario', () => {engine.reset(); draw(true);}, 'scenario-reset'));
+    }
+    if (focus) heading.focus();
+  }
+  draw(); return root;
+}
+
 function panel(item) {
   const box = el('div', 'panel');
   if (item.image_asset_id) box.append(media(item.image_asset_id, item.image_alt));
@@ -152,6 +191,7 @@ function screenContent(s) {
     case 'mcq': case 'true_false': case 'poll': body.append(choiceQuestion(s)); break;
     case 'matching': case 'drag_drop': body.append(pairedQuestion(s)); break;
     case 'fill_blank': body.append(fillQuestion(s)); break;
+    case 'decision_scenario': body.append(decisionScenario(s)); break;
     case 'tabs': body.append(tabs(s)); break;
     case 'accordion': body.append(accordion(s)); break;
     case 'flashcards': body.append(flashcards(s)); break;

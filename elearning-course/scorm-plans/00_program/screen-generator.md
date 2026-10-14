@@ -21,7 +21,7 @@ python3 elearning-course/scorm-plans/tools/generate_screens.py \
 python3 -m http.server 8000 --bind 0.0.0.0 --directory .generated/screens
 ```
 
-The output is `.generated/screens/index.html`, `player.js`, `style.css`, copied review
+The output is `.generated/screens/index.html`, `player.js`, `scenario.js`, `style.css`, copied review
 assets and `generation-report.json`. It also opens directly as a local file: course data
 is embedded as inert JSON, so no fetch, CDN, external font service or build step is needed.
 The preview contains internal course content; only share through authorised review channels.
@@ -54,8 +54,12 @@ fallback), plus `00_program/brand/brand-kit.json` and supplied brand PNGs.
   Content/summary, title, tabs, accordion, flashcards, timeline and worked-example displays;
   MCQ, true/false, poll, fill-blank, matching and categorisation answer checks. Matching and
   drag/drop use keyboard-accessible selects, not pointer-only dragging. Results displays
-  show authored objective advice, **not a computed score**.
-- **Interaction review:** structured authored steps/nodes/options for decision scenarios,
+  show authored objective advice, **not a computed score**. Decision scenarios now play
+  one decision at a time, lock the choice while feedback is reviewed, follow the exact
+  authored target, and show a draft-only sum of authored score deltas. Reset starts a new
+  in-memory run. No course points, pass or completion is awarded. Missing targets, feedback,
+  scores, cyclic graphs or unreachable nodes remain build issues, not inferred wiring.
+- **Interaction review:** structured authored steps/nodes/options for
   adaptive practice, games, escape rooms, simulations, hotspots, labelled diagrams,
   image comparisons and sorting. Their production algorithms, geometry and scoring are
   deliberately not implemented. Source JSON is always available; this is not an upstream
@@ -66,7 +70,7 @@ fallback), plus `00_program/brand/brand-kit.json` and supplied brand PNGs.
   `qsr-032` cannot be checked as a correct answer.
 
 On the **2026-10-14 checkout**, generation confirms **207 screens / 95 scored screens**:
-**40 rendered drafts, 13 interaction reviews, 154 brief-only screens**. Six modules have
+**44 rendered drafts, 9 interaction reviews, 154 brief-only screens**. Six modules have
 review-hand-off skeletons rather than full build content. All 207 have at least one unresolved
 review/build issue (including missing audio). These counts describe renderer coverage,
 not approval or readiness. All existing Phase 0, SME, voice, DPO and asset gates still apply.
@@ -106,12 +110,18 @@ provenance**. Do not use untrusted SVGs or identifiable patient captures.
 ```bash
 python3 -m unittest discover -s elearning-course/scorm-plans/tools/tests -v
 node --check elearning-course/scorm-plans/tools/screen_generator/player.js
+node --check elearning-course/scorm-plans/tools/screen_generator/scenario.js
+# Requires the all-module generated preview above:
+node elearning-course/scorm-plans/tools/tests/test_scenario.cjs
 python3 elearning-course/scorm-plans/tools/lint_planning.py
 ```
 
-Seven unit tests cover the current 207/95 totals, preserved IDs/order/scoring/evidence,
+Eight Python unit tests cover the current 207/95 totals, preserved IDs/order/scoring/evidence,
 deterministic output, invalid JSON/duplicate IDs/unknown types, inert HTML, pending answer
-keys, asset maps and source-directory protection. Invalid inputs exit nonzero; unresolved
+keys, asset maps, source-directory protection and scenario graph validation. The Node state
+gate traverses **189 authored paths** across `hr-031`, `hr-044`, `qsr-021` and `qsr-051`,
+checking exact feedback, target transitions, score-delta totals and reset. It also tests
+invalid graphs, double-choice/advance guards, early exits and snapshot isolation. Invalid inputs exit nonzero; unresolved
 build detail is reported, not treated as a generation failure or production approval.
 
 `generation-report.json` records `production_ready: false`, render-mode counts, module
@@ -128,7 +138,8 @@ node elearning-course/scorm-plans/tools/tests/screen_preview_smoke.cjs
 ```
 
 The loop visits all 207 screens, checks title/ID navigation, tests MCQ, matching and fill-blank
-feedback, tabs, in-memory state, pending keys, simulation disclaimers, screen search and
+feedback, tabs, in-memory state, keyboard scenario choices/feedback/continue/reset, pending
+policy markers and answer keys, simulation disclaimers, screen search and
 390px horizontal overflow, and fails on browser errors or missing HTTP assets. It passed
 locally with headless Chromium. This is a smoke check, **not** the 81-case delivery QA suite,
 a visual-approval pass, an LMS test, a pilot or a full accessibility audit.
