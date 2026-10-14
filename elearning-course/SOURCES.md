@@ -32,12 +32,12 @@ My Clinic course folder (15HyVEiMlgNqjr2tQa1QjVxJ0v-TuFmgj)
 | 4 | How to optimize billing via coding , documentation.docx | `1RAeKs0Pm6Z4K8XfDbHU_Ha-Oza71V15m` | docx | 24,034 | `google_drive/How to optimize billing via coding , documentation.docx` |
 | 5 | how to optimize billing via coding ,, documentation  2026.pptx | `1EFSR-lMkL2tYr9QV7lOtVc4I_DoDjk-A` | pptx | 3,681,751 | `google_drive/how to optimize billing via coding ,, documentation  2026.pptx` |
 | 6 | Operations & My Care Structure.pptx | `1PEP-s5JnP0OSiJb_OSyvIIEOUWxc8pRj` | pptx | 1,212,667 | `google_drive/Operations & My Care Structure.pptx` |
-| 7 | Quality, Safety and Risk Orientation.mp4 | `1YC5onl0h4Tlx81EhdU364K9zGZi-u9F7` | mp4 | 39,451,744 | **not committed** (gitignored, ~38 MB) |
-| 8 | IT.mp4 | `1LcqUSkLhfEwaeb_kN22yoVDmDD3ND3jQ` | mp4 | 35,459,607 | **not committed** (gitignored, ~34 MB) |
+| 7 | Quality, Safety and Risk Orientation.mp4 | `1YC5onl0h4Tlx81EhdU364K9zGZi-u9F7` | mp4 | 39,451,744 | committed |
+| 8 | IT.mp4 | `1LcqUSkLhfEwaeb_kN22yoVDmDD3ND3jQ` | mp4 | 35,459,607 | held back (patient identifiers, see README item 18) |
 
 Folder IDs: HR `1kmAUzAp9SQNvUYG1vl2qApUz7-DI9yJK`, Health & Safety `1DIXItxHIiUZJAJ4clhk1BgJo8jE6avev`, RCM `1DbTB53yOWOZ62TCyaMDzz_UfCyNqKQy7`, RCM/RCM `19B5IjggthXgp60ZJ1fjee7FrUh9_DZn5`.
 
 ## Notes
 
-- The two MP4 files are the only sources not in Git. Re-download them from the Drive IDs above when you need to re-run transcription or keyframe capture.
+- The Quality MP4 is committed. The IT MP4 is held back until it is anonymised (see README item 18); re-download it from the Drive ID above when needed.
 - The Markdown modules describe the videos from a low-accuracy offline transcript and keyframes. Re-check the videos before publishing.

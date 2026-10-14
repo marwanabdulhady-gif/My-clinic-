@@ -1,12 +1,12 @@
 # Video — Quality, Safety and Risk Orientation (Module Source)
 
-> **Source file:** `google_drive/Quality, Safety and Risk Orientation.mp4` *(not committed to git — see README)*
+> **Source file:** `google_drive/Quality, Safety and Risk Orientation.mp4` *(committed to git)*
 > **Drive folder:** top level of the course folder
 > **Size:** 39,451,744 bytes · **Duration:** 8 min 56 s · **Video:** 1280×720
 > **Last modified in Drive:** 2026-10-07
 > **Inspection method:**
 > - **Audio:** speech is present (≈ −20 dB mean level). Transcribed locally with an offline speech recogniser (CMU Pocketsphinx, English model). This recogniser is **low-accuracy** for conversational speech, so the transcript below is a *working draft* and every quoted phrase should be re-checked by listening to the video.
-> - **Visuals:** 13 keyframes sampled every 40 s, reviewed on contact sheets. Slide titles and text were read from the frames.
+> - **Visuals:** 54 screenshots sampled every 10 s, committed in `media/07_quality-safety-risk/` (`frame_NNN.jpg`, frame NNN at (NNN−1)×10 s). Slide titles and text were read with OCR (RapidOCR). A 30-second-chunk machine transcript with timestamps is in `transcript_asr_30s.md`.
 
 ---
 

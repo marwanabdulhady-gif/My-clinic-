@@ -1,13 +1,13 @@
 # Video — IT: EHR Consultation Workflow Walkthrough (Module Source)
 
-> **Source file:** `google_drive/IT.mp4` *(not committed to git — see README)*
+> **Source file:** `google_drive/IT.mp4` *(not committed to git yet — it contains a non-test patient record; see README §3, item 18)*
 > **Drive folder:** top level of the course folder
 > **Size:** 35,459,607 bytes · **Duration:** 8 min 38 s · **Video:** 1920×912
 > **Last modified in Drive:** 2026-10-07
 > **Inspection method:**
 > - **Audio check:** the audio track measures **−91 dB throughout** (silent). There is **no narration** in this video. All instructions come from **on-screen captions**.
-> - **Visuals:** 17 keyframes sampled every 30 s, reviewed on contact sheets. Captions and field labels were read from the frames.
-> - **Test data:** the patient on screen is a test record ("Test Simplified Template Launch"). No real patient data is shown.
+> - **Visuals:** 52 screenshots sampled every 10 s. 42 are committed in `media/08_it-ehr-walkthrough/` with a time-coded index in `FRAME_INDEX.md`; 10 were withheld because they show a patient record with personal identifiers. Captions were read from the frames with OCR (RapidOCR).
+> - **Patient data:** most of the video uses a test record ("Test Simplified Template Launch"). **However, about 1 minute (5:10–6:10) shows a second, non-test patient record** with name, date of birth, record numbers and a radiology report, and 7:10–7:20 and 8:30 show a phone number and an ID number. Those frames are withheld from the repo. Anonymise the recording before any external use.
 
 ---
 
@@ -70,7 +70,7 @@ By the end of the module, a clinician should be able to:
 ## 4. Gaps, risks and editing notes
 
 1. **No narration.** The video needs a voice-over, or the course should convert the captions into narration and step prompts.
-2. **Test data only.** The on-screen patient is a test record; confirm that no real patient identifiers were visible in the original recording before any external use.
+2. **Patient identifiers on screen.** The main patient is a test record, but 5:10–6:10 shows a second patient's full record (name, DOB, IDs, radiology report) and 7:10–7:20 shows a phone number. Blur or re-record these sections before the video is used in the course or shared outside the team.
 3. **Vendor and product names** are not named on screen beyond the clinic's branding; the course should refer to the "clinic EHR" unless the system name is confirmed.
 4. **Clinical content on screen:** the diagnosis and medication examples (type 2 diabetes, anaemia, vitamin D) are examples — the course should not present them as clinical guidance. Add a clinical-disclaimer slide.
 5. **Dense screens:** several frames are small. Re-record the critical steps at a larger zoom (or capture sub-clips) for the course.
