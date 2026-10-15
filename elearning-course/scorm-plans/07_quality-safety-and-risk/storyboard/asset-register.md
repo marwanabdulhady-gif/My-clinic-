@@ -12,19 +12,19 @@ Production hand-off for review. `Generated` means the file exists (in this repos
 
 ## Programme companions used in this module (shared, not module art)
 
-Source: [`companions.md`](../../00_program/characters/companions.md) §3. Full-size files are in My Clinic's Canva account (`https://www.canva.com/M/<media id>`); download as PNG with a transparent background into `00_program/characters/assets/<asset id>.png`. There is **no module-specific character art or prompt** for module 07.
+Source: [`companions.md`](../../00_program/characters/companions.md) §3. The full-size production files (PNG with a transparent background) are in [`../../00_program/characters/assets/`](../../00_program/characters/assets/) — imported 2026-10-15; the untouched originals are in `assets/originals/` and the Canva media ids below stay for traceability (`https://www.canva.com/M/<media id>`). There is **no module-specific character art or prompt** for module 07.
 
 | Asset id | Canva media id / route | Screens | Status | Alt text | Preview |
 |---|---|---|---|---|---|
-| `char-noor-welcome` | MAHX-pFaNMU | qsr-000 | Generated (Canva AI) | Noor, the safety liaison, smiling and waving in welcome. | [preview](../../00_program/characters/previews/char-noor-welcome.jpg) |
-| `char-noor-listening` | MAHX-v3i0kY | qsr-002 | Generated (Canva AI) | Noor, the safety liaison, holding a tablet and listening. | [preview](../../00_program/characters/previews/char-noor-listening.jpg) |
-| `char-noor-avatar-neutral` | MAHX-n4HuyU | qsr-051 | Generated (Canva AI) | Noor, the safety liaison. | [preview](../../00_program/characters/previews/char-noor-avatar-neutral.jpg) |
-| `char-noor-avatar-concern` | crop from char-noor-concern (MAHX-hFE0aQ) | qsr-021, qsr-051 | To make | Noor, the safety liaison, looking concerned. | [preview](../../00_program/characters/previews/char-noor-concern.jpg) |
-| `char-noor-avatar-happy` | crop from char-noor-success (MAHX-jiR90M) | qsr-021, qsr-051 | To make | Noor, the safety liaison, smiling. | [preview](../../00_program/characters/previews/char-noor-success.jpg) |
-| `char-noor-success` | MAHX-jiR90M | qsr-092 | Generated (Canva AI) | Noor, the safety liaison, smiling and giving a thumbs up. | [preview](../../00_program/characters/previews/char-noor-success.jpg) |
-| `char-omar-thinking` | MAHX-jgu1Vk | qsr-031 | Generated (Canva AI) | Dr. Omar, the family physician, with his hand at his chin, thinking through the risk score. | [preview](../../00_program/characters/previews/char-omar-thinking.jpg) |
-| `char-omar-avatar-neutral` | MAHX-nPHDkA | qsr-040 | Generated (Canva AI) | Dr. Omar, the family physician. | [preview](../../00_program/characters/previews/char-omar-avatar-neutral.jpg) |
-| `char-omar-avatar-happy` | crop from char-omar-success (MAHX-llCU5M) | qsr-092 | To make | Dr. Omar, the family physician, smiling. | [preview](../../00_program/characters/previews/char-omar-success.jpg) |
+| `char-noor-welcome` | MAHX-pFaNMU | qsr-000 | Generated (Canva AI); in `00_program/characters/assets/` | Noor, the safety liaison, smiling and waving in welcome. | [preview](../../00_program/characters/previews/char-noor-welcome.jpg) |
+| `char-noor-listening` | MAHX-v3i0kY | qsr-002 | Generated (Canva AI); in `00_program/characters/assets/` | Noor, the safety liaison, holding a tablet and listening. | [preview](../../00_program/characters/previews/char-noor-listening.jpg) |
+| `char-noor-avatar-neutral` | MAHX-n4HuyU | qsr-051 | Generated (Canva AI); in `00_program/characters/assets/` | Noor, the safety liaison. | [preview](../../00_program/characters/previews/char-noor-avatar-neutral.jpg) |
+| `char-noor-avatar-concern` | crop from char-noor-concern (MAHX-hFE0aQ) | qsr-021, qsr-051 | Ready (full-size crop in `00_program/characters/assets/`, 2026-10-15) | Noor, the safety liaison, looking concerned. | [preview](../../00_program/characters/previews/char-noor-concern.jpg) |
+| `char-noor-avatar-happy` | crop from char-noor-success (MAHX-jiR90M) | qsr-021, qsr-051 | Ready (full-size crop in `00_program/characters/assets/`, 2026-10-15) | Noor, the safety liaison, smiling. | [preview](../../00_program/characters/previews/char-noor-success.jpg) |
+| `char-noor-success` | MAHX-jiR90M | qsr-092 | Generated (Canva AI); in `00_program/characters/assets/` | Noor, the safety liaison, smiling and giving a thumbs up. | [preview](../../00_program/characters/previews/char-noor-success.jpg) |
+| `char-omar-thinking` | MAHX-jgu1Vk | qsr-031 | Generated (Canva AI); in `00_program/characters/assets/` | Dr. Omar, the family physician, with his hand at his chin, thinking through the risk score. | [preview](../../00_program/characters/previews/char-omar-thinking.jpg) |
+| `char-omar-avatar-neutral` | MAHX-nPHDkA | qsr-040 | Generated (Canva AI); in `00_program/characters/assets/` | Dr. Omar, the family physician. | [preview](../../00_program/characters/previews/char-omar-avatar-neutral.jpg) |
+| `char-omar-avatar-happy` | crop from char-omar-success (MAHX-llCU5M) | qsr-092 | Ready (full-size crop in `00_program/characters/assets/`, 2026-10-15) | Dr. Omar, the family physician, smiling. | [preview](../../00_program/characters/previews/char-omar-success.jpg) |
 
 ## Planned assets from Phase 3
 

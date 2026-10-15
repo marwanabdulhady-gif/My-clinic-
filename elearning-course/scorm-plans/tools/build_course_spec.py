@@ -79,7 +79,7 @@ def gate_for(aid: str) -> str:
     if "leaders" in aid:
         return "Client photo with consent, or role tile (D5/B6)"
     if aid.startswith("char-"):
-        return "Full-size companion PNG from Canva (G6)"
+        return "Companion pose missing from 00_program/characters/assets/ (companions.md §3)"
     return "Still to produce and approve (visual-and-motion-agent-brief.md)"
 
 
@@ -182,7 +182,7 @@ def build(module: str) -> dict:
         if f is not None:
             assets[aid] = {"id": aid, "filename": f"{aid}{f.suffix.lower()}", "source": data_uri(f)}
             report[aid] = {"status": "file", "path": str(f.relative_to(PLANS)),
-                           "interim": "previews" in f.parts or "assets" in f.parts and f.parent.parent.name == "characters"}
+                           "interim": "previews" in f.parts}
         else:
             reason = gate_for(aid)
             src = "data:image/svg+xml;base64," + base64.b64encode(pending_svg(aid, reason)).decode()

@@ -38,6 +38,6 @@ Each module folder `build/` holds `course-spec.json` (what was compiled), `asset
 
 1. **Narration scripts**: in the six generated packs, many question/simulation screens carry generic filler narration ("The next choice asks you to apply the rule…"). Rewrite before any voice work (D10).
 2. **Schema limits** recorded in each `screens.json` `notes`: no per-card feedback on drag/sort, no per-choice companion reaction, no media on mcq/matching/escape-room, one hint ladder per game.
-3. **Companion art**: interim preview JPGs until the 18 full-size PNGs are in `characters/assets/` (G6).
+3. **Companion art**: full-size transparent PNGs are now in `characters/assets/` (G6 closed 2026-10-15 via `tools/import_companion_art.py`); packs and boards generated before that date still embed the interim preview JPGs and pick up the PNGs at the next rebuild.
 4. **Pending media and captures**: see each `asset-map.json`; EHR (31) and Oracle (5) screenshots need the approved test environments.
 5. **Phase 0**: every `⚠ Draft — pending` closes with its decision; rebuild with the two tools.

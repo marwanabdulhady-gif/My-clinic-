@@ -3147,15 +3147,15 @@ Narration words exclude the `NOOR:` / `OMAR:` tag. Phase 3 estimate ~7 minutes; 
 | `qsr-img-wristbands` | illustration | `qsr-021` | ai-generated | Yes | To produce / review |
 | `qsr-img-matrix` | svg | `qsr-031`, `qsr-032` | own | Yes | Draft generated: [`assets/qsr-img-matrix.svg`](assets/qsr-img-matrix.svg) — scores final; band names/colours pending B6 |
 | `qsr-img-iceberg` | svg | `qsr-040` | own | Yes | Draft generated: [`assets/qsr-img-iceberg.svg`](assets/qsr-img-iceberg.svg) — terms pending B8 |
-| `char-noor-welcome` | character (programme) | `qsr-000` | ai-generated programme asset (Canva `MAHX-pFaNMU`) | Yes | Generated; download PNG with transparent background |
-| `char-noor-listening` | character (programme) | `qsr-002` | ai-generated programme asset (Canva `MAHX-v3i0kY`) | Yes | Generated; download PNG with transparent background |
+| `char-noor-welcome` | character (programme) | `qsr-000` | ai-generated programme asset (Canva `MAHX-pFaNMU`) | Yes | Generated; in `00_program/characters/assets/` |
+| `char-noor-listening` | character (programme) | `qsr-002` | ai-generated programme asset (Canva `MAHX-v3i0kY`) | Yes | Generated; in `00_program/characters/assets/` |
 | `char-noor-avatar-neutral` | character (programme) | `qsr-051` | ai-generated programme asset (Canva `MAHX-n4HuyU`) | Yes | Generated |
-| `char-noor-avatar-concern` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-concern` (Canva `MAHX-hFE0aQ`) | Yes | To make (companions.md §3) |
-| `char-noor-avatar-happy` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-success` (Canva `MAHX-jiR90M`) | Yes | To make (companions.md §3) |
-| `char-noor-success` | character (programme) | `qsr-092` | ai-generated programme asset (Canva `MAHX-jiR90M`) | Yes | Generated; download PNG with transparent background |
-| `char-omar-thinking` | character (programme) | `qsr-031` | ai-generated programme asset (Canva `MAHX-jgu1Vk`) | Yes | Generated; download PNG with transparent background |
+| `char-noor-avatar-concern` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-concern` (Canva `MAHX-hFE0aQ`) | Yes | Made (companions.md §3): full-size crop in `00_program/characters/assets/` |
+| `char-noor-avatar-happy` | character (programme) | `qsr-021`, `qsr-051` | crop from `char-noor-success` (Canva `MAHX-jiR90M`) | Yes | Made (companions.md §3): full-size crop in `00_program/characters/assets/` |
+| `char-noor-success` | character (programme) | `qsr-092` | ai-generated programme asset (Canva `MAHX-jiR90M`) | Yes | Generated; in `00_program/characters/assets/` |
+| `char-omar-thinking` | character (programme) | `qsr-031` | ai-generated programme asset (Canva `MAHX-jgu1Vk`) | Yes | Generated; in `00_program/characters/assets/` |
 | `char-omar-avatar-neutral` | character (programme) | `qsr-040` | ai-generated programme asset (Canva `MAHX-nPHDkA`) | Yes | Generated |
-| `char-omar-avatar-happy` | character (programme) | `qsr-092` | crop from `char-omar-success` (Canva `MAHX-llCU5M`) | Yes | To make (companions.md §3) |
+| `char-omar-avatar-happy` | character (programme) | `qsr-092` | crop from `char-omar-success` (Canva `MAHX-llCU5M`) | Yes | Made (companions.md §3): full-size crop in `00_program/characters/assets/` |
 | `qsr-aud-*` | audio | `qsr-000`, `qsr-001`, `qsr-002`, `qsr-010`, `qsr-011`, `qsr-012`, `qsr-020`, `qsr-021`, `qsr-022`, `qsr-023`, `qsr-030`, `qsr-031`, `qsr-032`, `qsr-033`, `qsr-040`, `qsr-041`, `qsr-042`, `qsr-050`, `qsr-051`, `qsr-090`, `qsr-091`, `qsr-092` | ai-generated / human voice (D10 pending): Noor + Dr. Omar | Transcript in every card | Narration scripted and speaker-tagged; `qsr-092` is two lines joined; provider/voice not approved |
 | `qsr-vid-speakup` | video + WebVTT | `qsr-060 (optional, deferred)` | own (in-house recording only) | Transcript/captions required | Not in baseline; approval, recording and captions pending |
 

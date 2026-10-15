@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "brand": {
     "assets": [
       {
@@ -246,34 +246,58 @@
       "char-omar-welcome.jpg"
     ],
     "previews_missing": [],
-    "interim_avatars": [
+    "assets_present": [
       "char-noor-avatar-concern.png",
       "char-noor-avatar-happy.png",
       "char-noor-avatar-neutral.png",
+      "char-noor-concern.png",
+      "char-noor-explaining.png",
+      "char-noor-listening.png",
+      "char-noor-master.png",
+      "char-noor-success.png",
+      "char-noor-thinking.png",
+      "char-noor-tip.png",
+      "char-noor-welcome.png",
+      "char-omar-avatar-concern.png",
       "char-omar-avatar-happy.png",
-      "char-omar-avatar-neutral.png"
+      "char-omar-avatar-neutral.png",
+      "char-omar-concern.png",
+      "char-omar-explaining.png",
+      "char-omar-listening.png",
+      "char-omar-master.png",
+      "char-omar-success.png",
+      "char-omar-thinking.png",
+      "char-omar-tip.png",
+      "char-omar-welcome.png"
     ],
-    "interim_missing": [],
-    "full_size_outstanding": [
-      "char-noor-avatar-neutral.png (Canva MAHX-n4HuyU)",
-      "char-noor-concern.png (Canva MAHX-hFE0aQ)",
-      "char-noor-explaining.png (Canva MAHX-hqkU5I)",
-      "char-noor-listening.png (Canva MAHX-v3i0kY)",
-      "char-noor-master.png (Canva MAHX-pdlawM)",
-      "char-noor-success.png (Canva MAHX-jiR90M)",
-      "char-noor-thinking.png (Canva MAHX-p0nWpE)",
-      "char-noor-tip.png (Canva MAHX-v-F8xI)",
-      "char-noor-welcome.png (Canva MAHX-pFaNMU)",
-      "char-omar-avatar-neutral.png (Canva MAHX-nPHDkA)",
-      "char-omar-concern.png (Canva MAHX-nCzJ70)",
-      "char-omar-explaining.png (Canva MAHX-ljvFtE)",
-      "char-omar-listening.png (Canva MAHX-uifxtY)",
-      "char-omar-master.png (Canva MAHX-ka2O4Q)",
-      "char-omar-success.png (Canva MAHX-llCU5M)",
-      "char-omar-thinking.png (Canva MAHX-jgu1Vk)",
-      "char-omar-tip.png (Canva MAHX-jYQR58)",
-      "char-omar-welcome.png (Canva MAHX-hEFOR4)"
+    "full_size_present": [
+      "char-noor-avatar-neutral.png",
+      "char-noor-concern.png",
+      "char-noor-explaining.png",
+      "char-noor-listening.png",
+      "char-noor-master.png",
+      "char-noor-success.png",
+      "char-noor-thinking.png",
+      "char-noor-tip.png",
+      "char-noor-welcome.png",
+      "char-omar-avatar-neutral.png",
+      "char-omar-concern.png",
+      "char-omar-explaining.png",
+      "char-omar-listening.png",
+      "char-omar-master.png",
+      "char-omar-success.png",
+      "char-omar-thinking.png",
+      "char-omar-tip.png",
+      "char-omar-welcome.png"
     ],
+    "full_size_missing": [],
+    "avatar_crops_present": [
+      "char-noor-avatar-happy.png",
+      "char-noor-avatar-concern.png",
+      "char-omar-avatar-happy.png",
+      "char-omar-avatar-concern.png"
+    ],
+    "avatar_crops_missing": [],
     "canva_ids": {
       "char-<id>-master": {
         "noor": "MAHX-pdlawM",

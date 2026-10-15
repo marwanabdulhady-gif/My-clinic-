@@ -65,7 +65,7 @@ to those files. No server, CDN or installed Montserrat font is required.
 
 This is NOT a SCORM package, approved policy, final audio, pass/completion
 record or learner delivery. Incomplete interactions, source-lock decisions,
-full-size art (G6), voices (D10), Marketing (D11) and LMS (D9) remain pending.
+voices (D10), Marketing (D11) and LMS (D9) remain pending.
 Dense slides are full-height review captures; production 16:9 pagination
 requires a later reviewed pass. Only selected states are in PNGs; use the
 interactive draft to explore details and branches.

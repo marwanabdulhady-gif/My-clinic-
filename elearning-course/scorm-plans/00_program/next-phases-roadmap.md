@@ -44,7 +44,7 @@ kick-off pack is the programme's live blocker count.
 | C4 | SME build-detail closure, modules 05–06 | 05–06 Phase 4 fields | C1 | RCM SME + L&D | 3 d | open |
 | C5 | SME build-detail closure, modules 07–08 (+07 poll/band/quote checks) | 07–08 Phase 4 fields | C1 | Quality/EHR SME + DPO | 3 d | open |
 | C6 | Voice decision D10: samples, approval, voice ids | Phase 3 audio | C1 | course owner | 1 d | open |
-| C7 | Companion full-size art (G6) + avatar replacement | Phase 3 visuals | — | Marwan (Canva) | 1 d | open |
+| C7 | Companion full-size art (G6) + avatar replacement | Phase 3 visuals | — | Marwan (Canva) | 1 d | done | **2026-10-15** · `tools/import_companion_art.py` |
 | C8 | Brand confirmation D11 + theme/RTL addendum | Phase 4 theme | C1 | Marketing + L2S | 2 d | open |
 | C9 | 08 test-environment captures + DPO review | 08 Phase 3/4 | C1 | IT + DPO | 2 d | open |
 | C10 | Phase 3 media production, modules 03 + 07 (build order 1–2) | 03/07 build | C2–C9 as relevant | L2S | 4 d | open |
@@ -133,13 +133,22 @@ record provider + ids in [`narration-and-lexicon.md`](narration-and-lexicon.md) 
 
 **Exit gate:** ids present in all eight scripts; samples approved in writing; exports regenerated.
 
-## C7 — Companion full-size art (G6)
+## C7 — Companion full-size art (G6) ✅ done 2026-10-15
 
 **Goal:** the 18 full-size transparent PNGs in `characters/assets/`, replacing the interim crops.
 The Canva media ids are tabulated in [`asset-template-audit.md`](asset-template-audit.md) §2.
 
-**Exit gate:** `audit_assets.py` reports 18/18 full-size files and no interim placeholder in use;
-visual boards show the full-size poses.
+**Delivered:** the owner uploaded the 18 full-size originals (1088 × 1456 poses, 1264 × 1264 avatar
+headshots) on 2026-10-15; each was verified pixel-wise against the approved preview before renaming.
+`tools/import_companion_art.py` keyed the white studio backgrounds to transparency into
+`characters/assets/<asset id>.png` (originals in `characters/assets/originals/`), replaced the
+interim avatar crops with full-size `-success` / `-concern` head crops for **both** companions
+(incl. new `char-omar-avatar-concern.png` for L4 feedback), and `audit_assets.py` reports 18/18
+full-size files with no interim placeholder in use.
+
+**Exit gate:** met for the repository side. Remaining housekeeping: draft visual boards and
+generators can keep using `previews/` thumbnails; `build_course_spec.py` already prefers
+`characters/assets/` for Phase 4 builds.
 
 ## C8 — Brand confirmation (D11) and theme/RTL
 

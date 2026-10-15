@@ -5,8 +5,9 @@ Answers "what do we actually have, and what is still missing?" with evidence ins
 
 * **Brand** — the supplied client logo lock-ups, title background, watermark, value tiles, the
   eight screen mockups against layouts L1–L6, plus pixel dimensions and alpha channels.
-* **Companions** — approved previews vs the interim avatar crops vs the full-size Canva PNGs that
-  are still outstanding (programme gap G6), with the Canva media id for each.
+* **Companions** — approved previews vs the full-size production PNGs in `characters/assets/`
+  (programme gap G6, closed 2026-10-15) vs the derived expression avatar crops, with the Canva
+  media id for each pose.
 * **Module assets** — every asset id referenced by a storyboard, visual plan, visual board or
   asset register, checked against the files on disk (missing files and orphans).
 * **Documents** — the client logo is present on every visual board, in every Word rendering and on
@@ -35,7 +36,7 @@ PLANS = ROOT / "elearning-course" / "scorm-plans"
 BRAND = PLANS / "00_program" / "brand"
 CHARS = PLANS / "00_program" / "characters"
 REVIEW = PLANS / "client-review"
-TODAY = "2026-10-14"
+TODAY = "2026-10-15"
 
 BRAND_ASSETS = [
     "assets/logo-horizontal-navy.png", "assets/logo-horizontal-white.png",
@@ -56,8 +57,9 @@ MOCKUPS = {
     "screen-mockups/08-companion-tip.png": "L4 tip card (companion)",
 }
 POSES = ["master", "welcome", "explaining", "tip", "thinking", "concern", "success", "listening", "avatar-neutral"]
-INTERIM_AVATARS = ["char-noor-avatar-neutral.png", "char-omar-avatar-neutral.png",
-                   "char-noor-avatar-happy.png", "char-noor-avatar-concern.png", "char-omar-avatar-happy.png"]
+# expression avatars derived from the full-size -success / -concern poses by tools/import_companion_art.py
+AVATAR_CROPS = ["char-noor-avatar-happy.png", "char-noor-avatar-concern.png",
+                "char-omar-avatar-happy.png", "char-omar-avatar-concern.png"]
 CARD_SECTIONS = ["#### 1. Purpose", "#### 2. On-screen content", "#### 3. Visual design",
                  "#### 4. Interaction and scoring", "#### 5. Narration", "#### 6. Accessibility",
                  "#### 7. Build fields (edumints)", "#### 8. Notes for SME and developer"]
@@ -253,14 +255,15 @@ def main() -> None:
     previews = sorted(p.name for p in (CHARS / "previews").glob("*.jpg"))
     expected_previews = sorted(f"char-{who}-{pose}.jpg" for who in ("noor", "omar") for pose in POSES)
     assets = sorted(p.name for p in (CHARS / "assets").glob("*.png")) if (CHARS / "assets").is_dir() else []
+    expected_full = sorted(f"char-{who}-{pose}.png" for who in ("noor", "omar") for pose in POSES)
     audit["companions"] = {
         "previews_present": previews,
         "previews_missing": [p for p in expected_previews if p not in previews],
-        "interim_avatars": assets,
-        "interim_missing": [a for a in INTERIM_AVATARS if a not in assets],
-        "full_size_outstanding": sorted(
-            f"{asset.replace('<id>', who)}.png (Canva {ids[asset][who]})"
-            for asset in ids for who in ("noor", "omar")),
+        "assets_present": assets,
+        "full_size_present": [a for a in expected_full if a in assets],
+        "full_size_missing": [a for a in expected_full if a not in assets],
+        "avatar_crops_present": [a for a in AVATAR_CROPS if a in assets],
+        "avatar_crops_missing": [a for a in AVATAR_CROPS if a not in assets],
         "canva_ids": ids,
     }
 
@@ -294,11 +297,18 @@ def main() -> None:
     md += ["", f"Layouts with a mockup: {', '.join(audit['brand']['layouts_covered'])}.", ""]
 
     comp = audit["companions"]
+    full_total = len(comp["full_size_present"]) + len(comp["full_size_missing"])
+    crop_total = len(comp["avatar_crops_present"]) + len(comp["avatar_crops_missing"])
     md += ["## 2. Companions Noor and Dr. Omar", "",
            f"- Approved previews in `characters/previews/`: **{len(comp['previews_present'])} of {len(comp['previews_missing']) + len(comp['previews_present'])}**"
            + (f" — missing: {', '.join(comp['previews_missing'])}" if comp["previews_missing"] else " (complete)."),
-           f"- Interim transparent PNGs in `characters/assets/`: **{len(comp['interim_avatars'])}** ({', '.join('`' + a + '`' for a in comp['interim_avatars'])}).",
-           f"- **Full-size production PNGs still outstanding: {len(comp['full_size_outstanding'])}** (programme gap G6). Download each from Canva as transparent PNG:",
+           f"- Full-size production PNGs in `characters/assets/`: **{len(comp['full_size_present'])} of {full_total}**"
+           + (f" — missing: {', '.join(comp['full_size_missing'])}" if comp["full_size_missing"]
+              else " (programme gap G6 closed 2026-10-15; untouched originals in `characters/assets/originals/`)."),
+           f"- Derived expression avatar crops in `characters/assets/`: **{len(comp['avatar_crops_present'])} of {crop_total}**"
+           + (f" — missing: {', '.join(comp['avatar_crops_missing'])}" if comp["avatar_crops_missing"]
+              else " (head-and-shoulders crops of the full-size `-success` / `-concern` poses)."),
+           "- Canva media ids (provenance; open `https://www.canva.com/M/<media id>`):",
            "", "| Asset | Noor media id | Dr. Omar media id |", "|---|---|---|"]
     for asset, ids_row in comp["canva_ids"].items():
         md.append(f"| `{asset.replace('<id>', '<noor|omar>')}` | `{ids_row['noor']}` | `{ids_row['omar']}` |")
