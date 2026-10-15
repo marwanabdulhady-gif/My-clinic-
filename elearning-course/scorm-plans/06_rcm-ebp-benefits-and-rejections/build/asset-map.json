@@ -3,8 +3,8 @@
   "assets": {
     "char-omar-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-welcome.png",
+      "interim": false
     },
     "rcmb-img-benefit-icons": {
       "status": "file",
@@ -13,13 +13,13 @@
     },
     "char-omar-explaining": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-explaining.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
     },
     "char-omar-avatar-neutral": {
       "status": "file",
       "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
-      "interim": true
+      "interim": false
     },
     "brand-logo-horizontal-navy": {
       "status": "file",

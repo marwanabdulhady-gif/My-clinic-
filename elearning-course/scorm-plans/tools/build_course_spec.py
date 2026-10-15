@@ -145,6 +145,24 @@ def explore_hotspot_css(screens: list[dict], assets: dict[str, dict]) -> str:
     return "\n".join(rules)
 
 
+def web_companion(path: Path) -> str:
+    """Full-size companion art (1088x1456 poses, 1264x1264 avatars) downscaled for the player.
+
+    The course shows poses at ~170-330 px and avatars at 40-56 px, so 2x those sizes is
+    enough; transparency is kept. Falls back to the original file if Pillow is missing.
+    """
+    try:
+        from io import BytesIO
+        from PIL import Image
+    except ImportError:
+        return data_uri(path)
+    im = Image.open(path)
+    im.thumbnail((256, 256) if "avatar" in path.stem else (520, 700), Image.LANCZOS)
+    buf = BytesIO()
+    im.save(buf, "PNG", optimize=True)
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
 def data_uri(path: Path) -> str:
     return f"data:{MIME[path.suffix.lower()]};base64," + base64.b64encode(path.read_bytes()).decode()
 
@@ -180,7 +198,8 @@ def build(module: str) -> dict:
             return aid
         f = find_asset(aid, mdir)
         if f is not None:
-            assets[aid] = {"id": aid, "filename": f"{aid}{f.suffix.lower()}", "source": data_uri(f)}
+            src = web_companion(f) if aid.startswith("char-") else data_uri(f)
+            assets[aid] = {"id": aid, "filename": f"{aid}{f.suffix.lower()}", "source": src}
             report[aid] = {"status": "file", "path": str(f.relative_to(PLANS)),
                            "interim": "previews" in f.parts}
         else:

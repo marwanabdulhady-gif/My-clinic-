@@ -13,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4YTDX9J4SBS6WNZ86XDTVRD",
-    "job_id": "job_01M4YTDXA7M19FYTJ712ZY6YYR",
+    "project_id": "proj_01M4Z58HFKNEF39HVZQB5K4G71",
+    "job_id": "job_01M4Z58HGPKS897NFJHNPZRVDM",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/qmK2S6sfi9UReLuSxUgMc0biqNl1f6Jg",
+    "download_url": "http://localhost/scorm/files/nqdCXlw36QuCiiufJgpp2JP6hJJ8-aLE",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YTDX9J4SBS6WNZ86XDTVRD",
+    "project_id": "proj_01M4Z58HFKNEF39HVZQB5K4G71",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -56,7 +56,7 @@
   },
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 557563
+    "bytes": 805665
   },
   "preview": "preview.html"
 }

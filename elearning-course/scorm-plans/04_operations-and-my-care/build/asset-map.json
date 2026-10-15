@@ -3,13 +3,13 @@
   "assets": {
     "char-omar-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-welcome.png",
+      "interim": false
     },
     "char-omar-explaining": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-explaining.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
     },
     "ops-img-journey": {
       "status": "file",
@@ -50,7 +50,7 @@
     "char-omar-avatar-neutral": {
       "status": "file",
       "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
-      "interim": true
+      "interim": false
     },
     "brand-logo-horizontal-navy": {
       "status": "file",

@@ -13,18 +13,18 @@
     },
     "char-omar-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-welcome.png",
+      "interim": false
     },
     "char-noor-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-noor-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-noor-welcome.png",
+      "interim": false
     },
     "char-omar-explaining": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-explaining.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
     },
     "brand-value-tile-collaborative-burgundy": {
       "status": "file",
@@ -128,7 +128,7 @@
     "char-noor-avatar-neutral": {
       "status": "file",
       "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
-      "interim": true
+      "interim": false
     },
     "hr-img-help-icons": {
       "status": "file",

@@ -2,7 +2,7 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> Status as at **2026-10-14**. Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
+> Status as at **2026-10-15** (draft SCORM builds for all eight packages added; full-size companion art imported). Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
 
 ---
 
@@ -12,14 +12,14 @@
 
 | Module | Ph 0 source lock | Ph 1 action map | Ph 2a screen list | Ph 2b storyboard cards | Narration script + visual plan | Visual board + asset register | Companions in storyboard | Planning lint | Ph 3 voice and media | Ph 4 build | Ph 5 QA / LMS |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 01 FMS | 🔒 B1–B10, D1 D2 D11 D14 | ✅ | ✅ 54 | ✅ v0.2 · 54 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 02 Safety Lab | 🔒 B1–B9, D1 D2 D11 D12 | ✅ | ✅ 26 | ✅ v0.2 · 26 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 03 Welcome On Board | 🔒 B1–B14, D3 D5 D8 | ✅ | ✅ 36 | ✅ v0.2 · 36 cards | ✅ | ✅ | ✅ Omar lead, Noor co-host | ✅ clean | 🟡 old single-voice reference clips only | ⬜ | ⬜ |
-| 04 Who Does What | 🔒 B1–B7, D3 D5 D11 | ✅ | ✅ 13 | ✅ v0.2 · 13 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 05 RCM Part A | 🔒 B1–B10, D4 D11 | ✅ | ✅ 21 | ✅ v0.2 · 21 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 06 RCM Part B | 🔒 B1–B9, D4 D5 D11 | ✅ | ✅ 15 | ✅ v0.2 · 15 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 07 Clinical Governance | 🔒 B1–B11, D7–D10, NEW-01 | ✅ | ✅ 22 (+1 optional) | ✅ v0.2 · 22 cards | ✅ | ✅ (+3 native SVGs) | ✅ Noor lead, Omar co-host | ✅ clean | ⬜ | ⬜ | ⬜ |
-| 08 EHR | 🔒 B1–B10, D6 D11 | ✅ | ✅ 20 (+1 optional) | ✅ v0.2 · 20 cards | ✅ | ✅ | ✅ | ✅ clean | 🔒 test-patient captures | ⬜ | ⬜ |
+| 01 FMS | 🔒 B1–B10, D1 D2 D11 D14 | ✅ | ✅ 54 | ✅ v0.2 · 54 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [2.3 MB](draft-builds.md) | ⬜ LMS test |
+| 02 Safety Lab | 🔒 B1–B9, D1 D2 D11 D12 | ✅ | ✅ 26 | ✅ v0.2 · 26 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [3.2 MB](draft-builds.md) | ⬜ LMS test |
+| 03 Welcome On Board | 🔒 B1–B14, D3 D5 D8 | ✅ | ✅ 36 | ✅ v0.2 · 36 cards | ✅ | ✅ | ✅ Omar lead, Noor co-host | ✅ clean | 🟡 old single-voice reference clips only | 🟡 v0.1-draft built · 0 lint errors · [1.2 MB](draft-builds.md) | ⬜ LMS test |
+| 04 Who Does What | 🔒 B1–B7, D3 D5 D11 | ✅ | ✅ 13 | ✅ v0.2 · 13 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [2.5 MB](draft-builds.md) | ⬜ LMS test |
+| 05 RCM Part A | 🔒 B1–B10, D4 D11 | ✅ | ✅ 21 | ✅ v0.2 · 21 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [0.5 MB](draft-builds.md) | ⬜ LMS test |
+| 06 RCM Part B | 🔒 B1–B9, D4 D5 D11 | ✅ | ✅ 15 | ✅ v0.2 · 15 cards | ✅ | ✅ | ✅ | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [0.7 MB](draft-builds.md) | ⬜ LMS test |
+| 07 Clinical Governance | 🔒 B1–B11, D7–D10, NEW-01 | ✅ | ✅ 22 (+1 optional) | ✅ v0.2 · 22 cards | ✅ | ✅ (+3 native SVGs) | ✅ Noor lead, Omar co-host | ✅ clean | ⬜ | 🟡 v0.1-draft built · 0 lint errors · [0.8 MB](draft-builds.md) | ⬜ LMS test |
+| 08 EHR | 🔒 B1–B10, D6 D11 | ✅ | ✅ 20 (+1 optional) | ✅ v0.2 · 20 cards | ✅ | ✅ | ✅ | ✅ clean | 🔒 test-patient captures | 🟡 v0.1-draft built · 0 lint errors · [0.7 MB](draft-builds.md) | ⬜ LMS test |
 
 **Programme level**
 
@@ -35,9 +35,10 @@
 | Cross-module decisions D1–D14 | 🔒 all 14 open |
 | Voices (D10), LMS + SCORM version (D9) | 🔒 open |
 | Pre-kickoff current-content slide drafting | 🟡 [Batch 1: 03/07, 58 slides / 61 actual browser captures](draft-slide-production.md); required plans/templates and mockup geometry; later draft batches queued |
-| Any SCORM project, build, package or LMS test | ⬜ none yet |
+| SCORM packages | 🟡 **v0.1-draft for all eight** (2026-10-15): real edumints compiler, `lint_course` 0 errors, `validate_package` ok (structural; XSD offline). Pending decisions shown as `⚠ Draft — pending`, unmade media as PENDING cards, captions only. [`draft-builds.md`](draft-builds.md) |
+| LMS / SCORM Cloud test | ⬜ not yet (D9 open) |
 
-**In one line:** design is complete to storyboard level for all eight packages (207 core screens, 95 scored). Production cannot move to final voice/media or SCORM build until My Clinic closes the Phase 0 items and D9–D11. Pre-kickoff browser drafts use current content with those dependencies visibly pending; they do not close the production gates.
+**In one line:** all eight packages exist as compiled, validated **draft SCORM packages** (207 core screens, 95 scored) with the full-size companion art. They cannot become release builds until My Clinic closes the Phase 0 items and D9–D11, the narration is rewritten and voiced, and the pending media is produced. Pre-kickoff browser drafts use current content with those dependencies visibly pending; they do not close the production gates.
 
 ---
 
@@ -55,6 +56,13 @@
 | G8 | **No repeatable evidence for assets, templates and logo placement.** Reviews relied on memory of what exists. | `00_program/` | Added `tools/audit_assets.py` → [`asset-template-audit.md`](asset-template-audit.md) + `asset-audit.json`: brand pixels/alpha, mockups vs L1–L6, companion coverage, referenced-vs-on-disk module assets, SVG validity, card template completeness, logo in every board/Word doc/Markdown cover, internal link resolution, TTS label leaks. Clean on 2026-10-14. | Done (rerun after changes) |
 | G9 | **Planning lint could not be rerun locally** (the edumints MCP server is unreachable here), so `lint-report.json` files went stale after edits. | all `storyboard/lint-report.json` | Added `tools/lint_planning.py`, a deterministic local port of `lint_visual_plan` / `lint_narration_script` (upstream rev `4bbf4591`); all eight reports regenerated and clean. Each report says it is a local port and that the server lint must be rerun before Phase 4. | Done (rerun after changes) |
 | G10 | **Planning-reference fix implemented; final media still pending.** Restored Phase 3 assets to the 01/02/08 cards, visual plans, asset registers and planned structures. Full **6-scene** Code Red drill and **31 unique EHR shots** now have individual placements, briefs, draft alt text and production gates. | `01_…/storyboard/`, `02_…/storyboard/`, `08_…/storyboard/` | See [`g10-visual-restoration.md`](g10-visual-restoration.md) and the drill/capture manifests. Safety/EHR/DPO approval, illustration/photo production and captures are still required. Corrected inventory remains 21–22 new stills, 4 client photos, 5 + 31 screenshots, 0 required videos. | Storyboard agent / Safety / IT / DPO |
+| G11 | **Generic filler narration** on many question and simulation screens in the six generated packs (01, 02, 04, 05, 06, 08), e.g. "The next choice asks you to apply the rule…". It is now visible as captions in the draft packages. | `<module>/storyboard/narration-script.json` | Rewrite per screen (lead companion voice, situation set-up, never the answer), regenerate audio export, rebuild. Must be done before any voice work (D10). | Storyboard agent + L&D |
+| G12 | **Explore hotspots broken in the edumints player** (`bindHotspot` returns before positioning regions in explore mode). Affects every clickable picture. | edumints-scorm-mcp `components/templates.py` | Worked around here (`build_course_spec.py` writes region positions as CSS). Fix upstream and remove the workaround. | L2S (edumints repo) |
+| G13 | **Content gap `hs2-031`**: scored question on evacuation tools that no earlier screen teaches (`unbound_scored_question`). | `02_…` storyboard | Add a short teaching screen before it or move the question after the drill debrief; Safety SME to confirm. | Storyboard agent + Safety SME |
+| G14 | **Two SCORM build routes.** `build_scorm_packages.py` (03/07 pilot, no lint, no skin) duplicates the canonical `build_course_spec.py` + `edumints_build.py`. | `tools/` | Marked superseded in `scorm-package-builds.md`; use only the canonical route. | Done (doc) |
+| G15 | **XSD validation not run** (schemas unreachable offline). | build environment | Run `validate_package` once with the IMS/ADL schemas (`SCORM_SCHEMA_DIR`), then SCORM Cloud. | L2S |
+| G16 | **Schema limits** recorded in `screens.json` notes: no per-card feedback on drag/sort, no per-choice companion reaction, no media on mcq/matching/escape-room, one hint ladder per game. | edumints schema | Accept for v1.0 or request schema additions upstream; SMEs see the workaround wording at review. | L2S |
+| G17 | **NFPA 704 diagrams were drawn wrong** (rotated quadrants, numbers on the wrong colours) in `hs1-img-nfpa-blank`, `hs1-img-nfpa-301w`, `hs2-img-nfpa-230`. | 01/02 storyboard assets | **Fixed** 2026-10-15: redrawn to the standard layout; the blank no longer prints the answers. | Done |
 
 ---
 
@@ -120,7 +128,9 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 | 7 | ~~Download companion PNGs (G6)~~ ✅ done 2026-10-15 (`tools/import_companion_art.py`); record and approve two 30-second voice samples | Marwan / course owner | Phase 3 |
 | 8 | Module 08: test environment, test patient, 2-hour capture session, DPO review | IT + DPO | 08 build |
 | 9 | Phase 3: produce narration audio (normalised), final images, captions; rerun `lint_narration_script` and `lint_authoring_plan(stage="planning")` | L2S | Phase 4 |
-| 10 | Phase 4: `build_from_spec` per module following each `scorm-structure.md`; `lint_course`; preview | L2S | Phase 5 |
+| 9b | Rewrite the generic narration (G11) and fix `hs2-031` (G13) | Storyboard agent | voice work, Phase 2 sign-off |
+| 10 | Phase 4: ~~draft builds~~ ✅ v0.1-draft for all eight (2026-10-15). Release builds: close decisions → update `screens.json`/storyboard → rerun `build_course_spec.py` + `edumints_build.py` → `draft_builds_report.py` | L2S | Phase 5 |
+| 10b | Smoke-test the draft zips in SCORM Cloud now (launch, resume, scoring, completion) to catch LMS issues before D9 closes | L2S | C18 |
 | 11 | Phase 5: `validate_package`, SCORM Cloud, LMS upload and test, pilot with 5–8 new starters, sign-off | L2S + My Clinic | launch |
 
 Order of builds once unblocked (matches the learning path and the proposal staggering): **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08**.

@@ -16,20 +16,22 @@ This remains **planning and draft review**, not a production course build. A [lo
 
 | # | Source Markdown | Plan folder | SCORM package (working title) | Audience | Seat time | Storyboard status |
 |---|---|---|---|---|---|---|
-| 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Storyboard v0.2 complete — SME/source-lock review |
-| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Storyboard v0.2 complete — SME/source-lock review |
-| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.2 complete (companions retrofitted) — SME review |
-| 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Storyboard v0.2 complete — SME/source-lock review |
-| 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Storyboard v0.2 complete — SME/source-lock review |
-| 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Storyboard v0.2 complete — SME/source-lock review |
-| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock review |
-| 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock/DPO review |
+| 01 | `md/01_health-and-safety-1_facility-management-and-safety.md` | [`01_health-and-safety-1/`](01_health-and-safety-1/) | Facility Management & Safety (9 sections) | All new staff | ~55 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 02 | `md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` | [`02_health-and-safety-2/`](02_health-and-safety-2/) | Safety in Practice: Hazard, Fire & Chemical Lab | All new staff (after 01) | ~33 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 03 | `md/03_hr-employee-induction.md` | [`03_hr-employee-induction/`](03_hr-employee-induction/) | Welcome On Board: My Clinic & HR Essentials | All new employees | ~45 min | Storyboard v0.2 complete (companions retrofitted) — SME review · **v0.1-draft SCORM built** |
+| 04 | `md/04_operations-and-my-care-structure.md` | [`04_operations-and-my-care/`](04_operations-and-my-care/) | Who Does What: Operations & My Care | Front-line, PX, clinical staff | ~15 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 05 | `md/05_rcm-billing-documentation-script.md` | [`05_rcm-documentation-and-coding/`](05_rcm-documentation-and-coding/) | RCM Part A: Documentation & ICD-10 Coding That Gets Approved | Physicians, dentists | ~25 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 06 | `md/06_rcm-billing-documentation-slides-2026.md` | [`06_rcm-ebp-benefits-and-rejections/`](06_rcm-ebp-benefits-and-rejections/) | RCM Part B: New EBP Benefits & Claim-Rejection Analysis | Physicians, RCM staff | ~20 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 07 | `md/07_video-quality-safety-and-risk-orientation.md` | [`07_quality-safety-and-risk/`](07_quality-safety-and-risk/) | Clinical Governance: Quality, Patient Safety & Risk | All clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock review · **v0.1-draft SCORM built** |
+| 08 | `md/08_video-it-ehr-consultation-walkthrough.md` | [`08_it-ehr-consultation/`](08_it-ehr-consultation/) | EHR Consultation Workflow: Guided Simulation | Physicians, clinical staff | ~25 min | Storyboard v0.2 complete — SME/source-lock/DPO review · **v0.1-draft SCORM built** |
 
 **Why 05 and 06 are two packages, not one.** Both files come from the same RCM session, but they carry different content: 05 (the script) teaches documentation and coding; 06 (the 2026 deck) adds the new EBP benefits and the rejection log. Splitting them avoids repeating the same screens and lets RCM staff take Part B alone.
 
 **Why 01 and 02 are two packages.** 01 is the full knowledge course (nine CBAHI/FMS plans). 02 overlaps on fire and chemicals, so it is planned as an **applied practice lab** (hazard spotting, fire drill game, spill triage, chemical-store escape room) that assumes 01 is done. No screen is copied from 01 into 02.
 
 **Status, gaps and next steps:** [`00_program/programme-status.md`](00_program/programme-status.md) (module × phase grid, proposal check, ordered next actions).
+
+**Draft SCORM packages (2026-10-15):** [`00_program/draft-builds.md`](00_program/draft-builds.md) — all eight compiled with the real edumints compiler (`lint_course` 0 errors, `validate_package` ok), zip + `preview.html` in each module's `build/`. Drafts, not release builds.
 
 **SCORM structure:** [`00_program/scorm-structure.md`](00_program/scorm-structure.md) (LMS curriculum, zip contents, manifest, outline → screen model, LMS data) and one generated `scorm-structure.md` in each module folder.
 

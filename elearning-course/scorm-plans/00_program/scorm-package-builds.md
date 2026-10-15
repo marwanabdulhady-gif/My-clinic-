@@ -1,5 +1,7 @@
 # SCORM package builds — draft for 03 + 07 (pilot)
 
+> **Superseded (2026-10-15).** The canonical build route is `tools/build_course_spec.py` + `tools/edumints_build.py`: all eight packages, brand skin, companions, the explore-hotspot fix and the `lint_course` gate, with results in [`draft-builds.md`](draft-builds.md). This file and `tools/build_scorm_packages.py` are kept as the record of the first 03/07 pilot only.
+
 **Date:** 2026-10-15  
 **Branch:** `arena/1ea38f88-my-clinic`  
 **Tool:** `tools/build_scorm_packages.py` (uses `core/project.py` + `core/packager.py` from `edumints-scorm-mcp` `4bbf459`)  

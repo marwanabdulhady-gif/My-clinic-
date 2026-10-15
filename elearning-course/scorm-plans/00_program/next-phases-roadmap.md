@@ -51,12 +51,15 @@ kick-off pack is the programme's live blocker count.
 | C11 | Phase 3 media production, modules 01 + 02 | 01/02 build | C2, C6, C7 | L2S | 4 d | open |
 | C12 | Phase 3 media production, modules 04–06 | 04–06 build | C3, C4, C6, C7 | L2S | 4 d | open |
 | C13 | Phase 3 media production, module 08 | 08 build | C9 | L2S | 3 d | open |
-| C14 | Phase 4 build + preview, modules 03 + 07 | 03/07 QA | C10 | L2S | 4 d | open |
-| C15 | Phase 4 build + preview, modules 01 + 02 | 01/02 QA | C11 | L2S | 5 d | open |
-| C16 | Phase 4 build + preview, modules 04–06 | 04–06 QA | C12 | L2S | 5 d | open |
-| C17 | Phase 4 build + preview, module 08 | 08 QA | C13 | L2S | 3 d | open |
+| C14 | Phase 4 build + preview, modules 03 + 07 | 03/07 QA | C10 | L2S | 4 d | open · **v0.1-draft built 2026-10-15** ([draft-builds](draft-builds.md)); release build waits on deps |
+| C15 | Phase 4 build + preview, modules 01 + 02 | 01/02 QA | C11 | L2S | 5 d | open · **v0.1-draft built 2026-10-15** ([draft-builds](draft-builds.md)); release build waits on deps |
+| C16 | Phase 4 build + preview, modules 04–06 | 04–06 QA | C12 | L2S | 5 d | open · **v0.1-draft built 2026-10-15** ([draft-builds](draft-builds.md)); release build waits on deps |
+| C17 | Phase 4 build + preview, module 08 | 08 QA | C13 | L2S | 3 d | open · **v0.1-draft built 2026-10-15** ([draft-builds](draft-builds.md)); release build waits on deps |
 | C18 | Phase 5 QA, LMS test, pilot (81 cases) | launch | C14–C17, D9 | L2S + My Clinic | 6 d | open |
 | C19 | Delivery pack: sources, admin guide, maintenance | final payment | C18 | L2S | 2 d | open |
+| C20 | Narration rewrite for the six generated packs (G11) + `hs2-031` teaching gap (G13) | C6 voice work, C15–C17 release | — | storyboard agent + L&D | 2 d | open |
+| C21 | Upstream edumints fix: explore-hotspot positioning (G12); then drop the CSS workaround | C14–C17 release | — | L2S (edumints repo) | 0.5 d | open |
+| C22 | Draft-package smoke test in SCORM Cloud (launch, resume, score, completion; 1.2 and 2004) + XSD validation (G15) | C18 | — | L2S | 1 d | open |
 
 Build order stays **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08** (learning path and proposal staggering).
 
@@ -177,6 +180,8 @@ images from the recorded AI prompts or supplied/consented photos, captions/WebVT
 has provenance; `asset-template-audit.md` shows no planned-not-built asset left for the module.
 
 ## C14–C17 — Phase 4 build (per module group)
+
+> **Draft builds done (2026-10-15).** All eight packages are compiled as `v0.1-draft` with the canonical route `tools/build_course_spec.py` → `tools/edumints_build.py` → `tools/draft_builds_report.py` (see [`build-pipeline.md`](build-pipeline.md) §6 and [`draft-builds.md`](draft-builds.md)). A release build for a group is the same three commands after its media chunk (C10–C13) and its SME chunk (C2–C5) close; exit gate: `lint_course` 0 errors with every remaining warning justified, `validate_package` ok **with XSD**, preview reviewed, no `⚠ Draft — pending` left.
 
 **C14 preparatory implementation started:** [local branded review tooling and scenario playback](c14-implementation.md).
 This is a draft-preview slice, not a completed Phase 4 build; C10 and the production exit gate remain blocked.

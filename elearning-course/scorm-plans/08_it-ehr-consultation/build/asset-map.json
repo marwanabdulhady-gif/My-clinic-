@@ -3,13 +3,13 @@
   "assets": {
     "char-omar-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-welcome.png",
+      "interim": false
     },
     "char-omar-explaining": {
       "status": "file",
-      "path": "00_program/characters/previews/char-omar-explaining.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
     },
     "ehr-shot-list": {
       "status": "PENDING",
@@ -114,7 +114,7 @@
     "char-noor-avatar-neutral": {
       "status": "file",
       "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
-      "interim": true
+      "interim": false
     },
     "ehr-shot-ref-1": {
       "status": "PENDING",
