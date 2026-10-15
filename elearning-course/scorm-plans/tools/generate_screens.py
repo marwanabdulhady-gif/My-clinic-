@@ -281,13 +281,13 @@ def generate(modules, output, asset_map=None, phase_id=None):
         dest = 'assets/review-' + path.name
         shutil.copyfile(path, output / dest)
         preview_assets[path.stem] = dest
-        asset_provenance[path.stem] = {'status': 'preview-resolution; full-size G6 pending',
+        asset_provenance[path.stem] = {'status': 'preview-resolution review art; full-size PNG in characters/assets/',
                                      'production_approved': False, **fingerprint(path)}
     for path in sorted((character_root / 'assets').glob('char-*-avatar-*.png')):
         dest = 'assets/review-' + path.name
         shutil.copyfile(path, output / dest)
         preview_assets[path.stem] = dest
-        asset_provenance[path.stem] = {'status': 'interim avatar crop; G6 pending',
+        asset_provenance[path.stem] = {'status': 'full-size avatar PNG from characters/assets/; pending visual approval',
                                      'production_approved': False, **fingerprint(path)}
     # Fonts are licensed, local and checksum-verified. English only; no Arabic translation is inferred.
     font_root = BRAND / 'fonts'

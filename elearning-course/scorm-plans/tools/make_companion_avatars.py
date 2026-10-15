@@ -8,8 +8,10 @@ their approved previews.
 
 These are **interim, low-resolution** crops from the 149×199 preview JPGs: good enough to show
 avatar placement on storyboards and visual boards at 48–64 px. They are not the production files.
-Production still needs the full-size transparent PNGs downloaded from Canva (programme gap G6),
-which this tool cannot reach.
+**Superseded 2026-10-15:** the full-size originals have been imported and
+`tools/import_companion_art.py` now writes the production PNGs (including full-size
+`-avatar-happy` / `-avatar-concern` crops for both companions) into `characters/assets/`.
+Keep this tool only for rebuilding the preview-based interim crops.
 
 Usage:
     python3 elearning-course/scorm-plans/tools/make_companion_avatars.py

@@ -8,7 +8,7 @@ This file is the **character bible**. It is mandatory for anyone (person or AI a
 
 ![Noor and Dr. Omar character sheet](character-sheet.png)
 
-*Character sheet: master + 7 poses + avatar for each companion, generated from the master as reference so face, outfit and style stay identical. Previews here are low resolution; the full-size originals (1088 × 1456 px) are in My Clinic's Canva account — media ids in §3.*
+*Character sheet: master + 7 poses + avatar for each companion, generated from the master as reference so face, outfit and style stay identical. Previews here are low resolution; the full-size production files (1088 × 1456 px poses, 1264 × 1264 px avatar headshots) are in [`assets/`](assets/) — imported 2026-10-15; Canva media ids in §3.*
 
 ---
 
@@ -72,7 +72,7 @@ Short, true-to-life moments the companions share once each, to make it safe for 
 
 ## 3. Asset list (program-wide, shared by all modules)
 
-**Status: masters and 7 poses + avatar per character are generated** (Canva AI, 14 Oct 2026). The full-size files live in My Clinic's Canva account; open each with `https://www.canva.com/M/<media id>` and download as **PNG with transparent background** (Canva Pro background remover) into `00_program/characters/assets/<asset id>.png`. Low-resolution previews are in [`previews/`](previews/). Provenance: `ai-generated` (Canva AI, prompts below), reviewed for consistency.
+**Status: complete — full-size art is in the repository.** Masters, 7 poses and avatars exist for both companions (Canva AI, 14 Oct 2026). The full-size originals were delivered on **2026-10-15** and imported by [`tools/import_companion_art.py`](../../tools/import_companion_art.py): production files are `00_program/characters/assets/<asset id>.png` with the white studio background keyed to transparency (border flood fill, so interior whites — coats, shirts, badges — stay opaque; the two reference-only `master` files keep their soft ground shadow). The untouched white-background originals are kept in [`assets/originals/`](assets/originals/). Low-resolution previews remain in [`previews/`](previews/). Provenance: `ai-generated` (Canva AI, prompts below), reviewed for consistency; the Canva media ids below stay for traceability (`https://www.canva.com/M/<media id>`).
 
 | Asset id | Noor — Canva media id | Dr. Omar — Canva media id | Use |
 |---|---|---|---|
@@ -85,21 +85,16 @@ Short, true-to-life moments the companions share once each, to make it safe for 
 | `char-<id>-success` | `MAHX-jiR90M` | `MAHX-llCU5M` | Thumbs up — correct choices, results, close |
 | `char-<id>-listening` | `MAHX-v3i0kY` | `MAHX-uifxtY` | Holding a tablet, attentive — polls, reflections |
 | `char-<id>-avatar-neutral` | `MAHX-n4HuyU` | `MAHX-nPHDkA` | Head and shoulders, square — crop to a circle for 48–64 px avatars |
-| `char-<id>-avatar-happy` / `-avatar-concern` | interim crop in `assets/` (see below) | interim crop in `assets/` (see below) | Crop from `-success` / `-concern`, or generate from the avatar with the pose prompt |
+| `char-<id>-avatar-happy` / `-avatar-concern` | crop of `MAHX-jiR90M` / `MAHX-hFE0aQ` | crop of `MAHX-llCU5M` / `MAHX-nCzJ70` | Head-and-shoulders crop of the full-size `-success` / `-concern` (see below) |
 
-**Interim avatar crops in this repository (2026-10-14).** `tools/make_companion_avatars.py`
-derives `assets/char-noor-avatar-happy.png`, `assets/char-noor-avatar-concern.png` and
-`assets/char-omar-avatar-happy.png` as head-and-shoulder crops of the approved `-success` /
-`-concern` previews, and copies the two approved neutral avatars to `assets/` as transparent PNGs.
-They are 87–200 px and are **placeholders for layout and review only**: production still uses the
-full-size Canva downloads below (1024 × 1024, transparent), rerun-free of any new likeness work.
+**Avatar PNGs in this repository (2026-10-15).** All avatar files in `assets/` are full size: `-avatar-neutral` is the delivered headshot (1264 × 1264), and `tools/import_companion_art.py` derives `-avatar-happy` and `-avatar-concern` as 640 × 640 head-and-shoulders crops of the full-size `-success` / `-concern` poses — for **both** companions, including `assets/char-omar-avatar-concern.png` so Dr. Omar can react to incorrect answers in L4 feedback banners. This replaced the interim 2026-10-14 preview crops and closes programme gap G6. (`tools/make_companion_avatars.py` is kept only for rebuilding those interim preview crops if ever needed.)
 | `char-duo-welcome` | — | — | Not needed as one image: place the two `-welcome` poses side by side (see mockup 07) |
 
 | | Noor | Dr. Omar |
 |---|---|---|
 | Preview | ![](previews/char-noor-welcome.jpg) | ![](previews/char-omar-welcome.jpg) |
 
-Sizes in the course: half-body 300–420 px tall; avatars 48–64 px. Export at 1088 × 1456 (poses) and 1024 × 1024 (avatars).
+Sizes in the course: half-body 300–420 px tall; avatars 48–64 px. Export sizes: 1088 × 1456 (poses) and 1264 × 1264 (avatar headshots, as delivered; the expression crops are 640 × 640).
 
 ### AI prompts actually used (Canva AI image generator)
 

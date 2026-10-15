@@ -69,7 +69,8 @@ only the generated directory is served, never the source-media repository.
   for production 16:9 delivery. Expandable details and alternate branches/states remain
   available in the interactive preview, not all simultaneously in a single PNG.
 - Existing companion preview JPGs and interim avatar PNGs are placed from Phase 3.
-  **They do not resolve the missing full-size production IDs or close G6.** Planned
+  The drafts still embed that review art; the full-size companion PNGs landed separately
+  (G6 closed 2026-10-15 in `characters/assets/`) and are picked up at the next rebuild. Planned
   scene/capture images remain explicit placeholders; no new art is generated or approved.
 - Licensed **Montserrat and Tajawal are bundled locally**, with upstream commit,
   checksums and both OFL texts in [`brand/fonts/`](brand/fonts/). This is an English draft,

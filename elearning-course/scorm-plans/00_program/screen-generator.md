@@ -112,8 +112,9 @@ production 16:9 pagination/density is a later reviewed pass.
   [`brand/fonts/`](brand/fonts/), including OFL texts and upstream provenance. Arabic
   font support does not approve an Arabic translation/RTL release; this draft is English.
 - **Companions:** existing review JPGs/interim avatar PNGs are separate `preview_assets`.
-  The Phase 3 placements now render; preview-resolution art **does not clear missing
-  full-size production IDs or G6**. No new character art is generated.
+  The Phase 3 placements now render. The full-size companion PNGs landed in
+  `characters/assets/` (G6 closed 2026-10-15); this generator still embeds the review art
+  until it is repointed at the next rebuild. No new character art is generated.
 - Only own `storyboard/assets/*.svg` diagrams are automatically copied. Missing scenes,
   consent-restricted portraits, software captures, audio and downloads stay pending.
   No patient-bearing videos/frames or identifiable billing data are imported.
@@ -203,7 +204,8 @@ approval, a full accessibility audit, SCORM/LMS validation, the 81-case delivery
 
 After kickoff, write decisions to the named Phase 0/cross-module files, update the
 approved cards/plans/worksheets together, regenerate and **recapture**. Production
-still needs source-lock/SME decisions, full-size/provenanced art, D10-approved voices,
+still needs source-lock/SME decisions, the remaining provenance captures and approvals,
+D10-approved voices,
 final audio/captions/cues, validated upstream schemas/interactions and D9 settings;
 then edumints lints/build, SCORM validation, actual-LMS resume/scoring tests and pilot.
 Nothing here changes commercial scope or authorises generated video.

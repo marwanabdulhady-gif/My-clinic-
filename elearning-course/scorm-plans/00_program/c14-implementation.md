@@ -23,8 +23,9 @@ execution baseline. They did not close client decisions or authorise final asset
   no fallback answer, target or retry policy is invented.
 - Pending clinical-policy wording is retained. The displayed outcome is not a learner
   pass, module score, client approval or an LMS report. Planned screen points remain untouched.
-- Missing media/full-size character art remains labelled. Existing preview-resolution
-  companions are now placed from Phase 3 tables without closing G6. No source-video
+- Missing media remains labelled. Existing preview-resolution companions are placed from
+  Phase 3 tables; the full-size companion art landed separately (G6 closed 2026-10-15,
+  `00_program/characters/assets/`). No source-video
   patient data is copied; no final voices or generated video are produced.
 - **Pre-kickoff drafting batch 1**: 58 current-content slides for 03/07, 61 actual browser
   captures and an eight-reference comparison gallery. Production worksheets/all six
@@ -59,7 +60,7 @@ full accessibility testing, an LMS upload/resume test or a pilot.
 | 03 adaptive practice `hr-045` | not implemented | upstream algorithm contract and approved rules |
 | 03 Oracle simulation `hr-061` | structured review only | approved test captures and target alignment |
 | 07 spatial interactions | structured review only | approved visuals and policy/matrix decisions |
-| Companion placement | draft placements implemented from Phase 3, using review art | C7 full-size artwork, visual approval |
+| Companion placement | draft placements implemented from Phase 3, using review art | visual approval (C7 full-size artwork landed 2026-10-15) |
 | Cue timing, final audio | not implemented | C6/D10 voices, C10 media |
 | edumints project/spec, theme and tracking | not started | C10 completion, relevant Phase 0 closures, D9 |
 | Server `lint_course` and preview | blocked | actual edumints build + reviewed media |
