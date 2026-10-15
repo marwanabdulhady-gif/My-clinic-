@@ -23,8 +23,8 @@
     "clean": true,
     "module_id": "MC05-rcm-documentation-coding",
     "wpm": 140,
-    "total_est_sec": 376.2,
-    "total_est_min": 6.3,
+    "total_est_sec": 138.1,
+    "total_est_min": 2.3,
     "screens": [
       {
         "screen_id": "rcma-000",
@@ -35,8 +35,8 @@
       {
         "screen_id": "rcma-001",
         "part": "omar",
-        "words": 70,
-        "est_sec": 30.0
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "rcma-002",
@@ -47,98 +47,98 @@
       {
         "screen_id": "rcma-010",
         "part": "omar",
-        "words": 81,
-        "est_sec": 34.7
+        "words": 8,
+        "est_sec": 3.4
       },
       {
         "screen_id": "rcma-011",
         "part": "noor",
-        "words": 58,
-        "est_sec": 24.9
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "rcma-012",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "rcma-013",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-020",
         "part": "omar",
-        "words": 79,
-        "est_sec": 33.9
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "rcma-021",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "rcma-022",
         "part": "omar",
-        "words": 89,
-        "est_sec": 38.1
+        "words": 17,
+        "est_sec": 7.3
       },
       {
         "screen_id": "rcma-023",
         "part": "omar",
-        "words": 25,
-        "est_sec": 10.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-030",
         "part": "omar",
-        "words": 84,
-        "est_sec": 36.0
+        "words": 13,
+        "est_sec": 5.6
       },
       {
         "screen_id": "rcma-031",
         "part": "omar",
-        "words": 31,
-        "est_sec": 13.3
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-032",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-033",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-040",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "rcma-041",
         "part": "omar",
-        "words": 73,
-        "est_sec": 31.3
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "rcma-042",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "rcma-050",
         "part": "omar-1",
-        "words": 25,
-        "est_sec": 10.7
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "rcma-050",
@@ -155,8 +155,8 @@
       {
         "screen_id": "rcma-091",
         "part": "omar",
-        "words": 58,
-        "est_sec": 24.9
+        "words": 36,
+        "est_sec": 15.4
       }
     ],
     "issues": []

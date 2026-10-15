@@ -1,6 +1,6 @@
 # My Clinic — client-review documents
 
-These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.
+These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were first exported on 2026-10-14 and refreshed on 2026-10-15 (C20 first pass: the generated filler narration was removed from the six generated packs and the narration-gap worklists were added). The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.
 
 Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.
 

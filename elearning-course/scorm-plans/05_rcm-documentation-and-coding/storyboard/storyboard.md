@@ -2,7 +2,7 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> **Review pack v0.2 · 2026-10-14.** This document completes the screen-card, narration, visual-plan,
+> **Review pack v0.2 · 2026-10-15.** This document completes the screen-card, narration, visual-plan,
 > asset-register and visual-review documentation for every core screen in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md). It is a review artefact, **not an approved
 > policy or production SCORM package**. Source-lock decisions are deliberately retained as `⚠ PENDING`.
@@ -22,7 +22,7 @@
 | Module prefix | `rcma-` |
 | Storyboard version | `v0.2` |
 | Author | Arena agent — production-documentation pass |
-| Date | 2026-10-14 |
+| Date | 2026-10-15 |
 | Status | `Draft — ready for SME review; blocked from production by open source-lock items` |
 | SME reviewer (role) | RCM lead (lead); Coding lead; Payer Relations; Medical Director |
 | Audience | Physicians and dentists |
@@ -30,11 +30,11 @@
 | SCORM / completion / pass mark | SCORM 1.2 · viewed_all_and_passed · pass 80% (80 / 100) |
 | Scored screens / total points | 10 / 100 (Phase 4 expectation: 10 / 100) |
 | Source file | `elearning-course/md/05_rcm-billing-documentation-script.md` |
-| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-14) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-15) |
 | Module colour | Collaborative burgundy #7C0041 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B10; program D4 and D11 |
-| Narration reconciliation | Detailed card scripts: 6.3 min; Phase 3 per-screen targets: 6.4 min; Phase 3 rough module estimate: ~8 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 2.3 min; Phase 3 per-screen targets: 6.4 min; Phase 3 rough module estimate: ~8 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. The difference is not padded with generated sentences (G11/C20): [`narration-gaps.md`](narration-gaps.md) lists the 16 screens that need authored prose. |
 
 ### Production guardrails
 
@@ -227,8 +227,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcma-img-reviewer` | diagram | rcma-img-reviewer: Generated native SVG. | own SVG | A reviewer sees a written note rather than the patient encounter. | No |
-| `rcma-img-reviewer` | diagram | rcma-img-reviewer: Minimal illustration: note on one side, reviewer with only the paper on the other | own SVG | "A reviewer sees only the written note." | No |
+| `rcma-img-reviewer` | diagram | rcma-img-reviewer: Generated native SVG. | own SVG, final content review required | A reviewer sees a written note rather than the patient encounter. | No |
 | `Approved program companion pose char-omar-explaining at L3 right column.` | illustration | Approved program companion pose char-omar-explaining at L3 right column. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -254,10 +253,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 70 words / ≈ 30 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -282,7 +281,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "rcma-001",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcma-img-reviewer> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -472,10 +472,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 81 words / ≈ 34.7 s at 140 wpm |
+| Word count / estimated seconds | 8 words / ≈ 3.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: What always goes in, what never should.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -557,9 +557,9 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcma-img-note-weak` | diagram | rcma-img-note-weak: Generated native SVG using fictional teaching text. | own SVG | Weak generic clinical note stating only that IV fluids were given. | No |
-| `rcma-img-note-strong` | diagram | rcma-img-note-strong: Generated native SVG using fictional teaching text. | own SVG | Stronger generic clinical note linking dehydration signs to IV fluids. | No |
-| `rcma-img-note-weak / -strong` | diagram | rcma-img-note-weak / -strong: Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text | own SVG | "Weak note: patient given IV fluids." / "Strong note: dehydration signs, IV fluids for stabilisation." | No |
+| `rcma-img-note-weak` | diagram | rcma-img-note-weak: Generated native SVG using fictional teaching text. | own SVG, final content review required | Weak generic clinical note stating only that IV fluids were given. | No |
+| `rcma-img-note-strong` | diagram | rcma-img-note-strong: Generated native SVG using fictional teaching text. | own SVG, final content review required | Stronger generic clinical note linking dehydration signs to IV fluids. | No |
+| `-strong` | diagram | -strong: Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | "Weak note: patient given IV fluids." / "Strong note: dehydration signs, IV fluids for stabilisation." | No |
 | `Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card.` | illustration | Approved program companion pose char-noor-avatar-neutral + tip card at L3 tip card. | own / official My Clinic asset | Noor companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -585,10 +585,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 58 words / ≈ 24.9 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> NOOR: Same patient, same fluids. One note gets paid.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -613,7 +613,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "rcma-011",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcma-img-note-weak> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <-strong> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -694,10 +695,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Put the steps in the order you would follow at work, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -805,10 +806,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -916,10 +917,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 79 words / ≈ 33.9 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.
+> OMAR: Coding is clinical translation. Specific codes get accepted.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1025,10 +1026,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Match each item to the person or step that owns it, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1136,10 +1137,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 89 words / ≈ 38.1 s at 140 wpm |
+| Word count / estimated seconds | 17 words / ≈ 7.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: Follow the example one step at a time, then identify why the next step makes sense.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1245,10 +1246,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 25 words / ≈ 10.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.
+> OMAR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1356,10 +1357,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 84 words / ≈ 36 s at 140 wpm |
+| Word count / estimated seconds | 13 words / ≈ 5.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
+> OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1466,10 +1467,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> OMAR: Play the situation through and decide, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1577,10 +1578,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1688,10 +1689,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1799,10 +1800,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Let's check your earlier guess. Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1910,10 +1911,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 73 words / ≈ 31.3 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
+> OMAR: Coverage changes often. Part B covers what's new.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2019,10 +2020,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2106,7 +2107,9 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcma-img-notes-1..3` | diagram | rcma-img-notes-1..3: Invented notes in HTML (real text) | own SVG | Fix the note visual. | No |
+| `rcma-img-notes-1` | diagram | rcma-img-notes-1: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | Editable on-screen diagram; equivalent text provided in HTML. | No |
+| `rcma-img-notes-2` | diagram | rcma-img-notes-2: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | Editable on-screen diagram; equivalent text provided in HTML. | No |
+| `rcma-img-notes-3` | diagram | rcma-img-notes-3: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | Editable on-screen diagram; equivalent text provided in HTML. | No |
 | `Approved program companion pose char-omar-avatar (host); char-noor-tip (hints) at L5.` | illustration | Approved program companion pose char-omar-avatar (host); char-noor-tip (hints) at L5. | own / official My Clinic asset | Omar + Noor companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -2132,10 +2135,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR / NOOR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 23 words / ≈ 9.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.
+> OMAR: Three notes, your pen. Play the round, then read the feedback.
 >
 > NOOR: That is the habit we want from every new colleague.
 
@@ -2164,7 +2167,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 25,
   "narration_script_id": "rcma-050",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcma-img-notes-1> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <rcma-img-notes-2> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <rcma-img-notes-3> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -2330,7 +2334,6 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcma-pdf-checklist` | illustration | rcma-pdf-checklist: One-page "Clear, strong, defensible" desk checklist | own SVG | List to keep visual. | No |
 | `Approved program companion pose char-omar-success at L6 right.` | illustration | Approved program companion pose char-omar-success at L6 right. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -2356,10 +2359,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | confident |
 | Target seconds | 25 |
-| Word count / estimated seconds | 58 words / ≈ 24.9 s at 140 wpm |
+| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.
+> OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2407,27 +2410,31 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `rcma-000` | `title_slide` | N | 0 | 8 | 28 | 12 | Draft |
-| 2 | `rcma-001` | `content_slide` | N | 0 | 17 | 70 | 30 | Draft |
+| 2 | `rcma-001` | `content_slide` | N | 0 | 17 | 16 | 7 | Draft |
 | 3 | `rcma-002` | `poll` | N | 0 | 15 | 19 | 8 | Draft |
-| 4 | `rcma-010` | `tabs` | N | 0 | 27 | 81 | 35 | Draft |
-| 5 | `rcma-011` | `image_compare` | N | 0 | 23 | 58 | 25 | Draft |
-| 6 | `rcma-012` | `sorting` | Y | 10 | 14 | 18 | 8 | Draft |
-| 7 | `rcma-013` | `mcq` | Y | 5 | 23 | 18 | 8 | Draft |
-| 8 | `rcma-020` | `content_slide` | N | 0 | 16 | 79 | 34 | Draft |
-| 9 | `rcma-021` | `matching` | Y | 10 | 34 | 18 | 8 | Draft |
-| 10 | `rcma-022` | `worked_example` | N | 0 | 34 | 89 | 38 | Draft |
-| 11 | `rcma-023` | `drag_drop` | Y | 10 | 32 | 25 | 11 | Draft |
-| 12 | `rcma-030` | `content_slide` | N | 0 | 18 | 84 | 36 | Draft |
-| 13 | `rcma-031` | `decision_scenario` | Y | 15 | 38 | 31 | 13 | Draft |
-| 14 | `rcma-032` | `mcq` | Y | 5 | 31 | 18 | 8 | Draft |
-| 15 | `rcma-033` | `true_false` | Y | 5 | 18 | 18 | 8 | Draft |
-| 16 | `rcma-040` | `drag_drop` | Y | 10 | 28 | 18 | 8 | Draft |
-| 17 | `rcma-041` | `content_slide` | N | 0 | 33 | 73 | 31 | Draft |
-| 18 | `rcma-042` | `mcq` | Y | 5 | 14 | 18 | 8 | Draft |
-| 19 | `rcma-050` | `game` | Y | 25 | 35 | 36 | 15 | Draft |
+| 4 | `rcma-010` | `tabs` | N | 0 | 27 | 8 | 3 | Draft |
+| 5 | `rcma-011` | `image_compare` | N | 0 | 23 | 9 | 4 | Draft |
+| 6 | `rcma-012` | `sorting` | Y | 10 | 14 | 16 | 7 | Draft |
+| 7 | `rcma-013` | `mcq` | Y | 5 | 23 | 11 | 5 | Draft |
+| 8 | `rcma-020` | `content_slide` | N | 0 | 16 | 9 | 4 | Draft |
+| 9 | `rcma-021` | `matching` | Y | 10 | 34 | 16 | 7 | Draft |
+| 10 | `rcma-022` | `worked_example` | N | 0 | 34 | 17 | 7 | Draft |
+| 11 | `rcma-023` | `drag_drop` | Y | 10 | 32 | 11 | 5 | Draft |
+| 12 | `rcma-030` | `content_slide` | N | 0 | 18 | 13 | 6 | Draft |
+| 13 | `rcma-031` | `decision_scenario` | Y | 15 | 38 | 11 | 5 | Draft |
+| 14 | `rcma-032` | `mcq` | Y | 5 | 31 | 11 | 5 | Draft |
+| 15 | `rcma-033` | `true_false` | Y | 5 | 18 | 11 | 5 | Draft |
+| 16 | `rcma-040` | `drag_drop` | Y | 10 | 28 | 16 | 7 | Draft |
+| 17 | `rcma-041` | `content_slide` | N | 0 | 33 | 9 | 4 | Draft |
+| 18 | `rcma-042` | `mcq` | Y | 5 | 14 | 11 | 5 | Draft |
+| 19 | `rcma-050` | `game` | Y | 25 | 35 | 23 | 10 | Draft |
 | 20 | `rcma-090` | `results_breakdown` | N | 0 | 5 | 21 | 9 | Draft |
-| 21 | `rcma-091` | `summary` | N | 0 | 32 | 58 | 25 | Draft |
-| | **Totals** | | **10** | **100** | | **878** | **376 ≈ 6.3 min** | Draft |
+| 21 | `rcma-091` | `summary` | N | 0 | 32 | 36 | 15 | Draft |
+| | **Totals** | | **10** | **100** | | **322** | **138 ≈ 2.3 min** | Draft |
+
+### Narration authoring gaps
+
+16 of 21 screens are below 70% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
 
 ### Asset list
 
@@ -2436,11 +2443,15 @@ lock items have written SME decisions.
 | `rcma-img-note-weak` | diagram | Generated file | own | Yes | Generated native SVG using fictional teaching text. |
 | `rcma-img-note-strong` | diagram | Generated file | own | Yes | Generated native SVG using fictional teaching text. |
 | `rcma-img-reviewer` | diagram | Generated file | own | Yes | Generated native SVG. |
-| `rcma-img-note-weak / -strong` | SVG note cards | rcma-011 | own | Yes | Planned |
+| `rcma-img-note-weak` | SVG note cards | rcma-011 | own | Yes | Planned |
+| `-strong` | SVG note cards | rcma-011 | own | Yes | Planned |
 | `rcma-img-reviewer` | SVG | rcma-001 | own | Yes | Planned |
-| `rcma-img-notes-1..3` | HTML | rcma-050 | own | n/a | Planned |
+| `rcma-img-notes-1` | HTML | rcma-050 | own | n/a | Planned |
+| `rcma-img-notes-2` | HTML | rcma-050 | own | n/a | Planned |
+| `rcma-img-notes-3` | HTML | rcma-050 | own | n/a | Planned |
 | `rcma-pdf-checklist` | PDF | rcma-091 | own | n/a | Planned |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
 
 ### Open questions for the SME
 

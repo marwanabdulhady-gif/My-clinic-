@@ -13,16 +13,14 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4Z58HFKNEF39HVZQB5K4G71",
-    "job_id": "job_01M4Z58HGPKS897NFJHNPZRVDM",
+    "project_id": "proj_01M4ZKJFYWXY1QGH99Z3SB66BW",
+    "job_id": "job_01M4ZKJFZTFC7ZMTRQZNY9VSXW",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/nqdCXlw36QuCiiufJgpp2JP6hJJ8-aLE",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
+    "download_url": "http://localhost/scorm/files/WSoqQhns-0bdP4AP_1wBG6t6-MECkgdO",
+    "warnings": []
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58HFKNEF39HVZQB5K4G71",
+    "project_id": "proj_01M4ZKJFYWXY1QGH99Z3SB66BW",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -46,17 +44,11 @@
   "validate_package": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
+    "warnings": []
   },
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 805665
+    "bytes": 805666
   },
   "preview": "preview.html"
 }

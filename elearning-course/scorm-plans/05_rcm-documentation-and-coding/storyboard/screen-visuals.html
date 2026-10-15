@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root{--navy:#003867;--ink:#1F2A37;--bg:#F4F7FA;--line:#D9E1E8;--muted:#5B6B7B;--accent:#7C0041;}
 *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif} header{background:var(--navy);color:#fff;padding:42px max(24px,5vw)}header img{width:188px;height:auto}header h1{font-size:32px;margin:20px 0 6px}header p{max-width:850px;color:#C0CED9;line-height:1.5}main{max-width:1160px;margin:28px auto;padding:0 24px}.notice{border-left:4px solid #9D3293;background:#fff;padding:16px 20px;border-radius:8px;margin-bottom:24px;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;align-items:start}.board{margin:0}.screen{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;padding:30px 40px;box-shadow:0 8px 24px rgba(0,56,103,.08)}.screen .logo{width:142px;height:auto;position:absolute;left:40px;top:20px;z-index:2}.header-rule{position:absolute;left:40px;right:40px;top:63px;height:2px;background:var(--navy)}.crumb{margin:55px 0 10px;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}.screen h2{font-size:clamp(18px,2.3vw,30px);line-height:1.15;color:var(--navy);margin:0 0 16px;max-width:70%}.keywords{font-size:clamp(12px,1.5vw,16px);line-height:1.45;max-width:60%;margin:0}.title-screen{background:linear-gradient(135deg,#003867,#3B6A97);padding:72px 48px;color:#fff}.title-screen .logo{left:48px;top:38px;width:192px}.title-screen h2{color:#fff;font-size:clamp(28px,4vw,44px);max-width:68%;margin-top:66px}.title-screen p{color:#C0CED9}.chip{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em}.watermark{position:absolute;right:-30px;bottom:-105px;font-size:270px;opacity:.08}.question .choice-row{position:absolute;left:40px;right:40px;bottom:40px;display:flex;gap:10px}.choice-row span{height:42px;flex:1;border:1px solid #D9E1E8;border-radius:10px;background:#fff}.scenario{background:#fff}.scenario .choice-row span:first-child{border:2px solid var(--accent)}.content-cards{display:flex;gap:10px;margin-top:24px;max-width:66%}.content-cards span{height:48px;flex:1;background:#fff;border:1px solid #D9E1E8;border-radius:10px}.companion{position:absolute;right:36px;bottom:30px;width:135px;border:1px solid #D9E1E8;background:#fff;border-radius:12px;padding:12px;color:var(--navy);font-size:11px;line-height:1.35}.companion span{color:var(--muted)}.progress{position:absolute;bottom:0;left:0;width:42%;height:5px;background:var(--accent)}.art{position:absolute;right:30px;bottom:30px;width:36%;height:48%;object-fit:cover;border-radius:10px;border:1px solid #D9E1E8;background:#fff}.art.diagram{object-fit:contain;padding:4px}.art-pair{position:absolute;right:30px;bottom:30px;width:40%;height:48%;display:flex;gap:8px;padding:5px;background:#fff;border:1px solid #D9E1E8;border-radius:10px}.art-pair img{min-width:0;width:50%;height:100%;object-fit:contain}.caption{font-size:12px;color:var(--muted);padding:9px 4px;line-height:1.4}code{color:#006E78;font-family:ui-monospace,monospace}@media(max-width:550px){.grid{grid-template-columns:1fr}.screen{padding:22px}.screen .logo{left:22px;top:16px;width:110px}.header-rule{left:22px;right:22px;top:52px}.screen h2{max-width:88%;margin-top:10px}.keywords{max-width:85%}.choice-row{left:22px!important;right:22px!important;bottom:22px!important}.companion{display:none}}
+.planned-visuals{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:16px;margin:6px 0 20px;font-size:12px;line-height:1.5}.planned-visuals h3{color:var(--navy);margin:0 0 10px;font-size:14px}.planned-visuals li{margin-bottom:16px}.planned-visuals p{margin:4px 0}.planned-visuals small{color:#8A5A00}
 </style></head><body>
 <header><img src="../../00_program/brand/assets/logo-horizontal-white.png" alt="My Clinic logo"><h1>Module 05 · screen visual review</h1><p>RCM Part A: Documentation &amp; ICD-10 Coding That Gets Approved · official client logo and palette applied to every reference screen.</p></header>
 <main><div class="notice"><strong>Review artefact, not a SCORM preview.</strong> These visual boards show layout, client-logo placement, screen hierarchy and the one-module-colour rule. Final content is governed by <code>storyboard.md</code>; screenshots, policy values and hotspot coordinates remain subject to the module’s source lock.</div><div class="grid"><article class="board title-board" id="rcma-000">
@@ -14,80 +15,100 @@
 <article class="board" id="rcma-001">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · A — Why it matters</p><h2>The core idea</h2><p class="keywords">&quot;The payer doesn&#x27;t see your patient. The payer sees your note.&quot; · Clinical decision + documentation + coding = optimised payment</p><img class="art diagram" src="assets/rcma-img-reviewer.svg" alt="A reviewer sees a written note rather than the patient encounter."><aside class="companion"><b>Omar</b><br><span>char-omar-explaining</span></aside><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-001</code> · content_slide · visual asset: rcma-img-reviewer · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-002">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · A — Why it matters</p><h2>Productive failure</h2><p class="keywords">&quot;What do you think is the #1 cause of rejections at My Clinic?&quot; (4 causes)</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-002</code> · poll · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-010">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · B — Documentation strategy</p><h2>Always / Avoid</h2><p class="keywords">Always: chief complaint &amp; HPI · relevant findings · link symptoms to the working diagnosis · labs/imaging when needed · Avoid: vague notes · diagnosis without support · …</p><div class="content-cards"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-010</code> · tabs · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-011">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · B — Documentation strategy</p><h2>Weak vs strong</h2><p class="keywords">Before: &quot;Patient given IV fluids.&quot; · After: &quot;Dehydration signs (HR 112, dry mucosa) — IV fluids started for stabilisation.&quot; Rendered as two note cards (SVG)</p><div class="art-pair"><img src="assets/rcma-img-note-weak.svg" alt="Weak generic clinical note stating only that IV fluids were given."><img src="assets/rcma-img-note-strong.svg" alt="Stronger generic clinical note linking dehydration signs to IV fluids."></div><aside class="companion"><b>Noor</b><br><span>char-noor-avatar-neutral + tip card</span></aside><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-011</code> · image_compare · visual asset: rcma-img-note-weak, rcma-img-note-strong · screen visual reference only · inspect final responsive build before approval</div>
+<section class="planned-visuals"><h3>Planned visuals — not generated / captured</h3><ol><li><b>Screen visual; production placement reviewed by the SME.</b> · <code>-strong</code><p>Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text</p><p>Draft alt: &quot;Weak note: patient given IV fluids.&quot; / &quot;Strong note: dehydration signs, IV fluids for stabilisation.&quot;</p><small>PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.</small></li></ol></section>
 </article>
 <article class="board" id="rcma-012">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · B — Documentation strategy</p><h2>The full clinical picture</h2><p class="keywords">Order: Chief complaint → HPI → relevant past history → clinical findings → assessment → plan with duration &amp; follow-up</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-012</code> · sorting · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-013">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · B — Documentation strategy</p><h2>Medical necessity</h2><p class="keywords">&quot;Which note best justifies a CBC?&quot; options: &quot;Routine CBC&quot; / &quot;Fatigue&quot; / &quot;Fatigue for 6 weeks, pallor, menorrhagia — rule out anaemia&quot; ✔ / &quot;Patient requested blood test&quot;</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-013</code> · mcq · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-020">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C — ICD-10 coding</p><h2>Coding is clinical translation</h2><p class="keywords">Primary = main condition treated · Secondary = complexity · Specific code = higher acceptance · #1 rejection cause: non-specific symptom coding</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-020</code> · content_slide · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-021">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · C — ICD-10 coding</p><h2>Symptom → supported diagnosis</h2><p class="keywords">Presentations ↔ codes (final codes per B4): &quot;Vomiting + diarrhoea, 2 days, dehydration&quot; ↔ gastroenteritis code · &quot;Sore throat, fever, tonsillar exudate&quot; ↔ J03 Acute tonsillitis · &quot;Headache …</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-021</code> · matching · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-022">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · C — ICD-10 coding</p><h2>Provisional diagnosis</h2><p class="keywords">Fever 3 days + dysuria + suprapubic pain → urinalysis and culture ordered → document a provisional diagnosis linked to the findings → confirm or change when results …</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-022</code> · worked_example · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-023">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · C — ICD-10 coding</p><h2>Covered or not as primary?</h2><p class="keywords">Items: E66 Obesity (BMI 31) · L70 Acne · L66 Hair loss · L21 Seborrhoeic dermatitis · N97 Female infertility · General check-up · J03 Acute tonsillitis · …</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-023</code> · drag_drop · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-030">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · D — Defensive medicine &amp; ordering</p><h2>More tests ≠ better care</h2><p class="keywords">Follow initial work-up protocols · No supplements without indication · Repeat only at evidence-based intervals · If you deviate, document why</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-030</code> · content_slide · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-031">
   <div class="screen scenario"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L5 Scenario · D — Defensive medicine &amp; ordering</p><h2>Joint-pain case</h2><p class="keywords">Node 1: 45-year-old with multi-joint pain, first visit, no history → order everything (CRP, ESR, anti-DNA, anti-Ro, anti-La) vs initial work-up (CRP, ESR) ✔. Node 2: same patient …</p><div class="choice-row"><span></span><span></span><span></span></div><aside class="companion"><b>Omar</b><br><span>char-omar-avatar-thinking → -happy / -concern</span></aside><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-031</code> · decision_scenario · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-032">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · D — Defensive medicine &amp; ordering</p><h2>Timing</h2><p class="keywords">&quot;Your diabetic patient&#x27;s HbA1c was done 6 weeks ago. He asks for another.&quot; Best action → don&#x27;t repeat yet unless there&#x27;s a documented clinical reason; next test at …</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-032</code> · mcq · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-033">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · D — Defensive medicine &amp; ordering</p><h2>Supplements</h2><p class="keywords">&quot;Prescribing a combined multivitamin &#x27;for general wellness&#x27; with no documented deficiency is likely to be rejected.&quot; → True (B8)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-033</code> · true_false · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-040">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · E — Rejections &amp; coverage</p><h2>Four causes</h2><p class="keywords">Rejection notes → causes: &quot;No indication for the MRI&quot; → missing justification · &quot;Diagnosis: fever&quot; → non-specific · &quot;No examination findings recorded&quot; → incomplete · &quot;Antibiotic billed for …</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-040</code> · drag_drop · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-041">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L3 Content · E — Rejections &amp; coverage</p><h2>Coverage changes</h2><p class="keywords">Benefits are added and amended often · Know what&#x27;s covered, adapt documentation · &quot;If you don&#x27;t document it properly, it won&#x27;t be covered — even if it&#x27;s clinically …</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-041</code> · content_slide · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-042">
   <div class="screen question"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L4 Question · E — Rejections &amp; coverage</p><h2>Coverage check</h2><p class="keywords">&quot;Which hormonal assessment is likely to be approved?&quot; → menopausal symptoms ✔ vs PCOS work-up (B6)</p><div class="choice-row"><span></span><span></span><span></span></div><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-042</code> · mcq · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-050">
   <div class="screen scenario"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L5 Scenario · F — Capstone</p><h2>Fix the note</h2><p class="keywords">3 invented notes, one node each: (1) &quot;Body pain. Vit D + B12 + multivitamin.&quot; → choose the best rewrite (findings, deficiency evidence, single indicated supplement, follow-up); (2) …</p><div class="choice-row"><span></span><span></span><span></span></div><aside class="companion"><b>Omar + Noor</b><br><span>char-omar-avatar (host); char-noor-tip (hints)</span></aside><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-050</code> · game · screen visual reference only · inspect final responsive build before approval</div>
+<section class="planned-visuals"><h3>Planned visuals — not generated / captured</h3><ol><li><b>Screen visual; production placement reviewed by the SME.</b> · <code>rcma-img-notes-1</code><p>Invented notes in HTML (real text)</p><p>Draft alt: n/a</p><small>PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.</small></li><li><b>Screen visual; production placement reviewed by the SME.</b> · <code>rcma-img-notes-2</code><p>Invented notes in HTML (real text)</p><p>Draft alt: n/a</p><small>PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.</small></li><li><b>Screen visual; production placement reviewed by the SME.</b> · <code>rcma-img-notes-3</code><p>Invented notes in HTML (real text)</p><p>Draft alt: n/a</p><small>PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.</small></li></ol></section>
 </article>
 <article class="board" id="rcma-090">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L6 Results / close · Close</p><h2>Results</h2><p class="keywords">rcma-o1…o5, weak below 70%</p><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-090</code> · results_breakdown · screen visual reference only · inspect final responsive build before approval</div>
+
 </article>
 <article class="board" id="rcma-091">
   <div class="screen content"><img class="logo" src="../../00_program/brand/assets/logo-horizontal-navy.png" alt="My Clinic logo"><div class="header-rule"></div><p class="crumb">L6 Results / close · Close</p><h2>List to keep</h2><p class="keywords">✔ Be specific; avoid uncovered codes and combined supplements · ✔ Full data + plan with duration and outcome · ✔ Justify every service with a specific code …</p><aside class="companion"><b>Omar</b><br><span>char-omar-success</span></aside><div class="progress" style="--accent:#7C0041"></div></div>
   <div class="caption"><code>rcma-091</code> · summary · screen visual reference only · inspect final responsive build before approval</div>
+
 </article></div></main></body></html>

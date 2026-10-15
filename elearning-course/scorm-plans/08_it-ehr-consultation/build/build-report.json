@@ -13,16 +13,14 @@
   ],
   "module_colour": "#006E78",
   "build": {
-    "project_id": "proj_01M4Z58HMFYNFEQETWGR3DMJT2",
-    "job_id": "job_01M4Z58HPVX2KYFBF03A0N9X8M",
+    "project_id": "proj_01M4ZKJH58QDB1SZE76QQ34R00",
+    "job_id": "job_01M4ZKJH755K0J13S50Y0RTKQ9",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/cPJPoaN7wtNSpmXXOp0IjLkquostJP59",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
+    "download_url": "http://localhost/scorm/files/o6bqFbUI5YQWUsZjitvH5iZNH1DOg0-X",
+    "warnings": []
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58HMFYNFEQETWGR3DMJT2",
+    "project_id": "proj_01M4ZKJH58QDB1SZE76QQ34R00",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -46,17 +44,11 @@
   "validate_package": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
+    "warnings": []
   },
   "package": {
     "file": "MC_08_EHR_v0.1-draft_1.2.zip",
-    "bytes": 699024
+    "bytes": 698542
   },
   "preview": "preview.html"
 }

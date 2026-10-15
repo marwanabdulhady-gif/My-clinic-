@@ -57,7 +57,7 @@
     {
       "screen_id": "ehr-001",
       "part": "omar",
-      "narration": "OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "narration": "OMAR: Complete, specific, linked — on the day. Read the disclaimer.",
       "on_screen_text": "Complete, linked, on the day · Disclaimer (B7) · \"Everything here is a test patient.\"",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -66,7 +66,7 @@
     {
       "screen_id": "ehr-002",
       "part": "omar",
-      "narration": "OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+      "narration": "OMAR: The nine steps at a glance.",
       "on_screen_text": "9 steps as events: 1 Open · 2 Document · 3 Diagnose · 4 Order · 5 Review orders · 6 Summary · 7 Educate · 8 Refer & follow up · 9 Complete",
       "target_sec": 30.0,
       "tone": "calm, practical",
@@ -75,7 +75,7 @@
     {
       "screen_id": "ehr-010",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Start from today's list. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: today's consultation list → click the test patient. Step 2: open the consultation form",
       "target_sec": 10.0,
       "tone": "encouraging",
@@ -84,7 +84,7 @@
     {
       "screen_id": "ehr-011",
       "part": "omar",
-      "narration": "OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "narration": "OMAR: The mandatory sections. Save as you go.",
       "on_screen_text": "Consultation form screenshot; regions = each mandatory section (B4): chief complaint · duration · HPI · past history (allergies, medications) · examination · plan of care",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -93,7 +93,7 @@
     {
       "screen_id": "ehr-012",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"You press Complete and the system refuses. The form shows chief complaint, HPI and examination filled in.\" Most likely cause → plan of care (or another mandatory field per B4) is empty",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -102,7 +102,7 @@
     {
       "screen_id": "ehr-020",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+      "narration": "OMAR: Search by code or name. The primary diagnosis drives everything after it. My first week, I typed 'diabetes' and picked the first line. It wasn't the one I meant. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: click Add Diagnosis. Step 2: type E11 (accepted: E11, e11, type 2 diabetes). Step 3: choose Type 2 diabetes mellitus from results. Step 4: mark as primary / problem; onset, chronicity. Step 5: click the star to add …",
       "target_sec": 20.0,
       "tone": "encouraging",
@@ -111,7 +111,7 @@
     {
       "screen_id": "ehr-030",
       "part": "omar",
-      "narration": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+      "narration": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit.",
       "on_screen_text": "Search by service · lab · referral · package · order profile · Form Wizard reviews a package before you finalise",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -120,7 +120,7 @@
     {
       "screen_id": "ehr-031",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "narration": "OMAR: Link every medication to the diagnosis you assessed. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: open order search. Step 2: type the drug name (B6 example). Step 3: set route, dose, frequency, duration. Step 4: choose the assessed diagnosis (E11). Step 5: add instructions to the patient. Step 6: press Order",
       "target_sec": 15.0,
       "tone": "encouraging",
@@ -129,7 +129,7 @@
     {
       "screen_id": "ehr-032",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "narration": "OMAR: Review the package. Remove what you don't need. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: search the package (B6). Step 2: Form Wizard step 1 — review items. Step 3: remove an item not needed. Step 4: finalise",
       "target_sec": 10.0,
       "tone": "encouraging",
@@ -138,7 +138,7 @@
     {
       "screen_id": "ehr-033",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"You order ⚠ PENDING non-formulary item, B6. The system flags it. What does that mean?\" → it needs approval before it can be dispensed; consider a formulary alternative",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -147,7 +147,7 @@
     {
       "screen_id": "ehr-034",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"Why must each order be linked to the assessed diagnosis?\" → it shows medical necessity to the reviewer and keeps the record consistent; unlinked orders are a common rejection cause",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -156,7 +156,7 @@
     {
       "screen_id": "ehr-040",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: The summary is the record the patient takes home. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: open Consultation Summary. Step 2: check lab orders, special tests, referrals. Step 3: Download and Print",
       "target_sec": 10.0,
       "tone": "encouraging",
@@ -165,7 +165,7 @@
     {
       "screen_id": "ehr-041",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.",
+      "narration": "OMAR: Education by SMS, matched to the diagnosis code. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: open Send SMS – educational material. Step 2: choose department. Step 3: type E11. Step 4: select the leaflet. Step 5: Send (B8)",
       "target_sec": 12.0,
       "tone": "encouraging",
@@ -174,7 +174,7 @@
     {
       "screen_id": "ehr-042",
       "part": "noor",
-      "narration": "NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.",
+      "narration": "NOOR: Patient & family education is required before you finish.",
       "on_screen_text": "Checklist: infection control · medication use · disease/condition · treatment · health & lifestyle · other · \"Required before finalising\"",
       "target_sec": 20.0,
       "tone": "calm, practical",
@@ -183,7 +183,7 @@
     {
       "screen_id": "ehr-050",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+      "narration": "OMAR: Internal referral and follow-up. Work through the steps in order, then read the feedback.",
       "on_screen_text": "Step 1: open referral. Step 2: specialty = Endocrinology. Step 3: type the reason (approved example phrase, e.g. \"poorly controlled type 2 diabetes\"; variants listed in input_accepted). Step 4: type = Internal; timing = within a month (B9). Step 5 …",
       "target_sec": 15.0,
       "tone": "encouraging",
@@ -192,7 +192,7 @@
     {
       "screen_id": "ehr-051",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Put the steps in the order you would follow at work, then read the feedback.",
       "on_screen_text": "9 steps from ehr-002 in order",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -201,7 +201,7 @@
     {
       "screen_id": "ehr-052",
       "part": "omar",
-      "narration": "OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "narration": "OMAR: Completing the encounter. Where to get help.",
       "on_screen_text": "\"Record saved successfully\" → Complete · What happens if a field is missing · Where to get help (IT service desk)",
       "target_sec": 20.0,
       "tone": "calm, practical",

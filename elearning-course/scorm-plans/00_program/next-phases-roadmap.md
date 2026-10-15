@@ -209,15 +209,24 @@ maintenance triggers), and the Rev01 → as-built reconciliation table.
 
 ## C20–C22 — the open follow-ups
 
-> **C22 half done (2026-10-15): XSD.** All eight draft manifests validate against the official
-> SCORM 2004 / 1.2 schemas with 0 errors and 0 warnings ([`xsd-validation.md`](xsd-validation.md)).
-> Left in C22: the SCORM Cloud round-trip (import → launch → resume → score → complete, both
-> versions) and a re-run with the authentic SCORM 1.2 root schema and XSD access.
+> **C22 half done (2026-10-15): XSD.** All eight draft manifests — including the post-C20 rebuild —
+> validate against the official SCORM 2004 / 1.2 schemas with 0 errors and 0 warnings
+> ([`xsd-validation.md`](xsd-validation.md)). `tools/fetch_scorm_schemas.py` rebuilds the offline
+> schema directory (hash-verified against [`xsd-schema-provenance.json`](xsd-schema-provenance.json))
+> so the check can be re-run without network access. Left in C22: the SCORM Cloud round-trip (import →
+> launch → resume → score → complete, both versions) and a re-run with the authentic SCORM 1.2 root
+> schema and XSD access.
 
-**C20 — narration rewrite (G11) + `hs2-031` (G13).** Rewrite the filler narration in the six generated
-packs (lead companion voice, situation set-up, never the answer), add or move the `hs2-031` teaching
-content, regenerate `audio-script-export.json`, rerun `lint_planning.py`, rebuild. Must land before any
-voice work (D10).
+**C20 — narration rewrite (G11) + `hs2-031` (G13).** *Narration half done 2026-10-15:* the generator
+no longer pads (the `pad`/`question_pad` pools are deleted, Phase 3 cells are read as author cues and
+only learner-facing prose is spoken), the six packs' scripts and audio exports were regenerated, the
+132 drifted draft captions were re-synced, `lint_planning.py` is clean on all eight, and every draft
+package was rebuilt and re-validated. What remains is **authored prose**, not automation: each module's
+`storyboard/narration-gaps.md` lists the screens drafted below 70% of their Phase 3 estimate (01 42/54
+screens · 02 18/26 · 04 10/13 · 05 16/21 · 06 11/15 · 08 13/20) with the Phase 3 cue beside each row and
+a "how to close a row" recipe. `hs2-031` (add or move the evacuation-tools teaching, Safety SME to
+confirm) is still open. Nothing here may be closed by reintroducing filler. Must land before voice work
+(D10).
 
 **C21 — upstream hotspot fix (G12).** Fix `bindHotspot` in edumints so explore regions are positioned
 before the early return, then drop the CSS-percentage workaround in `build_course_spec.py` and rebuild.

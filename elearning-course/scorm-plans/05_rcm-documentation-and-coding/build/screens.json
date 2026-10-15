@@ -25,7 +25,7 @@
   "animation": "fade-up",
   "reveal": "auto",
   "notes": "Companion: Dr. Omar, char-omar-explaining, L3 right column (claims story, companions.md §1). The media column holds rcma-img-reviewer, so the build keeps the companion here in notes; developer may add the pose beside the quote. Disclaimer per phase-4 §6. Depends on D11.",
-  "narration_text": "Dr. Omar: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+  "narration_text": "Dr. Omar: The reviewer only has your note. Good documentation protects the patient, you and the clinic.",
   "layout": "text_media",
   "media_asset_id": "<rcma-img-reviewer>",
   "media_alt": "A reviewer sees only the written note, not the patient encounter.",
@@ -74,7 +74,7 @@
   "points": 0,
   "animation": "fade-up",
   "reveal": "auto",
-  "narration_text": "Dr. Omar: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+  "narration_text": "Dr. Omar: What always goes in, what never should.",
   "prompt_html": "<p class=\"section-marker\">SECTION 2 OF 6</p><p>Every service must be clinically justified. Open both tabs.</p>",
   "tabs": [
    {
@@ -98,7 +98,7 @@
   "animation": "fade-up",
   "reveal": "auto",
   "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card (rendered as the companion-tip paragraph; image_compare has no media slot for the avatar). Speaker: Noor. Alt text — before: 'Weak note: patient given IV fluids.' after: 'Strong note: dehydration signs, IV fluids for stabilisation.' Clinical example ⚠ Draft — pending B10.",
-  "narration_text": "Noor: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+  "narration_text": "Noor: Same patient, same fluids. One note gets paid.",
   "prompt_html": "<p>Drag the slider to compare two notes for the same fictional patient and the same treatment.</p><p class=\"companion-tip companion-noor\"><strong>Noor's tip:</strong> Nurses' notes count too. The vital signs we record are what justify the order.</p><p><em>Teaching example ⚠ Draft — pending B10.</em></p>",
   "before_asset_id": "<rcma-img-note-weak>",
   "after_asset_id": "<rcma-img-note-strong>",
@@ -120,7 +120,7 @@
    "rcma-010"
   ],
   "reveal": "none",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Put the steps in the order you would follow at work, then read the feedback.",
   "prompt_html": "<p>Put the parts of a complete consultation note in order, from first to last.</p>",
   "items": [
    {
@@ -169,7 +169,7 @@
    "rcma-011"
   ],
   "reveal": "none",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
   "prompt_html": "<p>Which note best justifies a CBC?</p>",
   "multi_select": false,
   "options": [
@@ -211,7 +211,7 @@
   "points": 0,
   "animation": "fade-up",
   "reveal": "auto",
-  "narration_text": "Dr. Omar: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+  "narration_text": "Dr. Omar: Coding is clinical translation. Specific codes get accepted.",
   "layout": "text",
   "blocks": [
    {
@@ -237,7 +237,7 @@
   ],
   "reveal": "none",
   "notes": "All codes and titles ⚠ Draft — pending B4 (ICD-10 edition and code validation by the Coding lead). Gastroenteritis uses the source's K52; B4 notes it may be A09 (infectious).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Match each item to the person or step that owns it, then read the feedback.",
   "prompt_html": "<p>Match each presentation to the most specific supported diagnosis.</p><p><em>Codes and titles ⚠ Draft — pending B4 (ICD-10 edition and coder validation).</em></p>",
   "pairs": [
    {
@@ -278,7 +278,7 @@
   "animation": "fade-up",
   "reveal": "auto",
   "notes": "Fictional teaching case; clinical example and code ⚠ Draft — pending B10 / B4.",
-  "narration_text": "Dr. Omar: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+  "narration_text": "Dr. Omar: Follow the example one step at a time, then identify why the next step makes sense.",
   "intro_html": "<p><strong>Fictional case.</strong> An adult has had fever for 3 days, with dysuria and suprapubic pain. You order investigations before the diagnosis is confirmed. Golden tip: a provisional diagnosis is allowed when it is clinically justified.</p>",
   "steps": [
    {
@@ -316,7 +316,7 @@
   ],
   "reveal": "none",
   "notes": "Uncovered list from the source; codes ⚠ Draft — pending B4. Obesity BMI > 40 with surgical referral rule ⚠ Draft — pending B5. BMI nuance explained only in feedback, as the card says.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.",
+  "narration_text": "Dr. Omar: Place each item where it belongs, then read the feedback.",
   "prompt_html": "<p>Sort each diagnosis: avoid it as the primary diagnosis, or covered when clinically supported? <em>Codes ⚠ Draft — pending B4; coverage per the current table of benefits.</em></p>",
   "items": [
    {
@@ -391,7 +391,7 @@
   "points": 0,
   "animation": "fade-up",
   "reveal": "auto",
-  "narration_text": "Dr. Omar: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+  "narration_text": "Dr. Omar: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations.",
   "layout": "text",
   "blocks": [
    {
@@ -417,7 +417,7 @@
   ],
   "reveal": "none",
   "notes": "Companion: Dr. Omar, char-omar-avatar-thinking → char-omar-avatar-happy / char-omar-avatar-concern, L5 avatar (host row on the intro; feedback avatar only, never over the choices). Speaker: Omar. Defensive-medicine scenario from the source script; clinical example ⚠ Draft — pending B10. pass_score 2 (both best).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+  "narration_text": "Dr. Omar: Play the situation through and decide, then read the feedback.",
   "intro_html": "<p><strong>Fictional case.</strong> A 45-year-old patient comes to you with pain in several joints. Two decisions: what to order, and what changes when there is a history.</p>",
   "start_node_id": "n1",
   "pass_score": 2,
@@ -498,7 +498,7 @@
   ],
   "reveal": "none",
   "notes": "HbA1c repeat interval shown as the draft value 'about 3 months (90 days)' from the source note ⚠ Draft — pending B3.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
   "prompt_html": "<p>Your fictional patient with diabetes had an HbA1c 6 weeks ago. He asks for another one today. What is the best action?</p>",
   "multi_select": false,
   "options": [
@@ -545,7 +545,7 @@
   ],
   "reveal": "none",
   "notes": "'Combined supplements are treated as defensive medicine' ⚠ Draft — pending B8 (payer rule vs internal guidance).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
   "prompt_html": "<p>Prescribing a combined multivitamin “for general wellness”, with no documented deficiency, is likely to be rejected.</p><p><em>⚠ Draft — pending B8</em></p>",
   "correct": true,
   "feedback": {
@@ -570,7 +570,7 @@
   ],
   "reveal": "none",
   "notes": "Four items from the card plus four built from the source script ('+ 4 more'). 'Non-specific coding of symptoms' as the single biggest cause comes from the script's ICD-10 section. Codes ⚠ Draft — pending B4.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Let's check your earlier guess. Place each item where it belongs, then read the feedback.",
   "prompt_html": "<p>Each fictional rejection note has one main cause. Place it under the right cause.</p>",
   "items": [
    {
@@ -649,7 +649,7 @@
   "animation": "fade-up",
   "reveal": "auto",
   "notes": "Regulator name shown as the D4 recommended draft (current official English name and acronym): Council of Health Insurance (CHI) ⚠ Draft — pending D4 / B1. Mental-health sub-limit (B7) deliberately not shown; covered in module 06.",
-  "narration_text": "Dr. Omar: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+  "narration_text": "Dr. Omar: Coverage changes often. Part B covers what's new.",
   "layout": "text",
   "blocks": [
    {
@@ -675,7 +675,7 @@
   ],
   "reveal": "none",
   "notes": "PCOS vs menopause hormonal assessment ⚠ Draft — pending B6 (links to module 06).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
   "prompt_html": "<p>Which hormonal assessment is likely to be approved? <em>⚠ Draft — pending B6</em></p>",
   "multi_select": false,
   "options": [
@@ -721,7 +721,7 @@
   ],
   "reveal": "none",
   "notes": "Companions: Dr. Omar char-omar-avatar (host, avatar row on the intro); Noor char-noor-tip (hints, text in the hint ladder). L5. Speakers: Omar + Noor (omar-1, noor-1). Notes rcma-img-notes-1..3 are HTML text inside each node. case_sim, 3 notes, +1 per best rewrite, pass_score 2, 1 hint per note (cost 0), no lives, no timer. Depends on B8 (combined supplements), B2 (vitamin D interval), B4 (codes), B10 (clinical examples), G4 (single capstone for rcma-o5). The card's 'B12' dependency is the vitamin, not a Phase 0 row.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Noor: That is the habit we want from every new colleague.",
+  "narration_text": "Dr. Omar: Three notes, your pen. Play the round, then read the feedback. Noor: That is the habit we want from every new colleague.",
   "template": "case_sim",
   "intro_html": "<p>Three weak notes, written by a fictional colleague. For each one, choose the rewrite a reviewer would approve. One point per best rewrite; you need 2 of 3. Noor has one hint for each note. No lives, no timer.</p>",
   "pass_score": 2,
@@ -959,7 +959,7 @@
   "animation": "fade-up",
   "reveal": "auto",
   "notes": "Companion: Dr. Omar, char-omar-success, L6 right (summary has no media slot; developer places the pose). Speaker: Omar. Desk checklist rcma-pdf-checklist (PDF) still to produce; not linked in this draft.",
-  "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+  "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
   "body_html": "<p><strong>Clear, strong, defensible: the checklist to keep at your desk</strong></p><ul><li>✔ Be specific; avoid uncovered codes and combined supplements.</li><li>✔ Full data, and a plan with duration and expected outcome.</li><li>✔ Justify every service with a specific code; use a provisional diagnosis if needed.</li><li>✔ Think like a clinician <em>and</em> a reviewer.</li><li>✔ If you skip a protocol, document why.</li><li>✔ Clear, strong, defensible.</li></ul><p><strong>Next:</strong> RCM Part B. Printable desk checklist: pending production (rcma-pdf-checklist).</p>",
   "show_score": true,
   "show_completion": true

@@ -7,7 +7,7 @@ The recording table and TTS-ready text are in [`../voice_talent.md`](../voice_ta
 ## What is ready
 
 - 20 screen segments, with lead/co-host prefixes, a timing estimate and a pronunciation lexicon.
-- Estimated spoken runtime: **5.1 minutes** at 140 wpm. Interactive work adds the remainder of the module seat time.
+- Estimated spoken runtime: **2.4 minutes** at 140 wpm. Interactive work adds the remainder of the module seat time.
 - Captions/transcript text can be derived from each segment’s `narration_text` field.
 
 ## What is intentionally not yet produced

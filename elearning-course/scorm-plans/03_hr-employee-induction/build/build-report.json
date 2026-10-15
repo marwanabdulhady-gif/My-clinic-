@@ -13,16 +13,14 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4Z58GNQ83AGGGSMJ37Y43Z9",
-    "job_id": "job_01M4Z58GRFJMA9D34RRXE6R4R0",
+    "project_id": "proj_01M4ZKJC6TK8X7C39RQRPJK1C4",
+    "job_id": "job_01M4ZKJC8PW5809AQMJWMFSEET",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/rHefbHSx3-X8m7u2bCQ4NGUezWUSIUmb",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
+    "download_url": "http://localhost/scorm/files/pseKpcaofZJjr-xeI-Ij_cKONbjEC2WO",
+    "warnings": []
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58GNQ83AGGGSMJ37Y43Z9",
+    "project_id": "proj_01M4ZKJC6TK8X7C39RQRPJK1C4",
     "strict": false,
     "error_count": 0,
     "warn_count": 1,
@@ -40,13 +38,7 @@
   "validate_package": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
+    "warnings": []
   },
   "package": {
     "file": "MC_03_WelcomeOnBoard_v0.1-draft_2004.zip",

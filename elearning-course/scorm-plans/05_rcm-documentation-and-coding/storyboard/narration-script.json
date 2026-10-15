@@ -57,7 +57,7 @@
     {
       "screen_id": "rcma-001",
       "part": "omar",
-      "narration": "OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "narration": "OMAR: The reviewer only has your note. Good documentation protects the patient, you and the clinic.",
       "on_screen_text": "\"The payer doesn't see your patient. The payer sees your note.\" · Clinical decision + documentation + coding = optimised payment",
       "target_sec": 30.0,
       "tone": "calm, practical",
@@ -75,7 +75,7 @@
     {
       "screen_id": "rcma-010",
       "part": "omar",
-      "narration": "OMAR: What always goes in, what never should. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "narration": "OMAR: What always goes in, what never should.",
       "on_screen_text": "Always: chief complaint & HPI · relevant findings · link symptoms to the working diagnosis · labs/imaging when needed · Avoid: vague notes · diagnosis without support · copy-paste · \"fatigue only\", \"body pain\"",
       "target_sec": 35.0,
       "tone": "calm, practical",
@@ -84,7 +84,7 @@
     {
       "screen_id": "rcma-011",
       "part": "noor",
-      "narration": "NOOR: Same patient, same fluids. One note gets paid. Use the comparison to separate a helpful detail from a potential problem. The important step is turning what you see into a clear response. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "narration": "NOOR: Same patient, same fluids. One note gets paid.",
       "on_screen_text": "Before: \"Patient given IV fluids.\" · After: \"Dehydration signs (HR 112, dry mucosa) — IV fluids started for stabilisation.\" Rendered as two note cards (SVG)",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -93,7 +93,7 @@
     {
       "screen_id": "rcma-012",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Put the steps in the order you would follow at work, then read the feedback.",
       "on_screen_text": "Order: Chief complaint → HPI → relevant past history → clinical findings → assessment → plan with duration & follow-up",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -102,7 +102,7 @@
     {
       "screen_id": "rcma-013",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"Which note best justifies a CBC?\" options: \"Routine CBC\" / \"Fatigue\" / \"Fatigue for 6 weeks, pallor, menorrhagia — rule out anaemia\" ✔ / \"Patient requested blood test\"",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -111,7 +111,7 @@
     {
       "screen_id": "rcma-020",
       "part": "omar",
-      "narration": "OMAR: Coding is clinical translation. Specific codes get accepted. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+      "narration": "OMAR: Coding is clinical translation. Specific codes get accepted.",
       "on_screen_text": "Primary = main condition treated · Secondary = complexity · Specific code = higher acceptance · #1 rejection cause: non-specific symptom coding",
       "target_sec": 35.0,
       "tone": "calm, practical",
@@ -120,7 +120,7 @@
     {
       "screen_id": "rcma-021",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Match each item to the person or step that owns it, then read the feedback.",
       "on_screen_text": "Presentations ↔ codes (final codes per B4): \"Vomiting + diarrhoea, 2 days, dehydration\" ↔ gastroenteritis code · \"Sore throat, fever, tonsillar exudate\" ↔ J03 Acute tonsillitis · \"Headache, BP 168/102 on two readings\" ↔ I10 Hypertension · \"Polyuria, HbA1c 8.1%\" …",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -129,7 +129,7 @@
     {
       "screen_id": "rcma-022",
       "part": "omar",
-      "narration": "OMAR: Talk through the provisional diagnosis: honest about uncertainty, still specific. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "narration": "OMAR: Follow the example one step at a time, then identify why the next step makes sense.",
       "on_screen_text": "Fever 3 days + dysuria + suprapubic pain → urinalysis and culture ordered → document a provisional diagnosis linked to the findings → confirm or change when results return. Self-explanation: \"Why is a provisional diagnosis better than 'fever' here?\"",
       "target_sec": 40.0,
       "tone": "calm, practical",
@@ -138,7 +138,7 @@
     {
       "screen_id": "rcma-023",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.",
+      "narration": "OMAR: Place each item where it belongs, then read the feedback.",
       "on_screen_text": "Items: E66 Obesity (BMI 31) · L70 Acne · L66 Hair loss · L21 Seborrhoeic dermatitis · N97 Female infertility · General check-up · J03 Acute tonsillitis · E11 Type 2 diabetes · Obesity with BMI 42 referred for bariatric …",
       "target_sec": 10.0,
       "tone": "encouraging",
@@ -147,7 +147,7 @@
     {
       "screen_id": "rcma-030",
       "part": "omar",
-      "narration": "OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+      "narration": "OMAR: Defensive medicine feels safe but gets rejected. Follow work-up protocols, document deviations.",
       "on_screen_text": "Follow initial work-up protocols · No supplements without indication · Repeat only at evidence-based intervals · If you deviate, document why",
       "target_sec": 35.0,
       "tone": "calm, practical",
@@ -156,7 +156,7 @@
     {
       "screen_id": "rcma-031",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "narration": "OMAR: Play the situation through and decide, then read the feedback.",
       "on_screen_text": "Node 1: 45-year-old with multi-joint pain, first visit, no history → order everything (CRP, ESR, anti-DNA, anti-Ro, anti-La) vs initial work-up (CRP, ESR) ✔. Node 2: same patient, rheumatoid arthritis already diagnosed by a rheumatologist elsewhere → document the history …",
       "target_sec": 15.0,
       "tone": "encouraging",
@@ -165,7 +165,7 @@
     {
       "screen_id": "rcma-032",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"Your diabetic patient's HbA1c was done 6 weeks ago. He asks for another.\" Best action → don't repeat yet unless there's a documented clinical reason; next test at the approved interval (B3)",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -174,7 +174,7 @@
     {
       "screen_id": "rcma-033",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"Prescribing a combined multivitamin 'for general wellness' with no documented deficiency is likely to be rejected.\" → True (B8)",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -183,7 +183,7 @@
     {
       "screen_id": "rcma-040",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Let's check your earlier guess. Place each item where it belongs, then read the feedback.",
       "on_screen_text": "Rejection notes → causes: \"No indication for the MRI\" → missing justification · \"Diagnosis: fever\" → non-specific · \"No examination findings recorded\" → incomplete · \"Antibiotic billed for a viral URTI code\" → mismatch (+ 4 more)",
       "target_sec": 10.0,
       "tone": "encouraging",
@@ -192,7 +192,7 @@
     {
       "screen_id": "rcma-041",
       "part": "omar",
-      "narration": "OMAR: Coverage changes often. Part B covers what's new. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "narration": "OMAR: Coverage changes often. Part B covers what's new.",
       "on_screen_text": "Benefits are added and amended often · Know what's covered, adapt documentation · \"If you don't document it properly, it won't be covered — even if it's clinically correct.\" · Next: Part B covers the new EBP",
       "target_sec": 30.0,
       "tone": "calm, practical",
@@ -201,7 +201,7 @@
     {
       "screen_id": "rcma-042",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: Decide as you would on shift, then read the feedback.",
       "on_screen_text": "\"Which hormonal assessment is likely to be approved?\" → menopausal symptoms ✔ vs PCOS work-up (B6)",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -210,9 +210,9 @@
     {
       "screen_id": "rcma-050",
       "part": "omar-1",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+      "narration": "OMAR: Three notes, your pen. Play the round, then read the feedback.",
       "on_screen_text": "3 invented notes, one node each: (1) \"Body pain. Vit D + B12 + multivitamin.\" → choose the best rewrite (findings, deficiency evidence, single indicated supplement, follow-up); (2) \"Cough. Augmentin.\" → choose specific diagnosis + findings justifying antibiotic; (3) \"Check-up …",
-      "target_sec": 10,
+      "target_sec": 8,
       "tone": "encouraging",
       "speaker": "omar"
     },
@@ -221,7 +221,7 @@
       "part": "noor-1",
       "narration": "NOOR: That is the habit we want from every new colleague.",
       "on_screen_text": "3 invented notes, one node each: (1) \"Body pain. Vit D + B12 + multivitamin.\" → choose the best rewrite (findings, deficiency evidence, single indicated supplement, follow-up); (2) \"Cough. Augmentin.\" → choose specific diagnosis + findings justifying antibiotic; (3) \"Check-up …",
-      "target_sec": 5.0,
+      "target_sec": 7,
       "tone": "encouraging",
       "speaker": "noor"
     },
@@ -237,7 +237,7 @@
     {
       "screen_id": "rcma-091",
       "part": "omar",
-      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
       "on_screen_text": "✔ Be specific; avoid uncovered codes and combined supplements · ✔ Full data + plan with duration and outcome · ✔ Justify every service with a specific code; provisional diagnosis if needed · ✔ Think like a clinician and a …",
       "target_sec": 25.0,
       "tone": "confident",

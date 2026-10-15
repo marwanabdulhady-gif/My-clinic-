@@ -226,13 +226,6 @@
           "source": "svg",
           "alt_text": "A set of generic line icons for health benefits.",
           "decorative": false
-        },
-        {
-          "kind": "diagram",
-          "description": "rcmb-img-benefit-icons: Line icons per benefit",
-          "source": "svg",
-          "alt_text": "decorative",
-          "decorative": false
         }
       ],
       "on_screen_text": "Cards: prevention exams · STDs · adult vaccination · home care for inpatients · temporary contraception · telemedicine · menopause/perimenopause cover · kidney transplant · diabetes programme → Added; mental health · optical · congenital anomalies · dental · dialysis …",
@@ -753,9 +746,9 @@
         },
         {
           "kind": "diagram",
-          "description": "rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers",
+          "description": "rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "svg",
-          "alt_text": "A log visual.",
+          "alt_text": "Editable on-screen diagram; equivalent text provided in HTML.",
           "decorative": false
         },
         {
@@ -846,6 +839,13 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "Editable on-screen diagram; equivalent text provided in HTML.",
           "decorative": false
         }
       ],
@@ -1110,13 +1110,6 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
-          "decorative": false
-        },
-        {
-          "kind": "illustration",
-          "description": "rcmb-pdf-ebp: One-page EBP summary from the official document (B3), approved by payer relations",
-          "source": "svg",
-          "alt_text": "Close visual.",
           "decorative": false
         },
         {

@@ -15,7 +15,7 @@
 | Pass mark | 80% = **72 / 90 points** |
 | Screens | 20 in 6 outline sections |
 | Scored screens | 11 · scenarios, games and simulations: 7 |
-| Narration | 20 narrated screens · ≈4.9 min at 140 wpm (from `narration-script.json`) |
+| Narration | 20 narrated screens · ≈2.3 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 5 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -102,8 +102,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `ehr-000` | `title_slide` | EHR Consultation Workflow: Guided Simulation |  | — | 🗣 Omar | Omar · 12 s |
-| 2 | `ehr-001` | `content_slide` | Why + disclaimer |  | — | 🗣 Omar | Omar · 24 s |
-| 3 | `ehr-002` | `timeline` | Workflow map |  | — | — | Omar · 30 s |
+| 2 | `ehr-001` | `content_slide` | Why + disclaimer |  | — | 🗣 Omar | Omar · 4 s |
+| 3 | `ehr-002` | `timeline` | Workflow map |  | — | — | Omar · 3 s |
 
 ### `ehr-sB` — Open & document
 
@@ -111,9 +111,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ehr-010` ★ | `simulation` | The consultation | 5 | ehr-o1 | — | Omar · 7 s |
-| 2 | `ehr-011` | `hotspot` | Mandatory fields |  | — | — | Omar · 26 s |
-| 3 | `ehr-012` ★ | `mcq` | Why it won't complete | 5 | ehr-o1 | — | Omar · 7 s |
+| 1 | `ehr-010` ★ | `simulation` | The consultation | 5 | ehr-o1 | — | Omar · 6 s |
+| 2 | `ehr-011` | `hotspot` | Mandatory fields |  | — | — | Omar · 3 s |
+| 3 | `ehr-012` ★ | `mcq` | Why it won't complete | 5 | ehr-o1 | — | Omar · 4 s |
 
 ### `ehr-sC` — Diagnosis
 
@@ -121,7 +121,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ehr-020` ★ | `simulation` | Add the primary diagnosis | 10 | ehr-o2 | 🗣 Omar | Omar · 21 s |
+| 1 | `ehr-020` ★ | `simulation` | Add the primary diagnosis | 10 | ehr-o2 | 🗣 Omar | Omar · 17 s |
 
 ### `ehr-sD` — Orders
 
@@ -129,11 +129,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ehr-030` | `content_slide` | How to find an order |  | — | — | Omar · 28 s |
-| 2 | `ehr-031` ★ | `simulation` | Medication order | 15 | ehr-o3 | — | Omar · 13 s |
-| 3 | `ehr-032` ★ | `simulation` | Lab package via Form Wizard | 10 | ehr-o3 | — | Omar · 10 s |
-| 4 | `ehr-033` ★ | `mcq` | Non-formulary | 5 | ehr-o3 | — | Omar · 7 s |
-| 5 | `ehr-034` ★ | `mcq` | Why link to a diagnosis | 5 | ehr-o3 | — | Omar · 7 s |
+| 1 | `ehr-030` | `content_slide` | How to find an order |  | — | — | Omar · 6 s |
+| 2 | `ehr-031` ★ | `simulation` | Medication order | 15 | ehr-o3 | — | Omar · 8 s |
+| 3 | `ehr-032` ★ | `simulation` | Lab package via Form Wizard | 10 | ehr-o3 | — | Omar · 8 s |
+| 4 | `ehr-033` ★ | `mcq` | Non-formulary | 5 | ehr-o3 | — | Omar · 4 s |
+| 5 | `ehr-034` ★ | `mcq` | Why link to a diagnosis | 5 | ehr-o3 | — | Omar · 4 s |
 
 ### `ehr-sE` — Summary & education
 
@@ -141,9 +141,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ehr-040` ★ | `simulation` | Consultation summary | 5 | ehr-o4 | — | Omar · 7 s |
-| 2 | `ehr-041` ★ | `simulation` | SMS education | 10 | ehr-o4 | — | Omar · 12 s |
-| 3 | `ehr-042` | `content_slide` | Patient & family education |  | — | 🗣 Noor | Noor · 20 s |
+| 1 | `ehr-040` ★ | `simulation` | Consultation summary | 5 | ehr-o4 | — | Omar · 8 s |
+| 2 | `ehr-041` ★ | `simulation` | SMS education | 10 | ehr-o4 | — | Omar · 8 s |
+| 3 | `ehr-042` | `content_slide` | Patient & family education |  | — | 🗣 Noor | Noor · 4 s |
 
 ### `ehr-sF` — Referral & finish
 
@@ -151,9 +151,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ehr-050` ★ | `simulation` | Internal referral + follow-up | 10 | ehr-o4 | 🗣 Omar | Omar · 14 s |
-| 2 | `ehr-051` ★ | `sorting` | The whole workflow | 10 | ehr-o5 | — | Omar · 7 s |
-| 3 | `ehr-052` | `content_slide` | Complete the encounter |  | — | — | Omar · 18 s |
+| 1 | `ehr-050` ★ | `simulation` | Internal referral + follow-up | 10 | ehr-o4 | 🗣 Omar | Omar · 6 s |
+| 2 | `ehr-051` ★ | `sorting` | The whole workflow | 10 | ehr-o5 | — | Omar · 6 s |
+| 3 | `ehr-052` | `content_slide` | Complete the encounter |  | — | — | Omar · 3 s |
 | 4 | `ehr-090` | `results_breakdown` | Results |  | — | — | Omar · 9 s |
 | 5 | `ehr-091` | `summary` | Close |  | — | 🗣 Omar | Omar · 15 s |
 

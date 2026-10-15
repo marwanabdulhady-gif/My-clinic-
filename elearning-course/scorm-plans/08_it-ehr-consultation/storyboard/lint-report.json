@@ -23,8 +23,8 @@
     "clean": true,
     "module_id": "MC08-ehr-consultation",
     "wpm": 140,
-    "total_est_sec": 303.8,
-    "total_est_min": 5.1,
+    "total_est_sec": 145.1,
+    "total_est_min": 2.4,
     "screens": [
       {
         "screen_id": "ehr-000",
@@ -35,104 +35,104 @@
       {
         "screen_id": "ehr-001",
         "part": "omar",
-        "words": 57,
-        "est_sec": 24.4
+        "words": 10,
+        "est_sec": 4.3
       },
       {
         "screen_id": "ehr-002",
         "part": "omar",
-        "words": 71,
-        "est_sec": 30.4
+        "words": 7,
+        "est_sec": 3.0
       },
       {
         "screen_id": "ehr-010",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "ehr-011",
         "part": "omar",
-        "words": 62,
-        "est_sec": 26.6
+        "words": 8,
+        "est_sec": 3.4
       },
       {
         "screen_id": "ehr-012",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "ehr-020",
         "part": "omar",
-        "words": 50,
-        "est_sec": 21.4
+        "words": 40,
+        "est_sec": 17.1
       },
       {
         "screen_id": "ehr-030",
         "part": "omar",
-        "words": 66,
-        "est_sec": 28.3
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "ehr-031",
         "part": "omar",
-        "words": 31,
-        "est_sec": 13.3
+        "words": 19,
+        "est_sec": 8.1
       },
       {
         "screen_id": "ehr-032",
         "part": "omar",
-        "words": 25,
-        "est_sec": 10.7
+        "words": 19,
+        "est_sec": 8.1
       },
       {
         "screen_id": "ehr-033",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "ehr-034",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "ehr-040",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 20,
+        "est_sec": 8.6
       },
       {
         "screen_id": "ehr-041",
         "part": "omar",
-        "words": 30,
-        "est_sec": 12.9
+        "words": 19,
+        "est_sec": 8.1
       },
       {
         "screen_id": "ehr-042",
         "part": "noor",
-        "words": 46,
-        "est_sec": 19.7
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "ehr-050",
         "part": "omar",
-        "words": 34,
-        "est_sec": 14.6
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "ehr-051",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "ehr-052",
         "part": "omar",
-        "words": 44,
-        "est_sec": 18.9
+        "words": 8,
+        "est_sec": 3.4
       },
       {
         "screen_id": "ehr-090",

@@ -15,7 +15,7 @@
 | Pass mark | 70% = **35 / 50 points** |
 | Screens | 13 in 4 outline sections |
 | Scored screens | 4 · scenarios, games and simulations: 1 |
-| Narration | 13 narrated screens · ≈4.3 min at 140 wpm (from `narration-script.json`) |
+| Narration | 13 narrated screens · ≈1.5 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 3 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -78,8 +78,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `ops-000` | `title_slide` | Who Does What: Operations & My Care |  | — | 🗣 Omar | Omar · 12 s |
-| 2 | `ops-001` | `content_slide` | Why it matters |  | — | 🗣 Omar | Omar · 25 s |
-| 3 | `ops-002` | `hotspot` | Patient journey |  | — | — | Omar · 21 s |
+| 2 | `ops-001` | `content_slide` | Why it matters |  | — | 🗣 Omar | Omar · 13 s |
+| 3 | `ops-002` | `hotspot` | Patient journey |  | — | — | Omar · 3 s |
 
 ### `ops-s2` — Operations
 
@@ -87,8 +87,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ops-010` | `accordion` | Operations activities |  | — | — | Omar · 39 s |
-| 2 | `ops-011` | `labeled_diagram` | Operations structure |  | — | — | Omar · 31 s |
+| 1 | `ops-010` | `accordion` | Operations activities |  | — | — | Omar · 4 s |
+| 2 | `ops-011` | `labeled_diagram` | Operations structure |  | — | — | Omar · 6 s |
 
 ### `ops-s3` — My Care
 
@@ -96,9 +96,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ops-020` | `accordion` | My Care activities |  | — | — | Omar · 38 s |
-| 2 | `ops-021` | `labeled_diagram` | My Care structure |  | — | — | Omar · 25 s |
-| 3 | `ops-022` | `flashcards` | Abbreviations |  | — | 🗣 Noor | Noor · 15 s |
+| 1 | `ops-020` | `accordion` | My Care activities |  | — | — | Omar · 5 s |
+| 2 | `ops-021` | `labeled_diagram` | My Care structure |  | — | — | Omar · 3 s |
+| 3 | `ops-022` | `flashcards` | Abbreviations |  | — | 🗣 Noor | Noor · 3 s |
 
 ### `ops-s4` — Practice: right team, first time
 
@@ -106,10 +106,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `ops-030` ★ | `drag_drop` | Sort the work | 15 | ops-o1 | — | Omar · 7 s |
-| 2 | `ops-031` ★ | `decision_scenario` | Who do I call? | 20 | ops-o2 | 🗣 Omar | Omar · 13 s |
-| 3 | `ops-032` ★ | `mcq` | Escalation | 5 | ops-o2 | — | Omar · 7 s |
-| 4 | `ops-033` ★ | `matching` | Roles | 10 | ops-o3 | — | Omar · 7 s |
+| 1 | `ops-030` ★ | `drag_drop` | Sort the work | 15 | ops-o1 | — | Omar · 4 s |
+| 2 | `ops-031` ★ | `decision_scenario` | Who do I call? | 20 | ops-o2 | 🗣 Omar | Omar · 4 s |
+| 3 | `ops-032` ★ | `mcq` | Escalation | 5 | ops-o2 | — | Omar · 4 s |
+| 4 | `ops-033` ★ | `matching` | Roles | 10 | ops-o3 | — | Omar · 6 s |
 | 5 | `ops-090` | `summary` | Close |  | — | 🗣 Omar + Noor | Noor/Omar · 18 s |
 
 ## 5. Objectives, evidence and scoring

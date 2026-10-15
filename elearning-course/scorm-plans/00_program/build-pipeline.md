@@ -108,6 +108,7 @@ The edumints server runs in-process from a local checkout; no hosted MCP session
 ```bash
 git clone https://github.com/marwanabdulhady-gif/edumints-scorm-mcp ../edumints-scorm-mcp
 python3 -m venv .edu-venv && .edu-venv/bin/pip install -e ../edumints-scorm-mcp
+python3 elearning-course/scorm-plans/tools/sync_screen_captions.py --check                   # captions vs narration-script.json
 python3 elearning-course/scorm-plans/tools/build_course_spec.py 03_hr-employee-induction     # storyboard → build/course-spec.json
 EDUMINTS_DIR=../edumints-scorm-mcp .edu-venv/bin/python \
   elearning-course/scorm-plans/tools/edumints_build.py 03_hr-employee-induction              # → zip, preview.html, build-report.json
@@ -115,14 +116,16 @@ EDUMINTS_DIR=../edumints-scorm-mcp .edu-venv/bin/python \
 
 | Step | What it does |
 |---|---|
+| `sync_screen_captions.py` | Keeps the hand-reviewed `build/screens.json` `narration_text` in step with `storyboard/narration-script.json` (one caption per screen, speaker labels as `Noor:` / `Dr. Omar:`). `build_course_spec.py` guards only the screen structure, so a narration rewrite would otherwise leave the captions behind; `--check` fails instead of writing. |
 | `build_course_spec.py` | Reads the storyboard build blocks (or `build/screens.json` where the storyboard blocks are review metadata only; ids, order, types, node_ids, points and objectives must match the storyboard or the tool stops). Resolves every `<asset-id>` to a repo file; a missing asset becomes a branded **⚠ PENDING card** naming its gate. Drops audio placeholders (no voice until D10) and keeps `narration_text` as captions. Places the companions: welcome cards on the L1 title, the pose in the L3 media column, the avatar host row on scenarios. Adds the logo and Montserrat. |
 | `edumints_build.py` | `brand_to_theme(brand-kit.edumints.json)` + module colour as `secondary` + `brand/edumints-skin.css` → `build_from_spec` → `lint_course` → `validate_package` → `preview`. Writes the compiler's own output to `build/build-report.json`. |
 
 **Draft packages are committed** in `<module>/build/` as `MC_<NN>_<short>_v0.1-draft_<scorm>.zip` (no audio, so they stay under 1 MB) for LMS smoke tests and client review. They are **not release builds**: every value tied to an open Phase 0 decision is still shown as pending, and placeholders replace media that is not produced. Release builds (v1.0) follow the roadmap chunks C14–C17 and are stored in Drive.
 
-XSD validation needs the SCORM schemas. The compiler fetches the IMS/W3C ones on first use (only the ADL files are vendored), so a build without network access reports `schema_unavailable` and runs the structural checks only — that is what the committed `build-report.json` files record. To validate the manifests offline, point `SCORM_SCHEMA_DIR` at a directory holding `12/` and `2004/` sub-directories (driver XSD + vendored ADL + IMS/W3C files, absolute `xml.xsd` imports rewritten to the local file):
+XSD validation needs the SCORM schemas. The compiler fetches the IMS/W3C ones on first use (only the ADL files are vendored), so a build without network access reports `schema_unavailable` and runs the structural checks only. The committed `build-report.json` files carry the real XSD check because the builds were run with `SCORM_SCHEMA_DIR` pointing at a directory holding `12/` and `2004/` sub-directories (driver XSD + vendored ADL + IMS/W3C files, absolute `xml.xsd` imports rewritten to the local file). That directory is not committed (IMS/W3C licensing) — `tools/fetch_scorm_schemas.py` rebuilds it from the committed provenance record, hash-checking every file:
 
 ```bash
+python3 elearning-course/scorm-plans/tools/fetch_scorm_schemas.py --out /path/to/scorm-schemas
 SCORM_SCHEMA_DIR=/path/to/scorm-schemas EDUMINTS_DIR=/path/to/edumints-scorm-mcp \
   .venv/bin/python elearning-course/scorm-plans/tools/edumints_build.py 03_hr-employee-induction
 ```

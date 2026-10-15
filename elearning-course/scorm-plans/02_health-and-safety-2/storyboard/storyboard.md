@@ -2,7 +2,7 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> **Review pack v0.2 · 2026-10-14.** This document completes the screen-card, narration, visual-plan,
+> **Review pack v0.2 · 2026-10-15.** This document completes the screen-card, narration, visual-plan,
 > asset-register and visual-review documentation for every core screen in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md). It is a review artefact, **not an approved
 > policy or production SCORM package**. Source-lock decisions are deliberately retained as `⚠ PENDING`.
@@ -22,7 +22,7 @@
 | Module prefix | `hs2-` |
 | Storyboard version | `v0.2` |
 | Author | Arena agent — production-documentation pass |
-| Date | 2026-10-14 |
+| Date | 2026-10-15 |
 | Status | `Draft — ready for SME review; blocked from production by open source-lock items` |
 | SME reviewer (role) | Safety Manager (lead); EHS; Facilities; Infection Control |
 | Audience | All new staff, after module 01 |
@@ -30,11 +30,11 @@
 | SCORM / completion / pass mark | SCORM 1.2 · viewed_all_and_passed · pass 80% (116 / 145) |
 | Scored screens / total points | 13 / 145 (Phase 4 expectation: 13 / 145) |
 | Source file | `elearning-course/md/02_health-and-safety-2_safety-hazards-fire-and-chemicals.md` |
-| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-14) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-15) |
 | Module colour | Ambitious teal #008C99 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B9; program D1, D2, D11 and D12 |
-| Narration reconciliation | Detailed card scripts: 6.6 min; Phase 3 per-screen targets: 6.7 min; Phase 3 rough module estimate: ~8 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 3.1 min; Phase 3 per-screen targets: 6.7 min; Phase 3 rough module estimate: ~8 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. The difference is not padded with generated sentences (G11/C20): [`narration-gaps.md`](narration-gaps.md) lists the 18 screens that need authored prose. |
 
 ### Production guardrails
 
@@ -254,10 +254,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 47 words / ≈ 20.1 s at 140 wpm |
+| Word count / estimated seconds | 15 words / ≈ 6.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear.
+> NOOR: Safety is the habits that protect life, health and environment. Today you practise them.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -363,10 +363,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 45 |
-| Word count / estimated seconds | 100 words / ≈ 42.9 s at 140 wpm |
+| Word count / estimated seconds | 7 words / ≈ 3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> NOOR: Walk through the wet-floor example aloud.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -480,10 +480,10 @@ Single clean flat vector illustration for a My Clinic e-learning course. Clinic 
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 15 |
-| Word count / estimated seconds | 37 words / ≈ 15.9 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.
+> NOOR: There are six hazards. I walked past a blocked exit for a week before I noticed it.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -590,10 +590,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -701,10 +701,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 14 words / ≈ 6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Write the note as you would in the record, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -813,10 +813,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
+| Word count / estimated seconds | 15 words / ≈ 6.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
+> NOOR: The poster on the wall is bilingual. Learn both names. Check your site's extensions.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -930,10 +930,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR / OMAR |
 | Tone | encouraging |
 | Target seconds | 20 |
-| Word count / estimated seconds | 45 words / ≈ 19.3 s at 140 wpm |
+| Word count / estimated seconds | 27 words / ≈ 11.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> NOOR: There is no timer, but in real life seconds matter. Play the round, then read the feedback.
 >
 > OMAR: Carry this practical rule into your next decision.
 
@@ -1044,10 +1044,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1156,10 +1156,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Label the parts you can name, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1268,10 +1268,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
+> NOOR: Inside vs outside assembly points. Find your unit's plan today.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1378,10 +1378,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 45 words / ≈ 19.3 s at 140 wpm |
+| Word count / estimated seconds | 15 words / ≈ 6.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task.
+> NOOR: Before you need it, know how to read the label and check the gauge.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1488,10 +1488,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1599,10 +1599,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 56 words / ≈ 24 s at 140 wpm |
+| Word count / estimated seconds | 12 words / ≈ 5.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: HAZMAT is chemical or biological. One clear rule decides Code Orange.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1710,10 +1710,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 15 |
-| Word count / estimated seconds | 36 words / ≈ 15.4 s at 140 wpm |
+| Word count / estimated seconds | 7 words / ≈ 3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.
+> NOOR: Two kits, two colours, two jobs.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1821,10 +1821,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Play the situation through and decide, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1932,10 +1932,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Put the steps in the order you would follow at work, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2044,10 +2044,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 81 words / ≈ 34.7 s at 140 wpm |
+| Word count / estimated seconds | 23 words / ≈ 9.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> NOOR: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2163,10 +2163,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Match each item to the person or step that owns it, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2276,10 +2276,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2390,10 +2390,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2506,10 +2506,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 34 words / ≈ 14.6 s at 140 wpm |
+| Word count / estimated seconds | 26 words / ≈ 11.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.
+> NOOR: The store is locked. Four checks open it. Everything you need is in this module. Work through each step in turn, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2618,10 +2618,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> NOOR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -3001,32 +3001,36 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `hs2-000` | `title_slide` | N | 0 | 8 | 30 | 13 | Draft |
-| 2 | `hs2-001` | `content_slide` | N | 0 | 13 | 47 | 20 | Draft |
-| 3 | `hs2-010` | `worked_example` | N | 0 | 34 | 100 | 43 | Draft |
-| 4 | `hs2-011` | `hotspot` | N | 0 | 37 | 37 | 16 | Draft |
-| 5 | `hs2-012` | `mcq` | Y | 5 | 18 | 18 | 8 | Draft |
-| 6 | `hs2-013` | `fill_blank` | Y | 5 | 8 | 18 | 8 | Draft |
-| 7 | `hs2-020` | `flashcards` | N | 0 | 19 | 59 | 25 | Draft |
-| 8 | `hs2-030` | `game` | Y | 25 | 36 | 45 | 19 | Draft |
-| 9 | `hs2-031` | `drag_drop` | Y | 10 | 32 | 18 | 8 | Draft |
-| 10 | `hs2-032` | `labeled_diagram` | Y | 10 | 26 | 18 | 8 | Draft |
-| 11 | `hs2-033` | `content_slide` | N | 0 | 20 | 59 | 25 | Draft |
-| 12 | `hs2-040` | `hotspot` | N | 0 | 25 | 45 | 19 | Draft |
-| 13 | `hs2-041` | `drag_drop` | Y | 10 | 23 | 18 | 8 | Draft |
-| 14 | `hs2-050` | `content_slide` | N | 0 | 12 | 56 | 24 | Draft |
-| 15 | `hs2-051` | `image_compare` | N | 0 | 16 | 36 | 15 | Draft |
-| 16 | `hs2-052` | `decision_scenario` | Y | 15 | 37 | 18 | 8 | Draft |
-| 17 | `hs2-053` | `sorting` | Y | 10 | 21 | 18 | 8 | Draft |
-| 18 | `hs2-060` | `content_slide` | N | 0 | 25 | 81 | 35 | Draft |
-| 19 | `hs2-061` | `matching` | Y | 10 | 18 | 18 | 8 | Draft |
-| 20 | `hs2-062` | `mcq` | Y | 10 | 27 | 18 | 8 | Draft |
-| 21 | `hs2-063` | `mcq` | Y | 5 | 16 | 18 | 8 | Draft |
-| 22 | `hs2-064` | `escape_room` | Y | 20 | 38 | 34 | 15 | Draft |
-| 23 | `hs2-070` | `drag_drop` | Y | 10 | 31 | 18 | 8 | Draft |
+| 2 | `hs2-001` | `content_slide` | N | 0 | 13 | 15 | 6 | Draft |
+| 3 | `hs2-010` | `worked_example` | N | 0 | 34 | 7 | 3 | Draft |
+| 4 | `hs2-011` | `hotspot` | N | 0 | 37 | 18 | 8 | Draft |
+| 5 | `hs2-012` | `mcq` | Y | 5 | 18 | 11 | 5 | Draft |
+| 6 | `hs2-013` | `fill_blank` | Y | 5 | 8 | 14 | 6 | Draft |
+| 7 | `hs2-020` | `flashcards` | N | 0 | 19 | 15 | 6 | Draft |
+| 8 | `hs2-030` | `game` | Y | 25 | 36 | 27 | 12 | Draft |
+| 9 | `hs2-031` | `drag_drop` | Y | 10 | 32 | 11 | 5 | Draft |
+| 10 | `hs2-032` | `labeled_diagram` | Y | 10 | 26 | 11 | 5 | Draft |
+| 11 | `hs2-033` | `content_slide` | N | 0 | 20 | 11 | 5 | Draft |
+| 12 | `hs2-040` | `hotspot` | N | 0 | 25 | 15 | 6 | Draft |
+| 13 | `hs2-041` | `drag_drop` | Y | 10 | 23 | 11 | 5 | Draft |
+| 14 | `hs2-050` | `content_slide` | N | 0 | 12 | 12 | 5 | Draft |
+| 15 | `hs2-051` | `image_compare` | N | 0 | 16 | 7 | 3 | Draft |
+| 16 | `hs2-052` | `decision_scenario` | Y | 15 | 37 | 11 | 5 | Draft |
+| 17 | `hs2-053` | `sorting` | Y | 10 | 21 | 16 | 7 | Draft |
+| 18 | `hs2-060` | `content_slide` | N | 0 | 25 | 23 | 10 | Draft |
+| 19 | `hs2-061` | `matching` | Y | 10 | 18 | 16 | 7 | Draft |
+| 20 | `hs2-062` | `mcq` | Y | 10 | 27 | 11 | 5 | Draft |
+| 21 | `hs2-063` | `mcq` | Y | 5 | 16 | 11 | 5 | Draft |
+| 22 | `hs2-064` | `escape_room` | Y | 20 | 38 | 26 | 11 | Draft |
+| 23 | `hs2-070` | `drag_drop` | Y | 10 | 31 | 11 | 5 | Draft |
 | 24 | `hs2-080` | `results_breakdown` | N | 0 | 5 | 29 | 12 | Draft |
 | 25 | `hs2-081` | `poll` | N | 0 | 11 | 19 | 8 | Draft |
 | 26 | `hs2-090` | `summary` | N | 0 | 15 | 45 | 19 | Draft |
-| | **Totals** | | **13** | **145** | | **920** | **394 ≈ 6.6 min** | Draft |
+| | **Totals** | | **13** | **145** | | **433** | **186 ≈ 3.1 min** | Draft |
+
+### Narration authoring gaps
+
+18 of 26 screens are below 70% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
 
 ### Asset list
 

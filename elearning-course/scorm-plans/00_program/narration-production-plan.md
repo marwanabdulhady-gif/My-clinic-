@@ -6,6 +6,8 @@ This document turns the current scripts and voice standards into a repeatable ex
 
 All eight packages have a narration script and audio export file. The project planning lint reports zero narration errors and warnings across the packages. Script segments identify the speaker, part, text, tone and target duration; two-voice segments are separated so speaker labels are not read aloud. The proposal's Rev01 scope is about 60 minutes of narration in two consistent voices. The open D10 decision still blocks final provider/voice-id selection and production of approved final audio. Existing module 03 reference MP3s are older, single-voice samples; they are not the final two-voice production set.
 
+**C20 first pass (2026-10-15):** the generated filler narration is gone from the six generated packs — the scripts now carry a lead-companion set-up of the situation and never the answer, and the draft-screen captions were re-synced to the rewritten script. Screens whose draft is under 70% of their Phase 3 estimate are listed per module in `storyboard/narration-gaps.md`; that is the authoring order, and it shrinks as prose is written, never by padding.
+
 **Do not confuse “script ready” with “audio complete.”** Shipping TTS/human audio, normalization, captions and final audio asset provenance are still Phase 3 work. No final voice ids should be invented.
 
 ## Voice direction
@@ -17,7 +19,7 @@ All eight packages have a narration script and audio export file. The project pl
 
 ## Script-to-audio workflow
 
-1. **Select only approved rows.** Start from a package's current `audio-script-export.json`; use its `screen_id`, `part`, speaker, exact exported `tts_text`/SSML, tone and target duration. Treat `narration-script.json` and source card as the text authority. Never paraphrase, add connective wording, translate, correct policy values or merge separate speaker parts.
+1. **Select only approved rows.** Start from a package's current `audio-script-export.json`; a screen listed in that package's `storyboard/narration-gaps.md` is not ready for audio until its prose is authored and reviewed (rerun the storyboard assembly afterwards, which rewrites the gap list); use its `screen_id`, `part`, speaker, exact exported `tts_text`/SSML, tone and target duration. Treat `narration-script.json` and source card as the text authority. Never paraphrase, add connective wording, translate, correct policy values or merge separate speaker parts.
 2. **Resolve D10 first.** Record the provider, commercial-use licence status and immutable voice id in `narration-and-lexicon.md` and the package voice metadata. Obtain written approval of a 30-second sample for Noor and for Dr. Omar before bulk generation.
 3. **Generate per segment.** File names must preserve package, screen and part identifiers from the export. Emit clean speech audio only; do not speak `NOOR:`, `OMAR:`, screen ids, metadata, stage directions, cue syntax, SSML tags or text shown on screen.
 4. **Join planned multi-voice screens.** Keep the scripted order. Insert 0.3 seconds of silence between consecutive parts, then produce one screen-level audio asset where the build schema expects one. Do not combine unrelated screens. Keep original per-part files for traceability until the joined asset passes QA.

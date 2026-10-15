@@ -143,7 +143,7 @@
    "notes": "Companion: Noor, char-noor-welcome, L1 half-body bottom-right (alt: Noor, the safety liaison, waving in welcome). Speaker: Noor. Facility name and date placeholders from the source cover are not shown (⚠ Draft — pending 01/B3).",
    "animation": "fade",
    "reveal": "auto",
-   "narration_text": "Noor: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role.",
+   "narration_text": "Noor: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
    "body_html": "<div class=\"mc-guides\"><div class=\"mc-guide noor\">{{asset:char-noor-welcome}}<span>Noor</span></div></div>"
   },
   {
@@ -158,7 +158,7 @@
    "notes": "Companion: Noor, char-noor-explaining, L3 right column, half-body (alt: Noor, the safety liaison, explaining). Speaker: Noor. Call-point story is in the narration.",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "narration_text": "Noor: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was.",
    "layout": "text_media",
    "media_asset_id": "char-noor-explaining",
    "media_alt": "Noor, the course guide."
@@ -209,7 +209,7 @@
    "layout": "text",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+   "narration_text": "Noor: The chapter is a survey requirement, a shared responsibility, and one connected system."
   },
   {
    "type": "hotspot",
@@ -330,7 +330,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+   "narration_text": "Noor: Open each marker in turn before you decide what happens next."
   },
   {
    "type": "content_slide",
@@ -343,7 +343,7 @@
    "body_html": "<blockquote><strong>A fire is a Code Red. A chemical spill is a Code Orange.</strong></blockquote><p>The eight plans and the emergency codes are two views of the same system.</p>",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall."
+   "narration_text": "Noor: Plans and codes are two views of the same system: give one example of each."
   },
   {
    "type": "matching",
@@ -408,7 +408,7 @@
    ],
    "notes": "Card asks for per-pair feedback; edumints matching supports one correct/incorrect message plus the shown correct set.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "flashcards",
@@ -439,7 +439,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+   "narration_text": "Noor: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone."
   },
   {
    "type": "accordion",
@@ -474,7 +474,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear."
+   "narration_text": "Noor: A near miss is the most valuable report: it is free learning."
   },
   {
    "type": "labeled_diagram",
@@ -521,7 +521,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+   "narration_text": "Noor: AREC as a habit before every task, not a form."
   },
   {
    "type": "sorting",
@@ -565,7 +565,7 @@
     "hs1-203"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised."
+   "narration_text": "Noor: Put the steps in the order you would follow at work, then read the feedback."
   },
   {
    "type": "decision_scenario",
@@ -680,7 +680,7 @@
    ],
    "notes": "Companion: Noor, char-noor-avatar-neutral (intro host) → char-noor-avatar-happy / char-noor-avatar-concern as feedback reactions. Speaker: Noor. Scene illustration of the corridor cable is not in the Phase 3 asset list, so the scene is described in text (no new asset id invented). Avatar reaction swap per choice is not expressible in decision_scenario; the host avatar stays neutral.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+   "narration_text": "Noor: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "accordion",
@@ -712,7 +712,7 @@
    "notes": "Companion: Dr. Omar, char-omar-avatar-neutral + tip card, L3 bottom-left. Tip: a doctor can stop unsafe work too — “I have, and nobody blamed me.” Speaker: Dr. Omar. ISO 45001 rights wording ⚠ Draft — pending 01/B9.",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Dr. Omar: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+   "narration_text": "Dr. Omar: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is."
   },
   {
    "type": "flashcards",
@@ -772,7 +772,7 @@
    "notes": "Companion: Noor, char-noor-avatar-neutral + tip card (L3). Tip: save your site's extensions in your phone today. Speaker: Noor. Open decision D2: code naming set (incl. Code Silver wording, RRT) and real extension numbers — draft shows source deck names; only Code Blue 2222 is national. Arabic code names (bilingual EN/AR fronts) and hs1-img-codes-chips colour chips are not added: the module is English-only and the chips are decorative (name is in text).",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Noor: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere."
   },
   {
    "type": "matching",
@@ -837,7 +837,7 @@
    ],
    "notes": "Card asks for per-pair feedback; edumints matching supports one correct/incorrect message. Pairs are shuffled by the runtime. Code names pending D2.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -860,7 +860,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Noor: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear."
   },
   {
    "type": "sorting",
@@ -900,7 +900,7 @@
     "hs1-303"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Put the steps in the order you would follow at work, then read the feedback."
   },
   {
    "type": "labeled_diagram",
@@ -959,7 +959,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision."
+   "narration_text": "Noor: The ERT is five teams. You are part of the response even if you're not on it."
   },
   {
    "type": "labeled_diagram",
@@ -1000,7 +1000,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+   "narration_text": "Noor: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing."
   },
   {
    "type": "sorting",
@@ -1040,7 +1040,7 @@
     "hs1-401"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Put the steps in the order you would follow at work, then read the feedback."
   },
   {
    "type": "sorting",
@@ -1080,7 +1080,7 @@
     "hs1-401"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Put the steps in the order you would follow at work, then read the feedback."
   },
   {
    "type": "hotspot",
@@ -1201,7 +1201,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow."
+   "narration_text": "Noor: Walk the corridor. Know where these are before you need them."
   },
   {
    "type": "drag_drop",
@@ -1273,7 +1273,7 @@
    ],
    "notes": "Keyboard pick-and-place is provided by the player. Full points for all correct (partial scoring not specified).",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Place each item where it belongs, then read the feedback."
   },
   {
    "type": "tabs",
@@ -1300,7 +1300,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+   "narration_text": "Noor: Horizontal first. Vertical by stairs. Full evacuation only for the worst events."
   },
   {
    "type": "mcq",
@@ -1342,7 +1342,7 @@
     "hs1-406"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "true_false",
@@ -1365,7 +1365,7 @@
     "hs1-401"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "decision_scenario",
@@ -1502,7 +1502,7 @@
    ],
    "notes": "Companion: Noor, char-noor-avatar-neutral (intro host) → char-noor-avatar-happy / char-noor-avatar-concern. Speaker: Noor. Ward, room, staff ID and name in node 2 are fictional training values. Avatar reaction swap per choice is not expressible; host stays neutral.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+   "narration_text": "Noor: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -1523,7 +1523,7 @@
    "notes": "Card shows the 7 items as icons; no icon assets are planned in Phase 3, so they are two grouped text cards (flame/fuel, electrical).",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Noor: Prevention rules exist because each item started a real fire somewhere."
   },
   {
    "type": "content_slide",
@@ -1546,7 +1546,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+   "narration_text": "Noor: Chemicals come in one door only — procurement — and never without a label and an SDS."
   },
   {
    "type": "matching",
@@ -1616,7 +1616,7 @@
    ],
    "notes": "Pictogram images hs1-img-ghs-1..9 are not produced yet; the left side uses the pictogram names as text (Phase 4 risk fallback). When the SVGs exist, decide whether matching left_html can carry an <img> asset reference. Per-pair feedback not expressible.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "labeled_diagram",
@@ -1668,7 +1668,7 @@
    ],
    "notes": "Markers placed on the corrected NFPA 704 layout (red top = flammability, blue left = health, yellow right = reactivity, white bottom = special), normalised 0-1000 on hs1-img-nfpa-blank.svg. The SVG no longer prints the area names.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Label the parts you can name, then read the feedback."
   },
   {
    "type": "mcq",
@@ -1717,7 +1717,7 @@
    ],
    "notes": "Planned image hs1-img-nfpa-301w cannot be placed: the edumints mcq screen has no media field, so the ratings are given as text in the prompt. The asset also has the quadrant-layout issue noted on hs1-503.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "accordion",
@@ -1752,7 +1752,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+   "narration_text": "Noor: Storage, transport and handling all follow the SDS."
   },
   {
    "type": "content_slide",
@@ -1769,7 +1769,7 @@
    "notes": "Companion: Dr. Omar, char-omar-avatar-neutral + tip card (L3). Tip: set a timer; keep flushing for 15 minutes. Speaker: Dr. Omar. The media slot holds hs1-img-eyewash (pending My Clinic photo permission), so the companion is not placed by the build.",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Dr. Omar: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Dr. Omar: Find your nearest eyewash today. 15 minutes feels long — don't stop early."
   },
   {
    "type": "decision_scenario",
@@ -1884,7 +1884,7 @@
    ],
    "notes": "Companion: Noor, char-noor-avatar-concern (intro host). Speaker: Noor. Open decision D1 (Code Orange threshold): draft uses the decision sheet's recommended value — spill ≥ 500 mL, or any highly toxic/reactive/explosive substance → Code Orange; otherwise call the cleaning supervisor. Update node 1–3 feedback and the intro when D1 closes. pass_score 3 of 4 per Phase 3 activity plan.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague."
+   "narration_text": "Noor: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "drag_drop",
@@ -1953,7 +1953,7 @@
    ],
    "notes": "Open item 01/B7: facility bin colours. Targets show the stream name as text; add the confirmed colour word (text + colour, not colour alone) when B7 closes.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Never recap. Place each item where it belongs, then read the feedback."
   },
   {
    "type": "tabs",
@@ -1976,7 +1976,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+   "narration_text": "Noor: Your badge identifies you. Everyone without one in a restricted area is your concern."
   },
   {
    "type": "mcq",
@@ -2024,7 +2024,7 @@
     "hs1-601"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "hotspot",
@@ -2121,7 +2121,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+   "narration_text": "Noor: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone."
   },
   {
    "type": "mcq",
@@ -2164,7 +2164,7 @@
    ],
    "notes": "Single best answer (Phase 4 risk: rewritten as single-answer MCQ).",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -2187,7 +2187,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+   "narration_text": "Noor: Labels tell you if a device is safe to use today."
   },
   {
    "type": "decision_scenario",
@@ -2310,7 +2310,7 @@
    ],
    "notes": "Companion: Dr. Omar, char-omar-avatar-neutral (intro host) → char-omar-avatar-happy / char-omar-avatar-concern. Speaker: Dr. Omar (he uses pumps daily). hs1-img-pump-label pending (Biomedical confirmation of the label rule); label dates are fictional and kept in editable HTML text, not in the image. Room number is fictional.",
    "reveal": "none",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague."
+   "narration_text": "Dr. Omar: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "true_false",
@@ -2333,7 +2333,7 @@
     "hs1-801"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "tabs",
@@ -2364,7 +2364,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall."
+   "narration_text": "Noor: Ionising vs non-ionising. The MRI magnet is always on."
   },
   {
    "type": "matching",
@@ -2403,7 +2403,7 @@
     "hs1-901"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "labeled_diagram",
@@ -2444,7 +2444,7 @@
    },
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+   "narration_text": "Noor: Time, distance, shielding — three levers you control."
   },
   {
    "type": "accordion",
@@ -2471,7 +2471,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+   "narration_text": "Noor: Wear your badge. The RSO is your contact."
   },
   {
    "type": "mcq",
@@ -2514,7 +2514,7 @@
    ],
    "notes": "Open item 01/B4: dose limits (2 mSv / 3 months, 20 mSv / year) and bands (1.25 / 1.25–3.75 / > 3.75 mSv), incl. whether bands are per quarter. Draft uses the source values; no dose-band teaching screen exists before this question (hs1-904 covers OSL/RSO) — the bands table is shown in feedback as the card asks.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "matching",
@@ -2564,7 +2564,7 @@
    ],
    "notes": "Open item 01/B5: laser class names (source also lists a plain “Class 3” row, omitted here per the Phase 2 card: 1/1M · 2/2M · 3R · 3B · 4). No laser-class teaching screen precedes this check; evidence is hs1-901 (laser as non-ionising).",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -2584,7 +2584,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+   "narration_text": "Noor: Laser eye injuries often don't hurt at first — that's why protection is not optional."
   },
   {
    "type": "game",
@@ -2799,7 +2799,7 @@
    ],
    "notes": "Companions: Noor, char-noor-explaining (host, intro) + Dr. Omar, char-omar-avatar-neutral in node 3 (his line is in the node feedback text; no companion is placed over the question). Speakers: Noor + Dr. Omar. Open decision D1: draft threshold ≥ 500 mL / highly toxic, reactive or explosive. Score counts best choices (1 point each, multiplier off); pass_score 2 of 3. Phase 3 rule “when wrong if lives==0 then goto debrief” is not expressible (GameAction has no goto); when lives run out the engine finalises the game as failed and shows the incorrect feedback, which carries the debrief summary. With 3 lives and 3 decision nodes, lives cannot reach 0 before the debrief.",
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Dr. Omar: That is the habit we want from every new colleague."
+   "narration_text": "Noor: Play the round, then read the feedback. Dr. Omar: That is the habit we want from every new colleague."
   },
   {
    "type": "results_breakdown",
@@ -2901,7 +2901,7 @@
    "notes": "Companion: Noor, char-noor-success, L6 right, half-body (alt: Noor, the safety liaison, celebrating). Speaker: Noor. “Revisit” is advice text naming the section in the menu; results_breakdown has no deep-link field.",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow."
+   "narration_text": "Noor: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit."
   },
   {
    "type": "poll",
@@ -2951,7 +2951,7 @@
    "notes": "Companions: Noor char-noor-success half-body right + Dr. Omar char-omar-avatar-happy avatar (L6). Two-voice close: noor-1 then omar-1. Open decision D14: how the acknowledgement is captured (LMS attestation vs final poll + e-signature). Emergency numbers depend on D2.",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. Dr. Omar: Carry this practical rule into your next decision."
+   "narration_text": "Noor: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Dr. Omar: Carry this practical rule into your next decision."
   }
  ],
  "assets": [

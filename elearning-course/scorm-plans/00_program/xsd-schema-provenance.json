@@ -1,5 +1,5 @@
 {
- "_note": "Provenance for the offline SCORM schema set used to run the manifest XSD validation recorded in xsd-validation.md. Schema *files* are not committed (IMS/W3C licensing; the compiler fetches them at runtime and only the ADL files are vendored) \u2014 this file records what was used and how it was checked. sha256_expected comes from edumints-scorm-mcp runtime/schemas/ims_sources.json.",
+ "_note": "Provenance for the offline SCORM schema set used to run the manifest XSD validation recorded in xsd-validation.md. Schema *files* are not committed (IMS/W3C licensing; the compiler fetches them at runtime and only the ADL files are vendored) — this file records what was used and how it was checked. sha256_expected comes from edumints-scorm-mcp runtime/schemas/ims_sources.json. Rebuild the directory with `python3 elearning-course/scorm-plans/tools/fetch_scorm_schemas.py --out <dir>`; it re-fetches the mirrors below and hash-checks every file against this record.",
  "run": {
   "date": "2026-10-15",
   "compiler_revision": "4bbf459",

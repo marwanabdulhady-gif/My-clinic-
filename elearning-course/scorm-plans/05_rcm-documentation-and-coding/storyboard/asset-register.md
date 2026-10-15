@@ -12,13 +12,17 @@ This register is the production hand-off for review. `Generated` means the file 
 
 ## Planned assets from Phase 3
 
-| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note |
-|---|---|---|---|---|---|
-| `rcma-img-note-weak / -strong` | SVG note cards | rcma-011 | Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text | own | "Weak note: patient given IV fluids." / "Strong note: dehydration signs, IV fluids for stabilisation." |
-| `rcma-img-reviewer` | SVG | rcma-001 | Minimal illustration: note on one side, reviewer with only the paper on the other | own | "A reviewer sees only the written note." |
-| `rcma-img-notes-1..3` | HTML | rcma-050 | Invented notes in HTML (real text) | own | n/a |
-| `rcma-pdf-checklist` | PDF | rcma-091 | One-page "Clear, strong, defensible" desk checklist | own | n/a |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." |
+| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note | Placement | Production gate |
+|---|---|---|---|---|---|---|---|
+| `rcma-img-note-weak` | SVG note cards | rcma-011 | Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text | own | "Weak note: patient given IV fluids." / "Strong note: dehydration signs, IV fluids for stabilisation." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `-strong` | SVG note cards | rcma-011 | Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text | own | "Weak note: patient given IV fluids." / "Strong note: dehydration signs, IV fluids for stabilisation." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcma-img-reviewer` | SVG | rcma-001 | Minimal illustration: note on one side, reviewer with only the paper on the other | own | "A reviewer sees only the written note." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcma-img-notes-1` | HTML | rcma-050 | Invented notes in HTML (real text) | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcma-img-notes-2` | HTML | rcma-050 | Invented notes in HTML (real text) | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcma-img-notes-3` | HTML | rcma-050 | Invented notes in HTML (real text) | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcma-pdf-checklist` | PDF | rcma-091 | One-page "Clear, strong, defensible" desk checklist | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
 
 ## Non-negotiable production rules
 

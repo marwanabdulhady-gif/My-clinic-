@@ -2,7 +2,7 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> **Review pack v0.2 · 2026-10-14.** This document completes the screen-card, narration, visual-plan,
+> **Review pack v0.2 · 2026-10-15.** This document completes the screen-card, narration, visual-plan,
 > asset-register and visual-review documentation for every core screen in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md). It is a review artefact, **not an approved
 > policy or production SCORM package**. Source-lock decisions are deliberately retained as `⚠ PENDING`.
@@ -22,7 +22,7 @@
 | Module prefix | `rcmb-` |
 | Storyboard version | `v0.2` |
 | Author | Arena agent — production-documentation pass |
-| Date | 2026-10-14 |
+| Date | 2026-10-15 |
 | Status | `Draft — ready for SME review; blocked from production by open source-lock items` |
 | SME reviewer (role) | RCM lead (lead); Payer Relations; Coding lead; Data Protection Officer |
 | Audience | Physicians and RCM staff |
@@ -30,11 +30,11 @@
 | SCORM / completion / pass mark | SCORM 1.2 · viewed_all_and_passed · pass 80% (64 / 80) |
 | Scored screens / total points | 7 / 80 (Phase 4 expectation: 7 / 80) |
 | Source file | `elearning-course/md/06_rcm-billing-documentation-slides-2026.md` |
-| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-14) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-15) |
 | Module colour | Collaborative burgundy #7C0041 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B9; program D4, D5 and D11 |
-| Narration reconciliation | Detailed card scripts: 4.7 min; Phase 3 per-screen targets: 4.7 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 1.9 min; Phase 3 per-screen targets: 4.7 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. The difference is not padded with generated sentences (G11/C20): [`narration-gaps.md`](narration-gaps.md) lists the 11 screens that need authored prose. |
 
 ### Production guardrails
 
@@ -247,10 +247,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 77 words / ≈ 33 s at 140 wpm |
+| Word count / estimated seconds | 12 words / ≈ 5.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
+> OMAR: Benefits change. Documentation decides whether a covered service is actually paid.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -332,8 +332,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG | A set of generic line icons for health benefits. | No |
-| `rcmb-img-benefit-icons` | diagram | rcmb-img-benefit-icons: Line icons per benefit | own SVG | decorative | No |
+| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG, final content review required | A set of generic line icons for health benefits. | No |
 
 #### 4. Interaction and scoring
 
@@ -358,10 +357,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -388,7 +387,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 10,
   "narration_script_id": "rcmb-010",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcmb-img-benefit-icons> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -445,7 +445,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG | A set of generic line icons for health benefits. | No |
+| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG, final content review required | A set of generic line icons for health benefits. | No |
 
 #### 4. Interaction and scoring
 
@@ -470,10 +470,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 91 words / ≈ 39 s at 140 wpm |
+| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.
+> OMAR: Prevention is now covered: think of the patient in front of you who is due a screen.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -498,7 +498,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "rcmb-020",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcmb-img-benefit-icons> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -579,10 +580,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -691,10 +692,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 35 |
-| Word count / estimated seconds | 87 words / ≈ 37.3 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
+> NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -800,10 +801,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -887,7 +888,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG | A set of generic line icons for health benefits. | No |
+| `rcmb-img-benefit-icons` | icon | rcmb-img-benefit-icons: Generated native icon sheet; labels remain HTML in the course. | own SVG, final content review required | A set of generic line icons for health benefits. | No |
 
 #### 4. Interaction and scoring
 
@@ -912,10 +913,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 45 |
-| Word count / estimated seconds | 101 words / ≈ 43.3 s at 140 wpm |
+| Word count / estimated seconds | 19 words / ≈ 8.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.
+> OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -940,7 +941,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "rcmb-040",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcmb-img-benefit-icons> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1021,10 +1023,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Match each item to the person or step that owns it, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1108,7 +1110,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcmb-tbl-log` | diagram | rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers | own SVG | A log visual. | No |
+| `rcmb-tbl-log` | diagram | rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | Editable on-screen diagram; equivalent text provided in HTML. | No |
 | `Approved program companion pose char-omar-explaining at L3 right column.` | illustration | Approved program companion pose char-omar-explaining at L3 right column. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -1134,10 +1136,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 72 words / ≈ 30.9 s at 140 wpm |
+| Word count / estimated seconds | 28 words / ≈ 12 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1162,7 +1164,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "rcmb-050",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcmb-tbl-log> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1219,6 +1222,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
+| `rcmb-tbl-log` | diagram | rcmb-tbl-log: Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | Editable on-screen diagram; equivalent text provided in HTML. | No |
 
 #### 4. Interaction and scoring
 
@@ -1243,10 +1247,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1273,7 +1277,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 15,
   "narration_script_id": "rcmb-051",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <rcmb-tbl-log> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1355,10 +1360,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Play the situation through and decide, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1466,10 +1471,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 23 words / ≈ 9.9 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.
+> OMAR: Work through the case, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1662,7 +1667,6 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `rcmb-pdf-ebp` | illustration | rcmb-pdf-ebp: One-page EBP summary from the official document (B3), approved by payer relations | own SVG | Close visual. | No |
 | `Approved program companion pose char-omar-success + char-noor-avatar-happy at L6.` | illustration | Approved program companion pose char-omar-success + char-noor-avatar-happy at L6. | own / official My Clinic asset | Omar + Noor companion guide supporting this learning moment. | No |
 
 #### 4. Interaction and scoring
@@ -1741,21 +1745,25 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `rcmb-000` | `title_slide` | N | 0 | 17 | 31 | 13 | Draft |
-| 2 | `rcmb-001` | `content_slide` | N | 0 | 22 | 77 | 33 | Draft |
-| 3 | `rcmb-010` | `drag_drop` | Y | 10 | 28 | 18 | 8 | Draft |
-| 4 | `rcmb-020` | `tabs` | N | 0 | 30 | 91 | 39 | Draft |
-| 5 | `rcmb-021` | `mcq` | Y | 5 | 29 | 18 | 8 | Draft |
-| 6 | `rcmb-030` | `accordion` | N | 0 | 26 | 87 | 37 | Draft |
-| 7 | `rcmb-031` | `true_false` | Y | 5 | 11 | 18 | 8 | Draft |
-| 8 | `rcmb-040` | `tabs` | N | 0 | 35 | 101 | 43 | Draft |
-| 9 | `rcmb-041` | `matching` | Y | 10 | 32 | 18 | 8 | Draft |
-| 10 | `rcmb-050` | `content_slide` | N | 0 | 34 | 72 | 31 | Draft |
-| 11 | `rcmb-051` | `drag_drop` | Y | 15 | 15 | 18 | 8 | Draft |
-| 12 | `rcmb-052` | `decision_scenario` | Y | 15 | 35 | 18 | 8 | Draft |
-| 13 | `rcmb-060` | `adaptive_practice` | Y | 20 | 43 | 23 | 10 | Draft |
+| 2 | `rcmb-001` | `content_slide` | N | 0 | 22 | 12 | 5 | Draft |
+| 3 | `rcmb-010` | `drag_drop` | Y | 10 | 28 | 11 | 5 | Draft |
+| 4 | `rcmb-020` | `tabs` | N | 0 | 30 | 18 | 8 | Draft |
+| 5 | `rcmb-021` | `mcq` | Y | 5 | 29 | 11 | 5 | Draft |
+| 6 | `rcmb-030` | `accordion` | N | 0 | 26 | 16 | 7 | Draft |
+| 7 | `rcmb-031` | `true_false` | Y | 5 | 11 | 11 | 5 | Draft |
+| 8 | `rcmb-040` | `tabs` | N | 0 | 35 | 19 | 8 | Draft |
+| 9 | `rcmb-041` | `matching` | Y | 10 | 32 | 16 | 7 | Draft |
+| 10 | `rcmb-050` | `content_slide` | N | 0 | 34 | 28 | 12 | Draft |
+| 11 | `rcmb-051` | `drag_drop` | Y | 15 | 15 | 11 | 5 | Draft |
+| 12 | `rcmb-052` | `decision_scenario` | Y | 15 | 35 | 11 | 5 | Draft |
+| 13 | `rcmb-060` | `adaptive_practice` | Y | 20 | 43 | 9 | 4 | Draft |
 | 14 | `rcmb-090` | `results_breakdown` | N | 0 | 2 | 21 | 9 | Draft |
 | 15 | `rcmb-091` | `summary` | N | 0 | 20 | 47 | 20 | Draft |
-| | **Totals** | | **7** | **80** | | **658** | **282 ≈ 4.7 min** | Draft |
+| | **Totals** | | **7** | **80** | | **272** | **117 ≈ 1.9 min** | Draft |
+
+### Narration authoring gaps
+
+11 of 15 screens are below 70% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
 
 ### Asset list
 
@@ -1765,7 +1773,8 @@ lock items have written SME decisions.
 | `rcmb-img-benefit-icons` | SVG ×12 | rcmb-010, 020, 040 | own | Yes | Planned |
 | `rcmb-tbl-log` | HTML table | rcmb-050, 051 | own | n/a | Planned |
 | `rcmb-pdf-ebp` | PDF | rcmb-091 | own | n/a | Planned |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
 
 ### Open questions for the SME
 

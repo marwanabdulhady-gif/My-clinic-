@@ -10,12 +10,13 @@ This register is the production hand-off for review. `Generated` means the file 
 
 ## Planned assets from Phase 3
 
-| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note |
-|---|---|---|---|---|---|
-| `rcmb-img-benefit-icons` | SVG ×12 | rcmb-010, 020, 040 | Line icons per benefit | own | decorative |
-| `rcmb-tbl-log` | HTML table | rcmb-050, 051 | Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers | own | n/a |
-| `rcmb-pdf-ebp` | PDF | rcmb-091 | One-page EBP summary from the official document (B3), approved by payer relations | own | n/a |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." |
+| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note | Placement | Production gate |
+|---|---|---|---|---|---|---|---|
+| `rcmb-img-benefit-icons` | SVG ×12 | rcmb-010, 020, 040 | Line icons per benefit | own | decorative | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcmb-tbl-log` | HTML table | rcmb-050, 051 | Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `rcmb-pdf-ebp` | PDF | rcmb-091 | One-page EBP summary from the official document (B3), approved by payer relations | own | n/a | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
 
 ## Non-negotiable production rules
 

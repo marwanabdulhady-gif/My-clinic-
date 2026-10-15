@@ -26,7 +26,7 @@
   "reveal": "auto",
   "notes": "Companion: Dr. Omar, char-omar-explaining, L3 right column (alt: Dr. Omar, the family physician, explaining.). Speaker: Dr. Omar. Draft decisions shown on screen: B7 disclaimer wording (decision-sheet recommended wording), B3 product name ('the clinic EHR'). The ehr-capture-sheet diagram listed on the card is a production checklist; it is not placed so the companion keeps the L3 media column.",
   "animation": "fade-up",
-  "narration_text": "Dr. Omar: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+  "narration_text": "Dr. Omar: Complete, specific, linked — on the day. Read the disclaimer."
  },
  {
   "type": "timeline",
@@ -86,7 +86,7 @@
   ],
   "reveal": "auto",
   "animation": "fade-up",
-  "narration_text": "Dr. Omar: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+  "narration_text": "Dr. Omar: The nine steps at a glance."
  },
  {
   "type": "simulation",
@@ -151,7 +151,7 @@
    "show_correct_answer": true
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). Assets: ehr-shot-list (step 1), ehr-shot-form (step 2).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: Start from today's list. Work through the steps in order, then read the feedback."
  },
  {
   "type": "hotspot",
@@ -254,7 +254,7 @@
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). B4 open: final mandatory-field list may add diagnosis and patient & family education. Placeholder regions are a 3x2 grid over the 960x540 card.",
   "animation": "fade-up",
-  "narration_text": "Dr. Omar: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+  "narration_text": "Dr. Omar: The mandatory sections. Save as you go."
  },
  {
   "type": "mcq",
@@ -300,7 +300,7 @@
    "show_correct_answer": true
   },
   "notes": "B4 open: the correct answer uses the draft mandatory list (plan of care). Marked '⚠ Draft — pending B4' in feedback.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback."
  },
  {
   "type": "simulation",
@@ -416,7 +416,7 @@
    "show_correct_answer": true
   },
   "notes": "Companion: Dr. Omar, char-omar-avatar-neutral + tip card, L5 avatar above the simulation (never over the steps). Speaker: Dr. Omar. Diagnosis story (companions.md §1) is not in the current narration script; add only after narration review. Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). Assets: ehr-shot-dx-1..5 (steps 1–5).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers."
+  "narration_text": "Dr. Omar: Search by code or name. The primary diagnosis drives everything after it. My first week, I typed 'diabetes' and picked the first line. It wasn't the one I meant. Work through the steps in order, then read the feedback."
  },
  {
   "type": "content_slide",
@@ -439,7 +439,7 @@
   "reveal": "auto",
   "notes": "Text blocks only; no screenshot is planned for this card. B5 labels pending.",
   "animation": "fade-up",
-  "narration_text": "Dr. Omar: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall."
+  "narration_text": "Dr. Omar: Five ways to find an order. The Form Wizard checks a package before you commit."
  },
  {
   "type": "simulation",
@@ -576,7 +576,7 @@
    "show_correct_answer": true
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). B6 open: 'Medicine A' is a neutral placeholder (no drug chosen); replace the name and input_accepted with the Pharmacy-approved example. Assets: ehr-shot-order-1..6.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+  "narration_text": "Dr. Omar: Link every medication to the diagnosis you assessed. Work through the steps in order, then read the feedback."
  },
  {
   "type": "simulation",
@@ -681,7 +681,7 @@
    "show_correct_answer": true
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). B6 open: 'Lab package A' is a neutral placeholder. Assets: ehr-shot-wizard-1..4.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond."
+  "narration_text": "Dr. Omar: Review the package. Remove what you don't need. Work through the steps in order, then read the feedback."
  },
  {
   "type": "mcq",
@@ -727,7 +727,7 @@
    "show_correct_answer": true
   },
   "notes": "B6 open: 'Medicine B' is a neutral placeholder for the Pharmacy-confirmed non-formulary item.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback."
  },
  {
   "type": "mcq",
@@ -773,7 +773,7 @@
    "show_correct_answer": true
   },
   "notes": "Links to module 05 (RCM documentation and coding).",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback."
  },
  {
   "type": "simulation",
@@ -858,7 +858,7 @@
    "show_correct_answer": true
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). Assets: ehr-shot-summary-1..3.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: The summary is the record the patient takes home. Work through the steps in order, then read the feedback."
  },
  {
   "type": "simulation",
@@ -974,7 +974,7 @@
    "show_correct_answer": true
   },
   "notes": "Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). B8 open: confirm the SMS feature and an E11 leaflet exist in test; phone field must show a fictional number. Assets: ehr-shot-sms-1..5.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised."
+  "narration_text": "Dr. Omar: Education by SMS, matched to the diagnosis code. Work through the steps in order, then read the feedback."
  },
  {
   "type": "content_slide",
@@ -988,7 +988,7 @@
   "reveal": "auto",
   "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card (alt: Noor, the course guide, sharing a tip.). Speaker: Noor.",
   "animation": "fade-up",
-  "narration_text": "Noor: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift."
+  "narration_text": "Noor: Patient & family education is required before you finish."
  },
  {
   "type": "simulation",
@@ -1129,7 +1129,7 @@
    "show_correct_answer": true
   },
   "notes": "Companion: Dr. Omar, char-omar-avatar-neutral, L5 avatar above the simulation (never over the steps). Speaker: Dr. Omar. Screenshots not captured yet: PENDING B2/D6 (DPO-approved test environment, fictional test patient, per-file DPO review), B3 EHR version, B5 button/screen labels. Never the source video or its frames. Region coords are PLACEHOLDERS in the 960x540 PENDING-card pixel space; re-measure every region on the final 1920x1080 (125% zoom) capture and keep them in build/regions.json (Phase 4 §6). B9 open: 'within a month' and 'Internal' are draft values. Reason variants in input_accepted. Assets: ehr-shot-ref-1..6.",
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed."
+  "narration_text": "Dr. Omar: Internal referral and follow-up. Work through the steps in order, then read the feedback."
  },
  {
   "type": "sorting",
@@ -1189,7 +1189,7 @@
    "incorrect_html": "<p>Start from opening the consultation and end with completing it. The diagnosis comes before the orders that link to it.</p>",
    "show_correct_answer": true
   },
-  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+  "narration_text": "Dr. Omar: Put the steps in the order you would follow at work, then read the feedback."
  },
  {
   "type": "content_slide",
@@ -1203,7 +1203,7 @@
   "reveal": "auto",
   "notes": "B4 mandatory list and IT service-desk contact details are open; confirm button labels (B5).",
   "animation": "fade-up",
-  "narration_text": "Dr. Omar: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision."
+  "narration_text": "Dr. Omar: Completing the encounter. Where to get help."
  },
  {
   "type": "results_breakdown",

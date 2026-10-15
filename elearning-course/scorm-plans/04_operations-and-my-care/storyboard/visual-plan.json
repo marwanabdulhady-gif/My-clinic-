@@ -233,13 +233,6 @@
           "source": "svg",
           "alt_text": "Patient journey from booking to follow-up.",
           "decorative": false
-        },
-        {
-          "kind": "diagram",
-          "description": "ops-img-journey: 6-stage horizontal journey, icons, team colour tags + text labels",
-          "source": "svg",
-          "alt_text": "\"Patient journey from booking to follow-up.\"",
-          "decorative": false
         }
       ],
       "on_screen_text": "Horizontal journey: Book → Arrive & register → Consult → Lab / Radiology / Pharmacy → Leave → Follow-up. Each stage shows which team leads (Operations, My Care or both)",
@@ -298,7 +291,7 @@
         },
         {
           "kind": "diagram",
-          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied",
+          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "svg",
           "alt_text": "decorative",
           "decorative": false
@@ -401,13 +394,6 @@
           "source": "svg",
           "alt_text": "Draft Operations role structure.",
           "decorative": false
-        },
-        {
-          "kind": "diagram",
-          "description": "ops-img-ops-chart: Role-only Operations chart (from B1)",
-          "source": "svg",
-          "alt_text": "\"Operations structure by role.\"",
-          "decorative": false
         }
       ],
       "on_screen_text": "Redrawn role-only chart (B1): Director of Operations → PX & Operations Sr. Manager · Patient Access & PX Sr. Manager · Operations Sr. Manager → PX Managers → PXOs/FMs at sites J1–J4, PR1, VIP team, Check-Up Unit, In-Patient",
@@ -466,7 +452,7 @@
         },
         {
           "kind": "diagram",
-          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied",
+          "description": "ops-img-activities: Line icons; slide 2/5 \"sticky note\" style not copied Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "svg",
           "alt_text": "decorative",
           "decorative": false
@@ -568,13 +554,6 @@
           "description": "ops-img-mycare-chart: Generated role-only draft SVG; SME approval B2 required.",
           "source": "svg",
           "alt_text": "Draft My Care role structure.",
-          "decorative": false
-        },
-        {
-          "kind": "diagram",
-          "description": "ops-img-mycare-chart: Role-only My Care chart (from B2)",
-          "source": "svg",
-          "alt_text": "\"My Care structure by role.\"",
           "decorative": false
         }
       ],
@@ -786,7 +765,28 @@
         },
         {
           "kind": "illustration",
-          "description": "ops-img-scenes-1..4: Reception, phone follow-up, insurance call, pharmacy queue",
+          "description": "ops-img-scenes-1: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "generate",
+          "alt_text": "per scene",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ops-img-scenes-2: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "generate",
+          "alt_text": "per scene",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ops-img-scenes-3: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "generate",
+          "alt_text": "per scene",
+          "decorative": false
+        },
+        {
+          "kind": "illustration",
+          "description": "ops-img-scenes-4: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "generate",
           "alt_text": "per scene",
           "decorative": false

@@ -3,10 +3,11 @@
 ![My Clinic logo](brand/logo-preview.png)
 
 > Run **2026-10-15** against the committed `v0.1-draft` sources with the real compiler
-> (`edumints-scorm-mcp` @ `4bbf459`, the revision pinned in [`build-pipeline.md`](build-pipeline.md) §6).
-> This is the first half of **C22 / G15**: the `imsmanifest.xml` schema check. XSD validity is a
-> **supporting** check — the gating proof of SCORM conformance is a SCORM Cloud round-trip and a real
-> LMS (edumints `docs/CONFORMANCE.md`), which is still open.
+> (`edumints-scorm-mcp` @ `4bbf459`, the revision pinned in [`build-pipeline.md`](build-pipeline.md) §6),
+> then **re-run the same day after the C20 narration rewrite** rebuilt all eight packages — the numbers
+> below are that second run. This is the first half of **C22 / G15**: the `imsmanifest.xml` schema
+> check. XSD validity is a **supporting** check — the gating proof of SCORM conformance is a SCORM Cloud
+> round-trip and a real LMS (edumints `docs/CONFORMANCE.md`), which is still open.
 
 ## 1. Result
 
@@ -15,30 +16,36 @@ committed build reports carry is gone, and every package validates with **0 erro
 
 | Module | SCORM | `validate_package` | errors | warnings | `lint_course` errors | Package bytes |
 |---|---|---|---|---:|---:|---:|---:|
-| 01 | 2004 | ok | 0 | 0 | 0 | 2,367,661 |
-| 02 | 1.2 | ok | 0 | 0 | 0 | 3,322,813 |
-| 03 | 2004 | ok | 0 | 0 | 0 | 1,214,576 |
-| 04 | 1.2 | ok | 0 | 0 | 0 | 2,513,779 |
-| 05 | 1.2 | ok | 0 | 0 | 0 | 510,218 |
-| 06 | 1.2 | ok | 0 | 0 | 0 | 701,178 |
-| 07 | 1.2 | ok | 0 | 0 | 0 | 805,664 |
-| 08 | 1.2 | ok | 0 | 0 | 0 | 699,025 |
+| 01 | 2004 | ok | 0 | 0 | 0 | 2,365,904 |
+| 02 | 1.2 | ok | 0 | 0 | 0 | 3,322,101 |
+| 03 | 2004 | ok | 0 | 0 | 0 | 1,214,577 |
+| 04 | 1.2 | ok | 0 | 0 | 0 | 2,513,164 |
+| 05 | 1.2 | ok | 0 | 0 | 0 | 509,656 |
+| 06 | 1.2 | ok | 0 | 0 | 0 | 700,711 |
+| 07 | 1.2 | ok | 0 | 0 | 0 | 805,666 |
+| 08 | 1.2 | ok | 0 | 0 | 0 | 698,542 |
 
-Both SCORM versions are covered: the two 2004 packages (01, 03) and the six 1.2 packages. The rebuilt
-zips differ from the committed ones only in the fresh project id inside `imsmanifest.xml` and the zip
-entry timestamps — `index.html`, the runtime, the companion art and `preview.html` are byte-identical,
-so the committed drafts still match their sources.
+Both SCORM versions are covered: the two 2004 packages (01, 03) and the six 1.2 packages. The second
+run is the C20 rebuild, so the six generated packs' captions changed with their narration — compare
+each zip's entries against that module's sources when reviewing a rebuild. A rebuild is never
+bit-identical: the project id inside `imsmanifest.xml` and the zip entry timestamps are fresh every
+time, which is why the table reports sizes rather than hashes.
 
 ## 2. How the schemas were supplied
 
 `validate_package` fetches the IMS/W3C schemas from `imsglobal.org` / `w3.org` on first use (only the
 ADL files are vendored), which this build sandbox cannot reach. Setting **`SCORM_SCHEMA_DIR`** switches
 the compiler to a fully offline schema directory with `12/` and `2004/` sub-directories and no network
-access at all:
+access at all.
+
+That directory is not committed (IMS/W3C licensing). [`tools/fetch_scorm_schemas.py`](../tools/fetch_scorm_schemas.py)
+rebuilds it from the committed provenance record below — the ADL files and both drivers come from the
+edumints checkout, the rest from the recorded public mirrors, and every file is hash-checked:
 
 ```bash
 # <dir>/12/ and <dir>/2004/, each holding: driver_<ver>.xsd + adl/*.xsd (copied from the edumints
 # checkout) + the IMS/W3C files, with absolute xml.xsd imports rewritten to the local xml.xsd
+python3 elearning-course/scorm-plans/tools/fetch_scorm_schemas.py --out /path/to/scorm-schemas
 SCORM_SCHEMA_DIR=/path/to/scorm-schemas \
 EDUMINTS_DIR=/path/to/edumints-scorm-mcp \
   .venv/bin/python elearning-course/scorm-plans/tools/edumints_build.py 01_health-and-safety-1

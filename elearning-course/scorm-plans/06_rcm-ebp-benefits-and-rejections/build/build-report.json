@@ -12,16 +12,14 @@
   ],
   "module_colour": "#7C0041",
   "build": {
-    "project_id": "proj_01M4Z58HBQH2B0KVP0HA4K0FTG",
-    "job_id": "job_01M4Z58HCCPT0TKCY2659M2RVQ",
+    "project_id": "proj_01M4ZKJESKJYY83R4BCSZ0VZPC",
+    "job_id": "job_01M4ZKJET420A25FR4QQHYA3B1",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/OXfvIcMelm53GL-44ycxTpLtaSJrNUS5",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
+    "download_url": "http://localhost/scorm/files/vEN3N7HswkbVkz3KqLwErI0kNMJ7I5u2",
+    "warnings": []
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58HBQH2B0KVP0HA4K0FTG",
+    "project_id": "proj_01M4ZKJESKJYY83R4BCSZ0VZPC",
     "strict": false,
     "error_count": 0,
     "warn_count": 1,
@@ -39,17 +37,11 @@
   "validate_package": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
+    "warnings": []
   },
   "package": {
     "file": "MC_06_RCM-B_v0.1-draft_1.2.zip",
-    "bytes": 701179
+    "bytes": 700711
   },
   "preview": "preview.html"
 }
