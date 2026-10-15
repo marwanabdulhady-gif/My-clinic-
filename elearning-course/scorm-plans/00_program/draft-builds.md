@@ -17,7 +17,7 @@
 | [08](../08_it-ehr-consultation/build/) | 1.2 | 20 | 11 | 0 | `too_many_list_items`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 683 | 31 | 3 | 6 |
 <!-- builds:end -->
 
-\* XSD schemas unreachable offline (`schema_unavailable`): structural checks only. Rerun with schema access before release.
+\* These build reports were produced offline, so they carry the `schema_unavailable` warning: structural checks only. The XSD check has since been run separately with an offline schema directory (`SCORM_SCHEMA_DIR`) — **all eight manifests validate with 0 errors and 0 warnings** ([`xsd-validation.md`](xsd-validation.md)). Rerun `validate_package` with the authentic SCORM 1.2 root schema before a release build.
 
 Each module folder `build/` holds `course-spec.json` (what was compiled), `asset-map.json` (every asset and whether it is a file or PENDING), `build-report.json` (compiler output verbatim), `preview.html` (open in a browser) and the zip. Modules 01, 02, 04, 05, 06 and 08 also hold `screens.json`: the production screens written from the storyboard cards (03 and 07 build straight from their storyboard blocks).
 
@@ -50,4 +50,4 @@ Refresh the table above after any rebuild with `python3 elearning-course/scorm-p
 5. **Phase 0**: every `⚠ Draft — pending` closes with its decision; rebuild with the two tools.
 6. **Content gap** `hs2-031` (evacuation tools asked before they are taught).
 7. **Upstream engine bug**: report the explore-hotspot positioning bug to edumints-scorm-mcp, then drop the CSS workaround.
-8. **XSD validation** with the SCORM schemas reachable (`SCORM_SCHEMA_DIR`), then SCORM Cloud and the client LMS (D9).
+8. **XSD validation**: ✅ run 2026-10-15 for all eight with an offline schema directory — 0 errors, 0 warnings ([`xsd-validation.md`](xsd-validation.md)). Still to do: rerun with the authentic SCORM 1.2 root schema, then the SCORM Cloud smoke test and the client LMS (D9).
