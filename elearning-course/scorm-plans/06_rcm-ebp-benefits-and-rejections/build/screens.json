@@ -1,0 +1,1017 @@
+[
+ {
+  "type": "title_slide",
+  "id": "rcmb-000",
+  "title": "RCM Part B: New EBP Benefits & Claim-Rejection Analysis",
+  "subtitle": "What's new in the EBP — and why claims get rejected",
+  "section": "What changed",
+  "node_id": "rcmb-sA",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<p class=\"course-chip\">MODULE 06 · RCM PART B</p><p>Policy effective date: to be confirmed. <strong>⚠ Draft — pending B1</strong></p>",
+  "notes": "Companion: Dr. Omar, char-omar-welcome, L1 half-body bottom-right (alt: Dr. Omar, the family physician, welcoming the learner). Speaker: Dr. Omar. Open decisions: B1 (cover shows the policy effective date, not the talk date; deck says 30 Aug 2023 vs file name 2026). Footer reminder lives on rcmb-001.",
+  "narration_text": "Dr. Omar: Welcome to RCM Part B: New EBP Benefits & Claim-Rejection Analysis. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+  "animation": "fade",
+  "reveal": "auto"
+ },
+ {
+  "type": "content_slide",
+  "id": "rcmb-001",
+  "title": "Frame",
+  "section": "What changed",
+  "node_id": "rcmb-sA",
+  "objective_ids": [],
+  "points": 0,
+  "layout": "text",
+  "body_html": "",
+  "blocks": [
+   {
+    "html": "<h3>What changed</h3><p>The EBP <strong>added</strong> new benefits and <strong>amended</strong> others.</p>"
+   },
+   {
+    "html": "<h3>What decides payment</h3><p>Coverage depends on the <strong>table of benefits</strong> and on the <strong>documentation</strong> in the note.</p>"
+   },
+   {
+    "html": "<h3>Watch out</h3><p><strong>Partial coverage ≠ full approval.</strong> A covered benefit can still have limits, criteria or pre-authorisation.</p>"
+   },
+   {
+    "html": "<p><em>Always check the patient's policy and the current table of benefits.</em> Benefit wording in this course: ⚠ Draft — pending B3.</p>"
+   }
+  ],
+  "notes": "No companion. Footer line from phase-4 build risk table (learners must not treat the course as a coverage authority). Open: B3 (all benefit wording), D11 brand draft in use.",
+  "narration_text": "Dr. Omar: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "drag_drop",
+  "id": "rcmb-010",
+  "title": "Sort the benefits",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [
+   "rcmb-o1"
+  ],
+  "points": 10,
+  "evidence_screen_ids": [
+   "rcmb-001"
+  ],
+  "prompt_html": "<p>Place each benefit card in <strong>Added by the new EBP</strong> or <strong>Amended by the new EBP</strong>. Headline items only. ⚠ Draft — pending B3/B4</p>",
+  "items": [
+   {
+    "id": "prev",
+    "text_html": "Prevention exams",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "std",
+    "text_html": "STD treatment",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "vacc",
+    "text_html": "Adult vaccination",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "home",
+    "text_html": "Home care for inpatients",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "contra",
+    "text_html": "Temporary contraception",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "tele",
+    "text_html": "Telemedicine",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "meno",
+    "text_html": "Menopause / perimenopause cover",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "kidney",
+    "text_html": "Kidney transplant",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "diab",
+    "text_html": "Diabetes programme",
+    "correct_target_id": "added"
+   },
+   {
+    "id": "mh",
+    "text_html": "Mental health",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "opt",
+    "text_html": "Optical <small>(⚠ Draft — pending B6)</small>",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "cong",
+    "text_html": "Congenital anomalies",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "dental",
+    "text_html": "Dental",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "dial",
+    "text_html": "Dialysis limit",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "wl",
+    "text_html": "Weight-loss surgery",
+    "correct_target_id": "amended"
+   },
+   {
+    "id": "opd",
+    "text_html": "OPD co-payment",
+    "correct_target_id": "amended"
+   }
+  ],
+  "targets": [
+   {
+    "id": "added",
+    "label_html": "Added — new benefit"
+   },
+   {
+    "id": "amended",
+    "label_html": "Amended — existing benefit changed"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> New benefits include prevention exams, adult vaccines, STD treatment, home care after an inpatient stay, temporary contraception, telemedicine, menopause/perimenopause cover, kidney transplant and the diabetes programme. Mental health, optical, congenital anomalies, dental, the dialysis limit, weight-loss surgery and the OPD co-payment already existed and were changed. ⚠ Draft — pending B3/B4.</p>",
+   "incorrect_html": "<p>Not yet. Ask of each card: is this a benefit the EBP <em>introduced</em>, or one that already existed and now has new rules or limits? Mental health, optical, dental, dialysis and the OPD co-payment existed before; prevention, vaccines, telemedicine and the diabetes programme are new. ⚠ Draft — pending B3/B4.</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Card asks for feedback per card; edumints DragItem has no per-item feedback field, so the card-level reasoning is in feedback.correct_html/incorrect_html (show_correct_answer marks each card). Counts '18 added / 10 amended' dropped per B4 recommended draft (headline items only). Open: B3, B4, B6 (optical wording). Icons rcmb-img-benefit-icons are used on rcmb-020/040 (drag_drop has no media slot).",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "tabs",
+  "id": "rcmb-020",
+  "title": "What's covered",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Open each tab. Think of the patient in front of you who is due a screen.</p>",
+  "tabs": [
+   {
+    "label": "Early exams",
+    "image_asset_id": "<rcmb-img-benefit-icons>",
+    "image_alt": "A set of generic line icons for health benefits.",
+    "body_html": "<ul><li>Mammogram</li><li>Pap smear</li><li>FIT or colonoscopy</li><li>Behavioural / dietary counselling — only when the risk criteria are met (draft: BMI &gt; 30 or ≥ 2 risk factors) <strong>⚠ Draft — pending B7</strong></li><li>Diabetes screening: FBS or HbA1c</li><li>Lipid profile</li><li>DEXA</li></ul>"
+   },
+   {
+    "label": "Adult vaccines",
+    "body_html": "<ul><li>Tdap</li><li>PCV13</li><li>PPSV23</li><li>Influenza</li></ul><p>Given per the MOH schedule.</p>"
+   },
+   {
+    "label": "STDs",
+    "body_html": "<p>Treatment of listed sexually transmitted diseases is covered <strong>whatever the mode of infection</strong>.</p><p>Check the condition against the list in the table of benefits.</p>"
+   }
+  ],
+  "notes": "No companion. Open: B7 (dietary consultation criteria, draft value shown), B3 (all benefit wording).",
+  "narration_text": "Dr. Omar: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "mcq",
+  "id": "rcmb-021",
+  "title": "Apply",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [
+   "rcmb-o2"
+  ],
+  "points": 5,
+  "evidence_screen_ids": [
+   "rcmb-020"
+  ],
+  "prompt_html": "<p>A 52-year-old woman with a BMI of 32 and high cholesterol asks for help with her diet to lower her heart risk. What is the right approach?</p>",
+  "options": [
+   {
+    "id": "b",
+    "text_html": "Provide the consultation; there is no need to record BMI because diet advice is always covered.",
+    "feedback_html": "<p>What's missing is the evidence. Dietary consultation is covered only for patients who meet the risk criteria, so the note must show BMI and risk factors. ⚠ Draft — pending B7</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Tell her dietary advice is not covered and refer her to a private nutritionist.",
+    "feedback_html": "<p>Not quite. Behavioural / dietary consultation is now one of the covered prevention exams for patients who meet the risk criteria.</p>"
+   },
+   {
+    "id": "a",
+    "correct": true,
+    "text_html": "Provide the covered behavioural / dietary consultation and document her BMI and risk factors in the note.",
+    "feedback_html": "<p><strong>Correct.</strong> She meets the draft criteria (BMI over 30, plus a risk factor). The consultation is covered when the note shows why. ⚠ Draft — pending B7</p>"
+   },
+   {
+    "id": "d",
+    "text_html": "Order a lipid profile only; counselling needs pre-authorisation first.",
+    "feedback_html": "<p>What's missing is the consultation itself. The prevention benefit covers it when the criteria are documented; the card does not name a pre-authorisation step for it.</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Covered dietary consultation, with BMI and risk factors documented. ⚠ Draft — pending B7</p>",
+   "incorrect_html": "<p>Check the early-exams tab: dietary counselling is covered when the risk criteria are met and documented. ⚠ Draft — pending B7</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Open: B7 (criteria 'BMI > 30 or ≥ 2 risk factors' is the source draft).",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "accordion",
+  "id": "rcmb-030",
+  "title": "Mental-health benefit",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Open one section at a time.</p>",
+  "items": [
+   {
+    "title": "Included conditions (9)",
+    "body_html": "<ul><li>Depression</li><li>Bipolar disorder</li><li>Anxiety and stress</li><li>Alcohol or drug use</li><li>Anger management</li><li>Grief and loss</li><li>Schizophrenia</li><li>PTSD</li><li>Eating disorders</li></ul>"
+   },
+   {
+    "title": "Excluded",
+    "body_html": "<p><strong>Hypnosis</strong> and <strong>rehabilitation</strong> are not covered, including for alcohol or drug use.</p>"
+   },
+   {
+    "title": "Limit per policy period",
+    "body_html": "<p>The benefit has a limit per policy period. Draft value from the source deck: 50,000 SAR. <strong>⚠ Draft — pending B5</strong></p>"
+   },
+   {
+    "title": "Pre-authorisation",
+    "body_html": "<p>Services under the sub-limit need <strong>pre-authorisation</strong> before they are delivered.</p>"
+   },
+   {
+    "title": "Document",
+    "body_html": "<ul><li>The indication</li><li>Link the symptoms to a valid psychiatric diagnosis</li><li>Justify the referral</li></ul><p><strong>Noor's tip:</strong> document the diagnosis and the impact on daily life — that is what gets mental-health care approved.</p>"
+   }
+  ],
+  "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card (alt: Noor, the safety liaison, sharing a tip). Speaker: Noor. Accordion has no free media slot, so the tip text is in the last panel and the pose stays here for the developer. Open: B5 (limit value), B3.",
+  "narration_text": "Noor: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "true_false",
+  "id": "rcmb-031",
+  "title": "Exclusion",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [
+   "rcmb-o2"
+  ],
+  "points": 5,
+  "evidence_screen_ids": [
+   "rcmb-030"
+  ],
+  "prompt_html": "<p>True or false: hypnosis for alcohol use is covered under the mental-health benefit.</p>",
+  "correct": false,
+  "feedback": {
+   "correct_html": "<p><strong>Correct — false.</strong> Alcohol or drug use is an included condition, but hypnosis and rehabilitation are excluded. Offer a covered treatment and document the diagnosis.</p>",
+   "incorrect_html": "<p>Look again at the exclusions. The condition (alcohol use) is included, but the method — hypnosis — is excluded from the benefit.</p>",
+   "show_correct_answer": true
+  },
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "tabs",
+  "id": "rcmb-040",
+  "title": "Five benefits",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Use the tabs as a short reference: discharge, phone, diabetes, women's health and transplant.</p>",
+  "tabs": [
+   {
+    "label": "Home care",
+    "image_asset_id": "<rcmb-img-benefit-icons>",
+    "image_alt": "A set of generic line icons for health benefits.",
+    "body_html": "<p>For patients <strong>after an inpatient stay</strong>:</p><ul><li>Wound care</li><li>IV medicines</li><li>Catheter care</li></ul>"
+   },
+   {
+    "label": "Telemedicine",
+    "body_html": "<p>Covered when delivered by an <strong>MOH-licensed centre</strong>, following CHI rules. <strong>⚠ Draft — pending D4/B2</strong> (regulator name)</p>"
+   },
+   {
+    "label": "Diabetes 360°",
+    "body_html": "<p>A team programme: physician, nutritionist, podiatrist, social worker, health coach and diabetes educators.</p><p>Plus specialist visits: eye, kidney, foot, heart and psychiatry.</p>"
+   },
+   {
+    "label": "Women's health",
+    "body_html": "<p><strong>Women's health:</strong> menopausal and perimenopausal hormone therapy.</p><p><strong>Family planning:</strong> hormonal contraceptives and IUDs.</p>"
+   },
+   {
+    "label": "Kidney transplant",
+    "body_html": "<p>Covered up to the policy limit. Draft value from the source deck: 250,000 SAR. <strong>⚠ Draft — pending B5</strong></p>"
+   }
+  ],
+  "notes": "No companion. Open: B5 (transplant limit), D4/B2 (regulator name CHI vs CCHI — shown as the deck's 'CHI' with a pending marker), B3.",
+  "narration_text": "Dr. Omar: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "matching",
+  "id": "rcmb-041",
+  "title": "Key condition or limit",
+  "section": "Benefits in practice",
+  "node_id": "rcmb-sB",
+  "objective_ids": [
+   "rcmb-o2"
+  ],
+  "points": 10,
+  "evidence_screen_ids": [
+   "rcmb-030",
+   "rcmb-040"
+  ],
+  "prompt_html": "<p>Match each benefit with the condition or limit you must check before you offer it.</p>",
+  "pairs": [
+   {
+    "id": "mh",
+    "left_html": "Mental health",
+    "right_html": "Sub-limit per policy period + pre-authorisation"
+   },
+   {
+    "id": "kidney",
+    "left_html": "Kidney transplant",
+    "right_html": "Up to the policy limit"
+   },
+   {
+    "id": "tele",
+    "left_html": "Telemedicine",
+    "right_html": "MOH-licensed centre"
+   },
+   {
+    "id": "home",
+    "left_html": "Home care",
+    "right_html": "After an inpatient stay (wound / IV / catheter)"
+   },
+   {
+    "id": "fp",
+    "left_html": "Family planning",
+    "right_html": "Hormonal contraceptives and IUDs"
+   },
+   {
+    "id": "wh",
+    "left_html": "Women's health",
+    "right_html": "Menopausal hormone therapy"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Each benefit carries its own condition: a limit, a pre-authorisation, a licensed provider, a prior inpatient stay or a defined scope. Check it before you promise cover.</p>",
+   "incorrect_html": "<p>Revisit the mental-health panel and the five-benefit tabs. Limits belong to mental health and transplant; the licensed centre to telemedicine; the inpatient stay to home care.</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Limit values are not shown here (B5 pending); the pairs use 'policy limit' wording only.",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "content_slide",
+  "id": "rcmb-050",
+  "title": "Read a rejection log",
+  "section": "Reading rejections",
+  "node_id": "rcmb-sC",
+  "objective_ids": [],
+  "points": 0,
+  "layout": "text",
+  "body_html": "<p>Each rejection comment tells you what to fix. Read the comment first, then check it against the diagnosis.</p><table><caption>Training rejection log — invented claim ids, no patient, provider or date data</caption><thead><tr><th>Claim</th><th>Diagnosis</th><th>Rejection comment</th></tr></thead><tbody><tr><td>CLM-0001</td><td>Pain, unspecified</td><td>“Pain, unspecified”</td></tr><tr><td>CLM-0002</td><td>Fever</td><td>“Fever — non-specific diagnosis”</td></tr><tr><td>CLM-0003</td><td>Depressive episode</td><td>“Requires pre-authorisation as per policy”</td></tr><tr><td>CLM-0004</td><td>Essential hypertension</td><td>“Consultation within the free follow-up period”</td></tr><tr><td>CLM-0005</td><td>Knee pain after a fall</td><td>“Radiology: two views”</td></tr><tr><td>CLM-0006</td><td>Acute sinusitis</td><td>“No proof of billed service”</td></tr><tr><td>CLM-0007</td><td>Type 2 diabetes</td><td>“Duplicate billing”</td></tr><tr><td>CLM-0008</td><td>Chronic kidney disease</td><td>“Renal panel must include required tests”</td></tr></tbody></table><p><small>Rebuilt rows; the slide-6 screenshot is not used. <strong>⚠ Draft — pending B8/D5</strong> (DPO approval of the rebuilt log)</small></p>",
+  "notes": "Companion: Dr. Omar, char-omar-explaining, L3 right column (alt: Dr. Omar, the family physician, explaining the log). Speaker: Dr. Omar. Asset rcmb-tbl-log is realised as this HTML table (planned kind: HTML table). Claim ids CLM-0001…0008 are invented; only claim id + diagnosis + comment are shown (Phase 0 B8 recommended draft: comment + diagnosis only; the card's 'service' column is dropped for that reason); diagnoses are generic training values chosen to fit the slide-6 comments and need RCM lead + DPO approval. Open: B8, D5.",
+  "narration_text": "Dr. Omar: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "drag_drop",
+  "id": "rcmb-051",
+  "title": "Why was it rejected?",
+  "section": "Reading rejections",
+  "node_id": "rcmb-sC",
+  "objective_ids": [
+   "rcmb-o3"
+  ],
+  "points": 15,
+  "evidence_screen_ids": [
+   "rcmb-050"
+  ],
+  "prompt_html": "<p>Sort each rejection comment from the log by its cause. Categories: ⚠ Draft — pending B9</p>",
+  "items": [
+   {
+    "id": "clm0001",
+    "text_html": "“Pain, unspecified”",
+    "correct_target_id": "coding"
+   },
+   {
+    "id": "clm0002",
+    "text_html": "“Fever — non-specific diagnosis”",
+    "correct_target_id": "coding"
+   },
+   {
+    "id": "clm0003",
+    "text_html": "“Requires pre-authorisation as per policy”",
+    "correct_target_id": "policy"
+   },
+   {
+    "id": "clm0004",
+    "text_html": "“Consultation within the free follow-up period”",
+    "correct_target_id": "timing"
+   },
+   {
+    "id": "clm0005",
+    "text_html": "“Radiology: two views”",
+    "correct_target_id": "documentation"
+   },
+   {
+    "id": "clm0006",
+    "text_html": "“No proof of billed service”",
+    "correct_target_id": "documentation"
+   },
+   {
+    "id": "clm0007",
+    "text_html": "“Duplicate billing”",
+    "correct_target_id": "billing"
+   },
+   {
+    "id": "clm0008",
+    "text_html": "“Renal panel must include required tests”",
+    "correct_target_id": "coding"
+   }
+  ],
+  "targets": [
+   {
+    "id": "documentation",
+    "label_html": "Documentation"
+   },
+   {
+    "id": "coding",
+    "label_html": "Coding"
+   },
+   {
+    "id": "policy",
+    "label_html": "Policy / pre-authorisation"
+   },
+   {
+    "id": "timing",
+    "label_html": "Timing / follow-up period"
+   },
+   {
+    "id": "billing",
+    "label_html": "Billing process"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Cause → fix:</p><ul><li><strong>Coding</strong> (pain unspecified, fever, renal panel): code a specific or provisional diagnosis; bill the panel only with all its required tests.</li><li><strong>Documentation</strong> (two views, no proof of service): the report or note must show what was billed.</li><li><strong>Policy</strong>: get pre-authorisation before the service.</li><li><strong>Timing</strong>: a visit inside the free follow-up period is not billed again.</li><li><strong>Billing process</strong>: check before submitting so the same service is not claimed twice.</li></ul><p>⚠ Draft — pending B9</p>",
+   "incorrect_html": "<p>Ask what the payer is pointing at: a vague code, a missing record, a policy rule, a timing rule or a submission error. Non-specific diagnoses are coding; missing proof is documentation; pre-authorisation is policy; follow-up visits are timing; duplicates are billing process. ⚠ Draft — pending B9</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Category set and item mapping are the B9 proposal (draft); radiology 'two views' mapped to Documentation and 'renal panel' to Coding pending the Coding lead. Per-card cause+fix feedback is condensed into feedback (DragItem has no per-item feedback).",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "decision_scenario",
+  "id": "rcmb-052",
+  "title": "Rework",
+  "section": "Reading rejections",
+  "node_id": "rcmb-sC",
+  "objective_ids": [
+   "rcmb-o3"
+  ],
+  "points": 15,
+  "evidence_screen_ids": [
+   "rcmb-050"
+  ],
+  "pass_score": 3,
+  "start_node_id": "n1",
+  "intro_html": "<p>Fictional claim <strong>CLM-0002</strong> came back rejected: <em>“Fever — non-specific diagnosis.”</em> Work the rejection with Dr. Omar, one decision at a time.</p>",
+  "nodes": [
+   {
+    "id": "n1",
+    "prompt_html": "<p>The rejection lands in your queue. What do you do first?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Resubmit the claim unchanged.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>Nothing has changed, so the payer will reject it again for the same reason. A rejection comment tells you what to fix.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Bill the visit again as a new claim.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>A second claim for the same visit is duplicate billing — a new rejection, not a fix.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Review the consultation note.",
+      "score_delta": 1,
+      "goto_node_id": "n2",
+      "feedback_html": "<p><strong>Best choice.</strong> The fix starts in the note: as in Part A, the claim can only be as specific as the documentation behind it.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "prompt_html": "<p>The note shows fever for 3 days, dysuria and a positive urinalysis. How do you fix the claim?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Add a specific or provisional diagnosis supported by these findings, and record the findings.",
+      "score_delta": 1,
+      "goto_node_id": "n3",
+      "feedback_html": "<p><strong>Best choice.</strong> Part A again: code the most specific diagnosis the findings support (a provisional one is acceptable) and let the findings justify it. The SME confirms the example diagnosis.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Add a second code at random so the claim looks more specific.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>A code the note does not support is a coding error and an audit risk. Only code what is documented.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Keep “fever” — it is what the patient complained of.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>The symptom alone is exactly what the payer rejected. The findings point to a more specific diagnosis; use it.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "prompt_html": "<p>The diagnosis and findings are corrected. How do you send it back?</p>",
+    "choices": [
+     {
+      "id": "b",
+      "text_html": "Create a new claim for the same visit.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>A new claim for a service already claimed is duplicate billing and will be rejected. Resubmit the original with the supporting document.</p>"
+     },
+     {
+      "id": "a",
+      "text_html": "Resubmit the rejected claim with the supporting document.",
+      "score_delta": 1,
+      "goto_node_id": null,
+      "feedback_html": "<p><strong>Best choice.</strong> Rework, don't duplicate: the corrected claim goes back with the evidence the payer asked for.</p>"
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Claim reworked.</strong> Review the note, fix the diagnosis to match the findings, and resubmit with the supporting document.</p>",
+   "incorrect_html": "<p>Replay the scenario. Rework means: read the note, correct what it supports, then resubmit — never resubmit unchanged or bill twice.</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Companion host: char-omar-avatar-neutral (outcome poses char-omar-avatar-happy on pass / char-omar-avatar-concern on retry — no outcome-pose switch in the edumints schema; developer note). Speaker: Dr. Omar. Pass rule: all best choices (Phase 3 activity plan) → pass_score 3. 'Ties back to Part A' = Module 05 documentation and coding. Example provisional diagnosis left generic for SME (no specific code shown).",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+  "reveal": "none"
+ },
+ {
+  "type": "adaptive_practice",
+  "id": "rcmb-060",
+  "title": "Covered or not?",
+  "section": "Practice & close",
+  "node_id": "rcmb-sD",
+  "objective_ids": [
+   "rcmb-o2"
+  ],
+  "points": 20,
+  "evidence_screen_ids": [
+   "rcmb-020",
+   "rcmb-030",
+   "rcmb-040"
+  ],
+  "prompt_html": "<p>Patient requests across all the benefits. Each next request adapts to how you are doing. Benefit wording: ⚠ Draft — pending B3</p>",
+  "items": [
+   {
+    "id": "flu",
+    "difficulty": -1.5,
+    "skill": "prevention",
+    "prompt_html": "<p>A 45-year-old asks for this season's influenza vaccine.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered — adult vaccine",
+      "correct": true
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered — vaccines are for children only"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered only with pre-authorisation"
+     }
+    ],
+    "explain_html": "<p>Influenza is one of the adult vaccines now covered (with Tdap, PCV13 and PPSV23), given per the MOH schedule.</p>"
+   },
+   {
+    "id": "mammo",
+    "difficulty": -1.5,
+    "skill": "prevention",
+    "prompt_html": "<p>A 50-year-old woman is due a screening mammogram.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — screening without symptoms"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered only after a positive breast exam"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — prevention exam",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>Mammogram is one of the covered early-detection exams; no symptoms are needed.</p>"
+   },
+   {
+    "id": "dexa",
+    "difficulty": -1.0,
+    "skill": "prevention",
+    "prompt_html": "<p>A postmenopausal woman asks for a DEXA scan.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — DEXA is diagnostic only"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered only under the diabetes programme"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — prevention exam",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>DEXA is listed among the covered prevention exams.</p>"
+   },
+   {
+    "id": "iud",
+    "difficulty": -0.5,
+    "skill": "women",
+    "prompt_html": "<p>A patient asks for an IUD insertion for family planning.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — contraception is excluded"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered only with menopause"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — family planning",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>Family planning covers hormonal contraceptives and IUDs.</p>"
+   },
+   {
+    "id": "hypno",
+    "difficulty": -0.5,
+    "skill": "mental",
+    "prompt_html": "<p>A patient with alcohol use disorder asks for hypnosis sessions.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — hypnosis is excluded",
+      "correct": true
+     },
+     {
+      "id": "b",
+      "text_html": "Covered — alcohol use is an included condition"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered with pre-authorisation"
+     }
+    ],
+    "explain_html": "<p>Alcohol use is included, but hypnosis and rehabilitation are excluded from the mental-health benefit.</p>"
+   },
+   {
+    "id": "homeiv",
+    "difficulty": 0.0,
+    "skill": "added",
+    "prompt_html": "<p>A patient discharged yesterday after an inpatient stay needs IV antibiotics at home.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered — home care after an inpatient stay",
+      "correct": true
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered — home care is never covered"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered only by telemedicine"
+     }
+    ],
+    "explain_html": "<p>Home care for inpatients covers IV medicines, wound care and catheter care after the stay.</p>"
+   },
+   {
+    "id": "std",
+    "difficulty": 0.0,
+    "skill": "prevention",
+    "prompt_html": "<p>A patient worries that treatment for a listed STD depends on how it was caught.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered only if infection was not sexual"
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered whatever the mode of infection",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>STD treatment is covered whatever the mode of infection; check the condition is on the list.</p>"
+   },
+   {
+    "id": "meno",
+    "difficulty": 0.0,
+    "skill": "women",
+    "prompt_html": "<p>A 51-year-old with perimenopausal symptoms asks about hormone therapy.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered only after age 60"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered — women's health benefit",
+      "correct": true
+     },
+     {
+      "id": "c",
+      "text_html": "Not covered — cosmetic"
+     }
+    ],
+    "explain_html": "<p>The women's-health benefit covers menopausal and perimenopausal hormone therapy.</p>"
+   },
+   {
+    "id": "tele",
+    "difficulty": 0.5,
+    "skill": "added",
+    "prompt_html": "<p>A patient wants a telemedicine follow-up through an unlicensed app.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — must be an MOH-licensed centre",
+      "correct": true
+     },
+     {
+      "id": "b",
+      "text_html": "Covered — any telemedicine counts"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered if the patient pays the co-payment"
+     }
+    ],
+    "explain_html": "<p>Telemedicine is covered only from an MOH-licensed centre.</p>"
+   },
+   {
+    "id": "bipolar",
+    "difficulty": 0.5,
+    "skill": "mental",
+    "prompt_html": "<p>A patient with bipolar disorder needs ongoing management that falls under the mental-health sub-limit.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered without limits or approval"
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered — bipolar is excluded"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered within the limit — get pre-authorisation and document the diagnosis",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>Bipolar disorder is an included condition; services under the sub-limit need pre-authorisation, within the policy-period limit. ⚠ Draft — pending B5</p>"
+   },
+   {
+    "id": "diab",
+    "difficulty": 0.5,
+    "skill": "added",
+    "prompt_html": "<p>A patient in the diabetes programme is referred to the podiatrist.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered — foot care is cosmetic"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered only after an amputation"
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — part of the diabetes programme team",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>The Diabetes 360° team includes a podiatrist, plus eye, kidney, foot, heart and psychiatry visits.</p>"
+   },
+   {
+    "id": "kidney",
+    "difficulty": 0.5,
+    "skill": "added",
+    "prompt_html": "<p>A patient's kidney transplant is planned. What do you check?</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Not covered"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered up to the policy limit",
+      "correct": true
+     },
+     {
+      "id": "c",
+      "text_html": "Covered with no limit"
+     }
+    ],
+    "explain_html": "<p>Kidney transplant is a new benefit, covered up to the policy limit (draft 250,000 SAR). ⚠ Draft — pending B5</p>"
+   },
+   {
+    "id": "diet24",
+    "difficulty": 1.0,
+    "skill": "prevention",
+    "prompt_html": "<p>A patient with a BMI of 24 and no other risk factors asks for a dietary consultation.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered if the patient insists"
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered — the risk criteria are not met",
+      "correct": true
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — diet advice is always covered"
+     }
+    ],
+    "explain_html": "<p>Dietary consultation is covered only when the risk criteria are met (draft: BMI &gt; 30 or ≥ 2 risk factors). ⚠ Draft — pending B7</p>"
+   },
+   {
+    "id": "pcos",
+    "difficulty": 1.0,
+    "skill": "women",
+    "prompt_html": "<p>A patient asks for a PCOS hormonal panel under the women's-health benefit.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered as family planning"
+     },
+     {
+      "id": "b",
+      "text_html": "Not covered under this benefit — it covers menopausal hormone therapy",
+      "correct": true
+     },
+     {
+      "id": "c",
+      "text_html": "Covered — all hormone tests are covered"
+     }
+    ],
+    "explain_html": "<p>The women's-health benefit names menopausal / perimenopausal hormone therapy; the source deck lists PCOS hormonal assessment as rejected. ⚠ Draft — pending B3, 05/B6</p>"
+   },
+   {
+    "id": "rehab",
+    "difficulty": 1.0,
+    "skill": "mental",
+    "prompt_html": "<p>A patient asks for a residential rehabilitation programme for drug use.</p>",
+    "options": [
+     {
+      "id": "a",
+      "text_html": "Covered — drug use is an included condition"
+     },
+     {
+      "id": "b",
+      "text_html": "Covered with pre-authorisation"
+     },
+     {
+      "id": "c",
+      "text_html": "Not covered — rehabilitation is excluded",
+      "correct": true
+     }
+    ],
+    "explain_html": "<p>Drug use is an included condition, but rehabilitation is excluded.</p>"
+   }
+  ],
+  "adaptive": {
+   "strategy": "elo",
+   "ability": 0.0,
+   "k": 0.3
+  },
+  "target_success": 0.7,
+  "max_items": 8,
+  "pass_ratio": 0.6,
+  "seed": "rcmb-060",
+  "feedback": {
+   "correct_html": "<p><strong>Well done.</strong> You checked each request against the benefit, its condition and its limit.</p>",
+   "incorrect_html": "<p>Review the benefit tabs and the mental-health panel, then try again. Ask: is it listed, is there a condition, is there a limit?</p>",
+   "show_correct_answer": true
+  },
+  "notes": "Elo strategy, 15-item bank from the card (8 card examples + 7 from the same benefits on rcmb-020/030/040). Payer relations must approve all 15 items (Phase 3 §5). Option order is rotated per item in the source (the adaptive renderer does not shuffle). Open: B3, B5, B7, 05/B6.",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
+  "reveal": "none"
+ },
+ {
+  "type": "results_breakdown",
+  "id": "rcmb-090",
+  "title": "Results",
+  "section": "Practice & close",
+  "node_id": "rcmb-sD",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<p>Passing score: 80% (64 / 80 points). Your results by objective:</p>",
+  "sections": [
+   {
+    "title": "rcmb-o1 · Added vs amended benefits",
+    "screen_ids": [
+     "rcmb-010"
+    ],
+    "advice_html": "<p>Revisit the benefit sort: which benefits the EBP introduced and which it changed.</p>"
+   },
+   {
+    "title": "rcmb-o2 · Coverage rules, limits and exclusions",
+    "screen_ids": [
+     "rcmb-021",
+     "rcmb-031",
+     "rcmb-041",
+     "rcmb-060"
+    ],
+    "advice_html": "<p>Revisit the prevention tabs, the mental-health panel and the five-benefit tabs. Limits ⚠ Draft — pending B5.</p>"
+   },
+   {
+    "title": "rcmb-o3 · Classify and rework rejections",
+    "screen_ids": [
+     "rcmb-051",
+     "rcmb-052"
+    ],
+    "advice_html": "<p>Revisit the rejection log: read the comment, find the cause, fix and resubmit. Categories ⚠ Draft — pending B9.</p>"
+   }
+  ],
+  "weak_threshold": 60,
+  "show_total": true,
+  "narration_text": "Dr. Omar: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ },
+ {
+  "type": "summary",
+  "id": "rcmb-091",
+  "title": "Close",
+  "section": "Practice & close",
+  "node_id": "rcmb-sD",
+  "objective_ids": [],
+  "points": 0,
+  "show_score": true,
+  "show_completion": true,
+  "body_html": "<ul><li><strong>Know what's new</strong> in the EBP.</li><li><strong>Document</strong> to the benefit's criteria.</li><li><strong>Check limits and pre-authorisation</strong> before you promise cover.</li><li><strong>Rework, don't resubmit</strong> a rejected claim.</li></ul><p>EBP one-page summary (PDF): link added after payer-relations approval. <strong>⚠ Draft — pending B3</strong></p>",
+  "notes": "Companions: Dr. Omar char-omar-success + Noor char-noor-avatar-happy, L6 (summary has no media slot; developer places). Two-voice close: omar-1 then noor-1. Planned asset rcmb-pdf-ebp (PDF, pending B3) — summary schema has no attachment field; link to be added when the approved PDF exists.",
+  "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Noor: And remember: asking early is always the safe move here.",
+  "animation": "fade-up",
+  "reveal": "auto"
+ }
+]
