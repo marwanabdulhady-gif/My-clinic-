@@ -59,7 +59,7 @@ kick-off pack is the programme's live blocker count.
 | C19 | Delivery pack: sources, admin guide, maintenance | final payment | C18 | L2S | 2 d | open |
 | C20 | Narration rewrite for the six generated packs (G11) + `hs2-031` teaching gap (G13) | C6 voice work, C15–C17 release | — | storyboard agent + L&D | 2 d | open |
 | C21 | Upstream edumints fix: explore-hotspot positioning (G12); then drop the CSS workaround | C14–C17 release | — | L2S (edumints repo) | 0.5 d | open |
-| C22 | Draft-package smoke test in SCORM Cloud (launch, resume, score, completion; 1.2 and 2004) + XSD validation (G15) | C18 | — | L2S | 1 d | open |
+| C22 | Draft-package smoke test in SCORM Cloud (launch, resume, score, completion; 1.2 and 2004) + XSD validation (G15) | C18 | — | L2S | 1 d | open · **XSD half done 2026-10-15**: all eight manifests valid, 0 errors ([xsd-validation](xsd-validation.md)); SCORM Cloud still to run |
 
 Build order stays **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08** (learning path and proposal staggering).
 
@@ -206,6 +206,24 @@ triaged; sign-off rows filled.
 maintenance triggers), and the Rev01 → as-built reconciliation table.
 
 **Exit gate:** delivery checklist in each Phase 5 file complete; final payment milestone met.
+
+## C20–C22 — the open follow-ups
+
+> **C22 half done (2026-10-15): XSD.** All eight draft manifests validate against the official
+> SCORM 2004 / 1.2 schemas with 0 errors and 0 warnings ([`xsd-validation.md`](xsd-validation.md)).
+> Left in C22: the SCORM Cloud round-trip (import → launch → resume → score → complete, both
+> versions) and a re-run with the authentic SCORM 1.2 root schema and XSD access.
+
+**C20 — narration rewrite (G11) + `hs2-031` (G13).** Rewrite the filler narration in the six generated
+packs (lead companion voice, situation set-up, never the answer), add or move the `hs2-031` teaching
+content, regenerate `audio-script-export.json`, rerun `lint_planning.py`, rebuild. Must land before any
+voice work (D10).
+
+**C21 — upstream hotspot fix (G12).** Fix `bindHotspot` in edumints so explore regions are positioned
+before the early return, then drop the CSS-percentage workaround in `build_course_spec.py` and rebuild.
+
+**C22 — smoke test + XSD.** SCORM Cloud smoke test of the draft zips, then the release-build re-run of
+the XSD check described above.
 
 ---
 

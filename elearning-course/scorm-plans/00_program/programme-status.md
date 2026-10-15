@@ -35,7 +35,7 @@
 | Cross-module decisions D1–D14 | 🔒 all 14 open |
 | Voices (D10), LMS + SCORM version (D9) | 🔒 open |
 | Pre-kickoff current-content slide drafting | 🟡 [Batch 1: 03/07, 58 slides / 61 actual browser captures](draft-slide-production.md); required plans/templates and mockup geometry; later draft batches queued |
-| SCORM packages | 🟡 **v0.1-draft for all eight** (2026-10-15): real edumints compiler, `lint_course` 0 errors, `validate_package` ok (structural; XSD offline). Pending decisions shown as `⚠ Draft — pending`, unmade media as PENDING cards, captions only. [`draft-builds.md`](draft-builds.md) |
+| SCORM packages | 🟡 **v0.1-draft for all eight** (2026-10-15): real edumints compiler, `lint_course` 0 errors, `validate_package` ok — manifest **XSD-validated** (0 errors, 0 warnings; [xsd-validation.md](xsd-validation.md)). Pending decisions shown as `⚠ Draft — pending`, unmade media as PENDING cards, captions only. [`draft-builds.md`](draft-builds.md) |
 | LMS / SCORM Cloud test | ⬜ not yet (D9 open) |
 
 **In one line:** all eight packages exist as compiled, validated **draft SCORM packages** (207 core screens, 95 scored) with the full-size companion art. They cannot become release builds until My Clinic closes the Phase 0 items and D9–D11, the narration is rewritten and voiced, and the pending media is produced. Pre-kickoff browser drafts use current content with those dependencies visibly pending; they do not close the production gates.
@@ -60,7 +60,7 @@
 | G12 | **Explore hotspots broken in the edumints player** (`bindHotspot` returns before positioning regions in explore mode). Affects every clickable picture. | edumints-scorm-mcp `components/templates.py` | Worked around here (`build_course_spec.py` writes region positions as CSS). Fix upstream and remove the workaround. | L2S (edumints repo) |
 | G13 | **Content gap `hs2-031`**: scored question on evacuation tools that no earlier screen teaches (`unbound_scored_question`). | `02_…` storyboard | Add a short teaching screen before it or move the question after the drill debrief; Safety SME to confirm. | Storyboard agent + Safety SME |
 | G14 | **Two SCORM build routes.** `build_scorm_packages.py` (03/07 pilot, no lint, no skin) duplicates the canonical `build_course_spec.py` + `edumints_build.py`. | `tools/` | Marked superseded in `scorm-package-builds.md`; use only the canonical route. | Done (doc) |
-| G15 | **XSD validation not run** (schemas unreachable offline). | build environment | Run `validate_package` once with the IMS/ADL schemas (`SCORM_SCHEMA_DIR`), then SCORM Cloud. | L2S |
+| G15 | **XSD validation not run** (schemas unreachable offline). | build environment | **XSD run 2026-10-15: all eight manifests validate with 0 errors, 0 warnings** ([xsd-validation.md](xsd-validation.md)); rerun with the authentic SCORM 1.2 root schema before release, then SCORM Cloud. | Half done |
 | G16 | **Schema limits** recorded in `screens.json` notes: no per-card feedback on drag/sort, no per-choice companion reaction, no media on mcq/matching/escape-room, one hint ladder per game. | edumints schema | Accept for v1.0 or request schema additions upstream; SMEs see the workaround wording at review. | L2S |
 | G17 | **NFPA 704 diagrams were drawn wrong** (rotated quadrants, numbers on the wrong colours) in `hs1-img-nfpa-blank`, `hs1-img-nfpa-301w`, `hs2-img-nfpa-230`. | 01/02 storyboard assets | **Fixed** 2026-10-15: redrawn to the standard layout; the blank no longer prints the answers. | Done |
 
@@ -130,7 +130,7 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 | 9 | Phase 3: produce narration audio (normalised), final images, captions; rerun `lint_narration_script` and `lint_authoring_plan(stage="planning")` | L2S | Phase 4 |
 | 9b | Rewrite the generic narration (G11) and fix `hs2-031` (G13) | Storyboard agent | voice work, Phase 2 sign-off |
 | 10 | Phase 4: ~~draft builds~~ ✅ v0.1-draft for all eight (2026-10-15). Release builds: close decisions → update `screens.json`/storyboard → rerun `build_course_spec.py` + `edumints_build.py` → `draft_builds_report.py` | L2S | Phase 5 |
-| 10b | Smoke-test the draft zips in SCORM Cloud now (launch, resume, scoring, completion) to catch LMS issues before D9 closes | L2S | C18 |
+| 10b | Smoke-test the draft zips in SCORM Cloud now (launch, resume, scoring, completion) to catch LMS issues before D9 closes. The XSD half is ✅ done 2026-10-15 ([xsd-validation.md](xsd-validation.md)) | L2S | C18 |
 | 11 | Phase 5: `validate_package`, SCORM Cloud, LMS upload and test, pilot with 5–8 new starters, sign-off | L2S + My Clinic | launch |
 
 Order of builds once unblocked (matches the learning path and the proposal staggering): **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08**.

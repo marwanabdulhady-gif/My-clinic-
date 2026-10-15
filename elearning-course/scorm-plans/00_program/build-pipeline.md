@@ -120,4 +120,11 @@ EDUMINTS_DIR=../edumints-scorm-mcp .edu-venv/bin/python \
 
 **Draft packages are committed** in `<module>/build/` as `MC_<NN>_<short>_v0.1-draft_<scorm>.zip` (no audio, so they stay under 1 MB) for LMS smoke tests and client review. They are **not release builds**: every value tied to an open Phase 0 decision is still shown as pending, and placeholders replace media that is not produced. Release builds (v1.0) follow the roadmap chunks C14–C17 and are stored in Drive.
 
-XSD validation needs the SCORM schemas: offline, `validate_package` reports `schema_unavailable` and runs the structural checks only. Run once with network access to the IMS/ADL schema hosts, or set `SCORM_SCHEMA_DIR`, before release.
+XSD validation needs the SCORM schemas. The compiler fetches the IMS/W3C ones on first use (only the ADL files are vendored), so a build without network access reports `schema_unavailable` and runs the structural checks only — that is what the committed `build-report.json` files record. To validate the manifests offline, point `SCORM_SCHEMA_DIR` at a directory holding `12/` and `2004/` sub-directories (driver XSD + vendored ADL + IMS/W3C files, absolute `xml.xsd` imports rewritten to the local file):
+
+```bash
+SCORM_SCHEMA_DIR=/path/to/scorm-schemas EDUMINTS_DIR=/path/to/edumints-scorm-mcp \
+  .venv/bin/python elearning-course/scorm-plans/tools/edumints_build.py 03_hr-employee-induction
+```
+
+Run 2026-10-15: **all eight draft manifests validate against the official SCORM 2004 / 1.2 schemas with 0 errors and 0 warnings** — see [`xsd-validation.md`](xsd-validation.md) for the results and [`xsd-schema-provenance.json`](xsd-schema-provenance.json) for the provenance of every schema file. XSD validity does not prove SCORM conformance: the gating proof is the SCORM Cloud / LMS round-trip (C22).
