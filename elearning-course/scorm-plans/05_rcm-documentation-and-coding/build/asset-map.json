@@ -1,0 +1,35 @@
+{
+  "companions_placed": 3,
+  "assets": {
+    "char-omar-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-welcome.jpg",
+      "interim": true
+    },
+    "rcma-img-reviewer": {
+      "status": "file",
+      "path": "05_rcm-documentation-and-coding/storyboard/assets/rcma-img-reviewer.svg",
+      "interim": false
+    },
+    "rcma-img-note-weak": {
+      "status": "file",
+      "path": "05_rcm-documentation-and-coding/storyboard/assets/rcma-img-note-weak.svg",
+      "interim": false
+    },
+    "rcma-img-note-strong": {
+      "status": "file",
+      "path": "05_rcm-documentation-and-coding/storyboard/assets/rcma-img-note-strong.svg",
+      "interim": false
+    },
+    "char-omar-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
+      "interim": true
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}

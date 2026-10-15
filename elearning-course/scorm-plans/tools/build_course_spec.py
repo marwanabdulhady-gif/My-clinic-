@@ -152,7 +152,8 @@ def build(module: str) -> dict:
         return "Noor" if "noor" in pose else "Dr. Omar"
 
     def host_html(pose: str) -> str:
-        avatar = pose if "avatar" in pose else ("char-noor-avatar-neutral" if "noor" in pose else "char-omar-avatar-neutral")
+        neutral = "char-noor-avatar-neutral" if "noor" in pose else "char-omar-avatar-neutral"
+        avatar = pose if "avatar" in pose and find_asset(pose, mdir) else neutral
         role = "Noor · Safety liaison" if "noor" in pose else "Dr. Omar · Family physician"
         cls = "noor" if "noor" in pose else "omar"
         return f'<div class="mc-host {cls}">{{{{asset:{use(avatar)}}}}}<span>{role}</span></div>'
