@@ -1,0 +1,76 @@
+{
+  "companions_placed": 4,
+  "assets": {
+    "brand-background-title-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/background-title-navy.png",
+      "interim": false
+    },
+    "char-noor-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-noor-welcome.jpg",
+      "interim": true
+    },
+    "hs2-img-storeroom": {
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-storeroom.png",
+      "interim": false
+    },
+    "hs2-img-drill-1": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-drill-2": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-drill-3": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-drill-4": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-drill-5": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-drill-6": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "char-noor-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
+      "interim": true
+    },
+    "hs2-img-floorplan": {
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-floorplan.svg",
+      "interim": false
+    },
+    "hs2-img-extinguisher": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-kit-chem": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hs2-img-kit-bio": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "char-omar-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
+      "interim": true
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}
