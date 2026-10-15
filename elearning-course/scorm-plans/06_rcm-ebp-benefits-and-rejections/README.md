@@ -14,6 +14,7 @@
 | Completion | `viewed_all_and_passed`, passing score **80** |
 | Scored screens | 7, 80 points in total |
 | Prerequisite | 05 RCM Part A (recommended for physicians; optional for RCM staff) |
+| Draft SCORM (v0.1) | [`build/MC_06_RCM-B_v0.1-draft_1.2.zip`](build/MC_06_RCM-B_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 
