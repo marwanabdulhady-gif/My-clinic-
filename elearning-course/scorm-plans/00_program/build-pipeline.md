@@ -100,3 +100,24 @@ Every image, audio and video file needs a provenance record. Allowed `source`: `
 - GHS pictograms are UN-published symbols; redraw as own SVG or use a CC0 set and record it.
 - NFPA 704 diamond: draw your own generic diamond (the NFPA mark is a standard; do not copy a vendor's chart).
 - Source-deck images (PDF/PPTX) are `local` **only after** Phase 0 confirms My Clinic owns them.
+
+## 6. Local compile with the real edumints code (draft builds)
+
+The edumints server runs in-process from a local checkout; no hosted MCP session is needed. This is the **same compiler** (`build_from_spec`, `lint_course`, `validate_package`, `preview`), not the review renderer.
+
+```bash
+git clone https://github.com/marwanabdulhady-gif/edumints-scorm-mcp ../edumints-scorm-mcp
+python3 -m venv .edu-venv && .edu-venv/bin/pip install -e ../edumints-scorm-mcp
+python3 elearning-course/scorm-plans/tools/build_course_spec.py 03_hr-employee-induction     # storyboard → build/course-spec.json
+EDUMINTS_DIR=../edumints-scorm-mcp .edu-venv/bin/python \
+  elearning-course/scorm-plans/tools/edumints_build.py 03_hr-employee-induction              # → zip, preview.html, build-report.json
+```
+
+| Step | What it does |
+|---|---|
+| `build_course_spec.py` | Reads the storyboard build blocks (or `build/screens.json` where the storyboard blocks are review metadata only; ids, order, types, node_ids, points and objectives must match the storyboard or the tool stops). Resolves every `<asset-id>` to a repo file; a missing asset becomes a branded **⚠ PENDING card** naming its gate. Drops audio placeholders (no voice until D10) and keeps `narration_text` as captions. Places the companions: welcome cards on the L1 title, the pose in the L3 media column, the avatar host row on scenarios. Adds the logo and Montserrat. |
+| `edumints_build.py` | `brand_to_theme(brand-kit.edumints.json)` + module colour as `secondary` + `brand/edumints-skin.css` → `build_from_spec` → `lint_course` → `validate_package` → `preview`. Writes the compiler's own output to `build/build-report.json`. |
+
+**Draft packages are committed** in `<module>/build/` as `MC_<NN>_<short>_v0.1-draft_<scorm>.zip` (no audio, so they stay under 1 MB) for LMS smoke tests and client review. They are **not release builds**: every value tied to an open Phase 0 decision is still shown as pending, and placeholders replace media that is not produced. Release builds (v1.0) follow the roadmap chunks C14–C17 and are stored in Drive.
+
+XSD validation needs the SCORM schemas: offline, `validate_package` reports `schema_unavailable` and runs the structural checks only. Run once with network access to the IMS/ADL schema hosts, or set `SCORM_SCHEMA_DIR`, before release.

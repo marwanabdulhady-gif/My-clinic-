@@ -1,0 +1,61 @@
+{
+  "module": "07_quality-safety-and-risk",
+  "edumints_revision": "4bbf459",
+  "theme_keys": [
+    "color",
+    "custom_css",
+    "custom_fonts",
+    "logo_alt",
+    "logo_asset_id",
+    "name",
+    "typography"
+  ],
+  "module_colour": "#652D8C",
+  "build": {
+    "project_id": "proj_01M4YSHHBMPYJBJF65DEA3YBG3",
+    "job_id": "job_01M4YSHHC91PW65SHD1J7GH6E1",
+    "status": "done",
+    "download_url": "http://localhost/scorm/files/YIXbwXRDDBtL8VJBNqeAYWDP_B5gdCHB",
+    "warnings": [
+      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
+    ]
+  },
+  "lint_course": {
+    "project_id": "proj_01M4YSHHBMPYJBJF65DEA3YBG3",
+    "strict": false,
+    "error_count": 0,
+    "warn_count": 2,
+    "clean": false,
+    "evidence_binding_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "4 ardışık görselsiz ekran (screens[15..18]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[15..18]"
+      },
+      {
+        "severity": "warn",
+        "code": "scored_over_objectives",
+        "message": "Skorlanan ekran sayısı (11) hedef sayısı + 1'i (6) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
+        "path": "screens"
+      }
+    ]
+  },
+  "validate_package": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "schema_unavailable",
+        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
+        "path": "imsmanifest.xml"
+      }
+    ]
+  },
+  "package": {
+    "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
+    "bytes": 557425
+  },
+  "preview": "preview.html"
+}
