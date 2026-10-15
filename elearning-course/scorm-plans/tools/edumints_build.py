@@ -69,11 +69,15 @@ async def run(module: str) -> dict:
     mdir = PLANS / module
     out = mdir / "build"
     spec = json.loads((out / "course-spec.json").read_text())
+    extra_css = spec.pop("__extra_css", "")
     report: dict = {"module": module, "edumints_revision": os.popen(f"git -C {EDU} rev-parse --short HEAD").read().strip()}
     if spec.get("theme") == "__BRAND__":
         import re
         m = re.search(r"module colour \*\*[^#*]*(#[0-9A-Fa-f]{6})", (mdir / "README.md").read_text())
         spec["theme"] = await brand_theme(m.group(1) if m else None)
+        if extra_css:
+            spec["theme"]["custom_css"] += "\n/* generated: explore hotspot positions */\n" + extra_css
+            report["explore_hotspot_rules"] = extra_css.count("{") - 1
         report["theme_keys"] = sorted(spec["theme"].keys())
         report["module_colour"] = m.group(1) if m else None
     b = dump(await fn(server.build_from_spec)(spec))

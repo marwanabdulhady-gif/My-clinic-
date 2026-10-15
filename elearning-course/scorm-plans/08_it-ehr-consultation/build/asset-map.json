@@ -1,0 +1,149 @@
+{
+  "companions_placed": 3,
+  "assets": {
+    "char-omar-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-welcome.jpg",
+      "interim": true
+    },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-explaining.jpg",
+      "interim": true
+    },
+    "ehr-shot-list": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-form": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-dx-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-dx-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-dx-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-dx-4": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-dx-5": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-4": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-5": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-order-6": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-wizard-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-wizard-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-wizard-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-wizard-4": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-summary-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-summary-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-summary-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-sms-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-sms-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-sms-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-sms-4": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-sms-5": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "char-noor-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
+      "interim": true
+    },
+    "ehr-shot-ref-1": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-ref-2": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-ref-3": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-ref-4": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-ref-5": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "ehr-shot-ref-6": {
+      "status": "PENDING",
+      "gate": "DPO-approved test-environment capture (B2/D6)"
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}

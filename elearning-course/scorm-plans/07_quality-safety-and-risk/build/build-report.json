@@ -1,6 +1,7 @@
 {
   "module": "07_quality-safety-and-risk",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 6,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4YSHHBMPYJBJF65DEA3YBG3",
-    "job_id": "job_01M4YSHHC91PW65SHD1J7GH6E1",
+    "project_id": "proj_01M4YTDX9J4SBS6WNZ86XDTVRD",
+    "job_id": "job_01M4YTDXA7M19FYTJ712ZY6YYR",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/YIXbwXRDDBtL8VJBNqeAYWDP_B5gdCHB",
+    "download_url": "http://localhost/scorm/files/qmK2S6sfi9UReLuSxUgMc0biqNl1f6Jg",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YSHHBMPYJBJF65DEA3YBG3",
+    "project_id": "proj_01M4YTDX9J4SBS6WNZ86XDTVRD",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -55,7 +56,7 @@
   },
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 557425
+    "bytes": 557563
   },
   "preview": "preview.html"
 }

@@ -1,0 +1,61 @@
+{
+  "companions_placed": 3,
+  "assets": {
+    "char-omar-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-welcome.jpg",
+      "interim": true
+    },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-explaining.jpg",
+      "interim": true
+    },
+    "ops-img-journey": {
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-journey.svg",
+      "interim": false
+    },
+    "ops-img-activities": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "ops-img-ops-chart": {
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-ops-chart.svg",
+      "interim": false
+    },
+    "ops-img-mycare-chart": {
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-mycare-chart.svg",
+      "interim": false
+    },
+    "ops-img-reception-scenario": {
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-reception-scenario.png",
+      "interim": false
+    },
+    "ops-img-scenes-2": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "ops-img-scenes-3": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "ops-img-scenes-4": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "char-omar-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
+      "interim": true
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}

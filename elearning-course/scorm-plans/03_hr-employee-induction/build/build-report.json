@@ -1,6 +1,7 @@
 {
   "module": "03_hr-employee-induction",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 7,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4YSH49KH06Z9Y0BH82W0AXZ",
-    "job_id": "job_01M4YSH4BPGZ2FRYB2DRW89FNN",
+    "project_id": "proj_01M4YTDWRVHFJAGPRT7RKSHE3Q",
+    "job_id": "job_01M4YTDWTM4FAFNYQSXWD9DX0F",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/XyMmpGUytp3q2TnJhNbd4Gpsxwp1oXRQ",
+    "download_url": "http://localhost/scorm/files/ag5b2goOZt8hApeFnhlhlL8hWNYINzsB",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YSH49KH06Z9Y0BH82W0AXZ",
+    "project_id": "proj_01M4YTDWRVHFJAGPRT7RKSHE3Q",
     "strict": false,
     "error_count": 0,
     "warn_count": 1,
@@ -49,7 +50,7 @@
   },
   "package": {
     "file": "MC_03_WelcomeOnBoard_v0.1-draft_2004.zip",
-    "bytes": 626273
+    "bytes": 626447
   },
   "preview": "preview.html"
 }

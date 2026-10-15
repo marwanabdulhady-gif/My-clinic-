@@ -1,0 +1,30 @@
+{
+  "companions_placed": 3,
+  "assets": {
+    "char-omar-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-welcome.jpg",
+      "interim": true
+    },
+    "rcmb-img-benefit-icons": {
+      "status": "file",
+      "path": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-img-benefit-icons.svg",
+      "interim": false
+    },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-explaining.jpg",
+      "interim": true
+    },
+    "char-omar-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
+      "interim": true
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}
