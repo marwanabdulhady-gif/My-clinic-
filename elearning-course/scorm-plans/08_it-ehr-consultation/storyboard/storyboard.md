@@ -2,7 +2,7 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> **Review pack v0.2 · 2026-10-14.** This document completes the screen-card, narration, visual-plan,
+> **Review pack v0.2 · 2026-10-15.** This document completes the screen-card, narration, visual-plan,
 > asset-register and visual-review documentation for every core screen in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md). It is a review artefact, **not an approved
 > policy or production SCORM package**. Source-lock decisions are deliberately retained as `⚠ PENDING`.
@@ -22,7 +22,7 @@
 | Module prefix | `ehr-` |
 | Storyboard version | `v0.2` |
 | Author | Arena agent — production-documentation pass |
-| Date | 2026-10-14 |
+| Date | 2026-10-15 |
 | Status | `Draft — ready for SME review; blocked from production by open source-lock items` |
 | SME reviewer (role) | EHR Applications / EHR lead (lead); DPO; Medical Director; Pharmacy lead; RCM lead |
 | Audience | Physicians and clinical staff who document consultations in the clinic EHR |
@@ -30,11 +30,11 @@
 | SCORM / completion / pass mark | SCORM 1.2 · viewed_all_and_passed · pass 80% (72 / 90) |
 | Scored screens / total points | 11 / 90 (Phase 4 expectation: 11 / 90) |
 | Source file | `elearning-course/md/08_video-it-ehr-consultation-walkthrough.md` |
-| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-14) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-15) |
 | Module colour | Dark teal #006E78 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B10; program D6 and D11 |
-| Narration reconciliation | Detailed card scripts: 5.1 min; Phase 3 per-screen targets: 5.1 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 2.4 min; Phase 3 per-screen targets: 5.1 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. The difference is not padded with generated sentences (G11/C20): [`narration-gaps.md`](narration-gaps.md) lists the 13 screens that need authored prose. |
 
 ### Production guardrails
 
@@ -254,10 +254,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 57 words / ≈ 24.4 s at 140 wpm |
+| Word count / estimated seconds | 10 words / ≈ 4.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: Complete, specific, linked — on the day. Read the disclaimer.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -363,10 +363,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 71 words / ≈ 30.4 s at 140 wpm |
+| Word count / estimated seconds | 7 words / ≈ 3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.
+> OMAR: The nine steps at a glance.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -474,10 +474,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 15 words / ≈ 6.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Start from today's list. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -587,10 +587,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 62 words / ≈ 26.6 s at 140 wpm |
+| Word count / estimated seconds | 8 words / ≈ 3.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> OMAR: The mandatory sections. Save as you go.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -697,10 +697,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -814,10 +814,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 20 |
-| Word count / estimated seconds | 50 words / ≈ 21.4 s at 140 wpm |
+| Word count / estimated seconds | 40 words / ≈ 17.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.
+> OMAR: Search by code or name. The primary diagnosis drives everything after it. My first week, I typed 'diabetes' and picked the first line. It wasn't the one I meant. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -926,10 +926,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 66 words / ≈ 28.3 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.
+> OMAR: Five ways to find an order. The Form Wizard checks a package before you commit.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1041,10 +1041,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
+| Word count / estimated seconds | 19 words / ≈ 8.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> OMAR: Link every medication to the diagnosis you assessed. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1157,10 +1157,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 25 words / ≈ 10.7 s at 140 wpm |
+| Word count / estimated seconds | 19 words / ≈ 8.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.
+> OMAR: Review the package. Remove what you don't need. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1269,10 +1269,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1380,10 +1380,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1494,10 +1494,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 10 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 20 words / ≈ 8.6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: The summary is the record the patient takes home. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1611,10 +1611,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 12 |
-| Word count / estimated seconds | 30 words / ≈ 12.9 s at 140 wpm |
+| Word count / estimated seconds | 19 words / ≈ 8.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.
+> OMAR: Education by SMS, matched to the diagnosis code. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1724,10 +1724,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 46 words / ≈ 19.7 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.
+> NOOR: Patient & family education is required before you finish.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1840,10 +1840,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 34 words / ≈ 14.6 s at 140 wpm |
+| Word count / estimated seconds | 15 words / ≈ 6.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.
+> OMAR: Internal referral and follow-up. Work through the steps in order, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1952,10 +1952,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Put the steps in the order you would follow at work, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2063,10 +2063,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 44 words / ≈ 18.9 s at 140 wpm |
+| Word count / estimated seconds | 8 words / ≈ 3.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.
+> OMAR: Completing the encounter. Where to get help.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -2333,26 +2333,30 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `ehr-000` | `title_slide` | N | 0 | 9 | 28 | 12 | Draft |
-| 2 | `ehr-001` | `content_slide` | N | 0 | 13 | 57 | 24 | Draft |
-| 3 | `ehr-002` | `timeline` | N | 0 | 25 | 71 | 30 | Draft |
-| 4 | `ehr-010` | `simulation` | Y | 5 | 15 | 18 | 8 | Draft |
-| 5 | `ehr-011` | `hotspot` | N | 0 | 20 | 62 | 27 | Draft |
-| 6 | `ehr-012` | `mcq` | Y | 5 | 31 | 18 | 8 | Draft |
-| 7 | `ehr-020` | `simulation` | Y | 10 | 39 | 50 | 21 | Draft |
-| 8 | `ehr-030` | `content_slide` | N | 0 | 16 | 66 | 28 | Draft |
-| 9 | `ehr-031` | `simulation` | Y | 15 | 38 | 31 | 13 | Draft |
-| 10 | `ehr-032` | `simulation` | Y | 10 | 24 | 25 | 11 | Draft |
-| 11 | `ehr-033` | `mcq` | Y | 5 | 26 | 18 | 8 | Draft |
-| 12 | `ehr-034` | `mcq` | Y | 5 | 29 | 18 | 8 | Draft |
-| 13 | `ehr-040` | `simulation` | Y | 5 | 18 | 18 | 8 | Draft |
-| 14 | `ehr-041` | `simulation` | Y | 10 | 24 | 30 | 13 | Draft |
-| 15 | `ehr-042` | `content_slide` | N | 0 | 14 | 46 | 20 | Draft |
-| 16 | `ehr-050` | `simulation` | Y | 10 | 39 | 34 | 15 | Draft |
-| 17 | `ehr-051` | `sorting` | Y | 10 | 6 | 18 | 8 | Draft |
-| 18 | `ehr-052` | `content_slide` | N | 0 | 18 | 44 | 19 | Draft |
+| 2 | `ehr-001` | `content_slide` | N | 0 | 13 | 10 | 4 | Draft |
+| 3 | `ehr-002` | `timeline` | N | 0 | 25 | 7 | 3 | Draft |
+| 4 | `ehr-010` | `simulation` | Y | 5 | 15 | 15 | 6 | Draft |
+| 5 | `ehr-011` | `hotspot` | N | 0 | 20 | 8 | 3 | Draft |
+| 6 | `ehr-012` | `mcq` | Y | 5 | 31 | 11 | 5 | Draft |
+| 7 | `ehr-020` | `simulation` | Y | 10 | 39 | 40 | 17 | Draft |
+| 8 | `ehr-030` | `content_slide` | N | 0 | 16 | 16 | 7 | Draft |
+| 9 | `ehr-031` | `simulation` | Y | 15 | 38 | 19 | 8 | Draft |
+| 10 | `ehr-032` | `simulation` | Y | 10 | 24 | 19 | 8 | Draft |
+| 11 | `ehr-033` | `mcq` | Y | 5 | 26 | 11 | 5 | Draft |
+| 12 | `ehr-034` | `mcq` | Y | 5 | 29 | 11 | 5 | Draft |
+| 13 | `ehr-040` | `simulation` | Y | 5 | 18 | 20 | 9 | Draft |
+| 14 | `ehr-041` | `simulation` | Y | 10 | 24 | 19 | 8 | Draft |
+| 15 | `ehr-042` | `content_slide` | N | 0 | 14 | 9 | 4 | Draft |
+| 16 | `ehr-050` | `simulation` | Y | 10 | 39 | 15 | 6 | Draft |
+| 17 | `ehr-051` | `sorting` | Y | 10 | 6 | 16 | 7 | Draft |
+| 18 | `ehr-052` | `content_slide` | N | 0 | 18 | 8 | 3 | Draft |
 | 19 | `ehr-090` | `results_breakdown` | N | 0 | 2 | 21 | 9 | Draft |
 | 20 | `ehr-091` | `summary` | N | 0 | 11 | 36 | 15 | Draft |
-| | **Totals** | | **11** | **90** | | **709** | **304 ≈ 5.1 min** | Draft |
+| | **Totals** | | **11** | **90** | | **339** | **145 ≈ 2.4 min** | Draft |
+
+### Narration authoring gaps
+
+13 of 20 screens are below 70% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
 
 ### Asset list
 
@@ -2415,6 +2419,7 @@ lock items have written SME decisions.
 | Term | Say it as | Screens |
 |---|---|---|
 | `EHR` | E-H-R | `ehr-000` |
+| `SMS` | S-M-S | `ehr-041` |
 
 ### Self-check
 

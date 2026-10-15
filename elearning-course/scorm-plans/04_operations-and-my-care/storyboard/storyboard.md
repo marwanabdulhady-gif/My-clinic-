@@ -2,7 +2,7 @@
 
 ![My Clinic logo](../../00_program/brand/logo-preview.png)
 
-> **Review pack v0.2 · 2026-10-14.** This document completes the screen-card, narration, visual-plan,
+> **Review pack v0.2 · 2026-10-15.** This document completes the screen-card, narration, visual-plan,
 > asset-register and visual-review documentation for every core screen in
 > [`../phase-2-storyboard.md`](../phase-2-storyboard.md). It is a review artefact, **not an approved
 > policy or production SCORM package**. Source-lock decisions are deliberately retained as `⚠ PENDING`.
@@ -22,7 +22,7 @@
 | Module prefix | `ops-` |
 | Storyboard version | `v0.2` |
 | Author | Arena agent — production-documentation pass |
-| Date | 2026-10-14 |
+| Date | 2026-10-15 |
 | Status | `Draft — ready for SME review; blocked from production by open source-lock items` |
 | SME reviewer (role) | Director of Operations (lead); My Care Manager; Patient Experience senior manager |
 | Audience | Front-line, PX and clinical staff |
@@ -30,11 +30,11 @@
 | SCORM / completion / pass mark | SCORM 1.2 · viewed_all_and_passed · pass 70% (35 / 50) |
 | Scored screens / total points | 4 / 50 (Phase 4 expectation: 4 / 50) |
 | Source file | `elearning-course/md/04_operations-and-my-care-structure.md` |
-| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-14) |
+| Brand | My Clinic — [`00_program/brand/brand-identity.md`](../../00_program/brand/brand-identity.md) (read 2026-10-15) |
 | Module colour | Responsible magenta #9D3293 |
 | Theme | Official `brand-kit.json` plus the lint adapter `brand-kit.edumints.json`; Montserrat; supplied logo PNGs only |
 | Phase 0 items still open | B1–B7; program D3, D5 and D11 |
-| Narration reconciliation | Detailed card scripts: 4.4 min; Phase 3 per-screen targets: 4.4 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. |
+| Narration reconciliation | Detailed card scripts: 1.6 min; Phase 3 per-screen targets: 4.4 min; Phase 3 rough module estimate: ~5 min. Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. The difference is not padded with generated sentences (G11/C20): [`narration-gaps.md`](narration-gaps.md) lists the 10 screens that need authored prose. |
 
 ### Production guardrails
 
@@ -248,10 +248,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 58 words / ≈ 24.9 s at 140 wpm |
+| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context.
+> OMAR: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -333,8 +333,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-journey` | diagram | ops-img-journey: Generated native SVG. | own SVG | Patient journey from booking to follow-up. | No |
-| `ops-img-journey` | diagram | ops-img-journey: 6-stage horizontal journey, icons, team colour tags + text labels | own SVG | "Patient journey from booking to follow-up." | No |
+| `ops-img-journey` | diagram | ops-img-journey: Generated native SVG. | own SVG, final content review required | Patient journey from booking to follow-up. | No |
 
 #### 4. Interaction and scoring
 
@@ -359,10 +358,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 20 |
-| Word count / estimated seconds | 50 words / ≈ 21.4 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Walk the journey. Notice where each team leads. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.
+> OMAR: Walk the journey. Notice where each team leads.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -387,7 +386,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ops-002",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-journey> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -444,7 +444,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-activities` | diagram | ops-img-activities: Line icons; slide 2/5 "sticky note" style not copied | own SVG | decorative | No |
+| `ops-img-activities` | diagram | ops-img-activities: Line icons; slide 2/5 "sticky note" style not copied Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | decorative | No |
 
 #### 4. Interaction and scoring
 
@@ -469,10 +469,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 91 words / ≈ 39 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.
+> OMAR: Operations runs the day: environment, KPIs, recovery on the spot.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -497,7 +497,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ops-010",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-activities> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -554,8 +555,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-ops-chart` | diagram | ops-img-ops-chart: Generated role-only draft SVG; SME approval B1 required. | own SVG | Draft Operations role structure. | No |
-| `ops-img-ops-chart` | diagram | ops-img-ops-chart: Role-only Operations chart (from B1) | own SVG | "Operations structure by role." | No |
+| `ops-img-ops-chart` | diagram | ops-img-ops-chart: Generated role-only draft SVG; SME approval B1 required. | own SVG, final content review required | Draft Operations role structure. | No |
 
 #### 4. Interaction and scoring
 
@@ -580,10 +580,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 30 |
-| Word count / estimated seconds | 73 words / ≈ 31.3 s at 140 wpm |
+| Word count / estimated seconds | 14 words / ≈ 6 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.
+> OMAR: Read the chart by roles. Names are in the directory because they change.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -608,7 +608,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ops-011",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-ops-chart> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -665,7 +666,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-activities` | diagram | ops-img-activities: Line icons; slide 2/5 "sticky note" style not copied | own SVG | decorative | No |
+| `ops-img-activities` | diagram | ops-img-activities: Line icons; slide 2/5 "sticky note" style not copied Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | own SVG, final content review required | decorative | No |
 
 #### 4. Interaction and scoring
 
@@ -690,10 +691,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 40 |
-| Word count / estimated seconds | 90 words / ≈ 38.6 s at 140 wpm |
+| Word count / estimated seconds | 12 words / ≈ 5.1 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.
+> OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -718,7 +719,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ops-020",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-activities> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -775,8 +777,7 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-mycare-chart` | diagram | ops-img-mycare-chart: Generated role-only draft SVG; SME approval B2 required. | own SVG | Draft My Care role structure. | No |
-| `ops-img-mycare-chart` | diagram | ops-img-mycare-chart: Role-only My Care chart (from B2) | own SVG | "My Care structure by role." | No |
+| `ops-img-mycare-chart` | diagram | ops-img-mycare-chart: Generated role-only draft SVG; SME approval B2 required. | own SVG, final content review required | Draft My Care role structure. | No |
 
 #### 4. Interaction and scoring
 
@@ -801,10 +802,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | calm, practical |
 | Target seconds | 25 |
-| Word count / estimated seconds | 59 words / ≈ 25.3 s at 140 wpm |
+| Word count / estimated seconds | 9 words / ≈ 3.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.
+> OMAR: My Care structure: managers, site leaders, coordinators, quality.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -829,7 +830,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   "objective_ids": [],
   "points": 0,
   "narration_script_id": "ops-021",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-mycare-chart> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -911,10 +913,10 @@ lock items have written SME decisions.
 | Speaker(s) | NOOR |
 | Tone | calm, practical |
 | Target seconds | 15 |
-| Word count / estimated seconds | 35 words / ≈ 15 s at 140 wpm |
+| Word count / estimated seconds | 8 words / ≈ 3.4 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> NOOR: The abbreviations you'll hear on day one. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later.
+> NOOR: The abbreviations you'll hear on day one.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1020,10 +1022,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Place each item where it belongs, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1107,8 +1109,11 @@ lock items have written SME decisions.
 | Asset id | Kind | Description / brief | Source (provenance) | Alt text | Decorative? |
 |---|---|---|---|---|---|
 | `Supplied My Clinic horizontal navy logo lock-up in the header.` | icon | Supplied My Clinic horizontal navy logo lock-up in the header. | own / official My Clinic asset | My Clinic logo. | No |
-| `ops-img-reception-scenario` | illustration | ops-img-reception-scenario: Generated 2026-10-14 — generic fictional scene; final routing remains subject to B7. | ai-generated, visual QA required | A patient talks to a patient-experience officer at a clinic reception desk. | No |
-| `ops-img-scenes-1..4` | illustration | ops-img-scenes-1..4: Reception, phone follow-up, insurance call, pharmacy queue | ai-generated, visual QA required | per scene | No |
+| `ops-img-reception-scenario` | illustration | ops-img-reception-scenario: Generated 2026-10-14 — generic fictional scene; final routing remains subject to B7. | ai-generated route, production/visual QA pending | A patient talks to a patient-experience officer at a clinic reception desk. | No |
+| `ops-img-scenes-1` | illustration | ops-img-scenes-1: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | ai-generated route, production/visual QA pending | per scene | No |
+| `ops-img-scenes-2` | illustration | ops-img-scenes-2: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | ai-generated route, production/visual QA pending | per scene | No |
+| `ops-img-scenes-3` | illustration | ops-img-scenes-3: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | ai-generated route, production/visual QA pending | per scene | No |
+| `ops-img-scenes-4` | illustration | ops-img-scenes-4: Reception, phone follow-up, insurance call, pharmacy queue Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. | ai-generated route, production/visual QA pending | per scene | No |
 | `Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar.` | illustration | Approved program companion pose char-omar-avatar-neutral → -happy / -concern at L5 avatar. | own / official My Clinic asset | Omar companion guide supporting this learning moment. | No |
 
 **AI image prompt (recorded production prompt)**
@@ -1140,10 +1145,10 @@ Single clean flat vector illustration for a My Clinic e-learning course. A patie
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 15 |
-| Word count / estimated seconds | 31 words / ≈ 13.3 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.
+> OMAR: Play the situation through and decide, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1170,7 +1175,8 @@ New lexicon terms: See `narration-script.json` and `voice_talent.md`.
   ],
   "points": 20,
   "narration_script_id": "ops-031",
-  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs."
+  "asset_status": "Review hand-off only; resolve Phase 0 dependencies before adding production asset IDs.",
+  "notes": "Planned Phase 3 visual placements (not production assets): <ops-img-scenes-1> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <ops-img-scenes-2> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <ops-img-scenes-3> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.; <ops-img-scenes-4> — Screen visual; production placement reviewed by the SME.. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production."
 }
 ```
 
@@ -1251,10 +1257,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 11 words / ≈ 4.7 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Decide as you would on shift, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1362,10 +1368,10 @@ lock items have written SME decisions.
 | Speaker(s) | OMAR |
 | Tone | encouraging |
 | Target seconds | 8 |
-| Word count / estimated seconds | 18 words / ≈ 7.7 s at 140 wpm |
+| Word count / estimated seconds | 16 words / ≈ 6.9 s at 140 wpm |
 | Cue targets | None in this review draft; final build may add cue IDs after visual timing review. |
 
-> OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.
+> OMAR: Match each item to the person or step that owns it, then read the feedback.
 
 New lexicon terms: See `narration-script.json` and `voice_talent.md`.
 
@@ -1527,19 +1533,23 @@ lock items have written SME decisions.
 | # | Screen id | Type | Scored | Pts | On-screen words | Narration words | Est. sec | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `ops-000` | `title_slide` | N | 0 | 6 | 29 | 12 | Draft |
-| 2 | `ops-001` | `content_slide` | N | 0 | 13 | 58 | 25 | Draft |
-| 3 | `ops-002` | `hotspot` | N | 0 | 22 | 50 | 21 | Draft |
-| 4 | `ops-010` | `accordion` | N | 0 | 24 | 91 | 39 | Draft |
-| 5 | `ops-011` | `labeled_diagram` | N | 0 | 33 | 73 | 31 | Draft |
-| 6 | `ops-020` | `accordion` | N | 0 | 10 | 90 | 39 | Draft |
-| 7 | `ops-021` | `labeled_diagram` | N | 0 | 25 | 59 | 25 | Draft |
-| 8 | `ops-022` | `flashcards` | N | 0 | 10 | 35 | 15 | Draft |
-| 9 | `ops-030` | `drag_drop` | Y | 15 | 32 | 18 | 8 | Draft |
-| 10 | `ops-031` | `decision_scenario` | Y | 20 | 37 | 31 | 13 | Draft |
-| 11 | `ops-032` | `mcq` | Y | 5 | 21 | 18 | 8 | Draft |
-| 12 | `ops-033` | `matching` | Y | 10 | 31 | 18 | 8 | Draft |
+| 2 | `ops-001` | `content_slide` | N | 0 | 13 | 31 | 13 | Draft |
+| 3 | `ops-002` | `hotspot` | N | 0 | 22 | 9 | 4 | Draft |
+| 4 | `ops-010` | `accordion` | N | 0 | 24 | 11 | 5 | Draft |
+| 5 | `ops-011` | `labeled_diagram` | N | 0 | 33 | 14 | 6 | Draft |
+| 6 | `ops-020` | `accordion` | N | 0 | 10 | 12 | 5 | Draft |
+| 7 | `ops-021` | `labeled_diagram` | N | 0 | 25 | 9 | 4 | Draft |
+| 8 | `ops-022` | `flashcards` | N | 0 | 10 | 8 | 3 | Draft |
+| 9 | `ops-030` | `drag_drop` | Y | 15 | 32 | 11 | 5 | Draft |
+| 10 | `ops-031` | `decision_scenario` | Y | 20 | 37 | 11 | 5 | Draft |
+| 11 | `ops-032` | `mcq` | Y | 5 | 21 | 11 | 5 | Draft |
+| 12 | `ops-033` | `matching` | Y | 10 | 31 | 16 | 7 | Draft |
 | 13 | `ops-090` | `summary` | N | 0 | 17 | 45 | 19 | Draft |
-| | **Totals** | | **4** | **50** | | **615** | **264 ≈ 4.4 min** | Draft |
+| | **Totals** | | **4** | **50** | | **217** | **93 ≈ 1.6 min** | Draft |
+
+### Narration authoring gaps
+
+10 of 13 screens are below 70% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
 
 ### Asset list
 
@@ -1553,8 +1563,12 @@ lock items have written SME decisions.
 | `ops-img-ops-chart` | SVG | ops-011 | own | Yes | Planned |
 | `ops-img-mycare-chart` | SVG | ops-021 | own | Yes | Planned |
 | `ops-img-activities` | SVG icons ×14 | ops-010, ops-020 | own | Yes | Planned |
-| `ops-img-scenes-1..4` | illustrations | ops-031 | ai-generated | Yes | Planned |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `ops-img-scenes-1` | illustrations | ops-031 | ai-generated | Yes | Planned |
+| `ops-img-scenes-2` | illustrations | ops-031 | ai-generated | Yes | Planned |
+| `ops-img-scenes-3` | illustrations | ops-031 | ai-generated | Yes | Planned |
+| `ops-img-scenes-4` | illustrations | ops-031 | ai-generated | Yes | Planned |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | ai-generated (masters approved first) | Yes | Planned |
 
 ### Open questions for the SME
 

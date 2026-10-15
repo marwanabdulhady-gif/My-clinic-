@@ -31,6 +31,7 @@ Do **not** reuse the Quality video's narration voice. It may be synthetic and it
 6. Question screens: set up the situation and stop. Never narrate the answer. Feedback goes in the screen's feedback fields.
 7. Pace: **140 words per minute** (English). Each segment under 60 seconds; split longer ones.
 8. Human vulnerability where it fits: the companions (Noor, Dr. Omar) can admit a past mistake — see the honest stories in `characters/companions.md` §1 ("In my first month I nearly…"). Keep it short and real, never dramatic about patient harm.
+9. **Never pad.** A screen's script is as long as its content needs to be; the Phase 3 `target_sec` is a planning estimate, not a quota. Sentences that only restate the prompt, the buttons or the next task are the G11 defect removed on 2026-10-15 — do not reintroduce them. Where a draft is materially under target it is listed in that module's [`storyboard/narration-gaps.md`](../01_health-and-safety-1/storyboard/narration-gaps.md) for authored prose (and SME confirmation) instead of filler.
 
 ## 3. Markup
 

@@ -23,20 +23,20 @@
     "clean": true,
     "module_id": "MC01-facility-management-safety",
     "wpm": 140,
-    "total_est_sec": 982.8,
-    "total_est_min": 16.4,
+    "total_est_sec": 348.9,
+    "total_est_min": 5.8,
     "screens": [
       {
         "screen_id": "hs1-000",
         "part": "noor",
-        "words": 33,
-        "est_sec": 14.1
+        "words": 26,
+        "est_sec": 11.1
       },
       {
         "screen_id": "hs1-001",
         "part": "noor",
-        "words": 68,
-        "est_sec": 29.1
+        "words": 21,
+        "est_sec": 9.0
       },
       {
         "screen_id": "hs1-002",
@@ -47,290 +47,290 @@
       {
         "screen_id": "hs1-101",
         "part": "noor",
-        "words": 78,
-        "est_sec": 33.4
+        "words": 14,
+        "est_sec": 6.0
       },
       {
         "screen_id": "hs1-102",
         "part": "noor",
-        "words": 64,
-        "est_sec": 27.4
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "hs1-103",
         "part": "noor",
-        "words": 51,
-        "est_sec": 21.9
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-104",
+        "part": "noor",
+        "words": 16,
+        "est_sec": 6.9
+      },
+      {
+        "screen_id": "hs1-201",
         "part": "noor",
         "words": 18,
         "est_sec": 7.7
       },
       {
-        "screen_id": "hs1-201",
-        "part": "noor",
-        "words": 63,
-        "est_sec": 27.0
-      },
-      {
         "screen_id": "hs1-202",
         "part": "noor",
-        "words": 71,
-        "est_sec": 30.4
+        "words": 13,
+        "est_sec": 5.6
       },
       {
         "screen_id": "hs1-203",
         "part": "noor",
-        "words": 70,
-        "est_sec": 30.0
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-204",
+        "part": "noor",
+        "words": 16,
+        "est_sec": 6.9
+      },
+      {
+        "screen_id": "hs1-205",
+        "part": "noor",
+        "words": 11,
+        "est_sec": 4.7
+      },
+      {
+        "screen_id": "hs1-206",
+        "part": "omar",
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs1-301",
+        "part": "noor",
+        "words": 17,
+        "est_sec": 7.3
+      },
+      {
+        "screen_id": "hs1-302",
+        "part": "noor",
+        "words": 16,
+        "est_sec": 6.9
+      },
+      {
+        "screen_id": "hs1-303",
+        "part": "noor",
+        "words": 17,
+        "est_sec": 7.3
+      },
+      {
+        "screen_id": "hs1-304",
+        "part": "noor",
+        "words": 16,
+        "est_sec": 6.9
+      },
+      {
+        "screen_id": "hs1-305",
+        "part": "noor",
+        "words": 18,
+        "est_sec": 7.7
+      },
+      {
+        "screen_id": "hs1-401",
         "part": "noor",
         "words": 23,
         "est_sec": 9.9
       },
       {
-        "screen_id": "hs1-205",
-        "part": "noor",
-        "words": 31,
-        "est_sec": 13.3
-      },
-      {
-        "screen_id": "hs1-206",
-        "part": "omar",
-        "words": 67,
-        "est_sec": 28.7
-      },
-      {
-        "screen_id": "hs1-301",
-        "part": "noor",
-        "words": 69,
-        "est_sec": 29.6
-      },
-      {
-        "screen_id": "hs1-302",
-        "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
-      },
-      {
-        "screen_id": "hs1-303",
-        "part": "noor",
-        "words": 58,
-        "est_sec": 24.9
-      },
-      {
-        "screen_id": "hs1-304",
-        "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
-      },
-      {
-        "screen_id": "hs1-305",
-        "part": "noor",
-        "words": 44,
-        "est_sec": 18.9
-      },
-      {
-        "screen_id": "hs1-401",
-        "part": "noor",
-        "words": 67,
-        "est_sec": 28.7
-      },
-      {
         "screen_id": "hs1-402",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-403",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-404",
         "part": "noor",
-        "words": 42,
-        "est_sec": 18.0
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "hs1-405",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-406",
         "part": "noor",
-        "words": 79,
-        "est_sec": 33.9
+        "words": 13,
+        "est_sec": 5.6
       },
       {
         "screen_id": "hs1-407",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-408",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-409",
         "part": "noor",
-        "words": 31,
-        "est_sec": 13.3
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-410",
         "part": "noor",
-        "words": 56,
-        "est_sec": 24.0
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "hs1-501",
         "part": "noor",
-        "words": 64,
-        "est_sec": 27.4
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-502",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-503",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-504",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-505",
         "part": "noor",
-        "words": 75,
-        "est_sec": 32.1
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "hs1-506",
         "part": "omar",
-        "words": 57,
-        "est_sec": 24.4
+        "words": 13,
+        "est_sec": 5.6
       },
       {
         "screen_id": "hs1-507",
         "part": "noor",
-        "words": 36,
-        "est_sec": 15.4
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-508",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 13,
+        "est_sec": 5.6
       },
       {
         "screen_id": "hs1-601",
         "part": "noor",
-        "words": 70,
-        "est_sec": 30.0
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs1-602",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-701",
         "part": "noor",
-        "words": 54,
-        "est_sec": 23.1
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs1-702",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-801",
         "part": "noor",
-        "words": 60,
-        "est_sec": 25.7
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "hs1-802",
         "part": "omar",
-        "words": 27,
-        "est_sec": 11.6
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-803",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-901",
         "part": "noor",
-        "words": 89,
-        "est_sec": 38.1
+        "words": 10,
+        "est_sec": 4.3
       },
       {
         "screen_id": "hs1-902",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-903",
         "part": "noor",
-        "words": 58,
-        "est_sec": 24.9
+        "words": 8,
+        "est_sec": 3.4
       },
       {
         "screen_id": "hs1-904",
         "part": "noor",
-        "words": 57,
-        "est_sec": 24.4
+        "words": 9,
+        "est_sec": 3.9
       },
       {
         "screen_id": "hs1-905",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs1-906",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs1-907",
         "part": "noor",
-        "words": 59,
-        "est_sec": 25.3
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs1-950",
         "part": "noor-1",
-        "words": 34,
-        "est_sec": 14.6
+        "words": 8,
+        "est_sec": 3.4
       },
       {
         "screen_id": "hs1-950",
@@ -341,8 +341,8 @@
       {
         "screen_id": "hs1-980",
         "part": "noor",
-        "words": 38,
-        "est_sec": 16.3
+        "words": 29,
+        "est_sec": 12.4
       },
       {
         "screen_id": "hs1-981",
@@ -353,8 +353,8 @@
       {
         "screen_id": "hs1-990",
         "part": "noor-1",
-        "words": 69,
-        "est_sec": 29.6
+        "words": 36,
+        "est_sec": 15.4
       },
       {
         "screen_id": "hs1-990",

@@ -15,7 +15,7 @@
 | Pass mark | 80% = **116 / 145 points** |
 | Screens | 26 in 7 outline sections |
 | Scored screens | 13 · scenarios, games and simulations: 3 |
-| Narration | 26 narrated screens · ≈6.4 min at 140 wpm (from `narration-script.json`) |
+| Narration | 26 narrated screens · ≈2.9 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 7 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -94,11 +94,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `hs2-000` | `title_slide` | Safety in Practice: Hazard, Fire & Chemical Lab |  | — | 🗣 Noor | Noor · 13 s |
-| 2 | `hs2-001` | `content_slide` | The lab |  | — | — | Noor · 20 s |
-| 3 | `hs2-010` | `worked_example` | Teach risk scoring |  | — | — | Noor · 42 s |
-| 4 | `hs2-011` | `hotspot` | Find the hazards |  | — | 🗣 Noor | Noor · 15 s |
-| 5 | `hs2-012` ★ | `mcq` | Prioritise | 5 | hs2-o1 | — | Noor · 7 s |
-| 6 | `hs2-013` ★ | `fill_blank` | Score a risk | 5 | hs2-o1 | — | Noor · 7 s |
+| 2 | `hs2-001` | `content_slide` | The lab |  | — | — | Noor · 6 s |
+| 3 | `hs2-010` | `worked_example` | Teach risk scoring |  | — | — | Noor · 3 s |
+| 4 | `hs2-011` | `hotspot` | Find the hazards |  | — | 🗣 Noor | Noor · 7 s |
+| 5 | `hs2-012` ★ | `mcq` | Prioritise | 5 | hs2-o1 | — | Noor · 4 s |
+| 6 | `hs2-013` ★ | `fill_blank` | Score a risk | 5 | hs2-o1 | — | Noor · 6 s |
 
 ### `hs2-sB` — B · Code Red drill
 
@@ -106,8 +106,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-020` | `flashcards` | Bilingual code poster |  | — | — | Noor · 25 s |
-| 2 | `hs2-030` ★ | `game` | Code Red drill | 25 | hs2-o2 | 🗣 Noor + Omar | Noor/Omar · 18 s |
+| 1 | `hs2-020` | `flashcards` | Bilingual code poster |  | — | — | Noor · 6 s |
+| 2 | `hs2-030` ★ | `game` | Code Red drill | 25 | hs2-o2 | 🗣 Noor + Omar | Noor/Omar · 11 s |
 
 ### `hs2-sC` — C · Evacuation
 
@@ -115,9 +115,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-031` ★ | `drag_drop` | Tool ↔ patient | 10 | hs2-o3 | — | Noor · 7 s |
-| 2 | `hs2-032` ★ | `labeled_diagram` | A plan | 10 | hs2-o3 | — | Noor · 7 s |
-| 3 | `hs2-033` | `content_slide` | Assembly points |  | — | — | Noor · 25 s |
+| 1 | `hs2-031` ★ | `drag_drop` | Tool ↔ patient | 10 | hs2-o3 | — | Noor · 4 s |
+| 2 | `hs2-032` ★ | `labeled_diagram` | A plan | 10 | hs2-o3 | — | Noor · 4 s |
+| 3 | `hs2-033` | `content_slide` | Assembly points |  | — | — | Noor · 4 s |
 
 ### `hs2-sD` — D · Extinguishers
 
@@ -125,8 +125,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-040` | `hotspot` | The label |  | — | — | Noor · 19 s |
-| 2 | `hs2-041` ★ | `drag_drop` | Match the fire | 10 | hs2-o4 | — | Noor · 7 s |
+| 1 | `hs2-040` | `hotspot` | The label |  | — | — | Noor · 6 s |
+| 2 | `hs2-041` ★ | `drag_drop` | Match the fire | 10 | hs2-o4 | — | Noor · 4 s |
 
 ### `hs2-sE` — E · Spills
 
@@ -134,10 +134,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-050` | `content_slide` | What is HAZMAT; Code Orange |  | — | — | Noor · 24 s |
-| 2 | `hs2-051` | `image_compare` | Two kits |  | — | — | Noor · 15 s |
-| 3 | `hs2-052` ★ | `decision_scenario` | Spill triage | 15 | hs2-o5 | 🗣 Omar | Noor · 7 s |
-| 4 | `hs2-053` ★ | `sorting` | Spill-kit procedure | 10 | hs2-o5 | — | Noor · 7 s |
+| 1 | `hs2-050` | `content_slide` | What is HAZMAT; Code Orange |  | — | — | Noor · 5 s |
+| 2 | `hs2-051` | `image_compare` | Two kits |  | — | — | Noor · 3 s |
+| 3 | `hs2-052` ★ | `decision_scenario` | Spill triage | 15 | hs2-o5 | 🗣 Omar | Noor · 4 s |
+| 4 | `hs2-053` ★ | `sorting` | Spill-kit procedure | 10 | hs2-o5 | — | Noor · 6 s |
 
 ### `hs2-sF` — F · Labels & register
 
@@ -145,11 +145,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-060` | `content_slide` | How to read a register |  | — | — | Noor · 34 s |
-| 2 | `hs2-061` ★ | `matching` | GHS hazard statements | 10 | hs2-o6 | — | Noor · 7 s |
-| 3 | `hs2-062` ★ | `mcq` | Register decision | 10 | hs2-o6 | — | Noor · 7 s |
-| 4 | `hs2-063` ★ | `mcq` | NFPA in practice | 5 | hs2-o6 | — | Noor · 7 s |
-| 5 | `hs2-064` ★ | `escape_room` | Chemical store lockout (capstone) | 20 | hs2-o6 | 🗣 Noor | Noor · 14 s |
+| 1 | `hs2-060` | `content_slide` | How to read a register |  | — | — | Noor · 9 s |
+| 2 | `hs2-061` ★ | `matching` | GHS hazard statements | 10 | hs2-o6 | — | Noor · 6 s |
+| 3 | `hs2-062` ★ | `mcq` | Register decision | 10 | hs2-o6 | — | Noor · 4 s |
+| 4 | `hs2-063` ★ | `mcq` | NFPA in practice | 5 | hs2-o6 | — | Noor · 4 s |
+| 5 | `hs2-064` ★ | `escape_room` | Chemical store lockout (capstone) | 20 | hs2-o6 | 🗣 Noor | Noor · 11 s |
 
 ### `hs2-sG` — G · Regulations & close
 
@@ -157,7 +157,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs2-070` ★ | `drag_drop` | Allowed or prohibited? | 10 | hs2-o7 | — | Noor · 7 s |
+| 1 | `hs2-070` ★ | `drag_drop` | Allowed or prohibited? | 10 | hs2-o7 | — | Noor · 4 s |
 | 2 | `hs2-080` | `results_breakdown` | Per-objective results |  | — | — | Noor · 12 s |
 | 3 | `hs2-081` | `poll` | Commit |  | — | — | Noor · 8 s |
 | 4 | `hs2-090` | `summary` | Close |  | — | 🗣 Noor + Omar | Noor/Omar · 18 s |

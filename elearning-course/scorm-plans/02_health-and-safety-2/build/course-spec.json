@@ -122,7 +122,7 @@
    "layout": "text",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear."
+   "narration_text": "Noor: Safety is the habits that protect life, health and environment. Today you practise them."
   },
   {
    "type": "worked_example",
@@ -159,7 +159,7 @@
    "self_explanation_prompt_html": "<p>Why is the sign not enough on its own? This reflection is not scored.</p>",
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Walk through the wet-floor example aloud. Explain why likelihood and impact are scored separately. Follow the example one step at a time, then identify why the next step makes sense. The value is the reasoning you can carry into a similar case. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+   "narration_text": "Noor: Walk through the wet-floor example aloud."
   },
   {
    "type": "hotspot",
@@ -255,7 +255,7 @@
    "animation": "fade-up",
    "reveal": "none",
    "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card bottom-left (blocked-exit story, companions.md §1); tip text is in prompt_html. Hotspot coordinates measured on hs2-img-storeroom.png (1672 × 941 px). The Safety Manager must still confirm the six-hazard answer key (B6).",
-   "narration_text": "Noor: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion."
+   "narration_text": "Noor: There are six hazards. I walked past a blocked exit for a week before I noticed it."
   },
   {
    "type": "mcq",
@@ -301,7 +301,7 @@
     "hs2-011"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "fill_blank",
@@ -334,7 +334,7 @@
     "hs2-010"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Write the note as you would in the record, then read the feedback."
   },
   {
    "type": "flashcards",
@@ -398,7 +398,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Fronts carry EN name + colour as text; Arabic names and every extension except Code Blue 2222 are pending D2 (facility MOH code poster). Planned colour-chip asset <hs2-img-codes> is one SVG set with no per-card ids in Phase 3, so cards show no chip until the set is split per code.",
-   "narration_text": "Noor: The poster on the wall is bilingual. Learn both names. Check your site's extensions. Use the cards for active recall rather than a quick scan. The key is knowing what the term changes in your next action. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one."
+   "narration_text": "Noor: The poster on the wall is bilingual. Learn both names. Check your site's extensions."
   },
   {
    "type": "game",
@@ -779,7 +779,7 @@
    ],
    "reveal": "none",
    "notes": "Companions: char-noor-avatar-neutral hosts the drill as the L5 avatar on the intro; char-omar-avatar-neutral is the colleague making the alarm call in node 2 (named in the node text; the game schema has no per-node avatar slot). (Phase 3 table: Noor avatar as host; Omar avatar in node 2.) Six scenes hs2-img-drill-1..6, one per node (G10 full six-scene drill); all gated on Safety Manager sign-off of nodes, code wording and assembly-point treatment. Score +1 per correct RACE choice (multiplier off), 2 lives, pass 5 of 6, no timer. Hints are one ladder of six text hints in node order (engine reveals them in sequence). Open decisions shown as drafts: D2 (code wording, extension, End-of-disaster wording), B8 (assembly-point names). Staff ID 4417 is fictional.",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised. Focus on the action that fits. Feedback explains the reasoning after you respond. Dr. Omar: Carry this practical rule into your next decision."
+   "narration_text": "Noor: There is no timer, but in real life seconds matter. Play the round, then read the feedback. Dr. Omar: Carry this practical rule into your next decision."
   },
   {
    "type": "drag_drop",
@@ -838,7 +838,7 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Place each item where it belongs, then read the feedback."
   },
   {
    "type": "labeled_diagram",
@@ -902,7 +902,7 @@
    ],
    "reveal": "none",
    "notes": "hs2-img-floorplan.svg currently has zones and 'You are here' only; the Phase 3 brief also asks for legend icons. Marker positions (0–1000) assume the legend is added at these spots; re-check positions when the SVG is revised. Real floor plans are never packaged (B7).",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Label the parts you can name, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -927,7 +927,7 @@
    ],
    "animation": "fade-up",
    "reveal": "auto",
-   "narration_text": "Noor: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+   "narration_text": "Noor: Inside vs outside assembly points. Find your unit's plan today."
   },
   {
    "type": "hotspot",
@@ -1011,7 +1011,7 @@
    "animation": "fade-up",
    "reveal": "none",
    "notes": "hs2-img-extinguisher is a planned client photo (permission + EHS equipment review pending). Region coordinates are placeholders on the 960 × 540 pending card and must be re-measured on the final 3:4 photo.",
-   "narration_text": "Noor: Before you need it, know how to read the label and check the gauge. Explore the marked areas at your own pace, then compare the details you found. Use those details to identify the next practical action. Apply the point to a familiar task."
+   "narration_text": "Noor: Before you need it, know how to read the label and check the gauge."
   },
   {
    "type": "drag_drop",
@@ -1073,7 +1073,7 @@
     "hs2-040"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Place each item where it belongs, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -1099,7 +1099,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Code Orange threshold uses the decision sheet's recommended draft for D1 (02/B1). Change the rule text here, in hs2-052 and in hs2-064 puzzle 4 when D1 closes.",
-   "narration_text": "Noor: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Noor: HAZMAT is chemical or biological. One clear rule decides Code Orange."
   },
   {
    "type": "image_compare",
@@ -1118,7 +1118,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Both photos are planned client photos (same angle and size; permission and EHS equipment review pending). Alt text: 'Red chemical spill kit.' / 'Yellow biological spill kit.' (image_compare has no alt fields; labels carry the meaning). Kit contents pending B4.",
-   "narration_text": "Noor: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot."
+   "narration_text": "Noor: Two kits, two colours, two jobs."
   },
   {
    "type": "decision_scenario",
@@ -1227,7 +1227,7 @@
    ],
    "reveal": "none",
    "notes": "Companion: Dr. Omar hosts — char-omar-avatar-neutral on the intro (L5), char-omar-avatar-happy / char-omar-avatar-concern after choices. Rule text is the D1 recommended draft (pending D1).",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "sorting",
@@ -1281,7 +1281,7 @@
    ],
    "reveal": "none",
    "notes": "Seven steps from the Phase 2 card (B4 proposed procedure; source p.29 is blank). Pending B4.",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Put the steps in the order you would follow at work, then read the feedback."
   },
   {
    "type": "content_slide",
@@ -1310,7 +1310,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "hs2-img-register is an HTML table by design (Phase 3), rebuilt here as practice rows from source p.25; real anonymised register pending B5. Row 3 (2-3-0) and row 4 (SDS ✘) feed hs2-062, hs2-063 and hs2-064.",
-   "narration_text": "Noor: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Noor: Read a register row left to right: what it is, why it's here, is the SDS on file, what the diamond says."
   },
   {
    "type": "matching",
@@ -1381,7 +1381,7 @@
    ],
    "reveal": "none",
    "notes": "Pictograms are named as text: the matching schema has no image slot, so planned <hs2-img-ghs-1..9> (reuse of module 01 GHS SVGs) cannot be placed on this screen type.",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "mcq",
@@ -1426,7 +1426,7 @@
     "hs2-060"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "mcq",
@@ -1472,7 +1472,7 @@
    ],
    "reveal": "none",
    "notes": "Diamond given as text in the prompt. The planned SVG hs2-img-nfpa-230 cannot be placed on an mcq, and the current SVG places 2 on the yellow and 3 on the red quadrant with 0 outside the diamond and the standard quadrant positions swapped; fix the asset before any reuse.",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "escape_room",
@@ -1538,7 +1538,7 @@
    ],
    "reveal": "none",
    "notes": "Companion: Noor, char-noor-tip (hints), L5 avatar beside hint text. Register and NFPA diamond are on screen as HTML text (playbook rule: answers derivable from the screen). Planned <hs2-img-spill-photo> (spill with a 1 L bottle cue) and <hs2-img-nfpa-230> cannot be placed: escape_room has no image slot, so puzzle 4 describes the photo in text. Puzzle 4 follows the D1 recommended draft (pending D1). Register rows pending B5. Eyewash 15 minutes is a module 01 fact (01 p.39).",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers."
+   "narration_text": "Noor: The store is locked. Four checks open it. Everything you need is in this module. Work through each step in turn, then read the feedback."
   },
   {
    "type": "drag_drop",
@@ -1612,7 +1612,7 @@
     "hs2-011"
    ],
    "reveal": "none",
-   "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Noor: Place each item where it belongs, then read the feedback."
   },
   {
    "type": "results_breakdown",

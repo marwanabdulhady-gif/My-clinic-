@@ -15,7 +15,7 @@
 | Pass mark | 80% = **176 / 220 points** |
 | Screens | 54 in 11 outline sections |
 | Scored screens | 24 · scenarios, games and simulations: 5 |
-| Narration | 54 narrated screens · ≈16.0 min at 140 wpm (from `narration-script.json`) |
+| Narration | 54 narrated screens · ≈5.5 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 10 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -102,8 +102,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-000` | `title_slide` | Facility Management & Safety |  | — | 🗣 Noor | Noor · 14 s |
-| 2 | `hs1-001` | `content_slide` | Why it matters; how the course works |  | — | 🗣 Noor | Noor · 29 s |
+| 1 | `hs1-000` | `title_slide` | Facility Management & Safety |  | — | 🗣 Noor | Noor · 11 s |
+| 2 | `hs1-001` | `content_slide` | Why it matters; how the course works |  | — | 🗣 Noor | Noor · 9 s |
 | 3 | `hs1-002` | `poll` | Unscored confidence check (baseline) |  | — | — | Noor · 8 s |
 
 ### `hs1-s1` — 1 · The eight FMS plans
@@ -112,10 +112,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-101` | `content_slide` | Why the chapter exists |  | — | — | Noor · 33 s |
-| 2 | `hs1-102` | `hotspot` | The eight plans |  | — | — | Noor · 27 s |
-| 3 | `hs1-103` | `content_slide` | Plans ↔ codes link |  | — | — | Noor · 21 s |
-| 4 | `hs1-104` ★ | `matching` | Plans | 10 | hs1-o1 | — | Noor · 7 s |
+| 1 | `hs1-101` | `content_slide` | Why the chapter exists |  | — | — | Noor · 6 s |
+| 2 | `hs1-102` | `hotspot` | The eight plans |  | — | — | Noor · 5 s |
+| 3 | `hs1-103` | `content_slide` | Plans ↔ codes link |  | — | — | Noor · 6 s |
+| 4 | `hs1-104` ★ | `matching` | Plans | 10 | hs1-o1 | — | Noor · 6 s |
 
 ### `hs1-s2` — 2 · Occupational Health & Safety
 
@@ -123,12 +123,12 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-201` | `flashcards` | Four core terms |  | — | — | Noor · 27 s |
-| 2 | `hs1-202` | `accordion` | Incident types |  | — | — | Noor · 30 s |
-| 3 | `hs1-203` | `labeled_diagram` | AREC cycle |  | — | — | Noor · 30 s |
-| 4 | `hs1-204` ★ | `sorting` | Hierarchy of controls | 10 | hs1-o2 | — | Noor · 9 s |
-| 5 | `hs1-205` ★ | `decision_scenario` | AREC + controls + rights | 15 | hs1-o2 | 🗣 Noor | Noor · 13 s |
-| 6 | `hs1-206` | `accordion` | Who to contact + your rights |  | — | 🗣 Omar | Omar · 28 s |
+| 1 | `hs1-201` | `flashcards` | Four core terms |  | — | — | Noor · 7 s |
+| 2 | `hs1-202` | `accordion` | Incident types |  | — | — | Noor · 5 s |
+| 3 | `hs1-203` | `labeled_diagram` | AREC cycle |  | — | — | Noor · 4 s |
+| 4 | `hs1-204` ★ | `sorting` | Hierarchy of controls | 10 | hs1-o2 | — | Noor · 6 s |
+| 5 | `hs1-205` ★ | `decision_scenario` | AREC + controls + rights | 15 | hs1-o2 | 🗣 Noor | Noor · 4 s |
+| 6 | `hs1-206` | `accordion` | Who to contact + your rights |  | — | 🗣 Omar | Omar · 7 s |
 
 ### `hs1-s3` — 3 · Emergency codes
 
@@ -136,11 +136,11 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-301` | `flashcards` | The codes |  | — | 🗣 Noor | Noor · 29 s |
-| 2 | `hs1-302` ★ | `matching` | Codes | 10 | hs1-o3 | — | Noor · 7 s |
-| 3 | `hs1-303` | `content_slide` | Two announcements |  | — | — | Noor · 24 s |
-| 4 | `hs1-304` ★ | `sorting` | Common response pattern | 5 | hs1-o3 | — | Noor · 7 s |
-| 5 | `hs1-305` | `labeled_diagram` | Who responds |  | — | — | Noor · 18 s |
+| 1 | `hs1-301` | `flashcards` | The codes |  | — | 🗣 Noor | Noor · 7 s |
+| 2 | `hs1-302` ★ | `matching` | Codes | 10 | hs1-o3 | — | Noor · 6 s |
+| 3 | `hs1-303` | `content_slide` | Two announcements |  | — | — | Noor · 7 s |
+| 4 | `hs1-304` ★ | `sorting` | Common response pattern | 5 | hs1-o3 | — | Noor · 6 s |
+| 5 | `hs1-305` | `labeled_diagram` | Who responds |  | — | — | Noor · 7 s |
 
 ### `hs1-s4` — 4 · Fire safety
 
@@ -148,16 +148,16 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-401` | `labeled_diagram` | Fire triangle + smoke |  | — | — | Noor · 28 s |
-| 2 | `hs1-402` ★ | `sorting` | RACE | 5 | hs1-o4 | — | Noor · 7 s |
-| 3 | `hs1-403` ★ | `sorting` | PASS | 5 | hs1-o4 | — | Noor · 7 s |
-| 4 | `hs1-404` | `hotspot` | Find the equipment |  | — | — | Noor · 18 s |
-| 5 | `hs1-405` ★ | `drag_drop` | Extinguisher classes | 10 | hs1-o4 | — | Noor · 7 s |
-| 6 | `hs1-406` | `tabs` | Evacuation types |  | — | — | Noor · 33 s |
-| 7 | `hs1-407` ★ | `mcq` | Choose the evacuation | 5 | hs1-o4 | — | Noor · 7 s |
-| 8 | `hs1-408` ★ | `true_false` | Oxygen myth | 5 | hs1-o4 | — | Noor · 7 s |
-| 9 | `hs1-409` ★ | `decision_scenario` | Put RACE into action | 20 | hs1-o4 | 🗣 Noor | Noor · 13 s |
-| 10 | `hs1-410` | `content_slide` | Fire prevention |  | — | — | Noor · 24 s |
+| 1 | `hs1-401` | `labeled_diagram` | Fire triangle + smoke |  | — | — | Noor · 9 s |
+| 2 | `hs1-402` ★ | `sorting` | RACE | 5 | hs1-o4 | — | Noor · 6 s |
+| 3 | `hs1-403` ★ | `sorting` | PASS | 5 | hs1-o4 | — | Noor · 6 s |
+| 4 | `hs1-404` | `hotspot` | Find the equipment |  | — | — | Noor · 5 s |
+| 5 | `hs1-405` ★ | `drag_drop` | Extinguisher classes | 10 | hs1-o4 | — | Noor · 4 s |
+| 6 | `hs1-406` | `tabs` | Evacuation types |  | — | — | Noor · 5 s |
+| 7 | `hs1-407` ★ | `mcq` | Choose the evacuation | 5 | hs1-o4 | — | Noor · 4 s |
+| 8 | `hs1-408` ★ | `true_false` | Oxygen myth | 5 | hs1-o4 | — | Noor · 4 s |
+| 9 | `hs1-409` ★ | `decision_scenario` | Put RACE into action | 20 | hs1-o4 | 🗣 Noor | Noor · 4 s |
+| 10 | `hs1-410` | `content_slide` | Fire prevention |  | — | — | Noor · 5 s |
 
 ### `hs1-s5` — 5 · Hazardous materials & waste
 
@@ -165,14 +165,14 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-501` | `content_slide` | Ordering & inventory |  | — | — | Noor · 28 s |
-| 2 | `hs1-502` ★ | `matching` | GHS pictograms | 10 | hs1-o5 | — | Noor · 7 s |
-| 3 | `hs1-503` ★ | `labeled_diagram` | NFPA diamond parts | 10 | hs1-o5 | — | Noor · 7 s |
-| 4 | `hs1-504` ★ | `mcq` | A diamond | 5 | hs1-o5 | — | Noor · 7 s |
-| 5 | `hs1-505` | `accordion` | Store, handle, transport |  | — | — | Noor · 32 s |
-| 6 | `hs1-506` | `content_slide` | Eyewash and showers |  | — | 🗣 Omar | Omar · 24 s |
-| 7 | `hs1-507` ★ | `decision_scenario` | Code Orange decision | 15 | hs1-o5 | 🗣 Noor | Noor · 15 s |
-| 8 | `hs1-508` ★ | `drag_drop` | Waste segregation | 10 | hs1-o5 | — | Noor · 7 s |
+| 1 | `hs1-501` | `content_slide` | Ordering & inventory |  | — | — | Noor · 7 s |
+| 2 | `hs1-502` ★ | `matching` | GHS pictograms | 10 | hs1-o5 | — | Noor · 6 s |
+| 3 | `hs1-503` ★ | `labeled_diagram` | NFPA diamond parts | 10 | hs1-o5 | — | Noor · 4 s |
+| 4 | `hs1-504` ★ | `mcq` | A diamond | 5 | hs1-o5 | — | Noor · 4 s |
+| 5 | `hs1-505` | `accordion` | Store, handle, transport |  | — | — | Noor · 3 s |
+| 6 | `hs1-506` | `content_slide` | Eyewash and showers |  | — | 🗣 Omar | Omar · 6 s |
+| 7 | `hs1-507` ★ | `decision_scenario` | Code Orange decision | 15 | hs1-o5 | 🗣 Noor | Noor · 4 s |
+| 8 | `hs1-508` ★ | `drag_drop` | Waste segregation | 10 | hs1-o5 | — | Noor · 5 s |
 
 ### `hs1-s6` — 6 · Security
 
@@ -180,8 +180,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-601` | `tabs` | Security rules |  | — | — | Noor · 30 s |
-| 2 | `hs1-602` ★ | `mcq` | Apply | 5 | hs1-o6 | — | Noor · 7 s |
+| 1 | `hs1-601` | `tabs` | Security rules |  | — | — | Noor · 6 s |
+| 2 | `hs1-602` ★ | `mcq` | Apply | 5 | hs1-o6 | — | Noor · 4 s |
 
 ### `hs1-s7` — 7 · Utilities
 
@@ -189,8 +189,8 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-701` | `hotspot` | Utility walk-around |  | — | — | Noor · 23 s |
-| 2 | `hs1-702` ★ | `mcq` | Apply | 5 | hs1-o7 | — | Noor · 7 s |
+| 1 | `hs1-701` | `hotspot` | Utility walk-around |  | — | — | Noor · 6 s |
+| 2 | `hs1-702` ★ | `mcq` | Apply | 5 | hs1-o7 | — | Noor · 4 s |
 
 ### `hs1-s8` — 8 · Medical equipment
 
@@ -198,9 +198,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-801` | `content_slide` | Labels, PPM, tagging |  | — | — | Noor · 25 s |
-| 2 | `hs1-802` ★ | `decision_scenario` | Spot it, report it | 15 | hs1-o8 | 🗣 Omar | Omar · 11 s |
-| 3 | `hs1-803` ★ | `true_false` | Oxygen cylinders | 5 | hs1-o8 | — | Noor · 7 s |
+| 1 | `hs1-801` | `content_slide` | Labels, PPM, tagging |  | — | — | Noor · 5 s |
+| 2 | `hs1-802` ★ | `decision_scenario` | Spot it, report it | 15 | hs1-o8 | 🗣 Omar | Omar · 4 s |
+| 3 | `hs1-803` ★ | `true_false` | Oxygen cylinders | 5 | hs1-o8 | — | Noor · 4 s |
 
 ### `hs1-s9` — 9 · Radiation & laser
 
@@ -208,13 +208,13 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-901` | `tabs` | Ionising vs non-ionising |  | — | — | Noor · 38 s |
-| 2 | `hs1-902` ★ | `matching` | Protection principles | 5 | hs1-o9 | — | Noor · 7 s |
-| 3 | `hs1-903` | `labeled_diagram` | ALARA |  | — | — | Noor · 25 s |
-| 4 | `hs1-904` | `accordion` | Staying accountable |  | — | — | Noor · 24 s |
-| 5 | `hs1-905` ★ | `mcq` | Dose bands | 5 | hs1-o9 | — | Noor · 7 s |
-| 6 | `hs1-906` ★ | `matching` | Laser classes | 5 | hs1-o9 | — | Noor · 7 s |
-| 7 | `hs1-907` | `content_slide` | Laser hazards & measures |  | — | — | Noor · 25 s |
+| 1 | `hs1-901` | `tabs` | Ionising vs non-ionising |  | — | — | Noor · 4 s |
+| 2 | `hs1-902` ★ | `matching` | Protection principles | 5 | hs1-o9 | — | Noor · 6 s |
+| 3 | `hs1-903` | `labeled_diagram` | ALARA |  | — | — | Noor · 3 s |
+| 4 | `hs1-904` | `accordion` | Staying accountable |  | — | — | Noor · 3 s |
+| 5 | `hs1-905` ★ | `mcq` | Dose bands | 5 | hs1-o9 | — | Noor · 4 s |
+| 6 | `hs1-906` ★ | `matching` | Laser classes | 5 | hs1-o9 | — | Noor · 6 s |
+| 7 | `hs1-907` | `content_slide` | Laser hazards & measures |  | — | — | Noor · 6 s |
 
 ### `hs1-s10` — Capstone & completion
 
@@ -222,10 +222,10 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `hs1-950` ★ | `game` | "One shift, three plans" | 25 | hs1-o10 | 🗣 Noor + Omar | Noor/Omar · 18 s |
-| 2 | `hs1-980` | `results_breakdown` | Show strengths by section |  | — | 🗣 Noor | Noor · 16 s |
+| 1 | `hs1-950` ★ | `game` | "One shift, three plans" | 25 | hs1-o10 | 🗣 Noor + Omar | Noor/Omar · 7 s |
+| 2 | `hs1-980` | `results_breakdown` | Show strengths by section |  | — | 🗣 Noor | Noor · 12 s |
 | 3 | `hs1-981` | `poll` | Confidence re-check |  | — | — | Noor · 8 s |
-| 4 | `hs1-990` | `summary` | Completion actions |  | — | 🗣 Noor + Omar | Noor/Omar · 33 s |
+| 4 | `hs1-990` | `summary` | Completion actions |  | — | 🗣 Noor + Omar | Noor/Omar · 18 s |
 
 ## 5. Objectives, evidence and scoring
 

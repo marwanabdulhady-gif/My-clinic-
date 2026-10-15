@@ -13,14 +13,18 @@ This register is the production hand-off for review. `Generated` means the file 
 
 ## Planned assets from Phase 3
 
-| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note |
-|---|---|---|---|---|---|
-| `ops-img-journey` | SVG | ops-002 | 6-stage horizontal journey, icons, team colour tags + text labels | own | "Patient journey from booking to follow-up." |
-| `ops-img-ops-chart` | SVG | ops-011 | Role-only Operations chart (from B1) | own | "Operations structure by role." |
-| `ops-img-mycare-chart` | SVG | ops-021 | Role-only My Care chart (from B2) | own | "My Care structure by role." |
-| `ops-img-activities` | SVG icons ×14 | ops-010, ops-020 | Line icons; slide 2/5 "sticky note" style not copied | own | decorative |
-| `ops-img-scenes-1..4` | illustrations | ops-031 | Reception, phone follow-up, insurance call, pharmacy queue | ai-generated | per scene |
-| `char-noor- / char-omar-` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." |
+| Planned id | Kind | Screens | Brief | Source route | Alt text / accessibility note | Placement | Production gate |
+|---|---|---|---|---|---|---|---|
+| `ops-img-journey` | SVG | ops-002 | 6-stage horizontal journey, icons, team colour tags + text labels | own | "Patient journey from booking to follow-up." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-ops-chart` | SVG | ops-011 | Role-only Operations chart (from B1) | own | "Operations structure by role." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-mycare-chart` | SVG | ops-021 | Role-only My Care chart (from B2) | own | "My Care structure by role." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-activities` | SVG icons ×14 | ops-010, ops-020 | Line icons; slide 2/5 "sticky note" style not copied | own | decorative | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-scenes-1` | illustrations | ops-031 | Reception, phone follow-up, insurance call, pharmacy queue | ai-generated | per scene | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-scenes-2` | illustrations | ops-031 | Reception, phone follow-up, insurance call, pharmacy queue | ai-generated | per scene | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-scenes-3` | illustrations | ops-031 | Reception, phone follow-up, insurance call, pharmacy queue | ai-generated | per scene | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `ops-img-scenes-4` | illustrations | ops-031 | Reception, phone follow-up, insurance call, pharmacy queue | ai-generated | per scene | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-noor-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
+| `char-omar-*` | character set (program-wide) | see "Companions in this module" | Shared companion art: poses and avatars listed in companions.md §3 | ai-generated (masters approved first) | per pose, e.g. "Dr. Omar, the family physician, giving a tip." | Screen visual; production placement reviewed by the SME. | PENDING relevant Phase 0 and SME visual approval; provenance recorded before production. |
 
 ## Non-negotiable production rules
 

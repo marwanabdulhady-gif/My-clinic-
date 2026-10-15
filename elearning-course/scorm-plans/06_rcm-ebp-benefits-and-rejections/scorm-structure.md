@@ -15,7 +15,7 @@
 | Pass mark | 80% = **64 / 80 points** |
 | Screens | 15 in 4 outline sections |
 | Scored screens | 7 · scenarios, games and simulations: 2 |
-| Narration | 15 narrated screens · ≈4.6 min at 140 wpm (from `narration-script.json`) |
+| Narration | 15 narrated screens · ≈1.8 min at 140 wpm (from `narration-script.json`) |
 | LMS objectives | 3 (`cmi.objectives`) |
 
 ## 2. Package contents (inside the zip)
@@ -72,7 +72,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
 | 1 | `rcmb-000` | `title_slide` | RCM Part B: New EBP Benefits & Claim-Rejection Analysis |  | — | 🗣 Omar | Omar · 13 s |
-| 2 | `rcmb-001` | `content_slide` | Frame |  | — | — | Omar · 33 s |
+| 2 | `rcmb-001` | `content_slide` | Frame |  | — | — | Omar · 5 s |
 
 ### `rcmb-sB` — Benefits in practice
 
@@ -80,13 +80,13 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcmb-010` ★ | `drag_drop` | Sort the benefits | 10 | rcmb-o1 | — | Omar · 7 s |
-| 2 | `rcmb-020` | `tabs` | What's covered |  | — | — | Omar · 39 s |
-| 3 | `rcmb-021` ★ | `mcq` | Apply | 5 | rcmb-o2 | — | Omar · 7 s |
-| 4 | `rcmb-030` | `accordion` | Mental-health benefit |  | — | 🗣 Noor | Noor · 37 s |
-| 5 | `rcmb-031` ★ | `true_false` | Exclusion | 5 | rcmb-o2 | — | Omar · 7 s |
-| 6 | `rcmb-040` | `tabs` | Five benefits |  | — | — | Omar · 43 s |
-| 7 | `rcmb-041` ★ | `matching` | Key condition or limit | 10 | rcmb-o2 | — | Omar · 7 s |
+| 1 | `rcmb-010` ★ | `drag_drop` | Sort the benefits | 10 | rcmb-o1 | — | Omar · 4 s |
+| 2 | `rcmb-020` | `tabs` | What's covered |  | — | — | Omar · 7 s |
+| 3 | `rcmb-021` ★ | `mcq` | Apply | 5 | rcmb-o2 | — | Omar · 4 s |
+| 4 | `rcmb-030` | `accordion` | Mental-health benefit |  | — | 🗣 Noor | Noor · 6 s |
+| 5 | `rcmb-031` ★ | `true_false` | Exclusion | 5 | rcmb-o2 | — | Omar · 4 s |
+| 6 | `rcmb-040` | `tabs` | Five benefits |  | — | — | Omar · 8 s |
+| 7 | `rcmb-041` ★ | `matching` | Key condition or limit | 10 | rcmb-o2 | — | Omar · 6 s |
 
 ### `rcmb-sC` — Reading rejections
 
@@ -94,9 +94,9 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcmb-050` | `content_slide` | A log |  | — | 🗣 Omar | Omar · 30 s |
-| 2 | `rcmb-051` ★ | `drag_drop` | Classify | 15 | rcmb-o3 | — | Omar · 7 s |
-| 3 | `rcmb-052` ★ | `decision_scenario` | Rework | 15 | rcmb-o3 | 🗣 Omar | Omar · 7 s |
+| 1 | `rcmb-050` | `content_slide` | A log |  | — | 🗣 Omar | Omar · 12 s |
+| 2 | `rcmb-051` ★ | `drag_drop` | Classify | 15 | rcmb-o3 | — | Omar · 4 s |
+| 3 | `rcmb-052` ★ | `decision_scenario` | Rework | 15 | rcmb-o3 | 🗣 Omar | Omar · 4 s |
 
 ### `rcmb-sD` — Practice & close
 
@@ -104,7 +104,7 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 | # | Screen | Type | Title | Pts | Objective | Companion | Narration |
 |---|---|---|---|---|---|---|---|
-| 1 | `rcmb-060` ★ | `adaptive_practice` | Covered or not? | 20 | rcmb-o2 | — | Omar · 9 s |
+| 1 | `rcmb-060` ★ | `adaptive_practice` | Covered or not? | 20 | rcmb-o2 | — | Omar · 3 s |
 | 2 | `rcmb-090` | `results_breakdown` | Results |  | — | — | Omar · 9 s |
 | 3 | `rcmb-091` | `summary` | Close |  | — | 🗣 Omar + Noor | Noor/Omar · 19 s |
 

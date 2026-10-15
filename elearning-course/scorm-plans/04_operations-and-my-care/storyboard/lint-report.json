@@ -23,8 +23,8 @@
     "clean": true,
     "module_id": "MC04-operations-my-care",
     "wpm": 140,
-    "total_est_sec": 263.6,
-    "total_est_min": 4.4,
+    "total_est_sec": 93.0,
+    "total_est_min": 1.6,
     "screens": [
       {
         "screen_id": "ops-000",
@@ -35,68 +35,68 @@
       {
         "screen_id": "ops-001",
         "part": "omar",
-        "words": 58,
-        "est_sec": 24.9
-      },
-      {
-        "screen_id": "ops-002",
-        "part": "omar",
-        "words": 50,
-        "est_sec": 21.4
-      },
-      {
-        "screen_id": "ops-010",
-        "part": "omar",
-        "words": 91,
-        "est_sec": 39.0
-      },
-      {
-        "screen_id": "ops-011",
-        "part": "omar",
-        "words": 73,
-        "est_sec": 31.3
-      },
-      {
-        "screen_id": "ops-020",
-        "part": "omar",
-        "words": 90,
-        "est_sec": 38.6
-      },
-      {
-        "screen_id": "ops-021",
-        "part": "omar",
-        "words": 59,
-        "est_sec": 25.3
-      },
-      {
-        "screen_id": "ops-022",
-        "part": "noor",
-        "words": 35,
-        "est_sec": 15.0
-      },
-      {
-        "screen_id": "ops-030",
-        "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
-      },
-      {
-        "screen_id": "ops-031",
-        "part": "omar",
         "words": 31,
         "est_sec": 13.3
       },
       {
+        "screen_id": "ops-002",
+        "part": "omar",
+        "words": 9,
+        "est_sec": 3.9
+      },
+      {
+        "screen_id": "ops-010",
+        "part": "omar",
+        "words": 11,
+        "est_sec": 4.7
+      },
+      {
+        "screen_id": "ops-011",
+        "part": "omar",
+        "words": 14,
+        "est_sec": 6.0
+      },
+      {
+        "screen_id": "ops-020",
+        "part": "omar",
+        "words": 12,
+        "est_sec": 5.1
+      },
+      {
+        "screen_id": "ops-021",
+        "part": "omar",
+        "words": 9,
+        "est_sec": 3.9
+      },
+      {
+        "screen_id": "ops-022",
+        "part": "noor",
+        "words": 8,
+        "est_sec": 3.4
+      },
+      {
+        "screen_id": "ops-030",
+        "part": "omar",
+        "words": 11,
+        "est_sec": 4.7
+      },
+      {
+        "screen_id": "ops-031",
+        "part": "omar",
+        "words": 11,
+        "est_sec": 4.7
+      },
+      {
         "screen_id": "ops-032",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "ops-033",
         "part": "omar",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "ops-090",

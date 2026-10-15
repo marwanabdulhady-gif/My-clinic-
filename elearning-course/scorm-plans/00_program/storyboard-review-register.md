@@ -1,6 +1,6 @@
 # My Clinic — SME review and build-detail register
 
-> **Review routing record · 2026-10-14.** This register consolidates screen-level authoring details
+> **Review routing record · 2026-10-15.** This register consolidates screen-level authoring details
 > that need review before Phase 4. It is not an approval log and does not turn an open source value
 > into course policy. Record final policy/source decisions in each module’s Phase 0 file and in
 > [`cross-module-decisions.md`](cross-module-decisions.md), then regenerate the affected pack.

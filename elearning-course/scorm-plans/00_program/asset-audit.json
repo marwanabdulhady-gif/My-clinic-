@@ -505,7 +505,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 16.4,
+        "minutes": 5.8,
         "voice_persona_set": true
       },
       "template": {
@@ -703,7 +703,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 6.6,
+        "minutes": 3.1,
         "voice_persona_set": true
       },
       "template": {
@@ -1000,6 +1000,7 @@
         "referenced": {
           "ops-img-activities": [
             "asset-register.md",
+            "screen-visuals.html",
             "storyboard.md",
             "visual-plan.json"
           ],
@@ -1029,6 +1030,25 @@
           ],
           "ops-img-scenes-1": [
             "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "ops-img-scenes-2": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "ops-img-scenes-3": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "ops-img-scenes-4": [
+            "asset-register.md",
+            "screen-visuals.html",
             "storyboard.md",
             "visual-plan.json"
           ]
@@ -1042,7 +1062,10 @@
         "missing_files": [],
         "planned_not_built": [
           "ops-img-activities",
-          "ops-img-scenes-1"
+          "ops-img-scenes-1",
+          "ops-img-scenes-2",
+          "ops-img-scenes-3",
+          "ops-img-scenes-4"
         ],
         "orphans": [],
         "svg_issues": []
@@ -1054,7 +1077,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 4.4,
+        "minutes": 1.6,
         "voice_persona_set": true
       },
       "template": {
@@ -1081,6 +1104,19 @@
           ],
           "rcma-img-notes-1": [
             "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "rcma-img-notes-2": [
+            "asset-register.md",
+            "screen-visuals.html",
+            "storyboard.md",
+            "visual-plan.json"
+          ],
+          "rcma-img-notes-3": [
+            "asset-register.md",
+            "screen-visuals.html",
             "storyboard.md",
             "visual-plan.json"
           ],
@@ -1092,8 +1128,7 @@
           ],
           "rcma-pdf-checklist": [
             "asset-register.md",
-            "storyboard.md",
-            "visual-plan.json"
+            "storyboard.md"
           ]
         },
         "on_disk": [
@@ -1104,6 +1139,8 @@
         "missing_files": [],
         "planned_not_built": [
           "rcma-img-notes-1",
+          "rcma-img-notes-2",
+          "rcma-img-notes-3",
           "rcma-pdf-checklist"
         ],
         "orphans": [],
@@ -1116,7 +1153,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 6.3,
+        "minutes": 2.3,
         "voice_persona_set": true
       },
       "template": {
@@ -1137,11 +1174,11 @@
           ],
           "rcmb-pdf-ebp": [
             "asset-register.md",
-            "storyboard.md",
-            "visual-plan.json"
+            "storyboard.md"
           ],
           "rcmb-tbl-log": [
             "asset-register.md",
+            "screen-visuals.html",
             "storyboard.md",
             "visual-plan.json"
           ]
@@ -1164,7 +1201,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 4.7,
+        "minutes": 1.9,
         "voice_persona_set": true
       },
       "template": {
@@ -1314,7 +1351,7 @@
         "two_voice_screens": [],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 5.1,
+        "minutes": 2.4,
         "voice_persona_set": true
       },
       "template": {

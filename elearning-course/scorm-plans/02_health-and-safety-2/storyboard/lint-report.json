@@ -23,8 +23,8 @@
     "clean": true,
     "module_id": "MC02-safety-in-practice",
     "wpm": 140,
-    "total_est_sec": 394.2,
-    "total_est_min": 6.6,
+    "total_est_sec": 185.4,
+    "total_est_min": 3.1,
     "screens": [
       {
         "screen_id": "hs2-000",
@@ -35,44 +35,44 @@
       {
         "screen_id": "hs2-001",
         "part": "noor",
-        "words": 47,
-        "est_sec": 20.1
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs2-010",
         "part": "noor",
-        "words": 100,
-        "est_sec": 42.9
+        "words": 7,
+        "est_sec": 3.0
       },
       {
         "screen_id": "hs2-011",
         "part": "noor",
-        "words": 37,
-        "est_sec": 15.9
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "hs2-012",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-013",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 14,
+        "est_sec": 6.0
       },
       {
         "screen_id": "hs2-020",
         "part": "noor",
-        "words": 59,
-        "est_sec": 25.3
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs2-030",
         "part": "noor-1",
-        "words": 36,
-        "est_sec": 15.4
+        "words": 18,
+        "est_sec": 7.7
       },
       {
         "screen_id": "hs2-030",
@@ -83,92 +83,92 @@
       {
         "screen_id": "hs2-031",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-032",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-033",
         "part": "noor",
-        "words": 59,
-        "est_sec": 25.3
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-040",
         "part": "noor",
-        "words": 45,
-        "est_sec": 19.3
+        "words": 15,
+        "est_sec": 6.4
       },
       {
         "screen_id": "hs2-041",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-050",
         "part": "noor",
-        "words": 56,
-        "est_sec": 24.0
+        "words": 12,
+        "est_sec": 5.1
       },
       {
         "screen_id": "hs2-051",
         "part": "noor",
-        "words": 36,
-        "est_sec": 15.4
+        "words": 7,
+        "est_sec": 3.0
       },
       {
         "screen_id": "hs2-052",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-053",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs2-060",
         "part": "noor",
-        "words": 81,
-        "est_sec": 34.7
+        "words": 23,
+        "est_sec": 9.9
       },
       {
         "screen_id": "hs2-061",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 16,
+        "est_sec": 6.9
       },
       {
         "screen_id": "hs2-062",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-063",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-064",
         "part": "noor",
-        "words": 34,
-        "est_sec": 14.6
+        "words": 26,
+        "est_sec": 11.1
       },
       {
         "screen_id": "hs2-070",
         "part": "noor",
-        "words": 18,
-        "est_sec": 7.7
+        "words": 11,
+        "est_sec": 4.7
       },
       {
         "screen_id": "hs2-080",

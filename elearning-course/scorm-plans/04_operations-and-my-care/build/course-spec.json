@@ -88,7 +88,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Companion: Dr. Omar char-omar-explaining, L3 right column (media of the text_media layout). Speaker: Omar. Omar's three-desks story is used here once (companions.md §1).",
-   "narration_text": "Dr. Omar: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context.",
+   "narration_text": "Dr. Omar: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I.",
    "layout": "text_media",
    "media_asset_id": "char-omar-explaining",
    "media_alt": "Dr. Omar, the course guide."
@@ -182,7 +182,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Hotspot circles use the ops-img-journey.svg pixel space (1600 × 900): stage circles cx 220/450/680/910/1140/1370, cy 450, r 72. Stage-lead assignments derived from the slide 2/5 activity lists ⚠ Draft — pending B7. No companion.",
-   "narration_text": "Dr. Omar: Walk the journey. Notice where each team leads. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+   "narration_text": "Dr. Omar: Walk the journey. Notice where each team leads."
   },
   {
    "type": "accordion",
@@ -240,7 +240,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "7 Operations activities from slide 2 (verified-facts register). The recovery example is from the card; the other one-line examples restate the activity and need SME confirmation (Director of Operations). Overlap with My Care on inquiries/complaints ⚠ Draft — pending B7. ops-img-activities is the planned shared line-icon set (one icon id until the 14 icons are split). No companion.",
-   "narration_text": "Dr. Omar: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+   "narration_text": "Dr. Omar: Operations runs the day: environment, KPIs, recovery on the spot."
   },
   {
    "type": "labeled_diagram",
@@ -288,7 +288,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Label coordinates are 0–1000 normalised from the box centres in ops-img-ops-chart.svg (1600 × 900). The lower tiers (PX Managers, PXOs/FMs per site) are not drawn in the draft SVG; they are listed as text in prompt_html. Reporting lines ⚠ Draft — pending B1; headcounts dropped (B4); no names on screen (B6 / D5). No companion.",
-   "narration_text": "Dr. Omar: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+   "narration_text": "Dr. Omar: Read the chart by roles. Names are in the directory because they change."
   },
   {
    "type": "accordion",
@@ -346,7 +346,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "7 My Care activities from slide 5 (verified-facts register). DMP/CHP expansions ⚠ Draft — pending B3 (not invented). Inquiries/complaints overlap ⚠ Draft — pending B7. One-line descriptions restate the activity; My Care Manager to confirm. No companion.",
-   "narration_text": "Dr. Omar: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear."
+   "narration_text": "Dr. Omar: My Care is the relationship after the visit: follow-ups, programmes, referrals."
   },
   {
    "type": "labeled_diagram",
@@ -406,7 +406,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Label coordinates are 0–1000 normalised from the box centres in ops-img-mycare-chart.svg (1600 × 900). Reporting lines ⚠ Draft — pending B2 (coordinator lines pending per the SVG note). Role descriptions for onboarding and QA leaders come from the ops-033 card. No names (B6 / D5). No companion.",
-   "narration_text": "Dr. Omar: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+   "narration_text": "Dr. Omar: My Care structure: managers, site leaders, coordinators, quality."
   },
   {
    "type": "flashcards",
@@ -454,7 +454,7 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Companion: Noor char-noor-avatar-neutral + tip card, L3 tip card (tip text is in prompt_html). Speaker: Noor. FM, DMP, CHP, PR1 and VIP team definitions ⚠ Draft — pending B3; PR1 vs PRC ⚠ Draft — pending B5 / D3. PXO expansion from the programme lexicon; HHC as used in module 03.",
-   "narration_text": "Noor: The abbreviations you'll hear on day one. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later."
+   "narration_text": "Noor: The abbreviations you'll hear on day one."
   },
   {
    "type": "drag_drop",
@@ -540,7 +540,7 @@
    },
    "reveal": "none",
    "notes": "Card answers follow the Phase 0 verified-facts lists (slides 2 and 5). The card asks for feedback on each card; edumints drag_drop has no per-item feedback, so the overlap explanation is in the screen feedback. Overlap items ⚠ Draft — pending B7. Keyboard pick-and-place is the player's default. No companion.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Dr. Omar: Place each item where it belongs, then read the feedback."
   },
   {
    "type": "decision_scenario",
@@ -685,7 +685,7 @@
    },
    "reveal": "none",
    "notes": "Companion: Dr. Omar char-omar-avatar-neutral host avatar above each situation (L5); feedback line uses char-omar-avatar-happy (best choice) or char-omar-avatar-concern (other choices), never beside the choice buttons. Four nodes, +1 per correct route, pass_score 3 (Phase 3 activity plan). Images: node 1 ops-img-reception-scenario (= scene 1), nodes 2–4 ops-img-scenes-2..4 (planned, ai-generated, visual QA). All routing answers ⚠ Draft — pending B7; role names ⚠ Draft — pending B1 / B2.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+   "narration_text": "Dr. Omar: Play the situation through and decide, then read the feedback."
   },
   {
    "type": "mcq",
@@ -735,7 +735,7 @@
    },
    "reveal": "none",
    "notes": "Correct answer from the card (site Patient Experience Manager, per B1) ⚠ Draft — pending B1. Distractors are roles shown on ops-011/ops-021. No companion over the question.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback."
   },
   {
    "type": "matching",
@@ -787,7 +787,7 @@
    },
    "reveal": "none",
    "notes": "Pairs verbatim from the card. Role titles follow the draft charts ⚠ Draft — pending B1 / B2. No companion.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+   "narration_text": "Dr. Omar: Match each item to the person or step that owns it, then read the feedback."
   },
   {
    "type": "summary",

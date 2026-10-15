@@ -145,13 +145,6 @@
           "decorative": false
         },
         {
-          "kind": "diagram",
-          "description": "rcma-img-reviewer: Minimal illustration: note on one side, reviewer with only the paper on the other",
-          "source": "svg",
-          "alt_text": "\"A reviewer sees only the written note.\"",
-          "decorative": false
-        },
-        {
           "kind": "illustration",
           "description": "Approved program companion pose char-omar-explaining at L3 right column.",
           "source": "client",
@@ -432,7 +425,7 @@
         },
         {
           "kind": "diagram",
-          "description": "rcma-img-note-weak / -strong: Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text",
+          "description": "-strong: Two identical-size EHR-style note cards (generic, no vendor UI), weak vs strong text Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "svg",
           "alt_text": "\"Weak note: patient given IV fluids.\" / \"Strong note: dehydration signs, IV fluids for stabilisation.\"",
           "decorative": false
@@ -1353,9 +1346,23 @@
         },
         {
           "kind": "diagram",
-          "description": "rcma-img-notes-1..3: Invented notes in HTML (real text)",
+          "description": "rcma-img-notes-1: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
           "source": "svg",
-          "alt_text": "Fix the note visual.",
+          "alt_text": "Editable on-screen diagram; equivalent text provided in HTML.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-notes-2: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "Editable on-screen diagram; equivalent text provided in HTML.",
+          "decorative": false
+        },
+        {
+          "kind": "diagram",
+          "description": "rcma-img-notes-3: Invented notes in HTML (real text) Placement: Screen visual; production placement reviewed by the SME. PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+          "source": "svg",
+          "alt_text": "Editable on-screen diagram; equivalent text provided in HTML.",
           "decorative": false
         },
         {
@@ -1510,13 +1517,6 @@
           "description": "Supplied My Clinic horizontal navy logo lock-up in the header.",
           "source": "client",
           "alt_text": "My Clinic logo.",
-          "decorative": false
-        },
-        {
-          "kind": "illustration",
-          "description": "rcma-pdf-checklist: One-page \"Clear, strong, defensible\" desk checklist",
-          "source": "svg",
-          "alt_text": "List to keep visual.",
           "decorative": false
         },
         {

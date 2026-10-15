@@ -33,7 +33,7 @@ from planned_visual_assets import assets_for_screen, expand_asset, imagery_entry
 
 ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
-TODAY = "2026-10-14"
+TODAY = "2026-10-15"
 WPM = 140
 
 # These module facts come from each module README and Phase 4.  They are kept here only to make
@@ -680,6 +680,76 @@ def _screen_number(row: dict[str, Any]) -> int:
     return int(match.group(1)) if match else 0
 
 
+# Phase 3 intent cells are written for the author and the voice artist, not for the learner:
+# "Set up the case.", "Invite a guess.", "Mention the BMI nuance only in feedback."  A cue like
+# that must never be spoken as written, so the leading author-voice clause is stripped and a cue
+# that is *only* an instruction is dropped (the screen then falls back to its type line).
+_AUTHOR_CUE_STEMS = ("invite", "set up", "setup", "set", "ask", "mention", "explain", "note", "say",
+                     "tell", "prompt", "introduce", "revisit", "recall", "remind", "show",
+                     "read your results", "talk through", "stop", "hold", "open", "keep")
+_AUTHOR_CUE_LEAD = re.compile(
+    r"^\s*(?:" + "|".join(_AUTHOR_CUE_STEMS) + r")\b[^:.!?]{0,70}[::]\s*", re.I)
+_AUTHOR_CUE_ONLY = re.compile(
+    r"^\s*(?:" + "|".join(_AUTHOR_CUE_STEMS) + r")\b[^.!?]{0,70}\.?\s*$", re.I)
+# Production vocabulary means the cell is talking to the build team, not to the learner: "Set the
+# corridor scene.", "Stop before choices.", "Mention the BMI nuance only in feedback."
+_STAGE_DIRECTION = re.compile(
+    r"\b(?:choices?|feedback|screens?|cards?|slides?|panels?|buttons?|clicks?|taps?|prompts?|quizzes?|"
+    r"quiz|narration|voice-?over|animation|reveals?|audio|on-?screen visuals?|scene|scenario set-?up|"
+    r"host|avatar)\b", re.I)
+
+
+def _spoken_intent(intent: str) -> str:
+    """Learner-facing prose from a Phase 3 author cue, or '' when the cue was only an instruction.
+
+    This is the anti-filler rule for narration: an author note either yields real spoken content or
+    yields nothing at all.  It must never be padded back into a generic sentence.
+    """
+    value = _tidy_intent(intent)
+    if not value:
+        return ""
+    kept: list[str] = []
+    for sentence in re.split(r"(?<=[.!?])\s+", value):
+        sentence = sentence.strip()
+        if not sentence or _AUTHOR_CUE_ONLY.match(sentence):
+            continue
+        sentence = _AUTHOR_CUE_LEAD.sub("", sentence).strip()
+        # A sentence that only describes production ("Set the corridor scene.", "Stop before
+        # choices.") is dropped rather than spoken.  `scene`/`feedback` also appear in learner-facing
+        # prose, so a sentence is only dropped when the stage word is doing the directive's work —
+        # i.e. the sentence is short and starts with a cue verb or has no learner/home/second-person
+        # framing at all.
+        if _STAGE_DIRECTION.search(sentence) and not re.search(
+                r"\b(?:you|your|we|our|patient|patients|patient's|staff|colleague|team|shift|clinic)\b",
+                sentence, re.I):
+            continue
+        if not sentence:
+            continue
+        sentence = re.sub(r"(^|[.!?]\s+)([a-z])", lambda m: m.group(1) + m.group(2).upper(), sentence)
+        kept.append(sentence)
+    return " ".join(kept)
+
+
+# What to say before a scored screen, per interaction.  It tells the learner what to do, never the
+# answer, and never talks about the interface ("the next choice", "the feedback panel").
+SCORED_SETUP = {
+    "mcq": "Decide as you would on shift, then read the feedback.",
+    "true_false": "Decide as you would on shift, then read the feedback.",
+    "matching": "Match each item to the person or step that owns it, then read the feedback.",
+    "sorting": "Put the steps in the order you would follow at work, then read the feedback.",
+    "drag_drop": "Place each item where it belongs, then read the feedback.",
+    "fill_blank": "Write the note as you would in the record, then read the feedback.",
+    "decision_scenario": "Play the situation through and decide, then read the feedback.",
+    "hotspot": "Open the markers you need, then decide.",
+    "labeled_diagram": "Label the parts you can name, then read the feedback.",
+    "adaptive_practice": "Work through the case, then read the feedback.",
+    "simulation": "Work through the steps in order, then read the feedback.",
+    "escape_room": "Work through each step in turn, then read the feedback.",
+    "game": "Play the round, then read the feedback.",
+}
+DEFAULT_SCORED_SETUP = "Decide as you would on shift, then read the feedback."
+
+
 def _coaching_lines(row: dict[str, Any]) -> list[str]:
     """Source-neutral instructional bridges, varied by interaction type.
 
@@ -802,9 +872,11 @@ def narration_for(row: dict[str, Any], cfg: dict[str, Any], outline: dict[str, d
     target = float(detail.get("target", 12 if row["scored"] else 25))
     lead, co, planned_dual_voice = _planned_speakers(detail, cfg)
     purpose = row["purpose"].rstrip(".")
+    # The Phase 3 cell is an author cue; only learner-facing prose from it may be spoken.  The
+    # Phase 2 star, rather than a type name alone, decides whether the screen is an assessment
+    # (`labeled_diagram` is used both as a scored quiz and as an unscored display).
+    intent = _spoken_intent(str(detail.get("intent", "")))
 
-    # The Phase 2 star, rather than a type name alone, determines whether this instance is an
-    # assessment. `labeled_diagram` is used both as a scored quiz and as an unscored display.
     if row["scored"]:
         script = (
             f"{lead}: The next choice asks you to apply the rule in a workplace situation. "
@@ -840,48 +912,42 @@ def narration_for(row: dict[str, Any], cfg: dict[str, Any], outline: dict[str, d
         script = f"{lead}: {opening} {' '.join(_coaching_lines(row)[:2])}"
         tone = "calm, practical"
 
-    # Add enough non-redundant coaching for long planned explanatory segments while keeping the
-    # target estimate. Question and scenario setups stay short so the answer is never narrated.
-    # Each coaching line is used at most once per screen: repeating a sentence inside one segment
-    # reads as a machine artefact and inflates the recorded runtime.
-    desired_words = max(18, int(target * WPM / 60 * 0.96))
-    pad = [
-        "Pause and connect this to your role.",
-        "Use the principle in context.",
-        "Keep the next action clear.",
-        "Think of the first detail you would check.",
-        "Apply the point to a familiar task.",
-        "Carry the idea into your next decision.",
-        "Notice which part of this you would use first on shift.",
-        "The aim is a decision you can repeat, not a phrase to recall.",
-        "Link it to the task waiting for you tomorrow.",
-        "If one detail stays with you, let it be the safe one.",
-        "Ask early when a situation does not match the rule.",
-        "Good habits here are quiet: check, confirm, continue.",
-    ]
+    # C20 (G11): the script is assembled only from real content — the Phase 3 intent when it is
+    # learner-facing prose and the screen's own interaction — and is never padded.  The previous
+    # revision appended a rotating pool of twelve generic "coaching" sentences and a six-line
+    # question pool to reach the Phase 3 target, which is exactly the machine filler the review
+    # flagged ("The next choice asks you to apply the rule in a workplace situation…").
     if row["scored"]:
-        # Assessment setup is deliberately answer-neutral, but it still needs enough room for
-        # learners to orient themselves at the Phase 3 target pace.
-        question_pad = [
-            "Use the rule you practised.",
-            "Focus on the action that fits.",
-            "Feedback explains the reasoning after you respond.",
-            "Take the time you need; nothing here is timed.",
-            "Choose the option you would defend to a colleague.",
-            "The scenario uses fictional names and numbers.",
-        ]
-        pool = question_pad
-    elif row["type"] != "poll":
-        pool = pad
+        setup = SCORED_SETUP.get(row["type"], DEFAULT_SCORED_SETUP)
+        script = f"{lead}: {intent + ' ' if intent else ''}{setup}"
+        tone = "encouraging"
+    elif row["type"] == "title_slide":
+        script = (
+            f"{lead}: Welcome to {cfg.get('screen_title', cfg['title'])}. You will practise decisions that help you act with confidence. "
+            "You will leave with practical actions for your next shift."
+        )
+        tone = "warm"
+    elif row["type"] == "results_breakdown":
+        script = (
+            f"{lead}: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. "
+            "Use that insight to choose what to revisit."
+        )
+        tone = "supportive"
+    elif row["type"] == "summary":
+        script = (
+            f"{lead}: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. "
+            "Take one clear next action with you."
+        )
+        tone = "confident"
+    elif row["type"] == "poll":
+        script = (
+            f"{lead}: This reflection is not scored. Choose the response that helps you set one intention for your next shift."
+        )
+        tone = "reflective"
     else:
-        pool = []
-    if pool:
-        pad_at = _screen_number(row) % len(pool)
-        ordered = pool[pad_at:] + pool[:pad_at]
-        for line in ordered:
-            if word_count(script) >= desired_words:
-                break
-            script += " " + line
+        script = f"{lead}: {intent}" if intent else f"{lead}: {_coaching_lines(row)[0]}"
+        tone = "calm, practical"
+
     script = _split_spoken_sentences(script)
 
     # Planned two-voice moments receive a deliberately short hand-off.  It is used only where the
@@ -1009,11 +1075,46 @@ def write_screen_visuals(out_dir: Path, folder: str, cfg: dict[str, Any], rows: 
     (out_dir / "screen-visuals.html").write_text(content, encoding="utf-8")
 
 
-def write_svg(path: Path, inner: str, label: str) -> None:
+DEFAULT_SVG_DESC = ("My Clinic course diagram. Text remains live SVG text and can be recreated in "
+                    "HTML at build time.")
+DEFAULT_SVG_STYLE = ("text{font-family:Montserrat,Arial,sans-serif;fill:#003867}"
+                     ".h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}"
+                     ".small{font-size:22px;font-weight:600}"
+                     ".line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;"
+                     "stroke-linejoin:round}.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}"
+                     ".accent{fill:#008C99}.magenta{fill:#9D3293}")
+
+
+def write_svg(path: Path, inner: str, label: str, desc: str | None = None,
+              style: str | None = None, trailing_newline: bool = False) -> None:
+    """Write one generated diagram. `desc`/`style` override the generic boilerplate for diagrams
+    whose accessibility text is more specific than the shared wording (see the NFPA assets)."""
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">{html.escape(label)}</title><desc id="desc">My Clinic course diagram. Text remains live SVG text and can be recreated in HTML at build time.</desc>
-<rect width="1600" height="900" fill="#F4F7FA"/><style>text{{font-family:Montserrat,Arial,sans-serif;fill:#003867}}.h{{font-size:44px;font-weight:700}}.b{{font-size:27px;font-weight:500}}.small{{font-size:22px;font-weight:600}}.line{{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}}.card{{fill:#fff;stroke:#D9E1E8;stroke-width:3}}.accent{{fill:#008C99}}.magenta{{fill:#9D3293}}</style>{inner}</svg>'''
-    path.write_text(svg, encoding="utf-8")
+<title id="title">{html.escape(label)}</title><desc id="desc">{html.escape(desc or DEFAULT_SVG_DESC)}</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>{style or DEFAULT_SVG_STYLE}</style>{inner}</svg>'''
+    path.write_text(svg + ("\n" if trailing_newline else ""), encoding="utf-8")
+
+
+# NFPA 704: the standard diamond — red flammability at the top, blue health on the left, yellow
+# instability/reactivity on the right, white special hazard at the bottom.  G17: an earlier
+# revision rotated the quadrants (blue on top) and printed ratings on the wrong colours, which
+# both mis-taught the label and leaked the answers in the blank practice diagram.  These assets are
+# regenerated by this tool on every storyboard run, so the corrected geometry lives here rather
+# than only in the committed files.
+NFPA_STYLE = ("text{font-family:Montserrat,Arial,sans-serif}.h{font-size:44px;font-weight:700;"
+              "fill:#003867}.n{font-size:64px;font-weight:700}")
+NFPA_DIAMOND = ('<polygon points="800,170 950,320 800,470 650,320" fill="#D8262F"/>'
+                '<polygon points="650,320 800,470 650,620 500,470" fill="#1E5AA8"/>'
+                '<polygon points="950,320 1100,470 950,620 800,470" fill="#F0CF34"/>'
+                '<polygon points="800,470 950,620 800,770 650,620" fill="#FFFFFF" '
+                'stroke="#003867" stroke-width="5"/>'
+                '<polygon points="800,170 1100,470 800,770 500,470" fill="none" '
+                'stroke="#003867" stroke-width="6"/>')
+
+
+def nfpa_rating(value: str, x: int, y: int, on_dark: bool) -> str:
+    fill = "#fff" if on_dark else "#003867"
+    return f'<text x="{x}" y="{y}" class="n" text-anchor="middle" fill="{fill}">{value}</text>'
 
 
 def generate_svg_assets(folder: str, out_dir: Path) -> None:
@@ -1024,11 +1125,31 @@ def generate_svg_assets(folder: str, out_dir: Path) -> None:
         write_svg(asset_dir / "hs1-img-ert.svg", '''<text x="80" y="95" class="h">Emergency Response Team</text><circle cx="800" cy="420" r="115" fill="#003867"/><text x="800" y="410" class="small" text-anchor="middle" fill="#fff">INCIDENT</text><text x="800" y="442" class="small" text-anchor="middle" fill="#fff">COMMANDER</text><path class="line" d="M800 305V195M915 420h170M885 515l110 115M715 515l-110 115M685 420H515"/><g class="card"><rect x="680" y="105" width="240" height="80" rx="20"/><rect x="1090" y="380" width="240" height="80" rx="20"/><rect x="925" y="635" width="240" height="80" rx="20"/><rect x="435" y="635" width="240" height="80" rx="20"/><rect x="270" y="380" width="240" height="80" rx="20"/></g><text x="800" y="156" class="small" text-anchor="middle">SAFETY</text><text x="1210" y="432" class="small" text-anchor="middle">SECURITY</text><text x="1045" y="687" class="small" text-anchor="middle">NURSING</text><text x="555" y="687" class="small" text-anchor="middle">FACILITY</text><text x="390" y="432" class="small" text-anchor="middle">OPERATION</text>''', "Emergency Response Team")
         write_svg(asset_dir / "hs1-img-triangle.svg", '''<text x="80" y="95" class="h">The fire triangle</text><path d="M800 175L1220 720H380Z" fill="#fff" stroke="#003867" stroke-width="8"/><circle cx="800" cy="545" r="100" fill="#F4F7FA"/><text x="800" y="535" class="small" text-anchor="middle">REMOVE ONE</text><text x="800" y="568" class="small" text-anchor="middle">SIDE TO STOP FIRE</text><circle cx="800" cy="205" r="70" class="magenta"/><text x="800" y="215" class="small" text-anchor="middle" fill="#fff">HEAT</text><circle cx="1170" cy="690" r="70" class="accent"/><text x="1170" y="700" class="small" text-anchor="middle" fill="#fff">OXYGEN</text><circle cx="430" cy="690" r="70" fill="#7C0041"/><text x="430" y="700" class="small" text-anchor="middle" fill="#fff">FUEL</text>''', "Fire triangle")
         write_svg(asset_dir / "hs1-img-alara.svg", '''<text x="80" y="95" class="h">ALARA</text><text x="80" y="136" class="b">Keep exposure as low as reasonably achievable</text><circle cx="800" cy="455" r="112" fill="#9D3293"/><text x="800" y="446" class="small" text-anchor="middle" fill="#fff">RADIATION</text><text x="800" y="478" class="small" text-anchor="middle" fill="#fff">SOURCE</text><path class="line" d="M800 315V205M920 520l190 115M680 520L490 635"/><rect x="680" y="120" width="240" height="88" rx="20" class="card"/><rect x="1110" y="590" width="280" height="88" rx="20" class="card"/><rect x="210" y="590" width="280" height="88" rx="20" class="card"/><text x="800" y="175" class="small" text-anchor="middle">TIME · minimise it</text><text x="1250" y="645" class="small" text-anchor="middle">DISTANCE · increase it</text><text x="350" y="645" class="small" text-anchor="middle">SHIELDING · use it</text>''', "ALARA radiation protection")
-        write_svg(asset_dir / "hs1-img-nfpa-blank.svg", '''<text x="80" y="95" class="h">NFPA 704: four information areas</text><g transform="translate(800 455) rotate(45)"><rect x="-170" y="-170" width="170" height="170" fill="#1E5AA8"/><rect x="0" y="-170" width="170" height="170" fill="#D8262F"/><rect x="-170" y="0" width="170" height="170" fill="#F0CF34"/><rect x="0" y="0" width="170" height="170" fill="#fff" stroke="#003867" stroke-width="5"/></g><text x="585" y="435" class="small" text-anchor="middle">HEALTH</text><text x="1015" y="435" class="small" text-anchor="middle">FLAMMABILITY</text><text x="585" y="650" class="small" text-anchor="middle">REACTIVITY</text><text x="1015" y="650" class="small" text-anchor="middle">SPECIAL</text>''', "Blank NFPA diamond")
-        write_svg(asset_dir / "hs1-img-nfpa-301w.svg", '''<text x="80" y="95" class="h">NFPA 704: read the whole diamond</text><g transform="translate(800 455) rotate(45)"><rect x="-170" y="-170" width="170" height="170" fill="#1E5AA8"/><rect x="0" y="-170" width="170" height="170" fill="#D8262F"/><rect x="-170" y="0" width="170" height="170" fill="#F0CF34"/><rect x="0" y="0" width="170" height="170" fill="#fff" stroke="#003867" stroke-width="5"/></g><text x="590" y="450" class="h" text-anchor="middle" fill="#fff">3</text><text x="1010" y="450" class="h" text-anchor="middle" fill="#fff">0</text><text x="590" y="660" class="h" text-anchor="middle">1</text><text x="1010" y="660" class="h" text-anchor="middle">W</text>''', "NFPA diamond 3 0 1 W")
+        write_svg(asset_dir / "hs1-img-nfpa-blank.svg",
+                  '<text x="80" y="95" class="h">NFPA 704: four information areas</text>' + NFPA_DIAMOND,
+                  "NFPA 704: four information areas",
+                  desc=("NFPA 704 diamond with its standard layout: red flammability area at the top, "
+                        "blue health area on the left, yellow instability (reactivity) area on the "
+                        "right and white special-hazard area at the bottom. No ratings shown."),
+                  style=NFPA_STYLE, trailing_newline=True)
+        write_svg(asset_dir / "hs1-img-nfpa-301w.svg",
+                  '<text x="80" y="95" class="h">NFPA 704: read the whole diamond</text>' + NFPA_DIAMOND
+                  + nfpa_rating("3", 650, 492, True) + nfpa_rating("0", 800, 342, True)
+                  + nfpa_rating("1", 950, 492, False) + nfpa_rating("W", 800, 642, False),
+                  "NFPA 704: read the whole diamond",
+                  desc=("NFPA 704 diamond rated health 3 (blue, left), flammability 0 (red, top), "
+                        "reactivity 1 (yellow, right) and special W (white, bottom)."),
+                  style=NFPA_STYLE, trailing_newline=True)
     elif folder == "02_health-and-safety-2":
         write_svg(asset_dir / "hs2-img-floorplan.svg", '''<text x="80" y="95" class="h">Generic evacuation practice plan</text><rect x="160" y="175" width="1280" height="570" rx="16" fill="#fff" stroke="#003867" stroke-width="6"/><path class="line" d="M460 175v570M790 175v570M1120 175v570M160 440h1280"/><g font-weight="700"><text x="310" y="325" class="h" text-anchor="middle">A</text><text x="625" y="325" class="h" text-anchor="middle">B</text><text x="955" y="325" class="h" text-anchor="middle">C</text><text x="1280" y="325" class="h" text-anchor="middle">D</text><text x="800" y="630" class="h" text-anchor="middle">E</text></g><circle cx="230" cy="680" r="28" class="magenta"/><text x="270" y="690" class="small">You are here</text><path d="M230 620h95" class="line"/><path d="M325 620l-30-22m30 22l-30 22" class="line"/><text x="800" y="830" class="b" text-anchor="middle">Generic practice plan only — find your unit’s real plan at work.</text>''', "Generic evacuation floor plan")
-        write_svg(asset_dir / "hs2-img-nfpa-230.svg", '''<text x="80" y="95" class="h">NFPA 704 practice diamond</text><g transform="translate(800 455) rotate(45)"><rect x="-170" y="-170" width="170" height="170" fill="#1E5AA8"/><rect x="0" y="-170" width="170" height="170" fill="#D8262F"/><rect x="-170" y="0" width="170" height="170" fill="#F0CF34"/><rect x="0" y="0" width="170" height="170" fill="#fff" stroke="#003867" stroke-width="5"/></g><text x="590" y="450" class="h" text-anchor="middle" fill="#fff">2</text><text x="1010" y="450" class="h" text-anchor="middle" fill="#fff">3</text><text x="590" y="660" class="h" text-anchor="middle">0</text>''', "NFPA diamond 2 3 0")
+        write_svg(asset_dir / "hs2-img-nfpa-230.svg",
+                  '<text x="80" y="95" class="h">NFPA 704 practice diamond</text>' + NFPA_DIAMOND
+                  + nfpa_rating("2", 650, 492, True) + nfpa_rating("3", 800, 342, True)
+                  + nfpa_rating("0", 950, 492, False),
+                  "NFPA 704 practice diamond",
+                  desc=("NFPA 704 diamond rated health 2 (blue, left), flammability 3 (red, top), "
+                        "reactivity 0 (yellow, right); white special area empty."),
+                  style=NFPA_STYLE, trailing_newline=True)
     elif folder == "04_operations-and-my-care":
         write_svg(asset_dir / "ops-img-journey.svg", '''<text x="80" y="95" class="h">Patient journey</text><path class="line" d="M200 450h1160"/><path class="line" d="M1360 450l-32-25m32 25l-32 25"/><g><circle cx="220" cy="450" r="72" class="accent"/><circle cx="450" cy="450" r="72" fill="#9D3293"/><circle cx="680" cy="450" r="72" class="accent"/><circle cx="910" cy="450" r="72" fill="#9D3293"/><circle cx="1140" cy="450" r="72" class="accent"/><circle cx="1370" cy="450" r="72" fill="#9D3293"/></g><g class="small" text-anchor="middle" fill="#fff"><text x="220" y="460">BOOK</text><text x="450" y="460">ARRIVE</text><text x="680" y="460">CONSULT</text><text x="910" y="452">SERVICES</text><text x="910" y="480">&amp; PHARMACY</text><text x="1140" y="460">LEAVE</text><text x="1370" y="460">FOLLOW-UP</text></g><text x="800" y="700" class="b" text-anchor="middle">Operations and My Care meet the patient at different moments — both protect continuity.</text>''', "Patient journey")
         write_svg(asset_dir / "ops-img-ops-chart.svg", '''<text x="80" y="95" class="h">Operations — role-only draft</text><rect x="600" y="140" width="400" height="75" rx="18" class="card"/><text x="800" y="188" class="small" text-anchor="middle">DIRECTOR OF OPERATIONS</text><path class="line" d="M800 215v75M400 290h800M400 290v70M800 290v70M1200 290v70"/><g class="card"><rect x="250" y="360" width="300" height="100" rx="18"/><rect x="650" y="360" width="300" height="100" rx="18"/><rect x="1050" y="360" width="300" height="100" rx="18"/></g><g class="small" text-anchor="middle"><text x="400" y="405">PX &amp; OPERATIONS</text><text x="400" y="435">SR. MANAGER</text><text x="800" y="405">PATIENT ACCESS &amp; PX</text><text x="800" y="435">SR. MANAGER</text><text x="1200" y="405">OPERATIONS</text><text x="1200" y="435">SR. MANAGER</text></g><text x="800" y="650" class="b" text-anchor="middle">Draft for B1 approval — do not use as a live reporting directory.</text>''', "Draft Operations structure")
@@ -1079,6 +1200,89 @@ def write_asset_register(out_dir: Path, folder: str, assets: list[dict[str, str]
         lines += ['## Test-environment capture manifest', '',
                   'See [`capture-manifest.json`](capture-manifest.json): 31 unique shots, with the form reused on ehr-011. Up to four crops may support legibility (~35); they are not new simulation steps. No captures or DPO approvals exist yet.', '']
     (out_dir / "asset-register.md").write_text("\n".join(lines), encoding="utf-8")
+
+
+NARRATION_GAP_RATIO = 0.7
+
+
+def narration_gap_rows(rows: list[dict[str, Any]], scripts: list[dict[str, Any]],
+                       outline: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    """Screens whose draft narration is materially shorter than its Phase 3 planning target.
+
+    C20 (G11): the generator no longer pads a script with generic sentences to reach the target.
+    The remaining difference is real work — authored narration from the storyboard agent with the
+    named SME — so it is listed rather than hidden behind filler.
+    """
+    by_id = {s["screen_id"]: s for s in scripts}
+    gaps: list[dict[str, Any]] = []
+    for row in rows:
+        script = by_id.get(row["id"])
+        if not script:
+            continue
+        target = float(script.get("target_sec") or 0)
+        words = word_count(narration_plain(script["narration"]))
+        draft_sec = round(words / WPM * 60, 1)
+        cue = strip_md(str(outline.get(row["id"], {}).get("intent", ""))).strip()
+        if not target or draft_sec >= target * NARRATION_GAP_RATIO:
+            continue
+        gaps.append({
+            "screen_id": row["id"], "type": row["type"], "scored": row["scored"],
+            "target": target, "draft_sec": draft_sec, "words": words,
+            "cue": cue, "cue_only": not _spoken_intent(cue),
+        })
+    return gaps
+
+
+def write_narration_gaps(out_dir: Path, folder: str, cfg: dict[str, Any],
+                         gaps: list[dict[str, Any]], scripts: list[dict[str, Any]],
+                         target_seconds: float) -> None:
+    words = sum(word_count(narration_plain(s["narration"])) for s in scripts)
+    cue_only = sum(1 for g in gaps if g["cue_only"])
+    lines = [
+        f"# Narration authoring gaps — module {cfg['number']}",
+        "",
+        "![My Clinic logo](../../00_program/brand/logo-preview.png)",
+        "",
+        f"> Generated by `tools/assemble_storyboard_docs.py` on **{TODAY}** for module "
+        f"`{folder}`. C20 (G11): the draft script for the screens below is shorter than its Phase 3 "
+        "planning target, because generated narration is never padded with generic sentences any "
+        "more. Nothing is invented to fill the time — each row needs authored prose from the "
+        "storyboard agent with the named SME, then a rerun of this tool.",
+        "",
+        "## Summary",
+        "",
+        "| Measure | Value |",
+        "|---|---:|",
+        f"| Screens with a narration segment | {len(scripts)} |",
+        f"| Draft narration | {words} words · ≈ {round(words / WPM, 1)} min |",
+        f"| Phase 3 per-screen targets | ≈ {round(target_seconds / 60, 1)} min |",
+        f"| Screens below {int(NARRATION_GAP_RATIO * 100)}% of target | {len(gaps)} |",
+        f"| Screens whose Phase 3 cue is an author note only (\"Set up.\", \"Invite a guess.\") | {cue_only} |",
+        "",
+        "## Screens to author",
+        "",
+        "| # | Screen | Type | Scored | Target s | Draft s | Draft words | Phase 3 cue (author note) |",
+        "|---:|---|---|---|---:|---:|---:|---|",
+    ]
+    for index, gap in enumerate(gaps, 1):
+        cue = safe_cell(gap["cue"]) or "—"
+        lines.append(f"| {index} | `{gap['screen_id']}` | {gap['type']} | {'yes' if gap['scored'] else '—'} | "
+                     f"{gap['target']:g} | {gap['draft_sec']:g} | {gap['words']} | {cue} |")
+    lines += [
+        "",
+        "## How to close a row",
+        "",
+        "1. Write the spoken lines from the screen's own content (the Phase 2 purpose, the Phase 3 "
+        "intent, the interaction's teaching point) — never the answer on a scored screen, and never "
+        "a sentence about the interface.",
+        "2. Keep spoken sentences at or below 25 words and the segment within its target (±15%).",
+        "3. Rerun `tools/assemble_storyboard_docs.py <module>`, then "
+        "`tools/build_motion_spec.py <module>`, then `tools/lint_planning.py <module>`.",
+        "4. Rebuild the package with `tools/build_course_spec.py` + `tools/edumints_build.py` and "
+        "refresh `draft_builds_report.py` when a module's scripts change.",
+        "",
+    ]
+    (out_dir / "narration-gaps.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_audio_readme(out_dir: Path, cfg: dict[str, Any], exported: dict[str, Any]) -> None:
@@ -1357,6 +1561,9 @@ lock items have written SME decisions.
     exported = audio_export.write_outputs(module_dir, narr_script, lead=cfg["lead"].lower())
     (out_dir / "visual-plan.json").write_text(json.dumps(visual_plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_asset_register(out_dir, folder, assets)
+    narration_gaps = narration_gap_rows(rows, scripts, outline)
+    write_narration_gaps(out_dir, folder, cfg, narration_gaps, scripts,
+                         sum(float(outline.get(row["id"], {}).get("target", 0)) for row in rows))
     write_audio_readme(out_dir, cfg, exported)
     write_screen_visuals(out_dir, folder, cfg, rows, companions, assets)
 
@@ -1366,7 +1573,9 @@ lock items have written SME decisions.
     timing_reconciliation = (
         f"Detailed card scripts: {round(estimated_seconds / 60, 1)} min; Phase 3 per-screen targets: "
         f"{round(detailed_target_seconds / 60, 1)} min; Phase 3 rough module estimate: ~{rough_phase3_minutes} min. "
-        "Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review."
+        "Use the detailed per-screen targets for production timing and reconcile the older rough module estimate at SME review. "
+        f"The difference is not padded with generated sentences (G11/C20): "
+        f"[`narration-gaps.md`](narration-gaps.md) lists the {len(narration_gaps)} screens that need authored prose."
     )
     # Header and summary are deliberately explicit about review state.  This avoids treating a
     # storyboard card as a policy approval merely because it is complete as documentation.
@@ -1483,6 +1692,10 @@ change must be proposed in Phase 2/4 before a build starts.
 {chr(10).join(register_md)}
 | | **Totals** | | **{scored}** | **{points}** | | **{sum(word_count(narration_plain(s['narration'])) for s in scripts)}** | **{round(estimated_seconds)} ≈ {round(estimated_seconds / 60, 1)} min** | Draft |
 
+### Narration authoring gaps
+
+{len(narration_gaps)} of {len(scripts)} screens are below {int(NARRATION_GAP_RATIO * 100)}% of their Phase 3 target because generated narration is no longer padded (G11/C20). See [`narration-gaps.md`](narration-gaps.md) for the worklist.
+
 ### Asset list
 
 | Asset id | Kind | Used on | Source | Alt text written? | Status |
@@ -1516,7 +1729,7 @@ change must be proposed in Phase 2/4 before a build starts.
     (out_dir / "storyboard.md").write_text(module_doc, encoding="utf-8")
     return {
         "folder": folder, "number": cfg["number"], "title": cfg["title"], "screen_count": len(rows),
-        "scored": scored, "points": points, "estimated_audio": round(estimated_seconds / 60, 1), "phase3_screen_target": round(detailed_target_seconds / 60, 1), "phase3_rough_estimate": rough_phase3_minutes, "out": str(out_dir),
+        "scored": scored, "points": points, "estimated_audio": round(estimated_seconds / 60, 1), "narration_gaps": len(narration_gaps), "phase3_screen_target": round(detailed_target_seconds / 60, 1), "phase3_rough_estimate": rough_phase3_minutes, "out": str(out_dir),
     }
 
 
@@ -1565,20 +1778,22 @@ def write_program_dashboard(results: list[dict[str, Any]]) -> None:
         "**Client-shareable Word renderings:** [`../client-review/README.md`](../client-review/README.md). The Markdown/JSON/HTML files below remain the editable production source.", "",
         "**SME/build-detail queue:** [`storyboard-review-register.md`](storyboard-review-register.md) · [`CSV import`](storyboard-review-register.csv).", "",
         "## What is now documented", "",
-        "| Module | Screen cards | Scored / points | Script + visual plan | Branded screen review | Asset register | Planning lint | Production status |",
-        "|---|---:|---:|---|---|---|---|---|",
+        "| Module | Screen cards | Scored / points | Script + visual plan | Branded screen review | Asset register | Narration gaps (C20) | Planning lint | Production status |",
+        "|---|---:|---:|---|---|---|---|---|---|",
     ]
     rows: dict[str, str] = {}
     for r in results:
         rel = f"../{r['folder']}/storyboard"
-        rows[r["number"]] = (f"| {r['number']} — [{r['title']}]({rel}/storyboard.md) | {r['screen_count']} | {r['scored']} / {r['points']} | [JSON]({rel}/narration-script.json) · [visual plan]({rel}/visual-plan.json) | [HTML]({rel}/screen-visuals.html) | [register]({rel}/asset-register.md) | [Clean report]({rel}/lint-report.json) | Draft — SME/source-lock review |")
+        gaps = r.get("narration_gaps")
+        gap_cell = "— (hand-authored)" if gaps is None else f"[{gaps} screens]({rel}/narration-gaps.md)"
+        rows[r["number"]] = (f"| {r['number']} — [{r['title']}]({rel}/storyboard.md) | {r['screen_count']} | {r['scored']} / {r['points']} | [JSON]({rel}/narration-script.json) · [visual plan]({rel}/visual-plan.json) | [HTML]({rel}/screen-visuals.html) | [register]({rel}/asset-register.md) | {gap_cell} | [Clean report]({rel}/lint-report.json) | Draft — SME/source-lock review |")
     for folder in sorted(p.name for p in PLANS.glob("0[1-8]_*")):
         if folder[:2] not in rows and (PLANS / folder / "storyboard" / "storyboard.md").exists():
             rows[folder[:2]] = pack_row_from_disk(folder)
     md.extend(rows[number] for number in sorted(rows))
     md += [
         "",
-        "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | All eight packs are complete v0.2 review-card packs: 01, 02, 04, 05, 06, 08 generated by this tool; 03 and 07 hand-authored with the companions. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Every pack has an editable narration script (speaker-labelled, parts split), voice-talent table, visual plan, asset register and logo placement rules. | D10 voice choice, approved scripts, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
+        "## Phase gate snapshot", "", "| Phase | What is materially complete | What cannot be claimed yet |", "|---|---|---|", "| 0 — Source lock | Owners, conflicts and explicit open decisions are documented for all eight modules. | No module with open B/D records is released to production. |", "| 1 — Action map | Objectives, practice and seat-time budgets are in every module folder. | SMEs still approve objectives and evidence. |", "| 2a — Screen list | All eight plans have a Phase 2 screen list. | Changes must return to Phase 2 before build. |", "| 2b — Storyboard cards | All eight packs are complete v0.2 review-card packs: 01, 02, 04, 05, 06, 08 generated by this tool; 03 and 07 hand-authored with the companions. | Pending values cannot be treated as course facts. |", "| 3 — Narration/assets | Every pack has an editable narration script (speaker-labelled, parts split), voice-talent table, visual plan, asset register, per-module narration-gap worklist and logo placement rules; generated narration is never padded (G11/C20). | D10 voice choice, the authored narration on the per-module gap worklists, EHR test captures and asset approval remain open. |", "| 4–5 — Build/QA | Build plans and QA plans exist. | No SCORM project, package, LMS test, QA sign-off or completion data is claimed. |", "",
         "## Decisions that still gate release", "", "1. **Safety:** Code Orange threshold, real emergency extensions, waste colours, radiation/laser details and facility-specific information (modules 01–02).", "2. **Operations:** live reporting lines, abbreviation expansions and escalation ownership (module 04).", "3. **RCM:** current payer/regulator wording, ICD-10 validation, benefits/limits and de-identified rejection classifications (modules 05–06).", "4. **EHR:** only a test environment/test patient may be captured; the existing source video is never a production asset (module 08).", "5. **Programme:** Marketing brand confirmation D11, two approved narration voices D10 and every asset’s provenance/approval record.", "",
         "## Asset work completed in this pass", "", "- Generated native editable SVG diagrams where facts can be changed after SME review.", "- Generated three review-only, no-logo visual assets: the facility safety corridor, safety lab storeroom and Operations reception scenario.", "- Rendered each generated diagram/concept asset directly on its intended HTML screen-review board, so reviewers inspect the actual asset rather than a generic placeholder.", "- Added the `brand-kit.edumints.json` adapter to resolve the known official-brand-kit formality mismatch without changing the client’s official `brand-kit.json`.", "- Added HTML visual review boards that use the supplied My Clinic logo and obey the Montserrat / navy / module-colour system.", "",
         "## Next hand-off", "", "1. Start with the screen-level [SME/build-detail register](storyboard-review-register.md), then circulate the matching `storyboard/storyboard.md` and `screen-visuals.html` to each named SME.", "2. Close Phase 0 records in writing; update only the source-lock file and cards that cite that decision.", "3. Choose/approve Noor and Dr. Omar voice samples under D10 before generating shipping audio.", "4. For module 08, capture test-environment screenshots and obtain DPO approval before any simulation build.", "5. The visual-plan and narration-script lint reports are currently clean for all eight packs; rerun them, plus `lint_authoring_plan(stage=planning)`, after any approved edit and before Phase 4 build.", "",

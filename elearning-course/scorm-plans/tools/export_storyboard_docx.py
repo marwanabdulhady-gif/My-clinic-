@@ -26,7 +26,7 @@ PLANS = ROOT / "elearning-course" / "scorm-plans"
 OUTPUT = PLANS / "client-review"
 LOGO = PLANS / "00_program" / "brand" / "logo-preview.png"
 LOGO_HORIZONTAL = PLANS / "00_program" / "brand" / "assets" / "logo-horizontal-navy.png"
-DATE = "14 October 2026"
+DATE = "15 October 2026"
 REVISION = "v0.2"
 
 MODULES = [
@@ -367,7 +367,7 @@ def main() -> None:
         exported.append(target.name)
     overview = OUTPUT / "MyClinic_Elearning_Storyboard_Review_Pack_v0.2.docx"
     make_program_pack(overview)
-    readme = ["# My Clinic — client-review documents", "", "These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were exported on 2026-10-14. The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.", "", "Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.", "", "To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.", "", "| File | Contents |", "|---|---|"]
+    readme = ["# My Clinic — client-review documents", "", "These Word documents are client-shareable renderings of the controlled Markdown storyboards. They were first exported on 2026-10-14 and refreshed on 2026-10-15 (C20 first pass: the generated filler narration was removed from the six generated packs and the narration-gap worklists were added). The Markdown/JSON/HTML files in each module’s `storyboard/` directory remain the editable production source.", "", "Use the [SME/build-detail review register](../00_program/storyboard-review-register.md) and its [tracker-import CSV](../00_program/storyboard-review-register.csv) alongside the Word documents. Neither file records policy approval.", "", "To refresh the Word renderings after an approved source change, install `tools/requirements-docx.txt` and run `python3 elearning-course/scorm-plans/tools/export_storyboard_docx.py` from the repository root.", "", "| File | Contents |", "|---|---|"]
     readme[6:6] = ['Send the nine documents below with the **Phase 0 kick-off pack**, [`../00_program/kickoff-pack.docx`](../00_program/kickoff-pack.docx) (`MC-KO-01 v0.1`): the proposed 90-minute agenda, who must be in the room and which decisions they own, the pre-read list, and the full [open-decision sheet](../00_program/decision-sheet.md) with owners and due dates. The kick-off pack is regenerated with `tools/export_kickoff_docx.py` after `tools/build_decision_sheet.py`.', '']
     readme.append(f"| [{overview.name}]({overview.name}) | Programme overview, review route and release gates |")
     # A selective export must never remove other modules from the client-review index.

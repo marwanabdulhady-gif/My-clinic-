@@ -13,16 +13,14 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M4Z58GADCMP11C9GCSKXWZD6",
-    "job_id": "job_01M4Z58GCN3CPB5KTMM7Z1D4QE",
+    "project_id": "proj_01M4ZKJAPWFM5VK33R5BYKSK1H",
+    "job_id": "job_01M4ZKJARAQ0D3G8H6J3JR18HN",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/iM8vzUEm7bcScPgcJUYgIgN9Q-azwgOk",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
+    "download_url": "http://localhost/scorm/files/V6RyY0fIYJWs1NktyicvNI4Z4lM_2BfX",
+    "warnings": []
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58GADCMP11C9GCSKXWZD6",
+    "project_id": "proj_01M4ZKJAPWFM5VK33R5BYKSK1H",
     "strict": false,
     "error_count": 0,
     "warn_count": 5,
@@ -64,17 +62,11 @@
   "validate_package": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
+    "warnings": []
   },
   "package": {
     "file": "MC_02_SafetyLab_v0.1-draft_1.2.zip",
-    "bytes": 3322812
+    "bytes": 3322101
   },
   "preview": "preview.html"
 }

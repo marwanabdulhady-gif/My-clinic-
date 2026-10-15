@@ -101,7 +101,7 @@
     }
    ],
    "notes": "No companion. Footer line from phase-4 build risk table (learners must not treat the course as a coverage authority). Open: B3 (all benefit wording), D11 brand draft in use.",
-   "narration_text": "Dr. Omar: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "narration_text": "Dr. Omar: Benefits change. Documentation decides whether a covered service is actually paid.",
    "animation": "fade-up",
    "reveal": "auto"
   },
@@ -217,7 +217,7 @@
     "show_correct_answer": true
    },
    "notes": "Card asks for feedback per card; edumints DragItem has no per-item feedback field, so the card-level reasoning is in feedback.correct_html/incorrect_html (show_correct_answer marks each card). Counts '18 added / 10 amended' dropped per B4 recommended draft (headline items only). Open: B3, B4, B6 (optical wording). Icons rcmb-img-benefit-icons are used on rcmb-020/040 (drag_drop has no media slot).",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Place each item where it belongs, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -246,7 +246,7 @@
     }
    ],
    "notes": "No companion. Open: B7 (dietary consultation criteria, draft value shown), B3 (all benefit wording).",
-   "narration_text": "Dr. Omar: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+   "narration_text": "Dr. Omar: Prevention is now covered: think of the patient in front of you who is due a screen.",
    "animation": "fade-up",
    "reveal": "auto"
   },
@@ -293,7 +293,7 @@
     "show_correct_answer": true
    },
    "notes": "Open: B7 (criteria 'BMI > 30 or ≥ 2 risk factors' is the source draft).",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -328,7 +328,7 @@
     }
    ],
    "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card (alt: Noor, the safety liaison, sharing a tip). Speaker: Noor. Accordion has no free media slot, so the tip text is in the last panel and the pose stays here for the developer. Open: B5 (limit value), B3.",
-   "narration_text": "Noor: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+   "narration_text": "Noor: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services.",
    "animation": "fade-up",
    "reveal": "auto"
   },
@@ -352,7 +352,7 @@
     "incorrect_html": "<p>Look again at the exclusions. The condition (alcohol use) is included, but the method — hypnosis — is excluded from the benefit.</p>",
     "show_correct_answer": true
    },
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Decide as you would on shift, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -389,7 +389,7 @@
     }
    ],
    "notes": "No companion. Open: B5 (transplant limit), D4/B2 (regulator name CHI vs CCHI — shown as the deck's 'CHI' with a pending marker), B3.",
-   "narration_text": "Dr. Omar: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+   "narration_text": "Dr. Omar: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health.",
    "animation": "fade-up",
    "reveal": "auto"
   },
@@ -446,7 +446,7 @@
     "show_correct_answer": true
    },
    "notes": "Limit values are not shown here (B5 pending); the pairs use 'policy limit' wording only.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Match each item to the person or step that owns it, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -460,7 +460,7 @@
    "layout": "text_media",
    "body_html": "<p>Each rejection comment tells you what to fix. Read the comment first, then check it against the diagnosis.</p><table><caption>Training rejection log — invented claim ids, no patient, provider or date data</caption><thead><tr><th>Claim</th><th>Diagnosis</th><th>Rejection comment</th></tr></thead><tbody><tr><td>CLM-0001</td><td>Pain, unspecified</td><td>“Pain, unspecified”</td></tr><tr><td>CLM-0002</td><td>Fever</td><td>“Fever — non-specific diagnosis”</td></tr><tr><td>CLM-0003</td><td>Depressive episode</td><td>“Requires pre-authorisation as per policy”</td></tr><tr><td>CLM-0004</td><td>Essential hypertension</td><td>“Consultation within the free follow-up period”</td></tr><tr><td>CLM-0005</td><td>Knee pain after a fall</td><td>“Radiology: two views”</td></tr><tr><td>CLM-0006</td><td>Acute sinusitis</td><td>“No proof of billed service”</td></tr><tr><td>CLM-0007</td><td>Type 2 diabetes</td><td>“Duplicate billing”</td></tr><tr><td>CLM-0008</td><td>Chronic kidney disease</td><td>“Renal panel must include required tests”</td></tr></tbody></table><p><small>Rebuilt rows; the slide-6 screenshot is not used. <strong>⚠ Draft — pending B8/D5</strong> (DPO approval of the rebuilt log)</small></p>",
    "notes": "Companion: Dr. Omar, char-omar-explaining, L3 right column (alt: Dr. Omar, the family physician, explaining the log). Speaker: Dr. Omar. Asset rcmb-tbl-log is realised as this HTML table (planned kind: HTML table). Claim ids CLM-0001…0008 are invented; only claim id + diagnosis + comment are shown (Phase 0 B8 recommended draft: comment + diagnosis only; the card's 'service' column is dropped for that reason); diagnoses are generic training values chosen to fit the slide-6 comments and need RCM lead + DPO approval. Open: B8, D5.",
-   "narration_text": "Dr. Omar: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "narration_text": "Dr. Omar: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims.",
    "animation": "fade-up",
    "reveal": "auto",
    "media_asset_id": "char-omar-explaining",
@@ -550,7 +550,7 @@
     "show_correct_answer": true
    },
    "notes": "Category set and item mapping are the B9 proposal (draft); radiology 'two views' mapped to Documentation and 'renal panel' to Coding pending the Coding lead. Per-card cause+fix feedback is condensed into feedback (DragItem has no per-item feedback).",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Place each item where it belongs, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -651,7 +651,7 @@
     "show_correct_answer": true
    },
    "notes": "Companion host: char-omar-avatar-neutral (outcome poses char-omar-avatar-happy on pass / char-omar-avatar-concern on retry — no outcome-pose switch in the edumints schema; developer note). Speaker: Dr. Omar. Pass rule: all best choices (Phase 3 activity plan) → pass_score 3. 'Ties back to Part A' = Module 05 documentation and coding. Example provisional diagnosis left generic for SME (no specific code shown).",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "narration_text": "Dr. Omar: Play the situation through and decide, then read the feedback.",
    "reveal": "none"
   },
   {
@@ -1017,7 +1017,7 @@
     "show_correct_answer": true
    },
    "notes": "Elo strategy, 15-item bank from the card (8 card examples + 7 from the same benefits on rcmb-020/030/040). Payer relations must approve all 15 items (Phase 3 §5). Option order is rotated per item in the source (the adaptive renderer does not shuffle). Open: B3, B5, B7, 05/B6.",
-   "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
+   "narration_text": "Dr. Omar: Work through the case, then read the feedback.",
    "reveal": "none"
   },
   {
