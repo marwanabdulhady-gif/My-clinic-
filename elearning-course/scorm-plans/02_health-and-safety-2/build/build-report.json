@@ -1,6 +1,7 @@
 {
   "module": "02_health-and-safety-2",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 11,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,16 +13,16 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M4YT3W5S84760DV0MYC3CQW1",
-    "job_id": "job_01M4YT3W7QQDV86TJW63G6KVN7",
+    "project_id": "proj_01M4YTDWFYMTPK1EY1PRM414HZ",
+    "job_id": "job_01M4YTDWHJ7QW0CMFH1DJPYRGB",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/8wwHsMtmqcHR-HtfmQNPzm5bjEg8tzwm",
+    "download_url": "http://localhost/scorm/files/_zrAcR-9LDaor7Xr77Sy_o_NQv0BQIdp",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YT3W5S84760DV0MYC3CQW1",
+    "project_id": "proj_01M4YTDWFYMTPK1EY1PRM414HZ",
     "strict": false,
     "error_count": 0,
     "warn_count": 5,
@@ -73,7 +74,7 @@
   },
   "package": {
     "file": "MC_02_SafetyLab_v0.1-draft_1.2.zip",
-    "bytes": 3103138
+    "bytes": 3103546
   },
   "preview": "preview.html"
 }

@@ -1,6 +1,7 @@
 {
   "module": "08_it-ehr-consultation",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 6,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,16 +13,16 @@
   ],
   "module_colour": "#006E78",
   "build": {
-    "project_id": "proj_01M4YSX16CSKDY7QZ0JG088SVM",
-    "job_id": "job_01M4YSX17P58V647HYNAY3GNKX",
+    "project_id": "proj_01M4YTDXCM675XYN43KKP1MT84",
+    "job_id": "job_01M4YTDXE2BYE79VHZ75AJWKZ7",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/N0hhdGn5trVWeOpx8Atj9cU3appMulDU",
+    "download_url": "http://localhost/scorm/files/1zaCuWSDzayCGeIcbIJInzQHd7Vr7I-M",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YSX16CSKDY7QZ0JG088SVM",
+    "project_id": "proj_01M4YTDXCM675XYN43KKP1MT84",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -55,7 +56,7 @@
   },
   "package": {
     "file": "MC_08_EHR_v0.1-draft_1.2.zip",
-    "bytes": 293359
+    "bytes": 293487
   },
   "preview": "preview.html"
 }

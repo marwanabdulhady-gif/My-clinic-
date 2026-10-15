@@ -1,6 +1,7 @@
 {
   "module": "04_operations-and-my-care",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 6,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,16 +13,16 @@
   ],
   "module_colour": "#9D3293",
   "build": {
-    "project_id": "proj_01M4YSSZEQ662YCRTAPG9XV1TV",
-    "job_id": "job_01M4YSSZFT0819W01H0H88FB7P",
+    "project_id": "proj_01M4YTDWYJ2MNW68YHXTQXM2FV",
+    "job_id": "job_01M4YTDWZEYGZRWJGBAG0M82K4",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/8odndrlJ4IU0QhFaexkLOXOsOSz3g0eU",
+    "download_url": "http://localhost/scorm/files/HcMK72gfTtcrwF60cLhFfBG8m0_bKrKV",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YSSZEQ662YCRTAPG9XV1TV",
+    "project_id": "proj_01M4YTDWYJ2MNW68YHXTQXM2FV",
     "strict": false,
     "error_count": 0,
     "warn_count": 0,
@@ -42,7 +43,7 @@
   },
   "package": {
     "file": "MC_04_OpsMyCare_v0.1-draft_1.2.zip",
-    "bytes": 2103934
+    "bytes": 2104080
   },
   "preview": "preview.html"
 }

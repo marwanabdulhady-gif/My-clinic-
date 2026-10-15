@@ -1,0 +1,2820 @@
+[
+ {
+  "type": "title_slide",
+  "id": "hs1-000",
+  "title": "Facility Management & Safety",
+  "section": "Welcome",
+  "node_id": "hs1-s0",
+  "objective_ids": [],
+  "points": 0,
+  "subtitle": "Your first-week safety essentials",
+  "notes": "Companion: Noor, char-noor-welcome, L1 half-body bottom-right (alt: Noor, the safety liaison, waving in welcome). Speaker: Noor. Facility name and date placeholders from the source cover are not shown (⚠ Draft — pending 01/B3).",
+  "animation": "fade",
+  "reveal": "auto",
+  "narration_text": "Noor: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-001",
+  "title": "Why it matters; how the course works",
+  "section": "Welcome",
+  "node_id": "hs1-s0",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<ul><li><strong>Protect patients</strong></li><li><strong>Protect you</strong></li><li><strong>Pass the CBAHI survey</strong></li></ul><p>9 short sections · resume any time</p>",
+  "notes": "Companion: Noor, char-noor-explaining, L3 right column, half-body (alt: Noor, the safety liaison, explaining). Speaker: Noor. Call-point story is in the narration.",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+ },
+ {
+  "type": "poll",
+  "id": "hs1-002",
+  "title": "How confident are you?",
+  "section": "Welcome",
+  "node_id": "hs1-s0",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>How confident are you to act in a fire right now?</p>",
+  "options": [
+   {
+    "id": "c1",
+    "text_html": "1 — Not confident yet"
+   },
+   {
+    "id": "c2",
+    "text_html": "2 — A little confident"
+   },
+   {
+    "id": "c3",
+    "text_html": "3 — Fairly confident"
+   },
+   {
+    "id": "c4",
+    "text_html": "4 — Very confident"
+   }
+  ],
+  "multi": false,
+  "allow_text": false,
+  "reflection_html": "<p>Not scored. We'll come back to this at the end.</p>",
+  "animation": "fade-up",
+  "reveal": "none",
+  "narration_text": "Noor: This reflection is not scored. Choose the response that helps you set one intention for your next shift."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-101",
+  "title": "Why the FMS chapter exists",
+  "section": "1 · The eight FMS plans",
+  "node_id": "hs1-s1",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<ul><li><strong>Survey requirement</strong> — surveyors check all eight plans: documents, staff knowledge, physical evidence.</li><li><strong>Everyone's responsibility</strong> — every employee knows their role.</li><li><strong>One connected system</strong> — plans and emergency codes overlap.</li></ul><p>CBAHI chapter wording ⚠ Draft — pending 01/B9</p>",
+  "layout": "text",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+ },
+ {
+  "type": "hotspot",
+  "id": "hs1-102",
+  "title": "Explore the eight plans",
+  "section": "1 · The eight FMS plans",
+  "node_id": "hs1-s1",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Open all eight plans. Each one protects against a different physical risk.</p>",
+  "image_asset_id": "<hs1-img-8plans>",
+  "image_alt": "Eight Facility Management and Safety plans shown as icons.",
+  "mode": "explore",
+  "require_all": true,
+  "regions": [
+   {
+    "id": "fire",
+    "shape": "rect",
+    "coords": [
+     0,
+     0,
+     240,
+     270
+    ],
+    "label_html": "<strong>Fire Safety Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Protect people from harm caused by fire and smoke.</p><p><strong>Main functions:</strong> Prevention and routine inspections · Detection and suppression systems · Code Red response (RACE/PASS) · Evacuation routes and drills</p>"
+   },
+   {
+    "id": "building",
+    "shape": "rect",
+    "coords": [
+     240,
+     0,
+     240,
+     270
+    ],
+    "label_html": "<strong>Building Safety Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Keep the physical environment free of hazards.</p><p><strong>Main functions:</strong> Environmental and safety rounds · Hazard identification and correction · Construction/renovation risk assessment · Safety signage and wayfinding</p>"
+   },
+   {
+    "id": "hazmat",
+    "shape": "rect",
+    "coords": [
+     480,
+     0,
+     240,
+     270
+    ],
+    "label_html": "<strong>Hazmat & Waste Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Safely manage chemicals and medical waste end to end.</p><p><strong>Main functions:</strong> Inventory, SDS and GHS/NFPA labelling · Safe storage, handling and transport · Code Orange spill response · Waste segregation and disposal</p>"
+   },
+   {
+    "id": "utility",
+    "shape": "rect",
+    "coords": [
+     720,
+     0,
+     240,
+     270
+    ],
+    "label_html": "<strong>Utility Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Keep essential utility systems running safely.</p><p><strong>Main functions:</strong> Critical system inventory · Preventive maintenance · Backup power and water continuity · Code Brown response</p>"
+   },
+   {
+    "id": "biomed",
+    "shape": "rect",
+    "coords": [
+     0,
+     270,
+     240,
+     270
+    ],
+    "label_html": "<strong>Biomedical Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Make sure medical equipment is safe and working.</p><p><strong>Main functions:</strong> Equipment inventory and inspection · Planned preventive maintenance (PPM) · Incident and recall management · User training</p>"
+   },
+   {
+    "id": "security",
+    "shape": "rect",
+    "coords": [
+     240,
+     270,
+     240,
+     270
+    ],
+    "label_html": "<strong>Security Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Protect people, property and information.</p><p><strong>Main functions:</strong> Access control and ID badges · Visitor and contractor management · CCTV monitoring · Response to Codes White, Silver, Black and Pink</p>"
+   },
+   {
+    "id": "internal",
+    "shape": "rect",
+    "coords": [
+     480,
+     270,
+     240,
+     270
+    ],
+    "label_html": "<strong>Internal Disaster Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Prepare for emergencies that start inside the facility.</p><p><strong>Main functions:</strong> Emergency code activation · Emergency Response Team (ERT) roles · Continuity of critical services · Regular internal drills</p>"
+   },
+   {
+    "id": "external",
+    "shape": "rect",
+    "coords": [
+     720,
+     270,
+     240,
+     270
+    ],
+    "label_html": "<strong>External Disaster Plan</strong>",
+    "feedback_html": "<p><strong>Purpose:</strong> Prepare for mass-casualty or community events.</p><p><strong>Main functions:</strong> Surge capacity planning · Coordination with Civil Defence, MOH and Red Crescent · Code Yellow triage and communication · Community drills</p>"
+   }
+  ],
+  "notes": "Hotspot coords are placeholders for a 4×2 tile grid in the 960×540 pending card (240×270 tiles, x,y,w,h). Re-measure in the natural pixel space of hs1-img-8plans once the SVG is produced (tile order: Fire, Building, Hazmat & Waste, Utility / Biomedical, Security, Internal, External).",
+  "feedback": {
+   "correct_html": "<p>You opened all eight plans. Each protects against a different physical risk; together they form one chapter.</p>",
+   "incorrect_html": "<p>Open every plan before you continue: each one covers a different physical risk.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-103",
+  "title": "Plans and codes: one system",
+  "section": "1 · The eight FMS plans",
+  "node_id": "hs1-s1",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<blockquote><strong>A fire is a Code Red. A chemical spill is a Code Orange.</strong></blockquote><p>The eight plans and the emergency codes are two views of the same system.</p>",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall."
+ },
+ {
+  "type": "matching",
+  "id": "hs1-104",
+  "title": "Match the plans",
+  "section": "1 · The eight FMS plans",
+  "node_id": "hs1-s1",
+  "objective_ids": [
+   "hs1-o1"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Match each plan to its purpose.</p>",
+  "pairs": [
+   {
+    "id": "fire",
+    "left_html": "Fire Safety Plan",
+    "right_html": "Protect people from harm caused by fire and smoke."
+   },
+   {
+    "id": "building",
+    "left_html": "Building Safety Plan",
+    "right_html": "Keep the physical environment free of hazards."
+   },
+   {
+    "id": "hazmat",
+    "left_html": "Hazmat & Waste Plan",
+    "right_html": "Safely manage chemicals and medical waste end to end."
+   },
+   {
+    "id": "utility",
+    "left_html": "Utility Plan",
+    "right_html": "Keep essential utility systems running safely."
+   },
+   {
+    "id": "biomed",
+    "left_html": "Biomedical Plan",
+    "right_html": "Make sure medical equipment is safe and working."
+   },
+   {
+    "id": "security",
+    "left_html": "Security Plan",
+    "right_html": "Protect people, property and information."
+   },
+   {
+    "id": "internal",
+    "left_html": "Internal Disaster Plan",
+    "right_html": "Prepare for emergencies that start inside the facility."
+   },
+   {
+    "id": "external",
+    "left_html": "External Disaster Plan",
+    "right_html": "Prepare for mass-casualty or community events."
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Each plan covers one physical risk; together they protect patients, staff and visitors.</p>",
+   "incorrect_html": "<p>Not quite. Look for the risk each plan protects against: fire and smoke, the building, chemicals and waste, utilities, equipment, people and property, inside events or community events. The correct set is shown below.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-102"
+  ],
+  "notes": "Card asks for per-pair feedback; edumints matching supports one correct/incorrect message plus the shown correct set.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "flashcards",
+  "id": "hs1-201",
+  "title": "Four core terms",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Flip each card: term on the front, meaning and an example on the back.</p>",
+  "cards": [
+   {
+    "front_html": "<h3>Health</h3>",
+    "back_html": "<p>Complete physical, mental and social well-being — not only the absence of injury or illness.</p>"
+   },
+   {
+    "front_html": "<h3>Safety</h3>",
+    "back_html": "<p>Freedom from conditions that cause injury, illness or damage, achieved by controlling hazards <em>before</em> they cause harm.</p>"
+   },
+   {
+    "front_html": "<h3>Hazard</h3>",
+    "back_html": "<p>Anything that could cause harm. <em>Example:</em> a wet floor, an unlabelled chemical, an exposed wire.</p>"
+   },
+   {
+    "front_html": "<h3>Risk</h3>",
+    "back_html": "<p>How likely the hazard is to cause harm, combined with how severe that harm would be. <em>Example:</em> a wet floor near a busy waiting area.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+ },
+ {
+  "type": "accordion",
+  "id": "hs1-202",
+  "title": "Incident types",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Open each incident type.</p>",
+  "items": [
+   {
+    "title": "Near miss — most valuable to report",
+    "body_html": "<p>Nothing happened, but it easily could have. Reporting it is free learning.</p>"
+   },
+   {
+    "title": "First aid case",
+    "body_html": "<p>Minor injury treated with on-site first aid; no further medical care.</p>"
+   },
+   {
+    "title": "Medical treatment case",
+    "body_html": "<p>Needs treatment beyond first aid, such as stitches or prescribed medication.</p>"
+   },
+   {
+    "title": "Lost time injury",
+    "body_html": "<p>The employee cannot return to normal duties for a period.</p>"
+   },
+   {
+    "title": "Fatality",
+    "body_html": "<p>Death from a workplace incident; triggers mandatory investigation and regulatory reporting.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear."
+ },
+ {
+  "type": "labeled_diagram",
+  "id": "hs1-203",
+  "title": "The AREC cycle",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>AREC is a habit before every task. Hazard awareness is never a one-time task.</p>",
+  "image_asset_id": "<hs1-img-arec>",
+  "image_alt": "AREC cycle: Anticipate, Recognise, Evaluate, Control.",
+  "mode": "display",
+  "labels": [
+   {
+    "id": "a",
+    "text": "Anticipate — think ahead before the task",
+    "x": 500,
+    "y": 200
+   },
+   {
+    "id": "r",
+    "text": "Recognise — spot hazards as they appear",
+    "x": 800,
+    "y": 511
+   },
+   {
+    "id": "e",
+    "text": "Evaluate — how likely, how severe",
+    "x": 500,
+    "y": 820
+   },
+   {
+    "id": "c",
+    "text": "Control — use the hierarchy, top first",
+    "x": 200,
+    "y": 511
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>Anticipate, recognise, evaluate, control — then start again. Use it before every task.</p>",
+   "incorrect_html": "<p>Read each stage: the cycle repeats because hazards change.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+ },
+ {
+  "type": "sorting",
+  "id": "hs1-204",
+  "title": "Hierarchy of controls",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [
+   "hs1-o2"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Put the controls in order, from most to least effective.</p>",
+  "items": [
+   {
+    "id": "elim",
+    "text_html": "<strong>Elimination</strong> — physically remove the hazard"
+   },
+   {
+    "id": "subs",
+    "text_html": "<strong>Substitution</strong> — replace it with something safer"
+   },
+   {
+    "id": "eng",
+    "text_html": "<strong>Engineering controls</strong> — isolate people from the hazard"
+   },
+   {
+    "id": "admin",
+    "text_html": "<strong>Administrative controls</strong> — change how people work"
+   },
+   {
+    "id": "ppe",
+    "text_html": "<strong>PPE</strong> — protect the individual worker"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Start at the top: the higher a control sits, the more reliably it removes the risk. PPE is the last line of defence, not the first.</p>",
+   "incorrect_html": "<p>Not quite. Removing or replacing the hazard protects everyone; PPE only protects the person wearing it. PPE is the last line of defence, not the first.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-203"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised."
+ },
+ {
+  "type": "decision_scenario",
+  "id": "hs1-205",
+  "title": "The trailing cable",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [
+   "hs1-o2"
+  ],
+  "points": 15,
+  "intro_html": "<p>A power cable trails across the walkway beside the patient waiting area. Patients and visitors are walking past.</p>",
+  "start_node_id": "n1",
+  "pass_score": 2,
+  "nodes": [
+   {
+    "id": "n1",
+    "prompt_html": "<p>You spot the cable. What do you do first?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Stop, warn people nearby and keep them clear while you assess the risk.",
+      "score_delta": 1,
+      "goto_node_id": "n2",
+      "feedback_html": "<p><strong>Best choice.</strong> You recognised the hazard and protected people first. Now evaluate it and choose a control.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Step over it and carry on; someone else will report it.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>Not safe. A trip hazard beside patients is everyone's responsibility. Recognising it and doing nothing leaves the risk in place.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Go and complete an incident form before doing anything else.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>Reporting matters, but not before people are protected. Someone could trip while you are away.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "prompt_html": "<p>Which control is strongest?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Re-route the cable away from the walkway.",
+      "score_delta": 1,
+      "goto_node_id": "n3",
+      "feedback_html": "<p><strong>Strongest.</strong> Removing the hazard from the walkway sits at the top of the hierarchy — nobody can trip on it.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Cover the cable with a cable protector.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Better than a sign, but the cable is still in the walkway. Removing it from the path is stronger.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Put up a warning sign.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>A sign is an administrative control. It relies on people noticing it, so it is weaker than removing the hazard.</p>"
+     },
+     {
+      "id": "d",
+      "text_html": "Warn each person who walks past.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Warning people is the weakest option here. It depends on you being there every time.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "prompt_html": "<p>Your supervisor says: “Leave it, we're busy.” What do you do?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Use your right to stop unsafe work and contact your Department Safety Liaison.",
+      "score_delta": 1,
+      "goto_node_id": null,
+      "feedback_html": "<p><strong>Correct.</strong> Under ISO 45001 you can stop work you believe could cause serious harm, without fear of retaliation. Your Safety Liaison is the bridge to EHS.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Leave it; the supervisor has decided.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>The hazard is still there. Your rights exist so that safety concerns are never silenced by fear of consequences.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Ignore the supervisor and argue in front of patients.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>The concern is valid, but raise it through the right route: stop the unsafe work and contact your Safety Liaison or Safety Officer.</p>"
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>You put people first, chose the strongest control and used your rights.</p>",
+   "incorrect_html": "<p>Review AREC and the hierarchy of controls, then try again. People first; remove the hazard if you can; you may stop unsafe work.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-203"
+  ],
+  "notes": "Companion: Noor, char-noor-avatar-neutral (intro host) → char-noor-avatar-happy / char-noor-avatar-concern as feedback reactions. Speaker: Noor. Scene illustration of the corridor cable is not in the Phase 3 asset list, so the scene is described in text (no new asset id invented). Avatar reaction swap per choice is not expressible in decision_scenario; the host avatar stays neutral.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+ },
+ {
+  "type": "accordion",
+  "id": "hs1-206",
+  "title": "Who to contact and your rights",
+  "section": "2 · Occupational Health & Safety",
+  "node_id": "hs1-s2",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Who to contact, and your rights under ISO 45001.</p>",
+  "items": [
+   {
+    "title": "Department Safety Liaison",
+    "body_html": "<p>Your first contact for hazards, risk assessments and PPE questions. Don't know yours? Ask your supervisor on day 1.</p>"
+   },
+   {
+    "title": "Right to stop unsafe work",
+    "body_html": "<p>Stop any task you believe could cause serious harm, without fear of retaliation.</p>"
+   },
+   {
+    "title": "Right to be consulted",
+    "body_html": "<p>If you are afraid to stop work yourself, raise the concern with your Safety Officer or supervisor.</p>"
+   },
+   {
+    "title": "Right to training",
+    "body_html": "<p>Be trained on the hazards and safe procedures of your role <em>before</em> you do it.</p>"
+   }
+  ],
+  "notes": "Companion: Dr. Omar, char-omar-avatar-neutral + tip card, L3 bottom-left. Tip: a doctor can stop unsafe work too — “I have, and nobody blamed me.” Speaker: Dr. Omar. ISO 45001 rights wording ⚠ Draft — pending 01/B9.",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Dr. Omar: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+ },
+ {
+  "type": "flashcards",
+  "id": "hs1-301",
+  "title": "The emergency codes",
+  "section": "3 · Emergency codes",
+  "node_id": "hs1-s3",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Flip each card. Codes are announced overhead. Code names and site extensions ⚠ Draft — pending D2.</p>",
+  "cards": [
+   {
+    "front_html": "<h3>Code Red</h3>",
+    "back_html": "<p>Fire</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Orange</h3>",
+    "back_html": "<p>Hazardous material spillage</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code White</h3>",
+    "back_html": "<p>Violent situation</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Black</h3>",
+    "back_html": "<p>Bomb threat</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Pink</h3>",
+    "back_html": "<p>Child / infant abduction or lost</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Blue</h3>",
+    "back_html": "<p>Cardiac arrest</p><p><strong>Extension:</strong> 2222 — national (MOH)</p>"
+   },
+   {
+    "front_html": "<h3>Code RRT</h3>",
+    "back_html": "<p>Deteriorating patient (Rapid Response Team)</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Silver</h3>",
+    "back_html": "<p>Violent situation involving a weapon</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Yellow</h3>",
+    "back_html": "<p>External disaster</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Grey</h3>",
+    "back_html": "<p>Severe weather</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   },
+   {
+    "front_html": "<h3>Code Brown</h3>",
+    "back_html": "<p>Utility failure</p><p><strong>Extension:</strong> your site number ⚠ Draft — pending D2</p>"
+   }
+  ],
+  "notes": "Companion: Noor, char-noor-avatar-neutral + tip card (L3). Tip: save your site's extensions in your phone today. Speaker: Noor. Open decision D2: code naming set (incl. Code Silver wording, RRT) and real extension numbers — draft shows source deck names; only Code Blue 2222 is national. Arabic code names (bilingual EN/AR fronts) and hs1-img-codes-chips colour chips are not added: the module is English-only and the chips are decorative (name is in text).",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+ },
+ {
+  "type": "matching",
+  "id": "hs1-302",
+  "title": "Match the codes",
+  "section": "3 · Emergency codes",
+  "node_id": "hs1-s3",
+  "objective_ids": [
+   "hs1-o3"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Match each code to its meaning. Code naming ⚠ Draft — pending D2.</p>",
+  "pairs": [
+   {
+    "id": "red",
+    "left_html": "Code Red",
+    "right_html": "Fire"
+   },
+   {
+    "id": "orange",
+    "left_html": "Code Orange",
+    "right_html": "Hazardous material spill"
+   },
+   {
+    "id": "white",
+    "left_html": "Code White",
+    "right_html": "Violent situation"
+   },
+   {
+    "id": "black",
+    "left_html": "Code Black",
+    "right_html": "Bomb threat"
+   },
+   {
+    "id": "pink",
+    "left_html": "Code Pink",
+    "right_html": "Child / infant abduction"
+   },
+   {
+    "id": "blue",
+    "left_html": "Code Blue",
+    "right_html": "Cardiac arrest"
+   },
+   {
+    "id": "yellow",
+    "left_html": "Code Yellow",
+    "right_html": "External disaster"
+   },
+   {
+    "id": "brown",
+    "left_html": "Code Brown",
+    "right_html": "Utility failure"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Knowing the meaning lets you act the moment a code is announced. Check your site's extensions too.</p>",
+   "incorrect_html": "<p>Not quite. Review the code cards: Red is fire, Orange is a hazardous spill, Blue is cardiac arrest. The correct set is shown below. ⚠ Draft — pending D2</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-301"
+  ],
+  "notes": "Card asks for per-pair feedback; edumints matching supports one correct/incorrect message. Pairs are shuffled by the runtime. Code names pending D2.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-303",
+  "title": "Two announcements",
+  "section": "3 · Emergency codes",
+  "node_id": "hs1-s3",
+  "objective_ids": [],
+  "points": 0,
+  "blocks": [
+   {
+    "html": "<p>Two facility-wide announcements are not colour codes:</p>"
+   },
+   {
+    "html": "<h4>Hospital Evacuation</h4><p>Evacuate the building. Follow your unit's evacuation plan to the outdoor assembly point.</p>"
+   },
+   {
+    "html": "<h4>End of Disaster</h4><p>The Incident Commander confirms the emergency is over. Stand down only on this signal.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task."
+ },
+ {
+  "type": "sorting",
+  "id": "hs1-304",
+  "title": "The common response pattern",
+  "section": "3 · Emergency codes",
+  "node_id": "hs1-s3",
+  "objective_ids": [
+   "hs1-o3"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Put the common response pattern in order. It applies to every code.</p>",
+  "items": [
+   {
+    "id": "rec",
+    "text_html": "<strong>Recognise</strong> — notice the emergency as it develops"
+   },
+   {
+    "id": "act",
+    "text_html": "<strong>Activate</strong> — call switchboard/security; announce the correct code"
+   },
+   {
+    "id": "resp",
+    "text_html": "<strong>Respond</strong> — follow your role-specific response"
+   },
+   {
+    "id": "stand",
+    "text_html": "<strong>Stand down</strong> — wait for the official all-clear"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> And remember: stand down only when the official all-clear is announced.</p>",
+   "incorrect_html": "<p>Not quite. You must recognise it before you can activate a code, and you resume normal work only after the official all-clear.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-303"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "labeled_diagram",
+  "id": "hs1-305",
+  "title": "Who responds: the ERT",
+  "section": "3 · Emergency codes",
+  "node_id": "hs1-s3",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>The Emergency Response Team: five teams around an Incident Commander. You are part of the response even if you are not on it.</p>",
+  "image_asset_id": "<hs1-img-ert>",
+  "image_alt": "Emergency Response Team: Safety, Security, Nursing, Facility, Operation around an Incident Commander.",
+  "mode": "display",
+  "labels": [
+   {
+    "id": "ic",
+    "text": "Incident Commander",
+    "x": 500,
+    "y": 560
+   },
+   {
+    "id": "safety",
+    "text": "Safety",
+    "x": 500,
+    "y": 120
+   },
+   {
+    "id": "security",
+    "text": "Security",
+    "x": 820,
+    "y": 400
+   },
+   {
+    "id": "nursing",
+    "text": "Nursing",
+    "x": 700,
+    "y": 840
+   },
+   {
+    "id": "facility",
+    "text": "Facility",
+    "x": 300,
+    "y": 840
+   },
+   {
+    "id": "operation",
+    "text": "Operation",
+    "x": 180,
+    "y": 400
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>Five teams work around one Incident Commander. Your part is to follow your role-specific response.</p>",
+   "incorrect_html": "<p>Read each team label: the Incident Commander coordinates them all.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision."
+ },
+ {
+  "type": "labeled_diagram",
+  "id": "hs1-401",
+  "title": "The fire triangle",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Remove any one side and the fire stops. <strong>Smoke, not flame, is the leading cause of death</strong> in facility fires.</p>",
+  "image_asset_id": "<hs1-img-triangle>",
+  "image_alt": "Fire triangle: heat, fuel and oxygen.",
+  "mode": "display",
+  "labels": [
+   {
+    "id": "heat",
+    "text": "Heat — the ignition source",
+    "x": 500,
+    "y": 170
+   },
+   {
+    "id": "fuel",
+    "text": "Fuel — anything that burns",
+    "x": 220,
+    "y": 860
+   },
+   {
+    "id": "oxygen",
+    "text": "Oxygen — keeps it burning",
+    "x": 780,
+    "y": 860
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>Remove heat, fuel or oxygen and the fire stops. Smoke kills first, so RACE rescues and contains before extinguishing.</p>",
+   "incorrect_html": "<p>Read each side of the triangle: every fire control method removes one of them.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+ },
+ {
+  "type": "sorting",
+  "id": "hs1-402",
+  "title": "RACE: put the steps in order",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 5,
+  "prompt_html": "<p>You discover a fire. Put the response in the right order.</p>",
+  "items": [
+   {
+    "id": "r",
+    "text_html": "<strong>Rescue</strong> anyone in immediate danger"
+   },
+   {
+    "id": "a",
+    "text_html": "<strong>Alarm</strong> — pull station + call: code, location, your ID and name"
+   },
+   {
+    "id": "c",
+    "text_html": "<strong>Contain</strong> — remove O₂ and alcohol rub, close doors"
+   },
+   {
+    "id": "e",
+    "text_html": "<strong>Extinguish</strong> a small fire, or <strong>Evacuate</strong>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Right.</strong> Smoke spreads faster than flame, so people and doors come first.</p>",
+   "incorrect_html": "<p>Not quite. Rescue and contain come before extinguishing because smoke kills first.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-401"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "sorting",
+  "id": "hs1-403",
+  "title": "PASS: put the steps in order",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Using an extinguisher: put the PASS steps in order.</p>",
+  "items": [
+   {
+    "id": "p",
+    "text_html": "<strong>Pull</strong> the safety pin"
+   },
+   {
+    "id": "a",
+    "text_html": "<strong>Aim</strong> low, at the base of the fire"
+   },
+   {
+    "id": "s",
+    "text_html": "<strong>Squeeze</strong> the handle"
+   },
+   {
+    "id": "w",
+    "text_html": "<strong>Sweep</strong> side to side until it is out"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Aim at the base: that is where the fuel is burning. Use an extinguisher only on a small, contained fire.</p>",
+   "incorrect_html": "<p>Not quite. The pin must come out before the handle works, and you aim at the base before you squeeze and sweep.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-401"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "hotspot",
+  "id": "hs1-404",
+  "title": "Find the fire safety equipment",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Open every item. Know where these are before you need them.</p>",
+  "image_asset_id": "<hs1-img-corridor>",
+  "image_alt": "Clinic corridor showing a smoke detector, heat detector, sprinkler, call point, extinguisher, fire blanket, evacuation chair and assembly-point sign.",
+  "mode": "explore",
+  "require_all": true,
+  "regions": [
+   {
+    "id": "smoke",
+    "shape": "rect",
+    "coords": [
+     535,
+     30,
+     120,
+     75
+    ],
+    "label_html": "<strong>Smoke detector</strong>",
+    "feedback_html": "<p>Senses smoke early and triggers the alarm. Never cover or tamper with it.</p>"
+   },
+   {
+    "id": "heat",
+    "shape": "rect",
+    "coords": [
+     968,
+     30,
+     118,
+     75
+    ],
+    "label_html": "<strong>Heat detector</strong>",
+    "feedback_html": "<p>Triggers the alarm when the temperature rises fast — used where smoke detectors would false-alarm.</p>"
+   },
+   {
+    "id": "sprinkler",
+    "shape": "rect",
+    "coords": [
+     782,
+     122,
+     72,
+     64
+    ],
+    "label_html": "<strong>Sprinkler</strong>",
+    "feedback_html": "<p>Releases water automatically over a fire. Keep the space below it clear; never hang anything from it.</p>"
+   },
+   {
+    "id": "callpoint",
+    "shape": "rect",
+    "coords": [
+     92,
+     252,
+     102,
+     112
+    ],
+    "label_html": "<strong>Call point</strong>",
+    "feedback_html": "<p>Manual alarm. Pull it during the <strong>Alarm</strong> step of RACE.</p>"
+   },
+   {
+    "id": "extinguisher",
+    "shape": "rect",
+    "coords": [
+     68,
+     476,
+     148,
+     308
+    ],
+    "label_html": "<strong>Fire extinguisher</strong>",
+    "feedback_html": "<p>For a small, contained fire only. Check the class label, then use PASS.</p>"
+   },
+   {
+    "id": "blanket",
+    "shape": "rect",
+    "coords": [
+     1498,
+     312,
+     122,
+     240
+    ],
+    "label_html": "<strong>Fire blanket</strong>",
+    "feedback_html": "<p>Smothers a small fire, such as a pan or clothing fire, by cutting off oxygen.</p>"
+   },
+   {
+    "id": "evacchair",
+    "shape": "rect",
+    "coords": [
+     1040,
+     534,
+     224,
+     304
+    ],
+    "label_html": "<strong>Evacuation chair</strong>",
+    "feedback_html": "<p>Moves a person who cannot walk down the stairs during a vertical evacuation. Never use the elevator.</p>"
+   },
+   {
+    "id": "assembly",
+    "shape": "rect",
+    "coords": [
+     1070,
+     278,
+     88,
+     106
+    ],
+    "label_html": "<strong>Assembly-point sign</strong>",
+    "feedback_html": "<p>Shows the route to the outdoor assembly point used in a full evacuation. Find yours this week.</p>"
+   }
+  ],
+  "notes": "Coordinates measured on hs1-img-corridor.png (1672×941 natural px, rect x,y,w,h). SME visual check required (asset register): confirm which ceiling device is the smoke vs heat detector (left = slotted smoke detector, right = heat detector as drawn) before release.",
+  "feedback": {
+   "correct_html": "<p>You found all eight items. Look for them on your own unit this week.</p>",
+   "incorrect_html": "<p>Open every item before you continue: you need to know where each one is before an emergency.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow."
+ },
+ {
+  "type": "drag_drop",
+  "id": "hs1-405",
+  "title": "Extinguisher classes",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Drag each fire to the extinguisher class that fits. Using the wrong class can make a fire worse.</p>",
+  "items": [
+   {
+    "id": "paper",
+    "text_html": "Burning paper bin",
+    "correct_target_id": "a"
+   },
+   {
+    "id": "petrol",
+    "text_html": "Petrol leak",
+    "correct_target_id": "b"
+   },
+   {
+    "id": "copier",
+    "text_html": "Smoking photocopier",
+    "correct_target_id": "c"
+   },
+   {
+    "id": "magnesium",
+    "text_html": "Magnesium shavings",
+    "correct_target_id": "d"
+   },
+   {
+    "id": "pan",
+    "text_html": "Pantry pan fire",
+    "correct_target_id": "k"
+   }
+  ],
+  "targets": [
+   {
+    "id": "a",
+    "label_html": "Class A — wood, paper, fabric, trash"
+   },
+   {
+    "id": "b",
+    "label_html": "Class B — flammable liquids and gases"
+   },
+   {
+    "id": "c",
+    "label_html": "Class C — energised electrical equipment"
+   },
+   {
+    "id": "d",
+    "label_html": "Class D — combustible metals"
+   },
+   {
+    "id": "k",
+    "label_html": "Class K — cooking oils and fats"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Check the label before you pull the pin.</p>",
+   "incorrect_html": "<p>Not quite. Match the fuel: ordinary materials A, liquids B, live electrical C, metals D, cooking oil K. Check the label before you pull the pin.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-404"
+  ],
+  "notes": "Keyboard pick-and-place is provided by the player. Full points for all correct (partial scoring not specified).",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "tabs",
+  "id": "hs1-406",
+  "title": "Types of evacuation",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Three types of evacuation.</p>",
+  "tabs": [
+   {
+    "label": "Horizontal",
+    "body_html": "<p>Move patients and staff through fire/smoke doors to the next safe compartment on the <strong>same floor</strong>. The first response for most fires.</p>"
+   },
+   {
+    "label": "Vertical",
+    "body_html": "<p>Move to a lower floor or ground level when horizontal is not enough. Use <strong>stairwells, never elevators</strong>.</p>"
+   },
+   {
+    "label": "Full",
+    "body_html": "<p>Evacuate the whole building to the <strong>outdoor assembly point</strong>. Only for the most severe, facility-wide emergencies.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+ },
+ {
+  "type": "mcq",
+  "id": "hs1-407",
+  "title": "Choose the evacuation",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Smoke is coming from Room 3. Fire doors are at the end of the corridor. Patients on the same floor are not in danger yet. What is your first move?</p>",
+  "options": [
+   {
+    "id": "a",
+    "text_html": "Move patients horizontally through the fire doors to the next compartment.",
+    "correct": true,
+    "feedback_html": "<p>Correct. Horizontal evacuation is the first response for most fires: the fire doors hold back smoke.</p>"
+   },
+   {
+    "id": "b",
+    "text_html": "Take patients down to the ground floor in the elevator.",
+    "correct": false,
+    "feedback_html": "<p>Never use elevators in a fire. They can fail or open onto the fire floor; vertical moves use the stairwells.</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Start a full evacuation of the building to the assembly point.",
+    "correct": false,
+    "feedback_html": "<p>Too early. Full evacuation is for the most severe, facility-wide emergencies; moving patients beyond the fire doors is enough now.</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Horizontal first; vertical by the stairs only if needed.</p>",
+   "incorrect_html": "<p>Not quite. The patients are not in danger yet, and fire doors are close: move them horizontally to the next compartment.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-406"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "true_false",
+  "id": "hs1-408",
+  "title": "Oxygen: myth or fact?",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 5,
+  "prompt_html": "<p>True or false? <strong>Oxygen is flammable.</strong></p>",
+  "correct": false,
+  "feedback": {
+   "correct_html": "<p><strong>Correct — it is false.</strong> Oxygen is an oxidiser. It does not burn on its own, but it makes a fire burn much faster and hotter. Keep cylinders away from flames and sparks.</p>",
+   "incorrect_html": "<p>Not quite. Oxygen does not burn; it is an oxidiser that intensifies fire. That is why you remove oxygen cylinders when you contain a fire.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-401"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "decision_scenario",
+  "id": "hs1-409",
+  "title": "Night shift: put RACE into action",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [
+   "hs1-o4"
+  ],
+  "points": 20,
+  "intro_html": "<p>Night shift. Smoke is rising from a waste bin in a patient room. The patient is in bed beside it.</p>",
+  "start_node_id": "n1",
+  "pass_score": 3,
+  "nodes": [
+   {
+    "id": "n1",
+    "prompt_html": "<p>What do you do first?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Move the patient away from the bin and out of the room.",
+      "score_delta": 1,
+      "goto_node_id": "n2",
+      "feedback_html": "<p><strong>Rescue first.</strong> The patient is safe from the smoke before anything else happens.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Fetch the extinguisher from the corridor.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>The patient stayed in the smoke while you were away. Smoke kills first, so rescue comes before extinguishing.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Run to the nurses' station to phone switchboard.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>The alarm matters, but the patient was left beside the fire. Rescue anyone in immediate danger first.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "prompt_html": "<p>You pull the call point and phone switchboard. What do you say?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "“Code Red, Ward 2, Room 12. My ID is 4417, my name is Sara.”",
+      "score_delta": 1,
+      "goto_node_id": "n3",
+      "feedback_html": "<p><strong>Correct.</strong> Code type, exact location, your ID and name — the team can come straight to you.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "“There's a fire, come quickly!”",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Without the code and location the team loses time finding you. Always state code, location, ID and name.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "“Code Orange in Room 12.”",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Code Orange is a hazardous spill. A fire is Code Red; the wrong code sends the wrong team.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "prompt_html": "<p>The patient is safe and the alarm is raised. How do you contain the fire?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Remove the oxygen cylinder and alcohol rub, then close the door.",
+      "score_delta": 1,
+      "goto_node_id": "n4",
+      "feedback_html": "<p><strong>Correct.</strong> Removing oxidisers and flammables and closing the door slows the smoke and fire.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Open the window to let the smoke out.",
+      "score_delta": 0,
+      "goto_node_id": "n4",
+      "feedback_html": "<p>Opening a window feeds the fire with oxygen. Close doors and windows to contain it.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Leave the door open so the team can find the room.",
+      "score_delta": 0,
+      "goto_node_id": "n4",
+      "feedback_html": "<p>An open door lets smoke spread down the corridor. You gave the location on the call; close the door.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "prompt_html": "<p>The fire spreads past the bin. Smoke reaches the corridor. What now?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Evacuate patients horizontally through the fire doors to the next compartment.",
+      "score_delta": 1,
+      "goto_node_id": null,
+      "feedback_html": "<p><strong>Correct.</strong> The fire is no longer small and contained, so you evacuate. Horizontal is the first move.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Keep fighting it with the extinguisher.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>An extinguisher is only for a small, contained fire. Once it grows, evacuate.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Take patients down in the elevator.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>Never use elevators in a fire. Move horizontally first; use the stairwells if you must go down.</p>"
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>You followed RACE under pressure: rescue, alarm, contain, then evacuate.</p>",
+   "incorrect_html": "<p>Review RACE and the evacuation types, then try again. People and doors come first; evacuate once the fire grows.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-401",
+   "hs1-404",
+   "hs1-406"
+  ],
+  "notes": "Companion: Noor, char-noor-avatar-neutral (intro host) → char-noor-avatar-happy / char-noor-avatar-concern. Speaker: Noor. Ward, room, staff ID and name in node 2 are fictional training values. Avatar reaction swap per choice is not expressible; host stays neutral.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-410",
+  "title": "Fire prevention: what not to bring",
+  "section": "4 · Fire safety",
+  "node_id": "hs1-s4",
+  "objective_ids": [],
+  "points": 0,
+  "blocks": [
+   {
+    "html": "<h4>Flame and fuel — do not bring or use</h4><ul><li>Candles and open flame</li><li>Unauthorised welding</li><li>Smoking and vaping indoors</li><li>Uncontrolled flammables</li></ul>"
+   },
+   {
+    "html": "<h4>Electrical — do not bring or use</h4><ul><li>Unauthorised extensions</li><li>Heaters and electric boilers</li><li>Unauthorised microwaves</li></ul>"
+   }
+  ],
+  "notes": "Card shows the 7 items as icons; no icon assets are planned in Phase 3, so they are two grouped text cards (flame/fuel, electrical).",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-501",
+  "title": "Ordering and inventory",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [],
+  "points": 0,
+  "blocks": [
+   {
+    "html": "<h4>Approved procurement only</h4><p>No personal or unlogged purchases of hazardous substances.</p>"
+   },
+   {
+    "html": "<h4>On the inventory, with its SDS</h4><p>Every chemical in your department is listed, and its Safety Data Sheet is easy to reach.</p>"
+   },
+   {
+    "html": "<h4>Never accept an unlabelled container</h4><p>GHS pictograms show the hazard class at a glance.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+ },
+ {
+  "type": "matching",
+  "id": "hs1-502",
+  "title": "GHS pictograms",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [
+   "hs1-o5"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Match each GHS pictogram to the hazard it shows. (Red diamond, black symbol.)</p>",
+  "pairs": [
+   {
+    "id": "skull",
+    "left_html": "<strong>Skull and crossbones</strong>",
+    "right_html": "Acute toxicity"
+   },
+   {
+    "id": "bomb",
+    "left_html": "<strong>Exploding bomb</strong>",
+    "right_html": "Explosives"
+   },
+   {
+    "id": "corrosion",
+    "left_html": "<strong>Corrosion</strong>",
+    "right_html": "Skin and eye damage"
+   },
+   {
+    "id": "flame",
+    "left_html": "<strong>Flame</strong>",
+    "right_html": "Flammable"
+   },
+   {
+    "id": "exclaim",
+    "left_html": "<strong>Exclamation mark</strong>",
+    "right_html": "Irritant"
+   },
+   {
+    "id": "health",
+    "left_html": "<strong>Health hazard</strong>",
+    "right_html": "Carcinogen / toxicity"
+   },
+   {
+    "id": "cylinder",
+    "left_html": "<strong>Gas cylinder</strong>",
+    "right_html": "Gases under pressure"
+   },
+   {
+    "id": "flamecircle",
+    "left_html": "<strong>Flame over circle</strong>",
+    "right_html": "Oxidisers"
+   },
+   {
+    "id": "environment",
+    "left_html": "<strong>Environment</strong>",
+    "right_html": "Aquatic toxicity"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Read the pictogram before you open, mix or store a chemical, and check the SDS for details.</p>",
+   "incorrect_html": "<p>Not quite. The symbol shows the hazard: flame over circle is an oxidiser, the gas cylinder is pressure, the health hazard silhouette is carcinogen/toxicity. The correct set is shown below.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-501"
+  ],
+  "notes": "Pictogram images hs1-img-ghs-1..9 are not produced yet; the left side uses the pictogram names as text (Phase 4 risk fallback). When the SVGs exist, decide whether matching left_html can carry an <img> asset reference. Per-pair feedback not expressible.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "labeled_diagram",
+  "id": "hs1-503",
+  "title": "Label the NFPA diamond",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [
+   "hs1-o5"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Label the four areas of the NFPA 704 diamond. Each area rates a hazard from 0 (minimal) to 4 (severe).</p>",
+  "image_asset_id": "<hs1-img-nfpa-blank>",
+  "image_alt": "Empty NFPA hazard diamond with four coloured quadrants.",
+  "mode": "quiz",
+  "labels": [
+   {
+    "id": "health",
+    "text": "Health (blue)",
+    "x": 406,
+    "y": 522
+   },
+   {
+    "id": "flam",
+    "text": "Flammability (red)",
+    "x": 500,
+    "y": 356
+   },
+   {
+    "id": "react",
+    "text": "Reactivity (yellow)",
+    "x": 594,
+    "y": 522
+   },
+   {
+    "id": "special",
+    "text": "Special (white)",
+    "x": 500,
+    "y": 689
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Blue is health, red is flammability, yellow is reactivity and white holds special symbols such as W (avoid water) or OX (oxidiser).</p>",
+   "incorrect_html": "<p>Not quite. Use colour and the label together: blue health, red flammability, yellow reactivity, white special.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-501"
+  ],
+  "notes": "Markers placed on the corrected NFPA 704 layout (red top = flammability, blue left = health, yellow right = reactivity, white bottom = special), normalised 0-1000 on hs1-img-nfpa-blank.svg. The SVG no longer prints the area names.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "mcq",
+  "id": "hs1-504",
+  "title": "Read a diamond",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [
+   "hs1-o5"
+  ],
+  "points": 5,
+  "prompt_html": "<p>A container's diamond shows <strong>Health 3 · Flammability 0 · Reactivity 1 · Special W</strong>. What does it tell you before opening?</p>",
+  "options": [
+   {
+    "id": "a",
+    "text_html": "Serious health hazard; do not use water on it.",
+    "correct": true,
+    "feedback_html": "<p>Correct. Health 3 is a serious hazard; W in the white area means avoid water.</p>"
+   },
+   {
+    "id": "b",
+    "text_html": "Highly flammable; keep it away from heat.",
+    "correct": false,
+    "feedback_html": "<p>Flammability is 0: it will not burn. The high number is health.</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Low hazard overall; handle as normal.",
+    "correct": false,
+    "feedback_html": "<p>Health 3 is serious. Check the SDS and wear the PPE it specifies.</p>"
+   },
+   {
+    "id": "d",
+    "text_html": "Unstable and may explode; do not move it.",
+    "correct": false,
+    "feedback_html": "<p>Reactivity 1 is low. The main risks are health and contact with water.</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Read the whole diamond: the highest number and the white area tell you the main precautions.</p>",
+   "incorrect_html": "<p>Not quite. Higher numbers mean greater hazard. Here health is 3 and the white area says W: avoid water.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-501"
+  ],
+  "notes": "Planned image hs1-img-nfpa-301w cannot be placed: the edumints mcq screen has no media field, so the ratings are given as text in the prompt. The asset also has the quadrant-layout issue noted on hs1-503.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "accordion",
+  "id": "hs1-505",
+  "title": "Store, handle, transport",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Everything follows the Safety Data Sheet (SDS).</p>",
+  "items": [
+   {
+    "title": "Storage per SDS",
+    "body_html": "<p>Away from incompatible substances, secured, away from heat sources.</p>"
+   },
+   {
+    "title": "Designated carts and routes",
+    "body_html": "<p>Never carry incompatible chemicals together; secure containers before moving them.</p>"
+   },
+   {
+    "title": "PPE per SDS",
+    "body_html": "<p>Wear the PPE the SDS specifies before opening, mixing or dispensing.</p>"
+   },
+   {
+    "title": "Flammable cabinet",
+    "body_html": "<p>Double-walled steel with a self-latching door. Flammable liquids never go on an open shelf.</p>"
+   },
+   {
+    "title": "SDS at point of use",
+    "body_html": "<p>An SDS pocket or binder at or near the cabinet — every SDS reachable in seconds.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-506",
+  "title": "Eyewash and emergency showers",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<p><strong>Find your nearest one today</strong> — not during an emergency.</p><p>Chemical in the eyes or on the skin: <strong>flush for at least 15 minutes</strong>, without stopping, then get a medical check.</p>",
+  "layout": "text_media",
+  "media_asset_id": "<hs1-img-eyewash>",
+  "media_alt": "Combined eyewash and emergency shower station.",
+  "notes": "Companion: Dr. Omar, char-omar-avatar-neutral + tip card (L3). Tip: set a timer; keep flushing for 15 minutes. Speaker: Dr. Omar. The media slot holds hs1-img-eyewash (pending My Clinic photo permission), so the companion is not placed by the build.",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Dr. Omar: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+ },
+ {
+  "type": "decision_scenario",
+  "id": "hs1-507",
+  "title": "Spill or Code Orange?",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [
+   "hs1-o5"
+  ],
+  "points": 15,
+  "intro_html": "<p>Three spills, three decisions. Use the rule you'd follow on shift. ⚠ Draft — pending D1</p>",
+  "start_node_id": "n1",
+  "pass_score": 3,
+  "nodes": [
+   {
+    "id": "n1",
+    "prompt_html": "<p>A 200 mL bottle of alcohol hand rub falls and leaks in the corridor.</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Call the cleaning supervisor and warn people nearby.",
+      "score_delta": 1,
+      "goto_node_id": "n2",
+      "feedback_html": "<p><strong>Correct.</strong> It is below the Code Orange threshold and not highly toxic. Keep people away until it is cleaned. Draft rule: 500 mL or more, or any highly toxic, reactive or explosive substance. ⚠ Draft — pending D1</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Announce Code Orange.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>Not needed here. Code Orange is for spills at or above the threshold (draft: 500 mL), or highly toxic, reactive or explosive substances. ⚠ Draft — pending D1</p>"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "prompt_html": "<p>A full 1-litre bottle of surface disinfectant splits and spreads across the treatment-room floor. (Over the draft threshold. ⚠ Draft — pending D1)</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Announce Code Orange.",
+      "score_delta": 1,
+      "goto_node_id": "n3",
+      "feedback_html": "<p><strong>Correct.</strong> The spill is over the threshold, so it needs the Code Orange response. ⚠ Draft — pending D1</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Mop it up yourself with paper towels.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>A spill this size needs Code Orange and the right spill kit and PPE, not paper towels. ⚠ Draft — pending D1</p>"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "prompt_html": "<p>A few millilitres of a highly toxic reagent spill on a lab bench.</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Announce Code Orange.",
+      "score_delta": 1,
+      "goto_node_id": "n4",
+      "feedback_html": "<p><strong>Correct.</strong> Volume does not matter for a highly toxic substance: any amount is Code Orange. ⚠ Draft — pending D1</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Call the cleaning supervisor — it is only a few mL.",
+      "score_delta": 0,
+      "goto_node_id": "n4",
+      "feedback_html": "<p>Small volume, but highly toxic. Any highly toxic, reactive or explosive substance is Code Orange. ⚠ Draft — pending D1</p>"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "prompt_html": "<p>Code Orange is called. Which order do you follow?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Isolate and warn → PPE per SDS → contain with the right kit → report.",
+      "score_delta": 1,
+      "goto_node_id": null,
+      "feedback_html": "<p><strong>Correct.</strong> Protect people first, protect yourself, then contain with the chemical or biological kit, and report to your supervisor and Safety Services.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Contain with the kit → PPE per SDS → isolate and warn → report.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>Containing before isolating and protecting yourself puts you and others at risk. Isolate and warn first.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Report → isolate and warn → contain → PPE per SDS.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>PPE must go on before you touch the spill, and people nearby need warning first. Report at the end.</p>"
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>You applied the Code Orange rule and the four response steps. ⚠ Draft — pending D1</p>",
+   "incorrect_html": "<p>Review the rule: 500 mL or more, or any highly toxic, reactive or explosive substance (draft). Then isolate, PPE, contain, report. ⚠ Draft — pending D1</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-505",
+   "hs1-506"
+  ],
+  "notes": "Companion: Noor, char-noor-avatar-concern (intro host). Speaker: Noor. Open decision D1 (Code Orange threshold): draft uses the decision sheet's recommended value — spill ≥ 500 mL, or any highly toxic/reactive/explosive substance → Code Orange; otherwise call the cleaning supervisor. Update node 1–3 feedback and the intro when D1 closes. pass_score 3 of 4 per Phase 3 activity plan.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague."
+ },
+ {
+  "type": "drag_drop",
+  "id": "hs1-508",
+  "title": "Waste segregation",
+  "section": "5 · Hazardous materials & waste",
+  "node_id": "hs1-s5",
+  "objective_ids": [
+   "hs1-o5"
+  ],
+  "points": 10,
+  "prompt_html": "<p>Drag each item to the right waste stream. Bin colours vary by facility: follow the labelled bins in your department. ⚠ Draft — pending 01/B7</p>",
+  "items": [
+   {
+    "id": "needle",
+    "text_html": "Used needle",
+    "correct_target_id": "sharps"
+   },
+   {
+    "id": "dressing",
+    "text_html": "Blood-soaked dressing",
+    "correct_target_id": "infectious"
+   },
+   {
+    "id": "towel",
+    "text_html": "Paper towel (clean)",
+    "correct_target_id": "general"
+   },
+   {
+    "id": "blade",
+    "text_html": "Scalpel blade",
+    "correct_target_id": "sharps"
+   },
+   {
+    "id": "gloves",
+    "text_html": "Gloves with body fluid",
+    "correct_target_id": "infectious"
+   },
+   {
+    "id": "wrapper",
+    "text_html": "Food wrapper",
+    "correct_target_id": "general"
+   }
+  ],
+  "targets": [
+   {
+    "id": "general",
+    "label_html": "General waste — bin colour ⚠ Draft — pending 01/B7"
+   },
+   {
+    "id": "infectious",
+    "label_html": "Infectious / biohazard — labelled biohazard bag ⚠ Draft — pending 01/B7"
+   },
+   {
+    "id": "sharps",
+    "label_html": "Sharps — rigid, puncture-resistant container"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Sharps go straight into the sharps container. <strong>Never recap.</strong></p>",
+   "incorrect_html": "<p>Not quite. Anything sharp goes in the sharps container; anything with body fluid is infectious; clean everyday trash is general. Never recap a needle.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-505"
+  ],
+  "notes": "Open item 01/B7: facility bin colours. Targets show the stream name as text; add the confirmed colour word (text + colour, not colour alone) when B7 closes.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "tabs",
+  "id": "hs1-601",
+  "title": "Security rules",
+  "section": "6 · Security",
+  "node_id": "hs1-s6",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Security rules for people and premises.</p>",
+  "tabs": [
+   {
+    "label": "People",
+    "body_html": "<ul><li><strong>ID always</strong> — wear your facility ID at all times.</li><li><strong>Contractor permits</strong> — a valid, approved work permit before any work starts.</li><li><strong>Visitor badges</strong> — visitors sign in at reception. Report anyone in a restricted area without one.</li></ul>"
+   },
+   {
+    "label": "Premises",
+    "body_html": "<ul><li><strong>CCTV</strong> covers public areas, entrances and parking.</li><li><strong>Lost and found</strong> — hand found items to Security.</li><li><strong>Designated parking</strong> only.</li><li><strong>No smoking anywhere</strong>, including entrances and parking.</li></ul>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+ },
+ {
+  "type": "mcq",
+  "id": "hs1-602",
+  "title": "The visitor without a badge",
+  "section": "6 · Security",
+  "node_id": "hs1-s6",
+  "objective_ids": [
+   "hs1-o6"
+  ],
+  "points": 5,
+  "prompt_html": "<p>A man without a badge is in the staff-only medication room. He says he is a contractor. What is the best action?</p>",
+  "options": [
+   {
+    "id": "a",
+    "text_html": "Politely ask for his work permit and badge; if he has none, call Security and stay with him.",
+    "correct": true,
+    "feedback_html": "<p>Correct. Contractors need an approved permit and ID. Calling Security without leaving him alone protects the medicines.</p>"
+   },
+   {
+    "id": "b",
+    "text_html": "Accept his word and carry on with your work.",
+    "correct": false,
+    "feedback_html": "<p>Risky. Anyone can say they are a contractor; without a permit and badge he should not be in a restricted area.</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Leave the room and go to find Security.",
+    "correct": false,
+    "feedback_html": "<p>That leaves him alone with the medicines. Call Security from where you are and stay with him.</p>"
+   },
+   {
+    "id": "d",
+    "text_html": "Tell him to leave and say nothing more about it.",
+    "correct": false,
+    "feedback_html": "<p>An unbadged person in a restricted area must be reported. Security needs to know, even if he leaves.</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Everyone without ID in a restricted area is your concern.</p>",
+   "incorrect_html": "<p>Not quite. Check for a permit and badge, call Security if there is none, and do not leave him alone.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-601"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "hotspot",
+  "id": "hs1-701",
+  "title": "Utility walk-around",
+  "section": "7 · Utilities",
+  "node_id": "hs1-s7",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Walk around the treatment room. Open every item.</p>",
+  "image_asset_id": "<hs1-img-treatment-room>",
+  "image_alt": "Treatment room showing sockets, a monitor, an extension lead, a water shut-off valve and an air vent.",
+  "mode": "explore",
+  "require_all": true,
+  "regions": [
+   {
+    "id": "redsocket",
+    "shape": "rect",
+    "coords": [
+     80,
+     300,
+     120,
+     100
+    ],
+    "label_html": "<strong>Emergency socket (red) ⚠ Draft — pending 01/B6</strong>",
+    "feedback_html": "<p>Backed by generator power. Plug critical equipment in here. Generators take over within seconds of an outage. ⚠ Draft — pending 01/B6</p>"
+   },
+   {
+    "id": "stdsocket",
+    "shape": "rect",
+    "coords": [
+     240,
+     300,
+     120,
+     100
+    ],
+    "label_html": "<strong>Standard socket</strong>",
+    "feedback_html": "<p>Not backed by the generator. Know which outlets in your area are which.</p>"
+   },
+   {
+    "id": "ups",
+    "shape": "rect",
+    "coords": [
+     400,
+     140,
+     180,
+     150
+    ],
+    "label_html": "<strong>UPS-backed monitor</strong>",
+    "feedback_html": "<p>The Uninterruptible Power Supply keeps critical equipment running instantly during a power cut.</p>"
+   },
+   {
+    "id": "extension",
+    "shape": "rect",
+    "coords": [
+     400,
+     380,
+     180,
+     110
+    ],
+    "label_html": "<strong>Unauthorised extension</strong>",
+    "feedback_html": "<p>A fire risk and prohibited. Remove it from use and report it; use authorised extensions only.</p>"
+   },
+   {
+    "id": "valve",
+    "shape": "rect",
+    "coords": [
+     640,
+     330,
+     130,
+     130
+    ],
+    "label_html": "<strong>Water shut-off valve</strong>",
+    "feedback_html": "<p>Know where your manual shut-off valves are, so you can act fast on a leak. Report problems to Maintenance.</p>"
+   },
+   {
+    "id": "vent",
+    "shape": "rect",
+    "coords": [
+     700,
+     40,
+     200,
+     120
+    ],
+    "label_html": "<strong>HVAC vent (isolation room)</strong>",
+    "feedback_html": "<p>Keeps air pressure and infection-control zones working. Never disable or cover isolation-room vents.</p>"
+   }
+  ],
+  "notes": "hs1-img-treatment-room is not produced yet (gate: 01/B6, Facilities confirms equipment and sockets). Region coords are placeholders in the 960×540 pending-card space (rect x,y,w,h); re-measure in the illustration's natural pixel space once approved. Emergency socket colour and generator timing ⚠ Draft — pending 01/B6.",
+  "feedback": {
+   "correct_html": "<p>You checked every utility point. Know which sockets are on generator power and where your shut-off valves are.</p>",
+   "incorrect_html": "<p>Open every item before you continue: each one tells you what to do in an outage or leak.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+ },
+ {
+  "type": "mcq",
+  "id": "hs1-702",
+  "title": "The cold isolation room",
+  "section": "7 · Utilities",
+  "node_id": "hs1-s7",
+  "objective_ids": [
+   "hs1-o7"
+  ],
+  "points": 5,
+  "prompt_html": "<p>The isolation room is cold. A visitor asks you to close the air vent. What do you do?</p>",
+  "options": [
+   {
+    "id": "a",
+    "text_html": "Leave the vent open and report the temperature to Maintenance.",
+    "correct": true,
+    "feedback_html": "<p>Correct. Isolation-room vents keep the air pressure that contains infection. Maintenance can fix the temperature safely.</p>"
+   },
+   {
+    "id": "b",
+    "text_html": "Close the vent for a short time until the room warms up.",
+    "correct": false,
+    "feedback_html": "<p>Even briefly, closing the vent breaks the infection-control zone. Never disable isolation-room vents.</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Tape a cover over the vent to reduce the draught.",
+    "correct": false,
+    "feedback_html": "<p>Covering the vent disables it. Report the problem instead.</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Never disable vents in isolation rooms; report to Maintenance.</p>",
+   "incorrect_html": "<p>Not quite. HVAC in isolation rooms protects everyone. Keep vents open and report the problem to Maintenance.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-701"
+  ],
+  "notes": "Single best answer (Phase 4 risk: rewritten as single-answer MCQ).",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-801",
+  "title": "Labels, PPM and tagging",
+  "section": "8 · Medical equipment",
+  "node_id": "hs1-s8",
+  "objective_ids": [],
+  "points": 0,
+  "blocks": [
+   {
+    "html": "<h4>Inspection label</h4><p>Shows the last inspection date and status. Never use equipment past its due date.</p>"
+   },
+   {
+    "html": "<h4>PPM schedule</h4><p>Biomedical Engineering services equipment on a fixed schedule. Report anything overdue or missing its label.</p>"
+   },
+   {
+    "html": "<h4>“Out of Service” tag</h4><p>Faulty equipment is tagged and removed from use at once. Never attempt your own repair, and never relocate equipment without Biomedical Engineering.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+ },
+ {
+  "type": "decision_scenario",
+  "id": "hs1-802",
+  "title": "The overdue infusion pump",
+  "section": "8 · Medical equipment",
+  "node_id": "hs1-s8",
+  "objective_ids": [
+   "hs1-o8"
+  ],
+  "points": 15,
+  "intro_html": "<p>A busy ward. You are about to set up an infusion pump. Its inspection label is two months overdue.</p>",
+  "start_node_id": "n1",
+  "pass_score": 3,
+  "nodes": [
+   {
+    "id": "n1",
+    "image_asset_id": "<hs1-img-pump-label>",
+    "image_alt": "Infusion pump with an overdue inspection label.",
+    "prompt_html": "<p>Inspection due: <strong>March</strong>. Today: <strong>May</strong> (fictional training dates). Do you use the pump?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "No — stop and do not use it.",
+      "score_delta": 1,
+      "goto_node_id": "n2",
+      "feedback_html": "<p><strong>Correct.</strong> A pump past its inspection date is not known to be safe today.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Yes — it seems to work, and the ward is busy.",
+      "score_delta": 0,
+      "goto_node_id": "n2",
+      "feedback_html": "<p>Working is not the same as safe. Never use equipment past its due date.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "prompt_html": "<p>What do you do with the pump?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Tag it “Out of Service” and remove it from use.",
+      "score_delta": 1,
+      "goto_node_id": "n3",
+      "feedback_html": "<p><strong>Correct.</strong> The tag stops a colleague from using it by mistake.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Put it back in the store room for someone else to deal with.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Untagged, the next person may use it. Tag it out of service.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "Open it and check it yourself.",
+      "score_delta": 0,
+      "goto_node_id": "n3",
+      "feedback_html": "<p>Never attempt your own repair or bypass a fault. That is Biomedical Engineering's job.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "prompt_html": "<p>Who do you notify?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Biomedical Engineering.",
+      "score_delta": 1,
+      "goto_node_id": "n4",
+      "feedback_html": "<p><strong>Correct.</strong> Biomedical Engineering runs the PPM programme and will inspect it.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "The supplier's sales representative.",
+      "score_delta": 0,
+      "goto_node_id": "n4",
+      "feedback_html": "<p>Inspection and PPM are coordinated by Biomedical Engineering. Report to them.</p>"
+     },
+     {
+      "id": "c",
+      "text_html": "IT support.",
+      "score_delta": 0,
+      "goto_node_id": "n4",
+      "feedback_html": "<p>IT handles network outages, not medical equipment. Notify Biomedical Engineering.</p>"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "prompt_html": "<p>A colleague says: “Just take the pump from Room 5, nobody's using it.” What do you do?</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Don't move it yourself; ask Biomedical Engineering to arrange a replacement.",
+      "score_delta": 1,
+      "goto_node_id": null,
+      "feedback_html": "<p><strong>Correct.</strong> Each location is assessed for the equipment placed there. Never relocate equipment without Biomedical Engineering, even temporarily.</p>"
+     },
+     {
+      "id": "b",
+      "text_html": "Move the pump from Room 5 — it's only for today.",
+      "score_delta": 0,
+      "goto_node_id": null,
+      "feedback_html": "<p>Even a temporary move bypasses the location assessment. Coordinate with Biomedical Engineering first.</p>"
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>Spot it, report it: you stopped, tagged, notified Biomedical Engineering and did not relocate equipment.</p>",
+   "incorrect_html": "<p>Review labels, tagging and the never-relocate rule, then try again.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-801"
+  ],
+  "notes": "Companion: Dr. Omar, char-omar-avatar-neutral (intro host) → char-omar-avatar-happy / char-omar-avatar-concern. Speaker: Dr. Omar (he uses pumps daily). hs1-img-pump-label pending (Biomedical confirmation of the label rule); label dates are fictional and kept in editable HTML text, not in the image. Room number is fictional.",
+  "reveal": "none",
+  "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague."
+ },
+ {
+  "type": "true_false",
+  "id": "hs1-803",
+  "title": "Oxygen cylinders",
+  "section": "8 · Medical equipment",
+  "node_id": "hs1-s8",
+  "objective_ids": [
+   "hs1-o8"
+  ],
+  "points": 5,
+  "prompt_html": "<p>True or false? <strong>Store oxygen cylinders upright and secured, with full and empty clearly separated.</strong></p>",
+  "correct": true,
+  "feedback": {
+   "correct_html": "<p><strong>Correct — true.</strong> Secure them with a chain or stand, separate full from empty, and keep them away from flames, sparks and smoking.</p>",
+   "incorrect_html": "<p>It is true. An unsecured cylinder can fall and be damaged, and mixing full with empty causes mistakes in an emergency.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-801"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "tabs",
+  "id": "hs1-901",
+  "title": "Ionising vs non-ionising",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Radiation is energy travelling as waves or particles.</p>",
+  "tabs": [
+   {
+    "label": "Ionising",
+    "body_html": "<p>X-ray, CT. Enough energy to remove electrons from atoms: needs <strong>dosimeters, shielding</strong> and dose tracking.</p>"
+   },
+   {
+    "label": "Non-ionising",
+    "body_html": "<p>MRI, ultrasound, laser light. Lower energy, but still needs its own precautions.</p>"
+   },
+   {
+    "label": "MRI",
+    "body_html": "<p>The <strong>magnet is always on</strong>. No metal objects, oxygen cylinders or unscreened staff. Screening every time.</p>"
+   },
+   {
+    "label": "X-ray rooms",
+    "body_html": "<p>Wear a <strong>lead apron</strong> during exposure. Stand behind the shield or leave the room.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall."
+ },
+ {
+  "type": "matching",
+  "id": "hs1-902",
+  "title": "Protection principles",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [
+   "hs1-o9"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Match each radiation protection principle to its meaning.</p>",
+  "pairs": [
+   {
+    "id": "just",
+    "left_html": "Justification",
+    "right_html": "The benefit must clearly justify the radiation risk."
+   },
+   {
+    "id": "opt",
+    "left_html": "Optimisation",
+    "right_html": "Keep exposure as low as reasonably achievable (ALARA)."
+   },
+   {
+    "id": "lim",
+    "left_html": "Limitation",
+    "right_html": "A firm upper dose limit applies to every worker and the public."
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Justify the exposure, optimise it, and never exceed the limit.</p>",
+   "incorrect_html": "<p>Not quite. Justification asks “is it worth it?”, optimisation asks “is it as low as possible?”, limitation sets the ceiling.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-901"
+  ],
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "labeled_diagram",
+  "id": "hs1-903",
+  "title": "ALARA",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>ALARA: As Low As Reasonably Achievable. Three levers you control.</p>",
+  "image_asset_id": "<hs1-img-alara>",
+  "image_alt": "ALARA: time, distance and shielding around a radiation source.",
+  "mode": "display",
+  "labels": [
+   {
+    "id": "time",
+    "text": "Time — less time near the source, less dose",
+    "x": 500,
+    "y": 140
+   },
+   {
+    "id": "distance",
+    "text": "Distance — step back; intensity drops sharply",
+    "x": 780,
+    "y": 800
+   },
+   {
+    "id": "shield",
+    "text": "Shielding — aprons, barriers and walls absorb it",
+    "x": 220,
+    "y": 800
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>Less time, more distance, the right shielding: three levers that lower your dose.</p>",
+   "incorrect_html": "<p>Read each lever: time, distance and shielding all reduce exposure.</p>",
+   "show_correct_answer": true
+  },
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision."
+ },
+ {
+  "type": "accordion",
+  "id": "hs1-904",
+  "title": "Staying accountable",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>Staying accountable near radiation.</p>",
+  "items": [
+   {
+    "title": "OSL dosimeter",
+    "body_html": "<p>Wear your Optically Stimulated Luminescence badge at all times in or near radiation areas.</p>"
+   },
+   {
+    "title": "Lead apron",
+    "body_html": "<p>Required whenever you are in the room during exposure, even for a quick scan.</p>"
+   },
+   {
+    "title": "RSO is your contact",
+    "body_html": "<p>The Radiation Safety Officer oversees compliance and dose records. Ask them about any radiation-safety concern.</p>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+ },
+ {
+  "type": "mcq",
+  "id": "hs1-905",
+  "title": "Dose bands",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [
+   "hs1-o9"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Your quarterly OSL reading shows <strong>2.0 mSv</strong>. What happens? <em>⚠ Draft — pending 01/B4</em></p>",
+  "options": [
+   {
+    "id": "a",
+    "text_html": "Notification level: you are informed and placed under monitoring.",
+    "correct": true,
+    "feedback_html": "<p>Correct for the draft bands: 2.0 mSv is between 1.25 and 3.75 mSv. ⚠ Draft — pending 01/B4</p>"
+   },
+   {
+    "id": "b",
+    "text_html": "Reading level: no action needed.",
+    "correct": false,
+    "feedback_html": "<p>The reading level ends at 1.25 mSv; 2.0 mSv is above it. ⚠ Draft — pending 01/B4</p>"
+   },
+   {
+    "id": "c",
+    "text_html": "Investigation level: an over-exposure investigation starts.",
+    "correct": false,
+    "feedback_html": "<p>Investigation starts above 3.75 mSv; 2.0 mSv is below that. ⚠ Draft — pending 01/B4</p>"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong></p><table><tr><th>Level</th><th>Quarterly reading</th><th>Action</th></tr><tr><td>Reading</td><td>up to 1.25 mSv</td><td>No action</td></tr><tr><td>Notification</td><td>1.25–3.75 mSv</td><td>You are informed and monitored</td></tr><tr><td>Investigation</td><td>above 3.75 mSv</td><td>Over-exposure investigation policy</td></tr></table><p>Draft values from the source; limits and bands ⚠ Draft — pending 01/B4.</p>",
+   "incorrect_html": "<p>Not quite. Check where 2.0 mSv falls:</p><table><tr><th>Level</th><th>Quarterly reading</th><th>Action</th></tr><tr><td>Reading</td><td>up to 1.25 mSv</td><td>No action</td></tr><tr><td>Notification</td><td>1.25–3.75 mSv</td><td>You are informed and monitored</td></tr><tr><td>Investigation</td><td>above 3.75 mSv</td><td>Over-exposure investigation policy</td></tr></table><p>Draft values from the source; limits and bands ⚠ Draft — pending 01/B4.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-904"
+  ],
+  "notes": "Open item 01/B4: dose limits (2 mSv / 3 months, 20 mSv / year) and bands (1.25 / 1.25–3.75 / > 3.75 mSv), incl. whether bands are per quarter. Draft uses the source values; no dose-band teaching screen exists before this question (hs1-904 covers OSL/RSO) — the bands table is shown in feedback as the card asks.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "matching",
+  "id": "hs1-906",
+  "title": "Laser classes",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [
+   "hs1-o9"
+  ],
+  "points": 5,
+  "prompt_html": "<p>Match each laser class to its hazard. Higher class, greater hazard. Class wording ⚠ Draft — pending 01/B5.</p>",
+  "pairs": [
+   {
+    "id": "c1",
+    "left_html": "Class 1 / 1M",
+    "right_html": "Safe under normal use"
+   },
+   {
+    "id": "c2",
+    "left_html": "Class 2 / 2M",
+    "right_html": "Low power — the blink reflex gives some protection"
+   },
+   {
+    "id": "c3r",
+    "left_html": "Class 3R",
+    "right_html": "Low risk if safety precautions are followed"
+   },
+   {
+    "id": "c3b",
+    "left_html": "Class 3B",
+    "right_html": "Hazardous — direct and reflected viewing"
+   },
+   {
+    "id": "c4",
+    "left_html": "Class 4",
+    "right_html": "Severe hazard — eyes, skin and fire"
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p><strong>Correct.</strong> Check the class label before working near any laser. ⚠ Draft — pending 01/B5</p>",
+   "incorrect_html": "<p>Not quite. The hazard rises with the class: 1 safe, 2 blink reflex, 3R low risk with precautions, 3B direct and reflected viewing, 4 severe. ⚠ Draft — pending 01/B5</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-901"
+  ],
+  "notes": "Open item 01/B5: laser class names (source also lists a plain “Class 3” row, omitted here per the Phase 2 card: 1/1M · 2/2M · 3R · 3B · 4). No laser-class teaching screen precedes this check; evidence is hs1-901 (laser as non-ionising).",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
+ },
+ {
+  "type": "content_slide",
+  "id": "hs1-907",
+  "title": "Laser hazards and measures",
+  "section": "9 · Radiation & laser",
+  "node_id": "hs1-s9",
+  "objective_ids": [],
+  "points": 0,
+  "blocks": [
+   {
+    "html": "<h4>Hazards</h4><ul><li>Eyes — permanent damage, often with no pain at first</li><li>Skin — burns from direct or reflected beams</li><li>High voltage inside the equipment</li></ul>"
+   },
+   {
+    "html": "<h4>Measures</h4><ul><li>Eye protection</li><li>Beam management</li><li>Control reflections</li><li>Training</li></ul>"
+   }
+  ],
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow."
+ },
+ {
+  "type": "game",
+  "id": "hs1-950",
+  "title": "One shift, three plans",
+  "section": "Capstone & completion",
+  "node_id": "hs1-s10",
+  "objective_ids": [
+   "hs1-o10"
+  ],
+  "points": 25,
+  "template": "case_sim",
+  "intro_html": "<p>One afternoon shift. Three things go wrong. Your decisions decide how it ends. No timer — take your time. You have 3 lives and one hint per situation.</p>",
+  "mechanics": {
+   "score": {
+    "id": "score",
+    "start": 0,
+    "streak_step": 1,
+    "max_multiplier": 1
+   },
+   "lives": {
+    "id": "lives",
+    "start": 3
+   },
+   "hints": {
+    "id": "hint",
+    "hints": [
+     {
+      "text": "People first, then the hazard. Check the spill rule: volume and toxicity. ⚠ Draft — pending D1",
+      "cost": 0
+     },
+     {
+      "text": "Smoke means fire: Code Red. In RACE, rescue comes before extinguishing.",
+      "cost": 0
+     },
+     {
+      "text": "A label past its date means the device is not safe to use today.",
+      "cost": 0
+     }
+    ]
+   }
+  },
+  "start_node_id": "n1",
+  "pass_score": 2,
+  "nodes": [
+   {
+    "id": "n1",
+    "content_html": "<p><strong>1 · 14:10.</strong> In a busy clinic, a cleaner knocks over a large 1-litre bottle of surface disinfectant. It spreads towards an oxygen cylinder. ⚠ Draft — pending D1</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Isolate the area, warn people, move the oxygen cylinder away and announce Code Orange.",
+      "to": "n2",
+      "feedback_html": "<p><strong>Right.</strong> Over the draft threshold, so Code Orange; and oxygen must be kept away from hazards. ⚠ Draft — pending D1</p>",
+      "on_choose": [
+       {
+        "do": "score.correct",
+        "points": 1
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text_html": "Grab paper towels and mop it up yourself.",
+      "to": "n2",
+      "feedback_html": "<p>A spill this size needs Code Orange, the right kit and PPE per the SDS. You lost a life. ⚠ Draft — pending D1</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     },
+     {
+      "id": "c",
+      "text_html": "Leave it to the cleaner and carry on with your patients.",
+      "to": "n2",
+      "feedback_html": "<p>The hazard and the oxygen cylinder are still next to people. Isolate and warn first. You lost a life.</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "content_html": "<p><strong>2 · 15:30.</strong> The alarm sounds. Smoke is coming from the store room, and a patient is waiting in the chair beside the door.</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Code Red: move the patient away first, then raise the alarm and close the door.",
+      "to": "n3",
+      "feedback_html": "<p><strong>Right.</strong> Smoke means Code Red, and RACE starts with rescue.</p>",
+      "on_choose": [
+       {
+        "do": "score.correct",
+        "points": 1
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text_html": "Code Orange: it could be the disinfectant from earlier.",
+      "to": "n3",
+      "feedback_html": "<p>Smoke means fire: Code Red. The wrong code sends the wrong team. You lost a life.</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     },
+     {
+      "id": "c",
+      "text_html": "Go straight in with an extinguisher.",
+      "to": "n3",
+      "feedback_html": "<p>The patient is still beside the smoke. Rescue comes before extinguishing. You lost a life.</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "content_html": "<p><strong>3 · 17:00.</strong> All clear. Dr. Omar needs suction for a patient and you notice the suction unit's inspection label has expired.</p>",
+    "choices": [
+     {
+      "id": "a",
+      "text_html": "Tag it “Out of Service”, use another approved unit, and notify Biomedical Engineering.",
+      "to": "debrief",
+      "feedback_html": "<p><strong>Right.</strong> Dr. Omar: “That is the habit we want from every new colleague.”</p>",
+      "on_choose": [
+       {
+        "do": "score.correct",
+        "points": 1
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text_html": "Use it — it switched on fine.",
+      "to": "debrief",
+      "feedback_html": "<p>Working is not the same as safe. Never use equipment past its due date. You lost a life.</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     },
+     {
+      "id": "c",
+      "text_html": "Fetch the unit from the next room without telling anyone.",
+      "to": "debrief",
+      "feedback_html": "<p>Never relocate equipment without Biomedical Engineering, and the expired unit is still untagged. You lost a life.</p>",
+      "on_choose": [
+       {
+        "do": "lives.lose",
+        "n": 1
+       },
+       {
+        "do": "score.wrong"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "debrief",
+    "content_html": "<h4>Debrief: one shift, three plans</h4><ul><li><strong>The spill</strong> — Hazmat &amp; Waste plan (Code Orange), with Fire Safety (oxygen kept away).</li><li><strong>The smoke</strong> — Fire Safety plan (Code Red, RACE) and Internal Disaster (code activation).</li><li><strong>The suction unit</strong> — Biomedical plan (inspection label, out-of-service tag, Biomedical Engineering).</li></ul>",
+    "choices": [
+     {
+      "id": "finish",
+      "text_html": "Finish the shift and see your score.",
+      "to": null
+     }
+    ]
+   }
+  ],
+  "feedback": {
+   "correct_html": "<p>You connected three plans in one shift: people first, the right code, and equipment you can trust.</p>",
+   "incorrect_html": "<p>Some decisions put people at risk. Review the debrief: Hazmat &amp; Waste (spill), Fire Safety (RACE), Biomedical (labels). Then try again.</p>",
+   "show_correct_answer": true
+  },
+  "evidence_screen_ids": [
+   "hs1-301",
+   "hs1-401",
+   "hs1-505",
+   "hs1-801"
+  ],
+  "notes": "Companions: Noor, char-noor-explaining (host, intro) + Dr. Omar, char-omar-avatar-neutral in node 3 (his line is in the node feedback text; no companion is placed over the question). Speakers: Noor + Dr. Omar. Open decision D1: draft threshold ≥ 500 mL / highly toxic, reactive or explosive. Score counts best choices (1 point each, multiplier off); pass_score 2 of 3. Phase 3 rule “when wrong if lives==0 then goto debrief” is not expressible (GameAction has no goto); when lives run out the engine finalises the game as failed and shows the incorrect feedback, which carries the debrief summary. With 3 lives and 3 decision nodes, lives cannot reach 0 before the debrief.",
+  "reveal": "none",
+  "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Dr. Omar: That is the habit we want from every new colleague."
+ },
+ {
+  "type": "results_breakdown",
+  "id": "hs1-980",
+  "title": "Your results",
+  "section": "Capstone & completion",
+  "node_id": "hs1-s10",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<p>Your results by objective. Pass mark: 80% (176 of 220 points). Revisit any section below 70%.</p>",
+  "sections": [
+   {
+    "title": "hs1-o1 · The eight FMS plans",
+    "screen_ids": [
+     "hs1-104"
+    ],
+    "advice_html": "<p>Revisit section <strong>1 · The eight FMS plans</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o2 · AREC and hierarchy of controls",
+    "screen_ids": [
+     "hs1-204",
+     "hs1-205"
+    ],
+    "advice_html": "<p>Revisit section <strong>2 · Occupational Health & Safety</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o3 · Emergency codes and response pattern",
+    "screen_ids": [
+     "hs1-302",
+     "hs1-304"
+    ],
+    "advice_html": "<p>Revisit section <strong>3 · Emergency codes</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o4 · RACE, PASS, extinguishers and evacuation",
+    "screen_ids": [
+     "hs1-402",
+     "hs1-403",
+     "hs1-405",
+     "hs1-407",
+     "hs1-408",
+     "hs1-409"
+    ],
+    "advice_html": "<p>Revisit section <strong>4 · Fire safety</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o5 · GHS, NFPA, Code Orange and waste",
+    "screen_ids": [
+     "hs1-502",
+     "hs1-503",
+     "hs1-504",
+     "hs1-507",
+     "hs1-508"
+    ],
+    "advice_html": "<p>Revisit section <strong>5 · Hazardous materials & waste</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o6 · Security rules",
+    "screen_ids": [
+     "hs1-602"
+    ],
+    "advice_html": "<p>Revisit section <strong>6 · Security</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o7 · Utilities",
+    "screen_ids": [
+     "hs1-702"
+    ],
+    "advice_html": "<p>Revisit section <strong>7 · Utilities</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o8 · Medical equipment",
+    "screen_ids": [
+     "hs1-802",
+     "hs1-803"
+    ],
+    "advice_html": "<p>Revisit section <strong>8 · Medical equipment</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o9 · Radiation and laser",
+    "screen_ids": [
+     "hs1-902",
+     "hs1-905",
+     "hs1-906"
+    ],
+    "advice_html": "<p>Revisit section <strong>9 · Radiation & laser</strong> from the menu, then try its questions again.</p>"
+   },
+   {
+    "title": "hs1-o10 · Capstone",
+    "screen_ids": [
+     "hs1-950"
+    ],
+    "advice_html": "<p>Revisit section <strong>Capstone & completion</strong> from the menu, then try its questions again.</p>"
+   }
+  ],
+  "weak_threshold": 70,
+  "show_total": true,
+  "notes": "Companion: Noor, char-noor-success, L6 right, half-body (alt: Noor, the safety liaison, celebrating). Speaker: Noor. “Revisit” is advice text naming the section in the menu; results_breakdown has no deep-link field.",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow."
+ },
+ {
+  "type": "poll",
+  "id": "hs1-981",
+  "title": "How confident are you now?",
+  "section": "Capstone & completion",
+  "node_id": "hs1-s10",
+  "objective_ids": [],
+  "points": 0,
+  "prompt_html": "<p>How confident are you to act in a fire right now?</p>",
+  "options": [
+   {
+    "id": "c1",
+    "text_html": "1 — Not confident yet"
+   },
+   {
+    "id": "c2",
+    "text_html": "2 — A little confident"
+   },
+   {
+    "id": "c3",
+    "text_html": "3 — Fairly confident"
+   },
+   {
+    "id": "c4",
+    "text_html": "4 — Very confident"
+   }
+  ],
+  "multi": false,
+  "allow_text": false,
+  "reflection_html": "<p>Not scored. Compare this with your answer at the start of the course.</p>",
+  "animation": "fade-up",
+  "reveal": "none",
+  "narration_text": "Noor: This reflection is not scored. Choose the response that helps you set one intention for your next shift."
+ },
+ {
+  "type": "summary",
+  "id": "hs1-990",
+  "title": "Your completion actions",
+  "section": "Capstone & completion",
+  "node_id": "hs1-s10",
+  "objective_ids": [],
+  "points": 0,
+  "body_html": "<p>Finish these this week:</p><ul><li>✔ Locate your evacuation route and assembly point</li><li>✔ Save emergency numbers to your phone</li><li>✔ Find your nearest eyewash</li><li>✔ Ask your supervisor who your Safety Liaison is</li><li>✔ Sign the acknowledgement ⚠ Draft — pending D14</li></ul><p><strong>Contact:</strong> your Safety &amp; Security Manager.</p>",
+  "show_score": true,
+  "show_completion": true,
+  "notes": "Companions: Noor char-noor-success half-body right + Dr. Omar char-omar-avatar-happy avatar (L6). Two-voice close: noor-1 then omar-1. Open decision D14: how the acknowledgement is captured (LMS attestation vs final poll + e-signature). Emergency numbers depend on D2.",
+  "animation": "fade-up",
+  "reveal": "auto",
+  "narration_text": "Noor: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. Dr. Omar: Carry this practical rule into your next decision."
+ }
+]

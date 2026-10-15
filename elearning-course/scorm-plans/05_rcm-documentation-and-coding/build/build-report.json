@@ -12,16 +12,16 @@
   ],
   "module_colour": "#7C0041",
   "build": {
-    "project_id": "proj_01M4YT1N1YKXGMXE4R63SJTTNK",
-    "job_id": "job_01M4YT1N2F9GV6M27MX0TY9H70",
+    "project_id": "proj_01M4YTDX4DP9W70C01N2H4D4Y1",
+    "job_id": "job_01M4YTDX4X10EVYRB9ANQAXGPD",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/1LL9QRIYw5RfAVidy65RzYANakSg_WwO",
+    "download_url": "http://localhost/scorm/files/NblbKLYS-hFy_mooweDpkOE7eWBjQ2Dj",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4YT1N1YKXGMXE4R63SJTTNK",
+    "project_id": "proj_01M4YTDX4DP9W70C01N2H4D4Y1",
     "strict": false,
     "error_count": 0,
     "warn_count": 5,
@@ -73,7 +73,7 @@
   },
   "package": {
     "file": "MC_05_RCM-A_v0.1-draft_1.2.zip",
-    "bytes": 288110
+    "bytes": 288109
   },
   "preview": "preview.html"
 }

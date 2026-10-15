@@ -83,6 +83,68 @@ def gate_for(aid: str) -> str:
     return "Still to produce and approve (visual-and-motion-agent-brief.md)"
 
 
+def natural_size(src: str) -> tuple[int, int]:
+    """Pixel size of a data-URI image (PNG/JPEG header or SVG width/height/viewBox)."""
+    import struct
+    head, b64 = src.split(",", 1)
+    raw = base64.b64decode(b64)
+    if "png" in head:
+        return struct.unpack(">II", raw[16:24])
+    if "svg" in head:
+        t = raw[:600].decode("utf-8", "ignore")
+        m = re.search(r'width="([\d.]+)"[^>]*height="([\d.]+)"', t)
+        if m:
+            return int(float(m.group(1))), int(float(m.group(2)))
+        m = re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', t)
+        if m:
+            return int(float(m.group(1))), int(float(m.group(2)))
+    if "jpeg" in head:
+        i = 2
+        while i < len(raw):
+            if raw[i] != 0xFF:
+                break
+            marker, ln = raw[i + 1], struct.unpack(">H", raw[i + 2:i + 4])[0]
+            if marker in (0xC0, 0xC2):
+                h, w = struct.unpack(">HH", raw[i + 5:i + 9])
+                return w, h
+            i += 2 + ln
+    return 960, 540
+
+
+def explore_hotspot_css(screens: list[dict], assets: dict[str, dict]) -> str:
+    """Position explore-mode hotspot regions with CSS percentages.
+
+    Workaround for edumints 4bbf459: ``bindHotspot`` returns before ``place()`` for
+    ``hs-explore`` hotspots, so their regions are never positioned at runtime (they stack in
+    the corner). Percentages of the image's natural size give the same placement, scale with
+    the stage, and need no script. Remove once the compiler places explore regions itself.
+    """
+    rules = []
+    for s in screens:
+        if s.get("type") != "hotspot" or s.get("mode") != "explore":
+            continue
+        aid = s.get("image_asset_id")
+        if aid not in assets:
+            continue
+        w, h = natural_size(assets[aid]["source"])
+        for r in s.get("regions", []):
+            c = [float(x) for x in r.get("coords", [])]
+            if r.get("shape") == "circle" and len(c) == 3:
+                x, y, wd, ht = c[0] - c[2], c[1] - c[2], 2 * c[2], 2 * c[2]
+                extra = "border-radius:50%;"
+            elif len(c) == 4:
+                x, y, wd, ht = c
+                extra = ""
+            else:
+                continue
+            sel = f'.screen[data-screen-id="{s["id"]}"] .hs-explore .hotspot-region[data-region="{r["id"]}"]'
+            rules.append(f"{sel}{{left:{x / w * 100:.3f}%;top:{y / h * 100:.3f}%;"
+                         f"width:{wd / w * 100:.3f}%;height:{ht / h * 100:.3f}%;{extra}}}")
+    if rules:
+        rules.insert(0, ".hs-explore .hotspot-stage .hotspot-img{display:block;width:100%;height:auto}")
+    return "\n".join(rules)
+
+
 def data_uri(path: Path) -> str:
     return f"data:{MIME[path.suffix.lower()]};base64," + base64.b64encode(path.read_bytes()).decode()
 
@@ -222,6 +284,7 @@ def build(module: str) -> dict:
         "outline": outline,
         "screens": built,
         "assets": list(assets.values()),
+        "__extra_css": explore_hotspot_css(built, assets),
     }
     out = mdir / "build"
     out.mkdir(exist_ok=True)
