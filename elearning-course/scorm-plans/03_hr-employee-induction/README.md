@@ -14,6 +14,7 @@
 | Completion | `viewed_all_and_passed`, passing score **70** |
 | Scored screens | 15, 145 points in total |
 | Prerequisite | None — this is the first module in the learning path |
+| Draft SCORM (v0.1) | [`build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip`](build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

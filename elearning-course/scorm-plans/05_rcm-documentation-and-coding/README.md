@@ -14,6 +14,7 @@
 | Completion | `viewed_all_and_passed`, passing score **80** |
 | Scored screens | 10, 100 points in total |
 | Prerequisite | None. Part B (module 06) follows. |
+| Draft SCORM (v0.1) | [`build/MC_05_RCM-A_v0.1-draft_1.2.zip`](build/MC_05_RCM-A_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

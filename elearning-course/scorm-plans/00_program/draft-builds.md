@@ -2,18 +2,20 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> Built **2026-10-15** with the real edumints compiler (`4bbf459`) in-process — see [`build-pipeline.md`](build-pipeline.md) §6. These are **drafts for review and LMS smoke tests, not release builds**: every value tied to an open Phase 0 decision is shown as `⚠ Draft — pending <ID>`, media that is not produced yet is a branded PENDING card, and there is no narration audio until D10 (captions only).
+> Built **2026-10-15**, rebuilt the same day with the full-size companion art, with the real edumints compiler (`4bbf459`) in-process — see [`build-pipeline.md`](build-pipeline.md) §6. These are **drafts for review and LMS smoke tests, not release builds**: every value tied to an open Phase 0 decision is shown as `⚠ Draft — pending <ID>`, media that is not produced yet is a branded PENDING card, and there is no narration audio until D10 (captions only).
 
+<!-- builds:start -->
 | Module | SCORM | Screens | Scored | lint errors | lint warnings | validate | Package | KB | Pending media | Companions placed | Explore-hotspot rules |
 |---|---|---:|---:|---:|---|---|---|---:|---:|---:|---:|
-| [01](../01_health-and-safety-1/build/) | 2004 | 54 | 24 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`×5, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_2004.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_2004.zip) | 1882 | 4 | 7 | 22 |
-| [02](../02_health-and-safety-2/build/) | 1.2 | 26 | 13 | 0 | `free_hints`, `text_only_run`, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 3031 | 9 | 4 | 11 |
-| [03](../03_hr-employee-induction/build/) | 2004 | 36 | 15 | 0 | `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_2004.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip) | 612 | 23 | 3 | 7 |
-| [04](../04_operations-and-my-care/build/) | 1.2 | 13 | 4 | 0 | — | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2055 | 4 | 3 | 6 |
-| [05](../05_rcm-documentation-and-coding/build/) | 1.2 | 21 | 10 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_05_RCM-A_v0.1-draft_1.2.zip`](../05_rcm-documentation-and-coding/build/MC_05_RCM-A_v0.1-draft_1.2.zip) | 281 | 0 | 3 | 0 |
-| [06](../06_rcm-ebp-benefits-and-rejections/build/) | 1.2 | 15 | 7 | 0 | `scored_over_objectives` | ok* | [`MC_06_RCM-B_v0.1-draft_1.2.zip`](../06_rcm-ebp-benefits-and-rejections/build/MC_06_RCM-B_v0.1-draft_1.2.zip) | 285 | 0 | 3 | 0 |
-| [07](../07_quality-safety-and-risk/build/) | 1.2 | 22 | 11 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 544 | 2 | 3 | 6 |
-| [08](../08_it-ehr-consultation/build/) | 1.2 | 20 | 11 | 0 | `too_many_list_items`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 287 | 31 | 3 | 6 |
+| [01](../01_health-and-safety-1/build/) | 2004 | 54 | 24 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`×5, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_2004.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_2004.zip) | 2312 | 4 | 7 | 22 |
+| [02](../02_health-and-safety-2/build/) | 1.2 | 26 | 13 | 0 | `free_hints`, `text_only_run`, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 3245 | 9 | 4 | 11 |
+| [03](../03_hr-employee-induction/build/) | 2004 | 36 | 15 | 0 | `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_2004.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip) | 1186 | 23 | 3 | 7 |
+| [04](../04_operations-and-my-care/build/) | 1.2 | 13 | 4 | 0 | — | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2455 | 4 | 3 | 6 |
+| [05](../05_rcm-documentation-and-coding/build/) | 1.2 | 21 | 10 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_05_RCM-A_v0.1-draft_1.2.zip`](../05_rcm-documentation-and-coding/build/MC_05_RCM-A_v0.1-draft_1.2.zip) | 498 | 0 | 3 | 0 |
+| [06](../06_rcm-ebp-benefits-and-rejections/build/) | 1.2 | 15 | 7 | 0 | `scored_over_objectives` | ok* | [`MC_06_RCM-B_v0.1-draft_1.2.zip`](../06_rcm-ebp-benefits-and-rejections/build/MC_06_RCM-B_v0.1-draft_1.2.zip) | 685 | 0 | 3 | 0 |
+| [07](../07_quality-safety-and-risk/build/) | 1.2 | 22 | 11 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 787 | 2 | 3 | 6 |
+| [08](../08_it-ehr-consultation/build/) | 1.2 | 20 | 11 | 0 | `too_many_list_items`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 683 | 31 | 3 | 6 |
+<!-- builds:end -->
 
 \* XSD schemas unreachable offline (`schema_unavailable`): structural checks only. Rerun with schema access before release.
 
@@ -34,10 +36,18 @@ Each module folder `build/` holds `course-spec.json` (what was compiled), `asset
 - **NFPA 704 diagrams were wrong** (`hs1-img-nfpa-blank`, `hs1-img-nfpa-301w`, `hs2-img-nfpa-230`): the quadrants were rotated (blue at the top) and the numbers sat on the wrong colours. Redrawn to the standard layout — red flammability top, blue health left, yellow instability/reactivity right, white special bottom — and the blank diagram no longer prints the answers. `hs1-503` markers re-placed.
 - **Explore hotspots did not work in the edumints player**: `bindHotspot` returns before positioning regions in explore mode, so every region stacked in a corner. `build_course_spec.py` now writes each region's position as CSS percentages (verified on the 01 corridor). Report the bug upstream and remove the workaround once fixed.
 
+- **Title-slide subline** (e.g. 07 "MODULE 07 · CARING") was dark text on navy; the skin now sets it in mist capitals.
+- **One build route.** `tools/build_scorm_packages.py` (03 + 07 only, writes to the ignored `.generated/`, no `lint_course`, no brand skin, no hotspot fix) is **superseded** by `build_course_spec.py` + `edumints_build.py`, which build all eight with the `lint_course` gate. Keep it only as a reference; do not use it for review packages.
+
+Refresh the table above after any rebuild with `python3 elearning-course/scorm-plans/tools/draft_builds_report.py`.
+
 ## Still open (do before v1.0)
 
 1. **Narration scripts**: in the six generated packs, many question/simulation screens carry generic filler narration ("The next choice asks you to apply the rule…"). Rewrite before any voice work (D10).
 2. **Schema limits** recorded in each `screens.json` `notes`: no per-card feedback on drag/sort, no per-choice companion reaction, no media on mcq/matching/escape-room, one hint ladder per game.
-3. **Companion art**: full-size transparent PNGs are now in `characters/assets/` (G6 closed 2026-10-15 via `tools/import_companion_art.py`); packs and boards generated before that date still embed the interim preview JPGs and pick up the PNGs at the next rebuild.
+3. **Companion art**: ✅ all eight packages now embed the full-size transparent PNGs from `characters/assets/`, downscaled at build time (poses ≤ 520×700, avatars ≤ 256 px) so packages stay small.
 4. **Pending media and captures**: see each `asset-map.json`; EHR (31) and Oracle (5) screenshots need the approved test environments.
 5. **Phase 0**: every `⚠ Draft — pending` closes with its decision; rebuild with the two tools.
+6. **Content gap** `hs2-031` (evacuation tools asked before they are taught).
+7. **Upstream engine bug**: report the explore-hotspot positioning bug to edumints-scorm-mcp, then drop the CSS workaround.
+8. **XSD validation** with the SCORM schemas reachable (`SCORM_SCHEMA_DIR`), then SCORM Cloud and the client LMS (D9).

@@ -14,6 +14,7 @@
 | Completion | `viewed_all_and_passed`, passing score **70** |
 | Scored screens | 4, 50 points in total |
 | Prerequisite | 03 Welcome On Board (recommended) |
+| Draft SCORM (v0.1) | [`build/MC_04_OpsMyCare_v0.1-draft_1.2.zip`](build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

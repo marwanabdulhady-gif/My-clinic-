@@ -14,6 +14,7 @@
 | Completion | `viewed_all_and_passed`, passing score **80** |
 | Scored screens | 11, 95 points in total |
 | Prerequisite | 03 Welcome On Board |
+| Draft SCORM (v0.1) | [`build/MC_07_ClinicalGov_v0.1-draft_1.2.zip`](build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

@@ -22,7 +22,8 @@ body,.app-header,.stage,.screen,button,.opt,.btn,input,select,textarea{font-fami
 .title-main{background:none;-webkit-text-fill-color:#fff;color:#fff;font-size:44px;font-weight:700;
   max-width:58%;line-height:1.12}
 .title-sub{color:var(--mc-mist);font-size:20px;max-width:58%}
-.title-slide .rich{position:static}
+.title-slide .rich{position:static;color:var(--mc-mist);max-width:58%}
+.title-slide .rich p{color:var(--mc-mist);font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:14px}
 
 /* Companion portrait cards on the title (white card, 4px top edge in the character colour) */
 .mc-guides{position:absolute;right:48px;bottom:0;display:flex;gap:16px;align-items:flex-end;z-index:2}

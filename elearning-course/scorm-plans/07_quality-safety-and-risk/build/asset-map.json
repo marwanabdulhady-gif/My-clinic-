@@ -13,8 +13,8 @@
     },
     "char-noor-welcome": {
       "status": "file",
-      "path": "00_program/characters/previews/char-noor-welcome.jpg",
-      "interim": true
+      "path": "00_program/characters/assets/char-noor-welcome.png",
+      "interim": false
     },
     "brand-value-tile-caring-purple": {
       "status": "file",
@@ -37,7 +37,7 @@
     "char-noor-avatar-concern": {
       "status": "file",
       "path": "00_program/characters/assets/char-noor-avatar-concern.png",
-      "interim": true
+      "interim": false
     },
     "qsr-img-matrix": {
       "status": "file",
@@ -52,7 +52,7 @@
     "char-noor-avatar-neutral": {
       "status": "file",
       "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
-      "interim": true
+      "interim": false
     },
     "brand-logo-horizontal-navy": {
       "status": "file",
