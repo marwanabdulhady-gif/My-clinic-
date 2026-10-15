@@ -1,0 +1,48 @@
+{
+  "module": "04_operations-and-my-care",
+  "edumints_revision": "4bbf459",
+  "theme_keys": [
+    "color",
+    "custom_css",
+    "custom_fonts",
+    "logo_alt",
+    "logo_asset_id",
+    "name",
+    "typography"
+  ],
+  "module_colour": "#9D3293",
+  "build": {
+    "project_id": "proj_01M4YSSZEQ662YCRTAPG9XV1TV",
+    "job_id": "job_01M4YSSZFT0819W01H0H88FB7P",
+    "status": "done",
+    "download_url": "http://localhost/scorm/files/8odndrlJ4IU0QhFaexkLOXOsOSz3g0eU",
+    "warnings": [
+      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
+    ]
+  },
+  "lint_course": {
+    "project_id": "proj_01M4YSSZEQ662YCRTAPG9XV1TV",
+    "strict": false,
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "evidence_binding_coverage": 1.0,
+    "issues": []
+  },
+  "validate_package": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "schema_unavailable",
+        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
+        "path": "imsmanifest.xml"
+      }
+    ]
+  },
+  "package": {
+    "file": "MC_04_OpsMyCare_v0.1-draft_1.2.zip",
+    "bytes": 2103934
+  },
+  "preview": "preview.html"
+}
