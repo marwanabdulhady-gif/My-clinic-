@@ -1,0 +1,54 @@
+/* My Clinic skin for the edumints player (theme.custom_css).
+   Applied on top of brand_to_theme(brand-kit.edumints.json). Rules follow brand-identity.md:
+   navy structure, Montserrat, one module highlight, white portrait cards for the companions.
+   Keep selectors on edumints' public classes only; no layout of interactions is changed. */
+
+:root{--mc-navy:#003867;--mc-mist:#C0CED9;--mc-ink:#1F2A37;--mc-bg:#F4F7FA;
+  --mc-noor:#652D8C;--mc-omar:#008C99}
+body,.app-header,.stage,.screen,button,.opt,.btn,input,select,textarea{font-family:Montserrat,Arial,sans-serif}
+.chrome-logo{height:28px;max-width:150px}
+.brand-title{font-weight:600;color:var(--mc-navy)}
+.screen-title{color:var(--mc-navy);letter-spacing:-.01em}
+
+/* L1 title — full-bleed navy gradient, white type, petal kept subtle */
+.screen[data-type="title_slide"] .screen-inner{padding:0 !important;height:100%;display:flex;flex-direction:column}
+.screen[data-type="title_slide"] .tl-block{flex:1;display:flex;min-height:0}
+.title-slide{position:relative;align-self:stretch;flex:1;min-height:100%;margin:0;border-radius:18px;overflow:hidden;
+  background:radial-gradient(120% 140% at 0% 100%,#0B4C82 0%,var(--mc-navy) 55%,#002647 100%);
+  padding:56px 64px;align-items:flex-start;text-align:left;justify-content:center}
+.title-slide::after{content:"";position:absolute;right:-90px;top:-90px;width:360px;height:360px;
+  border-radius:50% 50% 50% 0;background:rgba(255,255,255,.05);transform:rotate(45deg)}
+.title-kicker{display:none}
+.title-main{background:none;-webkit-text-fill-color:#fff;color:#fff;font-size:44px;font-weight:700;
+  max-width:58%;line-height:1.12}
+.title-sub{color:var(--mc-mist);font-size:20px;max-width:58%}
+.title-slide .rich{position:static}
+
+/* Companion portrait cards on the title (white card, 4px top edge in the character colour) */
+.mc-guides{position:absolute;right:48px;bottom:0;display:flex;gap:16px;align-items:flex-end;z-index:2}
+.mc-guide{background:#fff;border-radius:16px 16px 0 0;padding:10px 10px 0;width:170px;
+  box-shadow:0 -6px 24px rgba(0,0,0,.18);border-top:4px solid var(--mc-omar)}
+.mc-guide.noor{border-top-color:var(--mc-noor)}
+.mc-guide .item-media{max-height:250px;width:100%;object-fit:cover;object-position:top;border-radius:10px 10px 0 0;margin:0}
+.mc-guide span{display:block;font-size:12px;font-weight:600;color:var(--mc-navy);padding:6px 2px 8px}
+
+/* L5 scenario host avatar row */
+.mc-host{display:flex;align-items:center;gap:12px;margin:0 0 12px}
+.mc-host .item-media{width:56px;height:56px;max-height:56px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--mc-omar);margin:0;background:#fff}
+.mc-host.noor .item-media{border-color:var(--mc-noor)}
+.mc-host span{font-size:13px;font-weight:600;color:var(--mc-navy)}
+
+/* L3 companion in the media column of a content slide */
+.screen[data-type="content_slide"] img.media[data-asset^="char-"]{max-height:330px;object-fit:contain;
+  background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,56,103,.12)}
+
+/* Pending-asset cards stay visibly unfinished but on-brand */
+img[data-asset][alt^="PENDING"]{outline:2px dashed var(--mc-mist)}
+
+@media (max-width:700px){
+  .title-main,.title-sub{max-width:100%}
+  .mc-guides{position:static;margin-top:24px}
+  .mc-guide{width:120px}
+}
+@media (prefers-reduced-motion:reduce){.title-slide::after{display:none}}

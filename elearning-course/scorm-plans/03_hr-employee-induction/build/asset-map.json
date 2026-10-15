@@ -1,0 +1,187 @@
+{
+  "companions_placed": 3,
+  "assets": {
+    "brand-background-title-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/background-title-navy.png",
+      "interim": false
+    },
+    "_audio": {
+      "status": "PENDING",
+      "gate": "Voices D10",
+      "count": 36
+    },
+    "char-omar-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-welcome.jpg",
+      "interim": true
+    },
+    "char-noor-welcome": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-noor-welcome.jpg",
+      "interim": true
+    },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/previews/char-omar-explaining.jpg",
+      "interim": true
+    },
+    "brand-value-tile-collaborative-burgundy": {
+      "status": "file",
+      "path": "00_program/brand/assets/value-tile-collaborative-burgundy.png",
+      "interim": false
+    },
+    "brand-value-tile-responsible-magenta": {
+      "status": "file",
+      "path": "00_program/brand/assets/value-tile-responsible-magenta.png",
+      "interim": false
+    },
+    "brand-value-tile-ambitious-teal": {
+      "status": "file",
+      "path": "00_program/brand/assets/value-tile-ambitious-teal.png",
+      "interim": false
+    },
+    "brand-value-tile-caring-purple": {
+      "status": "file",
+      "path": "00_program/brand/assets/value-tile-caring-purple.png",
+      "interim": false
+    },
+    "hr-img-7c-closer": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-cure": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-capabilities": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-culture": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-clinicians": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-care": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-7c-cost": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-serve-icons": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-serve-icons.svg",
+      "interim": false
+    },
+    "hr-img-map": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-map.svg",
+      "interim": false
+    },
+    "hr-img-leaders-ceo": {
+      "status": "PENDING",
+      "gate": "Client photo with consent, or role tile (D5/B6)"
+    },
+    "hr-img-leaders-cmo": {
+      "status": "PENDING",
+      "gate": "Client photo with consent, or role tile (D5/B6)"
+    },
+    "hr-img-leaders-coo": {
+      "status": "PENDING",
+      "gate": "Client photo with consent, or role tile (D5/B6)"
+    },
+    "hr-img-leaders-cfo": {
+      "status": "PENDING",
+      "gate": "Client photo with consent, or role tile (D5/B6)"
+    },
+    "hr-img-award-star": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-award-trophy": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-ethics-icons": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-icons.svg",
+      "interim": false
+    },
+    "hr-img-ethics-meeting": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-ethics-corridor": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-ethics-desk": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "char-noor-avatar-neutral": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-noor-avatar-neutral.png",
+      "interim": true
+    },
+    "hr-img-help-icons": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-help-icons.svg",
+      "interim": false
+    },
+    "hr-img-leavedesk": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-gosi-bar": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-gosi-bar.svg",
+      "interim": false
+    },
+    "hr-img-oracle-1": {
+      "status": "PENDING",
+      "gate": "Test-account capture after B8"
+    },
+    "hr-img-oracle-2": {
+      "status": "PENDING",
+      "gate": "Test-account capture after B8"
+    },
+    "hr-img-oracle-3": {
+      "status": "PENDING",
+      "gate": "Test-account capture after B8"
+    },
+    "hr-img-oracle-4": {
+      "status": "PENDING",
+      "gate": "Test-account capture after B8"
+    },
+    "hr-img-oracle-5": {
+      "status": "PENDING",
+      "gate": "Test-account capture after B8"
+    },
+    "hr-img-idcard": {
+      "status": "PENDING",
+      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+    },
+    "hr-img-benefits-wheel": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-benefits-wheel.svg",
+      "interim": false
+    },
+    "hr-img-exit-icons": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-exit-icons.svg",
+      "interim": false
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file",
+      "path": "00_program/brand/assets/logo-horizontal-navy.png",
+      "interim": false
+    }
+  }
+}
