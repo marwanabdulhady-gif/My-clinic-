@@ -1,0 +1,32 @@
+[
+  {
+    "module": "03_hr-employee-induction",
+    "title": "My Clinic — Welcome On Board: My Clinic & HR Essentials",
+    "scorm_version": "2004",
+    "screens": 36,
+    "scored": 15,
+    "objectives": 6,
+    "outline_nodes": 10,
+    "assets": 36,
+    "points_total": 145,
+    "zip_path": "/home/user/My-clinic-/.generated/scorm/03_hr-employee-induction_2004.zip",
+    "zip_bytes": 494911,
+    "validate_project_errors": [],
+    "validate_zip_blocking": 0
+  },
+  {
+    "module": "07_quality-safety-and-risk",
+    "title": "My Clinic — Clinical Governance: Quality, Patient Safety & Risk",
+    "scorm_version": "1.2",
+    "screens": 22,
+    "scored": 11,
+    "objectives": 5,
+    "outline_nodes": 7,
+    "assets": 7,
+    "points_total": 95,
+    "zip_path": "/home/user/My-clinic-/.generated/scorm/07_quality-safety-and-risk_1.2.zip",
+    "zip_bytes": 421403,
+    "validate_project_errors": [],
+    "validate_zip_blocking": 0
+  }
+]
