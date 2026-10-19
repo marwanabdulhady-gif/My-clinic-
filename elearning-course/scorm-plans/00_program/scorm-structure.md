@@ -18,9 +18,9 @@ Six commercial courses (the proposal) = **eight SCORM packages**. Each package i
 
 | LMS course (proposal) | Package | File (v1.0) | SCORM | Screens | Scored | Points | Pass | Seat time | Completion |
 |---|---|---|---|---:|---:|---:|---|---|---|
-| 1 HSE | 01 Facility Management & Safety | `MC_01_FMS_v1.0_2004.zip` | 2004 4th ed. | 54 | 24 | 220 | 80% (176) | ~55 min | viewed all + passed |
+| 1 HSE | 01 Facility Management & Safety | `MC_01_FMS_v1.0_1.2.zip` | 1.2 | 54 | 24 | 220 | 80% (176) | ~55 min | viewed all + passed |
 | 1 HSE | 02 Safety in Practice Lab | `MC_02_SafetyLab_v1.0_1.2.zip` | 1.2 | 26 | 13 | 145 | 80% (116) | ~33 min | viewed all + passed |
-| 2 HR | 03 Welcome On Board | `MC_03_WelcomeOnBoard_v1.0_2004.zip` | 2004 4th ed. | 36 | 15 | 145 | 70% (102) | ~45 min | viewed all + passed |
+| 2 HR | 03 Welcome On Board | `MC_03_WelcomeOnBoard_v1.0_1.2.zip` | 1.2 | 36 | 15 | 145 | 70% (102) | ~45 min | viewed all + passed |
 | 3 Operations | 04 Who Does What | `MC_04_OpsMyCare_v1.0_1.2.zip` | 1.2 | 13 | 4 | 50 | 70% (35) | ~15 min | viewed all + passed |
 | 4 RCM | 05 RCM Part A | `MC_05_RCM-A_v1.0_1.2.zip` | 1.2 | 21 | 10 | 100 | 80% (80) | ~25 min | viewed all + passed |
 | 4 RCM | 06 RCM Part B | `MC_06_RCM-B_v1.0_1.2.zip` | 1.2 | 15 | 7 | 80 | 80% (64) | ~20 min | viewed all + passed |
@@ -84,7 +84,7 @@ Rules:
 
 ## 3. Level 3 — the manifest
 
-| Part | SCORM 1.2 packages (02, 04, 05, 06, 07, 08) | SCORM 2004 4th ed. packages (01, 03) |
+| Part | SCORM 1.2 packages (all eight, Oracle Learning target) | SCORM 2004 4th ed. (optional; not in Oracle's documented editions) |
 |---|---|---|
 | Identifier | `MANIFEST-<project_id>` | `MANIFEST-<project_id>` |
 | Metadata | LOM: title, language `en`; description, keywords and learning time from `metadata` | same |
@@ -96,7 +96,7 @@ Rules:
 
 The manifest only writes a pass mark when the course has at least one scored screen. All eight packages do.
 
-**SCORM version choice.** 01 (54 screens) and 03 (36 screens, long answers) use 2004 because SCORM 1.2 limits `suspend_data` to 4,096 characters, which can drop resume state on long courses. If the LMS (D9) runs only 1.2, build them as 1.2 and check `lint_course` for `SUSPEND_OVERFLOW` before release.
+**SCORM version choice (2026-10-19).** All eight are SCORM 1.2 for Oracle Learning, which documents 1.2 and 2004 Editions 2–3 (the compiler writes 4th Edition). The 1.2 `suspend_data` limit is not a risk: worst case 749 bytes for 01 against 4,096. See [`oracle-learning-compatibility.md`](oracle-learning-compatibility.md).
 
 ---
 

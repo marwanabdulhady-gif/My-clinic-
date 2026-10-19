@@ -2,7 +2,7 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> Status as at **2026-10-15** (draft SCORM builds for all eight packages added; full-size companion art imported). Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
+> Status as at **2026-10-19** (Oracle Learning sample built and harness-tested; all packages SCORM 1.2; brand weave on every screen). Earlier: **2026-10-15** (draft SCORM builds for all eight packages added; full-size companion art imported). Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
 
 ---
 
@@ -36,7 +36,7 @@
 | Voices (D10), LMS + SCORM version (D9) | 🔒 open |
 | Pre-kickoff current-content slide drafting | 🟡 [Batch 1: 03/07, 58 slides / 61 actual browser captures](draft-slide-production.md); required plans/templates and mockup geometry; later draft batches queued |
 | SCORM packages | 🟡 **v0.1-draft for all eight** (2026-10-15): real edumints compiler, `lint_course` 0 errors, `validate_package` ok — manifest **XSD-validated** (0 errors, 0 warnings; [xsd-validation.md](xsd-validation.md)). Pending decisions shown as `⚠ Draft — pending`, unmade media as PENDING cards, captions only. [`draft-builds.md`](draft-builds.md) |
-| LMS / SCORM Cloud test | ⬜ not yet (D9 open) |
+| LMS / SCORM Cloud test | 🟡 Oracle sample built and passed the local SCORM 1.2/2004 harness (resume, pass at 100%); [test guide](../00_sample-oracle-pilot/oracle-learning-test-guide.md) ready to send; real Oracle test pending |
 
 **In one line:** all eight packages exist as compiled, validated **draft SCORM packages** (207 core screens, 95 scored) with the full-size companion art. They cannot become release builds until My Clinic closes the Phase 0 items and D9–D11, the narration is rewritten and voiced, and the pending media is produced. Pre-kickoff browser drafts use current content with those dependencies visibly pending; they do not close the production gates.
 
@@ -63,6 +63,8 @@
 | G15 | **XSD validation not run** (schemas unreachable offline). | build environment | **XSD run 2026-10-15: all eight manifests validate with 0 errors, 0 warnings** ([xsd-validation.md](xsd-validation.md)); rerun with the authentic SCORM 1.2 root schema before release, then SCORM Cloud. | Half done |
 | G16 | **Schema limits** recorded in `screens.json` notes: no per-card feedback on drag/sort, no per-choice companion reaction, no media on mcq/matching/escape-room, one hint ladder per game. | edumints schema | Accept for v1.0 or request schema additions upstream; SMEs see the workaround wording at review. | L2S |
 | G17 | **NFPA 704 diagrams were drawn wrong** (rotated quadrants, numbers on the wrong colours) in `hs1-img-nfpa-blank`, `hs1-img-nfpa-301w`, `hs2-img-nfpa-230`. | 01/02 storyboard assets | **Fixed** 2026-10-15: redrawn to the standard layout; the blank no longer prints the answers. | Done |
+| G18 | **Percent shown Turkish-style** ("%75") on summary and results screens in the edumints player. | edumints `components/templates.py` | Patched at build time in every package (`edumints_build.py`, `player_patches: 2`); fix upstream with G12. | L2S (edumints repo) |
+| G19 | **LMS target was unknown (D9).** My Clinic uses Oracle Applications Cloud → Oracle Learning, which documents SCORM 1.2 and 2004 Ed. 2–3 only. | all packages | **Applied:** all eight rebuilt as SCORM 1.2; sample package + test guide ready (`00_sample-oracle-pilot/`). Closes when My Clinic's LMS team returns the sample test. | L2S + My Clinic LMS admin |
 
 ---
 

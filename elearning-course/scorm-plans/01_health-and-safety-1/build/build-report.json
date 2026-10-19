@@ -13,16 +13,16 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M4Z58FZZQZG9DQD7X4R43SKP",
-    "job_id": "job_01M4Z58G1ZKK0GWWDFNRPC9KSS",
+    "project_id": "proj_01M59Z38DX7EEPT251D4Z2D42C",
+    "job_id": "job_01M59Z38FFY5MX5P5B0NV4FQDK",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/rfhCrhq4rdEFnIoUb8HTIN9DgwLktPGB",
+    "download_url": "http://localhost/scorm/files/8KlKB1qzGwRRZ4w0eA8Xn2ELZ9ytU9fO",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58FZZQZG9DQD7X4R43SKP",
+    "project_id": "proj_01M59Z38DX7EEPT251D4Z2D42C",
     "strict": false,
     "error_count": 0,
     "warn_count": 9,
@@ -96,9 +96,10 @@
       }
     ]
   },
+  "player_patches": 2,
   "package": {
-    "file": "MC_01_FMS_v0.1-draft_2004.zip",
-    "bytes": 2367662
+    "file": "MC_01_FMS_v0.1-draft_1.2.zip",
+    "bytes": 2387055
   },
   "preview": "preview.html"
 }

@@ -8,7 +8,7 @@ Follow `../00_program/build-pipeline.md`. Module specifics below.
 {
   "title": "My Clinic — Welcome On Board: My Clinic & HR Essentials",
   "description": "Induction for new employees: who we are, our values and strategy, ethics, patients' rights and essential HR policies.",
-  "scorm_version": "2004",
+  "scorm_version": "1.2",
   "language": "en",
   "layout_mode": "stage",
   "tracking": { "completion_rule": "viewed_all_and_passed", "passing_score": 70 }

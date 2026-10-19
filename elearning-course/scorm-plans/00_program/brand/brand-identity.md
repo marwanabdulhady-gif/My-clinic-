@@ -109,7 +109,7 @@ Sentence case for titles ("The fire triangle"), not Title Case. Numbers as digit
 
 | Element | How it looks | Where to use |
 |---|---|---|
-| **Petal watermark** | The five-petal mark, `mark-navy.png` at 6–8% opacity on light backgrounds or `mark-white.png` at 8–10% on navy, very large (400–520 px), cropped off the right edge | Title, section openers, closing screen only. Never behind body text or questions. |
+| **Petal watermark** | The five-petal mark, `mark-navy.png` at 6–8% opacity on light backgrounds or `mark-white.png` at 8–10% on navy, very large (400–520 px), cropped off the right edge | Title, section openers, closing screen at full watermark size. **Brand weave (owner decision 2026-10-19):** every other screen carries the mark pre-faded to ~6% (360 px, cropped off the bottom-right corner of the white card) plus a 4 px navy + module-colour band on the card's top edge. Both are card backgrounds: always behind content, never reducing text contrast. Implemented in `edumints-skin.css`. |
 | **Header rule** | 2 px navy line under a 64 px header, 40 px side margins | Every content, question, scenario and results screen |
 | **Value tile** | Solid square in a value colour with one **white line icon** in the centre (see `assets/value-tile-*.png`) | Section openers (module colour), values screens in the HR course, icon grids |
 | **Cards** | White, 1 px `line` border, 12 px radius, no or very soft shadow | Options, choices, info panels |
@@ -224,7 +224,7 @@ The edumints player draws the real controls, menus and interactions; the mockups
 | Keep lots of white space; one idea per screen | Fill the screen with icons, stickers or decorative shapes |
 | Use navy for structure and one module colour for highlights | Use all four value colours on one screen |
 | Put real text in HTML; keep images text-free | Bake titles, labels or numbers into images |
-| Use the petal watermark on title/section/close screens only | Put the watermark behind questions or body text |
+| Use the full watermark on title/section/close screens; the ~6% corner weave on all other screens | Raise the weave above ~6%, move it under the text column, or recolour the mark |
 | Show feedback with icon + words + colour | Rely on green/red alone |
 | Use fictional, culturally appropriate people | Use real staff or patients, or stock-photo clichés |
 
@@ -237,6 +237,6 @@ The edumints player draws the real controls, menus and interactions; the mockups
 - [ ] Colours only from the palette; module colour as the single highlight; magenta only for warnings/key numbers
 - [ ] Text contrast rules met (no small white text on teal; no small teal text on white)
 - [ ] Montserrat sizes within the table; nothing below 14 px except the footer
-- [ ] Watermark only on L1, L2 or closing screens
+- [ ] Full watermark only on L1, L2 or closing screens; other screens use the ~6% corner weave from the skin (no hand-placed marks)
 - [ ] Images follow the style sentence; AI images used the prompt template and contain no text or logos
 - [ ] Icons are line icons from one family, with provenance

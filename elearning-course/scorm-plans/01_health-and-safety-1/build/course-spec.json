@@ -2,7 +2,7 @@
  "schema_version": "1.0",
  "title": "My Clinic — Facility Management & Safety",
  "description": "New-staff course on the eight CBAHI Facility Management & Safety plans, MOH emergency codes and ISO 45001 rights.",
- "scorm_version": "2004",
+ "scorm_version": "1.2",
  "language": "en",
  "theme": "__BRAND__",
  "theme_mode": "light",

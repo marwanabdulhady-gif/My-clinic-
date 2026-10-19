@@ -1,0 +1,47 @@
+{
+  "companions_placed": 5,
+  "assets": {
+    "mcs-mg-pulse": {
+      "status": "file"
+    },
+    "mcs-mg-identify": {
+      "status": "file"
+    },
+    "mcs-mg-race": {
+      "status": "file"
+    },
+    "mcs-mg-moments": {
+      "status": "file"
+    },
+    "hs1-img-corridor": {
+      "status": "file"
+    },
+    "char-omar-welcome": {
+      "status": "file"
+    },
+    "char-noor-welcome": {
+      "status": "file"
+    },
+    "char-noor-explaining": {
+      "status": "file"
+    },
+    "char-noor-avatar-neutral": {
+      "status": "file"
+    },
+    "char-omar-avatar-neutral": {
+      "status": "file"
+    },
+    "brand-logo-horizontal-navy": {
+      "status": "file"
+    },
+    "font-montserrat-400": {
+      "status": "file"
+    },
+    "font-montserrat-600": {
+      "status": "file"
+    },
+    "font-montserrat-700": {
+      "status": "file"
+    }
+  }
+}

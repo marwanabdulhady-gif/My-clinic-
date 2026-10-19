@@ -10,11 +10,11 @@
 | Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Caring purple #652D8C**; layouts L1–L6 |
 | Audience | All new employees (clinical and non-clinical), day 1–3 |
 | Seat time | ~45 minutes |
-| SCORM | 2004 4th edition |
+| SCORM | 1.2 (Oracle Learning target; worst-case resume data 749/373 bytes of the 4,096 limit — see `00_program/oracle-learning-compatibility.md`) |
 | Completion | `viewed_all_and_passed`, passing score **70** |
 | Scored screens | 15, 145 points in total |
 | Prerequisite | None — this is the first module in the learning path |
-| Draft SCORM (v0.1) | [`build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip`](build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
+| Draft SCORM (v0.1) | [`build/MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip`](build/MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

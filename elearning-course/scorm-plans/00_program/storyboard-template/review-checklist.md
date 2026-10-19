@@ -67,7 +67,7 @@ Run this on **every** screen card before handing in a module storyboard. These c
 - [ ] Colours only from the palette; navy for structure, the **module colour** as the single highlight, magenta only for warnings/key numbers.
 - [ ] Contrast: no small white text on teal; small teal text uses #006E78.
 - [ ] Montserrat sizes from §3; nothing below 14 px except the footer.
-- [ ] Petal watermark only on L1, L2 or closing screens.
+- [ ] Full petal watermark only on L1, L2 or closing screens; all other screens get the ~6% corner weave from the skin automatically.
 - [ ] Icons are single-weight line icons from one family, with provenance.
 - [ ] AI images have a filled prompt from §6 and pass the review (only the briefed elements, no text, palette colours).
 - [ ] Companions match `../characters/companions.md` (Noor: navy hijab, navy scrubs, white coat, purple lanyard; Dr. Omar: beard, white coat, blue-grey shirt, stethoscope, teal lanyard; badges blank); pose assets come from the approved masters.

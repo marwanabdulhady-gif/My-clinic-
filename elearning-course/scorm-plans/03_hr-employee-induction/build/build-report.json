@@ -13,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M4Z58GNQ83AGGGSMJ37Y43Z9",
-    "job_id": "job_01M4Z58GRFJMA9D34RRXE6R4R0",
+    "project_id": "proj_01M59Z39C4S8RSFDXJB4YG0VJ2",
+    "job_id": "job_01M59Z39F1ZXZSTXP2CJF5B03V",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/rHefbHSx3-X8m7u2bCQ4NGUezWUSIUmb",
+    "download_url": "http://localhost/scorm/files/X-VZhOu741a-WOGR4E9rHPQh7qpYPMbv",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M4Z58GNQ83AGGGSMJ37Y43Z9",
+    "project_id": "proj_01M59Z39C4S8RSFDXJB4YG0VJ2",
     "strict": false,
     "error_count": 0,
     "warn_count": 1,
@@ -48,9 +48,10 @@
       }
     ]
   },
+  "player_patches": 2,
   "package": {
-    "file": "MC_03_WelcomeOnBoard_v0.1-draft_2004.zip",
-    "bytes": 1214577
+    "file": "MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip",
+    "bytes": 1234095
   },
   "preview": "preview.html"
 }
