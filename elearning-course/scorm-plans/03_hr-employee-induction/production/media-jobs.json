@@ -1783,6 +1783,54 @@
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
    "gate": "D10 voices approved"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "prog-vid-welcome",
+   "title": "Programme welcome (shown in 03 Welcome On Board after the title)",
+   "module": "03",
+   "placement": "new unscored video screen after hr-000",
+   "target_sec": 45,
+   "script_outline": "Dr. Omar and Noor welcome the new colleague, show the induction path for the learner's role, and explain how resume and scoring work.",
+   "target_file": "media/video/prog-vid-welcome.mp4",
+   "captions_file": "media/video/prog-vid-welcome.vtt",
+   "media": "video"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "hr-vid-journey",
+   "title": "Your first 90 days",
+   "module": "03",
+   "placement": "new unscored video screen after hr-012",
+   "target_sec": 45,
+   "script_outline": "Timeline animation: day 1 badge and Oracle login, week 1 department, month 1 licence and probation check-ins. Facts as closed in B-items.",
+   "target_file": "media/video/hr-vid-journey.mp4",
+   "captions_file": "media/video/hr-vid-journey.vtt",
+   "media": "video"
   }
  ]
 }

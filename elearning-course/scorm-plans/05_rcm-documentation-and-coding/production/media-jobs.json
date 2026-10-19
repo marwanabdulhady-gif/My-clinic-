@@ -655,6 +655,30 @@
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
    "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "rcma-vid-claim",
+   "title": "How a claim is paid — or rejected",
+   "module": "05",
+   "placement": "new unscored video screen after rcma-001",
+   "target_sec": 45,
+   "script_outline": "A claim travels from the note to the payer via NPHIES; missing diagnosis turns it red; fixed note turns it green. Dr. Omar narrates.",
+   "target_file": "media/video/rcma-vid-claim.mp4",
+   "captions_file": "media/video/rcma-vid-claim.vtt",
+   "media": "video"
   }
  ]
 }

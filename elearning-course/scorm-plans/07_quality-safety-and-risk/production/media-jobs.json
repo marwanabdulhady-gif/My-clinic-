@@ -763,6 +763,30 @@
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
    "gate": "D10 voices approved"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "qsr-vid-speakup",
+   "title": "Speak up: reporting a near miss (existing optional slot qsr-060)",
+   "module": "07",
+   "placement": "existing optional screen qsr-060",
+   "target_sec": 55,
+   "script_outline": "Generic near-miss conversation; reporting route and deadline only as confirmed under D8.",
+   "target_file": "media/video/qsr-vid-speakup.mp4",
+   "captions_file": "media/video/qsr-vid-speakup.vtt",
+   "media": "video"
   }
  ]
 }
