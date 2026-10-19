@@ -735,6 +735,72 @@
    ]
   },
   {
+   "id": "hs1-img-staffroom",
+   "media": "image",
+   "route": "ai-image",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-staffroom.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hs1-410"
+   ],
+   "brief": "Flat staff-room scene, 16:9: a small table and chairs, a kitchen counter. Seven separate, clearly visible items: a lit candle, a cheap home extension lead with several plugs, a small fan heater, a vape on the table, a microwave on the counter, an open bottle with a flame pictogram shape (no text), a welding kit propped by the door. Each item at least 48 px at 960×540, not overlapping.",
+   "alt_text": "Staff room with seven fire hazards: a candle, a home extension lead, a fan heater, a vape, a microwave, an open flammable bottle and welding kit by the door.",
+   "prompt": "Flat staff-room scene, 16:9: a small table and chairs, a kitchen counter. Seven separate, clearly visible items: a lit candle, a cheap home extension lead with several plugs, a small fan heater, a vape on the table, a microwave on the counter, an open bottle with a flame pictogram shape (no text), a welding kit propped by the door. Each item at least 48 px at 960×540, not overlapping. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "gate": "Unscored explore screen (personalisation layer); SME confirms the items",
+   "hotspots": {
+    "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. Map the boxes with tools/map_hotspots.py init/preview after generating.",
+    "screens": [
+     {
+      "screen_id": "hs1-410",
+      "mode": "explore",
+      "scored": false,
+      "regions": [
+       {
+        "id": "candle",
+        "label": "Candle or open flame"
+       },
+       {
+        "id": "extension",
+        "label": "Home extension lead"
+       },
+       {
+        "id": "heater",
+        "label": "Fan heater"
+       },
+       {
+        "id": "vape",
+        "label": "Vape or cigarette"
+       },
+       {
+        "id": "microwave",
+        "label": "Unauthorised microwave"
+       },
+       {
+        "id": "flammable",
+        "label": "Open flammable bottle"
+       },
+       {
+        "id": "welding",
+        "label": "Welding kit by a door"
+       }
+      ]
+     }
+    ],
+    "extra_regions_allowed": true
+   },
+   "acceptance": [
+    "Matches the brief; nothing beyond it.",
+    "No text, numbers or logos in the pixels.",
+    "Hotspot boxes mapped and checked on the overlay preview.",
+    "Provenance recorded."
+   ],
+   "unlocks": "hs1-410 becomes an explore hotspot when this file exists"
+  },
+  {
    "id": "hs1-aud-000",
    "media": "audio",
    "route": "tts",
@@ -2186,7 +2252,7 @@
    "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
    "status": "proposed",
    "scored": false,
-   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
    "acceptance": [
     "Script approved before any render",
     "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",

@@ -26,7 +26,7 @@ from export_storyboard_docx import (  # noqa: E402
 ROOT = Path(__file__).resolve().parents[3]
 PLANS = ROOT / "elearning-course" / "scorm-plans"
 PROGRAM = PLANS / "00_program"
-DOC_ID = "MC-KO-01 v0.1"
+DOC_ID = "MC-KO-01 v0.3"
 NAVY = "003867"
 
 
@@ -53,7 +53,7 @@ def main() -> None:
     doc = Document()
     setup(doc)
     brand_header(doc.sections[0], None, DOC_ID)
-    brand_footer(doc.sections[0], f"Phase 0 kick-off working document · {DATE} · {DOC_ID}")
+    brand_footer(doc.sections[0], f"Phase 0 kick-off working document · 2026-10-19 · {DOC_ID}")
 
     band = doc.add_table(rows=1, cols=1)
     from export_storyboard_docx import set_cell_shading
@@ -77,10 +77,10 @@ def main() -> None:
     strap.paragraph_format.space_after = Pt(10)
     doc_control_table(doc, [
         ("Document", "MC-KO-01 · Phase 0 kick-off pack + decision sheet"),
-        ("Revision", f"v0.1 · {DATE}"),
+        ("Revision", "v0.3 · 2026-10-19 (researched working assumptions added)"),
         ("Proposed kick-off", "Monday 2026-10-19 (week 1 of the proposal timeline)"),
         ("Status", "Working document — decisions are recorded in the Phase 0 files, not here"),
-        ("Sources", "00_program/kickoff-pack.md + 00_program/decision-sheet.md (generated)"),
+        ("Sources", "00_program/kickoff-pack.md + 00_program/kickoff-assumed-answers.md (generated)"),
         ("Companion files", "client-review pack (9 Word docs) · decision-sheet.csv · "
                             "storyboard-review-register.csv · proposal Rev01"),
     ], NAVY)
@@ -88,9 +88,11 @@ def main() -> None:
 
     render_markdown_body(doc, (PROGRAM / "kickoff-pack.md").read_text(encoding="utf-8").splitlines(), NAVY)
     doc.add_page_break()
-    heading = doc.add_heading("Attachment — Phase 0 decision sheet (open rows)", level=1)
+    heading = doc.add_heading("Attachment — open decisions with researched working assumptions", level=1)
     heading.paragraph_format.page_break_before = False
-    sheet = (PROGRAM / "decision-sheet.md").read_text(encoding="utf-8").splitlines()
+    # the full tracker (owner, due date, write-back file) is decision-sheet.csv; the attachment is
+    # the readable version: one table per module with the assumption, confidence and sources
+    sheet = (PROGRAM / "kickoff-assumed-answers.md").read_text(encoding="utf-8").splitlines()
     sheet = sheet[sheet.index(next(l for l in sheet if l.startswith("# "))) + 1:]
     render_markdown_body(doc, sheet, NAVY)
 

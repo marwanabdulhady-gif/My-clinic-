@@ -13,22 +13,28 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M59Z39C4S8RSFDXJB4YG0VJ2",
-    "job_id": "job_01M59Z39F1ZXZSTXP2CJF5B03V",
+    "project_id": "proj_01M5AE6YP2ZC0HN5BRWSK22F2E",
+    "job_id": "job_01M5AE6YRM5BMNY329Y8G18FPS",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/X-VZhOu741a-WOGR4E9rHPQh7qpYPMbv",
+    "download_url": "http://localhost/scorm/files/UU20jzIHTmhLSFf9ho_QS2iMBgEY2J2z",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M59Z39C4S8RSFDXJB4YG0VJ2",
+    "project_id": "proj_01M5AE6YP2ZC0HN5BRWSK22F2E",
     "strict": false,
     "error_count": 0,
-    "warn_count": 1,
+    "warn_count": 2,
     "clean": false,
     "evidence_binding_coverage": 1.0,
     "issues": [
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "5 ardışık görselsiz ekran (screens[33..37]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[33..37]"
+      },
       {
         "severity": "warn",
         "code": "scored_over_objectives",
@@ -51,7 +57,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip",
-    "bytes": 1234095
+    "bytes": 1232076
   },
   "preview": "preview.html"
 }

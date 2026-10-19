@@ -662,7 +662,7 @@
    "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
    "status": "proposed",
    "scored": false,
-   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
    "acceptance": [
     "Script approved before any render",
     "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",

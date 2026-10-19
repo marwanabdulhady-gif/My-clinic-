@@ -151,3 +151,30 @@ Completion rule for all eight is `viewed_all_and_passed`: the LMS shows *passed*
 - **Minor** (`v1.1`): text, media or feedback fixes. Replace the package in the same LMS activity; learner records are kept.
 - **Major** (`v2.0`): any change to scored screens, points or objectives. Import as a new LMS activity, because old attempts no longer match.
 - Screen and objective ids are never reused for different content.
+
+---
+
+## 7. Personalisation layer (on top of the storyboard structure)
+
+The structure above is the client-reviewed storyboard: it stays fixed. Each package also has an **unscored** layer, `<module>/production/personalisation.json`, applied at build time by `tools/personalise.py` ([plan](personalisation-and-interactivity-plan.md)):
+
+```text
+Course
+├── variables: role (text, default "all"), role_label (text, default "team member")
+├── <prefix>-00x  branching  "Make it yours"  → set_vars role, role_label   (after the opening)
+├── …storyboard screens…
+│   ├── <tip>-<role>  accordion  visible_if role == <role>   (one per role group)
+│   ├── <tip>-all     tabs       visible_if role == "all"
+│   ├── <id>c         true_false / mcq, points 0               (quick checks)
+│   └── <id>p         exploration (choice / prediction / slider), replayed on the close
+└── close: summary with "As a {{role_label}}: …" (never hidden → "viewed all" still completes)
+```
+
+| Rule | Why |
+|---|---|
+| Only unscored screens are added or converted; the build stops otherwise | total points, objectives and pass marks stay as reviewed (`cmi.core.score` unchanged) |
+| One role question per package | each package is its own SCO; SCORM 1.2 carries no role from the LMS |
+| Role-specific content is unscored | the score total is fixed at build time and counts hidden screens |
+| `suspend_data` grows by ~100 bytes (two short variables + choice ids) | still far under the 4,096-character SCORM 1.2 limit (G24) |
+
+LMS learning paths by role (which packages each person is assigned) are Oracle Learning enrolment rules, listed in [`roles.json`](roles.json). They replace the four audience groups in §1 once D15 closes.

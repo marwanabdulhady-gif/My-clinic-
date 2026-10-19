@@ -56,7 +56,7 @@ python3 tools/map_hotspots.py preview 01_health-and-safety-1                    
 
 ## 5. Video (motion graphics)
 
-The approved baseline (Rev01) needs **no** video. The optional motion-graphics clips are planned in [`media-video-plan.json`](media-video-plan.json) and the tool choice is in [`video-tooling.md`](video-tooling.md). Each clip is a change request or a free value-add, decided by the owner (decision V1 in [`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md)). Every clip: approved script first, Noor/Dr. Omar art from `characters/assets/`, brand palette and Montserrat, MP4 H.264, 1280 × 720 or 1920 × 1080, ≤ 10 MB per minute, a WebVTT caption file and a text transcript, no flashing above 3 per second.
+The approved baseline (Rev01) needs **no** video. The optional motion-graphics clips are planned in [`media-video-plan.json`](media-video-plan.json) and the tool choice is in [`video-tooling.md`](video-tooling.md). Each clip is a change request or a free value-add, decided by the owner (decision D17 in [`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md)). Every clip: approved script first, Noor/Dr. Omar art from `characters/assets/`, brand palette and Montserrat, MP4 H.264, 1280 × 720 or 1920 × 1080, ≤ 10 MB per minute, a WebVTT caption file and a text transcript, no flashing above 3 per second.
 
 ## 6. Rebuild and check
 

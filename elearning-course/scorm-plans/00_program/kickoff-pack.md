@@ -2,7 +2,7 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> **Document MC-KO-01 · v0.2 · 2026-10-19** (v0.1 2026-10-14). Working pack for the Phase 0 kick-off meeting
+> **Document MC-KO-01 · v0.3 · 2026-10-19** (v0.2 earlier the same day; v0.1 2026-10-14). Working pack for the Phase 0 kick-off meeting
 > (proposed **Monday 2026-10-19**, week 1 of the proposal timeline). It exists so the meeting
 > **closes decisions** instead of discovering them: every open item already has an owner role, a
 > draft recommendation and a due date in the [decision sheet](decision-sheet.md).
@@ -27,14 +27,24 @@ every screen carries the My Clinic brand weave. Because My Clinic runs Oracle Ap
 packages are now **SCORM 1.2 for Oracle Learning**, and an 8-minute **Oracle Learning sample package**
 with a test guide is ready for the LMS team — bring the result of that test to close D9.
 
+**New in v0.3 (2026-10-19):** every open row now arrives with a **researched working assumption**
+(public Saudi rules and My Clinic's own public pages; 47 high, 35 medium, 20 low confidence) —
+the room confirms or corrects instead of starting from a blank cell
+([`kickoff-assumed-answers.md`](kickoff-assumed-answers.md)). The research found **ten places where
+the source decks disagree with current rules** (e.g. GOSI rates for Saudis hired after July 2024,
+radiation limits, CCHI → CHI, branch names); they open the meeting. Three new programme decisions:
+**D15** who the induction is for (role catalogue and LMS paths), **D16** the extra unscored screens
+the new role personalisation adds, **D17** optional motion-graphics videos. Total: **105 open rows**.
+
 ## 2. Proposed 90-minute session
 
 | Min | Item | Lead | Outcome before leaving the room |
 |---|---|---|---|
-| 0–10 | Programme shape: 6 courses / 8 packages, learning path `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`, Rev01 figures, 9–10 week plan | L2S | Shared picture; no debate on scope |
-| 10–25 | Walk one storyboard end to end (module 04, 13 screens): what a v0.2 card contains, the `⚠ PENDING` convention, what the Word pack shows | L2S | Reviewers know how to read the pack |
+| 0–10 | **The ten contradictions** ([assumed answers §1](kickoff-assumed-answers.md)): which deck figures the course must correct | L2S + each owner | Each one confirmed, corrected or assigned |
+| 10–15 | Programme shape: 6 courses / 8 packages, learning path `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`, Rev01 figures, 9–10 week plan | L2S | Shared picture; no debate on scope |
+| 15–25 | Walk one storyboard end to end (module 04, 13 screens + the new role picker, role tip and results screen): what a v0.2 card contains, the `⚠ PENDING` convention, what the Word pack shows | L2S | Reviewers know how to read the pack |
 | 25–45 | **Tier 1** (28 rows): D1 Code Orange, D2 code sheet + real extensions, D5 personal data, D6 IT video/PHI, D8 24-hour rule, plus the safety, radiation, IPSG, identifier and test-environment rows | Safety Manager, RSO, Nursing Director, DPO, IT | Owner + date confirmed per row; where the draft recommendation is accepted, say so and write it down |
-| 45–60 | **Tier 3** enablers: D9 LMS + SCORM version (Oracle Learning, SCORM 1.2 — sample test result), D10 voice route (hear the two companion voice briefs), D11 brand confirmation | L&D/IT, course owner, Marketing | Three decisions or a named date inside week 2 |
+| 45–60 | **Tier 3** enablers: D9 LMS + SCORM version (Oracle Learning, SCORM 1.2 — sample test result), D10 voice route (hear the two companion voice briefs), D11 brand confirmation, **D15 roles**, D16 extra screens, D17 videos | L&D/IT, course owner, Marketing | Three decisions or a named date inside week 2 |
 | 60–80 | **Tier 2** by module (71 rows): agree the route, not the answers — who confirms leave tables, ICD-10 edition, rejection-log rebuild, org-chart lines, branch names | Module SMEs | Each module's rows assigned with dates ≤ 2026-10-30 |
 | 80–90 | Write-back procedure, tracker import of the register CSV, next checkpoint, pilot window | L2S | Calendar entries; procedure accepted |
 
@@ -50,18 +60,20 @@ with a test guide is ready for the LMS team — bring the result of that test to
 | RCM lead, Coding lead, Payer Relations | 05 B1–B10; 06 B1–B9; D4 |
 | Quality Director + Patient Safety / Risk Manager | 07 B1–B11, NEW-01, P01; D7, D8 |
 | EHR Applications lead + DPO + IT | 08 B1–B10; D6 |
-| L&D / course owner | D9, D10, D14; scope and seat time |
+| L&D / course owner | D9, D10, D14, D16, D17; scope and seat time |
+| HR (job families) | D15 role catalogue and Oracle learning-path rules |
 | Marketing | D11 |
 
 ## 4. Pre-reads (send with the invite)
 
 1. [Proposal Rev01 (PDF)](../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.pdf) — numbers and phases.
 2. [Storyboard review pack (Word index)](../client-review/MyClinic_Elearning_Storyboard_Review_Pack_v0.2.docx) and the eight module renderings in [`../client-review/`](../client-review/).
-3. [Decision sheet (Markdown)](decision-sheet.md) · [tracker CSV](decision-sheet.csv) — the 102 open rows.
+3. [Decision sheet (Markdown)](decision-sheet.md) · [tracker CSV](decision-sheet.csv) — the 105 open rows, each with its working assumption · [researched answers with sources](kickoff-assumed-answers.md).
 4. [SME / build-detail register CSV](storyboard-review-register.csv) — the 52 screen-level authoring questions (import into your tracker).
 5. [Asset & template audit](asset-template-audit.md) — what exists, what is still to be supplied (consented photos, test captures; companion art is done).
 6. [Programme status](programme-status.md), the [project map](../../PROJECT-MAP.md) and the [production board](storyboard-production-board.md).
 7. [Oracle Learning sample package](../00_sample-oracle-pilot/build/MC_Sample_OracleLearning_1.2.zip) + [test guide](../00_sample-oracle-pilot/oracle-learning-test-guide.md) — for the LMS administrator before the D9 item.
+8. [Personalisation and interactivity plan](personalisation-and-interactivity-plan.md) — roles, learning paths, what each package now adds.
 
 ## 5. Same-day write-back procedure
 

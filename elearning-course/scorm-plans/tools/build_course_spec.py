@@ -264,9 +264,37 @@ def build(module: str) -> dict:
             placed += 1
         built.append(s)
 
+    # A link to a job aid that is not produced yet would render the player's <img> markup inside
+    # the href; show the link text with a pending marker instead until the PDF exists.
+    link = re.compile(r'<a href="\{\{asset:([a-z0-9-]+)\}\}"[^>]*>(.*?)</a>')
+    def unlink(m):
+        return m.group(0) if find_asset(m.group(1), mdir) else f"{m.group(2)} <em>⚠ Draft — pending: job aid not produced yet</em>"
+    def fix(o):
+        if isinstance(o, str):
+            return link.sub(unlink, o)
+        if isinstance(o, list):
+            return [fix(x) for x in o]
+        if isinstance(o, dict):
+            return {k: fix(v) for k, v in o.items()}
+        return o
+    built = fix(built)
+
+    from personalise import apply as personalise
+    built, variables, pnotes = personalise(built, module, mdir, lambda aid: find_asset(aid, mdir) is not None)
+    for s in built:  # pictures named by the layer (converted explore hotspots) become assets too
+        for k, v in list(s.items()):
+            if k.endswith("asset_id") and isinstance(v, str) and v not in assets:
+                use(v)
+    for note in pnotes:
+        print(f"{module}: {note}")
     from map_hotspots import apply as apply_hotspot_maps
     for note in apply_hotspot_maps(built, mdir):
         print(f"{module}: {note}")
+    blob = json.dumps(built)
+    for aid in [a for a in assets if not a.startswith(("font-", "brand-"))]:
+        if f'"{aid}"' not in blob and f"{{{{asset:{aid}}}}}" not in blob:  # no longer on any screen
+            assets.pop(aid)
+            report.pop(aid, None)
 
     outline = []
     for cells in table_rows(sb, rf"{prefix}-s[A-Z0-9]+"):
@@ -304,6 +332,7 @@ def build(module: str) -> dict:
                      "keywords": ["My Clinic", "induction", prefix],
                      "typical_learning_time": f"PT{seat.group(1)}M" if seat else None},
         "objectives": objectives,
+        **({"variables": variables} if variables else {}),
         "outline": outline,
         "screens": built,
         "assets": list(assets.values()),

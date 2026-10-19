@@ -62,6 +62,18 @@
    "description": "Combine the plans in one connected emergency (capstone)."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "hs1-s0",
@@ -196,6 +208,88 @@
    "animation": "fade-up",
    "reveal": "none",
    "narration_text": "Noor: This reflection is not scored. Choose the response that helps you set one intention for your next shift."
+  },
+  {
+   "type": "branching",
+   "id": "hs1-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "clinical",
+     "text_html": "<strong>Clinical</strong><br><small>Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy</small>",
+     "goto_screen_id": "hs1-101",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "clinical"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "front",
+     "text_html": "<strong>Front office & My Care</strong><br><small>Reception, call centre, patient experience, My Care coordinators</small>",
+     "goto_screen_id": "hs1-101",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "front"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "front-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "support",
+     "text_html": "<strong>Support & back office</strong><br><small>Admin, HR, finance, RCM, IT, facilities, housekeeping, security</small>",
+     "goto_screen_id": "hs1-101",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "support"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "support colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "hs1-101",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "hs1-101",
+   "points": 0,
+   "objective_ids": [],
+   "section": "Welcome",
+   "node_id": "hs1-s0",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "content_slide",
@@ -861,6 +955,23 @@
    "animation": "fade-up",
    "reveal": "auto",
    "narration_text": "Noor: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task."
+  },
+  {
+   "type": "true_false",
+   "id": "hs1-303c",
+   "title": "Check: after the fire",
+   "prompt_html": "<p><strong>Quick check (not scored).</strong> The fire is out, so staff can go back to their rooms.</p>",
+   "correct": false,
+   "feedback": {
+    "correct_html": "<p>Right — it's false. Stand down only when the Incident Commander gives the <strong>End of Disaster</strong> announcement.</p>",
+    "incorrect_html": "<p>Not yet. A fire being out is not the signal. Wait for the <strong>End of Disaster</strong> announcement from the Incident Commander.</p>",
+    "show_correct_answer": true
+   },
+   "section": "3 · Emergency codes",
+   "node_id": "hs1-s3",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "sorting",
@@ -1538,6 +1649,114 @@
    "narration_text": "Noor: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
   },
   {
+   "type": "accordion",
+   "id": "hs1-411-clinical",
+   "title": "Your part in a Code Red",
+   "prompt_html": "<p><strong>For your role.</strong> What you do first depends on where you work.</p>",
+   "items": [
+    {
+     "title": "Rescue",
+     "body_html": "<p>Move patients in your area away from smoke first: the ones who can walk, then those who need help. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "title": "Evacuation tools",
+     "body_html": "<p>Use the evacuation chair or sheet as you were trained; never the lift.</p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "clinical"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "4 · Fire safety",
+   "node_id": "hs1-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hs1-411-front",
+   "title": "Your part in a Code Red",
+   "prompt_html": "<p><strong>For your role.</strong> What you do first depends on where you work.</p>",
+   "items": [
+    {
+     "title": "Stop arrivals",
+     "body_html": "<p>Stop new patients and visitors entering the affected area and guide those waiting to the assembly point. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "title": "Count heads",
+     "body_html": "<p>Keep the day's appointment list at hand so the team can check no one is left inside.</p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "front"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "4 · Fire safety",
+   "node_id": "hs1-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hs1-411-support",
+   "title": "Your part in a Code Red",
+   "prompt_html": "<p><strong>For your role.</strong> What you do first depends on where you work.</p>",
+   "items": [
+    {
+     "title": "Clear the route",
+     "body_html": "<p>Keep corridors and fire doors clear; never block a door open. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "title": "Isolate as directed",
+     "body_html": "<p>Facilities isolate gas, oxygen or power only when the Incident Commander asks.</p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "support"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "4 · Fire safety",
+   "node_id": "hs1-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "hs1-411-all",
+   "title": "Your part in a Code Red",
+   "prompt_html": "<p>What you do first depends on where you work. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Clinical",
+     "body_html": "<h4>Rescue</h4><p>Move patients in your area away from smoke first: the ones who can walk, then those who need help. <em>Proposed — SME to confirm.</em></p><h4>Evacuation tools</h4><p>Use the evacuation chair or sheet as you were trained; never the lift.</p>"
+    },
+    {
+     "label": "Front office & My Care",
+     "body_html": "<h4>Stop arrivals</h4><p>Stop new patients and visitors entering the affected area and guide those waiting to the assembly point. <em>Proposed — SME to confirm.</em></p><h4>Count heads</h4><p>Keep the day's appointment list at hand so the team can check no one is left inside.</p>"
+    },
+    {
+     "label": "Support & back office",
+     "body_html": "<h4>Clear the route</h4><p>Keep corridors and fire doors clear; never block a door open. <em>Proposed — SME to confirm.</em></p><h4>Isolate as directed</h4><p>Facilities isolate gas, oxygen or power only when the Incident Commander asks.</p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "4 · Fire safety",
+   "node_id": "hs1-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "content_slide",
    "id": "hs1-501",
    "title": "Ordering and inventory",
@@ -1559,6 +1778,42 @@
    "animation": "fade-up",
    "reveal": "auto",
    "narration_text": "Noor: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule."
+  },
+  {
+   "type": "mcq",
+   "id": "hs1-501c",
+   "title": "Check: the unlabelled bottle",
+   "prompt_html": "<p><strong>Quick check (not scored).</strong> A courier hands you a bottle with no label and says it is the new disinfectant. What do you do?</p>",
+   "feedback": {
+    "correct_html": "<p>Never accept an unlabelled container.</p>",
+    "incorrect_html": "<p>Never accept an unlabelled container: refuse it and route it through procurement.</p>",
+    "show_correct_answer": true
+   },
+   "options": [
+    {
+     "id": "o0",
+     "text_html": "Accept it and add a label yourself",
+     "correct": false,
+     "feedback_html": "<p>A label you write is a guess. Without the supplier label and SDS, nobody knows the hazard.</p>"
+    },
+    {
+     "id": "o1",
+     "text_html": "Refuse it and send it back through procurement",
+     "correct": true,
+     "feedback_html": "<p>Right: approved procurement only, on the inventory, with its SDS.</p>"
+    },
+    {
+     "id": "o2",
+     "text_html": "Put it in the store room until someone asks",
+     "correct": false,
+     "feedback_html": "<p>An unknown chemical in storage is a hazard for the next person.</p>"
+    }
+   ],
+   "section": "5 · Hazardous materials & waste",
+   "node_id": "hs1-s5",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "matching",
@@ -2957,7 +3212,7 @@
    "node_id": "hs1-s10",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<p>Finish these this week:</p><ul><li>✔ Locate your evacuation route and assembly point</li><li>✔ Save emergency numbers to your phone</li><li>✔ Find your nearest eyewash</li><li>✔ Ask your supervisor who your Safety Liaison is</li><li>✔ Sign the acknowledgement ⚠ Draft — pending D14</li></ul><p><strong>Contact:</strong> your Safety &amp; Security Manager.</p>",
+   "body_html": "<p>Finish these this week:</p><ul><li>✔ Locate your evacuation route and assembly point</li><li>✔ Save emergency numbers to your phone</li><li>✔ Find your nearest eyewash</li><li>✔ Ask your supervisor who your Safety Liaison is</li><li>✔ Sign the acknowledgement ⚠ Draft — pending D14</li></ul><p><strong>Contact:</strong> your Safety &amp; Security Manager.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> start with the first item on this list in your own area this week.</p>",
    "show_score": true,
    "show_completion": true,
    "notes": "Companions: Noor char-noor-success half-body right + Dr. Omar char-omar-avatar-happy avatar (L6). Two-voice close: noor-1 then omar-1. Open decision D14: how the acknowledgement is captured (LMS attestation vs final poll + e-signature). Emergency numbers depend on D2.",

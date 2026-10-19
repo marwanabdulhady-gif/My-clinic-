@@ -12,22 +12,40 @@
   ],
   "module_colour": "#7C0041",
   "build": {
-    "project_id": "proj_01M59Z3AB9279QAES2Y8S80JK8",
-    "job_id": "job_01M59Z3ACEVG08SAC1J6CX9FXH",
+    "project_id": "proj_01M5AE75DVX9SFE33HMRY44PV2",
+    "job_id": "job_01M5AE75ES3H7ECKS7ER3JEQKZ",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/q2l9zmbtawE39UZpfark6t4XRcqwJsfM",
+    "download_url": "http://localhost/scorm/files/e9pQhf4_zq2Qd92YdHqXgVR9QE1CQ2EY",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M59Z3AB9279QAES2Y8S80JK8",
+    "project_id": "proj_01M5AE75DVX9SFE33HMRY44PV2",
     "strict": false,
     "error_count": 0,
-    "warn_count": 1,
+    "warn_count": 4,
     "clean": false,
     "evidence_binding_coverage": 1.0,
     "issues": [
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "5 ardışık görselsiz ekran (screens[0..4]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[0..4]"
+      },
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "6 ardışık görselsiz ekran (screens[12..17]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[12..17]"
+      },
+      {
+        "severity": "warn",
+        "code": "visual_poverty",
+        "message": "Kursta 20 ekranın yalnızca %20.0'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
+        "path": "screens"
+      },
       {
         "severity": "warn",
         "code": "scored_over_objectives",
@@ -50,7 +68,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_06_RCM-B_v0.1-draft_1.2.zip",
-    "bytes": 720992
+    "bytes": 722640
   },
   "preview": "preview.html"
 }

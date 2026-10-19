@@ -39,7 +39,7 @@ TIER3 = {"D9", "D10", "D11"}
 TIER1_D = {"D1", "D2", "D5", "D6", "D8"}
 # Owner-reviewed tier overrides where the keyword heuristic misfires (abbreviations and payer
 # coverage are content facts, not safety/PHI gates).
-TIER_OVERRIDES = {"04/B3": 2, "05/B4": 2, "05/B5": 2}
+TIER_OVERRIDES = {"04/B3": 2, "05/B4": 2, "05/B5": 2, "D15": 3, "D16": 3, "D17": 3}
 
 # Thin-evidence objectives (G4): where a second short check is worth it vs accept-at-sign-off.
 COMPLIANCE_CRITICAL = {"hs1-o6", "hs1-o7", "qsr-o5", "ehr-o2"}
@@ -254,13 +254,14 @@ def write_assumed_answers(rows: list[dict]) -> None:
         key = "Programme decisions (D-items)" if not "/" in r["id"] else r["modules"]
         by_mod.setdefault(key, []).append(r)
     for mod in sorted(by_mod, key=lambda k: (not k.startswith("Programme"), k)):
-        md += [f"## {mod}", "", "| ID | Decision | Working assumption | Conf. | Confirm? | Owner | Sources |",
-               "|---|---|---|---|---|---|---|"]
+        md += [f"## {mod}", "", "| ID | Decision | Working assumption | Owner · confidence | Sources |",
+               "|---|---|---|---|---|"]
         for r in sorted(by_mod[mod], key=lambda x: x["id"]):
             links = " ".join(f"[{i + 1}]({u.strip()})" for i, u in enumerate(r["sources"].split(";")) if u.strip().startswith("http"))
             clean = lambda t: re.sub(r"[*`]", "", t).replace("|", "/")
-            md.append(f"| `{r['id']}` | {clean(r['question'])} | {clean(r['assumed_answer'])} | {r['confidence']} | "
-                      f"{r['client_must_confirm']} | {r['owner']} | {links} |")
+            must = "" if r["client_must_confirm"] == "Yes" else " · no confirmation needed"
+            md.append(f"| `{r['id']}` | {clean(r['question'])} | {clean(r['assumed_answer'])} | "
+                      f"{r['owner']} · {r['confidence']}{must} | {links} |")
         md.append("")
     (PLANS / "00_program" / "kickoff-assumed-answers.md").write_text("\n".join(md) + "\n", encoding="utf-8")
 

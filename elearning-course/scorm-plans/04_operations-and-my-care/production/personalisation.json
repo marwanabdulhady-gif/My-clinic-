@@ -1,0 +1,172 @@
+{
+ "module": "04_operations-and-my-care",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "ops-001": [
+   {
+    "kind": "role_picker"
+   },
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "exploration",
+     "id": "ops-001p",
+     "title": "Your first guess",
+     "prompt_html": "<p>A patient at reception is upset that her lab result hasn't reached her. Who do you think should take this?</p>",
+     "input_kind": "prediction",
+     "store_key": "ops_first_guess",
+     "choices": [
+      {
+       "id": "ops",
+       "text_html": "Operations — the team on site"
+      },
+      {
+       "id": "mycare",
+       "text_html": "My Care — the follow-up team"
+      },
+      {
+       "id": "dr",
+       "text_html": "The doctor"
+      }
+     ]
+    }
+   }
+  ],
+  "ops-011": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "mcq",
+     "id": "ops-012",
+     "title": "Check: in the clinic now",
+     "prompt_html": "<p><strong>Quick check (not scored).</strong> A patient's complaint can't be fixed on the spot during the visit. Which team owns the recovery?</p>",
+     "feedback": {
+      "correct_html": "<p>Route by where and when.</p>",
+      "incorrect_html": "<p>In the clinic, now → Operations.</p>",
+      "show_correct_answer": true
+     },
+     "options": [
+      {
+       "id": "o0",
+       "text_html": "Operations — the PXO on site starts the recovery",
+       "correct": true,
+       "feedback_html": "<p>Right: in the clinic, now, is Operations.</p>"
+      },
+      {
+       "id": "o1",
+       "text_html": "My Care — after the visit",
+       "correct": false,
+       "feedback_html": "<p>My Care follows up later; the recovery starts on site.</p>"
+      },
+      {
+       "id": "o2",
+       "text_html": "RCM",
+       "correct": false,
+       "feedback_html": "<p>RCM handles claims, not visit complaints.</p>"
+      }
+     ]
+    }
+   }
+  ],
+  "ops-033": [
+   {
+    "kind": "role_tip",
+    "id": "ops-034",
+    "title": "Your first call",
+    "lead": "Who you call first depends on your role.",
+    "groups": [
+     {
+      "role": "front",
+      "label": "Front office",
+      "items": [
+       {
+        "title": "On site",
+        "body_html": "<p>The PXO on site, then the PX Manager. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "mycare",
+      "label": "My Care",
+      "items": [
+       {
+        "title": "After the visit",
+        "body_html": "<p>Your My Care Coordinator lead, then the Patient Access & PX Sr. Manager. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "clinical",
+      "label": "Clinical",
+      "items": [
+       {
+        "title": "During the visit",
+        "body_html": "<p>The PXO for the patient's experience; My Care for follow-ups and programmes. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "support",
+      "label": "Support",
+      "items": [
+       {
+        "title": "Behind the scenes",
+        "body_html": "<p>Route patient issues to the PXO on site; don't solve them by email. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "results_breakdown",
+     "id": "ops-089",
+     "title": "Results",
+     "body_html": "<p>Passing score: 70% (35 / 50 points). Your results by objective:</p>",
+     "weak_threshold": 70,
+     "show_total": true,
+     "sections": [
+      {
+       "title": "ops-o1 · Operations vs My Care activities",
+       "screen_ids": [
+        "ops-030"
+       ],
+       "advice_html": "<p>Revisit the patient journey and <em>Sort the work</em>.</p>"
+      },
+      {
+       "title": "ops-o2 · Route requests to the right team",
+       "screen_ids": [
+        "ops-031",
+        "ops-032"
+       ],
+       "advice_html": "<p>Replay <em>Who do I call?</em> and the escalation question.</p>"
+      },
+      {
+       "title": "ops-o3 · Roles and abbreviations",
+       "screen_ids": [
+        "ops-033"
+       ],
+       "advice_html": "<p>Revisit the two structure charts and the role cards.</p>"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "append_html": {
+  "ops-090": "<p>Your first guess: <strong><span data-exploration-ref=\"ops_first_guess\"></span></strong>. In the clinic now → Operations; over time → My Care.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> save your first-call contact in your phone today.</p>"
+ }
+}

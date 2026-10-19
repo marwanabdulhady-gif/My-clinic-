@@ -6,9 +6,9 @@
 
 | Scope | Count |
 |---|---:|
-| Open decisions listed | 102 |
+| Open decisions listed | 105 |
 | Tier 1 — safety, identifiers, PHI, incident rules (due 2026-10-22 (K+3 wd)) | 28 |
-| Tier 3 — programme enablers D9/D10/D11 (due 2026-10-26 (K+5 wd)) | 3 |
+| Tier 3 — programme enablers D9/D10/D11 (due 2026-10-26 (K+5 wd)) | 6 |
 | Tier 2 — module content facts (due 2026-10-30 (end of week 2)) | 71 |
 
 How to close a row: the owner writes the decision and its source (policy number, poster, email) in the Phase 0 / decision-log file named in “Write back to”, sets its status to `Closed (date)`, then rerun the standard gate chain (see `next-phases-roadmap.md`). This sheet is regenerated, never edited by hand.
@@ -54,6 +54,9 @@ How to close a row: the owner writes the decision and its source (policy number,
 |---|---|---|---|---|---|---|---|---|---|
 | `D10` | all | **Voice route and provider** | External English TTS for release 1 (see `narration-and-lexicon.md`). | External English neural TTS (one female, one male voice) for release 1; Arabic voices out of scope for R1. | Medium | Course owner | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open |
 | `D11` | all | **Brand kit** | Brand taken from My Clinic's own decks (`brand/brand-identity.md`): navy #003867, value colours, Montserrat, logo files. Marketing to confirm or send the official guide. | Use draft brand: navy #003867, value colours, Montserrat; Marketing confirms or sends official guide. | Medium | Marketing | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open — draft in use |
+| `D15` | all | **Who the induction is for** — role catalogue and LMS learning paths | Assumed catalogue in `roles.json` / `personalisation-and-interactivity-plan.md` §1 (8 roles + managers, 3–4 groups per package). HR maps Oracle job families to these roles. | Eight roles in three or four groups (Clinical; Front office & My Care; Support & back office), with the LMS paths in personalisation-and-interactivity-plan.md §1. Every scored activity is common to all roles. | Medium | HR + L&D | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open — assumption applied to drafts |
+| `D16` | all | **Extra unscored screens** from the personalisation layer (+26 per learner across the programme; Rev01 says ≈207) | Accept as a free value-add and log it in the proposal change log; scored content unchanged. | Accept the 26 extra unscored screens per learner as a free value-add and log them in the proposal change log. | High | Course owner | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open |
+| `D17` | all | **Optional motion-graphics videos** (9 planned clips, `media-video-plan.json`) | Start with the programme welcome and `qsr-060`; decide the rest after the pilot. Each is a value-add or a change request. | Make the programme welcome clip and the qsr-060 speak-up clip first (HyperFrames); decide the other seven after the pilot. | Medium | Course owner | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open |
 | `D9` | all | **LMS and SCORM version** | My Clinic uses Oracle Applications Cloud (HR source: Oracle self-service), so the LMS is expected to be **Oracle Learning**. Recommended: **SCORM 1.2 for all eight packages** (Oracle documents 1.2 and 2004 Ed. 2–3; compiler emits 2004 4th Ed.). Confirm with the sample package test (`00_sample-oracle-pilot/`). | Oracle Learning (Oracle HCM Cloud) with SCORM 1.2 for all eight packages; fallback SCORM 2004 3rd Ed. if the pilot fails. | Medium | L&D / IT | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open — recommendation applied to builds, awaiting Oracle sample-test result |
 
 ## Tier 2 — due 2026-10-30 (end of week 2)

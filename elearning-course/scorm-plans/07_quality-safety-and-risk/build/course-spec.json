@@ -42,6 +42,18 @@
    "description": "Report an incident through the correct channel within 24 hours."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "qsr-sA",
@@ -147,6 +159,88 @@
    "reveal": "none",
    "notes": "Companion: Noor, char-noor-listening, right column beside the poll, never over the options (alt: Noor, the safety liaison, holding a tablet and listening.). Speaker: Noor.",
    "narration_text": "Noor: Most of us have stayed quiet about something unsafe at least once. I have. Speaking up gets easier every time. Answer honestly, or pass."
+  },
+  {
+   "type": "branching",
+   "id": "qsr-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "clinical",
+     "text_html": "<strong>Clinical</strong><br><small>Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy</small>",
+     "goto_screen_id": "qsr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "clinical"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "front",
+     "text_html": "<strong>Front office & My Care</strong><br><small>Reception, call centre, patient experience, My Care coordinators</small>",
+     "goto_screen_id": "qsr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "front"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "front-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "support",
+     "text_html": "<strong>Support & back office</strong><br><small>Admin, HR, finance, RCM, IT, facilities, housekeeping, security</small>",
+     "goto_screen_id": "qsr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "support"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "support colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "qsr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "qsr-010",
+   "points": 0,
+   "objective_ids": [],
+   "section": "A · Welcome",
+   "node_id": "qsr-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "labeled_diagram",
@@ -627,6 +721,102 @@
    },
    "reveal": "none",
    "narration_text": "Noor: Order the five hand-hygiene moments around patient contact and the care task; include every stage without skipping one."
+  },
+  {
+   "type": "accordion",
+   "id": "qsr-024-clinical",
+   "title": "Safety goals in your role",
+   "prompt_html": "<p><strong>For your role.</strong> Hand hygiene and patient identification look different by role.</p>",
+   "items": [
+    {
+     "title": "Every patient contact",
+     "body_html": "<p>Five moments at the point of care; two identifiers before every test, medicine or procedure. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "clinical"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Patient safety goals",
+   "node_id": "qsr-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "qsr-024-front",
+   "title": "Safety goals in your role",
+   "prompt_html": "<p><strong>For your role.</strong> Hand hygiene and patient identification look different by role.</p>",
+   "items": [
+    {
+     "title": "At registration",
+     "body_html": "<p>Two identifiers at check-in and on every phone booking; never the room number. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "front"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Patient safety goals",
+   "node_id": "qsr-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "qsr-024-support",
+   "title": "Safety goals in your role",
+   "prompt_html": "<p><strong>For your role.</strong> Hand hygiene and patient identification look different by role.</p>",
+   "items": [
+    {
+     "title": "Behind the scenes",
+     "body_html": "<p>Clean hands on clinical floors; report anything unsafe you see, even outside your job. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "support"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Patient safety goals",
+   "node_id": "qsr-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "qsr-024-all",
+   "title": "Safety goals in your role",
+   "prompt_html": "<p>Hand hygiene and patient identification look different by role. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Clinical",
+     "body_html": "<h4>Every patient contact</h4><p>Five moments at the point of care; two identifiers before every test, medicine or procedure. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Front office & My Care",
+     "body_html": "<h4>At registration</h4><p>Two identifiers at check-in and on every phone booking; never the room number. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Support & back office",
+     "body_html": "<h4>Behind the scenes</h4><p>Clean hands on clinical floors; report anything unsafe you see, even outside your job. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Patient safety goals",
+   "node_id": "qsr-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "sorting",
@@ -1137,7 +1327,7 @@
    "node_id": "qsr-sG",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<ul><li>Describe how quality is measured and improved.</li><li>Apply the approved patient-safety goals and verify identity.</li><li>Score a risk, choose an approved response and classify events.</li><li>Follow the confirmed incident-reporting workflow.</li></ul><p><strong>“When you see something, say something.” ⚠ PENDING B1</strong></p><p>Approved IPSG policy link ⚠ PENDING B3 · Approved incident-system link ⚠ PENDING B9.</p>",
+   "body_html": "<ul><li>Describe how quality is measured and improved.</li><li>Apply the approved patient-safety goals and verify identity.</li><li>Score a risk, choose an approved response and classify events.</li><li>Follow the confirmed incident-reporting workflow.</li></ul><p><strong>“When you see something, say something.” ⚠ PENDING B1</strong></p><p>Approved IPSG policy link ⚠ PENDING B3 · Approved incident-system link ⚠ PENDING B9.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> report one near miss or unsafe condition the day you see it.</p>",
    "show_score": true,
    "show_completion": true,
    "reveal": "auto",

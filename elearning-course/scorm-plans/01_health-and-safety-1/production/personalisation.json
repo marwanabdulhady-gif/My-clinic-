@@ -1,0 +1,230 @@
+{
+ "module": "01_health-and-safety-1",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "hs1-002": [
+   {
+    "kind": "role_picker"
+   }
+  ],
+  "hs1-303": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "true_false",
+     "id": "hs1-303c",
+     "title": "Check: after the fire",
+     "prompt_html": "<p><strong>Quick check (not scored).</strong> The fire is out, so staff can go back to their rooms.</p>",
+     "correct": false,
+     "feedback": {
+      "correct_html": "<p>Right — it's false. Stand down only when the Incident Commander gives the <strong>End of Disaster</strong> announcement.</p>",
+      "incorrect_html": "<p>Not yet. A fire being out is not the signal. Wait for the <strong>End of Disaster</strong> announcement from the Incident Commander.</p>",
+      "show_correct_answer": true
+     }
+    }
+   }
+  ],
+  "hs1-410": [
+   {
+    "kind": "role_tip",
+    "id": "hs1-411",
+    "title": "Your part in a Code Red",
+    "lead": "What you do first depends on where you work.",
+    "groups": [
+     {
+      "role": "clinical",
+      "label": "Clinical",
+      "items": [
+       {
+        "title": "Rescue",
+        "body_html": "<p>Move patients in your area away from smoke first: the ones who can walk, then those who need help. <em>Proposed — SME to confirm.</em></p>"
+       },
+       {
+        "title": "Evacuation tools",
+        "body_html": "<p>Use the evacuation chair or sheet as you were trained; never the lift.</p>"
+       }
+      ]
+     },
+     {
+      "role": "front",
+      "label": "Front office & My Care",
+      "items": [
+       {
+        "title": "Stop arrivals",
+        "body_html": "<p>Stop new patients and visitors entering the affected area and guide those waiting to the assembly point. <em>Proposed — SME to confirm.</em></p>"
+       },
+       {
+        "title": "Count heads",
+        "body_html": "<p>Keep the day's appointment list at hand so the team can check no one is left inside.</p>"
+       }
+      ]
+     },
+     {
+      "role": "support",
+      "label": "Support & back office",
+      "items": [
+       {
+        "title": "Clear the route",
+        "body_html": "<p>Keep corridors and fire doors clear; never block a door open. <em>Proposed — SME to confirm.</em></p>"
+       },
+       {
+        "title": "Isolate as directed",
+        "body_html": "<p>Facilities isolate gas, oxygen or power only when the Incident Commander asks.</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "hs1-501": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "mcq",
+     "id": "hs1-501c",
+     "title": "Check: the unlabelled bottle",
+     "prompt_html": "<p><strong>Quick check (not scored).</strong> A courier hands you a bottle with no label and says it is the new disinfectant. What do you do?</p>",
+     "feedback": {
+      "correct_html": "<p>Never accept an unlabelled container.</p>",
+      "incorrect_html": "<p>Never accept an unlabelled container: refuse it and route it through procurement.</p>",
+      "show_correct_answer": true
+     },
+     "options": [
+      {
+       "id": "o0",
+       "text_html": "Accept it and add a label yourself",
+       "correct": false,
+       "feedback_html": "<p>A label you write is a guess. Without the supplier label and SDS, nobody knows the hazard.</p>"
+      },
+      {
+       "id": "o1",
+       "text_html": "Refuse it and send it back through procurement",
+       "correct": true,
+       "feedback_html": "<p>Right: approved procurement only, on the inventory, with its SDS.</p>"
+      },
+      {
+       "id": "o2",
+       "text_html": "Put it in the store room until someone asks",
+       "correct": false,
+       "feedback_html": "<p>An unknown chemical in storage is a hazard for the next person.</p>"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "append_html": {
+  "hs1-990": "<p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> start with the first item on this list in your own area this week.</p>"
+ },
+ "convert": {
+  "hs1-410": {
+   "requires_asset": "hs1-img-staffroom",
+   "type": "hotspot",
+   "title": "Fire prevention: what not to bring",
+   "prompt_html": "<p>Find all seven things that should not be in this staff room.</p>",
+   "image_asset_id": "hs1-img-staffroom",
+   "image_alt": "Staff room with seven fire hazards: a candle, a home extension lead, a fan heater, a vape, a microwave, an open flammable bottle and welding kit by the door.",
+   "mode": "explore",
+   "require_all": true,
+   "regions": [
+    {
+     "id": "candle",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Candle or open flame</strong>",
+     "feedback_html": "<p>Open flame is banned everywhere in the clinic.</p>"
+    },
+    {
+     "id": "extension",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Home extension lead</strong>",
+     "feedback_html": "<p>Only Facilities-approved extensions; daisy-chained leads overheat.</p>"
+    },
+    {
+     "id": "heater",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Fan heater</strong>",
+     "feedback_html": "<p>Personal heaters and electric boilers are not allowed.</p>"
+    },
+    {
+     "id": "vape",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Vape or cigarette</strong>",
+     "feedback_html": "<p>No smoking or vaping indoors.</p>"
+    },
+    {
+     "id": "microwave",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Unauthorised microwave</strong>",
+     "feedback_html": "<p>Only approved kitchen appliances, in approved places.</p>"
+    },
+    {
+     "id": "flammable",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Open flammable bottle</strong>",
+     "feedback_html": "<p>Flammables stay closed, labelled and in the approved cabinet.</p>"
+    },
+    {
+     "id": "welding",
+     "shape": "rect",
+     "coords": [
+      0,
+      0,
+      10,
+      10
+     ],
+     "label_html": "<strong>Welding kit by a door</strong>",
+     "feedback_html": "<p>Hot work only with a Facilities permit.</p>"
+    }
+   ],
+   "brief": "Flat staff-room scene, 16:9: a small table and chairs, a kitchen counter. Seven separate, clearly visible items: a lit candle, a cheap home extension lead with several plugs, a small fan heater, a vape on the table, a microwave on the counter, an open bottle with a flame pictogram shape (no text), a welding kit propped by the door. Each item at least 48 px at 960×540, not overlapping."
+  }
+ }
+}

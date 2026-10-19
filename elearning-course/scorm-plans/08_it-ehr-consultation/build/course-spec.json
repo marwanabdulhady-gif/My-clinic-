@@ -42,6 +42,18 @@
    "description": "Put the complete consultation workflow in the correct order."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "ehr-sA",
@@ -172,6 +184,88 @@
    "reveal": "auto",
    "animation": "fade-up",
    "narration_text": "Dr. Omar: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift."
+  },
+  {
+   "type": "branching",
+   "id": "ehr-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "physician",
+     "text_html": "<strong>Physician</strong><br><small>Consultants, specialists, GPs</small>",
+     "goto_screen_id": "ehr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "physician"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "physician"
+      }
+     ]
+    },
+    {
+     "id": "nurse",
+     "text_html": "<strong>Nurse</strong><br><small>Nurses and assistants</small>",
+     "goto_screen_id": "ehr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "nurse"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "nurse"
+      }
+     ]
+    },
+    {
+     "id": "other",
+     "text_html": "<strong>Other EHR user</strong><br><small>Allied health, front office, RCM</small>",
+     "goto_screen_id": "ehr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "other"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "EHR user"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "ehr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "ehr-010",
+   "points": 0,
+   "objective_ids": [],
+   "section": "The workflow",
+   "node_id": "ehr-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "simulation",
@@ -1079,6 +1173,102 @@
    "media_alt": "Noor, the course guide."
   },
   {
+   "type": "accordion",
+   "id": "ehr-043-physician",
+   "title": "Your part in the consultation",
+   "prompt_html": "<p><strong>For your role.</strong> Which steps are yours.</p>",
+   "items": [
+    {
+     "title": "Steps 2–9",
+     "body_html": "<p>Documentation, diagnosis, orders, summary, education, referral and completion. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "physician"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Summary & education",
+   "node_id": "ehr-sE",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "ehr-043-nurse",
+   "title": "Your part in the consultation",
+   "prompt_html": "<p><strong>For your role.</strong> Which steps are yours.</p>",
+   "items": [
+    {
+     "title": "Before and after",
+     "body_html": "<p>Vitals and assessment fields before the doctor; education and follow-up support after. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "nurse"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Summary & education",
+   "node_id": "ehr-sE",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "ehr-043-other",
+   "title": "Your part in the consultation",
+   "prompt_html": "<p><strong>For your role.</strong> Which steps are yours.</p>",
+   "items": [
+    {
+     "title": "Read, don't edit",
+     "body_html": "<p>Use the summary and orders you need for your work; never edit a clinician's note. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "other"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Summary & education",
+   "node_id": "ehr-sE",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "ehr-043-all",
+   "title": "Your part in the consultation",
+   "prompt_html": "<p>Which steps are yours. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Physician",
+     "body_html": "<h4>Steps 2–9</h4><p>Documentation, diagnosis, orders, summary, education, referral and completion. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Nurse",
+     "body_html": "<h4>Before and after</h4><p>Vitals and assessment fields before the doctor; education and follow-up support after. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Other EHR user",
+     "body_html": "<h4>Read, don't edit</h4><p>Use the summary and orders you need for your work; never edit a clinician's note. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Summary & education",
+   "node_id": "ehr-sE",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "simulation",
    "id": "ehr-050",
    "title": "Internal referral + follow-up",
@@ -1359,7 +1549,7 @@
    "node_id": "ehr-sF",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<h3>Complete, specific, linked</h3><ul><li>Fill every mandatory section before you complete.</li><li>Choose a specific primary diagnosis by ICD-10 code or name.</li><li>Link every order to the diagnosis you assessed.</li><li>Print the summary, send education, refer and set the follow-up.</li></ul><p>EHR quick-reference card (PDF) <em>⚠ Draft — pending — link added when ehr-pdf-quickref is approved</em> · IT service desk <em>(contact ⚠ Draft — pending B3/B5)</em></p>",
+   "body_html": "<h3>Complete, specific, linked</h3><ul><li>Fill every mandatory section before you complete.</li><li>Choose a specific primary diagnosis by ICD-10 code or name.</li><li>Link every order to the diagnosis you assessed.</li><li>Print the summary, send education, refer and set the follow-up.</li></ul><p>EHR quick-reference card (PDF) <em>⚠ Draft — pending — link added when ehr-pdf-quickref is approved</em> · IT service desk <em>(contact ⚠ Draft — pending B3/B5)</em></p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> practise the workflow once in the test environment before your first clinic.</p>",
    "show_score": true,
    "show_completion": true,
    "reveal": "auto",

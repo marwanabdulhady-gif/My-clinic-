@@ -1,0 +1,303 @@
+{
+ "note": "Assumed role catalogue for the induction (owner to confirm at kick-off, decision D15). Personalisation is unscored: every learner takes the same scored activities.",
+ "roles": [
+  {
+   "id": "physician",
+   "name": "Physician (consultant, specialist, GP)",
+   "group": "clinical"
+  },
+  {
+   "id": "dentist",
+   "name": "Dentist and dental assistant",
+   "group": "clinical"
+  },
+  {
+   "id": "nurse",
+   "name": "Nurse",
+   "group": "clinical"
+  },
+  {
+   "id": "allied",
+   "name": "Allied health (lab, radiology, pharmacy, physiotherapy)",
+   "group": "clinical"
+  },
+  {
+   "id": "front",
+   "name": "Reception, call centre and patient experience (PXO)",
+   "group": "front"
+  },
+  {
+   "id": "mycare",
+   "name": "My Care coordinator and home care",
+   "group": "front"
+  },
+  {
+   "id": "rcm",
+   "name": "RCM: insurance, billing, coding",
+   "group": "support"
+  },
+  {
+   "id": "support",
+   "name": "Admin and support: HR, finance, IT, facilities, housekeeping, security",
+   "group": "support"
+  },
+  {
+   "id": "leader",
+   "name": "Managers and team leaders (any group)",
+   "group": "any — extra LMS step, not a picker choice"
+  }
+ ],
+ "lms_paths": {
+  "physician": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04",
+   "05",
+   "06",
+   "08"
+  ],
+  "dentist": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04",
+   "05",
+   "06",
+   "08"
+  ],
+  "nurse": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04",
+   "08"
+  ],
+  "allied": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04"
+  ],
+  "front": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04"
+  ],
+  "mycare": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04"
+  ],
+  "rcm": [
+   "03",
+   "07",
+   "01",
+   "02",
+   "04",
+   "05",
+   "06"
+  ],
+  "support": [
+   "03",
+   "01",
+   "02",
+   "04"
+  ],
+  "leader": "role path + D14 attestation follow-up as approver"
+ },
+ "packages": {
+  "01": {
+   "picker_id": "hs1-003",
+   "groups": [
+    {
+     "id": "clinical",
+     "label": "Clinical",
+     "who": "Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy",
+     "role_label": "clinician"
+    },
+    {
+     "id": "front",
+     "label": "Front office & My Care",
+     "who": "Reception, call centre, patient experience, My Care coordinators",
+     "role_label": "front-office colleague"
+    },
+    {
+     "id": "support",
+     "label": "Support & back office",
+     "who": "Admin, HR, finance, RCM, IT, facilities, housekeeping, security",
+     "role_label": "support colleague"
+    }
+   ]
+  },
+  "02": {
+   "picker_id": "hs2-002",
+   "groups": [
+    {
+     "id": "clinical",
+     "label": "Clinical",
+     "who": "Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy",
+     "role_label": "clinician"
+    },
+    {
+     "id": "front",
+     "label": "Front office & My Care",
+     "who": "Reception, call centre, patient experience, My Care coordinators",
+     "role_label": "front-office colleague"
+    },
+    {
+     "id": "support",
+     "label": "Support & back office",
+     "who": "Admin, HR, finance, RCM, IT, facilities, housekeeping, security",
+     "role_label": "support colleague"
+    }
+   ]
+  },
+  "03": {
+   "picker_id": "hr-003",
+   "groups": [
+    {
+     "id": "clinical",
+     "label": "Medical team",
+     "who": "Physicians, dentists, nurses, allied health",
+     "role_label": "clinician"
+    },
+    {
+     "id": "front",
+     "label": "Front office",
+     "who": "Reception, call centre, patient experience, My Care",
+     "role_label": "front-office colleague"
+    },
+    {
+     "id": "support",
+     "label": "Back office",
+     "who": "Admin, HR, finance, RCM, IT, facilities",
+     "role_label": "back-office colleague"
+    }
+   ]
+  },
+  "04": {
+   "picker_id": "ops-003",
+   "groups": [
+    {
+     "id": "front",
+     "label": "Front office",
+     "who": "Reception, call centre, PXOs",
+     "role_label": "front-office colleague"
+    },
+    {
+     "id": "mycare",
+     "label": "My Care",
+     "who": "Coordinators, onboarding, home care",
+     "role_label": "My Care colleague"
+    },
+    {
+     "id": "clinical",
+     "label": "Clinical",
+     "who": "Physicians, nurses, allied health",
+     "role_label": "clinician"
+    },
+    {
+     "id": "support",
+     "label": "Support",
+     "who": "Admin, RCM, IT, facilities",
+     "role_label": "support colleague"
+    }
+   ]
+  },
+  "05": {
+   "picker_id": "rcma-003",
+   "groups": [
+    {
+     "id": "physician",
+     "label": "Physician",
+     "who": "Consultants, specialists, GPs",
+     "role_label": "physician"
+    },
+    {
+     "id": "dentist",
+     "label": "Dentist",
+     "who": "Dentists",
+     "role_label": "dentist"
+    },
+    {
+     "id": "rcm",
+     "label": "RCM team",
+     "who": "Insurance, billing, coding",
+     "role_label": "RCM colleague"
+    }
+   ]
+  },
+  "06": {
+   "picker_id": "rcmb-002",
+   "groups": [
+    {
+     "id": "physician",
+     "label": "Physician or dentist",
+     "who": "Treating clinicians",
+     "role_label": "clinician"
+    },
+    {
+     "id": "rcm",
+     "label": "RCM team",
+     "who": "Insurance, billing, coding",
+     "role_label": "RCM colleague"
+    }
+   ]
+  },
+  "07": {
+   "picker_id": "qsr-003",
+   "groups": [
+    {
+     "id": "clinical",
+     "label": "Clinical",
+     "who": "Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy",
+     "role_label": "clinician"
+    },
+    {
+     "id": "front",
+     "label": "Front office & My Care",
+     "who": "Reception, call centre, patient experience, My Care coordinators",
+     "role_label": "front-office colleague"
+    },
+    {
+     "id": "support",
+     "label": "Support & back office",
+     "who": "Admin, HR, finance, RCM, IT, facilities, housekeeping, security",
+     "role_label": "support colleague"
+    }
+   ]
+  },
+  "08": {
+   "picker_id": "ehr-003",
+   "groups": [
+    {
+     "id": "physician",
+     "label": "Physician",
+     "who": "Consultants, specialists, GPs",
+     "role_label": "physician"
+    },
+    {
+     "id": "nurse",
+     "label": "Nurse",
+     "who": "Nurses and assistants",
+     "role_label": "nurse"
+    },
+    {
+     "id": "other",
+     "label": "Other EHR user",
+     "who": "Allied health, front office, RCM",
+     "role_label": "EHR user"
+    }
+   ]
+  }
+ }
+}

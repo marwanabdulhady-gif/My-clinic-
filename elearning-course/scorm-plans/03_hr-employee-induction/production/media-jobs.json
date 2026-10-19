@@ -145,26 +145,6 @@
    ]
   },
   {
-   "id": "hr-img-serve-icons",
-   "media": "image",
-   "route": "own-svg",
-   "status": "done",
-   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-serve-icons.svg",
-   "size_px": null,
-   "screens": [
-    "hr-014"
-   ],
-   "brief": "Line icons: family group, community ring, briefcase-and-shield",
-   "alt_text": "Decorative — each card is labelled in text.",
-   "gate": "",
-   "acceptance": [
-    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
-    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
-    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
-    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
-  },
-  {
    "id": "hr-img-map",
    "media": "image",
    "route": "own-svg",
@@ -271,86 +251,6 @@
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
     "Hotspot boxes mapped and checked on the overlay preview."
-   ]
-  },
-  {
-   "id": "hr-img-leaders-ceo",
-   "media": "image",
-   "route": "client-photo-or-role-tile",
-   "status": "todo",
-   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-ceo.png",
-   "size_px": null,
-   "screens": [
-    "hr-022"
-   ],
-   "brief": "Consented portrait, 800×800, neutral studio background",
-   "alt_text": "Abdullah Alghamdi, Chief Executive Officer.",
-   "gate": "Client photo with consent, or role tile (D5/B6)",
-   "acceptance": [
-    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
-    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
-    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
-    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
-  },
-  {
-   "id": "hr-img-leaders-cmo",
-   "media": "image",
-   "route": "client-photo-or-role-tile",
-   "status": "todo",
-   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-cmo.png",
-   "size_px": null,
-   "screens": [
-    "hr-022"
-   ],
-   "brief": "Consented portrait, 800×800",
-   "alt_text": "Dr Ahmed Al Zahrani, Chief Medical Officer.",
-   "gate": "Client photo with consent, or role tile (D5/B6)",
-   "acceptance": [
-    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
-    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
-    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
-    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
-  },
-  {
-   "id": "hr-img-leaders-coo",
-   "media": "image",
-   "route": "client-photo-or-role-tile",
-   "status": "todo",
-   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-coo.png",
-   "size_px": null,
-   "screens": [
-    "hr-022"
-   ],
-   "brief": "Consented portrait, 800×800",
-   "alt_text": "Hesham Abdulwahab, Chief Operating Officer.",
-   "gate": "Client photo with consent, or role tile (D5/B6)",
-   "acceptance": [
-    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
-    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
-    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
-    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
-  },
-  {
-   "id": "hr-img-leaders-cfo",
-   "media": "image",
-   "route": "client-photo-or-role-tile",
-   "status": "todo",
-   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-cfo.png",
-   "size_px": null,
-   "screens": [
-    "hr-022"
-   ],
-   "brief": "Consented portrait, 800×800",
-   "alt_text": "Richard Thompson, Chief Finance Officer.",
-   "gate": "Client photo with consent, or role tile (D5/B6)",
-   "acceptance": [
-    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
-    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
-    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
-    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
    ]
   },
   {
@@ -727,6 +627,106 @@
    ],
    "brief": "Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hr-img-serve-icons",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-serve-icons.svg",
+   "size_px": null,
+   "screens": [
+    "hr-014"
+   ],
+   "brief": "Line icons: family group, community ring, briefcase-and-shield",
+   "alt_text": "Decorative — each card is labelled in text.",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hr-img-leaders-ceo",
+   "media": "image",
+   "route": "client-photo-or-role-tile",
+   "status": "todo",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-ceo.png",
+   "size_px": null,
+   "screens": [
+    "hr-022"
+   ],
+   "brief": "Consented portrait, 800×800, neutral studio background",
+   "alt_text": "Abdullah Alghamdi, Chief Executive Officer.",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hr-img-leaders-cmo",
+   "media": "image",
+   "route": "client-photo-or-role-tile",
+   "status": "todo",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-cmo.png",
+   "size_px": null,
+   "screens": [
+    "hr-022"
+   ],
+   "brief": "Consented portrait, 800×800",
+   "alt_text": "Dr Ahmed Al Zahrani, Chief Medical Officer.",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hr-img-leaders-coo",
+   "media": "image",
+   "route": "client-photo-or-role-tile",
+   "status": "todo",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-coo.png",
+   "size_px": null,
+   "screens": [
+    "hr-022"
+   ],
+   "brief": "Consented portrait, 800×800",
+   "alt_text": "Hesham Abdulwahab, Chief Operating Officer.",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hr-img-leaders-cfo",
+   "media": "image",
+   "route": "client-photo-or-role-tile",
+   "status": "todo",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leaders-cfo.png",
+   "size_px": null,
+   "screens": [
+    "hr-022"
+   ],
+   "brief": "Consented portrait, 800×800",
+   "alt_text": "Richard Thompson, Chief Finance Officer.",
    "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
@@ -1790,7 +1790,7 @@
    "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
    "status": "proposed",
    "scored": false,
-   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
    "acceptance": [
     "Script approved before any render",
     "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
@@ -1814,7 +1814,7 @@
    "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
    "status": "proposed",
    "scored": false,
-   "gate": "Owner decision V1 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
    "acceptance": [
     "Script approved before any render",
     "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",

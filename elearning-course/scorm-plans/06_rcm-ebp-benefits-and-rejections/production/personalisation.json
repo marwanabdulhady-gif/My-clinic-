@@ -1,0 +1,70 @@
+{
+ "module": "06_rcm-ebp-benefits-and-rejections",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "rcmb-001": [
+   {
+    "kind": "role_picker"
+   },
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "exploration",
+     "id": "rcmb-001p",
+     "title": "Your guess",
+     "prompt_html": "<p>How many <strong>new</strong> benefits do you think the EBP added?</p>",
+     "input_kind": "slider",
+     "min_value": 0,
+     "max_value": 30,
+     "step": 1,
+     "store_key": "rcmb_new_guess"
+    }
+   }
+  ],
+  "rcmb-052": [
+   {
+    "kind": "role_tip",
+    "id": "rcmb-053",
+    "title": "Your part in rework",
+    "lead": "Who does what when a claim comes back.",
+    "groups": [
+     {
+      "role": "physician",
+      "label": "Physician or dentist",
+      "items": [
+       {
+        "title": "Fix the source",
+        "body_html": "<p>Correct the note and the diagnosis when RCM queries you; don't wait for the next rejection. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "rcm",
+      "label": "RCM team",
+      "items": [
+       {
+        "title": "Read, route, resubmit",
+        "body_html": "<p>Read the rejection comment, route it to the clinician with the fix needed, and resubmit once. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "append_html": {
+  "rcmb-091": "<p>You guessed <strong><span data-exploration-ref=\"rcmb_new_guess\"></span></strong> new benefits.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check the patient's policy and the table of benefits before you document or submit.</p>"
+ }
+}

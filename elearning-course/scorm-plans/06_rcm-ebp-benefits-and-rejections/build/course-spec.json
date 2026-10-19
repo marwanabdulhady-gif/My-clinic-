@@ -34,6 +34,18 @@
    "description": "Classify claim rejections by cause and choose the correct rework."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "rcmb-sA",
@@ -104,6 +116,87 @@
    "narration_text": "Dr. Omar: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
    "animation": "fade-up",
    "reveal": "auto"
+  },
+  {
+   "type": "branching",
+   "id": "rcmb-002",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "physician",
+     "text_html": "<strong>Physician or dentist</strong><br><small>Treating clinicians</small>",
+     "goto_screen_id": "rcmb-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "physician"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "rcm",
+     "text_html": "<strong>RCM team</strong><br><small>Insurance, billing, coding</small>",
+     "goto_screen_id": "rcmb-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "rcm"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "RCM colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "rcmb-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "rcmb-001p",
+   "points": 0,
+   "objective_ids": [],
+   "section": "What changed",
+   "node_id": "rcmb-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "exploration",
+   "id": "rcmb-001p",
+   "title": "Your guess",
+   "prompt_html": "<p>How many <strong>new</strong> benefits do you think the EBP added?</p>",
+   "input_kind": "slider",
+   "min_value": 0,
+   "max_value": 30,
+   "step": 1,
+   "store_key": "rcmb_new_guess",
+   "section": "What changed",
+   "node_id": "rcmb-sA",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "drag_drop",
@@ -655,6 +748,76 @@
    "reveal": "none"
   },
   {
+   "type": "accordion",
+   "id": "rcmb-053-physician",
+   "title": "Your part in rework",
+   "prompt_html": "<p><strong>For your role.</strong> Who does what when a claim comes back.</p>",
+   "items": [
+    {
+     "title": "Fix the source",
+     "body_html": "<p>Correct the note and the diagnosis when RCM queries you; don't wait for the next rejection. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "physician"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Reading rejections",
+   "node_id": "rcmb-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "rcmb-053-rcm",
+   "title": "Your part in rework",
+   "prompt_html": "<p><strong>For your role.</strong> Who does what when a claim comes back.</p>",
+   "items": [
+    {
+     "title": "Read, route, resubmit",
+     "body_html": "<p>Read the rejection comment, route it to the clinician with the fix needed, and resubmit once. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "rcm"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Reading rejections",
+   "node_id": "rcmb-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "rcmb-053-all",
+   "title": "Your part in rework",
+   "prompt_html": "<p>Who does what when a claim comes back. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Physician or dentist",
+     "body_html": "<h4>Fix the source</h4><p>Correct the note and the diagnosis when RCM queries you; don't wait for the next rejection. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "RCM team",
+     "body_html": "<h4>Read, route, resubmit</h4><p>Read the rejection comment, route it to the clinician with the fix needed, and resubmit once. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Reading rejections",
+   "node_id": "rcmb-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "adaptive_practice",
    "id": "rcmb-060",
    "title": "Covered or not?",
@@ -1072,7 +1235,7 @@
    "points": 0,
    "show_score": true,
    "show_completion": true,
-   "body_html": "<ul><li><strong>Know what's new</strong> in the EBP.</li><li><strong>Document</strong> to the benefit's criteria.</li><li><strong>Check limits and pre-authorisation</strong> before you promise cover.</li><li><strong>Rework, don't resubmit</strong> a rejected claim.</li></ul><p>EBP one-page summary (PDF): link added after payer-relations approval. <strong>⚠ Draft — pending B3</strong></p>",
+   "body_html": "<ul><li><strong>Know what's new</strong> in the EBP.</li><li><strong>Document</strong> to the benefit's criteria.</li><li><strong>Check limits and pre-authorisation</strong> before you promise cover.</li><li><strong>Rework, don't resubmit</strong> a rejected claim.</li></ul><p>EBP one-page summary (PDF): link added after payer-relations approval. <strong>⚠ Draft — pending B3</strong></p><p>You guessed <strong><span data-exploration-ref=\"rcmb_new_guess\"></span></strong> new benefits.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check the patient's policy and the table of benefits before you document or submit.</p>",
    "notes": "Companions: Dr. Omar char-omar-success + Noor char-noor-avatar-happy, L6 (summary has no media slot; developer places). Two-voice close: omar-1 then noor-1. Planned asset rcmb-pdf-ebp (PDF, pending B3) — summary schema has no attachment field; link to be added when the approved PDF exists.",
    "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Noor: And remember: asking early is always the safe move here.",
    "animation": "fade-up",

@@ -42,6 +42,18 @@
    "description": "Improve a weak consultation note so that it is clear, strong and defensible."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "rcma-sA",
@@ -145,6 +157,88 @@
    "multi": false,
    "allow_text": false,
    "reflection_html": "<p>Hold that thought — we'll check it later. This reflection is not scored.</p>"
+  },
+  {
+   "type": "branching",
+   "id": "rcma-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "physician",
+     "text_html": "<strong>Physician</strong><br><small>Consultants, specialists, GPs</small>",
+     "goto_screen_id": "rcma-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "physician"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "physician"
+      }
+     ]
+    },
+    {
+     "id": "dentist",
+     "text_html": "<strong>Dentist</strong><br><small>Dentists</small>",
+     "goto_screen_id": "rcma-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "dentist"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "dentist"
+      }
+     ]
+    },
+    {
+     "id": "rcm",
+     "text_html": "<strong>RCM team</strong><br><small>Insurance, billing, coding</small>",
+     "goto_screen_id": "rcma-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "rcm"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "RCM colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "rcma-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "rcma-010",
+   "points": 0,
+   "objective_ids": [],
+   "section": "Why it matters",
+   "node_id": "rcma-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "tabs",
@@ -464,6 +558,102 @@
    }
   },
   {
+   "type": "accordion",
+   "id": "rcma-024-physician",
+   "title": "Specific coding in your work",
+   "prompt_html": "<p><strong>For your role.</strong> What \"specific\" looks like for you.</p>",
+   "items": [
+    {
+     "title": "Your note decides the code",
+     "body_html": "<p>Write the supported diagnosis, not the symptom, and the duration and severity behind it. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "physician"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "ICD-10 coding",
+   "node_id": "rcma-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "rcma-024-dentist",
+   "title": "Specific coding in your work",
+   "prompt_html": "<p><strong>For your role.</strong> What \"specific\" looks like for you.</p>",
+   "items": [
+    {
+     "title": "Dental claims",
+     "body_html": "<p>Record the tooth, the finding and the procedure so the code and the service match. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "dentist"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "ICD-10 coding",
+   "node_id": "rcma-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "rcma-024-rcm",
+   "title": "Specific coding in your work",
+   "prompt_html": "<p><strong>For your role.</strong> What \"specific\" looks like for you.</p>",
+   "items": [
+    {
+     "title": "Query, don't guess",
+     "body_html": "<p>If the note only supports a symptom code, query the clinician before submitting. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "rcm"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "ICD-10 coding",
+   "node_id": "rcma-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "rcma-024-all",
+   "title": "Specific coding in your work",
+   "prompt_html": "<p>What \"specific\" looks like for you. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Physician",
+     "body_html": "<h4>Your note decides the code</h4><p>Write the supported diagnosis, not the symptom, and the duration and severity behind it. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Dentist",
+     "body_html": "<h4>Dental claims</h4><p>Record the tooth, the finding and the procedure so the code and the service match. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "RCM team",
+     "body_html": "<h4>Query, don't guess</h4><p>If the note only supports a symptom code, query the clinician before submitting. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "ICD-10 coding",
+   "node_id": "rcma-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "content_slide",
    "id": "rcma-030",
    "title": "More tests ≠ better care",
@@ -741,6 +931,23 @@
      "html": "<blockquote>“If you don't document it properly, it won't be covered — even if it's clinically correct.”</blockquote><p>The same service may be accepted or rejected depending on its indication and how it is documented: record the severity, the duration and the impact on the patient.</p><p><strong>Next:</strong> RCM Part B covers the new essential benefits package (EBP).</p>"
     }
    ]
+  },
+  {
+   "type": "true_false",
+   "id": "rcma-041c",
+   "title": "Check: covered?",
+   "prompt_html": "<p><strong>Quick check (not scored).</strong> If my treatment is clinically correct, the claim will be covered.</p>",
+   "correct": false,
+   "feedback": {
+    "correct_html": "<p>Right — it's false. Coverage depends on the table of benefits <strong>and</strong> on the documentation.</p>",
+    "incorrect_html": "<p>Not always: if it isn't documented properly, it won't be covered — even when it's clinically correct.</p>",
+    "show_correct_answer": true
+   },
+   "section": "Rejections & coverage",
+   "node_id": "rcma-sE",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "mcq",
@@ -1042,7 +1249,7 @@
    "reveal": "auto",
    "notes": "Companion: Dr. Omar, char-omar-success, L6 right (summary has no media slot; developer places the pose). Speaker: Omar. Desk checklist rcma-pdf-checklist (PDF) still to produce; not linked in this draft.",
    "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
-   "body_html": "<p><strong>Clear, strong, defensible: the checklist to keep at your desk</strong></p><ul><li>✔ Be specific; avoid uncovered codes and combined supplements.</li><li>✔ Full data, and a plan with duration and expected outcome.</li><li>✔ Justify every service with a specific code; use a provisional diagnosis if needed.</li><li>✔ Think like a clinician <em>and</em> a reviewer.</li><li>✔ If you skip a protocol, document why.</li><li>✔ Clear, strong, defensible.</li></ul><p><strong>Next:</strong> RCM Part B. Printable desk checklist: pending production (rcma-pdf-checklist).</p>",
+   "body_html": "<p><strong>Clear, strong, defensible: the checklist to keep at your desk</strong></p><ul><li>✔ Be specific; avoid uncovered codes and combined supplements.</li><li>✔ Full data, and a plan with duration and expected outcome.</li><li>✔ Justify every service with a specific code; use a provisional diagnosis if needed.</li><li>✔ Think like a clinician <em>and</em> a reviewer.</li><li>✔ If you skip a protocol, document why.</li><li>✔ Clear, strong, defensible.</li></ul><p><strong>Next:</strong> RCM Part B. Printable desk checklist: pending production (rcma-pdf-checklist).</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> pick one recent note and check it against the six-point checklist.</p>",
    "show_score": true,
    "show_completion": true
   }

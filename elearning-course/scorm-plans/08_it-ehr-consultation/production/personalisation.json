@@ -1,0 +1,66 @@
+{
+ "module": "08_it-ehr-consultation",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "ehr-002": [
+   {
+    "kind": "role_picker"
+   }
+  ],
+  "ehr-042": [
+   {
+    "kind": "role_tip",
+    "id": "ehr-043",
+    "title": "Your part in the consultation",
+    "lead": "Which steps are yours.",
+    "groups": [
+     {
+      "role": "physician",
+      "label": "Physician",
+      "items": [
+       {
+        "title": "Steps 2–9",
+        "body_html": "<p>Documentation, diagnosis, orders, summary, education, referral and completion. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "nurse",
+      "label": "Nurse",
+      "items": [
+       {
+        "title": "Before and after",
+        "body_html": "<p>Vitals and assessment fields before the doctor; education and follow-up support after. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "other",
+      "label": "Other EHR user",
+      "items": [
+       {
+        "title": "Read, don't edit",
+        "body_html": "<p>Use the summary and orders you need for your work; never edit a clinician's note. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "append_html": {
+  "ehr-091": "<p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> practise the workflow once in the test environment before your first clinic.</p>"
+ }
+}

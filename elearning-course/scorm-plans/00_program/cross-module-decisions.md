@@ -18,6 +18,9 @@ These decisions affect more than one package. Record the final answer here **onc
 | D12 | **Template origin of H&S 2** ("First Clinic" metadata) [15] | 02 | Do not reuse H&S 2 template art until confirmed. | Safety & Security Manager | Open | |
 | D13 | **Clinical Risk and Infection Control sessions** (on the HR agenda but no source) [5] | 03, program | Out of scope for these eight packages. Flag as a gap in the induction curriculum. | L&D | Open | |
 | D14 | **Completion record / acknowledgement form** (H&S 1 page 65 asks staff to sign) | 01, 03 | Use an LMS attestation step after the SCORM package, or a final `poll` screen + LMS e-signature. | L&D | Open | |
+| D15 | **Who the induction is for** — role catalogue and LMS learning paths | all | Assumed catalogue in `roles.json` / `personalisation-and-interactivity-plan.md` §1 (8 roles + managers, 3–4 groups per package). HR maps Oracle job families to these roles. | HR + L&D | Open — assumption applied to drafts | |
+| D16 | **Extra unscored screens** from the personalisation layer (+26 per learner across the programme; Rev01 says ≈207) | all | Accept as a free value-add and log it in the proposal change log; scored content unchanged. | Course owner | Open | |
+| D17 | **Optional motion-graphics videos** (9 planned clips, `media-video-plan.json`) | all | Start with the programme welcome and `qsr-060`; decide the rest after the pilot. Each is a value-add or a change request. | Course owner | Open | |
 
 ## How to close a decision
 

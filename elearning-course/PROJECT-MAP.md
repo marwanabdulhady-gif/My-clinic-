@@ -9,9 +9,9 @@
 ## 1. Where the project is
 
 ```text
-Phase 0  Source lock & decisions      🔒  102 open decisions — kick-off with My Clinic not yet held
+Phase 0  Source lock & decisions      🔒  105 open decisions, each with a researched working assumption — kick-off not yet held
 Phase 1  Action map & objectives      ✅  all 8 (SME approval pending)
-Phase 2  Storyboards                  ✅  all 8 at v0.2 · 207 screens · client Word pack ready
+Phase 2  Storyboards                  ✅  all 8 at v0.2 · 207 screens · re-verified against Rev01 · + role personalisation layer
 Phase 3  Narration & media            🟡  scripts written (6 packs need a rewrite, G11) · companion art done · voices, images, captures pending
 Phase 4  SCORM build                  🟡  v0.1-draft packages for all 8 (real compiler, 0 lint errors, SCORM 1.2) + Oracle sample
 Phase 5  QA, LMS test, pilot          ⬜  harness tests passed on the sample · Oracle Learning test not yet run
@@ -21,10 +21,10 @@ Phase 5  QA, LMS test, pilot          ⬜  harness tests passed on the sample ·
 
 | Phase | Programme deliverables | Status |
 |---|---|---|
-| **0 — Source lock** | [Decision sheet (102 rows)](scorm-plans/00_program/decision-sheet.md) · [D1–D14](scorm-plans/00_program/cross-module-decisions.md) · [Kick-off pack](scorm-plans/00_program/kickoff-pack.md) | 🔒 waiting on kick-off |
+| **0 — Source lock** | [Decision sheet (105 rows)](scorm-plans/00_program/decision-sheet.md) · [Researched answers](scorm-plans/00_program/kickoff-assumed-answers.md) · [D1–D17](scorm-plans/00_program/cross-module-decisions.md) · [Kick-off pack v0.3](scorm-plans/00_program/kickoff-pack.md) | 🔒 waiting on kick-off |
 | **1 — Action map** | One `phase-1-action-map.md` per module (objectives, evidence, seat time) | ✅ |
-| **2 — Storyboards** | [Storyboard template](scorm-plans/00_program/storyboard-template/) · [Review register](scorm-plans/00_program/storyboard-review-register.md) · [Client Word pack](scorm-plans/client-review/) · [Brand identity](scorm-plans/00_program/brand/brand-identity.md) · [Companions](scorm-plans/00_program/characters/companions.md) | ✅ v0.2, SME review pending |
-| **3 — Narration & media** | [Narration & lexicon](scorm-plans/00_program/narration-and-lexicon.md) · [Visual & motion brief](scorm-plans/00_program/visual-and-motion-agent-brief.md) · [Motion spec](scorm-plans/00_program/motion-and-animation-spec.md) · full-size companion art | 🟡 voices (D10), 21–22 scene images, Oracle/EHR captures pending |
+| **2 — Storyboards** | [Storyboard template](scorm-plans/00_program/storyboard-template/) · [Review register](scorm-plans/00_program/storyboard-review-register.md) · [Client Word pack](scorm-plans/client-review/) · [Brand identity](scorm-plans/00_program/brand/brand-identity.md) · [Companions](scorm-plans/00_program/characters/companions.md) · [Proposal check](scorm-plans/00_program/storyboard-proposal-check.md) · [Personalisation & interactivity](scorm-plans/00_program/personalisation-and-interactivity-plan.md) | ✅ v0.2, SME review pending |
+| **3 — Narration & media** | [Narration & lexicon](scorm-plans/00_program/narration-and-lexicon.md) · [Visual & motion brief](scorm-plans/00_program/visual-and-motion-agent-brief.md) · [Motion spec](scorm-plans/00_program/motion-and-animation-spec.md) · [Media runbook](scorm-plans/00_program/media-production-runbook.md) · [Media jobs](scorm-plans/00_program/media-jobs-summary.md) · [Video tooling](scorm-plans/00_program/video-tooling.md) · full-size companion art | 🟡 voices (D10), 21–22 scene images, Oracle/EHR captures pending |
 | **4 — Build** | [SCORM structure](scorm-plans/00_program/scorm-structure.md) · [Build pipeline](scorm-plans/00_program/build-pipeline.md) · [Draft builds](scorm-plans/00_program/draft-builds.md) | 🟡 drafts built; release builds after Phases 0 and 3 |
 | **5 — QA & delivery** | [Oracle compatibility](scorm-plans/00_program/oracle-learning-compatibility.md) · [Oracle sample + test guide](scorm-plans/00_sample-oracle-pilot/) · [XSD validation](scorm-plans/00_program/xsd-validation.md) · [QA checklist](scorm-plans/00_program/qa-checklist.md) | 🟡 sample ready to send |
 

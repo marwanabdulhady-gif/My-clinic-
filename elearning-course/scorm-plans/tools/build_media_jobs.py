@@ -140,6 +140,34 @@ def image_job(aid: str, mdir: Path, reg: dict, uses: list[dict], amap: dict, suf
     return job
 
 
+def layer_image_jobs(mdir: Path, colour: str, suffix: str, have: set[str]) -> list[dict]:
+    """Pictures a staged personalisation step waits for (new explore hotspots on new pictures)."""
+    p = mdir / "production" / "personalisation.json"
+    if not p.exists():
+        return []
+    out = []
+    for sid, step in json.loads(p.read_text()).get("convert", {}).items():
+        aid = step.get("requires_asset")
+        if not aid or aid in have:
+            continue
+        done = any((mdir / "storyboard" / "assets" / f"{aid}{e}").exists() for e in (".png", ".jpg", ".svg"))
+        out.append({
+            "id": aid, "media": "image", "route": "ai-image", "status": "done" if done else "todo",
+            "target_file": f"{mdir.name}/storyboard/assets/{aid}.png", "size_px": [1920, 1080], "screens": [sid],
+            "brief": step.get("brief", ""), "alt_text": step.get("image_alt", ""),
+            "prompt": f"{step.get('brief', '')} Module highlight colour {colour}.\n\n{suffix}",
+            "gate": "Unscored explore screen (personalisation layer); SME confirms the items",
+            "hotspots": {"rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. "
+                                  "Map the boxes with tools/map_hotspots.py init/preview after generating.",
+                         "screens": [{"screen_id": sid, "mode": "explore", "scored": False,
+                                      "regions": [{"id": r["id"], "label": re.sub("<[^>]+>", "", r["label_html"])} for r in step["regions"]]}],
+                         "extra_regions_allowed": True},
+            "acceptance": ["Matches the brief; nothing beyond it.", "No text, numbers or logos in the pixels.",
+                           "Hotspot boxes mapped and checked on the overlay preview.", "Provenance recorded."],
+            "unlocks": f"{sid} becomes an explore hotspot when this file exists"})
+    return out
+
+
 def audio_jobs(mdir: Path, prefix: str) -> list[dict]:
     p = mdir / "storyboard" / "narration-script.json"
     if not p.exists():
@@ -195,6 +223,7 @@ def main() -> None:
             return next((dict(v, brief=f"Part of {k}: {v['brief']}") for k, v in reg.items()
                          if k.endswith("-icons") and a.startswith(k[:-len("icons")])), {})
         images = [image_job(a, mdir, row(a), uses.get(a, []), amap.get(a, {}), suffix, pr, colour) for a in ids]
+        images += layer_image_jobs(mdir, colour, suffix, {j["id"] for j in images})
         jobs = images + audio_jobs(mdir, prefix) + video_jobs(module)
         out = mdir / "production"
         out.mkdir(exist_ok=True)

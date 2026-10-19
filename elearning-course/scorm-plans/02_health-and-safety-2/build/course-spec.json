@@ -50,6 +50,18 @@
    "description": "Recognise prohibited items under hospital regulations."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "hs2-sA",
@@ -123,6 +135,104 @@
    "animation": "fade-up",
    "reveal": "auto",
    "narration_text": "Noor: Safety is the habits that protect life, health and environment. Today you practise them. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear."
+  },
+  {
+   "type": "branching",
+   "id": "hs2-002",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "clinical",
+     "text_html": "<strong>Clinical</strong><br><small>Physicians, dentists, nurses, lab, radiology, pharmacy, physiotherapy</small>",
+     "goto_screen_id": "hs2-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "clinical"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "front",
+     "text_html": "<strong>Front office & My Care</strong><br><small>Reception, call centre, patient experience, My Care coordinators</small>",
+     "goto_screen_id": "hs2-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "front"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "front-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "support",
+     "text_html": "<strong>Support & back office</strong><br><small>Admin, HR, finance, RCM, IT, facilities, housekeeping, security</small>",
+     "goto_screen_id": "hs2-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "support"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "support colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "hs2-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "hs2-001p",
+   "points": 0,
+   "objective_ids": [],
+   "section": "A · Spot the hazard",
+   "node_id": "hs2-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "exploration",
+   "id": "hs2-001p",
+   "title": "Your guess",
+   "prompt_html": "<p>Before you start: how many hazards do you expect to find in the lab picture?</p>",
+   "input_kind": "slider",
+   "min_value": 0,
+   "max_value": 10,
+   "step": 1,
+   "store_key": "hs2_hazard_guess",
+   "section": "A · Spot the hazard",
+   "node_id": "hs2-sA",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "worked_example",
@@ -841,6 +951,102 @@
    "narration_text": "Noor: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
   },
   {
+   "type": "accordion",
+   "id": "hs2-031r-clinical",
+   "title": "Your role in a real drill",
+   "prompt_html": "<p><strong>For your role.</strong> The drill you just ran is the same for everyone. In real life, your first moves differ by role.</p>",
+   "items": [
+    {
+     "title": "Patients first",
+     "body_html": "<p>Rescue the patients in your area, then use the evacuation tool made for stairs. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "clinical"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Evacuation",
+   "node_id": "hs2-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hs2-031r-front",
+   "title": "Your role in a real drill",
+   "prompt_html": "<p><strong>For your role.</strong> The drill you just ran is the same for everyone. In real life, your first moves differ by role.</p>",
+   "items": [
+    {
+     "title": "Visitors and arrivals",
+     "body_html": "<p>Stop arrivals, guide visitors to the assembly point and bring the day's list. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "front"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Evacuation",
+   "node_id": "hs2-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hs2-031r-support",
+   "title": "Your role in a real drill",
+   "prompt_html": "<p><strong>For your role.</strong> The drill you just ran is the same for everyone. In real life, your first moves differ by role.</p>",
+   "items": [
+    {
+     "title": "Routes and utilities",
+     "body_html": "<p>Keep routes clear and isolate utilities only when told. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "support"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Evacuation",
+   "node_id": "hs2-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "hs2-031r-all",
+   "title": "Your role in a real drill",
+   "prompt_html": "<p>The drill you just ran is the same for everyone. In real life, your first moves differ by role. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Clinical",
+     "body_html": "<h4>Patients first</h4><p>Rescue the patients in your area, then use the evacuation tool made for stairs. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Front office & My Care",
+     "body_html": "<h4>Visitors and arrivals</h4><p>Stop arrivals, guide visitors to the assembly point and bring the day's list. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Support & back office",
+     "body_html": "<h4>Routes and utilities</h4><p>Keep routes clear and isolate utilities only when told. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "C · Evacuation",
+   "node_id": "hs2-sC",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "labeled_diagram",
    "id": "hs2-032",
    "title": "A plan",
@@ -1100,6 +1306,23 @@
    "reveal": "auto",
    "notes": "Code Orange threshold uses the decision sheet's recommended draft for D1 (02/B1). Change the rule text here, in hs2-052 and in hs2-064 puzzle 4 when D1 closes.",
    "narration_text": "Noor: HAZMAT is chemical or biological. One clear rule decides Code Orange. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task."
+  },
+  {
+   "type": "true_false",
+   "id": "hs2-050c",
+   "title": "Check: Code Orange",
+   "prompt_html": "<p><strong>Quick check (not scored).</strong> Code Orange is only for chemical spills.</p>",
+   "correct": false,
+   "feedback": {
+    "correct_html": "<p>Right — it's false. Code Orange covers a <strong>chemical or a biological</strong> spill.</p>",
+    "incorrect_html": "<p>Code Orange covers chemical <strong>and</strong> biological spills.</p>",
+    "show_correct_answer": true
+   },
+   "section": "E · Spills",
+   "node_id": "hs2-sE",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "image_compare",
@@ -1711,7 +1934,7 @@
    "node_id": "hs2-sG",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<p><strong>What you practised</strong></p><ul><li>Spot hazards and score risk as likelihood × impact.</li><li>Run RACE in a Code Red, with a complete alarm call.</li><li>Choose evacuation tools and extinguishers, and read a plan.</li><li>Triage spills, use the right kit, and read GHS, NFPA and the chemical register.</li></ul><p><strong>Contact:</strong> Safety &amp; Security, extension ⚠ Draft — pending B9.</p><p><strong>Next:</strong> module 04, and your unit's drill schedule.</p>",
+   "body_html": "<p><strong>What you practised</strong></p><ul><li>Spot hazards and score risk as likelihood × impact.</li><li>Run RACE in a Code Red, with a complete alarm call.</li><li>Choose evacuation tools and extinguishers, and read a plan.</li><li>Triage spills, use the right kit, and read GHS, NFPA and the chemical register.</li></ul><p><strong>Contact:</strong> Safety &amp; Security, extension ⚠ Draft — pending B9.</p><p><strong>Next:</strong> module 04, and your unit's drill schedule.</p><p>Your first guess was <strong><span data-exploration-ref=\"hs2_hazard_guess\"></span></strong> hazards.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check one hazard in your own area this week.</p>",
    "show_score": true,
    "show_completion": true,
    "animation": "fade-up",
