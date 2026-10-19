@@ -1,0 +1,50 @@
+{
+  "module": "00_sample-oracle-pilot",
+  "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 8,
+  "theme_keys": [
+    "color",
+    "custom_css",
+    "custom_fonts",
+    "logo_alt",
+    "logo_asset_id",
+    "name",
+    "typography"
+  ],
+  "module_colour": "#008C99",
+  "build": {
+    "project_id": "proj_01M59Z3R6BX079DMH0G2079BAY",
+    "job_id": "job_01M59Z3R7T8YX24WHKJM7CEBQW",
+    "status": "done",
+    "download_url": "http://localhost/scorm/files/PAMMbUVUDKehEkccOm8_L19eWae_-XDx",
+    "warnings": [
+      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
+    ]
+  },
+  "lint_course": {
+    "project_id": "proj_01M59Z3R6BX079DMH0G2079BAY",
+    "strict": false,
+    "error_count": 0,
+    "warn_count": 0,
+    "clean": true,
+    "evidence_binding_coverage": 1.0,
+    "issues": []
+  },
+  "validate_package": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "schema_unavailable",
+        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
+        "path": "imsmanifest.xml"
+      }
+    ]
+  },
+  "player_patches": 2,
+  "package": {
+    "file": "MC_Sample_OracleLearning_1.2.zip",
+    "bytes": 2559172
+  },
+  "preview": "preview.html"
+}

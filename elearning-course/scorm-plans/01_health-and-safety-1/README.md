@@ -10,11 +10,11 @@
 | Brand | My Clinic brand — [`brand-identity.md`](../00_program/brand/brand-identity.md); module colour **Ambitious teal #008C99**; layouts L1–L6 |
 | Audience | All new staff, clinical and non-clinical, in their first week |
 | Seat time | ~55 minutes (9 short sections of 4–8 minutes; learners can pause and resume) |
-| SCORM | 2004 4th edition (long module, many interactions; fall back to 1.2 if the LMS needs it) |
+| SCORM | 1.2 (Oracle Learning target; worst-case resume data 749/373 bytes of the 4,096 limit — see `00_program/oracle-learning-compatibility.md`) |
 | Completion | `viewed_all_and_passed`, passing score **80** |
 | Scored screens | 24 (section checks + capstone), 220 points in total |
 | Prerequisite | None. Module 02 (practice lab) follows this one. |
-| Draft SCORM (v0.1) | [`build/MC_01_FMS_v0.1-draft_2004.zip`](build/MC_01_FMS_v0.1-draft_2004.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
+| Draft SCORM (v0.1) | [`build/MC_01_FMS_v0.1-draft_1.2.zip`](build/MC_01_FMS_v0.1-draft_1.2.zip) · [`preview.html`](build/preview.html) · `lint_course` 0 errors · `validate_package` ok (structural) · [`draft-builds.md`](../00_program/draft-builds.md) |
 
 ## Design idea in one paragraph
 

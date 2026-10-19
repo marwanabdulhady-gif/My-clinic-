@@ -1,5 +1,7 @@
 # Manifest XSD validation — all eight draft packages
 
+> **2026-10-19:** 01 and 03 are now SCORM 1.2 (Oracle Learning target). Their 2004 results below are kept as the record; rerun the XSD check on the 1.2 builds with `SCORM_SCHEMA_DIR` (schema hosts are blocked in the cloud workspace).
+
 ![My Clinic logo](brand/logo-preview.png)
 
 > Run **2026-10-15** against the committed `v0.1-draft` sources with the real compiler

@@ -1,0 +1,20 @@
+<!doctype html><html><body style="margin:0"><script>
+var store = JSON.parse(sessionStorage.getItem('cmi')||'{}'); window.calls=[];
+function log(n,a,r){ calls.push([n].concat(a).concat(['=>',r])); }
+function save(){ sessionStorage.setItem('cmi', JSON.stringify(store)); }
+window.API = { // SCORM 1.2
+  LMSInitialize:function(a){log('LMSInitialize',[a],'true');return 'true';},
+  LMSFinish:function(a){log('LMSFinish',[a],'true');save();return 'true';},
+  LMSGetValue:function(k){var v=store[k]!==undefined?store[k]:(k==='cmi.core.lesson_status'?'not attempted':(k==='cmi.core.entry'?(store['cmi.suspend_data']?'resume':'ab-initio'):''));log('LMSGetValue',[k],v);return v;},
+  LMSSetValue:function(k,v){store[k]=String(v);log('LMSSetValue',[k,v],'true');return 'true';},
+  LMSCommit:function(a){log('LMSCommit',[a],'true');save();return 'true';},
+  LMSGetLastError:function(){return '0';},LMSGetErrorString:function(){return '';},LMSGetDiagnostic:function(){return '';}};
+window.API_1484_11 = { // SCORM 2004
+  Initialize:function(a){log('Initialize',[a],'true');return 'true';},
+  Terminate:function(a){log('Terminate',[a],'true');save();return 'true';},
+  GetValue:function(k){var v=store[k]!==undefined?store[k]:(k==='cmi.completion_status'?'not attempted':(k==='cmi.entry'?(store['cmi.suspend_data']?'resume':'ab-initio'):(k==='cmi.success_status'?'unknown':'')));log('GetValue',[k],v);return v;},
+  SetValue:function(k,v){store[k]=String(v);log('SetValue',[k,v],'true');return 'true';},
+  Commit:function(a){log('Commit',[a],'true');save();return 'true';},
+  GetLastError:function(){return '0';},GetErrorString:function(){return '';},GetDiagnostic:function(){return '';}};
+</script><iframe id="c" style="width:1280px;height:760px;border:0"></iframe>
+<script>document.getElementById('c').src=location.hash.slice(1);</script></body></html>

@@ -22,9 +22,9 @@ Generated 2026-10-14 by `tools/audit_scorm_base.py`. **Clean — no hard failure
 
 | # | Package | SCORM | Screens | Scored | Pts | Pass | Objectives | Scenarios | Interactions | Resume (est./limit) | Checklist | Structure doc |
 |---|---|---|---:|---:|---:|---|---:|---|---|---|---|---|
-| 01 | health-and-safety-1 | 2004 | 54 | 24 | 220 | 80% (176) | 10 | 5/5 | choice×5, matching×7, performance×6, sequencing×4, true-false×2 | 2,448 / 64,000 | 10/12 | fresh |
+| 01 | health-and-safety-1 | 1.2 | 54 | 24 | 220 | 80% (176) | 10 | 5/5 | choice×5, matching×7, performance×6, sequencing×4, true-false×2 | 2,448 / 4,096 | 10/12 | fresh |
 | 02 | health-and-safety-2 | 1.2 | 26 | 13 | 145 | 80% (116) | 7 | 3/3 | choice×3, fill-in×2, matching×4, performance×3, sequencing×1 | 1,248 / 4,096 | 10/12 | fresh |
-| 03 | hr-employee-induction | 2004 | 36 | 15 | 145 | 70% (102) | 6 | 4/4 | choice×5, fill-in×1, matching×5, performance×3, true-false×1 | 1,584 / 64,000 | 12/12 | fresh |
+| 03 | hr-employee-induction | 1.2 | 36 | 15 | 145 | 70% (102) | 6 | 4/4 | choice×5, fill-in×1, matching×5, performance×3, true-false×1 | 1,584 / 4,096 | 12/12 | fresh |
 | 04 | operations-and-my-care | 1.2 | 13 | 4 | 50 | 70% (35) | 3 | 1/1 | choice×1, matching×2, performance×1 | 504 / 4,096 | 10/12 | fresh |
 | 05 | rcm-documentation-and-coding | 1.2 | 21 | 10 | 100 | 80% (80) | 5 | 2/2 | choice×3, matching×3, performance×2, sequencing×1, true-false×1 | 984 / 4,096 | 10/12 | fresh |
 | 06 | rcm-ebp-benefits-and-rejections | 1.2 | 15 | 7 | 80 | 80% (64) | 3 | 2/2 | choice×2, matching×3, performance×1, true-false×1 | 696 / 4,096 | 10/12 | fresh |

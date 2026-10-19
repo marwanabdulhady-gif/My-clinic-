@@ -6,9 +6,9 @@
 
 | Item | Value |
 |---|---|
-| Package file | `MC_03_WelcomeOnBoard_v1.0_2004.zip` (stored in Drive, not Git) |
+| Package file | `MC_03_WelcomeOnBoard_v1.0_1.2.zip` (stored in Drive, not Git) |
 | Manifest title | My Clinic — Welcome On Board: My Clinic & HR Essentials |
-| Standard | SCORM 2004 4th edition · one SCO · launch `index.html` |
+| Standard | SCORM 1.2 · one SCO · launch `index.html` |
 | Manifest ids | `MANIFEST-<project_id>` → `ORG-1` → `ITEM-1` → `RES-1` |
 | Language / layout | `en` · `stage` 960×540 |
 | Completion rule | `viewed_all_and_passed` |
@@ -21,7 +21,7 @@
 ## 2. Package contents (inside the zip)
 
 ```text
-MC_03_WelcomeOnBoard_v1.0_2004.zip
+MC_03_WelcomeOnBoard_v1.0_1.2.zip
 ├── imsmanifest.xml            # 1 organization, 1 item, 1 SCO resource listing every file
 ├── index.html                 # the whole course: player + all screens (rendered by edumints)
 ├── runtime/
@@ -80,24 +80,16 @@ Asset file names are fixed at `add_asset` time (`assets/<file>`); the list above
     <title>My Clinic — Welcome On Board: My Clinic & HR Essentials</title>
     <item identifier="ITEM-1" identifierref="RES-1">
       <title>My Clinic — Welcome On Board: My Clinic & HR Essentials</title>
-      <imsss:sequencing>
-        <imsss:objectives>
-          <imsss:primaryObjective satisfiedByMeasure="true"><imsss:minNormalizedMeasure>0.70</imsss:minNormalizedMeasure></imsss:primaryObjective>
-          <imsss:objective objectiveID="hr-o1"/>
-          <imsss:objective objectiveID="hr-o2"/>
-          <imsss:objective objectiveID="hr-o3"/>
-          <imsss:objective objectiveID="hr-o4"/>
-          <imsss:objective objectiveID="hr-o5"/>
-          <imsss:objective objectiveID="hr-o6"/>
-        </imsss:objectives>
-      </imsss:sequencing>
+      <adlcp:masteryscore>70</adlcp:masteryscore>
     </item>
   </organization>
 </organizations>
 <resources>
-  <resource identifier="RES-1" type="webcontent" adlcp:scormType="sco" href="index.html">…every file…</resource>
+  <resource identifier="RES-1" type="webcontent" adlcp:scormtype="sco" href="index.html">…every file…</resource>
 </resources>
 ```
+
+SCORM 1.2 has no objectives in the manifest; the objectives below are reported at runtime through `cmi.objectives.n.*`.
 
 ## 4. Course structure (outline → screens)
 
@@ -223,14 +215,13 @@ The outline is the section menu the learner sees. Every section is `kind: "secti
 
 ## 6. Tracking (what the LMS receives)
 
-| Data | SCORM 2004 element | Set from |
+| Data | SCORM 1.2 element | Set from |
 |---|---|---|
-| Completed | `cmi.completion_status` | all screens viewed |
-| Passed / failed | `cmi.success_status` | score ≥ 70% (`cmi.scaled_passing_score` 0.70) |
-| Score | `cmi.score.raw / .max / .scaled` | sum of screen points |
-| Per objective | `cmi.objectives.n.id / .score / .success_status` | scored screens' `objective_ids` |
+| Status | `cmi.core.lesson_status` (passed / failed / completed / incomplete) | all screens viewed + score vs mastery 70 |
+| Score | `cmi.core.score.raw / .max / .min` | sum of screen points |
+| Per objective | `cmi.objectives.n.id / .score / .status` | scored screens' `objective_ids` |
 | Per question | `cmi.interactions.n.*` | each scored screen |
-| Resume | `cmi.suspend_data` (64,000 chars) · `cmi.location` | player state |
+| Resume | `cmi.suspend_data` (**4,096 chars**) · `cmi.core.lesson_location` | player state — 36 screens; check the `SUSPEND_OVERFLOW` lint before build |
 
 ### Interaction records (`cmi.interactions.n.type`)
 
@@ -244,7 +235,7 @@ One interaction record per scored screen, in screen order. `poll` screens are un
 | `performance` | 3 | `hr-031`, `hr-044`, `hr-061` |
 | `true-false` | 1 | `hr-062` |
 
-Resume payload: ~**1,584 characters** estimated (36 screens × 24 + 15 scored × 48) against the 64,000-character limit of SCORM 2004 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
+Resume payload: ~**1,584 characters** estimated (36 screens × 24 + 15 scored × 48) against the 4,096-character limit of SCORM 1.2 — comfortably inside. Estimate only; the built player's payload is what `lint_course` measures.
 
 ## 7. Gamification (what the record carries, and what it must not)
 
@@ -281,12 +272,12 @@ Generated evidence for the Phase 4 entry gate. ⚠ rows are open work, not build
 | Requirement | Status | Evidence |
 |---|---|---|
 | Manifest: one organization, one item, one SCO resource | ✅ | §3 manifest sketch; single-SCO rule in the programme structure §2 |
-| Pass mark written to the manifest (70%) | ✅ | `imsss:minNormalizedMeasure` |
+| Pass mark written to the manifest (70%) | ✅ | `adlcp:masteryscore` |
 | Every objective has at least one scored screen | ✅ | 6/6 objectives evidenced |
 | Every scored screen names its objective | ✅ | 15 scored screens |
 | Every scored screen maps to an interaction type | ✅ | 15 interaction records |
 | Completion rule set (`viewed_all_and_passed`) | ✅ | Phase 4 course settings |
-| Resume state fits the SCORM version's suspend_data limit | ✅ | ~1,584 chars vs 64,000 limit |
+| Resume state fits the SCORM version's suspend_data limit | ✅ | ~1,584 chars vs 4,096 limit |
 | Gamification rules recorded for every scenario screen | ✅ | 4/4 scenario screens have a Phase 3 rule row |
 | Answer feedback authored for the scored checks | ✅ | 15/15 scored screens carry feedback in the block |
 | No excluded gamification mechanic introduced | ✅ | storyboard + Phase 3/4 scanned for leaderboards, ranking, streaks, badges, timers |

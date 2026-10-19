@@ -22,8 +22,8 @@
       "num": "01",
       "module": "01_health-and-safety-1",
       "title": "My Clinic — Facility Management & Safety",
-      "scorm": "2004",
-      "zip": "MC_01_FMS_v1.0_2004.zip",
+      "scorm": "1.2",
+      "zip": "MC_01_FMS_v1.0_1.2.zip",
       "screens": 54,
       "scored": 24,
       "points": 220,
@@ -44,8 +44,8 @@
         "true-false": 2
       },
       "suspend_chars": 2448,
-      "suspend_limit": 64000,
-      "suspend_headroom": 61552,
+      "suspend_limit": 4096,
+      "suspend_headroom": 1648,
       "scenario_screens": [
         {
           "id": "hs1-205",
@@ -107,7 +107,7 @@
         {
           "requirement": "Pass mark written to the manifest (80%)",
           "ok": true,
-          "evidence": "`imsss:minNormalizedMeasure`"
+          "evidence": "`adlcp:masteryscore`"
         },
         {
           "requirement": "Every objective has at least one scored screen",
@@ -132,7 +132,7 @@
         {
           "requirement": "Resume state fits the SCORM version's suspend_data limit",
           "ok": true,
-          "evidence": "~2,448 chars vs 64,000 limit"
+          "evidence": "~2,448 chars vs 4,096 limit"
         },
         {
           "requirement": "Gamification rules recorded for every scenario screen",
@@ -305,8 +305,8 @@
       "num": "03",
       "module": "03_hr-employee-induction",
       "title": "My Clinic — Welcome On Board: My Clinic & HR Essentials",
-      "scorm": "2004",
-      "zip": "MC_03_WelcomeOnBoard_v1.0_2004.zip",
+      "scorm": "1.2",
+      "zip": "MC_03_WelcomeOnBoard_v1.0_1.2.zip",
       "screens": 36,
       "scored": 15,
       "points": 145,
@@ -322,8 +322,8 @@
         "true-false": 1
       },
       "suspend_chars": 1584,
-      "suspend_limit": 64000,
-      "suspend_headroom": 62416,
+      "suspend_limit": 4096,
+      "suspend_headroom": 2512,
       "scenario_screens": [
         {
           "id": "hr-031",
@@ -376,7 +376,7 @@
         {
           "requirement": "Pass mark written to the manifest (70%)",
           "ok": true,
-          "evidence": "`imsss:minNormalizedMeasure`"
+          "evidence": "`adlcp:masteryscore`"
         },
         {
           "requirement": "Every objective has at least one scored screen",
@@ -401,7 +401,7 @@
         {
           "requirement": "Resume state fits the SCORM version's suspend_data limit",
           "ok": true,
-          "evidence": "~1,584 chars vs 64,000 limit"
+          "evidence": "~1,584 chars vs 4,096 limit"
         },
         {
           "requirement": "Gamification rules recorded for every scenario screen",

@@ -29,6 +29,10 @@ This remains **planning and draft review**, not a production course build. A [lo
 
 **Why 01 and 02 are two packages.** 01 is the full knowledge course (nine CBAHI/FMS plans). 02 overlaps on fire and chemicals, so it is planned as an **applied practice lab** (hazard spotting, fire drill game, spill triage, chemical-store escape room) that assumes 01 is done. No screen is copied from 01 into 02.
 
+**Start here:** [`../PROJECT-MAP.md`](../PROJECT-MAP.md) — the whole project by phase and module by module, the proposal check and the Oracle Learning sample.
+
+**Oracle Learning sample (2026-10-19):** [`00_sample-oracle-pilot/`](00_sample-oracle-pilot/) — a short branded, animated SCORM 1.2 package + test guide for My Clinic's LMS team.
+
 **Status, gaps and next steps:** [`00_program/programme-status.md`](00_program/programme-status.md) (module × phase grid, proposal check, ordered next actions).
 
 **Draft SCORM packages (2026-10-15):** [`00_program/draft-builds.md`](00_program/draft-builds.md) — all eight compiled with the real edumints compiler (`lint_course` 0 errors, `validate_package` ok), zip + `preview.html` in each module's `build/`. Drafts, not release builds.

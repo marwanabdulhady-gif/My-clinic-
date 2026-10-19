@@ -49,7 +49,7 @@ Planning files (`visual-plan.json`, `narration-script.json`, `authoring-plan.jso
 | Setting | Value | Why |
 |---|---|---|
 | `language` | `"en"` | **Required.** The server default is `"tr"`. |
-| `scorm_version` | `"2004"` for 01, 03 (long, many interactions); `"1.2"` for the others | SCORM 1.2 limits `suspend_data` to 4,096 characters; long modules risk losing resume state. Switch all to `"1.2"` only if the LMS cannot run 2004. **Confirm the LMS in Phase 0.** |
+| `scorm_version` | `"1.2"` for all eight (changed 2026-10-19) | My Clinic runs Oracle Applications Cloud, so the target is **Oracle Learning**, which documents SCORM 1.2 and SCORM 2004 Editions 2–3 — not the 4th Edition the compiler emits. The 1.2 `suspend_data` limit (4,096) is not a risk: the compiler's worst-case estimate is 749 bytes for 01 (largest). See [`oracle-learning-compatibility.md`](oracle-learning-compatibility.md). D9 stays open until My Clinic IT confirms. |
 | `layout_mode` | `"stage"` (16:9, 960×540) | Matches the source decks; the player reflows on small screens. |
 | `theme` | `brand_to_theme(brand/brand-kit.json)` + `style-minimal`; module colour as `secondary` | See `brand/brand-identity.md` §2 and §8. |
 | `theme_mode` | `"light"` | |

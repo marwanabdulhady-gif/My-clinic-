@@ -8,7 +8,7 @@ Follow `../00_program/build-pipeline.md` §1. This page lists what is specific t
 {
   "title": "My Clinic — Facility Management & Safety",
   "description": "New-staff course on the eight CBAHI Facility Management & Safety plans, MOH emergency codes and ISO 45001 rights.",
-  "scorm_version": "2004",
+  "scorm_version": "1.2",
   "language": "en",
   "theme": "<program theme tokens>",
   "theme_mode": "light",

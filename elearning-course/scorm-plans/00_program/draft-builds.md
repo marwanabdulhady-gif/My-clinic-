@@ -7,14 +7,14 @@
 <!-- builds:start -->
 | Module | SCORM | Screens | Scored | lint errors | lint warnings | validate | Package | KB | Pending media | Companions placed | Explore-hotspot rules |
 |---|---|---:|---:|---:|---|---|---|---:|---:|---:|---:|
-| [01](../01_health-and-safety-1/build/) | 2004 | 54 | 24 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`×5, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_2004.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_2004.zip) | 2312 | 4 | 7 | 22 |
-| [02](../02_health-and-safety-2/build/) | 1.2 | 26 | 13 | 0 | `free_hints`, `text_only_run`, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 3245 | 9 | 4 | 11 |
-| [03](../03_hr-employee-induction/build/) | 2004 | 36 | 15 | 0 | `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_2004.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_2004.zip) | 1186 | 23 | 3 | 7 |
-| [04](../04_operations-and-my-care/build/) | 1.2 | 13 | 4 | 0 | — | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2455 | 4 | 3 | 6 |
-| [05](../05_rcm-documentation-and-coding/build/) | 1.2 | 21 | 10 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_05_RCM-A_v0.1-draft_1.2.zip`](../05_rcm-documentation-and-coding/build/MC_05_RCM-A_v0.1-draft_1.2.zip) | 498 | 0 | 3 | 0 |
-| [06](../06_rcm-ebp-benefits-and-rejections/build/) | 1.2 | 15 | 7 | 0 | `scored_over_objectives` | ok* | [`MC_06_RCM-B_v0.1-draft_1.2.zip`](../06_rcm-ebp-benefits-and-rejections/build/MC_06_RCM-B_v0.1-draft_1.2.zip) | 685 | 0 | 3 | 0 |
-| [07](../07_quality-safety-and-risk/build/) | 1.2 | 22 | 11 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 787 | 2 | 3 | 6 |
-| [08](../08_it-ehr-consultation/build/) | 1.2 | 20 | 11 | 0 | `too_many_list_items`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 683 | 31 | 3 | 6 |
+| [01](../01_health-and-safety-1/build/) | 1.2 | 54 | 24 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`×5, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_1.2.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_1.2.zip) | 2331 | 4 | 7 | 22 |
+| [02](../02_health-and-safety-2/build/) | 1.2 | 26 | 13 | 0 | `free_hints`, `text_only_run`, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 3264 | 9 | 4 | 11 |
+| [03](../03_hr-employee-induction/build/) | 1.2 | 36 | 15 | 0 | `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip) | 1205 | 23 | 3 | 7 |
+| [04](../04_operations-and-my-care/build/) | 1.2 | 13 | 4 | 0 | — | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2474 | 4 | 3 | 6 |
+| [05](../05_rcm-documentation-and-coding/build/) | 1.2 | 21 | 10 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_05_RCM-A_v0.1-draft_1.2.zip`](../05_rcm-documentation-and-coding/build/MC_05_RCM-A_v0.1-draft_1.2.zip) | 518 | 0 | 3 | 0 |
+| [06](../06_rcm-ebp-benefits-and-rejections/build/) | 1.2 | 15 | 7 | 0 | `scored_over_objectives` | ok* | [`MC_06_RCM-B_v0.1-draft_1.2.zip`](../06_rcm-ebp-benefits-and-rejections/build/MC_06_RCM-B_v0.1-draft_1.2.zip) | 704 | 0 | 3 | 0 |
+| [07](../07_quality-safety-and-risk/build/) | 1.2 | 22 | 11 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 806 | 2 | 3 | 6 |
+| [08](../08_it-ehr-consultation/build/) | 1.2 | 20 | 11 | 0 | `too_many_list_items`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 702 | 31 | 3 | 6 |
 <!-- builds:end -->
 
 \* These build reports were produced offline, so they carry the `schema_unavailable` warning: structural checks only. The XSD check has since been run separately with an offline schema directory (`SCORM_SCHEMA_DIR`) — **all eight manifests validate with 0 errors and 0 warnings** ([`xsd-validation.md`](xsd-validation.md)). Rerun `validate_package` with the authentic SCORM 1.2 root schema before a release build.
@@ -40,6 +40,10 @@ Each module folder `build/` holds `course-spec.json` (what was compiled), `asset
 - **One build route.** `tools/build_scorm_packages.py` (03 + 07 only, writes to the ignored `.generated/`, no `lint_course`, no brand skin, no hotspot fix) is **superseded** by `build_course_spec.py` + `edumints_build.py`, which build all eight with the `lint_course` gate. Keep it only as a reference; do not use it for review packages.
 
 Refresh the table above after any rebuild with `python3 elearning-course/scorm-plans/tools/draft_builds_report.py`.
+
+- **SCORM 1.2 for all eight** (2026-10-19): 01 and 03 rebuilt from 2004 4th Ed. to 1.2 for Oracle Learning ([`oracle-learning-compatibility.md`](oracle-learning-compatibility.md)).
+- **Percent display** ("%75" → "75%") patched in each package's player at build time (`player_patches: 2` in every report; G18).
+- **Brand weave** on every screen: ~6% petal mark in the card corner and a navy + module-colour top band (owner decision 2026-10-19).
 
 ## Still open (do before v1.0)
 

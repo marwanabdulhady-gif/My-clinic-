@@ -38,8 +38,39 @@ sys.path.insert(0, str(EDU))
 
 import server  # noqa: E402
 
-SHORT = {"01": "FMS", "02": "SafetyLab", "03": "WelcomeOnBoard", "04": "OpsMyCare",
+SHORT = {"00": "Sample", "01": "FMS", "02": "SafetyLab", "03": "WelcomeOnBoard", "04": "OpsMyCare",
          "05": "RCM-A", "06": "RCM-B", "07": "ClinicalGov", "08": "EHR"}
+
+
+# Post-build player patches for edumints 4bbf459 (remove once fixed upstream; see programme
+# status G18). The player writes percentages Turkish-style ("%75"); English needs "75%".
+PLAYER_PATCHES = [
+    ('sc.textContent="%"+scoreValue();', 'sc.textContent=scoreValue()+"%";'),
+    ('pctEl.textContent="%"+pct;', 'pctEl.textContent=pct+"%";'),
+]
+
+
+def patch_player(html: str) -> tuple[str, int]:
+    n = 0
+    for old, new in PLAYER_PATCHES:
+        n += html.count(old)
+        html = html.replace(old, new)
+    return html, n
+
+
+def patch_zip(path: Path) -> int:
+    import zipfile
+    tmp = path.with_suffix(".tmp")
+    total = 0
+    with zipfile.ZipFile(path) as zin, zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for item in zin.infolist():
+            data = zin.read(item.filename)
+            if item.filename == "index.html":
+                text, total = patch_player(data.decode("utf-8"))
+                data = text.encode("utf-8")
+            zout.writestr(item, data)
+    tmp.replace(path)
+    return total
 
 
 def fn(tool):
@@ -59,7 +90,21 @@ async def brand_theme(module_colour: str | None) -> dict:
     theme["logo_alt"] = "My Clinic"
     theme["custom_fonts"] = [{"family": "Montserrat", "asset_id": f"font-montserrat-{w}", "weight": w}
                              for w in (400, 600, 700)]
-    theme["custom_css"] = (PLANS / "00_program" / "brand" / "edumints-skin.css").read_text()
+    import base64
+    css = (PLANS / "00_program" / "brand" / "edumints-skin.css").read_text()
+    for token, f in (("__MARK_NAVY__", "mark-navy.png"), ("__MARK_WHITE__", "mark-white.png")):
+        b64 = base64.b64encode((PLANS / "00_program" / "brand" / "assets" / f).read_bytes()).decode()
+        css = css.replace(token, "data:image/png;base64," + b64)
+    if "__MARK_NAVY_FAINT__" in css:
+        from io import BytesIO
+        from PIL import Image
+        im = Image.open(PLANS / "00_program" / "brand" / "assets" / "mark-navy.png").convert("RGBA")
+        im.putalpha(im.getchannel("A").point(lambda a: int(a * 0.06)))
+        buf = BytesIO(); im.save(buf, "PNG", optimize=True)
+        css = css.replace("__MARK_NAVY_FAINT__", "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode())
+    if module_colour:
+        css = f":root{{--mc-module:{module_colour}}}\n" + css
+    theme["custom_css"] = css
     if module_colour:
         theme.setdefault("color", {})["secondary"] = module_colour
     return theme
@@ -90,13 +135,15 @@ async def run(module: str) -> dict:
     pkgs = sorted((DATA / "packages").glob("*.zip"), key=lambda p: p.stat().st_mtime)
     if pkgs:
         num = module[:2]
-        name = f"MC_{num}_{SHORT[num]}_v0.1-draft_{spec['scorm_version']}.zip"
+        name = (f"MC_Sample_OracleLearning_{spec['scorm_version']}.zip" if num == "00"
+                else f"MC_{num}_{SHORT[num]}_v0.1-draft_{spec['scorm_version']}.zip")
         shutil.copy(pkgs[-1], out / name)
+        report["player_patches"] = patch_zip(out / name)
         report["package"] = {"file": name, "bytes": (out / name).stat().st_size}
     try:
         pv = dump(await fn(server.preview)(pid))
         if pv.get("inline_html"):
-            (out / "preview.html").write_text(pv["inline_html"])
+            (out / "preview.html").write_text(patch_player(pv["inline_html"])[0])
             report["preview"] = "preview.html"
     except Exception as e:  # preview is a convenience; never hide the build result
         report["preview_error"] = str(e)[:300]
