@@ -680,7 +680,7 @@
    "id": "hs2-aud-000",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-000.mp3",
    "screens": [
     "hs2-000"
@@ -694,11 +694,14 @@
    "script": "NOOR: Welcome to Safety in Practice: Hazard, Fire & Chemical Lab. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
    "target_sec": 12.0,
    "tone": "warm",
-   "filler_lines": [],
+   "filler_lines": [
+    "You will leave with practical actions for your next shift.",
+    "You will practise decisions that help you act with confidence."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-001",
@@ -719,8 +722,10 @@
    "target_sec": 20.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Use the principle in context.",
-    "Keep the next action clear."
+    "Keep the main point connected to a familiar task or conversation.",
+    "Keep the next action clear.",
+    "That connection makes the information easier to use when it matters.",
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -746,12 +751,16 @@
    "target_sec": 45.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
-    "Keep the next action clear.",
-    "Think of the first detail you would check.",
     "Apply the point to a familiar task.",
-    "Carry the idea into your next decision."
+    "Ask early when a situation does not match the rule.",
+    "Carry the idea into your next decision.",
+    "Follow the example one step at a time, then identify why the next step makes sense.",
+    "Good habits here are quiet: check, confirm, continue.",
+    "Keep the next action clear.",
+    "Pause and connect this to your role.",
+    "The value is the reasoning you can carry into a similar case.",
+    "Think of the first detail you would check.",
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -762,7 +771,7 @@
    "id": "hs2-aud-011",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-011.mp3",
    "screens": [
     "hs2-011"
@@ -776,17 +785,19 @@
    "script": "NOOR: Set up the store room. There are six hazards. Open them all. I walked past a blocked exit for a week before I noticed it. Let each marker add context rather than rushing to a conclusion.",
    "target_sec": 15.0,
    "tone": "calm, practical",
-   "filler_lines": [],
+   "filler_lines": [
+    "Let each marker add context rather than rushing to a conclusion."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-012",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-012.mp3",
    "screens": [
     "hs2-012"
@@ -800,17 +811,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-013",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-013.mp3",
    "screens": [
     "hs2-013"
@@ -824,11 +838,14 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-020",
@@ -849,7 +866,10 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Link it to the task waiting for you tomorrow."
+    "If one detail stays with you, let it be the safe one.",
+    "Link it to the task waiting for you tomorrow.",
+    "The key is knowing what the term changes in your next action.",
+    "Use the cards for active recall rather than a quick scan."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -875,8 +895,11 @@
    "target_sec": 16,
    "tone": "encouraging",
    "filler_lines": [
-    "Use the rule you practised.",
-    "Focus on the action that fits."
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Focus on the action that fits.",
+    "Read carefully, then choose.",
+    "Use the rule you practised."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -887,7 +910,7 @@
    "id": "hs2-aud-030",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-030.mp3",
    "screens": [
     "hs2-030"
@@ -901,17 +924,19 @@
    "script": "OMAR: Carry this practical rule into your next decision.",
    "target_sec": 5.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    "Carry this practical rule into your next decision."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-031",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-031.mp3",
    "screens": [
     "hs2-031"
@@ -925,17 +950,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-032",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-032.mp3",
    "screens": [
     "hs2-032"
@@ -949,17 +977,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-033",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-033.mp3",
    "screens": [
     "hs2-033"
@@ -973,11 +1004,16 @@
    "script": "NOOR: Inside vs outside assembly points. Find your unit's plan today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
    "target_sec": 25.0,
    "tone": "calm, practical",
-   "filler_lines": [],
+   "filler_lines": [
+    "As you read, focus on the decision this information supports in your own role.",
+    "Ask early when a situation does not match the rule.",
+    "If one detail stays with you, let it be the safe one.",
+    "The aim is a practical next action, not a phrase to memorise."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-040",
@@ -998,7 +1034,9 @@
    "target_sec": 20.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Apply the point to a familiar task."
+    "Apply the point to a familiar task.",
+    "Explore the marked areas at your own pace, then compare the details you found.",
+    "Use those details to identify the next practical action."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1009,7 +1047,7 @@
    "id": "hs2-aud-041",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-041.mp3",
    "screens": [
     "hs2-041"
@@ -1023,11 +1061,14 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-050",
@@ -1048,9 +1089,11 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
+    "Apply the point to a familiar task.",
     "Keep the next action clear.",
+    "Notice which part of the information you would need first in practice.",
     "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
+    "Use that as the starting point for a safe, respectful next action."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1061,7 +1104,7 @@
    "id": "hs2-aud-051",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-051.mp3",
    "screens": [
     "hs2-051"
@@ -1075,17 +1118,20 @@
    "script": "NOOR: Two kits, two colours, two jobs. Compare the two views carefully and look for the detail that changes the decision or next action. The contrast is there to make the practical signal easier to spot.",
    "target_sec": 15.0,
    "tone": "calm, practical",
-   "filler_lines": [],
+   "filler_lines": [
+    "Compare the two views carefully and look for the detail that changes the decision or next action.",
+    "The contrast is there to make the practical signal easier to spot."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-052",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-052.mp3",
    "screens": [
     "hs2-052"
@@ -1099,17 +1145,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-053",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-053.mp3",
    "screens": [
     "hs2-053"
@@ -1123,11 +1172,14 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-060",
@@ -1148,11 +1200,13 @@
    "target_sec": 35.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
+    "Apply the point to a familiar task.",
+    "As you read, focus on the decision this information supports in your own role.",
     "Keep the next action clear.",
+    "Pause and connect this to your role.",
+    "The aim is a practical next action, not a phrase to memorise.",
     "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1163,7 +1217,7 @@
    "id": "hs2-aud-061",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-061.mp3",
    "screens": [
     "hs2-061"
@@ -1177,17 +1231,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-062",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-062.mp3",
    "screens": [
     "hs2-062"
@@ -1201,17 +1258,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-063",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-063.mp3",
    "screens": [
     "hs2-063"
@@ -1225,11 +1285,14 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-064",
@@ -1250,7 +1313,10 @@
    "target_sec": 15.0,
    "tone": "encouraging",
    "filler_lines": [
-    "Choose the option you would defend to a colleague."
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Choose the option you would defend to a colleague.",
+    "Read carefully, then choose.",
+    "The scenario uses fictional names and numbers."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1261,7 +1327,7 @@
    "id": "hs2-aud-070",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-070.mp3",
    "screens": [
     "hs2-070"
@@ -1275,17 +1341,20 @@
    "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-080",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-080.mp3",
    "screens": [
     "hs2-080"
@@ -1299,17 +1368,21 @@
    "script": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit.",
    "target_sec": 12.0,
    "tone": "supportive",
-   "filler_lines": [],
+   "filler_lines": [
+    ": Your results are organised by objective.",
+    "Notice where you were confident, then revisit any section that needs another practical try.",
+    "Use that insight to choose what to revisit."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-081",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-081.mp3",
    "screens": [
     "hs2-081"
@@ -1323,17 +1396,20 @@
    "script": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
    "target_sec": 8.0,
    "tone": "reflective",
-   "filler_lines": [],
+   "filler_lines": [
+    ": This reflection is not scored.",
+    "Choose the response that helps you set one intention for your next shift."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-090",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-090.mp3",
    "screens": [
     "hs2-090"
@@ -1347,17 +1423,21 @@
    "script": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
    "target_sec": 16,
    "tone": "confident",
-   "filler_lines": [],
+   "filler_lines": [
+    ": You can now use these key actions in your role.",
+    "Keep the practical rule close, ask when you are unsure, and carry the next step into your shift.",
+    "Take one clear next action with you."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "hs2-aud-090",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "02_health-and-safety-2/storyboard/audio/hs2-aud-090.mp3",
    "screens": [
     "hs2-090"
@@ -1371,11 +1451,13 @@
    "script": "OMAR: Carry this practical rule into your next decision.",
    "target_sec": 5.0,
    "tone": "confident",
-   "filler_lines": [],
+   "filler_lines": [
+    "Carry this practical rule into your next decision."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "route": "motion-video",

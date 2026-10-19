@@ -749,7 +749,7 @@
    "id": "ehr-aud-000",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-000.mp3",
    "screens": [
     "ehr-000"
@@ -763,11 +763,14 @@
    "script": "OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
    "target_sec": 12.0,
    "tone": "warm",
-   "filler_lines": [],
+   "filler_lines": [
+    "You will leave with practical actions for your next shift.",
+    "You will practise decisions that help you act with confidence."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-001",
@@ -788,10 +791,12 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Use the principle in context.",
+    "Apply the point to a familiar task.",
+    "Keep the main point connected to a familiar task or conversation.",
     "Keep the next action clear.",
+    "That connection makes the information easier to use when it matters.",
     "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -817,11 +822,13 @@
    "target_sec": 30.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Keep the next action clear.",
-    "Think of the first detail you would check.",
     "Apply the point to a familiar task.",
     "Carry the idea into your next decision.",
-    "Notice which part of this you would use first on shift."
+    "Keep the next action clear.",
+    "Notice which part of this you would use first on shift.",
+    "The next action should follow from the step before it.",
+    "Think of the first detail you would check.",
+    "Track the order carefully, then picture how you would move through the same sequence at work."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -832,7 +839,7 @@
    "id": "ehr-aud-010",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-010.mp3",
    "screens": [
     "ehr-010"
@@ -846,11 +853,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 10.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-011",
@@ -871,10 +881,13 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
+    "Good habits here are quiet: check, confirm, continue.",
     "Keep the next action clear.",
-    "Think of the first detail you would check."
+    "Let each marker add context rather than rushing to a conclusion.",
+    "Pause and connect this to your role.",
+    "The full picture matters before a workplace decision is made.",
+    "Think of the first detail you would check.",
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -885,7 +898,7 @@
    "id": "ehr-aud-012",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-012.mp3",
    "screens": [
     "ehr-012"
@@ -899,11 +912,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-020",
@@ -924,7 +940,12 @@
    "target_sec": 20.0,
    "tone": "encouraging",
    "filler_lines": [
-    "Choose the option you would defend to a colleague."
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Choose the option you would defend to a colleague.",
+    "Feedback explains the reasoning after you respond.",
+    "Read carefully, then choose.",
+    "Take the time you need; nothing here is timed.",
+    "The scenario uses fictional names and numbers."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -950,7 +971,10 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Notice which part of this you would use first on shift."
+    "As you read, focus on the decision this information supports in your own role.",
+    "Notice which part of this you would use first on shift.",
+    "The aim is a decision you can repeat, not a phrase to recall.",
+    "The aim is a practical next action, not a phrase to memorise."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -976,7 +1000,10 @@
    "target_sec": 15.0,
    "tone": "encouraging",
    "filler_lines": [
-    "Focus on the action that fits."
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Focus on the action that fits.",
+    "Read carefully, then choose."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -987,7 +1014,7 @@
    "id": "ehr-aud-032",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-032.mp3",
    "screens": [
     "ehr-032"
@@ -1001,17 +1028,21 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
    "target_sec": 10.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-033",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-033.mp3",
    "screens": [
     "ehr-033"
@@ -1025,17 +1056,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-034",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-034.mp3",
    "screens": [
     "ehr-034"
@@ -1049,17 +1083,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-040",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-040.mp3",
    "screens": [
     "ehr-040"
@@ -1073,11 +1110,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 10.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-041",
@@ -1098,6 +1138,9 @@
    "target_sec": 12.0,
    "tone": "encouraging",
    "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose.",
+    "The scenario uses fictional names and numbers.",
     "Use the rule you practised."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
@@ -1124,7 +1167,9 @@
    "target_sec": 20.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Notice which part of this you would use first on shift."
+    "As you read, focus on the decision this information supports in your own role.",
+    "Notice which part of this you would use first on shift.",
+    "The aim is a practical next action, not a phrase to memorise."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1135,7 +1180,7 @@
    "id": "ehr-aud-050",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-050.mp3",
    "screens": [
     "ehr-050"
@@ -1149,17 +1194,22 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
    "target_sec": 15.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Read carefully, then choose.",
+    "Take the time you need; nothing here is timed."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-051",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-051.mp3",
    "screens": [
     "ehr-051"
@@ -1173,11 +1223,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-052",
@@ -1199,7 +1252,9 @@
    "tone": "calm, practical",
    "filler_lines": [
     "Apply the point to a familiar task.",
-    "Carry the idea into your next decision."
+    "Carry the idea into your next decision.",
+    "Keep the main point connected to a familiar task or conversation.",
+    "That connection makes the information easier to use when it matters."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -1210,7 +1265,7 @@
    "id": "ehr-aud-090",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-090.mp3",
    "screens": [
     "ehr-090"
@@ -1224,17 +1279,20 @@
    "script": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
    "target_sec": 10.0,
    "tone": "supportive",
-   "filler_lines": [],
+   "filler_lines": [
+    ": Your results are organised by objective.",
+    "Notice where you were confident, then revisit any section that needs another practical try."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "ehr-aud-091",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-091.mp3",
    "screens": [
     "ehr-091"
@@ -1248,11 +1306,15 @@
    "script": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
    "target_sec": 15.0,
    "tone": "confident",
-   "filler_lines": [],
+   "filler_lines": [
+    ": You can now use these key actions in your role.",
+    "Keep the practical rule close, ask when you are unsure, and carry the next step into your shift.",
+    "Take one clear next action with you."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "route": "motion-video",
