@@ -2,7 +2,7 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> **Document MC-KO-01 · v0.1 · 2026-10-14.** Working pack for the Phase 0 kick-off meeting
+> **Document MC-KO-01 · v0.2 · 2026-10-19** (v0.1 2026-10-14). Working pack for the Phase 0 kick-off meeting
 > (proposed **Monday 2026-10-19**, week 1 of the proposal timeline). It exists so the meeting
 > **closes decisions** instead of discovering them: every open item already has an owner role, a
 > draft recommendation and a due date in the [decision sheet](decision-sheet.md).
@@ -19,7 +19,13 @@ module, an asset register per module and a client-shareable Word rendering per m
 **Rev01** matches those numbers. What is *not* ready is every fact that My Clinic owns: 102 open
 decisions (28 safety/PHI/incident, 3 programme enablers, 71 module content facts), the voice route
 (D10), the LMS and SCORM version (D9), brand confirmation (D11), and the module-08 test-environment
-captures. Build cannot start until the tier-1 and tier-3 rows are closed.
+captures. Release builds cannot start until the tier-1 and tier-3 rows are closed.
+
+**New since v0.1 (2026-10-19):** all eight packages exist as compiled, validated **v0.1-draft SCORM
+packages** (open facts shown as `⚠ Draft — pending`); the full-size Noor and Dr. Omar artwork is in;
+every screen carries the My Clinic brand weave. Because My Clinic runs Oracle Applications Cloud, the
+packages are now **SCORM 1.2 for Oracle Learning**, and an 8-minute **Oracle Learning sample package**
+with a test guide is ready for the LMS team — bring the result of that test to close D9.
 
 ## 2. Proposed 90-minute session
 
@@ -28,7 +34,7 @@ captures. Build cannot start until the tier-1 and tier-3 rows are closed.
 | 0–10 | Programme shape: 6 courses / 8 packages, learning path `03 → 07 → 01 → 02 → 04 → 05 → 06 → 08`, Rev01 figures, 9–10 week plan | L2S | Shared picture; no debate on scope |
 | 10–25 | Walk one storyboard end to end (module 04, 13 screens): what a v0.2 card contains, the `⚠ PENDING` convention, what the Word pack shows | L2S | Reviewers know how to read the pack |
 | 25–45 | **Tier 1** (28 rows): D1 Code Orange, D2 code sheet + real extensions, D5 personal data, D6 IT video/PHI, D8 24-hour rule, plus the safety, radiation, IPSG, identifier and test-environment rows | Safety Manager, RSO, Nursing Director, DPO, IT | Owner + date confirmed per row; where the draft recommendation is accepted, say so and write it down |
-| 45–60 | **Tier 3** enablers: D9 LMS + SCORM version, D10 voice route (hear the two companion voice briefs), D11 brand confirmation | L&D/IT, course owner, Marketing | Three decisions or a named date inside week 2 |
+| 45–60 | **Tier 3** enablers: D9 LMS + SCORM version (Oracle Learning, SCORM 1.2 — sample test result), D10 voice route (hear the two companion voice briefs), D11 brand confirmation | L&D/IT, course owner, Marketing | Three decisions or a named date inside week 2 |
 | 60–80 | **Tier 2** by module (71 rows): agree the route, not the answers — who confirms leave tables, ICD-10 edition, rejection-log rebuild, org-chart lines, branch names | Module SMEs | Each module's rows assigned with dates ≤ 2026-10-30 |
 | 80–90 | Write-back procedure, tracker import of the register CSV, next checkpoint, pilot window | L2S | Calendar entries; procedure accepted |
 
@@ -53,8 +59,9 @@ captures. Build cannot start until the tier-1 and tier-3 rows are closed.
 2. [Storyboard review pack (Word index)](../client-review/MyClinic_Elearning_Storyboard_Review_Pack_v0.2.docx) and the eight module renderings in [`../client-review/`](../client-review/).
 3. [Decision sheet (Markdown)](decision-sheet.md) · [tracker CSV](decision-sheet.csv) — the 102 open rows.
 4. [SME / build-detail register CSV](storyboard-review-register.csv) — the 52 screen-level authoring questions (import into your tracker).
-5. [Asset & template audit](asset-template-audit.md) — what exists, what is still to be supplied (companion PNGs, consented photos, test captures).
-6. [Programme status](programme-status.md) and the [production board](storyboard-production-board.md).
+5. [Asset & template audit](asset-template-audit.md) — what exists, what is still to be supplied (consented photos, test captures; companion art is done).
+6. [Programme status](programme-status.md), the [project map](../../PROJECT-MAP.md) and the [production board](storyboard-production-board.md).
+7. [Oracle Learning sample package](../00_sample-oracle-pilot/build/MC_Sample_OracleLearning_1.2.zip) + [test guide](../00_sample-oracle-pilot/oracle-learning-test-guide.md) — for the LMS administrator before the D9 item.
 
 ## 5. Same-day write-back procedure
 

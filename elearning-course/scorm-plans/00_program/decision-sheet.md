@@ -52,7 +52,7 @@ How to close a row: the owner writes the decision and its source (policy number,
 |---|---|---|---|---|---|---|---|
 | `D10` | all | **Voice route and provider** | External English TTS for release 1 (see `narration-and-lexicon.md`). | Course owner | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open |
 | `D11` | all | **Brand kit** | Brand taken from My Clinic's own decks (`brand/brand-identity.md`): navy #003867, value colours, Montserrat, logo files. Marketing to confirm or send the official guide. | Marketing | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open — draft in use |
-| `D9` | all | **LMS and SCORM version** | Which LMS (Moodle, Cornerstone, TalentLMS, …)? Does it run SCORM 2004 4th edition? | L&D / IT | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open |
+| `D9` | all | **LMS and SCORM version** | My Clinic uses Oracle Applications Cloud (HR source: Oracle self-service), so the LMS is expected to be **Oracle Learning**. Recommended: **SCORM 1.2 for all eight packages** (Oracle documents 1.2 and 2004 Ed. 2–3; compiler emits 2004 4th Ed.). Confirm with the sample package test (`00_sample-oracle-pilot/`). | L&D / IT | 2026-10-26 (K+5 wd) | `00_program/cross-module-decisions.md` (Decision column) → the Phase 0 tables and storyboard cards of the modules listed | Open — recommendation applied to builds, awaiting Oracle sample-test result |
 
 ## Tier 2 — due 2026-10-30 (end of week 2)
 
