@@ -8,8 +8,8 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 
 | File | What it is |
 |---|---|
-| [`programme-status.md`](programme-status.md) | Module × phase grid, gaps G1–G18, ordered next steps |
-| [`next-phases-roadmap.md`](next-phases-roadmap.md) | Remaining work cut into PR-sized chunks C0–C22 |
+| [`programme-status.md`](programme-status.md) | Module × phase grid, gaps G1–G25, ordered next steps |
+| [`next-phases-roadmap.md`](next-phases-roadmap.md) | Remaining work cut into PR-sized chunks C0–C28 |
 | [`plan-audit.md`](plan-audit.md) | Proposal-to-plan cross-check and gate results |
 | [`client-context.md`](client-context.md) | Public context on My Clinic KSA and approval cautions |
 
@@ -17,9 +17,10 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 
 | File | What it is |
 |---|---|
-| [`cross-module-decisions.md`](cross-module-decisions.md) | D1–D14 programme decisions |
+| [`cross-module-decisions.md`](cross-module-decisions.md) | D1–D17 programme decisions |
 | [`decision-sheet.md`](decision-sheet.md) · [`decision-sheet.csv`](decision-sheet.csv) | Every open decision (D-items + module B-items) with owner, due date, write-back target |
-| [`kickoff-pack.md`](kickoff-pack.md) · [`kickoff-pack.docx`](kickoff-pack.docx) | Kick-off meeting pack MC-KO-01 |
+| [`kickoff-pack.md`](kickoff-pack.md) · [`kickoff-pack.docx`](kickoff-pack.docx) | Kick-off meeting pack MC-KO-01 v0.3 |
+| [`kickoff-assumed-answers.md`](kickoff-assumed-answers.md) · [`.csv`](kickoff-assumed-answers.csv) · [`kickoff-research-notes.md`](kickoff-research-notes.md) | Researched working assumption for every open decision, the ten deck contradictions, sources |
 
 ## Phase 1–2 — Action map, storyboards and review
 
@@ -30,6 +31,8 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 | [`storyboard-production-board.md`](storyboard-production-board.md) · [`.html`](storyboard-production-board.html) | Storyboard pack status board |
 | [`storyboard-review-register.md`](storyboard-review-register.md) · [`.csv`](storyboard-review-register.csv) | Screen-level SME build-detail questions |
 | [`scenario-design-plan.md`](scenario-design-plan.md) · [`gamification-plan.md`](gamification-plan.md) | Scenario inventory, game mechanics, scoring, retries |
+| [`storyboard-proposal-check.md`](storyboard-proposal-check.md) | Storyboards vs proposal Rev01, interactivity audit, compiler capabilities |
+| [`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md) · [`roles.json`](roles.json) · [`interactivity-upgrades.json`](interactivity-upgrades.json) | Who the induction is for, role paths, the unscored personalisation layer, backlog |
 | [`draft-slide-production.md`](draft-slide-production.md) · [`draft-slide-phases.json`](draft-slide-phases.json) · [`screen-generator.md`](screen-generator.md) | Pre-kick-off browser slide drafts (review renderer) |
 
 ## Brand, characters and visuals (Phases 2–3)
@@ -41,6 +44,8 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 | [`characters/`](characters/) | Noor and Dr. Omar: bible, full-size art, avatars |
 | [`visual-production-plan.md`](visual-production-plan.md) · [`visual-generation-prompts.md`](visual-generation-prompts.md) | Visual hand-off and image prompts |
 | [`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md) | Minimum asset inventory, video decision, agent instructions |
+| [`media-production-runbook.md`](media-production-runbook.md) · [`media-jobs-summary.md`](media-jobs-summary.md) | How image/audio/video agents work the generated job lists; hotspot maps |
+| [`video-tooling.md`](video-tooling.md) · [`media-video-plan.json`](media-video-plan.json) | Motion-graphics tools (HyperFrames, Remotion …) and the optional clip plan |
 | [`motion-and-animation-spec.md`](motion-and-animation-spec.md) · [`motion-spec-summary.json`](motion-spec-summary.json) | Structured motion spec per screen |
 | [`g10-visual-restoration.md`](g10-visual-restoration.md) · [`asset-approval-handoff/`](asset-approval-handoff/) | Restored planned visuals and the SME approval hand-off |
 | [`asset-template-audit.md`](asset-template-audit.md) · [`asset-audit.json`](asset-audit.json) | Asset, template, logo and link audit |

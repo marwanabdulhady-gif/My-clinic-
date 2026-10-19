@@ -2,7 +2,7 @@
 
 ![My Clinic logo](brand/logo-preview.png)
 
-> Status as at **2026-10-19** (Oracle Learning sample built and harness-tested; all packages SCORM 1.2; brand weave on every screen). Earlier: **2026-10-15** (draft SCORM builds for all eight packages added; full-size companion art imported). Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
+> Status as at **2026-10-19, second pass**: all 102 kick-off decisions have a researched working assumption ([`kickoff-assumed-answers.md`](kickoff-assumed-answers.md)), storyboards re-checked against Rev01 ([`storyboard-proposal-check.md`](storyboard-proposal-check.md)), role personalisation and extra interactivity added as an unscored layer in all eight packages ([`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md)), and media job lists for the image/audio/video agents ([`media-jobs-summary.md`](media-jobs-summary.md)). First pass the same day: Oracle Learning sample built and harness-tested; all packages SCORM 1.2; brand weave on every screen). Earlier: **2026-10-15** (draft SCORM builds for all eight packages added; full-size companion art imported). Checked against the files in this repository: every module folder, every storyboard pack, the review register and the proposal (`../../proposal/MyClinic_Induction_eLearning_Proposal_e2026-MC01_Rev01.docx`). This report records **production progress only**. No policy, clinical, payer or EHR content is approved yet.
 
 ---
 
@@ -65,6 +65,12 @@
 | G17 | **NFPA 704 diagrams were drawn wrong** (rotated quadrants, numbers on the wrong colours) in `hs1-img-nfpa-blank`, `hs1-img-nfpa-301w`, `hs2-img-nfpa-230`. | 01/02 storyboard assets | **Fixed** 2026-10-15: redrawn to the standard layout; the blank no longer prints the answers. | Done |
 | G18 | **Percent shown Turkish-style** ("%75") on summary and results screens in the edumints player. | edumints `components/templates.py` | Patched at build time in every package (`edumints_build.py`, `player_patches: 2`); fix upstream with G12. | L2S (edumints repo) |
 | G19 | **LMS target was unknown (D9).** My Clinic uses Oracle Applications Cloud → Oracle Learning, which documents SCORM 1.2 and 2004 Ed. 2–3 only. | all packages | **Applied:** all eight rebuilt as SCORM 1.2; sample package + test guide ready (`00_sample-oracle-pilot/`). Closes when My Clinic's LMS team returns the sample test. | L2S + My Clinic LMS admin |
+| G20 | **Package 04 had no results-by-objective screen** although Rev01 promises it for every course. | `04_…` | **Fixed** in the personalisation layer: `ops-089` (unscored `results_breakdown`) before the close. | Done |
+| G21 | **Job-aid links render broken markup** while the PDF does not exist (`hr-091` showed `" rel="noopener…`). | `build_course_spec.py` | **Fixed**: an `{{asset:…}}` link to a missing job aid becomes its text plus "⚠ Draft — pending". The five job-aid PDFs and the QTI 2.1 export (Rev01 deliverables) are still to make. | Done (render) · PDFs open |
+| G22 | **Client decks contradict current public rules** in at least ten places (GOSI rate for post-July-2024 Saudis, radiation limit, laser classes, CCHI → CHI, EBP date, JCI/CBAHI claims, branch names, widow leave, 24-h incident rule, 2222 authority). | 01, 03, 05, 06, 07 | Raised first on the kick-off agenda ([`kickoff-assumed-answers.md`](kickoff-assumed-answers.md) "Where the research disagrees"). Drafts keep the "⚠ Draft — pending" markers until the owner decides. | My Clinic owners |
+| G23 | **No Arabic yet.** Rev01 promises bilingual emergency-code cards (`hs1-301`, `hs2-020`); they are English only pending D2. | 01, 02 | Add the Arabic names once the facility code poster is supplied (D2); RTL plan in `brand-and-theme.md`. | L2S after D2 |
+| G24 | **Resume-data figure disagrees**: `scorm-structure.md` says 749 bytes worst case for 01, `scorm-base-audit.json` 2,448. The personalisation layer adds ~100 bytes (two short variables + choice ids). | 01 | Measure on the built 01 package in the LMS harness and record one number; both are under the 4,096 SCORM 1.2 limit. | L2S |
+| G25 | **Results screen shows "Total 100 %"** next to 0 % objectives when only some questions were answered (seen on `ops-089`, same player code as every results screen). | edumints player | Check in the harness with a full attempt; report upstream with G12/G18 if it persists. | L2S (edumints repo) |
 
 ---
 
@@ -82,7 +88,7 @@ Checked every number in the proposal against the storyboard build blocks, narrat
 | Test cases | 26 · 12 · 8 · 16 · 9 · 10 = **81** | 14+12 · 12 · 8 · 9+7 · 9 · 10 = **81** | ✅ |
 | Scenarios, games, simulations | Rev00: 27 → **Rev01: 8 · 4 · 1 · 4 · 2 · 7 = 26** | 5+3 · 4 · 1 · 2+2 · 2 · 7 = **26** | ✅ Rev01 |
 | Narration | Rev00: 27 · 13 · 5 · 13 · 7 · 5 = ~70 min → **Rev01: 23 · 12 · 4 · 11 · 7 · 5 = 62 min** | 16.1+6.5 · 11.7 · 4.4 · 6.3+4.6 · 6.0 · 5.0 = **~61 min** | ✅ Rev01 |
-| SCORM version | "1.2 or 2004, to match the LMS" | 2004 for 01 and 03, 1.2 for the rest; D9 open | ✅ |
+| SCORM version | "1.2 or 2004, to match the LMS" | 1.2 for all eight (Oracle Learning); D9 open until the sample test | ✅ |
 | EHR | new test-patient screenshots, original video not used | Phase 0 B2, D6; 7 simulations | ✅ |
 | Phases and payment points | Phases 0–5, 9–10 weeks | same phase model in every folder | ✅ (README timeline now aligned) |
 | Companions Noor and Dr. Omar, two voices | not in Rev00; **added in Rev01** | in every plan and all 8 storyboards | ✅ Rev01 |
@@ -113,12 +119,20 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 12. **One decision list instead of nine.** `tools/build_decision_sheet.py` merges the 14 programme decisions (D1–D14), every module B-item, `NEW-01`, the thin-objective choices (G4) and the module 07 poll check into [`decision-sheet.md`](decision-sheet.md) + CSV: **102 open rows**, each with an owner role, a due date and the exact file to write the answer back to. Rows disappear from the sheet as soon as they are closed in the source file, so the count is the live blocker count. [`kickoff-pack.md`](kickoff-pack.md) (`MC-KO-01 v0.1`, rendered to `kickoff-pack.docx`) adds the 90-minute run sheet, the attendee-role→decision map and the same-day write-back procedure.
 13. **Agent-ready production handoffs.** Added a researched [`client-context.md`](client-context.md), character-aware [`visual-production-plan.md`](visual-production-plan.md), [`visual-generation-prompts.md`](visual-generation-prompts.md), [`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md), [`narration-production-plan.md`](narration-production-plan.md), [`scenario-design-plan.md`](scenario-design-plan.md) and [`gamification-plan.md`](gamification-plan.md). Added one prefilled production worksheet for each of the eight packages under [`course-templates/`](course-templates/), alongside the existing full storyboard template. The new [`plan-audit.md`](plan-audit.md) records the Rev01 cross-check, local gate results and remaining blockers. These handoffs do not close client decisions or authorize media generation.
 
+14. **Kick-off answers researched (2026-10-19).** All 102 open decisions now carry a working assumption with confidence and sources (47 high, 35 medium, 20 low), merged into [`decision-sheet.md`](decision-sheet.md) / CSV as two new columns. Three new programme decisions D15–D17 (roles, extra screens, videos): **105 open rows**.
+15. **Storyboards re-verified against Rev01** by script: 0 drift in ids, types or points across all 207 screens; every named activity present with the promised item counts ([`storyboard-proposal-check.md`](storyboard-proposal-check.md)).
+16. **Personalisation and interactivity layer** (`tools/personalise.py`, `<module>/production/personalisation.json`): role picker, role tips, quick checks, predictions replayed at the close, flip-card conversions and the 04 results screen — all unscored, guarded so no point, objective or pass mark can change. All eight rebuilt: 0 lint errors, totals unchanged.
+17. **Media job lists for agents** (`tools/build_media_jobs.py` → `<module>/production/media-jobs.json`, roll-up [`media-jobs-summary.md`](media-jobs-summary.md)): 22 AI stills (+1 staged), 39 own SVG/PDF, 44 photos/captures, 218 narration clips (66 blocked by filler text, G11), 9 optional videos — each with prompt or script, target file, gate and acceptance checks. Procedure in [`media-production-runbook.md`](media-production-runbook.md).
+18. **Hotspot maps** (`tools/map_hotspots.py`): boxes live beside each picture, a preview overlay checks them by eye, and new pictures can carry extra hotspots. Corridor (`hs1-404`) re-checked, a 9th hotspot added.
+19. **Video tooling chosen**: HyperFrames primary, Remotion fallback (paid company licence), FFmpeg encode, WhisperX captions, Rhubarb lip-sync for Noor and Dr. Omar, dotLottie for in-player micro-animation ([`video-tooling.md`](video-tooling.md)).
+
 ---
 
 ## 5. What happens next (in order)
 
 | Step | Action | Owner | Unblocks |
 |---|---|---|---|
+| 0 | At the kick-off, walk the ten contradictions first (G22), then confirm or correct the working assumptions row by row; confirm roles (D15), extra screens (D16) and videos (D17) | L2S + My Clinic | everything |
 | 1 | Book the Phase 0 kick-off for **2026-10-19 (proposed)** and send [`kickoff-pack.docx`](kickoff-pack.docx) with the invite, plus the client-review Word pack, [`decision-sheet.csv`](decision-sheet.csv) and proposal Rev01 | L2S | everything |
 | 1b | Write every kick-off outcome into the file named in its **Write back to** column the same day: **28 tier-1 rows by 2026-10-22**, D9/D10/D11 by 2026-10-26, the **71 tier-2 rows by 2026-10-30**; rerun `build_decision_sheet.py` + `export_kickoff_docx.py` after each write-back so closed rows drop out | My Clinic owners + L2S | C2–C9 |
 | 2 | ~~Issue proposal Rev01 (§3 fixes)~~ ✅ done — send Rev01 with the storyboard pack as evidence | L2S | contract |
@@ -130,6 +144,7 @@ Also in Rev01: the proposal now says L2S has prepared full draft storyboards for
 | 7 | ~~Download companion PNGs (G6)~~ ✅ done 2026-10-15 (`tools/import_companion_art.py`); record and approve two 30-second voice samples | Marwan / course owner | Phase 3 |
 | 8 | Module 08: test environment, test patient, 2-hour capture session, DPO review | IT + DPO | 08 build |
 | 9 | Phase 3: produce narration audio (normalised), final images, captions; rerun `lint_narration_script` and `lint_authoring_plan(stage="planning")` | L2S | Phase 4 |
+| 9a | Media agents work `production/media-jobs.json` per [`media-production-runbook.md`](media-production-runbook.md); map hotspots on every new picture | Image / audio / video agents | Phase 3 |
 | 9b | Rewrite the generic narration (G11) and fix `hs2-031` (G13) | Storyboard agent | voice work, Phase 2 sign-off |
 | 10 | Phase 4: ~~draft builds~~ ✅ v0.1-draft for all eight (2026-10-15). Release builds: close decisions → update `screens.json`/storyboard → rerun `build_course_spec.py` + `edumints_build.py` → `draft_builds_report.py` | L2S | Phase 5 |
 | 10b | Smoke-test the draft zips in SCORM Cloud now (launch, resume, scoring, completion) to catch LMS issues before D9 closes. The XSD half is ✅ done 2026-10-15 ([xsd-validation.md](xsd-validation.md)) | L2S | C18 |

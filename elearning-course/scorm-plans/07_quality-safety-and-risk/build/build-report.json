@@ -13,27 +13,33 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M59Z3AJHQSXR9EPRSW1QNZA6",
-    "job_id": "job_01M59Z3AKQKPDNFB3S0KNTFG99",
+    "project_id": "proj_01M5AE77MGRKCSC4362FTKXPC0",
+    "job_id": "job_01M5AE77NRHNYVSV82Q22P7DR0",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/PCG9DZGljmpVngQmSN8ypMAL_dg7V5X7",
+    "download_url": "http://localhost/scorm/files/WMdCVmV-BsERYgaiKBttCE6Rs_mewPSe",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M59Z3AJHQSXR9EPRSW1QNZA6",
+    "project_id": "proj_01M5AE77MGRKCSC4362FTKXPC0",
     "strict": false,
     "error_count": 0,
-    "warn_count": 2,
+    "warn_count": 3,
     "clean": false,
     "evidence_binding_coverage": 1.0,
     "issues": [
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[15..18]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[15..18]"
+        "message": "7 ardışık görselsiz ekran (screens[9..15]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[9..15]"
+      },
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "4 ardışık görselsiz ekran (screens[20..23]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[20..23]"
       },
       {
         "severity": "warn",
@@ -57,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 825495
+    "bytes": 826885
   },
   "preview": "preview.html"
 }

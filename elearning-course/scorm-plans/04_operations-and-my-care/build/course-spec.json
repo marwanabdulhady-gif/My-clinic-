@@ -34,6 +34,18 @@
    "description": "Explain the main roles and abbreviations in each structure."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "ops-s1",
@@ -92,6 +104,132 @@
    "layout": "text_media",
    "media_asset_id": "char-omar-explaining",
    "media_alt": "Dr. Omar, the course guide."
+  },
+  {
+   "type": "branching",
+   "id": "ops-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "front",
+     "text_html": "<strong>Front office</strong><br><small>Reception, call centre, PXOs</small>",
+     "goto_screen_id": "ops-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "front"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "front-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "mycare",
+     "text_html": "<strong>My Care</strong><br><small>Coordinators, onboarding, home care</small>",
+     "goto_screen_id": "ops-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "mycare"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "My Care colleague"
+      }
+     ]
+    },
+    {
+     "id": "clinical",
+     "text_html": "<strong>Clinical</strong><br><small>Physicians, nurses, allied health</small>",
+     "goto_screen_id": "ops-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "clinical"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "support",
+     "text_html": "<strong>Support</strong><br><small>Admin, RCM, IT, facilities</small>",
+     "goto_screen_id": "ops-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "support"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "support colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "ops-001p",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "ops-001p",
+   "points": 0,
+   "objective_ids": [],
+   "section": "The patient journey",
+   "node_id": "ops-s1",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "exploration",
+   "id": "ops-001p",
+   "title": "Your first guess",
+   "prompt_html": "<p>A patient at reception is upset that her lab result hasn't reached her. Who do you think should take this?</p>",
+   "input_kind": "prediction",
+   "store_key": "ops_first_guess",
+   "choices": [
+    {
+     "id": "ops",
+     "text_html": "Operations — the team on site"
+    },
+    {
+     "id": "mycare",
+     "text_html": "My Care — the follow-up team"
+    },
+    {
+     "id": "dr",
+     "text_html": "The doctor"
+    }
+   ],
+   "section": "The patient journey",
+   "node_id": "ops-s1",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "hotspot",
@@ -289,6 +427,42 @@
    "reveal": "auto",
    "notes": "Label coordinates are 0–1000 normalised from the box centres in ops-img-ops-chart.svg (1600 × 900). The lower tiers (PX Managers, PXOs/FMs per site) are not drawn in the draft SVG; they are listed as text in prompt_html. Reporting lines ⚠ Draft — pending B1; headcounts dropped (B4); no names on screen (B6 / D5). No companion.",
    "narration_text": "Dr. Omar: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check."
+  },
+  {
+   "type": "mcq",
+   "id": "ops-012",
+   "title": "Check: in the clinic now",
+   "prompt_html": "<p><strong>Quick check (not scored).</strong> A patient's complaint can't be fixed on the spot during the visit. Which team owns the recovery?</p>",
+   "feedback": {
+    "correct_html": "<p>Route by where and when.</p>",
+    "incorrect_html": "<p>In the clinic, now → Operations.</p>",
+    "show_correct_answer": true
+   },
+   "options": [
+    {
+     "id": "o0",
+     "text_html": "Operations — the PXO on site starts the recovery",
+     "correct": true,
+     "feedback_html": "<p>Right: in the clinic, now, is Operations.</p>"
+    },
+    {
+     "id": "o1",
+     "text_html": "My Care — after the visit",
+     "correct": false,
+     "feedback_html": "<p>My Care follows up later; the recovery starts on site.</p>"
+    },
+    {
+     "id": "o2",
+     "text_html": "RCM",
+     "correct": false,
+     "feedback_html": "<p>RCM handles claims, not visit complaints.</p>"
+    }
+   ],
+   "section": "Operations",
+   "node_id": "ops-s2",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "accordion",
@@ -790,6 +964,165 @@
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose."
   },
   {
+   "type": "accordion",
+   "id": "ops-034-front",
+   "title": "Your first call",
+   "prompt_html": "<p><strong>For your role.</strong> Who you call first depends on your role.</p>",
+   "items": [
+    {
+     "title": "On site",
+     "body_html": "<p>The PXO on site, then the PX Manager. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "front"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "ops-034-mycare",
+   "title": "Your first call",
+   "prompt_html": "<p><strong>For your role.</strong> Who you call first depends on your role.</p>",
+   "items": [
+    {
+     "title": "After the visit",
+     "body_html": "<p>Your My Care Coordinator lead, then the Patient Access & PX Sr. Manager. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "mycare"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "ops-034-clinical",
+   "title": "Your first call",
+   "prompt_html": "<p><strong>For your role.</strong> Who you call first depends on your role.</p>",
+   "items": [
+    {
+     "title": "During the visit",
+     "body_html": "<p>The PXO for the patient's experience; My Care for follow-ups and programmes. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "clinical"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "ops-034-support",
+   "title": "Your first call",
+   "prompt_html": "<p><strong>For your role.</strong> Who you call first depends on your role.</p>",
+   "items": [
+    {
+     "title": "Behind the scenes",
+     "body_html": "<p>Route patient issues to the PXO on site; don't solve them by email. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "support"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "ops-034-all",
+   "title": "Your first call",
+   "prompt_html": "<p>Who you call first depends on your role. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Front office",
+     "body_html": "<h4>On site</h4><p>The PXO on site, then the PX Manager. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "My Care",
+     "body_html": "<h4>After the visit</h4><p>Your My Care Coordinator lead, then the Patient Access & PX Sr. Manager. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Clinical",
+     "body_html": "<h4>During the visit</h4><p>The PXO for the patient's experience; My Care for follow-ups and programmes. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Support",
+     "body_html": "<h4>Behind the scenes</h4><p>Route patient issues to the PXO on site; don't solve them by email. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "results_breakdown",
+   "id": "ops-089",
+   "title": "Results",
+   "body_html": "<p>Passing score: 70% (35 / 50 points). Your results by objective:</p>",
+   "weak_threshold": 70,
+   "show_total": true,
+   "sections": [
+    {
+     "title": "ops-o1 · Operations vs My Care activities",
+     "screen_ids": [
+      "ops-030"
+     ],
+     "advice_html": "<p>Revisit the patient journey and <em>Sort the work</em>.</p>"
+    },
+    {
+     "title": "ops-o2 · Route requests to the right team",
+     "screen_ids": [
+      "ops-031",
+      "ops-032"
+     ],
+     "advice_html": "<p>Replay <em>Who do I call?</em> and the escalation question.</p>"
+    },
+    {
+     "title": "ops-o3 · Roles and abbreviations",
+     "screen_ids": [
+      "ops-033"
+     ],
+     "advice_html": "<p>Revisit the two structure charts and the role cards.</p>"
+    }
+   ],
+   "section": "Practice: right team, first time",
+   "node_id": "ops-s4",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "summary",
    "id": "ops-090",
    "title": "Close",
@@ -797,7 +1130,7 @@
    "node_id": "ops-s4",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<h3>Right team, first time</h3><ul><li>Operations runs the visit: environment, KPIs, recovery on the spot.</li><li>My Care carries the relationship: follow-ups, programmes, insurance, referrals.</li><li>Route by where and when: in the clinic now, or the patient's ongoing care.</li><li>Escalate one step at a time, by role.</li></ul><p><strong>Names:</strong> use the live staff directory (intranet). <em>Link ⚠ Draft — pending B6 / D5.</em></p><p><strong>Next:</strong> module 05/06 (clinicians) or 08 (EHR).</p>",
+   "body_html": "<h3>Right team, first time</h3><ul><li>Operations runs the visit: environment, KPIs, recovery on the spot.</li><li>My Care carries the relationship: follow-ups, programmes, insurance, referrals.</li><li>Route by where and when: in the clinic now, or the patient's ongoing care.</li><li>Escalate one step at a time, by role.</li></ul><p><strong>Names:</strong> use the live staff directory (intranet). <em>Link ⚠ Draft — pending B6 / D5.</em></p><p><strong>Next:</strong> module 05/06 (clinicians) or 08 (EHR).</p><p>Your first guess: <strong><span data-exploration-ref=\"ops_first_guess\"></span></strong>. In the clinic now → Operations; over time → My Care.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> save your first-call contact in your phone today.</p>",
    "show_score": true,
    "show_completion": true,
    "animation": "fade-up",

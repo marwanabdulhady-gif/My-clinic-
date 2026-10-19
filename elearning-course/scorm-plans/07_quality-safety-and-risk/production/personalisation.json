@@ -1,0 +1,66 @@
+{
+ "module": "07_quality-safety-and-risk",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "qsr-002": [
+   {
+    "kind": "role_picker"
+   }
+  ],
+  "qsr-023": [
+   {
+    "kind": "role_tip",
+    "id": "qsr-024",
+    "title": "Safety goals in your role",
+    "lead": "Hand hygiene and patient identification look different by role.",
+    "groups": [
+     {
+      "role": "clinical",
+      "label": "Clinical",
+      "items": [
+       {
+        "title": "Every patient contact",
+        "body_html": "<p>Five moments at the point of care; two identifiers before every test, medicine or procedure. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "front",
+      "label": "Front office & My Care",
+      "items": [
+       {
+        "title": "At registration",
+        "body_html": "<p>Two identifiers at check-in and on every phone booking; never the room number. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "support",
+      "label": "Support & back office",
+      "items": [
+       {
+        "title": "Behind the scenes",
+        "body_html": "<p>Clean hands on clinical floors; report anything unsafe you see, even outside your job. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "append_html": {
+  "qsr-092": "<p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> report one near miss or unsafe condition the day you see it.</p>"
+ }
+}

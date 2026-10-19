@@ -46,6 +46,18 @@
    "description": "Apply ID card, dress-code and resignation rules."
   }
  ],
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
  "outline": [
   {
    "id": "hr-sA",
@@ -178,6 +190,88 @@
    "reflection_html": "<p>Whatever you chose says something you care about. At My Clinic, we start from what people care about — including yours.</p>",
    "reveal": "none",
    "narration_text": "OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest."
+  },
+  {
+   "type": "branching",
+   "id": "hr-003",
+   "title": "Make it yours",
+   "prompt_html": "<p><strong>Which best describes your role?</strong></p><p>We'll add tips for your work. Every scored activity is the same for everyone.</p>",
+   "choices": [
+    {
+     "id": "clinical",
+     "text_html": "<strong>Medical team</strong><br><small>Physicians, dentists, nurses, allied health</small>",
+     "goto_screen_id": "hr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "clinical"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "clinician"
+      }
+     ]
+    },
+    {
+     "id": "front",
+     "text_html": "<strong>Front office</strong><br><small>Reception, call centre, patient experience, My Care</small>",
+     "goto_screen_id": "hr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "front"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "front-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "support",
+     "text_html": "<strong>Back office</strong><br><small>Admin, HR, finance, RCM, IT, facilities</small>",
+     "goto_screen_id": "hr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "support"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "back-office colleague"
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "text_html": "<strong>Show me every role's tips</strong>",
+     "goto_screen_id": "hr-010",
+     "set_vars": [
+      {
+       "var": "role",
+       "op": "set",
+       "value": "all"
+      },
+      {
+       "var": "role_label",
+       "op": "set",
+       "value": "team member"
+      }
+     ]
+    }
+   ],
+   "default_goto": "hr-010",
+   "points": 0,
+   "objective_ids": [],
+   "section": "A · Welcome",
+   "node_id": "hr-sA",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "tabs",
@@ -374,20 +468,29 @@
    "narration_text": "OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?"
   },
   {
-   "type": "content_slide",
-   "id": "hr-014",
+   "type": "flashcards",
    "title": "Who we serve",
+   "prompt_html": "<p>Flip each card: who we serve, and how you help them.</p>",
+   "cards": [
+    {
+     "front_html": "<strong>Patients &amp; families</strong>",
+     "back_html": "<p>Sick or healthy, they come first — every role touches their experience.</p>"
+    },
+    {
+     "front_html": "<strong>Community</strong>",
+     "back_html": "<p>Prevention, awareness and the wider Jeddah and Riyadh communities we serve.</p>"
+    },
+    {
+     "front_html": "<strong>Corporates &amp; insurers</strong>",
+     "back_html": "<p>Corporate wellness clients and insurance partners rely on accurate, timely work.</p>"
+    }
+   ],
+   "id": "hr-014",
    "section": "B · Our values & strategy",
    "node_id": "hr-sB",
-   "objective_ids": [],
-   "points": 0,
-   "layout": "text",
-   "animation": "fade-up",
-   "reveal": "auto",
-   "body_html": "<p><strong>Patients &amp; families</strong> — sick or healthy</p><p><strong>Community</strong></p><p><strong>Corporates &amp; insurers</strong></p>",
    "narration_text": "OMAR: Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
-   "media_asset_id": "hr-img-serve-icons",
-   "media_alt": "Three icons: patients and families, the wider community, and corporate and insurance partners."
+   "points": 0,
+   "objective_ids": []
   },
   {
    "type": "timeline",
@@ -554,47 +657,33 @@
    }
   },
   {
-   "type": "content_slide",
-   "id": "hr-022",
+   "type": "flashcards",
    "title": "Meet our leaders",
-   "section": "C · Our clinic",
-   "node_id": "hr-sC",
-   "objective_ids": [],
-   "points": 0,
-   "layout": "text",
-   "animation": "fade-up",
-   "reveal": "auto",
-   "blocks": [
+   "prompt_html": "<p>Flip each card to see what each leader owns. Names and photos are in the live staff directory.</p>",
+   "cards": [
     {
-     "html": "<p>Chief Executive Officer — sets the direction and answers to the board.</p>"
+     "front_html": "<strong>Chief Executive Officer</strong>",
+     "back_html": "<p>Sets the direction and answers to the board.</p>"
     },
     {
-     "asset_id": "hr-img-leaders-ceo",
-     "caption": "Abdullah Alghamdi, Chief Executive Officer. Portrait pending consent B6."
+     "front_html": "<strong>Chief Medical Officer</strong>",
+     "back_html": "<p>Owns clinical standards and outcomes.</p>"
     },
     {
-     "html": "<p>Chief Medical Officer — owns clinical standards and outcomes.</p>"
+     "front_html": "<strong>Chief Operating Officer</strong>",
+     "back_html": "<p>Runs the clinics day to day.</p>"
     },
     {
-     "asset_id": "hr-img-leaders-cmo",
-     "caption": "Dr Ahmed Al Zahrani, Chief Medical Officer. Portrait pending consent B6."
-    },
-    {
-     "html": "<p>Chief Operating Officer — runs the clinics day to day.</p>"
-    },
-    {
-     "asset_id": "hr-img-leaders-coo",
-     "caption": "Hesham Abdulwahab, Chief Operating Officer. Portrait pending consent B6."
-    },
-    {
-     "html": "<p>Chief Finance Officer — looks after the money that makes it possible.</p>"
-    },
-    {
-     "asset_id": "hr-img-leaders-cfo",
-     "caption": "Richard Thompson, Chief Finance Officer. Portrait pending consent B6."
+     "front_html": "<strong>Chief Finance Officer</strong>",
+     "back_html": "<p>Looks after the money that makes it possible.</p>"
     }
    ],
-   "narration_text": "OMAR: Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs."
+   "id": "hr-022",
+   "section": "C · Our clinic",
+   "node_id": "hr-sC",
+   "narration_text": "OMAR: Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs.",
+   "points": 0,
+   "objective_ids": []
   },
   {
    "type": "flashcards",
@@ -655,6 +744,37 @@
    "narration_text": "OMAR: Four values sit under everything. Respect — the rights, privacy and dignity of patients, families and colleagues. Integrity — be transparent, and disclose any conflict of interest. Accountability — a culture where people report safety concerns instead of staying quiet. Innovation and collaboration — research and community work that improves outcomes. And the rule you'll use: faced with an ethical dilemma, complete an incident report within twenty-four hours and bring in the ethics team. You're never expected to work it out alone.",
    "media_asset_id": "hr-img-ethics-icons",
    "media_alt": "Four icons for Respect, Integrity, Accountability, and Innovation and collaboration."
+  },
+  {
+   "type": "exploration",
+   "id": "hr-030p",
+   "title": "Your principle",
+   "prompt_html": "<p>Which ethics principle will you use most in your role?</p>",
+   "input_kind": "choice",
+   "store_key": "hr_ethic",
+   "choices": [
+    {
+     "id": "respect",
+     "text_html": "Respect"
+    },
+    {
+     "id": "integrity",
+     "text_html": "Integrity"
+    },
+    {
+     "id": "accountability",
+     "text_html": "Accountability"
+    },
+    {
+     "id": "innovation",
+     "text_html": "Innovation &amp; collaboration"
+    }
+   ],
+   "section": "D · Ethics & patients' rights",
+   "node_id": "hr-sD",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
   },
   {
    "type": "decision_scenario",
@@ -906,7 +1026,7 @@
    "layout": "text",
    "animation": "fade-up",
    "reveal": "auto",
-   "body_html": "<p><strong>Your HR help desk</strong> — one per business unit. <em>Role mailbox addresses pending B6 / D5.</em></p><p><strong>Request everything in Oracle.</strong> If it's a request, it needs a record.</p><p><strong>Full rules:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p>",
+   "body_html": "<p><strong>Your HR help desk</strong> — one per business unit. <em>Role mailbox addresses pending B6 / D5.</em></p><p><strong>Request everything in Oracle.</strong> If it's a request, it needs a record.</p><p><strong>Full rules:</strong> HR Quick Reference (PDF, 2 pages) <em>⚠ Draft — pending: job aid not produced yet</em></p>",
    "narration_text": "OMAR: Where help lives. First, your HR help desk — one per business unit, so you'll talk to people who know your clinic. Second, Oracle. If it's a request, it goes through Oracle. That's the only way it has a record. Third, the HR Quick Reference: two pages with every leave table and the pay rules. Download it now. You don't need to memorise this.",
    "media_asset_id": "hr-img-help-icons",
    "media_alt": "Three icons: HR help desk, Oracle self-service, and the HR Quick Reference PDF."
@@ -1945,6 +2065,102 @@
    "narration_text": "OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days."
   },
   {
+   "type": "accordion",
+   "id": "hr-072-clinical",
+   "title": "Your dress code",
+   "prompt_html": "<p><strong>For your role.</strong> What the dress code means for your team.</p>",
+   "items": [
+    {
+     "title": "Every shift",
+     "body_html": "<p>Scrubs and a coat, professional shoes, minimal jewellery. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "clinical"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "H · ID, benefits & dress code",
+   "node_id": "hr-sH",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hr-072-front",
+   "title": "Your dress code",
+   "prompt_html": "<p><strong>For your role.</strong> What the dress code means for your team.</p>",
+   "items": [
+    {
+     "title": "Every shift",
+     "body_html": "<p>The clinic uniform on every shift; no casual attire. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "front"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "H · ID, benefits & dress code",
+   "node_id": "hr-sH",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "accordion",
+   "id": "hr-072-support",
+   "title": "Your dress code",
+   "prompt_html": "<p><strong>For your role.</strong> What the dress code means for your team.</p>",
+   "items": [
+    {
+     "title": "Every day",
+     "body_html": "<p>Business attire; no casual days. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "support"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "H · ID, benefits & dress code",
+   "node_id": "hr-sH",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "tabs",
+   "id": "hr-072-all",
+   "title": "Your dress code",
+   "prompt_html": "<p>What the dress code means for your team. Pick a role to compare.</p>",
+   "tabs": [
+    {
+     "label": "Medical team",
+     "body_html": "<h4>Every shift</h4><p>Scrubs and a coat, professional shoes, minimal jewellery. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Front office",
+     "body_html": "<h4>Every shift</h4><p>The clinic uniform on every shift; no casual attire. <em>Proposed — SME to confirm.</em></p>"
+    },
+    {
+     "label": "Back office",
+     "body_html": "<h4>Every day</h4><p>Business attire; no casual days. <em>Proposed — SME to confirm.</em></p>"
+    }
+   ],
+   "visible_if": {
+    "var": "role",
+    "cmp": "==",
+    "value": "all"
+   },
+   "points": 0,
+   "objective_ids": [],
+   "section": "H · ID, benefits & dress code",
+   "node_id": "hr-sH",
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
    "type": "content_slide",
    "id": "hr-080",
    "title": "If you ever leave",
@@ -2084,7 +2300,7 @@
    "notes": "Companions: Dr. Omar char-omar-success half-body 300-360 px right side; Noor char-noor-avatar-happy 56 px (3 px #652D8C ring) on the 'Next: module 07' line. Audio: omar-1 + noor-1 joined with 0.3 s silence.",
    "show_score": true,
    "show_completion": true,
-   "body_html": "<p><strong>You can now:</strong> live the values · raise a concern the right way · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid.</p><p><strong>Keep this:</strong> <a href=\"{{asset:hr-pdf-quickref}}\">HR Quick Reference (PDF, 2 pages)</a></p><p><strong>Please do:</strong> <a href=\"{{survey_url}}\" target=\"_blank\" rel=\"noopener\">the onboarding survey (2 minutes)</a></p><p><strong>Next:</strong> module 07 — Clinical Governance: Quality, Patient Safety &amp; Risk.</p>",
+   "body_html": "<p><strong>You can now:</strong> live the values · raise a concern the right way · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid.</p><p><strong>Keep this:</strong> HR Quick Reference (PDF, 2 pages) <em>⚠ Draft — pending: job aid not produced yet</em></p><p><strong>Please do:</strong> <a href=\"{{survey_url}}\" target=\"_blank\" rel=\"noopener\">the onboarding survey (2 minutes)</a></p><p><strong>Next:</strong> module 07 — Clinical Governance: Quality, Patient Safety &amp; Risk.</p><p>You chose <strong><span data-exploration-ref=\"hr_ethic\"></span></strong> as your principle.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> your manager will walk you through your team's first-week checklist.</p>",
    "animation": "fade-up",
    "reveal": "auto",
    "narration_text": "OMAR: That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. Download the HR Quick Reference. And please complete the onboarding survey. Two minutes, and it shapes how we run this day. NOOR: Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic."
@@ -2167,34 +2383,9 @@
    "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy03Yy1jb3N0Ij4KPHJlY3Qgd2lkdGg9Ijk2MCIgaGVpZ2h0PSI1NDAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3QgeD0iMTIiIHk9IjEyIiB3aWR0aD0iOTM2IiBoZWlnaHQ9IjUxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzBDRUQ5IiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEwIiByeD0iMTYiLz4KPHRleHQgeD0iNDgwLjAiIHk9IjI0Mi4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iTW9udHNlcnJhdCwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMwMDM4NjciPiYjOTg4ODsgUEVORElORyBBU1NFVDwvdGV4dD4KPHRleHQgeD0iNDgwLjAiIHk9IjI4NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iTW9udHNlcnJhdCwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiMwMDM4NjciPmhyLWltZy03Yy1jb3N0PC90ZXh0Pgo8dGV4dCB4PSI0ODAuMCIgeT0iMzIyLjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzVCNkI3QiI+U3RpbGwgdG8gcHJvZHVjZSBhbmQgYXBwcm92ZSAodmlzdWFsLWFuZC1tb3Rpb24tYWdlbnQtYnJpZWYubWQpPC90ZXh0Pgo8L3N2Zz4="
   },
   {
-   "id": "hr-img-serve-icons",
-   "filename": "hr-img-serve-icons.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDE2MDAgOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+Cjx0aXRsZSBpZD0idGl0bGUiPldobyBNeSBDbGluaWMgc2VydmVzIOKAlCBpY29uIGZhbWlseTwvdGl0bGU+CjxkZXNjIGlkPSJkZXNjIj5UaHJlZSBsaW5lIGljb25zIGZvciB0aGUgZ3JvdXBzIE15IENsaW5pYyBzZXJ2ZXM6IGEgZmFtaWx5IGdyb3VwIChwYXRpZW50cyksIGEgY29tbXVuaXR5IHJpbmcgKHRoZSBjb21tdW5pdHkpIGFuZCBhIGJyaWVmY2FzZSB3aXRoIGEgc2hpZWxkIChjb3Jwb3JhdGUgY2xpZW50cykuIERlY29yYXRpdmU6IGVhY2ggY2FyZCBpcyBsYWJlbGxlZCBpbiBvbi1zY3JlZW4gdGV4dC48L2Rlc2M+CjxyZWN0IHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI0Y0RjdGQSIvPgo8c3R5bGU+CiAgdGV4dHtmb250LWZhbWlseTpNb250c2VycmF0LEFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMDAzODY3fQogIC5oe2ZvbnQtc2l6ZTo0MHB4O2ZvbnQtd2VpZ2h0OjcwMH0KICAuc21hbGx7Zm9udC1zaXplOjIxcHg7Zm9udC13ZWlnaHQ6NjAwO2ZpbGw6IzVCNkI3Qn0KICAubGluZXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDM4Njc7c3Ryb2tlLXdpZHRoOjk7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kfQogIC5hY2NlbnR7ZmlsbDpub25lO3N0cm9rZTojNjUyRDhDO3N0cm9rZS13aWR0aDo5O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZH0KICAuZG90e2ZpbGw6IzY1MkQ4Q30KICAudGlsZXtmaWxsOiNGRkZGRkY7c3Ryb2tlOiNEOUUxRTg7c3Ryb2tlLXdpZHRoOjN9CiAgLyogT25lIGRyYXctaW4gcGVyIGNhcmQsIHN0YWdnZXJlZDsgZGlzYWJsZWQgZW50aXJlbHkgdW5kZXIgcmVkdWNlZCBtb3Rpb24uICovCiAgQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiBuby1wcmVmZXJlbmNlKXsKICAgIC5kcmF3e3N0cm9rZS1kYXNoYXJyYXk6NjIwO3N0cm9rZS1kYXNob2Zmc2V0OjYyMDthbmltYXRpb246c3J2LWRyYXcgOTUwbXMgY3ViaWMtYmV6aWVyKC4wNSwuNywuMSwxKSBib3RofQogICAgLnRpbGV7YW5pbWF0aW9uOnNydi1pbiA0MjBtcyBjdWJpYy1iZXppZXIoLjIsMCwwLDEpIGJvdGh9CiAgICBnOm50aC1vZi10eXBlKDMpIC5kcmF3LGc6bnRoLW9mLXR5cGUoMykgLnRpbGV7YW5pbWF0aW9uLWRlbGF5OjEyMG1zfQogICAgZzpudGgtb2YtdHlwZSg0KSAuZHJhdyxnOm50aC1vZi10eXBlKDQpIC50aWxle2FuaW1hdGlvbi1kZWxheToyNDBtc30KICB9CiAgQGtleWZyYW1lcyBzcnYtZHJhd3t0b3tzdHJva2UtZGFzaG9mZnNldDowfX0KICBAa2V5ZnJhbWVzIHNydi1pbntmcm9te29wYWNpdHk6MDt0cmFuc2Zvcm06dHJhbnNsYXRlWSgxMHB4KX10b3tvcGFjaXR5OjE7dHJhbnNmb3JtOm5vbmV9fQo8L3N0eWxlPgo8dGV4dCB4PSI4MCIgeT0iODgiIGNsYXNzPSJoIj5XaG8gd2Ugc2VydmUg4oCUIGljb24gZmFtaWx5PC90ZXh0Pgo8ZyBpZD0iaWNvbi1wYXRpZW50cyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcwLDE3MCkiPgogIDxyZWN0IGNsYXNzPSJ0aWxlIiB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUyMCIgcng9IjE4Ii8+CiAgPGNpcmNsZSBjbGFzcz0ibGluZSBkcmF3IiBjeD0iMTMwIiBjeT0iMTcwIiByPSI0NiIvPgogIDxwYXRoIGNsYXNzPSJsaW5lIGRyYXciIGQ9Ik02MiAzNDBhNjggNjggMCAwIDEgMTM2IDAiLz4KICA8Y2lyY2xlIGNsYXNzPSJhY2NlbnQgZHJhdyIgY3g9IjI2NiIgY3k9IjE5NiIgcj0iMzQiLz4KICA8cGF0aCBjbGFzcz0iYWNjZW50IGRyYXciIGQ9Ik0yMTQgMzQwYTUyIDUyIDAgMCAxIDEwNCAwIi8+CiAgPGNpcmNsZSBjbGFzcz0iZG90IiBjeD0iMTkwIiBjeT0iNDMwIiByPSIxMyIvPgo8L2c+CjxnIGlkPSJpY29uLWNvbW11bml0eSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjEwLDE3MCkiPgogIDxyZWN0IGNsYXNzPSJ0aWxlIiB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUyMCIgcng9IjE4Ii8+CiAgPGNpcmNsZSBjbGFzcz0ibGluZSBkcmF3IiBjeD0iMTkwIiBjeT0iMjUwIiByPSIxMjAiLz4KICA8Y2lyY2xlIGNsYXNzPSJhY2NlbnQgZHJhdyIgY3g9IjE5MCIgY3k9IjI1MCIgcj0iNjYiLz4KICA8Y2lyY2xlIGNsYXNzPSJsaW5lIGRyYXciIGN4PSIxOTAiIGN5PSIxMzAiIHI9IjI2Ii8+CiAgPGNpcmNsZSBjbGFzcz0ibGluZSBkcmF3IiBjeD0iMjk0IiBjeT0iMzEwIiByPSIyNiIvPgogIDxjaXJjbGUgY2xhc3M9ImxpbmUgZHJhdyIgY3g9Ijg2IiBjeT0iMzEwIiByPSIyNiIvPgogIDxjaXJjbGUgY2xhc3M9ImRvdCIgY3g9IjE5MCIgY3k9IjI1MCIgcj0iMTYiLz4KPC9nPgo8ZyBpZD0iaWNvbi1jb3Jwb3JhdGVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDUwLDE3MCkiPgogIDxyZWN0IGNsYXNzPSJ0aWxlIiB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUyMCIgcng9IjE4Ii8+CiAgPHJlY3QgY2xhc3M9ImxpbmUgZHJhdyIgeD0iNzIiIHk9IjE4OCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSIxNjQiIHJ4PSIxNCIvPgogIDxwYXRoIGNsYXNzPSJsaW5lIGRyYXciIGQ9Ik0xNDggMTg4di0zMGEyMCAyMCAwIDAgMSAyMC0yMGg0NGEyMCAyMCAwIDAgMSAyMCAyMHYzMCIvPgogIDxwYXRoIGNsYXNzPSJsaW5lIGRyYXciIGQ9Ik03MiAyNTBoMjM2Ii8+CiAgPHBhdGggY2xhc3M9ImFjY2VudCBkcmF3IiBkPSJNMjY4IDMwMGw1Mi0yMHY1OGMwIDM4LTI2IDYyLTUyIDc0LTI2LTEyLTUyLTM2LTUyLTc0di01OHoiLz4KICA8cGF0aCBjbGFzcz0iYWNjZW50IGRyYXciIGQ9Ik0yNDYgMzU2bDE2IDE2IDMyLTM0Ii8+CjwvZz4KPHRleHQgeD0iODAiIHk9Ijg1NiIgY2xhc3M9InNtYWxsIj5Pd24gU1ZHIGRyYWZ0IMK3IGxhYmVscyBzdGF5IGluIEhUTUwgwrcgY2FyZCB3b3JkaW5nIGF3YWl0cyBTTUUgYXBwcm92YWw8L3RleHQ+Cjwvc3ZnPgo="
-  },
-  {
    "id": "hr-img-map",
    "filename": "hr-img-map.svg",
    "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+Cjx0aXRsZSBpZD0idGl0bGUiPk15IENsaW5pYyBzaXRlcyBtYXA8L3RpdGxlPgo8ZGVzYyBpZD0iZGVzYyI+TWFwIG9mIE15IENsaW5pYyBzaXRlczogZml2ZSBpbiBKZWRkYWgsIG9uZSBpbiBQZXRyby1SYWJpZ2gsIG9uZSBpbiBSaXlhZGguIFNpbXBsaWZpZWQgb3V0bGluZSBvZiB0aGUgd2VzdGVybiByZWdpb24gd2l0aCBhIFJpeWFkaCBpbnNldDsgbm8gc2F0ZWxsaXRlIGRldGFpbC4gUGluIHBvc2l0aW9ucyBhcmUgbWFya2VkIGhlcmUgYW5kIHRoZSBwaW4gZ3JhcGhpY3MgYXJlIGRyYXduIGJ5IHRoZSBwbGF5ZXIuPC9kZXNjPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNGRkZGRkYiLz4KPHN0eWxlPgogIHRleHR7Zm9udC1mYW1pbHk6TW9udHNlcnJhdCxBcmlhbCxzYW5zLXNlcmlmO2ZpbGw6IzAwMzg2N30KICAuaHtmb250LXNpemU6MzRweDtmb250LXdlaWdodDo3MDB9CiAgLmJ7Zm9udC1zaXplOjIycHg7Zm9udC13ZWlnaHQ6NjAwfQogIC5zbWFsbHtmb250LXNpemU6MThweDtmb250LXdlaWdodDo2MDA7ZmlsbDojNUI2QjdCfQogIC5jb2FzdHtmaWxsOiNGNEY3RkE7c3Ryb2tlOiNDMENFRDk7c3Ryb2tlLXdpZHRoOjR9CiAgLmluc2V0e2ZpbGw6I0Y0RjdGQTtzdHJva2U6I0MwQ0VEOTtzdHJva2Utd2lkdGg6NDtzdHJva2UtZGFzaGFycmF5OjEwIDh9CiAgLmFuY2hvcntmaWxsOiNGRkZGRkY7c3Ryb2tlOiM2NTJEOEM7c3Ryb2tlLXdpZHRoOjZ9CiAgLmhhbG97ZmlsbDojNjUyRDhDO29wYWNpdHk6LjE0fQogIC8qIE1vdGlvbjogdGhlIGNvYXN0bGluZSBkcmF3cywgdGhlbiB0aGUgc2V2ZW4gc2l0ZSBhbmNob3JzIHNldHRsZSBpbiBzZXF1ZW5jZS4gKi8KICBAbWVkaWEgKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IG5vLXByZWZlcmVuY2UpewogICAgLmNvYXN0LC5pbnNldHtzdHJva2UtZGFzaGFycmF5OjI2MDA7c3Ryb2tlLWRhc2hvZmZzZXQ6MjYwMDthbmltYXRpb246bWFwLWRyYXcgMTQwMG1zIGN1YmljLWJlemllciguMDUsLjcsLjEsMSkgYm90aH0KICAgIC5zaXRle2FuaW1hdGlvbjptYXAtcG9wIDQyMG1zIGN1YmljLWJlemllciguMzQsMS40LC42NCwxKSBib3RofQogICAgLnNpdGU6bnRoLW9mLXR5cGUoMil7YW5pbWF0aW9uLWRlbGF5OjQyMG1zfQogICAgLnNpdGU6bnRoLW9mLXR5cGUoMyl7YW5pbWF0aW9uLWRlbGF5OjUyMG1zfQogICAgLnNpdGU6bnRoLW9mLXR5cGUoNCl7YW5pbWF0aW9uLWRlbGF5OjYyMG1zfQogICAgLnNpdGU6bnRoLW9mLXR5cGUoNSl7YW5pbWF0aW9uLWRlbGF5OjcyMG1zfQogICAgLnNpdGU6bnRoLW9mLXR5cGUoNil7YW5pbWF0aW9uLWRlbGF5OjgyMG1zfQogICAgLnNpdGU6bnRoLW9mLXR5cGUoNyl7YW5pbWF0aW9uLWRlbGF5OjkyMG1zfQogIH0KICBAa2V5ZnJhbWVzIG1hcC1kcmF3e3Rve3N0cm9rZS1kYXNob2Zmc2V0OjB9fQogIEBrZXlmcmFtZXMgbWFwLXBvcHtmcm9te29wYWNpdHk6MDt0cmFuc2Zvcm06c2NhbGUoLjYpfXRve29wYWNpdHk6MTt0cmFuc2Zvcm06bm9uZX19Cjwvc3R5bGU+Cjx0ZXh0IHg9IjYwIiB5PSI3MCIgY2xhc3M9ImgiPk15IENsaW5pYyBzaXRlczwvdGV4dD4KPHBhdGggY2xhc3M9ImNvYXN0IiBkPSJNMTIwIDEzMCBMNDcwIDExOCBMNjQwIDE3MCBMNzAwIDI2MCBMNjkwIDQwMCBMNjQwIDU0MCBMNTIwIDY2MCBMMzYwIDcwMCBMMjEwIDY0MCBMMTQwIDQ3MCBaIi8+CjxwYXRoIGNsYXNzPSJpbnNldCIgZD0iTTgzMCAxNTAgTDEwOTAgMTQwIEwxMTMwIDMwMCBMMTA1MCA0MzAgTDg4MCA0MjAgTDgyMCAzMDAgWiIvPgo8dGV4dCB4PSI4NjAiIHk9IjEyOCIgY2xhc3M9InNtYWxsIj5SaXlhZGggaW5zZXQ8L3RleHQ+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1qZWRkYWgtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwLDQ3MCkiPgogIDxjaXJjbGUgY2xhc3M9ImhhbG8iIHI9IjMwIi8+PGNpcmNsZSBjbGFzcz0iYW5jaG9yIiByPSIxMyIvPgo8L2c+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1qZWRkYWgtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUyLDUwNikiPgogIDxjaXJjbGUgY2xhc3M9ImhhbG8iIHI9IjMwIi8+PGNpcmNsZSBjbGFzcz0iYW5jaG9yIiByPSIxMyIvPgo8L2c+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1qZWRkYWgtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg2LDUzNikiPgogIDxjaXJjbGUgY2xhc3M9ImhhbG8iIHI9IjMwIi8+PGNpcmNsZSBjbGFzcz0iYW5jaG9yIiByPSIxMyIvPgo8L2c+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1qZWRkYWgtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ0LDU3MikiPgogIDxjaXJjbGUgY2xhc3M9ImhhbG8iIHI9IjMwIi8+PGNpcmNsZSBjbGFzcz0iYW5jaG9yIiByPSIxMyIvPgo8L2c+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1qZWRkYWgtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk2LDYwNikiPgogIDxjaXJjbGUgY2xhc3M9ImhhbG8iIHI9IjMwIi8+PGNpcmNsZSBjbGFzcz0iYW5jaG9yIiByPSIxMyIvPgo8L2c+CjxnIGNsYXNzPSJzaXRlIiBpZD0ic2l0ZS1wZXRyby1yYWJpZ2giIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2OCwzNTIpIj4KICA8Y2lyY2xlIGNsYXNzPSJoYWxvIiByPSIzMCIvPjxjaXJjbGUgY2xhc3M9ImFuY2hvciIgcj0iMTMiLz4KPC9nPgo8ZyBjbGFzcz0ic2l0ZSIgaWQ9InNpdGUtcml5YWRoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NjAsMjg2KSI+CiAgPGNpcmNsZSBjbGFzcz0iaGFsbyIgcj0iMzAiLz48Y2lyY2xlIGNsYXNzPSJhbmNob3IiIHI9IjEzIi8+CjwvZz4KPHRleHQgeD0iNDAwIiB5PSI1NjAiIGNsYXNzPSJiIj5KZWRkYWggwrcgNSBzaXRlczwvdGV4dD4KPHRleHQgeD0iMTIwIiB5PSIzMzAiIGNsYXNzPSJiIj5QZXRyby1SYWJpZ2ggwrcgMTwvdGV4dD4KPHRleHQgeD0iMTAwMCIgeT0iMzMwIiBjbGFzcz0iYiI+Uml5YWRoIMK3IDE8L3RleHQ+Cjx0ZXh0IHg9IjYwIiB5PSI3NjAiIGNsYXNzPSJzbWFsbCI+T3duIFNWRyBkcmFmdCDCtyBzaW1wbGlmaWVkIG91dGxpbmUsIG5vIHNhdGVsbGl0ZSBkZXRhaWwgwrcgcGluIGdyYXBoaWNzIGRyYXduIGJ5IHRoZSBwbGF5ZXIgwrcgc2l0ZSBuYW1lcyBhbmQgY291bnRzIGF3YWl0IFNNRSBhcHByb3ZhbDwvdGV4dD4KPC9zdmc+Cg=="
-  },
-  {
-   "id": "hr-img-leaders-ceo",
-   "filename": "hr-img-leaders-ceo.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1sZWFkZXJzLWNlbyI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctbGVhZGVycy1jZW88L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5DbGllbnQgcGhvdG8gd2l0aCBjb25zZW50LCBvciByb2xlIHRpbGUgKEQ1L0I2KTwvdGV4dD4KPC9zdmc+"
-  },
-  {
-   "id": "hr-img-leaders-cmo",
-   "filename": "hr-img-leaders-cmo.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1sZWFkZXJzLWNtbyI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctbGVhZGVycy1jbW88L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5DbGllbnQgcGhvdG8gd2l0aCBjb25zZW50LCBvciByb2xlIHRpbGUgKEQ1L0I2KTwvdGV4dD4KPC9zdmc+"
-  },
-  {
-   "id": "hr-img-leaders-coo",
-   "filename": "hr-img-leaders-coo.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1sZWFkZXJzLWNvbyI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctbGVhZGVycy1jb288L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5DbGllbnQgcGhvdG8gd2l0aCBjb25zZW50LCBvciByb2xlIHRpbGUgKEQ1L0I2KTwvdGV4dD4KPC9zdmc+"
-  },
-  {
-   "id": "hr-img-leaders-cfo",
-   "filename": "hr-img-leaders-cfo.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1sZWFkZXJzLWNmbyI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctbGVhZGVycy1jZm88L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5DbGllbnQgcGhvdG8gd2l0aCBjb25zZW50LCBvciByb2xlIHRpbGUgKEQ1L0I2KTwvdGV4dD4KPC9zdmc+"
   },
   {
    "id": "hr-img-award-star",

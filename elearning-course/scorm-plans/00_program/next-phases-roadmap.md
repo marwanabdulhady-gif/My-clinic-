@@ -38,7 +38,7 @@ kick-off pack is the programme's live blocker count.
 | # | Chunk | Unblocks | Depends on | Owner | Est. | Status |
 |---|---|---|---|---|---|---|
 | C0 | Tooling, audio schema, branded Word pack, audit | repeatable gates | — | agent | done | **PR #32** |
-| C1 | Phase 0 decision sheet + kick-off pack | everything | — | L2S + My Clinic | done | **PR #33** · sheet ready, kick-off not yet booked |
+| C1 | Phase 0 decision sheet + kick-off pack | everything | — | L2S + My Clinic | done | **PR #33** · sheet ready; **2026-10-19:** researched working assumption on all rows ([kickoff-assumed-answers](kickoff-assumed-answers.md)); kick-off not yet held |
 | C2 | SME build-detail closure, modules 01–02 | 01–02 Phase 4 fields | C1 | Safety SME + L&D | 3 d | open |
 | C3 | SME build-detail closure, modules 03–04 | 03–04 Phase 4 fields | C1 | HR/Ops SME + L&D | 2 d | open |
 | C4 | SME build-detail closure, modules 05–06 | 05–06 Phase 4 fields | C1 | RCM SME + L&D | 3 d | open |
@@ -60,6 +60,12 @@ kick-off pack is the programme's live blocker count.
 | C20 | Narration rewrite for the six generated packs (G11) + `hs2-031` teaching gap (G13) | C6 voice work, C15–C17 release | — | storyboard agent + L&D | 2 d | open |
 | C21 | Upstream edumints fix: explore-hotspot positioning (G12); then drop the CSS workaround | C14–C17 release | — | L2S (edumints repo) | 0.5 d | open |
 | C22 | Draft-package smoke test in SCORM Cloud (launch, resume, score, completion; 1.2 and 2004) + XSD validation (G15) | C18 | — | L2S | 1 d | open · **XSD half done 2026-10-15**: all eight manifests valid, 0 errors ([xsd-validation](xsd-validation.md)); SCORM Cloud still to run |
+| C23 | Personalisation + interactivity layer: role picker, role tips, quick checks, predictions, 04 results screen (G20) | richer drafts, D15/D16 | — | agent | 1 d | **done 2026-10-19** ([plan](personalisation-and-interactivity-plan.md)); role-tip wording to SMEs with C2–C5 |
+| C24 | Interactivity backlog: explore hotspots on existing diagrams, flip-card/timeline conversions, mission framing (plan §5) | release builds | C23 | agent + SMEs | 2 d | open |
+| C25 | Media job lists + hotspot maps + agent runbook | C10–C13 | — | agent | 0.5 d | **done 2026-10-19** ([summary](media-jobs-summary.md), [runbook](media-production-runbook.md)) |
+| C26 | Image agent run: 22 AI stills + `hs1-img-staffroom`, hotspot mapping on every new picture | C10–C13 | C2–C5 per gate | image agent | 2 d | open |
+| C27 | Optional motion-graphics clips (D17): HyperFrames pipeline, programme welcome + `qsr-060` first | value-add | D17, D10 voices, approved scripts | video agent | 3 d | open · tooling chosen ([video-tooling](video-tooling.md)) |
+| C28 | Job aids (5 PDFs) + QTI 2.1 export (Rev01 deliverables, G21) | C19 | Phase 0 facts | agent | 2 d | open |
 
 Build order stays **03 → 07 → 01 → 02 → 04 → 05 → 06 → 08** (learning path and proposal staggering).
 

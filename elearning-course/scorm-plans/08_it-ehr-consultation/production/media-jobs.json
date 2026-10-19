@@ -1,0 +1,1282 @@
+{
+ "module": "08_it-ehr-consultation",
+ "module_colour": "#006E78",
+ "generated_by": "tools/build_media_jobs.py",
+ "agent_runbook": "00_program/media-production-runbook.md",
+ "jobs": [
+  {
+   "id": "ehr-shot-list",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-list.png",
+   "size_px": null,
+   "screens": [
+    "ehr-010"
+   ],
+   "brief": "Today's consultation list, test patient only, 1920×1080 at 125% zoom",
+   "alt_text": "Today's consultation list with one test patient.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-form",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-form.png",
+   "size_px": null,
+   "screens": [
+    "ehr-010",
+    "ehr-011"
+   ],
+   "brief": "Consultation form with all sections visible (may need 2 crops)",
+   "alt_text": "Consultation form showing mandatory sections.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B4 mandatory fields.",
+   "hotspots": {
+    "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. After generating, map one box per region into production/hotspots/<asset-id>.json (tools/map_hotspots.py) — coordinates are not guessed in the storyboard.",
+    "screens": [
+     {
+      "screen_id": "ehr-011",
+      "mode": "explore",
+      "scored": false,
+      "regions": [
+       {
+        "id": "cc",
+        "label": "Chief complaint ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         0,
+         0,
+         320,
+         270
+        ]
+       },
+       {
+        "id": "dur",
+        "label": "Duration ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         320,
+         0,
+         320,
+         270
+        ]
+       },
+       {
+        "id": "hpi",
+        "label": "History of present illness (HPI) ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         640,
+         0,
+         320,
+         270
+        ]
+       },
+       {
+        "id": "past",
+        "label": "Past history — allergies and medications ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         0,
+         270,
+         320,
+         270
+        ]
+       },
+       {
+        "id": "exam",
+        "label": "Examination ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         320,
+         270,
+         320,
+         270
+        ]
+       },
+       {
+        "id": "plan",
+        "label": "Plan of care ⚠ Draft — pending B4",
+        "correct": true,
+        "coords": [
+         640,
+         270,
+         320,
+         270
+        ]
+       }
+      ]
+     }
+    ],
+    "extra_regions_allowed": true
+   },
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
+    "Hotspot boxes mapped and checked on the overlay preview."
+   ]
+  },
+  {
+   "id": "ehr-shot-dx-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-020"
+   ],
+   "brief": "Add Diagnosis dialog; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing add diagnosis dialog; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-dx-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-020"
+   ],
+   "brief": "Diagnosis search with draft E11 input; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing diagnosis search with draft e11 input; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-dx-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-020"
+   ],
+   "brief": "Diagnosis results; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing diagnosis results; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-dx-4",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-4.png",
+   "size_px": null,
+   "screens": [
+    "ehr-020"
+   ],
+   "brief": "Primary diagnosis details, onset and chronicity; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing primary diagnosis details, onset and chronicity; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-dx-5",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-5.png",
+   "size_px": null,
+   "screens": [
+    "ehr-020"
+   ],
+   "brief": "Diagnosis favourites star; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing diagnosis favourites star; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Order search; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing order search; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Drug-name search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing drug-name search using the approved b6 example; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Medication route, dose, frequency and duration fields; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing medication route, dose, frequency and duration fields; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-4",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-4.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Assessed-diagnosis selection; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing assessed-diagnosis selection; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-5",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-5.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Patient-instructions fields; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing patient-instructions fields; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-order-6",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-6.png",
+   "size_px": null,
+   "screens": [
+    "ehr-031"
+   ],
+   "brief": "Order submission control; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing order submission control; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-wizard-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-032"
+   ],
+   "brief": "Package search using the approved B6 example; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing package search using the approved b6 example; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-wizard-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-032"
+   ],
+   "brief": "Form Wizard item review; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing form wizard item review; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-wizard-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-032"
+   ],
+   "brief": "Form Wizard item removal; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing form wizard item removal; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-wizard-4",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-4.png",
+   "size_px": null,
+   "screens": [
+    "ehr-032"
+   ],
+   "brief": "Form Wizard finalisation; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing form wizard finalisation; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B6 Pharmacy-approved examples.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-summary-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-040"
+   ],
+   "brief": "Consultation Summary entry; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing consultation summary entry; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-summary-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-040"
+   ],
+   "brief": "Lab orders, special tests and referrals in summary; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing lab orders, special tests and referrals in summary; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-summary-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-040"
+   ],
+   "brief": "Download and Print control; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing download and print control; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-sms-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-041"
+   ],
+   "brief": "Send SMS educational-material entry; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing send sms educational-material entry; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-sms-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-041"
+   ],
+   "brief": "SMS department selection; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing sms department selection; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-sms-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-041"
+   ],
+   "brief": "SMS diagnosis-code search; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing sms diagnosis-code search; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-sms-4",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-4.png",
+   "size_px": null,
+   "screens": [
+    "ehr-041"
+   ],
+   "brief": "SMS leaflet selection; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing sms leaflet selection; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-sms-5",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-5.png",
+   "size_px": null,
+   "screens": [
+    "ehr-041"
+   ],
+   "brief": "SMS Send control; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing sms send control; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B8 SMS feature/leaflets; fictional phone only.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-1",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-1.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Referral entry; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing referral entry; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-2",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-2.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Referral specialty selection; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing referral specialty selection; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-3",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-3.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Referral-reason field; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing referral-reason field; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-4",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-4.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Referral type and timing fields; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing referral type and timing fields; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-5",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-5.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Follow-up toggle and interval; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing follow-up toggle and interval; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-shot-ref-6",
+   "media": "image",
+   "route": "capture",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-6.png",
+   "size_px": null,
+   "screens": [
+    "ehr-050"
+   ],
+   "brief": "Referral Save control; capture in approved test environment, 1920×1080 at 125% zoom.",
+   "alt_text": "Test-patient EHR screen showing referral save control; no real identifiers.",
+   "gate": "PENDING 08 B2/D6: approved test environment, fictional patient, per-file DPO review; B3 version and B5 labels confirmed. B9 referral timing and approved reason.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-pdf-quickref",
+   "media": "image",
+   "route": "own-pdf",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-pdf-quickref.png",
+   "size_px": null,
+   "screens": [
+    "ehr-091"
+   ],
+   "brief": "1-page EHR consultation quick-reference card",
+   "alt_text": "n/a",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-vid-walkthrough",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-walkthrough.svg",
+   "size_px": null,
+   "screens": [
+    "ehr-060"
+   ],
+   "brief": "Screen recording on test patient + voice-over; rendered outside the server (over the 60 s render_motion_video limit), uploaded with add_asset",
+   "alt_text": "transcript",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "ehr-aud-000",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-000.mp3",
+   "screens": [
+    "ehr-000"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Welcome to EHR Consultation Workflow: Guided Simulation. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+   "target_sec": 12.0,
+   "tone": "warm",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-001",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-001.mp3",
+   "screens": [
+    "ehr-001"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Complete, specific, linked — on the day. Read the disclaimer. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-002",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-002.mp3",
+   "screens": [
+    "ehr-002"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The nine steps at a glance. Track the order carefully, then picture how you would move through the same sequence at work. The next action should follow from the step before it. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-010",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-010.mp3",
+   "screens": [
+    "ehr-010"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-011",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-011.mp3",
+   "screens": [
+    "ehr-011"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The mandatory sections. Save as you go. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Pause and connect this to your role.",
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-012",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-012.mp3",
+   "screens": [
+    "ehr-012"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-020",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-020.mp3",
+   "screens": [
+    "ehr-020"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague. The scenario uses fictional names and numbers.",
+   "target_sec": 20.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Choose the option you would defend to a colleague."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-030",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-030.mp3",
+   "screens": [
+    "ehr-030"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Five ways to find an order. The Form Wizard checks a package before you commit. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-031",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-031.mp3",
+   "screens": [
+    "ehr-031"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+   "target_sec": 15.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Focus on the action that fits."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-032",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-032.mp3",
+   "screens": [
+    "ehr-032"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-033",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-033.mp3",
+   "screens": [
+    "ehr-033"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-034",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-034.mp3",
+   "screens": [
+    "ehr-034"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-040",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-040.mp3",
+   "screens": [
+    "ehr-040"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-041",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-041.mp3",
+   "screens": [
+    "ehr-041"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers. Use the rule you practised.",
+   "target_sec": 12.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Use the rule you practised."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-042",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-042.mp3",
+   "screens": [
+    "ehr-042"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Patient & family education is required before you finish. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Notice which part of this you would use first on shift.",
+   "target_sec": 20.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-050",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-050.mp3",
+   "screens": [
+    "ehr-050"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+   "target_sec": 15.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-051",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-051.mp3",
+   "screens": [
+    "ehr-051"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-052",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-052.mp3",
+   "screens": [
+    "ehr-052"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Completing the encounter. Where to get help. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Apply the point to a familiar task. Carry the idea into your next decision.",
+   "target_sec": 20.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "ehr-aud-090",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-090.mp3",
+   "screens": [
+    "ehr-090"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+   "target_sec": 10.0,
+   "tone": "supportive",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "ehr-aud-091",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "08_it-ehr-consultation/storyboard/audio/ehr-aud-091.mp3",
+   "screens": [
+    "ehr-091"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+   "target_sec": 15.0,
+   "tone": "confident",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "ehr-vid-consult",
+   "title": "A consultation, start to finish",
+   "module": "08",
+   "placement": "new unscored video screen after ehr-001",
+   "target_sec": 45,
+   "script_outline": "Abstract EHR wireframe (no real screens): open the visit, record, diagnose, order, educate, close. Real captures stay in the simulations.",
+   "target_file": "media/video/ehr-vid-consult.mp4",
+   "captions_file": "media/video/ehr-vid-consult.vtt",
+   "media": "video"
+  }
+ ]
+}

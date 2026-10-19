@@ -1,0 +1,732 @@
+[
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after hs1-002: 'Which best describes your role?' choices: clinical (nurse/physician/allied) -> set_vars [{\"var\":\"role\",\"op\":\"set\",\"value\":\"clinical\"},{\"var\":\"role_label\",\"op\":\"set\",\"value\":\"clinician\"}]; front office / patient experience -> role=\"front\"; support / back office -> role=\"support\"; \"Show me everything\" -> role=\"all\". Every choice goto_screen_id = the next screen id. Requires course-level \"variables\":[{\"name\":\"role\",\"type\":\"text\",\"default\":\"all\"},{\"name\":\"role_label\",\"type\":\"text\",\"default\":\"team member\"}]. Unscored (branching is not a quiz type); +1 screen.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-101",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'prediction', store_key 'hs1_who_asked': 'During a CBAHI survey, who do you think surveyors question about safety?' choices Managers only / Safety staff only / Any staff member, including me. Keep the three keywords as the post-commit reveal text; replay the guess on hs1-990 with <span data-exploration-ref=\"hs1_who_asked\">.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-103",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "4 flip cards: front = plan (Fire safety, Hazardous materials, Security, Utilities), back = the code it triggers + one-line 'what you do'. Mapping must be confirmed against D2 before build.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-303",
+  "current_type": "content_slide",
+  "proposed_type": "true_false",
+  "change": "Formative check, points 0, objective_ids []: 'The fire is out, so staff can return to their rooms.' -> False: wait for the End of Disaster announcement. Feedback carries the two-announcement content now on the slide.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-411-clinical",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs1-410 — 'Your part in a Code Red (clinical: rescue and move patients in your area; front: stop arrivals, guide visitors to the assembly point; support: clear corridors, isolate equipment as directed)' for role=clinical; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"clinical\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-411-front",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs1-410 — 'Your part in a Code Red (clinical: rescue and move patients in your area; front: stop arrivals, guide visitors to the assembly point; support: clear corridors, isolate equipment as directed)' for role=front; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"front\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-411-support",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs1-410 — 'Your part in a Code Red (clinical: rescue and move patients in your area; front: stop arrivals, guide visitors to the assembly point; support: clear corridors, isolate equipment as directed)' for role=support; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"support\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-410",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true: staff-room illustration with 7 prohibited items (candle, home extension lead, fan heater, vape, unauthorised microwave, open flammable bottle, welding kit by a door). Each region label_html + feedback_html says why it is banned. Unscored, out of total_points.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "A tidy clinic staff room: table, kettle area, wall socket with a coiled domestic extension lead, a small fan heater on the floor, a lit scented candle on a shelf, an e-cigarette on the table, a microwave on a trolley, an open unlabelled solvent bottle near a window, a portable welding kit leaning by the door. Each item clearly separated for clickable regions. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #008C99. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-501",
+  "current_type": "content_slide",
+  "proposed_type": "mcq",
+  "change": "Formative, points 0, objective_ids []: 'A courier hands you a bottle with no label, saying it is the new disinfectant. What do you do?' -> refuse it / return via procurement. Option feedback_html carries the three rules from the slide.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-506",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "Personalisation: input_kind 'choice', store_key 'hs1_eyewash': 'Do you know where your nearest eyewash is?' Yes, I can walk there now / Not yet - I will find it today. Keep the 15-minute rule and the photo as the reveal; replay on hs1-990 checklist ('You said: ...').",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-801",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true: infusion pump with an inspection label (date+status), PPM sticker and an 'Out of Service' tag; each region explains what to check. Sets up hs1-802 without giving its answer.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Close-up of a generic infusion pump on an IV pole in a treatment room: a small blank inspection label on the side, a blank round PPM sticker on the front, and a separate blank luggage-style tag hanging from the pole. Device unbranded. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #008C99. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-907",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "6 flip cards: front = laser hazard (eyes - often no pain, skin burns, high voltage), back = the matching control (eye protection, beam management, reflections, training).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-305",
+  "current_type": "labeled_diagram",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore' on the existing ERT diagram asset: click each team (Safety, Security, Nursing, Facility, Operation, Incident Commander) to reveal its first action. Reuses current image; regions from its labels' x,y.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "hs1-990",
+  "current_type": "summary",
+  "proposed_type": "summary",
+  "change": "Keep type. body_html adds replays: <span data-exploration-ref=\"hs1_eyewash\">, <span data-exploration-ref=\"hs1_who_asked\"> and 'As a {{role_label}}, your next step is ...' (interpolation). Split 5 <li> to fix too_many_list_items.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "01_health-and-safety-1",
+  "screen_id": "(outline)",
+  "current_type": "outline",
+  "proposed_type": "outline",
+  "change": "Mission framing: rename sections 'Mission 1 of 9 - The eight FMS plans' etc. and add on_enter [{\"var\":\"missions\",\"op\":\"add\",\"value\":1}] on each section's first screen; hs1-980 body_html: 'You completed {{missions}} of 9 missions.' No points_var HUD, no levels (badge), no timer_sec (all excluded by gamification-plan.md).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-002",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after hs2-001: 'Which best describes your role?' choices: clinical (nurse/physician/allied) -> set_vars [{\"var\":\"role\",\"op\":\"set\",\"value\":\"clinical\"},{\"var\":\"role_label\",\"op\":\"set\",\"value\":\"clinician\"}]; front office / patient experience -> role=\"front\"; support / back office -> role=\"support\"; \"Show me everything\" -> role=\"all\". Every choice goto_screen_id = the next screen id. Requires course-level \"variables\":[{\"name\":\"role\",\"type\":\"text\",\"default\":\"all\"},{\"name\":\"role_label\",\"type\":\"text\",\"default\":\"team member\"}]. Unscored (branching is not a quiz type); +1 screen.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-001",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'slider' 0-10 step 1, store_key 'hs2_hazard_guess': 'How many hazards do you expect to find in the store room?' Replay on hs2-011 prompt_html ('You guessed <span data-exploration-ref=\"hs2_hazard_guess\">; there are 6'). Keep the 'practise, not read' line as the reveal.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-033",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore' reusing the hs2-032 floor-plan asset: click inside assembly point / outside assembly point / evacuation route; each reveals what to do. Then append an exploration-style note in hs2-090: 'Find your unit's plan today.'",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-050",
+  "current_type": "content_slide",
+  "proposed_type": "true_false",
+  "change": "Formative, points 0, objective_ids []: 'Code Orange is only for chemical spills.' -> False: chemical or biological release (threshold text depends on D1).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-060",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on a rendered image of the anonymised 5-row register (B5): regions on the SDS column, NFPA column, hazard class and quantity; each explains how to read it. Prepares hs2-062/063 without revealing the row answer.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Clean rendered table graphic (SVG preferred) of a fictional 5-row chemical register with columns name, hazard class, purpose, quantity, SDS tick/cross, NFPA mini-diamond; generic chemical names 'Product A-E'. Data from B5 once approved. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #008C99. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-031r-clinical",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs2-030 — 'Your role in the drill (clinical: rescue + evacuation tool; front: stop arrivals, account for visitors; support: meet the ERT, clear routes)' for role=clinical; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"clinical\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-031r-front",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs2-030 — 'Your role in the drill (clinical: rescue + evacuation tool; front: stop arrivals, account for visitors; support: meet the ERT, clear routes)' for role=front; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"front\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-031r-support",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hs2-030 — 'Your role in the drill (clinical: rescue + evacuation tool; front: stop arrivals, account for visitors; support: meet the ERT, clear routes)' for role=support; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"support\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-090",
+  "current_type": "summary",
+  "proposed_type": "summary",
+  "change": "Keep type; replay role ({{role_label}}) and the hs2-081 commitment is a poll (not replayable) - change hs2-081 poll -> exploration input_kind 'text' store_key 'hs2_commit' (max ~120 chars for the 1.2 suspend budget) so hs2-090 can echo it.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "02_health-and-safety-2",
+  "screen_id": "hs2-081",
+  "current_type": "poll",
+  "proposed_type": "exploration",
+  "change": "input_kind 'text', store_key 'hs2_commit', min_length 10, placeholder 'One hazard I will check this week'. Still unscored; enables replay in hs2-090.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after hr-002: 'Which best describes your role?' choices: medical team -> set_vars [{\"var\":\"role\",\"op\":\"set\",\"value\":\"clinical\"},{\"var\":\"role_label\",\"op\":\"set\",\"value\":\"clinician\"}]; front office -> role=\"front\"; back office -> role=\"support\"; \"Show me everything\" -> role=\"all\". Every choice goto_screen_id = the next screen id. Requires course-level \"variables\":[{\"name\":\"role\",\"type\":\"text\",\"default\":\"all\"},{\"name\":\"role_label\",\"type\":\"text\",\"default\":\"team member\"}]. Unscored (branching is not a quiz type); +1 screen. Use the same three groups as the dress-code activity hr-071 (Front office / Medical team / Back office).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-014",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "3 flip cards: Patients & families / Community / Corporates & insurers - back shows one example of how a {{role_label}} serves them.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-022",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "Role cards (no photos/names until B6 consent): front = CEO/CMO/COO/CFO, back = what they own and when you would hear from them.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-030",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'choice', store_key 'hr_ethic': 'Which ethics principle matters most in your role?' Respect / Integrity / Accountability / Innovation & collaboration. Reveal shows all four + the 24-hour reporting line; replay the choice before hr-031 intro_html.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-040",
+  "current_type": "content_slide",
+  "proposed_type": "content_slide",
+  "change": "Keep type, set reveal 'click'; add role variants of the help-desk line via 3 NEW screens hr-040-front/-medical/-back (visible_if role) naming the business-unit role mailbox (B6). Unscored.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-050",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'slider' 0-25 unit '%', store_key 'hr_gosi_guess': 'What share of basic + housing do you think the employee pays to GOSI?' Replay in hr-051 ('You guessed ...; it is 9.75%'). Note GOSI applies to Saudi employees only (keep that line).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-070",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore': illustrated staff ID card + benefits wheel; regions: lost card (email HR, fee per B4), damaged card, insurance, bonus, development, hybrid work, internal advancement, discounts.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Left: a generic blank staff ID badge on a lanyard (photo area as a grey silhouette, no name/logo text). Right: a six-segment benefits wheel with simple icons (shield-heart, star, book, house-laptop, upward arrow, tag). Distinct segments for regions. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #652D8C. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-080",
+  "current_type": "content_slide",
+  "proposed_type": "timeline",
+  "change": "4 events: accept contract on Qiwa -> resign in Oracle -> 2-month notice -> EOS + experience certificate within 15 days of last day. Unscored.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-072-front",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hr-071 — 'Your dress code as {{role_label}}' for role=front; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"front\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Three separate full-body flat illustrations (one per variant): front-office staff in the My Clinic uniform; medical team member in scrubs and a white coat; back-office staff in modest business attire; minimal jewellery, professional shoes; faces indistinct, modest Saudi workplace dress. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #652D8C. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-072-clinical",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hr-071 — 'Your dress code as {{role_label}}' for role=clinical; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"clinical\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Three separate full-body flat illustrations (one per variant): front-office staff in the My Clinic uniform; medical team member in scrubs and a white coat; back-office staff in modest business attire; minimal jewellery, professional shoes; faces indistinct, modest Saudi workplace dress. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #652D8C. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "03_hr-employee-induction",
+  "screen_id": "hr-072-support",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after hr-071 — 'Your dress code as {{role_label}}' for role=support; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"support\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Three separate full-body flat illustrations (one per variant): front-office staff in the My Clinic uniform; medical team member in scrubs and a white coat; back-office staff in modest business attire; minimal jewellery, professional shoes; faces indistinct, modest Saudi workplace dress. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #652D8C. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after ops-002: 'Which best describes your role?' choices: front-line / reception -> role='front'; patient experience (PXO) -> role='px'; clinical -> role='clinical'; other -> role='all'. Same variables as programme template.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-001",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'prediction', store_key 'ops_first_guess': 'A patient at reception is upset her lab result isn't ready. Who owns this?' Operations / My Care / Not sure. Replay in ops-031 intro_html ('Earlier you said ...'). Keep 'Right team, first time' as reveal.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-011",
+  "current_type": "labeled_diagram",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on the existing redrawn Operations chart asset: each role box reveals 'what they do / when you contact them'. Role-only (B1).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-021",
+  "current_type": "labeled_diagram",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on the existing My Care chart asset: same pattern as ops-011.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-012",
+  "current_type": "(new)",
+  "proposed_type": "mcq",
+  "change": "NEW formative check between ops-011 and ops-020, points 0, objective_ids []: 'A patient's complaint can't be fixed on the spot at J2. Who owns recovery?' (routing per B7). Breaks the 8-screen unscored run ops-000..ops-022.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-034-front",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after ops-033 — 'Your first call in your role (front: PXO on site; px: escalate to site PX Manager; clinical: when to hand to My Care Coordinator)' for role=front; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"front\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-034-px",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after ops-033 — 'Your first call in your role (front: PXO on site; px: escalate to site PX Manager; clinical: when to hand to My Care Coordinator)' for role=px; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"px\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-034-clinical",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after ops-033 — 'Your first call in your role (front: PXO on site; px: escalate to site PX Manager; clinical: when to hand to My Care Coordinator)' for role=clinical; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"clinical\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "04_operations-and-my-care",
+  "screen_id": "ops-089",
+  "current_type": "(new)",
+  "proposed_type": "results_breakdown",
+  "change": "NEW results-by-objective screen before ops-090 (sections ops-o1..o3, weak_threshold 70). Closes the proposal's 'results by objective' line; unscored.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after rcma-002: 'Which best describes your role?' choices: physician -> role='physician'; dentist -> role='dentist'; RCM / coding / insurance staff -> role='rcm'; show all -> 'all'.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-002",
+  "current_type": "poll",
+  "proposed_type": "exploration",
+  "change": "input_kind 'choice', store_key 'rcma_cause_guess' (same 4 causes). Unscored; enables replay at rcma-020 and rcma-040 ('You guessed ...; the #1 cause is non-specific symptom coding').",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-020",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "4 flip cards: Primary / Secondary / Specific code / #1 rejection cause - front term, back meaning + one example. Back of card 4 replays rcma_cause_guess.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Simple diagram for card fronts: a clinical note card transforming into a code card via an arrow (translation metaphor); 4 small icon variants (star = primary, layers = secondary, target = specific, warning = rejection). Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #7C0041. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-030",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "Myth/Fact flip cards: 'More tests protect me' / 'Supplements are harmless to add' / 'Repeat tests are always fine' / 'Deviation needs no note' - backs give the rule.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Flat illustration of a physician's desk with a stack of lab-order slips beside a single focused order with a check mark (more is not better); no text on slips. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #7C0041. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-041",
+  "current_type": "content_slide",
+  "proposed_type": "true_false",
+  "change": "Formative, points 0, objective_ids []: 'If my treatment is clinically correct, the claim will be covered.' -> False: undocumented = uncovered.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-024-physician",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after rcma-023 — 'What specific coding looks like in your work (physician: provisional dx; dentist: dental example codes - SME B4; rcm: what to query back to the clinician)' for role=physician; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"physician\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-024-dentist",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after rcma-023 — 'What specific coding looks like in your work (physician: provisional dx; dentist: dental example codes - SME B4; rcm: what to query back to the clinician)' for role=dentist; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"dentist\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-024-rcm",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after rcma-023 — 'What specific coding looks like in your work (physician: provisional dx; dentist: dental example codes - SME B4; rcm: what to query back to the clinician)' for role=rcm; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"rcm\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "05_rcm-documentation-and-coding",
+  "screen_id": "rcma-012..rcma-050",
+  "current_type": "various",
+  "proposed_type": "various",
+  "change": "Visual poverty (lint text_only_run, 14 screens): add a small note-card SVG to rcma-013, rcma-021 and rcma-040 prompts via {{asset:...}} so the run is broken; no scoring change.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Three small SVG note cards (weak note, coded note, rejection notice) in a consistent card style; contents left blank for HTML text overlay. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #7C0041. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "06_rcm-ebp-benefits-and-rejections",
+  "screen_id": "rcmb-002",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after rcmb-001: 'Which best describes your role?' choices: physician/dentist -> role='physician'; RCM / insurance approval -> role='rcm'; all -> 'all'.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "06_rcm-ebp-benefits-and-rejections",
+  "screen_id": "rcmb-001",
+  "current_type": "content_slide",
+  "proposed_type": "exploration",
+  "change": "input_kind 'slider' 0-15, store_key 'rcmb_new_guess': 'How many benefits do you think the new EBP added?' Replay on rcmb-010 feedback. Count pending SME/B-items.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "06_rcm-ebp-benefits-and-rejections",
+  "screen_id": "rcmb-050",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on a rendered image of the rebuilt 8-row anonymised rejection log (B8): regions on diagnosis, service, rejection comment, claim id columns; explains how to read each. Sets up rcmb-051.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Rendered table graphic (SVG) of a fictional 8-row claim-rejection log with invented claim ids (CLM-0001..0008), columns diagnosis, service, rejection comment; neutral grey table, module colour header. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #7C0041. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "06_rcm-ebp-benefits-and-rejections",
+  "screen_id": "rcmb-053-physician",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after rcmb-052 — 'Your part in rework (physician: fix the note and code; rcm: route back with the rejection reason, resubmit only after correction)' for role=physician; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"physician\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "06_rcm-ebp-benefits-and-rejections",
+  "screen_id": "rcmb-053-rcm",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after rcmb-052 — 'Your part in rework (physician: fix the note and code; rcm: route back with the rejection reason, resubmit only after correction)' for role=rcm; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"rcm\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after qsr-002: 'Which best describes your role?' choices: clinical (nurse/physician/allied) -> set_vars [{\"var\":\"role\",\"op\":\"set\",\"value\":\"clinical\"},{\"var\":\"role_label\",\"op\":\"set\",\"value\":\"clinician\"}]; front office / patient experience -> role=\"front\"; support / back office -> role=\"support\"; \"Show me everything\" -> role=\"all\". Every choice goto_screen_id = the next screen id. Requires course-level \"variables\":[{\"name\":\"role\",\"type\":\"text\",\"default\":\"all\"},{\"name\":\"role_label\",\"type\":\"text\",\"default\":\"team member\"}]. Unscored (branching is not a quiz type); +1 screen.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-010",
+  "current_type": "labeled_diagram",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore' on the existing S-P-O diagram: each block reveals one My Clinic example (structure: defibrillator in every clinic; process: two-identifier rate; outcome: falls per 1,000 visits) - examples must not be the exact qsr-011 items.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-040",
+  "current_type": "labeled_diagram",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on the existing iceberg asset: tip/surface/deep regions each reveal a definition + a non-assessed example.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-050",
+  "current_type": "content_slide",
+  "proposed_type": "timeline",
+  "change": "Events: notice -> report within 24 h (online/email per B9) -> system grades -> escalates -> learning shared. Unscored. Breaks text_only_run qsr-041..qsr-051.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Horizontal 5-step flow illustration: eye icon, laptop with blank form, sorting funnel, upward arrow to a manager silhouette, lightbulb shared with a team; no text. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #652D8C. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-024-clinical",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after qsr-023 — 'Hand hygiene and patient ID in your role (clinical: five moments at the bedside; front: two identifiers at registration; support: surfaces and patient surroundings)' for role=clinical; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"clinical\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-024-front",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after qsr-023 — 'Hand hygiene and patient ID in your role (clinical: five moments at the bedside; front: two identifiers at registration; support: surfaces and patient surroundings)' for role=front; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"front\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-024-support",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after qsr-023 — 'Hand hygiene and patient ID in your role (clinical: five moments at the bedside; front: two identifiers at registration; support: surfaces and patient surroundings)' for role=support; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"support\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "07_quality-safety-and-risk",
+  "screen_id": "qsr-091",
+  "current_type": "poll",
+  "proposed_type": "exploration",
+  "change": "input_kind 'text', store_key 'qsr_commit' (short): replay in qsr-092 summary ('Your words: ...').",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-003",
+  "current_type": "(new)",
+  "proposed_type": "branching",
+  "change": "NEW role picker inserted after ehr-002: 'Which best describes your role?' choices: physician -> role='physician'; nurse / clinical staff -> role='nurse'; all -> 'all'. Simulations stay common to all (scored).",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-030",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore', require_all true on a test-environment screenshot of the order search (search by service, lab, referral, package, order profile, Form Wizard). Capture in the B-item test session; DPO check.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Screenshot (not generated): EHR order-search panel on the fictional test patient, captured in the 2-hour session; blur nothing real because only test data is shown. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #006E78. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-042",
+  "current_type": "content_slide",
+  "proposed_type": "flashcards",
+  "change": "6 flip cards (infection control, medication use, disease/condition, treatment, health & lifestyle, other): back = one thing to say to the patient. Fixes too_many_list_items.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-052",
+  "current_type": "content_slide",
+  "proposed_type": "hotspot",
+  "change": "mode 'explore' on the 'Record saved successfully' / Complete screenshot: regions show the success banner, the Complete button and the missing-field warning; breaks the passive run ehr-052, ehr-090, ehr-091.",
+  "scored_change": false,
+  "needs_image": true,
+  "image_brief": "Screenshot (not generated): consultation screen of the test patient showing the save banner and Complete button; second state with a mandatory-field warning if available. Use the shared style suffix in 00_program/visual-generation-prompts.md with module colour #006E78. No baked-in text or labels (labels come from hotspot regions/label_html), no real people, patients, staff names or identifiers; natural size 1920x1080 so region coords are stable."
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-043-physician",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after ehr-042 — 'Your part in the consultation (physician: diagnosis, orders, referral; nurse: vitals, education SMS, follow-up booking - SME confirm who performs each step)' for role=physician; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"physician\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ },
+ {
+  "module": "08_it-ehr-consultation",
+  "screen_id": "ehr-043-nurse",
+  "current_type": "(new)",
+  "proposed_type": "accordion",
+  "change": "NEW role-tailored tip after ehr-042 — 'Your part in the consultation (physician: diagnosis, orders, referral; nurse: vitals, education SMS, follow-up booking - SME confirm who performs each step)' for role=nurse; visible_if {\"var\":\"role\",\"cmp\":\"==\",\"value\":\"nurse\"}; points 0, objective_ids []. Learner sees at most one variant (role=all sees none). Content needs SME sign-off.",
+  "scored_change": false,
+  "needs_image": false,
+  "image_brief": ""
+ }
+]

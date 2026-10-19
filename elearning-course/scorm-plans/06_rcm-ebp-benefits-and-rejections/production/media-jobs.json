@@ -1,0 +1,502 @@
+{
+ "module": "06_rcm-ebp-benefits-and-rejections",
+ "module_colour": "#7C0041",
+ "generated_by": "tools/build_media_jobs.py",
+ "agent_runbook": "00_program/media-production-runbook.md",
+ "jobs": [
+  {
+   "id": "rcmb-img-benefit-icons",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-img-benefit-icons.svg",
+   "size_px": null,
+   "screens": [
+    "rcmb-020",
+    "rcmb-040"
+   ],
+   "brief": "Line icons per benefit",
+   "alt_text": "decorative",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "rcmb-tbl-log",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-tbl-log.svg",
+   "size_px": null,
+   "screens": [
+    "rcmb-050",
+    "051"
+   ],
+   "brief": "Rebuilt rejection rows (B8); invented ids CLM-0001…; no names, dates or providers",
+   "alt_text": "n/a",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "rcmb-pdf-ebp",
+   "media": "image",
+   "route": "own-pdf",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-pdf-ebp.png",
+   "size_px": null,
+   "screens": [
+    "rcmb-091"
+   ],
+   "brief": "One-page EBP summary from the official document (B3), approved by payer relations",
+   "alt_text": "n/a",
+   "gate": "",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "rcmb-aud-000",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-000.mp3",
+   "screens": [
+    "rcmb-000"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Welcome to RCM Part B: New EBP Benefits & Claim-Rejection Analysis. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+   "target_sec": 12.0,
+   "tone": "warm",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-001",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-001.mp3",
+   "screens": [
+    "rcmb-001"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Benefits change. Documentation decides whether a covered service is actually paid. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-010",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-010.mp3",
+   "screens": [
+    "rcmb-010"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-020",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-020.mp3",
+   "screens": [
+    "rcmb-020"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
+   "target_sec": 40.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Pause and connect this to your role.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-021",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-021.mp3",
+   "screens": [
+    "rcmb-021"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-030",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-030.mp3",
+   "screens": [
+    "rcmb-030"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+   "target_sec": 35.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Notice which part of this you would use first on shift.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-031",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-031.mp3",
+   "screens": [
+    "rcmb-031"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-040",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-040.mp3",
+   "screens": [
+    "rcmb-040"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
+   "target_sec": 45.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-041",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-041.mp3",
+   "screens": [
+    "rcmb-041"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-050",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-050.mp3",
+   "screens": [
+    "rcmb-050"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: How to read a rejection comment. Each one tells you what to fix. The first time I read our log I recognised two of my own claims. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-051",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-051.mp3",
+   "screens": [
+    "rcmb-051"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-052",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-052.mp3",
+   "screens": [
+    "rcmb-052"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-060",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-060.mp3",
+   "screens": [
+    "rcmb-060"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Use the rule you practised."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "rcmb-aud-090",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-090.mp3",
+   "screens": [
+    "rcmb-090"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
+   "target_sec": 10.0,
+   "tone": "supportive",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-091",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-091.mp3",
+   "screens": [
+    "rcmb-091"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+   "target_sec": 15,
+   "tone": "confident",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "rcmb-aud-091",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/audio/rcmb-aud-091.mp3",
+   "screens": [
+    "rcmb-091"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: And remember: asking early is always the safe move here.",
+   "target_sec": 5.0,
+   "tone": "confident",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "route": "motion-video",
+   "tool": "HyperFrames (pinned version), FFmpeg final encode; Remotion only as fallback (paid company licence)",
+   "format": "MP4 H.264 + AAC mono 96k, 1280x720 30 fps, <=10 MB/min; WebVTT captions + HTML transcript",
+   "status": "proposed",
+   "scored": false,
+   "gate": "Owner decision D17 (value-add or change request); approved script; facts on screen closed in Phase 0",
+   "acceptance": [
+    "Script approved before any render",
+    "Noor/Dr. Omar from characters/assets only, lip-sync by mouth swap (Rhubarb)",
+    "Brand navy #003867, Montserrat, module colour as the single highlight",
+    "No more than 3 flashes per second; reduced-motion: poster frame + transcript",
+    "Captions match the narration word for word"
+   ],
+   "id": "rcmb-vid-benefits",
+   "title": "The Essential Benefits Package in one minute",
+   "module": "06",
+   "placement": "new unscored video screen after rcmb-001",
+   "target_sec": 50,
+   "script_outline": "Icons of the headline benefit changes; limits appear only after B5 is confirmed.",
+   "target_file": "media/video/rcmb-vid-benefits.mp4",
+   "captions_file": "media/video/rcmb-vid-benefits.vtt",
+   "media": "video"
+  }
+ ]
+}

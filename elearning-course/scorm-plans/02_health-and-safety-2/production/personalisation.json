@@ -1,0 +1,97 @@
+{
+ "module": "02_health-and-safety-2",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "hs2-001": [
+   {
+    "kind": "role_picker"
+   },
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "exploration",
+     "id": "hs2-001p",
+     "title": "Your guess",
+     "prompt_html": "<p>Before you start: how many hazards do you expect to find in the lab picture?</p>",
+     "input_kind": "slider",
+     "min_value": 0,
+     "max_value": 10,
+     "step": 1,
+     "store_key": "hs2_hazard_guess"
+    }
+   }
+  ],
+  "hs2-031": [
+   {
+    "kind": "role_tip",
+    "id": "hs2-031r",
+    "title": "Your role in a real drill",
+    "lead": "The drill you just ran is the same for everyone. In real life, your first moves differ by role.",
+    "groups": [
+     {
+      "role": "clinical",
+      "label": "Clinical",
+      "items": [
+       {
+        "title": "Patients first",
+        "body_html": "<p>Rescue the patients in your area, then use the evacuation tool made for stairs. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "front",
+      "label": "Front office & My Care",
+      "items": [
+       {
+        "title": "Visitors and arrivals",
+        "body_html": "<p>Stop arrivals, guide visitors to the assembly point and bring the day's list. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "support",
+      "label": "Support & back office",
+      "items": [
+       {
+        "title": "Routes and utilities",
+        "body_html": "<p>Keep routes clear and isolate utilities only when told. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "hs2-050": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "true_false",
+     "id": "hs2-050c",
+     "title": "Check: Code Orange",
+     "prompt_html": "<p><strong>Quick check (not scored).</strong> Code Orange is only for chemical spills.</p>",
+     "correct": false,
+     "feedback": {
+      "correct_html": "<p>Right — it's false. Code Orange covers a <strong>chemical or a biological</strong> spill.</p>",
+      "incorrect_html": "<p>Code Orange covers chemical <strong>and</strong> biological spills.</p>",
+      "show_correct_answer": true
+     }
+    }
+   }
+  ]
+ },
+ "append_html": {
+  "hs2-090": "<p>Your first guess was <strong><span data-exploration-ref=\"hs2_hazard_guess\"></span></strong> hazards.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check one hazard in your own area this week.</p>"
+ }
+}

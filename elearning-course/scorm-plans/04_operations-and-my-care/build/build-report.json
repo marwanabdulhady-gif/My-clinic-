@@ -13,22 +13,29 @@
   ],
   "module_colour": "#9D3293",
   "build": {
-    "project_id": "proj_01M59Z39R4D1YTH9RTPCEC3GYN",
-    "job_id": "job_01M59Z39SD9XGHMXYNFEGX84GR",
+    "project_id": "proj_01M5AE713DYGEPZ2HVXNFG66RD",
+    "job_id": "job_01M5AE714XSVY0CGWH4K7S93N5",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/vzes-hcL0JsMOCmdOEx6k9R4Uv9cfe2K",
+    "download_url": "http://localhost/scorm/files/B2tghmqenJRMi6hZvOIBq3XlGJtG4tNC",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M59Z39R4D1YTH9RTPCEC3GYN",
+    "project_id": "proj_01M5AE713DYGEPZ2HVXNFG66RD",
     "strict": false,
     "error_count": 0,
-    "warn_count": 0,
-    "clean": true,
+    "warn_count": 1,
+    "clean": false,
     "evidence_binding_coverage": 1.0,
-    "issues": []
+    "issues": [
+      {
+        "severity": "warn",
+        "code": "text_only_run",
+        "message": "7 ardışık görselsiz ekran (screens[13..19]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[13..19]"
+      }
+    ]
   },
   "validate_package": {
     "ok": true,
@@ -44,7 +51,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_04_OpsMyCare_v0.1-draft_1.2.zip",
-    "bytes": 2533574
+    "bytes": 2535796
   },
   "preview": "preview.html"
 }

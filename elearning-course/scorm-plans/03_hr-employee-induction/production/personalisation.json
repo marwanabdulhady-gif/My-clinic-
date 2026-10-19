@@ -1,0 +1,141 @@
+{
+ "module": "03_hr-employee-induction",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "convert": {
+  "hr-014": {
+   "type": "flashcards",
+   "title": "Who we serve",
+   "prompt_html": "<p>Flip each card: who we serve, and how you help them.</p>",
+   "cards": [
+    {
+     "front_html": "<strong>Patients &amp; families</strong>",
+     "back_html": "<p>Sick or healthy, they come first — every role touches their experience.</p>"
+    },
+    {
+     "front_html": "<strong>Community</strong>",
+     "back_html": "<p>Prevention, awareness and the wider Jeddah and Riyadh communities we serve.</p>"
+    },
+    {
+     "front_html": "<strong>Corporates &amp; insurers</strong>",
+     "back_html": "<p>Corporate wellness clients and insurance partners rely on accurate, timely work.</p>"
+    }
+   ]
+  },
+  "hr-022": {
+   "type": "flashcards",
+   "title": "Meet our leaders",
+   "prompt_html": "<p>Flip each card to see what each leader owns. Names and photos are in the live staff directory.</p>",
+   "cards": [
+    {
+     "front_html": "<strong>Chief Executive Officer</strong>",
+     "back_html": "<p>Sets the direction and answers to the board.</p>"
+    },
+    {
+     "front_html": "<strong>Chief Medical Officer</strong>",
+     "back_html": "<p>Owns clinical standards and outcomes.</p>"
+    },
+    {
+     "front_html": "<strong>Chief Operating Officer</strong>",
+     "back_html": "<p>Runs the clinics day to day.</p>"
+    },
+    {
+     "front_html": "<strong>Chief Finance Officer</strong>",
+     "back_html": "<p>Looks after the money that makes it possible.</p>"
+    }
+   ]
+  }
+ },
+ "insert_after": {
+  "hr-002": [
+   {
+    "kind": "role_picker"
+   }
+  ],
+  "hr-030": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "exploration",
+     "id": "hr-030p",
+     "title": "Your principle",
+     "prompt_html": "<p>Which ethics principle will you use most in your role?</p>",
+     "input_kind": "choice",
+     "store_key": "hr_ethic",
+     "choices": [
+      {
+       "id": "respect",
+       "text_html": "Respect"
+      },
+      {
+       "id": "integrity",
+       "text_html": "Integrity"
+      },
+      {
+       "id": "accountability",
+       "text_html": "Accountability"
+      },
+      {
+       "id": "innovation",
+       "text_html": "Innovation &amp; collaboration"
+      }
+     ]
+    }
+   }
+  ],
+  "hr-071": [
+   {
+    "kind": "role_tip",
+    "id": "hr-072",
+    "title": "Your dress code",
+    "lead": "What the dress code means for your team.",
+    "groups": [
+     {
+      "role": "clinical",
+      "label": "Medical team",
+      "items": [
+       {
+        "title": "Every shift",
+        "body_html": "<p>Scrubs and a coat, professional shoes, minimal jewellery. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "front",
+      "label": "Front office",
+      "items": [
+       {
+        "title": "Every shift",
+        "body_html": "<p>The clinic uniform on every shift; no casual attire. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "support",
+      "label": "Back office",
+      "items": [
+       {
+        "title": "Every day",
+        "body_html": "<p>Business attire; no casual days. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "append_html": {
+  "hr-091": "<p>You chose <strong><span data-exploration-ref=\"hr_ethic\"></span></strong> as your principle.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> your manager will walk you through your team's first-week checklist.</p>"
+ }
+}

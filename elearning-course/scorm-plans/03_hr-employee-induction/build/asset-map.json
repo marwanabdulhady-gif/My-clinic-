@@ -74,31 +74,10 @@
       "status": "PENDING",
       "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
     },
-    "hr-img-serve-icons": {
-      "status": "file",
-      "path": "03_hr-employee-induction/storyboard/assets/hr-img-serve-icons.svg",
-      "interim": false
-    },
     "hr-img-map": {
       "status": "file",
       "path": "03_hr-employee-induction/storyboard/assets/hr-img-map.svg",
       "interim": false
-    },
-    "hr-img-leaders-ceo": {
-      "status": "PENDING",
-      "gate": "Client photo with consent, or role tile (D5/B6)"
-    },
-    "hr-img-leaders-cmo": {
-      "status": "PENDING",
-      "gate": "Client photo with consent, or role tile (D5/B6)"
-    },
-    "hr-img-leaders-coo": {
-      "status": "PENDING",
-      "gate": "Client photo with consent, or role tile (D5/B6)"
-    },
-    "hr-img-leaders-cfo": {
-      "status": "PENDING",
-      "gate": "Client photo with consent, or role tile (D5/B6)"
     },
     "hr-img-award-star": {
       "status": "PENDING",

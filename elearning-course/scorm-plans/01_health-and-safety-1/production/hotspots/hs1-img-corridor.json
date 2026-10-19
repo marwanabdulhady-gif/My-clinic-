@@ -1,0 +1,90 @@
+{
+ "asset_id": "hs1-img-corridor",
+ "image_size": [
+  1672,
+  941
+ ],
+ "mapped_by": "Claude, 2026-10-19 — boxes carried over from the storyboard, checked on the overlay; stairwell added",
+ "checked_by": null,
+ "sme_approved": false,
+ "screens": {
+  "hs1-404": {
+   "mode": "explore",
+   "scored": false,
+   "labels": {
+    "smoke": "<strong>Smoke detector</strong>",
+    "heat": "<strong>Heat detector</strong>",
+    "sprinkler": "<strong>Sprinkler</strong>",
+    "callpoint": "<strong>Call point</strong>",
+    "extinguisher": "<strong>Fire extinguisher</strong>",
+    "blanket": "<strong>Fire blanket</strong>",
+    "evacchair": "<strong>Evacuation chair</strong>",
+    "assembly": "<strong>Assembly-point sign</strong>"
+   },
+   "regions": {
+    "smoke": [
+     535,
+     30,
+     120,
+     75
+    ],
+    "heat": [
+     968,
+     30,
+     118,
+     75
+    ],
+    "sprinkler": [
+     782,
+     122,
+     72,
+     64
+    ],
+    "callpoint": [
+     92,
+     252,
+     102,
+     112
+    ],
+    "extinguisher": [
+     68,
+     476,
+     148,
+     308
+    ],
+    "blanket": [
+     1498,
+     312,
+     122,
+     240
+    ],
+    "evacchair": [
+     1040,
+     534,
+     224,
+     304
+    ],
+    "assembly": [
+     1070,
+     278,
+     88,
+     106
+    ]
+   },
+   "add_regions": [
+    {
+     "id": "stairs",
+     "shape": "rect",
+     "coords": [
+      1335,
+      520,
+      160,
+      240
+     ],
+     "label_html": "<strong>Stairwell exit</strong>",
+     "feedback_html": "<p>Your way out in a fire. Use the stairs, never the lift, and keep this door and the corridor clear. <em>(Proposed — SME to confirm at review.)</em></p>"
+    }
+   ]
+  }
+ }
+}

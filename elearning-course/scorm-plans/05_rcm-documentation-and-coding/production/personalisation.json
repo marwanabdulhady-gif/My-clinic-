@@ -1,0 +1,83 @@
+{
+ "module": "05_rcm-documentation-and-coding",
+ "note": "Unscored personalisation and interactivity layer, applied by tools/personalise.py at build time. Proposed wording — SME confirms.",
+ "variables": [
+  {
+   "name": "role",
+   "type": "text",
+   "default": "all"
+  },
+  {
+   "name": "role_label",
+   "type": "text",
+   "default": "team member"
+  }
+ ],
+ "insert_after": {
+  "rcma-002": [
+   {
+    "kind": "role_picker"
+   }
+  ],
+  "rcma-023": [
+   {
+    "kind": "role_tip",
+    "id": "rcma-024",
+    "title": "Specific coding in your work",
+    "lead": "What \"specific\" looks like for you.",
+    "groups": [
+     {
+      "role": "physician",
+      "label": "Physician",
+      "items": [
+       {
+        "title": "Your note decides the code",
+        "body_html": "<p>Write the supported diagnosis, not the symptom, and the duration and severity behind it. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "dentist",
+      "label": "Dentist",
+      "items": [
+       {
+        "title": "Dental claims",
+        "body_html": "<p>Record the tooth, the finding and the procedure so the code and the service match. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     },
+     {
+      "role": "rcm",
+      "label": "RCM team",
+      "items": [
+       {
+        "title": "Query, don't guess",
+        "body_html": "<p>If the note only supports a symptom code, query the clinician before submitting. <em>Proposed — SME to confirm.</em></p>"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "rcma-041": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "true_false",
+     "id": "rcma-041c",
+     "title": "Check: covered?",
+     "prompt_html": "<p><strong>Quick check (not scored).</strong> If my treatment is clinically correct, the claim will be covered.</p>",
+     "correct": false,
+     "feedback": {
+      "correct_html": "<p>Right — it's false. Coverage depends on the table of benefits <strong>and</strong> on the documentation.</p>",
+      "incorrect_html": "<p>Not always: if it isn't documented properly, it won't be covered — even when it's clinically correct.</p>",
+      "show_correct_answer": true
+     }
+    }
+   }
+  ]
+ },
+ "append_html": {
+  "rcma-091": "<p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> pick one recent note and check it against the six-point checklist.</p>"
+ }
+}
