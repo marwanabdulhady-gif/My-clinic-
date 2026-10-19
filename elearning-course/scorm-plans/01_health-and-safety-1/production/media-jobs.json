@@ -1,0 +1,2184 @@
+{
+ "module": "01_health-and-safety-1",
+ "module_colour": "#008C99",
+ "generated_by": "tools/build_media_jobs.py",
+ "agent_runbook": "00_program/media-production-runbook.md",
+ "jobs": [
+  {
+   "id": "hs1-img-8plans",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-8plans.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-102"
+   ],
+   "brief": "4×2 grid, one line icon per plan, label under each; hotspot rects per tile",
+   "alt_text": "Eight Facility Management and Safety plans shown as icons.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "hotspots": {
+    "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. After generating, map one box per region into production/hotspots/<asset-id>.json (tools/map_hotspots.py) — coordinates are not guessed in the storyboard.",
+    "screens": [
+     {
+      "screen_id": "hs1-102",
+      "mode": "explore",
+      "scored": false,
+      "regions": [
+       {
+        "id": "fire",
+        "label": "Fire Safety Plan",
+        "correct": null,
+        "coords": [
+         0,
+         0,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "building",
+        "label": "Building Safety Plan",
+        "correct": null,
+        "coords": [
+         240,
+         0,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "hazmat",
+        "label": "Hazmat & Waste Plan",
+        "correct": null,
+        "coords": [
+         480,
+         0,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "utility",
+        "label": "Utility Plan",
+        "correct": null,
+        "coords": [
+         720,
+         0,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "biomed",
+        "label": "Biomedical Plan",
+        "correct": null,
+        "coords": [
+         0,
+         270,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "security",
+        "label": "Security Plan",
+        "correct": null,
+        "coords": [
+         240,
+         270,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "internal",
+        "label": "Internal Disaster Plan",
+        "correct": null,
+        "coords": [
+         480,
+         270,
+         240,
+         270
+        ]
+       },
+       {
+        "id": "external",
+        "label": "External Disaster Plan",
+        "correct": null,
+        "coords": [
+         720,
+         270,
+         240,
+         270
+        ]
+       }
+      ]
+     }
+    ],
+    "extra_regions_allowed": true
+   },
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
+    "Hotspot boxes mapped and checked on the overlay preview."
+   ]
+  },
+  {
+   "id": "hs1-img-arec",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-arec.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-203"
+   ],
+   "brief": "4-stage circular arrow, brand colours",
+   "alt_text": "AREC cycle: Anticipate, Recognise, Evaluate, Control.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ert",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ert.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-305"
+   ],
+   "brief": "Incident Commander centre, 5 team nodes",
+   "alt_text": "Emergency Response Team: Safety, Security, Nursing, Facility, Operation.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-triangle",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-triangle.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-401"
+   ],
+   "brief": "Fire triangle with three labelled sides",
+   "alt_text": "Fire triangle: heat, fuel and oxygen.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-corridor",
+   "media": "image",
+   "route": "ai-image",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-corridor.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hs1-404"
+   ],
+   "brief": "Clinic corridor with 8 identifiable equipment items; each item ≥ 48 px at stage size",
+   "alt_text": "Clinic corridor with fire safety equipment.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "prompt": "Clinic corridor with 8 identifiable equipment items; each item ≥ 48 px at stage size. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "hotspots": {
+    "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. After generating, map one box per region into production/hotspots/<asset-id>.json (tools/map_hotspots.py) — coordinates are not guessed in the storyboard.",
+    "screens": [
+     {
+      "screen_id": "hs1-404",
+      "mode": "explore",
+      "scored": false,
+      "regions": [
+       {
+        "id": "smoke",
+        "label": "Smoke detector",
+        "correct": null,
+        "coords": [
+         535,
+         30,
+         120,
+         75
+        ]
+       },
+       {
+        "id": "heat",
+        "label": "Heat detector",
+        "correct": null,
+        "coords": [
+         968,
+         30,
+         118,
+         75
+        ]
+       },
+       {
+        "id": "sprinkler",
+        "label": "Sprinkler",
+        "correct": null,
+        "coords": [
+         782,
+         122,
+         72,
+         64
+        ]
+       },
+       {
+        "id": "callpoint",
+        "label": "Call point",
+        "correct": null,
+        "coords": [
+         92,
+         252,
+         102,
+         112
+        ]
+       },
+       {
+        "id": "extinguisher",
+        "label": "Fire extinguisher",
+        "correct": null,
+        "coords": [
+         68,
+         476,
+         148,
+         308
+        ]
+       },
+       {
+        "id": "blanket",
+        "label": "Fire blanket",
+        "correct": null,
+        "coords": [
+         1498,
+         312,
+         122,
+         240
+        ]
+       },
+       {
+        "id": "evacchair",
+        "label": "Evacuation chair",
+        "correct": null,
+        "coords": [
+         1040,
+         534,
+         224,
+         304
+        ]
+       },
+       {
+        "id": "assembly",
+        "label": "Assembly-point sign",
+        "correct": null,
+        "coords": [
+         1070,
+         278,
+         88,
+         106
+        ]
+       },
+       {
+        "id": "stairs",
+        "label": "Stairwell exit",
+        "correct": null,
+        "coords": [
+         1335,
+         520,
+         160,
+         240
+        ]
+       }
+      ]
+     }
+    ],
+    "extra_regions_allowed": true
+   },
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
+    "Hotspot boxes mapped and checked on the overlay preview."
+   ]
+  },
+  {
+   "id": "hs1-img-nfpa-blank",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-nfpa-blank.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-503"
+   ],
+   "brief": "Generic NFPA 704 diamond, quadrants without labels",
+   "alt_text": "Empty NFPA hazard diamond with four quadrants.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-eyewash",
+   "media": "image",
+   "route": "client-photo",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-eyewash.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hs1-506"
+   ],
+   "brief": "Own photo of a My Clinic eyewash/shower unit",
+   "alt_text": "Combined eyewash and emergency shower station.",
+   "gate": "PENDING My Clinic photo permission and Facilities/EHS approval of the pictured unit.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-treatment-room",
+   "media": "image",
+   "route": "ai-image",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-treatment-room.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hs1-701"
+   ],
+   "brief": "Room with sockets, UPS monitor, extension, valve, vent",
+   "alt_text": "Treatment room showing sockets, a valve and an air vent.",
+   "gate": "PENDING 01 B6; Facilities confirms equipment, sockets and visual targets before illustration/hotspots.",
+   "prompt": "Room with sockets, UPS monitor, extension, valve, vent. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "hotspots": {
+    "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. After generating, map one box per region into production/hotspots/<asset-id>.json (tools/map_hotspots.py) — coordinates are not guessed in the storyboard.",
+    "screens": [
+     {
+      "screen_id": "hs1-701",
+      "mode": "explore",
+      "scored": false,
+      "regions": [
+       {
+        "id": "redsocket",
+        "label": "Emergency socket (red) ⚠ Draft — pending 01/B6",
+        "correct": null,
+        "coords": [
+         80,
+         300,
+         120,
+         100
+        ]
+       },
+       {
+        "id": "stdsocket",
+        "label": "Standard socket",
+        "correct": null,
+        "coords": [
+         240,
+         300,
+         120,
+         100
+        ]
+       },
+       {
+        "id": "ups",
+        "label": "UPS-backed monitor",
+        "correct": null,
+        "coords": [
+         400,
+         140,
+         180,
+         150
+        ]
+       },
+       {
+        "id": "extension",
+        "label": "Unauthorised extension",
+        "correct": null,
+        "coords": [
+         400,
+         380,
+         180,
+         110
+        ]
+       },
+       {
+        "id": "valve",
+        "label": "Water shut-off valve",
+        "correct": null,
+        "coords": [
+         640,
+         330,
+         130,
+         130
+        ]
+       },
+       {
+        "id": "vent",
+        "label": "HVAC vent (isolation room)",
+        "correct": null,
+        "coords": [
+         700,
+         40,
+         200,
+         120
+        ]
+       }
+      ]
+     }
+    ],
+    "extra_regions_allowed": true
+   },
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
+    "Hotspot boxes mapped and checked on the overlay preview."
+   ]
+  },
+  {
+   "id": "hs1-img-pump-label",
+   "media": "image",
+   "route": "ai-image",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-pump-label.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hs1-802"
+   ],
+   "brief": "Infusion pump with an overdue inspection label (fictional dates); label dates and overdue status in editable HTML, not AI-rendered lettering.",
+   "alt_text": "Infusion pump with an overdue inspection label.",
+   "gate": "PENDING Biomedical/Facilities confirmation of the inspection-label rule; fictional dates in an editable HTML overlay.",
+   "prompt": "Infusion pump with an overdue inspection label (fictional dates); label dates and overdue status in editable HTML, not AI-rendered lettering.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-alara",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-alara.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-903"
+   ],
+   "brief": "Source icon with time/distance/shield labels",
+   "alt_text": "ALARA: time, distance, shielding.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-1",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-1.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-2",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-2.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-3",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-3.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-4",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-4.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-5",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-5.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-6",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-6.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-7",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-7.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-8",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-8.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-ghs-9",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-ghs-9.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-502"
+   ],
+   "brief": "9 GHS pictograms redrawn (red diamond, black symbol)",
+   "alt_text": "name of each pictogram",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-nfpa-301w",
+   "media": "image",
+   "route": "own-svg",
+   "status": "done",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-nfpa-301w.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-504"
+   ],
+   "brief": "Diamond with 3/0/1/W",
+   "alt_text": "NFPA diamond: health 3, flammability 0, reactivity 1, special W.",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-img-codes-chips",
+   "media": "image",
+   "route": "own-svg",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-img-codes-chips.svg",
+   "size_px": null,
+   "screens": [
+    "hs1-301"
+   ],
+   "brief": "11 colour chips with code names printed",
+   "alt_text": "(decorative — name is in text)",
+   "gate": "PENDING relevant Phase 0 and SME visual approval; provenance recorded before production.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ]
+  },
+  {
+   "id": "hs1-aud-000",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-000.mp3",
+   "screens": [
+    "hs1-000"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Welcome to Facility Management & Safety. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift. Pause and connect this to your role.",
+   "target_sec": 15.0,
+   "tone": "warm",
+   "filler_lines": [
+    "Pause and connect this to your role."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-001",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-001.mp3",
+   "screens": [
+    "hs1-001"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: CBAHI surveyors ask staff, not just managers. On my first day I didn't know where the nearest call point was. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-002",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-002.mp3",
+   "screens": [
+    "hs1-002"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+   "target_sec": 8.0,
+   "tone": "reflective",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-101",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-101.mp3",
+   "screens": [
+    "hs1-101"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The chapter is a survey requirement, a shared responsibility, and one connected system. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+   "target_sec": 35.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-102",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-102.mp3",
+   "screens": [
+    "hs1-102"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The focus here is explore the eight plans. Open each marker in turn before you decide what happens next. Each marker adds a detail that supports a more confident response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Notice which part of this you would use first on shift.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-103",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-103.mp3",
+   "screens": [
+    "hs1-103"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Plans and codes are two views of the same system: give one example of each. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall.",
+   "target_sec": 20.0,
+   "tone": "calm, practical",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-104",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-104.mp3",
+   "screens": [
+    "hs1-104"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-201",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-201.mp3",
+   "screens": [
+    "hs1-201"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Risk is likelihood plus severity. A hazard is the thing, risk is the chance it hurts someone. Reveal each card, then pause to recall the point before moving on. Link the term with the action it should prompt in practice. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-202",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-202.mp3",
+   "screens": [
+    "hs1-202"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: A near miss is the most valuable report: it is free learning. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Pause and connect this to your role.",
+    "Use the principle in context.",
+    "Keep the next action clear."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-203",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-203.mp3",
+   "screens": [
+    "hs1-203"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: AREC as a habit before every task, not a form. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Pause and connect this to your role.",
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-204",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-204.mp3",
+   "screens": [
+    "hs1-204"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Use the rule you practised."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-205",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-205.mp3",
+   "screens": [
+    "hs1-205"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+   "target_sec": 15.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Focus on the action that fits."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-206",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-206.mp3",
+   "screens": [
+    "hs1-206"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: You can stop unsafe work without fear. If you're unsure, ask your supervisor who your liaison is. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-301",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-301.mp3",
+   "screens": [
+    "hs1-301"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Codes are announced overhead. Learn the meaning, then your site's extension. Code Blue is 2222 everywhere. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-302",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-302.mp3",
+   "screens": [
+    "hs1-302"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-303",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-303.mp3",
+   "screens": [
+    "hs1-303"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Evacuation and End of Disaster are announcements, not colours. Only stand down on the official all-clear. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-304",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-304.mp3",
+   "screens": [
+    "hs1-304"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-305",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-305.mp3",
+   "screens": [
+    "hs1-305"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The ERT is five teams. You are part of the response even if you're not on it. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision.",
+   "target_sec": 20.0,
+   "tone": "calm, practical",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-401",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-401.mp3",
+   "screens": [
+    "hs1-401"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Remove one side of the triangle and the fire stops. Smoke kills first, which is why RACE rescues and contains before extinguishing. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-402",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-402.mp3",
+   "screens": [
+    "hs1-402"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-403",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-403.mp3",
+   "screens": [
+    "hs1-403"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-404",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-404.mp3",
+   "screens": [
+    "hs1-404"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Walk the corridor. Know where these are before you need them. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Link it to the task waiting for you tomorrow.",
+   "target_sec": 20.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-405",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-405.mp3",
+   "screens": [
+    "hs1-405"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-406",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-406.mp3",
+   "screens": [
+    "hs1-406"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Horizontal first. Vertical by stairs. Full evacuation only for the worst events. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+   "target_sec": 35.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Pause and connect this to your role.",
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-407",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-407.mp3",
+   "screens": [
+    "hs1-407"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-408",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-408.mp3",
+   "screens": [
+    "hs1-408"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-409",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-409.mp3",
+   "screens": [
+    "hs1-409"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+   "target_sec": 15.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Focus on the action that fits."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-410",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-410.mp3",
+   "screens": [
+    "hs1-410"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Prevention rules exist because each item started a real fire somewhere. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-501",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-501.mp3",
+   "screens": [
+    "hs1-501"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Chemicals come in one door only — procurement — and never without a label and an SDS. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-502",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-502.mp3",
+   "screens": [
+    "hs1-502"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-503",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-503.mp3",
+   "screens": [
+    "hs1-503"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-504",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-504.mp3",
+   "screens": [
+    "hs1-504"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-505",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-505.mp3",
+   "screens": [
+    "hs1-505"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Storage, transport and handling all follow the SDS. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-506",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-506.mp3",
+   "screens": [
+    "hs1-506"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Find your nearest eyewash today. 15 minutes feels long — don't stop early. Notice which part of the information you would need first in practice. Use that as the starting point for a safe, respectful next action. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-507",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-507.mp3",
+   "screens": [
+    "hs1-507"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Take the time you need; nothing here is timed. Choose the option you would defend to a colleague.",
+   "target_sec": 15.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Choose the option you would defend to a colleague."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-508",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-508.mp3",
+   "screens": [
+    "hs1-508"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 10.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-601",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-601.mp3",
+   "screens": [
+    "hs1-601"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Your badge identifies you. Everyone without one in a restricted area is your concern. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+   "target_sec": 30.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-602",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-602.mp3",
+   "screens": [
+    "hs1-602"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-701",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-701.mp3",
+   "screens": [
+    "hs1-701"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Red sockets are on generator power. Know your shut-off valves. Isolation-room vents protect everyone. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-702",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-702.mp3",
+   "screens": [
+    "hs1-702"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-801",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-801.mp3",
+   "screens": [
+    "hs1-801"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Labels tell you if a device is safe to use today. As you read, focus on the decision this information supports in your own role. The aim is a practical next action, not a phrase to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-802",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-802.mp3",
+   "screens": [
+    "hs1-802"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Choose the option you would defend to a colleague.",
+   "target_sec": 12.0,
+   "tone": "encouraging",
+   "filler_lines": [
+    "Choose the option you would defend to a colleague."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-803",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-803.mp3",
+   "screens": [
+    "hs1-803"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-901",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-901.mp3",
+   "screens": [
+    "hs1-901"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Ionising vs non-ionising. The MRI magnet is always on. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall.",
+   "target_sec": 35.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Use the principle in context.",
+    "Keep the next action clear.",
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-902",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-902.mp3",
+   "screens": [
+    "hs1-902"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-903",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-903.mp3",
+   "screens": [
+    "hs1-903"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Time, distance, shielding — three levers you control. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Think of the first detail you would check.",
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-904",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-904.mp3",
+   "screens": [
+    "hs1-904"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Wear your badge. The RSO is your contact. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Apply the point to a familiar task.",
+    "Carry the idea into your next decision.",
+    "Notice which part of this you would use first on shift."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-905",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-905.mp3",
+   "screens": [
+    "hs1-905"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-906",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-906.mp3",
+   "screens": [
+    "hs1-906"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "target_sec": 8.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-907",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-907.mp3",
+   "screens": [
+    "hs1-907"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Laser eye injuries often don't hurt at first — that's why protection is not optional. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+   "target_sec": 25.0,
+   "tone": "calm, practical",
+   "filler_lines": [
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-950",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-950.mp3",
+   "screens": [
+    "hs1-950"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond. Take the time you need; nothing here is timed.",
+   "target_sec": 15,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-950",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-950.mp3",
+   "screens": [
+    "hs1-950"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: That is the habit we want from every new colleague.",
+   "target_sec": 5.0,
+   "tone": "encouraging",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-980",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-980.mp3",
+   "screens": [
+    "hs1-980"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try. Use that insight to choose what to revisit. Link it to the task waiting for you tomorrow.",
+   "target_sec": 15.0,
+   "tone": "supportive",
+   "filler_lines": [
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-981",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-981.mp3",
+   "screens": [
+    "hs1-981"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
+   "target_sec": 8.0,
+   "tone": "reflective",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  },
+  {
+   "id": "hs1-aud-990",
+   "media": "audio",
+   "route": "tts",
+   "status": "blocked-rewrite",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-990.mp3",
+   "screens": [
+    "hs1-990"
+   ],
+   "speakers": [
+    "Noor"
+   ],
+   "voices": [
+    "Noor — female, early-to-mid 30s, warm, calm, clear"
+   ],
+   "script": "NOOR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow.",
+   "target_sec": 27,
+   "tone": "confident",
+   "filler_lines": [
+    "Notice which part of this you would use first on shift.",
+    "Link it to the task waiting for you tomorrow."
+   ],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
+  },
+  {
+   "id": "hs1-aud-990",
+   "media": "audio",
+   "route": "tts",
+   "status": "todo",
+   "target_file": "01_health-and-safety-1/storyboard/audio/hs1-aud-990.mp3",
+   "screens": [
+    "hs1-990"
+   ],
+   "speakers": [
+    "Omar"
+   ],
+   "voices": [
+    "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
+   ],
+   "script": "OMAR: Carry this practical rule into your next decision.",
+   "target_sec": 5.0,
+   "tone": "confident",
+   "filler_lines": [],
+   "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
+   "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
+   "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
+   "gate": "D10 voices approved"
+  }
+ ]
+}

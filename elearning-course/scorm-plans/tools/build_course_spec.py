@@ -264,6 +264,10 @@ def build(module: str) -> dict:
             placed += 1
         built.append(s)
 
+    from map_hotspots import apply as apply_hotspot_maps
+    for note in apply_hotspot_maps(built, mdir):
+        print(f"{module}: {note}")
+
     outline = []
     for cells in table_rows(sb, rf"{prefix}-s[A-Z0-9]+"):
         nid = cells[0].strip("`")
