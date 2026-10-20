@@ -673,6 +673,7 @@
           "hs2-img-drill-4",
           "hs2-img-drill-5",
           "hs2-img-drill-6",
+          "hs2-img-extinguisher",
           "hs2-img-floorplan",
           "hs2-img-kit-bio",
           "hs2-img-kit-chem",
@@ -683,7 +684,6 @@
         "missing_files": [],
         "planned_not_built": [
           "hs2-img-codes",
-          "hs2-img-extinguisher",
           "hs2-img-ghs-1",
           "hs2-img-ghs-2",
           "hs2-img-ghs-3",

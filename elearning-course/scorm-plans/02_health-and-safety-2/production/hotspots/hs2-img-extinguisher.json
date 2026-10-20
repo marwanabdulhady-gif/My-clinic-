@@ -1,0 +1,55 @@
+{
+ "asset_id": "hs2-img-extinguisher",
+ "image_size": [
+  1920,
+  1080
+ ],
+ "mapped_by": "Claude, 2026-10-20 — Canva image supplied by the owner; boxes checked on the overlay",
+ "checked_by": null,
+ "sme_approved": false,
+ "screens": {
+  "hs2-040": {
+   "mode": "explore",
+   "scored": false,
+   "labels": {
+    "pin": "<strong>Safety pin</strong>",
+    "gauge": "<strong>Pressure gauge</strong>",
+    "label": "<strong>Class / agent label</strong>",
+    "instructions": "<strong>Instructions panel (PASS)</strong>",
+    "tag": "<strong>Last inspection tag</strong>"
+   },
+   "regions": {
+    "pin": [
+     1297,
+     40,
+     91,
+     86
+    ],
+    "label": [
+     1206,
+     414,
+     213,
+     303
+    ],
+    "instructions": [
+     1206,
+     791,
+     240,
+     141
+    ],
+    "tag": [
+     1423,
+     303,
+     152,
+     263
+    ],
+    "gauge": [
+     1326,
+     168,
+     34
+    ]
+   },
+   "add_regions": []
+  }
+ }
+}

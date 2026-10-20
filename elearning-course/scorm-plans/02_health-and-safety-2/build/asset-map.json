@@ -33,7 +33,7 @@
     },
     "hs2-img-drill-4": {
       "status": "file",
-      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-4.png",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-4.jpg",
       "interim": false
     },
     "hs2-img-drill-5": {
@@ -57,8 +57,9 @@
       "interim": false
     },
     "hs2-img-extinguisher": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-extinguisher.jpg",
+      "interim": false
     },
     "hs2-img-kit-chem": {
       "status": "file",

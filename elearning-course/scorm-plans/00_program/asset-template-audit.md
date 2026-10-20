@@ -58,7 +58,7 @@ Layouts with a mockup: L1 Title, L1 duo (companion intro), L2 Section opener, L3
 | Module | Assets on disk | Referenced, no file | Planned, not built | Orphans | SVG issues | Cards | Incomplete cards | ⚠ PENDING | Narration min | Two-voice screens | TTS label leaks |
 |---|---:|---|---|---|---|---:|---:|---:|---:|---|---|
 | 01 | 12 | — | 10 | hs1-img-staffroom | 0 | 54 | 0 | 42 | 16.4 | 2 | 0 |
-| 02 | 12 | — | 12 | — | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
+| 02 | 13 | — | 11 | — | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
 | 03 | 26 | — | 14 | — | 0 | 36 | 0 | 17 | 12.3 | 3 | 0 |
 | 04 | 8 | — | 1 | ops-img-scenes-2, ops-img-scenes-3, ops-img-scenes-4 | 0 | 13 | 0 | 18 | 3.3 | 1 | 0 |
 | 05 | 3 | — | 2 | — | 0 | 21 | 0 | 26 | 6.3 | 1 | 0 |

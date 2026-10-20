@@ -217,10 +217,10 @@
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
    ],
-   "made_by": "Claude (L2S), 2026-10-20",
-   "tool": "hand-authored SVG rendered with Chromium",
+   "made_by": "Canva generate-image, prompted by Claude; downloaded and supplied by the owner 2026-10-20",
+   "tool": "Canva (Magic Media)",
    "model": null,
-   "notes": "Replaces the PR #53 picture, which showed an assembly point (duplicate of drill-6). Node 4 is Extinguish: small bin fire with an extinguisher in reach."
+   "notes": "Canva media id MAHYg0zp5rU; re-encoded to 1920×1080 JPEG q86."
   },
   {
    "id": "hs2-img-drill-5",
@@ -304,7 +304,7 @@
    "id": "hs2-img-extinguisher",
    "media": "image",
    "route": "client-photo",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-extinguisher.png",
    "size_px": [
     1920,
@@ -390,7 +390,10 @@
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset.",
     "Hotspot boxes mapped and checked on the overlay preview."
    ],
-   "made_by": "Arena agent (PR #53), provenance not recorded"
+   "made_by": "Canva generate-image, prompted by Claude; downloaded and supplied by the owner 2026-10-20",
+   "tool": "Canva (Magic Media)",
+   "model": null,
+   "notes": "Canva media id MAHYg5CLNLc; re-encoded to 1920×1080 JPEG q86."
   },
   {
    "id": "hs2-img-kit-chem",
@@ -438,7 +441,10 @@
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
    ],
-   "made_by": "Arena agent (PR #53), provenance not recorded"
+   "made_by": "Canva generate-image, prompted by Claude; downloaded and supplied by the owner 2026-10-20",
+   "tool": "Canva (Magic Media)",
+   "model": null,
+   "notes": "Canva media id MAHYgzYBpJ0; re-encoded to 1920×1080 JPEG q86."
   },
   {
    "id": "hs2-img-codes",
