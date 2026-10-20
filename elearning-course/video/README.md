@@ -63,7 +63,7 @@ Still to add, from the playbook kit (the raw playbook in the owner's Drive folde
 ## Standards (every clip)
 
 - Speakers: Noor and Dr. Omar only. Art comes from `scorm-plans/00_program/characters/assets/` and is never generated.
-- Brand: navy `#003867`, Montserrat, **one** module colour as the highlight, magenta only for warnings, and never colour alone.
+- Brand: follow [`_shared/brand/README.md`](_shared/brand/README.md): navy `#003867`, Montserrat, **one** module colour as the highlight, magenta for key warnings and key numbers (with an icon and words), and never colour alone. Use the navy logo PNG on light backgrounds and the white one on navy, on the first and last scenes only.
 - Text: ≥ 24 px (body ≥ 28 px at 1080p), inside the safe area in `tokens.css`. Facts on screen must be a subset of `data/facts.md`.
 - Sound: −16 ± 1 LUFS integrated, true peak ≤ −1 dBTP. Music off unless the owner asks.
 - Accessibility: a separate VTT file (never burned-in), an HTML transcript, a poster frame for reduced motion, and no more than 3 flashes per second.

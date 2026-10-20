@@ -289,7 +289,7 @@ The procedure is written for an agent that follows steps literally. **Stop and r
 **Phase 7: visual QA on stills and draft**
 
 31. Render stills at frame 0 and +15, each cue +10, phase boundaries ±6, the last frame and transition midpoints. Make a contact sheet with a new filename each round.
-32. Check every scene against the playbook §12.3 defect catalogue and our brand rules (one module colour, magenta only for warnings, never colour alone). Facts on screen must be a subset of `facts.md`.
+32. Check every scene against the playbook §12.3 defect catalogue and our brand rules in `$V/_shared/brand/README.md` (one module colour, magenta for key warnings and numbers with an icon, logo PNG only on first/last scene, never colour alone). Facts on screen must be a subset of `facts.md`.
 33. Render a half-resolution draft. **GATE F:** the owner reviews the draft. Fix each note exactly as written, and re-render only the affected seconds.
 
 **Phase 8: render and encode**
