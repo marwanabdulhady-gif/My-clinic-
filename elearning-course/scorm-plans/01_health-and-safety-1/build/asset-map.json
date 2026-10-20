@@ -12,8 +12,9 @@
       "interim": false
     },
     "hs1-img-8plans": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-8plans.svg",
+      "interim": false
     },
     "hs1-img-arec": {
       "status": "file",
@@ -46,8 +47,9 @@
       "interim": false
     },
     "hs1-img-eyewash": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-eyewash.jpg",
+      "interim": false
     },
     "char-noor-avatar-concern": {
       "status": "file",
@@ -55,12 +57,14 @@
       "interim": false
     },
     "hs1-img-treatment-room": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-treatment-room.jpg",
+      "interim": false
     },
     "hs1-img-pump-label": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-pump-label.jpg",
+      "interim": false
     },
     "char-omar-avatar-neutral": {
       "status": "file",
@@ -70,6 +74,11 @@
     "hs1-img-alara": {
       "status": "file",
       "path": "01_health-and-safety-1/storyboard/assets/hs1-img-alara.svg",
+      "interim": false
+    },
+    "hs1-img-staffroom": {
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-staffroom.jpg",
       "interim": false
     },
     "brand-logo-horizontal-navy": {

@@ -1,0 +1,70 @@
+{
+ "asset_id": "hs1-img-staffroom",
+ "image_size": [
+  1920,
+  1080
+ ],
+ "mapped_by": "Claude, 2026-10-20 — measured on a 100 px grid and checked on the overlay",
+ "checked_by": null,
+ "sme_approved": false,
+ "screens": {
+  "hs1-410": {
+   "mode": "explore",
+   "scored": false,
+   "labels": {
+    "candle": "<strong>Candle or open flame</strong>",
+    "extension": "<strong>Home extension lead</strong>",
+    "heater": "<strong>Fan heater</strong>",
+    "vape": "<strong>Vape or cigarette</strong>",
+    "microwave": "<strong>Unauthorised microwave</strong>",
+    "flammable": "<strong>Open flammable bottle</strong>",
+    "welding": "<strong>Welding kit by a door</strong>"
+   },
+   "regions": {
+    "vape": [
+     306,
+     440,
+     92,
+     172
+    ],
+    "candle": [
+     400,
+     458,
+     92,
+     152
+    ],
+    "microwave": [
+     976,
+     372,
+     316,
+     152
+    ],
+    "flammable": [
+     1288,
+     392,
+     88,
+     144
+    ],
+    "welding": [
+     1336,
+     606,
+     172,
+     250
+    ],
+    "heater": [
+     914,
+     784,
+     182,
+     196
+    ],
+    "extension": [
+     620,
+     866,
+     230,
+     112
+    ]
+   },
+   "add_regions": []
+  }
+ }
+}

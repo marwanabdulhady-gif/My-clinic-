@@ -46,6 +46,7 @@ MC_01_FMS_v1.0_1.2.zip
     ├── hs1-img-nfpa-301w.*
     ├── hs1-img-nfpa-blank.*
     ├── hs1-img-pump-label.*
+    ├── hs1-img-staffroom.*
     ├── hs1-img-treatment-room.*
     ├── hs1-img-triangle.*
     ├── char-noor-avatar-concern.png

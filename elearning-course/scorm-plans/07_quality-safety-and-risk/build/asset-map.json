@@ -27,12 +27,14 @@
       "interim": false
     },
     "qsr-img-pillars": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "07_quality-safety-and-risk/storyboard/assets/qsr-img-pillars.jpg",
+      "interim": false
     },
     "qsr-img-wristbands": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "07_quality-safety-and-risk/storyboard/assets/qsr-img-wristbands.jpg",
+      "interim": false
     },
     "char-noor-avatar-concern": {
       "status": "file",
