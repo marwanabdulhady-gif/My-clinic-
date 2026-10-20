@@ -1,0 +1,151 @@
+{
+ "clip": "ops-vid-journey",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#9D3293",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "intro",
+   "title": "Right team, first time",
+   "goal": "Right team, first time",
+   "pose": "char-omar-welcome",
+   "layout": "six journey stage circles on a path (ops-img-journey style); patient token at the start; '⚠ Draft — pending B7' tag",
+   "onScreenText": [
+    "Right team, first time",
+    "⚠ Draft — pending B7"
+   ],
+   "assets": [
+    "ops-img-journey (04 storyboard/assets)"
+   ],
+   "beats": [
+    {
+     "cue": "Right team",
+     "do": "headline rises"
+    },
+    {
+     "cue": "one patient",
+     "do": "path draws; patient token drops onto stage 1"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "book",
+   "title": "Booking",
+   "goal": "Booking",
+   "pose": "char-omar-explaining",
+   "layout": "stage 1 lights in My Care colour; team label chip",
+   "onScreenText": [
+    "Book · My Care"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Booking",
+     "do": "token at stage 1; ring pulses once"
+    },
+    {
+     "cue": "My Care",
+     "do": "My Care chip slides out"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "visit",
+   "title": "In the clinic",
+   "goal": "In the clinic",
+   "pose": "char-omar-explaining",
+   "layout": "token moves through stages 2–4, each lights in Operations colour",
+   "onScreenText": [
+    "Arrive · Consult · Lab, Radiology, Pharmacy",
+    "Operations"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Operations takes over",
+     "do": "Operations chip slides in"
+    },
+    {
+     "cue": "front of house",
+     "do": "token to stage 2, lights"
+    },
+    {
+     "cue": "running on time",
+     "do": "token to stage 3, lights"
+    },
+    {
+     "cue": "Pharmacy",
+     "do": "token to stage 4, lights"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "leave",
+   "title": "Leaving and after",
+   "goal": "Leaving and after",
+   "pose": "char-omar-tip",
+   "layout": "stage 5 lights in both colours (split ring); stage 6 lights My Care",
+   "onScreenText": [
+    "Leave · Both",
+    "Follow-up · My Care"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "both teams meet",
+     "do": "split ring fills from both sides"
+    },
+    {
+     "cue": "picks up the follow-up",
+     "do": "token to stage 6, My Care ring fills"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Tell it once",
+   "goal": "Tell it once",
+   "pose": "char-omar-success",
+   "layout": "whole path lit; Callout",
+   "onScreenText": [
+    "Tell it once"
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "story twice",
+     "do": "path glows end to end once; Callout scales in; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

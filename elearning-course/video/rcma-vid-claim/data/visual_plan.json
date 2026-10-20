@@ -1,0 +1,141 @@
+{
+ "clip": "rcma-vid-claim",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#7C0041",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "note",
+   "title": "The payer sees your note",
+   "goal": "The payer sees your note",
+   "pose": "char-omar-explaining",
+   "layout": "left: patient silhouette fades out; right: a note card stays",
+   "onScreenText": [
+    "The payer sees your note"
+   ],
+   "assets": [
+    "char-omar-avatar-neutral.png"
+   ],
+   "beats": [
+    {
+     "cue": "see your patient",
+     "do": "patient silhouette fades to 0"
+    },
+    {
+     "cue": "sees your note",
+     "do": "note card slides to centre and enlarges"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "reject",
+   "title": "Rejected",
+   "goal": "Rejected",
+   "pose": "char-omar-concern",
+   "layout": "claim card travels along a path from 'Note' to 'Payer'; returns with a red stamp",
+   "onScreenText": [
+    "Symptom: vomiting",
+    "Rejected",
+    "#1 cause: non-specific coding"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Here's a claim",
+     "do": "claim card appears on the note"
+    },
+    {
+     "cue": "travels to the payer",
+     "do": "card moves along the path (1.2 s ease-in-out)"
+    },
+    {
+     "cue": "comes back rejected",
+     "do": "card returns; 'Rejected' stamp presses in (scale 1.3→1, 250 ms) in error red with ✕ icon"
+    },
+    {
+     "cue": "number one cause",
+     "do": "chip '#1 cause' slides in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "fix",
+   "title": "Approved",
+   "goal": "Approved",
+   "pose": "char-omar-success",
+   "layout": "same path; note card now shows 'findings → gastroenteritis'; green stamp",
+   "onScreenText": [
+    "Findings → gastroenteritis",
+    "Approved"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "links the findings",
+     "do": "an arrow draws from 'findings' to 'gastroenteritis'"
+    },
+    {
+     "cue": "travels again",
+     "do": "card travels the path"
+    },
+    {
+     "cue": "approved",
+     "do": "'Approved' stamp presses in, success green with ✓"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "What gets paid",
+   "goal": "What gets paid",
+   "pose": "char-omar-tip",
+   "layout": "equation of three chips + '=' optimised payment",
+   "onScreenText": [
+    "Decision + documentation + coding = paid"
+   ],
+   "assets": [
+    "char-omar-tip.png"
+   ],
+   "beats": [
+    {
+     "cue": "Clinical decision",
+     "do": "chip 1 pops"
+    },
+    {
+     "cue": "documentation",
+     "do": "chip 2 pops"
+    },
+    {
+     "cue": "coding",
+     "do": "chip 3 pops"
+    },
+    {
+     "cue": "what gets paid",
+     "do": "'=' and result chip slide in; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

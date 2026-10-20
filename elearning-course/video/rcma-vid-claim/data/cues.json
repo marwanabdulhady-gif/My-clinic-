@@ -1,0 +1,16 @@
+{
+ "s01-note-1": "see your patient",
+ "s01-note-2": "sees your note",
+ "s02-reject-1": "Here's a claim",
+ "s02-reject-2": "travels to the payer",
+ "s02-reject-3": "comes back rejected",
+ "s02-reject-4": "number one cause",
+ "s03-fix-1": "links the findings",
+ "s03-fix-2": "travels again",
+ "s03-fix-3": "approved",
+ "s04-close-1": "Clinical decision",
+ "s04-close-2": "documentation",
+ "s04-close-3": "coding",
+ "s04-close-4": "what gets paid",
+ "int-pause": "number one cause"
+}

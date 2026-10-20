@@ -1,0 +1,166 @@
+{
+ "clip": "prog-vid-welcome",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#652D8C",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "welcome",
+   "title": "Welcome to My Clinic",
+   "goal": "Welcome to My Clinic",
+   "pose": "char-omar-welcome",
+   "layout": "navy title gradient; Dr. Omar portrait card bottom-right; logo top-left",
+   "onScreenText": [
+    "Welcome to My Clinic"
+   ],
+   "assets": [
+    "brand logo-horizontal-white.png",
+    "char-omar-welcome.png",
+    "mark-white.png (watermark 8%)"
+   ],
+   "beats": [
+    {
+     "cue": "Welcome to My Clinic",
+     "do": "Headline rises 40 px and fades in (600 ms, ease-out); module-colour rule grows left to right"
+    },
+    {
+     "cue": "I'm Dr. Omar",
+     "do": "portrait card slides up from the bottom edge (800 ms); name chip pops in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "purpose",
+   "title": "Why we exist",
+   "goal": "Why we exist",
+   "pose": "char-omar-explaining",
+   "layout": "white card centre; three words stacked large; Dr. Omar half-body right",
+   "onScreenText": [
+    "Longer",
+    "Healthier",
+    "Happier"
+   ],
+   "assets": [
+    "char-omar-explaining.png"
+   ],
+   "beats": [
+    {
+     "cue": "Our purpose",
+     "do": "card fades up (500 ms)"
+    },
+    {
+     "cue": "longer",
+     "do": "word 'Longer' types on"
+    },
+    {
+     "cue": "healthier",
+     "do": "'Healthier' types on"
+    },
+    {
+     "cue": "happier lives",
+     "do": "'Happier' types on and a soft module-colour underline sweeps under all three"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "path",
+   "title": "Your path",
+   "goal": "Your path",
+   "pose": "char-omar-explaining",
+   "layout": "StepFlow of course tiles on a ProgressRail; four role chips below",
+   "onScreenText": [
+    "Short courses",
+    "Clinical · Front office · Support · Management"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "short courses",
+     "do": "course tiles slide in left to right, 80 ms stagger"
+    },
+    {
+     "cue": "Pick your role",
+     "do": "role chips pop in one by one; the first chip pulses once"
+    },
+    {
+     "cue": "fit your work",
+     "do": "the chosen chip glows and a tick draws on the tiles"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "how",
+   "title": "How the courses work",
+   "goal": "How the courses work",
+   "pose": "char-omar-tip",
+   "layout": "two Cards side by side: a bookmark icon and a star/rank chip",
+   "onScreenText": [
+    "Resume any time",
+    "XP is just for you"
+   ],
+   "assets": [
+    "char-omar-tip.png"
+   ],
+   "beats": [
+    {
+     "cue": "remembers where you were",
+     "do": "bookmark card flips in (rotateY 90°→0, 500 ms)"
+    },
+    {
+     "cue": "XP and ranks",
+     "do": "star counter counts 0→20 XP; rank chip slides in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Just know where to find it",
+   "goal": "Just know where to find it",
+   "pose": "char-omar-success",
+   "layout": "Dr. Omar half-body left; Callout right",
+   "onScreenText": [
+    "Just know where to find it"
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "Honestly",
+     "do": "Dr. Omar slides in from the left (700 ms)"
+    },
+    {
+     "cue": "where to find it",
+     "do": "Callout grows from 0.9 to 1 scale and holds 1.5 s; fade to navy end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

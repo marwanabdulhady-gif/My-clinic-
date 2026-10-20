@@ -1,0 +1,28 @@
+{
+ "clip": "qsr-vid-speakup",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "So, what do you do now?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "report",
+   "text": "Report the near miss",
+   "correct": true,
+   "reply": "Yes. Reporting can reveal a weak process before anyone is harmed.",
+   "reply_audio": "narration/int_report_omar.mp3"
+  },
+  {
+   "id": "skip",
+   "text": "Don't report: no one was harmed",
+   "reply": "That leaves the weak spot hidden. A near miss is worth reporting.",
+   "reply_audio": "narration/int_skip_omar.mp3"
+  },
+  {
+   "id": "wait",
+   "text": "Wait to see if it happens again",
+   "reply": "Waiting leaves the risk unreported. Report it now, through the approved process.",
+   "reply_audio": "narration/int_wait_omar.mp3"
+  }
+ ]
+}

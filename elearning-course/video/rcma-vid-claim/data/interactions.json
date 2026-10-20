@@ -1,0 +1,28 @@
+{
+ "clip": "rcma-vid-claim",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "What would you fix first?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "dx",
+   "text": "Add a supported diagnosis",
+   "correct": true,
+   "reply": "Right. Link the findings to the most supported diagnosis.",
+   "reply_audio": "narration/int_dx_omar.mp3"
+  },
+  {
+   "id": "tests",
+   "text": "Order more tests",
+   "reply": "More tests aren't better care. The note still needs a supported diagnosis.",
+   "reply_audio": "narration/int_tests_omar.mp3"
+  },
+  {
+   "id": "resubmit",
+   "text": "Resubmit it as it is",
+   "reply": "The same note gets the same answer. Fix the diagnosis first.",
+   "reply_audio": "narration/int_resubmit_omar.mp3"
+  }
+ ]
+}

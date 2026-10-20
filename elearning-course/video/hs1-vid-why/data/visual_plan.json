@@ -1,0 +1,129 @@
+{
+ "clip": "hs1-vid-why",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#008C99",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "hook",
+   "title": "Take a walk with me",
+   "goal": "Take a walk with me",
+   "pose": "char-omar-welcome",
+   "layout": "full-bleed corridor illustration, slow push-in; Dr. Omar avatar bottom-left",
+   "onScreenText": [
+    "Day one"
+   ],
+   "assets": [
+    "hs1-img-corridor (01 storyboard/assets)",
+    "char-omar-avatar-happy.png"
+   ],
+   "beats": [
+    {
+     "cue": "Day one",
+     "do": "chip pops in top-left"
+    },
+    {
+     "cue": "take a walk",
+     "do": "camera push-in on the corridor 1.00→1.08 over 6 s (linear)"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "three",
+   "title": "Three things",
+   "goal": "Three things",
+   "pose": "char-omar-explaining",
+   "layout": "corridor stays; three numbered highlight rings over the call point, extinguisher and exit; label chips beside each",
+   "onScreenText": [
+    "1 Call point",
+    "2 Extinguisher",
+    "3 Exit"
+   ],
+   "assets": [
+    "hs1-img-corridor"
+   ],
+   "beats": [
+    {
+     "cue": "call point",
+     "do": "ring 1 draws around the call point, label chip slides out (400 ms)"
+    },
+    {
+     "cue": "extinguisher",
+     "do": "camera pans to the extinguisher; ring 2 draws"
+    },
+    {
+     "cue": "nearest exit",
+     "do": "camera pans to the exit sign; ring 3 draws; all three chips stay"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "why",
+   "title": "Why it matters",
+   "goal": "Why it matters",
+   "pose": "char-omar-explaining",
+   "layout": "three Cards over a blurred corridor",
+   "onScreenText": [
+    "Protect patients",
+    "Protect you",
+    "Ready for the CBAHI survey"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "protects patients",
+     "do": "card 1 rises"
+    },
+    {
+     "cue": "protects you",
+     "do": "card 2 rises"
+    },
+    {
+     "cue": "surveyors ask staff",
+     "do": "card 3 rises; small clipboard icon ticks"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Before you need them",
+   "goal": "Before you need them",
+   "pose": "char-omar-success",
+   "layout": "RuleBanner over the corridor; three icons in a row",
+   "onScreenText": [
+    "Know where these are before you need them"
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "before you need them",
+     "do": "RuleBanner wipes in from the left (500 ms); icons pulse once each; fade to end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

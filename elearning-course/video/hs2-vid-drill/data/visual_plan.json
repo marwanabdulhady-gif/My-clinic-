@@ -1,0 +1,143 @@
+{
+ "clip": "hs2-vid-drill",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#008C99",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "smoke",
+   "title": "Smoke in Room 3",
+   "goal": "Smoke in Room 3",
+   "pose": "char-omar-concern",
+   "layout": "consultation-room illustration with grey smoke layer near the ceiling; Dr. Omar avatar (concern) bottom-left",
+   "onScreenText": [
+    "Consultation Room 3"
+   ],
+   "assets": [
+    "hs2 drill scene art (hs2-img-drill-1)",
+    "char-omar-avatar-concern.png"
+   ],
+   "beats": [
+    {
+     "cue": "Smoke is coming",
+     "do": "smoke layer drifts in from the top (2 s, opacity 0→0.6; no flicker)"
+    },
+    {
+     "cue": "run the response",
+     "do": "room chip pops in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "race",
+   "title": "RACE",
+   "goal": "RACE",
+   "pose": "char-omar-explaining",
+   "layout": "four large letter tiles R A C E on white; word under each",
+   "onScreenText": [
+    "R Rescue",
+    "A Alarm",
+    "C Contain",
+    "E Extinguish or Evacuate"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Remember RACE",
+     "do": "four tiles drop in, 100 ms stagger, spring"
+    },
+    {
+     "cue": "Rescue",
+     "do": "R tile fills module colour, word appears"
+    },
+    {
+     "cue": "Alarm",
+     "do": "A fills"
+    },
+    {
+     "cue": "Contain",
+     "do": "C fills"
+    },
+    {
+     "cue": "Extinguish",
+     "do": "E fills; 'or Evacuate' fades in after"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "rules",
+   "title": "How the drill works",
+   "goal": "How the drill works",
+   "pose": "char-omar-tip",
+   "layout": "three Chips in a row: 6 decisions · 2 lives · 1 hint each; pass bar below",
+   "onScreenText": [
+    "6 decisions",
+    "2 lives",
+    "1 hint each",
+    "Pass: 5 of 6"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Six decisions",
+     "do": "six dots appear in a row"
+    },
+    {
+     "cue": "two lives",
+     "do": "two magenta life dots pop in"
+    },
+    {
+     "cue": "one hint",
+     "do": "lightbulb chip pops"
+    },
+    {
+     "cue": "five of six",
+     "do": "five of the six dots fill; pass label slides in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "go",
+   "title": "Seconds matter",
+   "goal": "Seconds matter",
+   "pose": "char-omar-success",
+   "layout": "RuleBanner; Start chip",
+   "onScreenText": [
+    "In real life, seconds matter"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "no timer",
+     "do": "a clock icon is crossed out (StrikeX, 300 ms)"
+    },
+    {
+     "cue": "Let's go",
+     "do": "banner wipes in; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

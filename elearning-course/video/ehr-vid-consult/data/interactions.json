@@ -1,0 +1,28 @@
+{
+ "clip": "ehr-vid-consult",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "What must each order point to?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "dx",
+   "text": "The diagnosis you assessed",
+   "correct": true,
+   "reply": "Right. Linked orders make the record complete and the claim clear.",
+   "reply_audio": "narration/int_dx_omar.mp3"
+  },
+  {
+   "id": "last",
+   "text": "The last visit",
+   "reply": "Not quite. Each order points to today's assessed diagnosis.",
+   "reply_audio": "narration/int_last_omar.mp3"
+  },
+  {
+   "id": "none",
+   "text": "Nothing; orders stand alone",
+   "reply": "Not in this EHR. Every order is linked to the diagnosis you assessed.",
+   "reply_audio": "narration/int_none_omar.mp3"
+  }
+ ]
+}

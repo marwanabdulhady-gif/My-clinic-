@@ -1,0 +1,22 @@
+{
+ "clip": "rcmb-vid-benefits",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "A patient asks for a mental-health service. It's a covered benefit. Are you done?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "done",
+   "text": "Yes, it's covered",
+   "reply": "Not yet. Mental health has a limit per policy period, and it needs pre-authorisation. Check first.",
+   "reply_audio": "narration/int_done_omar.mp3"
+  },
+  {
+   "id": "check",
+   "text": "Check the limit and pre-authorisation",
+   "correct": true,
+   "reply": "Right. Covered, but with a limit per policy period and pre-authorisation.",
+   "reply_audio": "narration/int_check_omar.mp3"
+  }
+ ]
+}

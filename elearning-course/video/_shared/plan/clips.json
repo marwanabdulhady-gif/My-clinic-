@@ -1,0 +1,1939 @@
+{
+ "version": "2026-10-20",
+ "owner_brief": "Owner, 2026-10-20: work on the videos now, with a male voice, voice interactions, and a visual plan and motion plan for each scene of each video.",
+ "voice": {
+  "speaker": "omar",
+  "name": "Dr. Omar",
+  "description": "Male, late 30s, friendly, confident and relaxed; international English, a light Gulf Arabic accent is welcome; medium-low pitch; about 140 words per minute (00_program/narration-and-lexicon.md).",
+  "rule": "Dr. Omar is the only voice in every clip. Noor may appear as art (never speaking). Lines are spoken to one person, 'you', in the present tense."
+ },
+ "clips": [
+  {
+   "id": "prog-vid-welcome",
+   "module": "03",
+   "colour": "#652D8C",
+   "target_sec": 45,
+   "title": "Welcome to My Clinic",
+   "placement": "new unscored video screen after hr-000",
+   "message": "You are welcome here, the courses are short, and you only need to know where to find things.",
+   "audience": "Every new colleague, all roles, on day one.",
+   "action": "Start the induction and pick their role.",
+   "facts": [
+    [
+     "Dr. Omar is a family physician at J2",
+     "03 narration hr-000/omar-1",
+     "confirmed (fictional guide)"
+    ],
+    [
+     "Purpose: helping people live longer, healthier, happier lives",
+     "03 hr-001",
+     "confirmed"
+    ],
+    [
+     "Learners pick their role; every scored activity is the same for everyone",
+     "03 hr-003",
+     "confirmed"
+    ],
+    [
+     "Courses resume where you left off",
+     "player behaviour (tools/player/README.md)",
+     "confirmed"
+    ],
+    [
+     "XP is just for you and never counts towards the pass mark",
+     "03 hr-00m",
+     "confirmed"
+    ],
+    [
+     "'My first week here, I felt there was too much to take in…'",
+     "characters/companions.md honest stories",
+     "confirmed"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "welcome",
+     "title": "Welcome to My Clinic",
+     "pose": "char-omar-welcome",
+     "lines": [
+      "Welcome to My Clinic.",
+      "I'm Dr. Omar, a family physician at J2."
+     ],
+     "visual": {
+      "layout": "navy title gradient; Dr. Omar portrait card bottom-right; logo top-left",
+      "on_screen": [
+       "Welcome to My Clinic"
+      ],
+      "assets": [
+       "brand logo-horizontal-white.png",
+       "char-omar-welcome.png",
+       "mark-white.png (watermark 8%)"
+      ]
+     },
+     "motion": [
+      [
+       "Welcome to My Clinic",
+       "Headline rises 40 px and fades in (600 ms, ease-out); module-colour rule grows left to right"
+      ],
+      [
+       "I'm Dr. Omar",
+       "portrait card slides up from the bottom edge (800 ms); name chip pops in"
+      ]
+     ]
+    },
+    {
+     "id": "purpose",
+     "title": "Why we exist",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Our purpose: we help people live longer, healthier, happier lives."
+     ],
+     "visual": {
+      "layout": "white card centre; three words stacked large; Dr. Omar half-body right",
+      "on_screen": [
+       "Longer",
+       "Healthier",
+       "Happier"
+      ],
+      "assets": [
+       "char-omar-explaining.png"
+      ]
+     },
+     "motion": [
+      [
+       "Our purpose",
+       "card fades up (500 ms)"
+      ],
+      [
+       "longer",
+       "word 'Longer' types on"
+      ],
+      [
+       "healthier",
+       "'Healthier' types on"
+      ],
+      [
+       "happier lives",
+       "'Happier' types on and a soft module-colour underline sweeps under all three"
+      ]
+     ]
+    },
+    {
+     "id": "path",
+     "title": "Your path",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Your induction is a set of short courses.",
+      "Pick your role, and the tips fit your work."
+     ],
+     "visual": {
+      "layout": "StepFlow of course tiles on a ProgressRail; four role chips below",
+      "on_screen": [
+       "Short courses",
+       "Clinical · Front office · Support · Management"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "short courses",
+       "course tiles slide in left to right, 80 ms stagger"
+      ],
+      [
+       "Pick your role",
+       "role chips pop in one by one; the first chip pulses once"
+      ],
+      [
+       "fit your work",
+       "the chosen chip glows and a tick draws on the tiles"
+      ]
+     ]
+    },
+    {
+     "id": "how",
+     "title": "How the courses work",
+     "pose": "char-omar-tip",
+     "lines": [
+      "Stop any time; the course remembers where you were.",
+      "XP and ranks are just for you. They never count towards your pass mark."
+     ],
+     "visual": {
+      "layout": "two Cards side by side: a bookmark icon and a star/rank chip",
+      "on_screen": [
+       "Resume any time",
+       "XP is just for you"
+      ],
+      "assets": [
+       "char-omar-tip.png"
+      ]
+     },
+     "motion": [
+      [
+       "remembers where you were",
+       "bookmark card flips in (rotateY 90°→0, 500 ms)"
+      ],
+      [
+       "XP and ranks",
+       "star counter counts 0→20 XP; rank chip slides in"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Just know where to find it",
+     "pose": "char-omar-success",
+     "lines": [
+      "Honestly, my first week, I felt there was too much to take in.",
+      "You don't need to remember everything today. Just where to find it."
+     ],
+     "visual": {
+      "layout": "Dr. Omar half-body left; Callout right",
+      "on_screen": [
+       "Just know where to find it"
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "Honestly",
+       "Dr. Omar slides in from the left (700 ms)"
+      ],
+      [
+       "where to find it",
+       "Callout grows from 0.9 to 1 scale and holds 1.5 s; fade to navy end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "path",
+    "question": "Before we start: what matters most to you this week?",
+    "options": [
+     {
+      "id": "find",
+      "text": "Knowing where to find things",
+      "reply": "Good. Each course ends with a short list of where things live."
+     },
+     {
+      "id": "team",
+      "text": "Meeting my team",
+      "reply": "Good. The courses show who does what, so you know who to ask."
+     },
+     {
+      "id": "rules",
+      "text": "Getting the HR rules right",
+      "reply": "Good. The HR course covers the rules you'll actually use."
+     }
+    ],
+    "scored": false
+   },
+   "open": []
+  },
+  {
+   "id": "hs1-vid-why",
+   "module": "01",
+   "colour": "#008C99",
+   "target_sec": 40,
+   "title": "Why facility safety matters on day one",
+   "placement": "new unscored video screen after hs1-000",
+   "message": "Find three things on every corridor before you need them.",
+   "audience": "All staff starting module 01.",
+   "action": "Walk their own corridor today and find the call point, extinguisher and exit.",
+   "facts": [
+    [
+     "Fire alarm call point, fire extinguisher and exit are on the corridor",
+     "01 hs1-404 / hs1-img-corridor",
+     "confirmed"
+    ],
+    [
+     "'Know where these are before you need them.'",
+     "media-video-plan.json outline",
+     "confirmed"
+    ],
+    [
+     "CBAHI surveyors ask staff, not just managers",
+     "01 hs1-001 narration",
+     "confirmed"
+    ],
+    [
+     "Protect patients · protect you · pass the CBAHI survey",
+     "01 hs1-001",
+     "confirmed"
+    ],
+    [
+     "No code names, extensions or numbers",
+     "D2 open",
+     "rule"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "hook",
+     "title": "Take a walk with me",
+     "pose": "char-omar-welcome",
+     "lines": [
+      "Day one. Before you learn a single rule, take a walk with me."
+     ],
+     "visual": {
+      "layout": "full-bleed corridor illustration, slow push-in; Dr. Omar avatar bottom-left",
+      "on_screen": [
+       "Day one"
+      ],
+      "assets": [
+       "hs1-img-corridor (01 storyboard/assets)",
+       "char-omar-avatar-happy.png"
+      ]
+     },
+     "motion": [
+      [
+       "Day one",
+       "chip pops in top-left"
+      ],
+      [
+       "take a walk",
+       "camera push-in on the corridor 1.00→1.08 over 6 s (linear)"
+      ]
+     ]
+    },
+    {
+     "id": "three",
+     "title": "Three things",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "On every corridor, find three things.",
+      "The fire alarm call point.",
+      "The fire extinguisher.",
+      "And the nearest exit."
+     ],
+     "visual": {
+      "layout": "corridor stays; three numbered highlight rings over the call point, extinguisher and exit; label chips beside each",
+      "on_screen": [
+       "1 Call point",
+       "2 Extinguisher",
+       "3 Exit"
+      ],
+      "assets": [
+       "hs1-img-corridor"
+      ]
+     },
+     "motion": [
+      [
+       "call point",
+       "ring 1 draws around the call point, label chip slides out (400 ms)"
+      ],
+      [
+       "extinguisher",
+       "camera pans to the extinguisher; ring 2 draws"
+      ],
+      [
+       "nearest exit",
+       "camera pans to the exit sign; ring 3 draws; all three chips stay"
+      ]
+     ]
+    },
+    {
+     "id": "why",
+     "title": "Why it matters",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "This protects patients, and it protects you.",
+      "And CBAHI surveyors ask staff, not just managers."
+     ],
+     "visual": {
+      "layout": "three Cards over a blurred corridor",
+      "on_screen": [
+       "Protect patients",
+       "Protect you",
+       "Ready for the CBAHI survey"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "protects patients",
+       "card 1 rises"
+      ],
+      [
+       "protects you",
+       "card 2 rises"
+      ],
+      [
+       "surveyors ask staff",
+       "card 3 rises; small clipboard icon ticks"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Before you need them",
+     "pose": "char-omar-success",
+     "lines": [
+      "Know where these are before you need them."
+     ],
+     "visual": {
+      "layout": "RuleBanner over the corridor; three icons in a row",
+      "on_screen": [
+       "Know where these are before you need them"
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "before you need them",
+       "RuleBanner wipes in from the left (500 ms); icons pulse once each; fade to end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "three",
+    "question": "In your clinic, which of these could you find right now?",
+    "options": [
+     {
+      "id": "callpoint",
+      "text": "The call point",
+      "reply": "Good start. Today, walk your corridor and find the other two."
+     },
+     {
+      "id": "ext",
+      "text": "The extinguisher",
+      "reply": "Good start. Today, walk your corridor and find the other two."
+     },
+     {
+      "id": "exit",
+      "text": "The exit",
+      "reply": "Good start. Today, walk your corridor and find the other two."
+     },
+     {
+      "id": "none",
+      "text": "Not yet",
+      "reply": "That's honest, and normal on day one. Make it your first job today."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Outline named Noor walking the corridor; with a male voice Dr. Omar narrates and Noor does not appear. Confirm."
+   ]
+  },
+  {
+   "id": "hs2-vid-drill",
+   "module": "02",
+   "colour": "#008C99",
+   "target_sec": 35,
+   "title": "Code Red drill briefing",
+   "placement": "new unscored video screen BEFORE the drill game hs2-030 (plan says 'after hs2-030'; see open questions)",
+   "message": "Remember RACE, then run the drill.",
+   "audience": "Staff about to play the Code Red drill game in module 02.",
+   "action": "Start the drill knowing the goal, the lives and the hints.",
+   "facts": [
+    [
+     "Smoke from Consultation Room 3 on the first floor",
+     "02 hs2-030 intro",
+     "confirmed (fictional)"
+    ],
+    [
+     "Six decisions; 2 lives; one text hint per decision; no timer; pass with at least 5 of 6",
+     "02 hs2-030 intro",
+     "confirmed"
+    ],
+    [
+     "RACE = Rescue, Alarm, Contain, Extinguish or Evacuate",
+     "01 hs1-402",
+     "confirmed"
+    ],
+    [
+     "No code wording or extension numbers",
+     "D2 open",
+     "rule"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "smoke",
+     "title": "Smoke in Room 3",
+     "pose": "char-omar-concern",
+     "lines": [
+      "Smoke is coming from Consultation Room 3.",
+      "In a moment, you'll run the response."
+     ],
+     "visual": {
+      "layout": "consultation-room illustration with grey smoke layer near the ceiling; Dr. Omar avatar (concern) bottom-left",
+      "on_screen": [
+       "Consultation Room 3"
+      ],
+      "assets": [
+       "hs2 drill scene art (hs2-img-drill-1)",
+       "char-omar-avatar-concern.png"
+      ]
+     },
+     "motion": [
+      [
+       "Smoke is coming",
+       "smoke layer drifts in from the top (2 s, opacity 0→0.6; no flicker)"
+      ],
+      [
+       "run the response",
+       "room chip pops in"
+      ]
+     ]
+    },
+    {
+     "id": "race",
+     "title": "RACE",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Remember RACE.",
+      "Rescue. Alarm. Contain. Extinguish, or evacuate."
+     ],
+     "visual": {
+      "layout": "four large letter tiles R A C E on white; word under each",
+      "on_screen": [
+       "R Rescue",
+       "A Alarm",
+       "C Contain",
+       "E Extinguish or Evacuate"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Remember RACE",
+       "four tiles drop in, 100 ms stagger, spring"
+      ],
+      [
+       "Rescue",
+       "R tile fills module colour, word appears"
+      ],
+      [
+       "Alarm",
+       "A fills"
+      ],
+      [
+       "Contain",
+       "C fills"
+      ],
+      [
+       "Extinguish",
+       "E fills; 'or Evacuate' fades in after"
+      ]
+     ]
+    },
+    {
+     "id": "rules",
+     "title": "How the drill works",
+     "pose": "char-omar-tip",
+     "lines": [
+      "Six decisions.",
+      "You have two lives, and one hint for each decision.",
+      "Get five of six right to pass."
+     ],
+     "visual": {
+      "layout": "three Chips in a row: 6 decisions · 2 lives · 1 hint each; pass bar below",
+      "on_screen": [
+       "6 decisions",
+       "2 lives",
+       "1 hint each",
+       "Pass: 5 of 6"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Six decisions",
+       "six dots appear in a row"
+      ],
+      [
+       "two lives",
+       "two magenta life dots pop in"
+      ],
+      [
+       "one hint",
+       "lightbulb chip pops"
+      ],
+      [
+       "five of six",
+       "five of the six dots fill; pass label slides in"
+      ]
+     ]
+    },
+    {
+     "id": "go",
+     "title": "Seconds matter",
+     "pose": "char-omar-success",
+     "lines": [
+      "There's no timer here.",
+      "In real life, seconds matter. Let's go."
+     ],
+     "visual": {
+      "layout": "RuleBanner; Start chip",
+      "on_screen": [
+       "In real life, seconds matter"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "no timer",
+       "a clock icon is crossed out (StrikeX, 300 ms)"
+      ],
+      [
+       "Let's go",
+       "banner wipes in; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "race",
+    "question": "Quick check: what comes first?",
+    "options": [
+     {
+      "id": "rescue",
+      "text": "Rescue",
+      "correct": true,
+      "reply": "Right. Anyone in immediate danger comes before the phone."
+     },
+     {
+      "id": "alarm",
+      "text": "Alarm",
+      "reply": "Close, but no. Rescue comes first: move anyone in immediate danger, then raise the alarm."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Placement: a briefing must play before the game, so place it after hs2-020 (before hs2-030), not after hs2-030. Confirm."
+   ]
+  },
+  {
+   "id": "hr-vid-journey",
+   "module": "03",
+   "colour": "#652D8C",
+   "target_sec": 45,
+   "title": "Your first 90 days",
+   "placement": "new unscored video screen after hr-012",
+   "message": "Four things to sort out early: your card, Oracle, Qiwa and your licence.",
+   "audience": "All new staff; the licence scene is for licensed clinical staff.",
+   "action": "Know which system to use for what.",
+   "facts": [
+    [
+     "Benefits from day one include health insurance",
+     "03 hr-070",
+     "confirmed"
+    ],
+    [
+     "Requests live in Oracle: leave, certificates, resignation. 'If it's a request, it needs a record.'",
+     "03 hr-040, hr-060, hr-080",
+     "confirmed"
+    ],
+    [
+     "Accept your employment contract on Qiwa",
+     "03 hr-060, hr-080",
+     "confirmed"
+    ],
+    [
+     "Renew your professional licence in Mumaris (SCFHS)",
+     "03 hr-060",
+     "confirmed"
+    ],
+    [
+     "Under 30 days to licence expiry without renewal: HR may suspend you",
+     "03 hr-062",
+     "⚠ Draft — pending B13"
+    ],
+    [
+     "Annual leave after probation, with your line manager's approval",
+     "03 hr-041",
+     "confirmed (carry-over details pending B9, not used)"
+    ],
+    [
+     "Exact day/week timings for each step are NOT sourced",
+     "—",
+     "rule: say 'first', 'next', never 'day 3' or 'week 1'"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "intro",
+     "title": "Four stops",
+     "pose": "char-omar-welcome",
+     "lines": [
+      "Your first ninety days, in four stops."
+     ],
+     "visual": {
+      "layout": "horizontal ProgressRail with four stop markers; purple module colour",
+      "on_screen": [
+       "Your first 90 days"
+      ],
+      "assets": [
+       "char-omar-avatar-happy.png"
+      ]
+     },
+     "motion": [
+      [
+       "first ninety days",
+       "rail draws left to right (900 ms); four markers pop in"
+      ]
+     ]
+    },
+    {
+     "id": "card",
+     "title": "Your ID card",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "First, your ID card.",
+      "Benefits like health insurance start from day one."
+     ],
+     "visual": {
+      "layout": "marker 1 active; ID badge illustration; benefit chips",
+      "on_screen": [
+       "ID card",
+       "Health insurance from day one"
+      ],
+      "assets": [
+       "hr-img-idcard (03 storyboard/assets)",
+       "hr-img-benefits-wheel"
+      ]
+     },
+     "motion": [
+      [
+       "your ID card",
+       "badge swings in on its lanyard (rotate −8°→0, spring)"
+      ],
+      [
+       "from day one",
+       "benefits wheel spins in 90° and settles; insurance segment highlights"
+      ]
+     ]
+    },
+    {
+     "id": "oracle",
+     "title": "Oracle",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Next, Oracle.",
+      "Leave, certificates, even resignation: every request lives there.",
+      "If it's a request, it needs a record."
+     ],
+     "visual": {
+      "layout": "marker 2 active; abstract Oracle tile (wireframe style, labelled 'training wireframe'); three request cards fly into it",
+      "on_screen": [
+       "Oracle",
+       "Leave · Certificates · Resignation",
+       "If it's a request, it needs a record"
+      ],
+      "assets": [
+       "hr wireframe style from tools/build_wireframes.py"
+      ]
+     },
+     "motion": [
+      [
+       "Next, Oracle",
+       "rail marker 2 fills; Oracle tile scales in"
+      ],
+      [
+       "every request",
+       "three cards arc into the tile, 120 ms stagger"
+      ],
+      [
+       "needs a record",
+       "Callout rises under the tile"
+      ]
+     ]
+    },
+    {
+     "id": "qiwa",
+     "title": "Qiwa",
+     "pose": "char-omar-tip",
+     "lines": [
+      "Your contract is different.",
+      "You accept it on Qiwa."
+     ],
+     "visual": {
+      "layout": "marker 3 active; contract card moves from Oracle tile to a separate Qiwa tile",
+      "on_screen": [
+       "Contract → Qiwa"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Your contract",
+       "contract card lifts out of the Oracle tile"
+      ],
+      [
+       "on Qiwa",
+       "card slides to the Qiwa tile and a tick draws"
+      ]
+     ]
+    },
+    {
+     "id": "licence",
+     "title": "Your licence",
+     "pose": "char-omar-concern",
+     "lines": [
+      "If you're licensed, keep your licence valid in Mumaris.",
+      "With under thirty days left and no renewal, HR may suspend you."
+     ],
+     "visual": {
+      "layout": "marker 4 active; licence card with a countdown ring; small '⚠ Draft — pending B13' tag bottom-right",
+      "on_screen": [
+       "Mumaris (SCFHS)",
+       "Under 30 days → may be suspended",
+       "⚠ Draft — pending B13"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "in Mumaris",
+       "licence card flips in"
+      ],
+      [
+       "thirty days",
+       "countdown ring sweeps to 30 and turns magenta (warning colour, with ⚠ icon and words)"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Where to look",
+     "pose": "char-omar-success",
+     "lines": [
+      "You don't need all of this today.",
+      "Just know where to look."
+     ],
+     "visual": {
+      "layout": "all four stops lit; Dr. Omar half-body right",
+      "on_screen": [
+       "Card · Oracle · Qiwa · Mumaris"
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "all of this",
+       "the four markers light in sequence"
+      ],
+      [
+       "where to look",
+       "fade to end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "oracle",
+    "question": "Quick check: where do you accept your employment contract?",
+    "options": [
+     {
+      "id": "oracle",
+      "text": "Oracle",
+      "reply": "Not this one. Oracle is for requests. Your contract is accepted on Qiwa."
+     },
+     {
+      "id": "qiwa",
+      "text": "Qiwa",
+      "correct": true,
+      "reply": "Right. Requests go in Oracle; your contract is accepted on Qiwa."
+     },
+     {
+      "id": "intranet",
+      "text": "The intranet",
+      "reply": "Not this one. The intranet holds the employee guide. Your contract is accepted on Qiwa."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Outline asked for 'day 1 / week 1 / month 1'; those timings are not in the storyboard. The plan uses first/next order only. Confirm the real timings (HR) if you want them shown."
+   ]
+  },
+  {
+   "id": "ops-vid-journey",
+   "module": "04",
+   "colour": "#9D3293",
+   "target_sec": 40,
+   "title": "The patient journey across teams",
+   "placement": "new unscored video screen after ops-002",
+   "message": "Each stage of the visit has a lead team, so the patient never tells their story twice.",
+   "audience": "All staff in module 04.",
+   "action": "Route a request to the team that leads that stage.",
+   "facts": [
+    [
+     "Book — My Care leads; Arrive, Consult, Lab/Radiology/Pharmacy — Operations leads; Leave — both; Follow-up — My Care",
+     "04 ops-002",
+     "⚠ Draft — pending B7"
+    ],
+    [
+     "Insurance and medication follow-ups are My Care work",
+     "04 ops-020",
+     "confirmed"
+    ],
+    [
+     "'Right team, first time.' 'A patient shouldn't have to tell their story twice.'",
+     "04 ops-001",
+     "confirmed"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "intro",
+     "title": "Right team, first time",
+     "pose": "char-omar-welcome",
+     "lines": [
+      "Right team, first time.",
+      "Let's follow one patient through the clinic."
+     ],
+     "visual": {
+      "layout": "six journey stage circles on a path (ops-img-journey style); patient token at the start; '⚠ Draft — pending B7' tag",
+      "on_screen": [
+       "Right team, first time",
+       "⚠ Draft — pending B7"
+      ],
+      "assets": [
+       "ops-img-journey (04 storyboard/assets)"
+      ]
+     },
+     "motion": [
+      [
+       "Right team",
+       "headline rises"
+      ],
+      [
+       "one patient",
+       "path draws; patient token drops onto stage 1"
+      ]
+     ]
+    },
+    {
+     "id": "book",
+     "title": "Booking",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Booking sits with My Care."
+     ],
+     "visual": {
+      "layout": "stage 1 lights in My Care colour; team label chip",
+      "on_screen": [
+       "Book · My Care"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Booking",
+       "token at stage 1; ring pulses once"
+      ],
+      [
+       "My Care",
+       "My Care chip slides out"
+      ]
+     ]
+    },
+    {
+     "id": "visit",
+     "title": "In the clinic",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "On arrival, Operations takes over:",
+      "front of house, the consultation running on time,",
+      "and Lab, Radiology and Pharmacy."
+     ],
+     "visual": {
+      "layout": "token moves through stages 2–4, each lights in Operations colour",
+      "on_screen": [
+       "Arrive · Consult · Lab, Radiology, Pharmacy",
+       "Operations"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Operations takes over",
+       "Operations chip slides in"
+      ],
+      [
+       "front of house",
+       "token to stage 2, lights"
+      ],
+      [
+       "running on time",
+       "token to stage 3, lights"
+      ],
+      [
+       "Pharmacy",
+       "token to stage 4, lights"
+      ]
+     ]
+    },
+    {
+     "id": "leave",
+     "title": "Leaving and after",
+     "pose": "char-omar-tip",
+     "lines": [
+      "When the patient leaves, both teams meet.",
+      "Operations closes the visit. My Care picks up the follow-up."
+     ],
+     "visual": {
+      "layout": "stage 5 lights in both colours (split ring); stage 6 lights My Care",
+      "on_screen": [
+       "Leave · Both",
+       "Follow-up · My Care"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "both teams meet",
+       "split ring fills from both sides"
+      ],
+      [
+       "picks up the follow-up",
+       "token to stage 6, My Care ring fills"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Tell it once",
+     "pose": "char-omar-success",
+     "lines": [
+      "A patient shouldn't have to tell their story twice."
+     ],
+     "visual": {
+      "layout": "whole path lit; Callout",
+      "on_screen": [
+       "Tell it once"
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "story twice",
+       "path glows end to end once; Callout scales in; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "leave",
+    "question": "A patient calls a week later about a repeat medication. Who handles it?",
+    "options": [
+     {
+      "id": "ops",
+      "text": "Operations",
+      "reply": "Not this time. The visit is over, so it's My Care: insurance and medication follow-ups are their work."
+     },
+     {
+      "id": "mycare",
+      "text": "My Care",
+      "correct": true,
+      "reply": "Right. Insurance and medication follow-ups are My Care work."
+     }
+    ],
+    "scored": false
+   },
+   "open": []
+  },
+  {
+   "id": "rcma-vid-claim",
+   "module": "05",
+   "colour": "#7C0041",
+   "target_sec": 45,
+   "title": "How a claim is paid, or rejected",
+   "placement": "new unscored video screen after rcma-001",
+   "message": "The payer only sees the note, so link the findings to a supported diagnosis.",
+   "audience": "Physicians and clinical staff in module 05.",
+   "action": "Write the supported diagnosis, not the symptom.",
+   "facts": [
+    [
+     "'The payer doesn't see your patient. The payer sees your note.'",
+     "05 rcma-001",
+     "confirmed"
+    ],
+    [
+     "Clinical decision + documentation + coding = optimised payment",
+     "05 rcma-001",
+     "confirmed"
+    ],
+    [
+     "#1 rejection cause: non-specific coding of symptoms",
+     "05 rcma-020",
+     "confirmed"
+    ],
+    [
+     "Vomiting → gastroenteritis (supported diagnosis)",
+     "05 rcma-020/021",
+     "words confirmed; codes ⚠ Draft — pending B4 (not shown)"
+    ],
+    [
+     "More tests ≠ better care",
+     "05 rcma-030",
+     "confirmed"
+    ],
+    [
+     "'Nobody taught me documentation for insurance at medical school.'",
+     "05 rcma-001",
+     "confirmed"
+    ],
+    [
+     "NPHIES (named in the outline) is not in the storyboard",
+     "—",
+     "rule: say 'the payer'; do not name NPHIES"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "note",
+     "title": "The payer sees your note",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "The payer doesn't see your patient.",
+      "The payer sees your note."
+     ],
+     "visual": {
+      "layout": "left: patient silhouette fades out; right: a note card stays",
+      "on_screen": [
+       "The payer sees your note"
+      ],
+      "assets": [
+       "char-omar-avatar-neutral.png"
+      ]
+     },
+     "motion": [
+      [
+       "see your patient",
+       "patient silhouette fades to 0"
+      ],
+      [
+       "sees your note",
+       "note card slides to centre and enlarges"
+      ]
+     ]
+    },
+    {
+     "id": "reject",
+     "title": "Rejected",
+     "pose": "char-omar-concern",
+     "lines": [
+      "Here's a claim: vomiting, with a symptom code.",
+      "It travels to the payer, and comes back rejected.",
+      "Non-specific symptom codes are the number one cause."
+     ],
+     "visual": {
+      "layout": "claim card travels along a path from 'Note' to 'Payer'; returns with a red stamp",
+      "on_screen": [
+       "Symptom: vomiting",
+       "Rejected",
+       "#1 cause: non-specific coding"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Here's a claim",
+       "claim card appears on the note"
+      ],
+      [
+       "travels to the payer",
+       "card moves along the path (1.2 s ease-in-out)"
+      ],
+      [
+       "comes back rejected",
+       "card returns; 'Rejected' stamp presses in (scale 1.3→1, 250 ms) in error red with ✕ icon"
+      ],
+      [
+       "number one cause",
+       "chip '#1 cause' slides in"
+      ]
+     ]
+    },
+    {
+     "id": "fix",
+     "title": "Approved",
+     "pose": "char-omar-success",
+     "lines": [
+      "Same patient. Now the note links the findings to a diagnosis: gastroenteritis.",
+      "It travels again, and it's approved."
+     ],
+     "visual": {
+      "layout": "same path; note card now shows 'findings → gastroenteritis'; green stamp",
+      "on_screen": [
+       "Findings → gastroenteritis",
+       "Approved"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "links the findings",
+       "an arrow draws from 'findings' to 'gastroenteritis'"
+      ],
+      [
+       "travels again",
+       "card travels the path"
+      ],
+      [
+       "approved",
+       "'Approved' stamp presses in, success green with ✓"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "What gets paid",
+     "pose": "char-omar-tip",
+     "lines": [
+      "Nobody taught me this at medical school.",
+      "Clinical decision, documentation, coding: that's what gets paid."
+     ],
+     "visual": {
+      "layout": "equation of three chips + '=' optimised payment",
+      "on_screen": [
+       "Decision + documentation + coding = paid"
+      ],
+      "assets": [
+       "char-omar-tip.png"
+      ]
+     },
+     "motion": [
+      [
+       "Clinical decision",
+       "chip 1 pops"
+      ],
+      [
+       "documentation",
+       "chip 2 pops"
+      ],
+      [
+       "coding",
+       "chip 3 pops"
+      ],
+      [
+       "what gets paid",
+       "'=' and result chip slide in; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "reject",
+    "question": "What would you fix first?",
+    "options": [
+     {
+      "id": "dx",
+      "text": "Add a supported diagnosis",
+      "correct": true,
+      "reply": "Right. Link the findings to the most supported diagnosis."
+     },
+     {
+      "id": "tests",
+      "text": "Order more tests",
+      "reply": "More tests aren't better care. The note still needs a supported diagnosis."
+     },
+     {
+      "id": "resubmit",
+      "text": "Resubmit it as it is",
+      "reply": "The same note gets the same answer. Fix the diagnosis first."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Outline named NPHIES; it is not in the storyboard, so the plan says 'the payer'. Add NPHIES only if the coding lead confirms it for this course."
+   ]
+  },
+  {
+   "id": "rcmb-vid-benefits",
+   "module": "06",
+   "colour": "#7C0041",
+   "target_sec": 50,
+   "title": "The Essential Benefits Package in one minute",
+   "placement": "new unscored video screen after rcmb-001",
+   "message": "New and amended benefits exist, but covered never means fully approved: always check.",
+   "audience": "Clinical, front office and RCM staff in module 06.",
+   "action": "Check the policy and the table of benefits before offering a service.",
+   "facts": [
+    [
+     "The EBP added new benefits and amended others",
+     "06 rcmb-001",
+     "confirmed (benefit wording ⚠ Draft — pending B3)"
+    ],
+    [
+     "Added (examples): prevention exams, adult vaccination, telemedicine, home care for inpatients, diabetes programme",
+     "06 rcmb-010",
+     "⚠ Draft — pending B3/B4"
+    ],
+    [
+     "Amended (examples): mental health, dental, dialysis limit, weight-loss surgery",
+     "06 rcmb-010",
+     "⚠ Draft — pending B3/B4"
+    ],
+    [
+     "Partial coverage ≠ full approval; limits, criteria or pre-authorisation",
+     "06 rcmb-001",
+     "confirmed"
+    ],
+    [
+     "Mental health: limit per policy period; pre-authorisation",
+     "06 rcmb-030, rcmb-050",
+     "confirmed; the limit value is ⚠ pending B5 and is NOT shown"
+    ],
+    [
+     "Always check the patient's policy and the current table of benefits",
+     "06 rcmb-001",
+     "confirmed"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "changed",
+     "title": "What changed",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "The Essential Benefits Package changed.",
+      "Some benefits were added. Others were amended."
+     ],
+     "visual": {
+      "layout": "two columns, 'Added' and 'Amended', empty; '⚠ Draft — pending B3' tag",
+      "on_screen": [
+       "Added",
+       "Amended",
+       "⚠ Draft — pending B3"
+      ],
+      "assets": [
+       "rcmb-img-benefit-icons (06 storyboard/assets)"
+      ]
+     },
+     "motion": [
+      [
+       "Package changed",
+       "headline rises"
+      ],
+      [
+       "were added",
+       "'Added' column header drops in"
+      ],
+      [
+       "were amended",
+       "'Amended' header drops in"
+      ]
+     ]
+    },
+    {
+     "id": "added",
+     "title": "Added",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Added: prevention exams, adult vaccines, telemedicine, home care after a hospital stay, and a diabetes programme."
+     ],
+     "visual": {
+      "layout": "five icon cards fill the 'Added' column",
+      "on_screen": [
+       "Prevention exams",
+       "Adult vaccines",
+       "Telemedicine",
+       "Home care",
+       "Diabetes programme"
+      ],
+      "assets": [
+       "rcmb-img-benefit-icons"
+      ]
+     },
+     "motion": [
+      [
+       "prevention exams",
+       "card 1 pops in"
+      ],
+      [
+       "adult vaccines",
+       "card 2"
+      ],
+      [
+       "telemedicine",
+       "card 3"
+      ],
+      [
+       "home care",
+       "card 4"
+      ],
+      [
+       "diabetes programme",
+       "card 5"
+      ]
+     ]
+    },
+    {
+     "id": "amended",
+     "title": "Amended",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Amended: mental health, dental, dialysis and weight-loss surgery, among others."
+     ],
+     "visual": {
+      "layout": "four cards fill 'Amended', each with a small pencil badge",
+      "on_screen": [
+       "Mental health",
+       "Dental",
+       "Dialysis",
+       "Weight-loss surgery"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "mental health",
+       "card 1 pops"
+      ],
+      [
+       "dental",
+       "card 2"
+      ],
+      [
+       "dialysis",
+       "card 3"
+      ],
+      [
+       "weight-loss surgery",
+       "card 4; pencil badges wiggle once"
+      ]
+     ]
+    },
+    {
+     "id": "watch",
+     "title": "Covered is not approved",
+     "pose": "char-omar-concern",
+     "lines": [
+      "Here's the thing: covered doesn't mean fully approved.",
+      "A benefit can still have limits, criteria, or pre-authorisation."
+     ],
+     "visual": {
+      "layout": "Callout with warning bar (magenta, ⚠ icon); three Chips",
+      "on_screen": [
+       "Covered ≠ fully approved",
+       "Limits · Criteria · Pre-authorisation"
+      ],
+      "assets": [
+       "char-omar-concern.png"
+      ]
+     },
+     "motion": [
+      [
+       "Here's the thing",
+       "columns blur back"
+      ],
+      [
+       "fully approved",
+       "Callout slides up; warning bar grows"
+      ],
+      [
+       "pre-authorisation",
+       "three chips pop, 100 ms stagger"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Always check",
+     "pose": "char-omar-success",
+     "lines": [
+      "So always check the patient's policy, and the current table of benefits."
+     ],
+     "visual": {
+      "layout": "two document icons with ticks",
+      "on_screen": [
+       "Check the policy",
+       "Check the table of benefits"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "patient's policy",
+       "icon 1 tick draws"
+      ],
+      [
+       "table of benefits",
+       "icon 2 tick draws; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "watch",
+    "question": "A patient asks for a mental-health service. It's a covered benefit. Are you done?",
+    "options": [
+     {
+      "id": "done",
+      "text": "Yes, it's covered",
+      "reply": "Not yet. Mental health has a limit per policy period, and it needs pre-authorisation. Check first."
+     },
+     {
+      "id": "check",
+      "text": "Check the limit and pre-authorisation",
+      "correct": true,
+      "reply": "Right. Covered, but with a limit per policy period and pre-authorisation."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Benefit names are draft (B3/B4). Limits stay off screen until B5 closes."
+   ]
+  },
+  {
+   "id": "qsr-vid-speakup",
+   "module": "07",
+   "colour": "#652D8C",
+   "target_sec": 55,
+   "title": "Speak up: reporting a near miss",
+   "placement": "the optional slot qsr-060 named in the plan does not exist in the current build; place after qsr-051 (see open questions)",
+   "message": "A near miss is a warning you got for free: report it through the approved process.",
+   "audience": "All staff in module 07.",
+   "action": "Report near misses, even when no one was harmed.",
+   "facts": [
+    [
+     "Scenario: a colleague nearly gave insulin to the wrong patient; caught; no harm",
+     "07 qsr-051",
+     "confirmed (fictional)"
+    ],
+    [
+     "Near miss = caught before harm",
+     "07 qsr-040",
+     "⚠ PENDING B8"
+    ],
+    [
+     "Reporting a near miss reveals a weak process before harm occurs",
+     "07 qsr-051 feedback",
+     "⚠ PENDING B8"
+    ],
+    [
+     "Report within the confirmed window (source draft says 24 hours)",
+     "07 qsr-050",
+     "⚠ PENDING B9/D8; say 'the confirmed reporting window', never '24 hours'"
+    ],
+    [
+     "Route: the approved process (draft: intranet form or email)",
+     "07 qsr-050",
+     "⚠ PENDING B9; do not name the channel"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "shift",
+     "title": "End of shift",
+     "pose": "char-omar-thinking",
+     "lines": [
+      "End of shift.",
+      "Earlier today, you stopped a colleague giving insulin to the wrong patient.",
+      "No one was harmed."
+     ],
+     "visual": {
+      "layout": "calm ward corridor at dusk (flat style); wall clock; Dr. Omar avatar (thinking)",
+      "on_screen": [
+       "End of shift"
+      ],
+      "assets": [
+       "qsr scene art (new ai-image job, no real likeness)",
+       "char-omar-avatar-neutral.png"
+      ]
+     },
+     "motion": [
+      [
+       "End of shift",
+       "light shifts warmer over 2 s"
+      ],
+      [
+       "wrong patient",
+       "two patient wristband icons appear; a hand icon stops between them"
+      ],
+      [
+       "No one was harmed",
+       "a calm tick appears; scene holds 1 s"
+      ]
+     ]
+    },
+    {
+     "id": "tempt",
+     "title": "No harm, nothing to report?",
+     "pose": "char-omar-concern",
+     "lines": [
+      "It's tempting to think: no harm, nothing to report.",
+      "Here's the thing."
+     ],
+     "visual": {
+      "layout": "thought bubble with the words 'No harm, nothing to report?'",
+      "on_screen": [
+       "No harm, nothing to report?"
+      ],
+      "assets": [
+       "char-omar-concern.png"
+      ]
+     },
+     "motion": [
+      [
+       "nothing to report",
+       "thought bubble inflates (scale 0.6→1, spring)"
+      ],
+      [
+       "Here's the thing",
+       "bubble pops away"
+      ]
+     ]
+    },
+    {
+     "id": "why",
+     "title": "Why near misses matter",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "A near miss shows a weak spot before it hurts someone.",
+      "That's why we report it."
+     ],
+     "visual": {
+      "layout": "safety iceberg (qsr-img-iceberg); near-miss layer highlighted; '⚠ PENDING B8' tag",
+      "on_screen": [
+       "Near miss: caught before harm",
+       "⚠ PENDING B8"
+      ],
+      "assets": [
+       "qsr-img-iceberg (07 storyboard/assets)"
+      ]
+     },
+     "motion": [
+      [
+       "weak spot",
+       "camera tilts down to the base of the iceberg"
+      ],
+      [
+       "before it hurts someone",
+       "near-miss layer glows in module colour"
+      ],
+      [
+       "we report it",
+       "upward arrow travels from the base to the tip"
+      ]
+     ]
+    },
+    {
+     "id": "how",
+     "title": "Report it",
+     "pose": "char-omar-tip",
+     "lines": [
+      "Report it through the approved process, within the confirmed reporting window."
+     ],
+     "visual": {
+      "layout": "StepFlow: notice → report → learn; small '⚠ PENDING B9 / D8' tag on 'report'",
+      "on_screen": [
+       "Notice",
+       "Report",
+       "Learn",
+       "⚠ PENDING B9 / D8"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "approved process",
+       "steps draw left to right"
+      ],
+      [
+       "reporting window",
+       "'Report' step pulses once"
+      ]
+     ]
+    },
+    {
+     "id": "close",
+     "title": "Protect the next patient",
+     "pose": "char-omar-success",
+     "lines": [
+      "Speaking up protects the next patient."
+     ],
+     "visual": {
+      "layout": "RuleBanner; Dr. Omar half-body right",
+      "on_screen": [
+       "Speak up. Protect the next patient."
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "protects the next patient",
+       "banner wipes in; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "why",
+    "question": "So, what do you do now?",
+    "options": [
+     {
+      "id": "report",
+      "text": "Report the near miss",
+      "correct": true,
+      "reply": "Yes. Reporting can reveal a weak process before anyone is harmed."
+     },
+     {
+      "id": "skip",
+      "text": "Don't report: no one was harmed",
+      "reply": "That leaves the weak spot hidden. A near miss is worth reporting."
+     },
+     {
+      "id": "wait",
+      "text": "Wait to see if it happens again",
+      "reply": "Waiting leaves the risk unreported. Report it now, through the approved process."
+     }
+    ],
+    "scored": false
+   },
+   "open": [
+    "Slot qsr-060 is not in the current build. Place after qsr-051 or name another slot.",
+    "Route and deadline stay generic until D8/B9 close."
+   ]
+  },
+  {
+   "id": "ehr-vid-consult",
+   "module": "08",
+   "colour": "#006E78",
+   "target_sec": 45,
+   "title": "A consultation, start to finish",
+   "placement": "new unscored video screen after ehr-001",
+   "message": "Complete, specific, linked, on the day.",
+   "audience": "Physicians in module 08.",
+   "action": "Follow the consultation order in the EHR.",
+   "facts": [
+    [
+     "Nine steps: open, document, diagnose, order, review orders, summary, educate, refer and follow up, complete",
+     "08 ehr-002",
+     "confirmed (screen names ⚠ Draft — pending B5)"
+    ],
+    [
+     "Fill every mandatory section; save as you go",
+     "08 ehr-002, ehr-011",
+     "confirmed (field list ⚠ pending B4, not shown)"
+    ],
+    [
+     "Specific primary diagnosis, by ICD-10 code or name",
+     "08 ehr-001",
+     "confirmed"
+    ],
+    [
+     "Each order points to the diagnosis you assessed",
+     "08 ehr-001",
+     "confirmed"
+    ],
+    [
+     "'Complete, specific, linked — on the day'",
+     "08 ehr-001",
+     "confirmed"
+    ],
+    [
+     "'My first week, I typed diabetes and picked the first line…'",
+     "characters/companions.md (ehr-020)",
+     "confirmed"
+    ],
+    [
+     "Abstract EHR wireframe only; never real screens",
+     "media-video-plan.json",
+     "rule"
+    ]
+   ],
+   "scenes": [
+    {
+     "id": "intro",
+     "title": "Start to finish",
+     "pose": "char-omar-welcome",
+     "lines": [
+      "A consultation in the EHR, start to finish.",
+      "Everything here is a test patient."
+     ],
+     "visual": {
+      "layout": "abstract EHR wireframe (tools/build_wireframes.py style), labelled 'training wireframe — not the live system'; nine-step rail on the left",
+      "on_screen": [
+       "Test patient",
+       "training wireframe — not the live system"
+      ],
+      "assets": [
+       "ehr wireframe SVGs (08 storyboard/assets/wireframes)"
+      ]
+     },
+     "motion": [
+      [
+       "start to finish",
+       "nine-step rail draws top to bottom"
+      ],
+      [
+       "test patient",
+       "'Test patient' chip pops"
+      ]
+     ]
+    },
+    {
+     "id": "document",
+     "title": "Open and document",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Open the visit, and fill every mandatory section.",
+      "Save as you go."
+     ],
+     "visual": {
+      "layout": "rail steps 1–2 lit; form sections fill with grey placeholder bars",
+      "on_screen": [
+       "Open",
+       "Document",
+       "Save as you go"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "Open the visit",
+       "step 1 lights; form slides in"
+      ],
+      [
+       "every mandatory section",
+       "placeholder bars fill one by one, 80 ms stagger"
+      ],
+      [
+       "Save as you go",
+       "small save icon ticks"
+      ]
+     ]
+    },
+    {
+     "id": "diagnose",
+     "title": "Diagnose",
+     "pose": "char-omar-concern",
+     "lines": [
+      "Add a specific primary diagnosis, by code or by name.",
+      "My first week, I typed diabetes and picked the first line. It wasn't the diagnosis I meant."
+     ],
+     "visual": {
+      "layout": "step 3 lit; search box with a result list; first line crossed out, the right line highlighted",
+      "on_screen": [
+       "Diagnose",
+       "Specific, primary"
+      ],
+      "assets": [
+       "char-omar-avatar-concern.png"
+      ]
+     },
+     "motion": [
+      [
+       "specific primary diagnosis",
+       "search box drops in"
+      ],
+      [
+       "typed diabetes",
+       "letters type on in the search box"
+      ],
+      [
+       "picked the first line",
+       "first result highlights, then StrikeX draws through it"
+      ],
+      [
+       "diagnosis I meant",
+       "correct line highlights in module colour"
+      ]
+     ]
+    },
+    {
+     "id": "order",
+     "title": "Order, linked",
+     "pose": "char-omar-explaining",
+     "lines": [
+      "Then your orders.",
+      "Each one points to the diagnosis you assessed."
+     ],
+     "visual": {
+      "layout": "step 4–5 lit; three order cards with connector lines to the diagnosis chip",
+      "on_screen": [
+       "Order",
+       "Linked to the diagnosis"
+      ],
+      "assets": []
+     },
+     "motion": [
+      [
+       "your orders",
+       "three order cards slide in"
+      ],
+      [
+       "points to the diagnosis",
+       "connector lines draw from each card to the diagnosis chip"
+      ]
+     ]
+    },
+    {
+     "id": "finish",
+     "title": "Summary to complete",
+     "pose": "char-omar-success",
+     "lines": [
+      "Then the summary, education, referral and follow-up.",
+      "Complete, specific, linked, on the day."
+     ],
+     "visual": {
+      "layout": "steps 6–9 light in sequence; four-word banner",
+      "on_screen": [
+       "Complete · Specific · Linked · On the day"
+      ],
+      "assets": [
+       "char-omar-success.png"
+      ]
+     },
+     "motion": [
+      [
+       "the summary",
+       "steps 6–9 light, 200 ms apart"
+      ],
+      [
+       "Complete, specific",
+       "banner words appear one per word spoken"
+      ],
+      [
+       "on the day",
+       "whole rail glows once; end card"
+      ]
+     ]
+    }
+   ],
+   "interaction": {
+    "after_scene": "order",
+    "question": "What must each order point to?",
+    "options": [
+     {
+      "id": "dx",
+      "text": "The diagnosis you assessed",
+      "correct": true,
+      "reply": "Right. Linked orders make the record complete and the claim clear."
+     },
+     {
+      "id": "last",
+      "text": "The last visit",
+      "reply": "Not quite. Each order points to today's assessed diagnosis."
+     },
+     {
+      "id": "none",
+      "text": "Nothing; orders stand alone",
+      "reply": "Not in this EHR. Every order is linked to the diagnosis you assessed."
+     }
+    ],
+    "scored": false
+   },
+   "open": []
+  }
+ ]
+}

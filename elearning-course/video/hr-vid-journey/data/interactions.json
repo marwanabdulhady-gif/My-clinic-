@@ -1,0 +1,28 @@
+{
+ "clip": "hr-vid-journey",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "Quick check: where do you accept your employment contract?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "oracle",
+   "text": "Oracle",
+   "reply": "Not this one. Oracle is for requests. Your contract is accepted on Qiwa.",
+   "reply_audio": "narration/int_oracle_omar.mp3"
+  },
+  {
+   "id": "qiwa",
+   "text": "Qiwa",
+   "correct": true,
+   "reply": "Right. Requests go in Oracle; your contract is accepted on Qiwa.",
+   "reply_audio": "narration/int_qiwa_omar.mp3"
+  },
+  {
+   "id": "intranet",
+   "text": "The intranet",
+   "reply": "Not this one. The intranet holds the employee guide. Your contract is accepted on Qiwa.",
+   "reply_audio": "narration/int_intranet_omar.mp3"
+  }
+ ]
+}

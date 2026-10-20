@@ -1,0 +1,167 @@
+{
+ "clip": "ehr-vid-consult",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#006E78",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "intro",
+   "title": "Start to finish",
+   "goal": "Start to finish",
+   "pose": "char-omar-welcome",
+   "layout": "abstract EHR wireframe (tools/build_wireframes.py style), labelled 'training wireframe — not the live system'; nine-step rail on the left",
+   "onScreenText": [
+    "Test patient",
+    "training wireframe — not the live system"
+   ],
+   "assets": [
+    "ehr wireframe SVGs (08 storyboard/assets/wireframes)"
+   ],
+   "beats": [
+    {
+     "cue": "start to finish",
+     "do": "nine-step rail draws top to bottom"
+    },
+    {
+     "cue": "test patient",
+     "do": "'Test patient' chip pops"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "document",
+   "title": "Open and document",
+   "goal": "Open and document",
+   "pose": "char-omar-explaining",
+   "layout": "rail steps 1–2 lit; form sections fill with grey placeholder bars",
+   "onScreenText": [
+    "Open",
+    "Document",
+    "Save as you go"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Open the visit",
+     "do": "step 1 lights; form slides in"
+    },
+    {
+     "cue": "every mandatory section",
+     "do": "placeholder bars fill one by one, 80 ms stagger"
+    },
+    {
+     "cue": "Save as you go",
+     "do": "small save icon ticks"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "diagnose",
+   "title": "Diagnose",
+   "goal": "Diagnose",
+   "pose": "char-omar-concern",
+   "layout": "step 3 lit; search box with a result list; first line crossed out, the right line highlighted",
+   "onScreenText": [
+    "Diagnose",
+    "Specific, primary"
+   ],
+   "assets": [
+    "char-omar-avatar-concern.png"
+   ],
+   "beats": [
+    {
+     "cue": "specific primary diagnosis",
+     "do": "search box drops in"
+    },
+    {
+     "cue": "typed diabetes",
+     "do": "letters type on in the search box"
+    },
+    {
+     "cue": "picked the first line",
+     "do": "first result highlights, then StrikeX draws through it"
+    },
+    {
+     "cue": "diagnosis I meant",
+     "do": "correct line highlights in module colour"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "order",
+   "title": "Order, linked",
+   "goal": "Order, linked",
+   "pose": "char-omar-explaining",
+   "layout": "step 4–5 lit; three order cards with connector lines to the diagnosis chip",
+   "onScreenText": [
+    "Order",
+    "Linked to the diagnosis"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "your orders",
+     "do": "three order cards slide in"
+    },
+    {
+     "cue": "points to the diagnosis",
+     "do": "connector lines draw from each card to the diagnosis chip"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "finish",
+   "title": "Summary to complete",
+   "goal": "Summary to complete",
+   "pose": "char-omar-success",
+   "layout": "steps 6–9 light in sequence; four-word banner",
+   "onScreenText": [
+    "Complete · Specific · Linked · On the day"
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "the summary",
+     "do": "steps 6–9 light, 200 ms apart"
+    },
+    {
+     "cue": "Complete, specific",
+     "do": "banner words appear one per word spoken"
+    },
+    {
+     "cue": "on the day",
+     "do": "whole rail glows once; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

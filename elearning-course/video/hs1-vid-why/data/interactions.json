@@ -1,0 +1,33 @@
+{
+ "clip": "hs1-vid-why",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "In your clinic, which of these could you find right now?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "callpoint",
+   "text": "The call point",
+   "reply": "Good start. Today, walk your corridor and find the other two.",
+   "reply_audio": "narration/int_callpoint_omar.mp3"
+  },
+  {
+   "id": "ext",
+   "text": "The extinguisher",
+   "reply": "Good start. Today, walk your corridor and find the other two.",
+   "reply_audio": "narration/int_ext_omar.mp3"
+  },
+  {
+   "id": "exit",
+   "text": "The exit",
+   "reply": "Good start. Today, walk your corridor and find the other two.",
+   "reply_audio": "narration/int_exit_omar.mp3"
+  },
+  {
+   "id": "none",
+   "text": "Not yet",
+   "reply": "That's honest, and normal on day one. Make it your first job today.",
+   "reply_audio": "narration/int_none_omar.mp3"
+  }
+ ]
+}

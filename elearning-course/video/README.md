@@ -1,8 +1,10 @@
 # Videos: where they are made and how
 
+> **The plan for all nine clips** (Dr. Omar's lines, the visual and motion plan for every scene, and one voice interaction per clip) is in [`PRODUCTION-PLAN.md`](PRODUCTION-PLAN.md). It is generated from `_shared/plan/clips.json` by `_shared/scripts/scaffold_clips.py`.
+
 This folder is where the optional motion-graphics clips are **made**. The clips themselves are planned in [`../scorm-plans/00_program/media-video-plan.json`](../scorm-plans/00_program/media-video-plan.json). The tool choice is in [`video-tooling.md`](../scorm-plans/00_program/video-tooling.md). The full step-by-step agent procedure is [`video-playbook-review.md` §5](../scorm-plans/00_program/video-playbook-review.md#5-agent-procedure-one-clip-end-to-end).
 
-> ⛔ **Do not start a clip until decision D17 is closed** in `scorm-plans/00_program/decision-sheet.md`. Narration also needs D10. See AGENT-TASKS.md T7.
+> The owner opened video production on 2026-10-20 (male voice: Dr. Omar only). Whether the clips are a value-add or a change request (D17) is still to be confirmed. The voice provider (D10) is chosen at Gate D by audition. See AGENT-TASKS.md T7.
 
 ## The one rule that keeps videos in sync
 

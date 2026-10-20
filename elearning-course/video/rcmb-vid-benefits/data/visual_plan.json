@@ -1,0 +1,185 @@
+{
+ "clip": "rcmb-vid-benefits",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#7C0041",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "changed",
+   "title": "What changed",
+   "goal": "What changed",
+   "pose": "char-omar-explaining",
+   "layout": "two columns, 'Added' and 'Amended', empty; '⚠ Draft — pending B3' tag",
+   "onScreenText": [
+    "Added",
+    "Amended",
+    "⚠ Draft — pending B3"
+   ],
+   "assets": [
+    "rcmb-img-benefit-icons (06 storyboard/assets)"
+   ],
+   "beats": [
+    {
+     "cue": "Package changed",
+     "do": "headline rises"
+    },
+    {
+     "cue": "were added",
+     "do": "'Added' column header drops in"
+    },
+    {
+     "cue": "were amended",
+     "do": "'Amended' header drops in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "added",
+   "title": "Added",
+   "goal": "Added",
+   "pose": "char-omar-explaining",
+   "layout": "five icon cards fill the 'Added' column",
+   "onScreenText": [
+    "Prevention exams",
+    "Adult vaccines",
+    "Telemedicine",
+    "Home care",
+    "Diabetes programme"
+   ],
+   "assets": [
+    "rcmb-img-benefit-icons"
+   ],
+   "beats": [
+    {
+     "cue": "prevention exams",
+     "do": "card 1 pops in"
+    },
+    {
+     "cue": "adult vaccines",
+     "do": "card 2"
+    },
+    {
+     "cue": "telemedicine",
+     "do": "card 3"
+    },
+    {
+     "cue": "home care",
+     "do": "card 4"
+    },
+    {
+     "cue": "diabetes programme",
+     "do": "card 5"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "amended",
+   "title": "Amended",
+   "goal": "Amended",
+   "pose": "char-omar-explaining",
+   "layout": "four cards fill 'Amended', each with a small pencil badge",
+   "onScreenText": [
+    "Mental health",
+    "Dental",
+    "Dialysis",
+    "Weight-loss surgery"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "mental health",
+     "do": "card 1 pops"
+    },
+    {
+     "cue": "dental",
+     "do": "card 2"
+    },
+    {
+     "cue": "dialysis",
+     "do": "card 3"
+    },
+    {
+     "cue": "weight-loss surgery",
+     "do": "card 4; pencil badges wiggle once"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "watch",
+   "title": "Covered is not approved",
+   "goal": "Covered is not approved",
+   "pose": "char-omar-concern",
+   "layout": "Callout with warning bar (magenta, ⚠ icon); three Chips",
+   "onScreenText": [
+    "Covered ≠ fully approved",
+    "Limits · Criteria · Pre-authorisation"
+   ],
+   "assets": [
+    "char-omar-concern.png"
+   ],
+   "beats": [
+    {
+     "cue": "Here's the thing",
+     "do": "columns blur back"
+    },
+    {
+     "cue": "fully approved",
+     "do": "Callout slides up; warning bar grows"
+    },
+    {
+     "cue": "pre-authorisation",
+     "do": "three chips pop, 100 ms stagger"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Always check",
+   "goal": "Always check",
+   "pose": "char-omar-success",
+   "layout": "two document icons with ticks",
+   "onScreenText": [
+    "Check the policy",
+    "Check the table of benefits"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "patient's policy",
+     "do": "icon 1 tick draws"
+    },
+    {
+     "cue": "table of benefits",
+     "do": "icon 2 tick draws; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

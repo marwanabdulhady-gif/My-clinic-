@@ -1,0 +1,157 @@
+{
+ "clip": "qsr-vid-speakup",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#652D8C",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "shift",
+   "title": "End of shift",
+   "goal": "End of shift",
+   "pose": "char-omar-thinking",
+   "layout": "calm ward corridor at dusk (flat style); wall clock; Dr. Omar avatar (thinking)",
+   "onScreenText": [
+    "End of shift"
+   ],
+   "assets": [
+    "qsr scene art (new ai-image job, no real likeness)",
+    "char-omar-avatar-neutral.png"
+   ],
+   "beats": [
+    {
+     "cue": "End of shift",
+     "do": "light shifts warmer over 2 s"
+    },
+    {
+     "cue": "wrong patient",
+     "do": "two patient wristband icons appear; a hand icon stops between them"
+    },
+    {
+     "cue": "No one was harmed",
+     "do": "a calm tick appears; scene holds 1 s"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "tempt",
+   "title": "No harm, nothing to report?",
+   "goal": "No harm, nothing to report?",
+   "pose": "char-omar-concern",
+   "layout": "thought bubble with the words 'No harm, nothing to report?'",
+   "onScreenText": [
+    "No harm, nothing to report?"
+   ],
+   "assets": [
+    "char-omar-concern.png"
+   ],
+   "beats": [
+    {
+     "cue": "nothing to report",
+     "do": "thought bubble inflates (scale 0.6→1, spring)"
+    },
+    {
+     "cue": "Here's the thing",
+     "do": "bubble pops away"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "why",
+   "title": "Why near misses matter",
+   "goal": "Why near misses matter",
+   "pose": "char-omar-explaining",
+   "layout": "safety iceberg (qsr-img-iceberg); near-miss layer highlighted; '⚠ PENDING B8' tag",
+   "onScreenText": [
+    "Near miss: caught before harm",
+    "⚠ PENDING B8"
+   ],
+   "assets": [
+    "qsr-img-iceberg (07 storyboard/assets)"
+   ],
+   "beats": [
+    {
+     "cue": "weak spot",
+     "do": "camera tilts down to the base of the iceberg"
+    },
+    {
+     "cue": "before it hurts someone",
+     "do": "near-miss layer glows in module colour"
+    },
+    {
+     "cue": "we report it",
+     "do": "upward arrow travels from the base to the tip"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "how",
+   "title": "Report it",
+   "goal": "Report it",
+   "pose": "char-omar-tip",
+   "layout": "StepFlow: notice → report → learn; small '⚠ PENDING B9 / D8' tag on 'report'",
+   "onScreenText": [
+    "Notice",
+    "Report",
+    "Learn",
+    "⚠ PENDING B9 / D8"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "approved process",
+     "do": "steps draw left to right"
+    },
+    {
+     "cue": "reporting window",
+     "do": "'Report' step pulses once"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Protect the next patient",
+   "goal": "Protect the next patient",
+   "pose": "char-omar-success",
+   "layout": "RuleBanner; Dr. Omar half-body right",
+   "onScreenText": [
+    "Speak up. Protect the next patient."
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "protects the next patient",
+     "do": "banner wipes in; end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

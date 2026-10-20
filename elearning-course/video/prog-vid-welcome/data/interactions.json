@@ -1,0 +1,27 @@
+{
+ "clip": "prog-vid-welcome",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "Before we start: what matters most to you this week?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "find",
+   "text": "Knowing where to find things",
+   "reply": "Good. Each course ends with a short list of where things live.",
+   "reply_audio": "narration/int_find_omar.mp3"
+  },
+  {
+   "id": "team",
+   "text": "Meeting my team",
+   "reply": "Good. The courses show who does what, so you know who to ask.",
+   "reply_audio": "narration/int_team_omar.mp3"
+  },
+  {
+   "id": "rules",
+   "text": "Getting the HR rules right",
+   "reply": "Good. The HR course covers the rules you'll actually use.",
+   "reply_audio": "narration/int_rules_omar.mp3"
+  }
+ ]
+}

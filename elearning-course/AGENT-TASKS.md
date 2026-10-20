@@ -180,16 +180,24 @@ The jobs with `"route": "own-pdf"` in modules 03, 05, 06 and 08, plus emergency-
 - Put **"DRAFT — pending client confirmation"** in the footer.
 - Save to the job's `target_file` path, with the `.pdf` extension.
 
-### T7 — Motion-graphics videos ⛔ blocked
+### T7 — Motion-graphics videos (voiced by Dr. Omar) ✅ open (owner, 2026-10-20)
 
-Blocked until the owner closes decision **D17**. When it opens:
-1. Read [`video/README.md`](video/README.md) first: folders, names, standards and gates.
-2. Follow the 44 numbered steps in `scorm-plans/00_program/video-playbook-review.md` §5, one at a time. Stop at every gate (A–F) and wait for an explicit OK.
-3. Work only in `elearning-course/video/<clip-id>/`. Take the clip id from `scorm-plans/00_program/media-video-plan.json`. Start with `prog-vid-welcome`, then `qsr-vid-speakup`.
-4. Never type animation times by hand. Run `video/_shared/scripts/resolve_cues.py`, which must exit 0.
-5. Before delivery, `video/_shared/scripts/delivery_check.py` must print `PASS` on every line. Paste the lines into the clip's `QA_REPORT.md`.
-6. Copy the files to `target_file` / `captions_file` only after the owner approves.
-- If a script that a step needs is not in `video/_shared/scripts/` yet (`transcribe.py`, `build_timeline.py`, `qa_check.py`…), stop and report it. Do not write a replacement yourself.
+The owner asked for the videos now, with one male voice (Dr. Omar), one voice interaction per clip, and a visual and motion plan for every scene. The plan is ready. Your job is to produce it, not redesign it.
+
+1. Read [`video/PRODUCTION-PLAN.md`](video/PRODUCTION-PLAN.md) from top to bottom, then [`video/README.md`](video/README.md).
+2. Work on **one clip per branch**, in this order:
+   - `prog-vid-welcome`;
+   - then `qsr-vid-speakup`;
+   - then the rest in module order.
+3. Each clip's drafts are already in `video/<clip-id>/data/`: `BRIEF.md`, `facts.md`, `script.md`, `cues.json`, `visual_plan.json`, `interactions.json`. Follow tasks V1–V6 in the plan's §5 and stop at every gate.
+4. **To change wording, a scene or a motion beat:**
+   - edit `video/_shared/plan/clips.json`;
+   - run `python3 video/_shared/scripts/scaffold_clips.py --force <clip-id>`;
+   - make sure it ends with `problems=0`.
+   Never edit `PRODUCTION-PLAN.md` by hand.
+5. **Never speak a pending fact.** If a line needs one, stop and report.
+6. **V0 (interactive video in the player) is a player task.** Do not do it inside a clip task. Until it exists, deliver the clip as plain video.
+7. If a script you need is not in `video/_shared/scripts/` yet (`transcribe.py`, `build_timeline.py`, `qa_check.py`…), stop and report it. Do not write a replacement yourself.
 
 ### T8 — Voice recording (TTS) ⛔ blocked
 

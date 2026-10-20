@@ -1,0 +1,22 @@
+{
+ "clip": "hs2-vid-drill",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "Quick check: what comes first?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "rescue",
+   "text": "Rescue",
+   "correct": true,
+   "reply": "Right. Anyone in immediate danger comes before the phone.",
+   "reply_audio": "narration/int_rescue_omar.mp3"
+  },
+  {
+   "id": "alarm",
+   "text": "Alarm",
+   "reply": "Close, but no. Rescue comes first: move anyone in immediate danger, then raise the alarm.",
+   "reply_audio": "narration/int_alarm_omar.mp3"
+  }
+ ]
+}

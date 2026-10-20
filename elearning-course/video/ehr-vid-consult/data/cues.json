@@ -1,0 +1,17 @@
+{
+ "s01-intro-1": "start to finish",
+ "s01-intro-2": "test patient",
+ "s02-document-1": "Open the visit",
+ "s02-document-2": "every mandatory section",
+ "s02-document-3": "Save as you go",
+ "s03-diagnose-1": "specific primary diagnosis",
+ "s03-diagnose-2": "typed diabetes",
+ "s03-diagnose-3": "picked the first line",
+ "s03-diagnose-4": "diagnosis I meant",
+ "s04-order-1": "your orders",
+ "s04-order-2": "points to the diagnosis",
+ "s05-finish-1": "the summary",
+ "s05-finish-2": "Complete, specific",
+ "s05-finish-3": "on the day",
+ "int-pause": "diagnosis you assessed"
+}

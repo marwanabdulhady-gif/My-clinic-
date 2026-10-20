@@ -1,0 +1,180 @@
+{
+ "clip": "hr-vid-journey",
+ "fps": 30,
+ "size": "1920x1080",
+ "brand": "video/_shared/brand/tokens.css",
+ "module_colour": "#652D8C",
+ "status": "draft — needs Gate C",
+ "scenes": [
+  {
+   "id": "intro",
+   "title": "Four stops",
+   "goal": "Four stops",
+   "pose": "char-omar-welcome",
+   "layout": "horizontal ProgressRail with four stop markers; purple module colour",
+   "onScreenText": [
+    "Your first 90 days"
+   ],
+   "assets": [
+    "char-omar-avatar-happy.png"
+   ],
+   "beats": [
+    {
+     "cue": "first ninety days",
+     "do": "rail draws left to right (900 ms); four markers pop in"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "card",
+   "title": "Your ID card",
+   "goal": "Your ID card",
+   "pose": "char-omar-explaining",
+   "layout": "marker 1 active; ID badge illustration; benefit chips",
+   "onScreenText": [
+    "ID card",
+    "Health insurance from day one"
+   ],
+   "assets": [
+    "hr-img-idcard (03 storyboard/assets)",
+    "hr-img-benefits-wheel"
+   ],
+   "beats": [
+    {
+     "cue": "your ID card",
+     "do": "badge swings in on its lanyard (rotate −8°→0, spring)"
+    },
+    {
+     "cue": "from day one",
+     "do": "benefits wheel spins in 90° and settles; insurance segment highlights"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "oracle",
+   "title": "Oracle",
+   "goal": "Oracle",
+   "pose": "char-omar-explaining",
+   "layout": "marker 2 active; abstract Oracle tile (wireframe style, labelled 'training wireframe'); three request cards fly into it",
+   "onScreenText": [
+    "Oracle",
+    "Leave · Certificates · Resignation",
+    "If it's a request, it needs a record"
+   ],
+   "assets": [
+    "hr wireframe style from tools/build_wireframes.py"
+   ],
+   "beats": [
+    {
+     "cue": "Next, Oracle",
+     "do": "rail marker 2 fills; Oracle tile scales in"
+    },
+    {
+     "cue": "every request",
+     "do": "three cards arc into the tile, 120 ms stagger"
+    },
+    {
+     "cue": "needs a record",
+     "do": "Callout rises under the tile"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "qiwa",
+   "title": "Qiwa",
+   "goal": "Qiwa",
+   "pose": "char-omar-tip",
+   "layout": "marker 3 active; contract card moves from Oracle tile to a separate Qiwa tile",
+   "onScreenText": [
+    "Contract → Qiwa"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "Your contract",
+     "do": "contract card lifts out of the Oracle tile"
+    },
+    {
+     "cue": "on Qiwa",
+     "do": "card slides to the Qiwa tile and a tick draws"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "licence",
+   "title": "Your licence",
+   "goal": "Your licence",
+   "pose": "char-omar-concern",
+   "layout": "marker 4 active; licence card with a countdown ring; small '⚠ Draft — pending B13' tag bottom-right",
+   "onScreenText": [
+    "Mumaris (SCFHS)",
+    "Under 30 days → may be suspended",
+    "⚠ Draft — pending B13"
+   ],
+   "assets": [],
+   "beats": [
+    {
+     "cue": "in Mumaris",
+     "do": "licence card flips in"
+    },
+    {
+     "cue": "thirty days",
+     "do": "countdown ring sweeps to 30 and turns magenta (warning colour, with ⚠ icon and words)"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  },
+  {
+   "id": "close",
+   "title": "Where to look",
+   "goal": "Where to look",
+   "pose": "char-omar-success",
+   "layout": "all four stops lit; Dr. Omar half-body right",
+   "onScreenText": [
+    "Card · Oracle · Qiwa · Mumaris"
+   ],
+   "assets": [
+    "char-omar-success.png"
+   ],
+   "beats": [
+    {
+     "cue": "all of this",
+     "do": "the four markers light in sequence"
+    },
+    {
+     "cue": "where to look",
+     "do": "fade to end card"
+    }
+   ],
+   "mustNotShow": [
+    "real staff, patients or screens",
+    "logos except the supplied PNG",
+    "any fact not in data/facts.md"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "clip": "ops-vid-journey",
+ "scored": false,
+ "pause_cue": "int-pause",
+ "question": "A patient calls a week later about a repeat medication. Who handles it?",
+ "question_audio": "narration/int_q_omar.mp3",
+ "options": [
+  {
+   "id": "ops",
+   "text": "Operations",
+   "reply": "Not this time. The visit is over, so it's My Care: insurance and medication follow-ups are their work.",
+   "reply_audio": "narration/int_ops_omar.mp3"
+  },
+  {
+   "id": "mycare",
+   "text": "My Care",
+   "correct": true,
+   "reply": "Right. Insurance and medication follow-ups are My Care work.",
+   "reply_audio": "narration/int_mycare_omar.mp3"
+  }
+ ]
+}
