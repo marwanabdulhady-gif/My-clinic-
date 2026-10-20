@@ -81,6 +81,11 @@
       "path": "01_health-and-safety-1/storyboard/assets/hs1-img-staffroom.jpg",
       "interim": false
     },
+    "hs1-img-challenge": {
+      "status": "file",
+      "path": "01_health-and-safety-1/storyboard/assets/hs1-img-challenge.jpg",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

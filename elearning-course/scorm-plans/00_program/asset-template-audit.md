@@ -57,14 +57,14 @@ Layouts with a mockup: L1 Title, L1 duo (companion intro), L2 Section opener, L3
 
 | Module | Assets on disk | Referenced, no file | Planned, not built | Orphans | SVG issues | Cards | Incomplete cards | ⚠ PENDING | Narration min | Two-voice screens | TTS label leaks |
 |---|---:|---|---|---|---|---:|---:|---:|---:|---|---|
-| 01 | 12 | — | 10 | hs1-img-staffroom | 0 | 54 | 0 | 42 | 16.4 | 2 | 0 |
-| 02 | 13 | — | 11 | — | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
-| 03 | 26 | — | 14 | — | 0 | 36 | 0 | 17 | 12.3 | 3 | 0 |
-| 04 | 8 | — | 1 | ops-img-scenes-2, ops-img-scenes-3, ops-img-scenes-4 | 0 | 13 | 0 | 18 | 3.3 | 1 | 0 |
-| 05 | 3 | — | 2 | — | 0 | 21 | 0 | 26 | 6.3 | 1 | 0 |
-| 06 | 1 | — | 2 | — | 0 | 15 | 0 | 23 | 4.7 | 1 | 0 |
-| 07 | 5 | — | 2 | — | 0 | 22 | 0 | 172 | 6.2 | 1 | 0 |
-| 08 | 1 | — | 2 | — | 0 | 20 | 0 | 31 | 5.1 | 0 | 0 |
+| 01 | 13 | — | 10 | hs1-img-challenge, hs1-img-staffroom | 0 | 54 | 0 | 42 | 16.4 | 2 | 0 |
+| 02 | 14 | — | 11 | hs2-img-challenge | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
+| 03 | 27 | — | 14 | hr-img-challenge | 0 | 36 | 0 | 17 | 12.3 | 3 | 0 |
+| 04 | 9 | — | 1 | ops-img-challenge, ops-img-scenes-2, ops-img-scenes-3, ops-img-scenes-4 | 0 | 13 | 0 | 18 | 3.3 | 1 | 0 |
+| 05 | 4 | — | 2 | rcma-img-challenge | 0 | 21 | 0 | 26 | 6.3 | 1 | 0 |
+| 06 | 2 | — | 2 | rcmb-img-challenge | 0 | 15 | 0 | 23 | 4.7 | 1 | 0 |
+| 07 | 6 | — | 2 | qsr-img-challenge | 0 | 22 | 0 | 172 | 6.2 | 1 | 0 |
+| 08 | 2 | — | 2 | ehr-img-challenge | 0 | 20 | 0 | 31 | 5.1 | 0 | 0 |
 
 Planned-but-not-built assets are intentional: they wait on SME/consent/DPO decisions recorded in each asset register.
 

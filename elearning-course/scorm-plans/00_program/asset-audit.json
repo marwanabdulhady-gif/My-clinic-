@@ -472,6 +472,7 @@
           "hs1-img-8plans",
           "hs1-img-alara",
           "hs1-img-arec",
+          "hs1-img-challenge",
           "hs1-img-corridor",
           "hs1-img-ert",
           "hs1-img-eyewash",
@@ -496,6 +497,7 @@
           "hs1-img-ghs-9"
         ],
         "orphans": [
+          "hs1-img-challenge",
           "hs1-img-staffroom"
         ],
         "svg_issues": []
@@ -667,6 +669,7 @@
           ]
         },
         "on_disk": [
+          "hs2-img-challenge",
           "hs2-img-drill-1",
           "hs2-img-drill-2",
           "hs2-img-drill-3",
@@ -695,7 +698,9 @@
           "hs2-img-ghs-9",
           "hs2-img-register"
         ],
-        "orphans": [],
+        "orphans": [
+          "hs2-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -944,6 +949,7 @@
           "hr-img-award-star",
           "hr-img-award-trophy",
           "hr-img-benefits-wheel",
+          "hr-img-challenge",
           "hr-img-dress-backoffice",
           "hr-img-dress-frontoffice",
           "hr-img-dress-medical",
@@ -976,7 +982,9 @@
           "hr-img-values-icons",
           "hr-pdf-quickref"
         ],
-        "orphans": [],
+        "orphans": [
+          "hr-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -1038,6 +1046,7 @@
         },
         "on_disk": [
           "ops-img-activities",
+          "ops-img-challenge",
           "ops-img-journey",
           "ops-img-mycare-chart",
           "ops-img-ops-chart",
@@ -1051,6 +1060,7 @@
           "ops-img-scenes-1"
         ],
         "orphans": [
+          "ops-img-challenge",
           "ops-img-scenes-2",
           "ops-img-scenes-3",
           "ops-img-scenes-4"
@@ -1107,6 +1117,7 @@
           ]
         },
         "on_disk": [
+          "rcma-img-challenge",
           "rcma-img-note-strong",
           "rcma-img-note-weak",
           "rcma-img-reviewer"
@@ -1116,7 +1127,9 @@
           "rcma-img-notes-1",
           "rcma-pdf-checklist"
         ],
-        "orphans": [],
+        "orphans": [
+          "rcma-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -1157,14 +1170,17 @@
           ]
         },
         "on_disk": [
-          "rcmb-img-benefit-icons"
+          "rcmb-img-benefit-icons",
+          "rcmb-img-challenge"
         ],
         "missing_files": [],
         "planned_not_built": [
           "rcmb-pdf-ebp",
           "rcmb-tbl-log"
         ],
-        "orphans": [],
+        "orphans": [
+          "rcmb-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -1259,6 +1275,7 @@
           ]
         },
         "on_disk": [
+          "qsr-img-challenge",
           "qsr-img-iceberg",
           "qsr-img-matrix",
           "qsr-img-pillars",
@@ -1270,7 +1287,9 @@
           "qsr-img-quote",
           "qsr-vid-speakup"
         ],
-        "orphans": [],
+        "orphans": [
+          "qsr-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -1309,14 +1328,17 @@
           ]
         },
         "on_disk": [
-          "ehr-capture-sheet"
+          "ehr-capture-sheet",
+          "ehr-img-challenge"
         ],
         "missing_files": [],
         "planned_not_built": [
           "ehr-pdf-quickref",
           "ehr-vid-walkthrough"
         ],
-        "orphans": [],
+        "orphans": [
+          "ehr-img-challenge"
+        ],
         "svg_issues": []
       },
       "narration": {

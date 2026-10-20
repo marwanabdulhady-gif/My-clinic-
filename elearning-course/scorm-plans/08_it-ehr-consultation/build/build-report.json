@@ -13,16 +13,16 @@
   ],
   "module_colour": "#006E78",
   "build": {
-    "project_id": "proj_01M5BV9PRF6JSB7MBPEE1SF11K",
-    "job_id": "job_01M5BV9PTJAYYMNRMFC5FCAGGB",
+    "project_id": "proj_01M5BVSA3M0VET4X80EKAPSGDB",
+    "job_id": "job_01M5BVSA5N9FY3QXBQ70TZMXJD",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/UHKzSyKHRe7XnWV5qq9OMkN4w8tr-s4L",
+    "download_url": "http://localhost/scorm/files/d4YVNICKC76kdYS4pR4NdWfhU38hz2Gu",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BV9PRF6JSB7MBPEE1SF11K",
+    "project_id": "proj_01M5BVSA3M0VET4X80EKAPSGDB",
     "strict": false,
     "error_count": 0,
     "warn_count": 3,
@@ -63,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_08_EHR_v0.1-draft_1.2.zip",
-    "bytes": 724530
+    "bytes": 813917
   },
   "preview": "preview.html"
 }

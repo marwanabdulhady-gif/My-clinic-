@@ -40,6 +40,7 @@ MC_03_WelcomeOnBoard_v1.0_1.2.zip
     ├── hr-img-award-trophy.*
     ├── hr-img-benefits-wheel.*
     ├── hr-img-branches.*
+    ├── hr-img-challenge.*
     ├── hr-img-dress.*
     ├── hr-img-dress-backoffice.*
     ├── hr-img-dress-frontoffice.*

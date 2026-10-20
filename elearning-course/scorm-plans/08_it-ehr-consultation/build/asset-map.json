@@ -171,6 +171,11 @@
       "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-6.svg",
       "interim": false
     },
+    "ehr-img-challenge": {
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/ehr-img-challenge.jpg",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

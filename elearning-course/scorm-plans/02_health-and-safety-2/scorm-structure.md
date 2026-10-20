@@ -27,6 +27,7 @@ MC_02_SafetyLab_v1.0_1.2.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── hs2-img-challenge.*
     ├── hs2-img-codes.*
     ├── hs2-img-drill-1.*
     ├── hs2-img-drill-2.*

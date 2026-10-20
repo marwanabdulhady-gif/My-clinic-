@@ -659,6 +659,34 @@
    ]
   },
   {
+   "id": "hr-img-challenge",
+   "media": "image",
+   "route": "ai-image",
+   "status": "review",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-challenge.png",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "screens": [
+    "hr-00m"
+   ],
+   "brief": "",
+   "alt_text": "",
+   "gate": "",
+   "prompt": "hr-img-challenge. Module highlight colour #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "acceptance": [
+    "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
+    "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
+    "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
+    "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
+   ],
+   "made_by": "Canva generate-image, prompted by Claude; supplied by the owner 2026-10-20",
+   "tool": "Canva (Magic Media)",
+   "model": null,
+   "notes": "Canva media id MAHYhfZCZxk; cropped to the illustrated area for the challenge brief; JPEG q86."
+  },
+  {
    "id": "hr-img-7c-icons",
    "media": "image",
    "route": "own-svg",

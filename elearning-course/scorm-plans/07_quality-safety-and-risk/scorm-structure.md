@@ -27,6 +27,7 @@ MC_07_ClinicalGov_v1.0_1.2.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── qsr-img-challenge.*
     ├── qsr-img-iceberg.*
     ├── qsr-img-matrix.*
     ├── qsr-img-pillars.*

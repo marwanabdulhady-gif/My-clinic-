@@ -28,6 +28,7 @@ MC_05_RCM-A_v1.0_1.2.zip
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
     ├── -strong.*
+    ├── rcma-img-challenge.*
     ├── rcma-img-note-strong.*
     ├── rcma-img-note-weak.*
     ├── rcma-img-notes-1.*

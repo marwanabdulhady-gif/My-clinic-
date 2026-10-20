@@ -28,6 +28,7 @@ MC_08_EHR_v1.0_1.2.zip
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
     ├── ehr-capture-sheet.*
+    ├── ehr-img-challenge.*
     ├── ehr-pdf-quickref.*
     ├── ehr-shot-dx-1.*
     ├── ehr-shot-dx-2.*

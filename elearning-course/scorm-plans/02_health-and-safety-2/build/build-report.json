@@ -13,16 +13,16 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M5BV999K2V4K163QZVMMY181",
-    "job_id": "job_01M5BV99BYBWM6X1DJF1JGQDCB",
+    "project_id": "proj_01M5BVRYXQTABG9YW0CDB0Z6F7",
+    "job_id": "job_01M5BVRZ09FVNTATMM6X5W015Q",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/zYUYYegsf20pVLfS-iHl6eFsO4WfH_9y",
+    "download_url": "http://localhost/scorm/files/sO44iYrXKSevcO7nfVdV28QiKGSr86Bk",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BV999K2V4K163QZVMMY181",
+    "project_id": "proj_01M5BVRYXQTABG9YW0CDB0Z6F7",
     "strict": false,
     "error_count": 0,
     "warn_count": 6,
@@ -81,7 +81,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_02_SafetyLab_v0.1-draft_1.2.zip",
-    "bytes": 4626658
+    "bytes": 4535040
   },
   "preview": "preview.html"
 }

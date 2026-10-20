@@ -30,6 +30,7 @@ MC_01_FMS_v1.0_1.2.zip
     ├── hs1-img-8plans.*
     ├── hs1-img-alara.*
     ├── hs1-img-arec.*
+    ├── hs1-img-challenge.*
     ├── hs1-img-codes-chips.*
     ├── hs1-img-corridor.*
     ├── hs1-img-ert.*

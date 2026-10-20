@@ -176,6 +176,11 @@
       "path": "03_hr-employee-induction/storyboard/assets/hr-img-exit-icons.svg",
       "interim": false
     },
+    "hr-img-challenge": {
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-challenge.jpg",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

@@ -28,6 +28,7 @@ MC_06_RCM-B_v1.0_1.2.zip
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
     ├── rcmb-img-benefit-icons.*
+    ├── rcmb-img-challenge.*
     ├── rcmb-pdf-ebp.*
     ├── rcmb-tbl-log.*
     ├── char-noor-avatar-neutral.png

@@ -28,6 +28,7 @@ MC_04_OpsMyCare_v1.0_1.2.zip
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
     ├── ops-img-activities.*
+    ├── ops-img-challenge.*
     ├── ops-img-journey.*
     ├── ops-img-mycare-chart.*
     ├── ops-img-ops-chart.*
