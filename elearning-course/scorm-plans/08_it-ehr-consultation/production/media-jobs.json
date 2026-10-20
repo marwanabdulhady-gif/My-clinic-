@@ -8,9 +8,12 @@
    "id": "ehr-shot-list",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-list.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-010"
    ],
@@ -28,9 +31,12 @@
    "id": "ehr-shot-form",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-form.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-010",
     "ehr-011"
@@ -129,9 +135,12 @@
    "id": "ehr-shot-dx-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-020"
    ],
@@ -149,9 +158,12 @@
    "id": "ehr-shot-dx-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-020"
    ],
@@ -169,9 +181,12 @@
    "id": "ehr-shot-dx-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-020"
    ],
@@ -189,9 +204,12 @@
    "id": "ehr-shot-dx-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-4.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-020"
    ],
@@ -209,9 +227,12 @@
    "id": "ehr-shot-dx-5",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-dx-5.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-020"
    ],
@@ -229,9 +250,12 @@
    "id": "ehr-shot-order-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -249,9 +273,12 @@
    "id": "ehr-shot-order-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -269,9 +296,12 @@
    "id": "ehr-shot-order-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -289,9 +319,12 @@
    "id": "ehr-shot-order-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-4.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -309,9 +342,12 @@
    "id": "ehr-shot-order-5",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-5.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -329,9 +365,12 @@
    "id": "ehr-shot-order-6",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-order-6.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-031"
    ],
@@ -349,9 +388,12 @@
    "id": "ehr-shot-wizard-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-032"
    ],
@@ -369,9 +411,12 @@
    "id": "ehr-shot-wizard-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-032"
    ],
@@ -389,9 +434,12 @@
    "id": "ehr-shot-wizard-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-032"
    ],
@@ -409,9 +457,12 @@
    "id": "ehr-shot-wizard-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-wizard-4.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-032"
    ],
@@ -429,9 +480,12 @@
    "id": "ehr-shot-summary-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-040"
    ],
@@ -449,9 +503,12 @@
    "id": "ehr-shot-summary-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-040"
    ],
@@ -469,9 +526,12 @@
    "id": "ehr-shot-summary-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-summary-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-040"
    ],
@@ -489,9 +549,12 @@
    "id": "ehr-shot-sms-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-041"
    ],
@@ -509,9 +572,12 @@
    "id": "ehr-shot-sms-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-041"
    ],
@@ -529,9 +595,12 @@
    "id": "ehr-shot-sms-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-041"
    ],
@@ -549,9 +618,12 @@
    "id": "ehr-shot-sms-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-4.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-041"
    ],
@@ -569,9 +641,12 @@
    "id": "ehr-shot-sms-5",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-sms-5.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-041"
    ],
@@ -589,9 +664,12 @@
    "id": "ehr-shot-ref-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-1.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -609,9 +687,12 @@
    "id": "ehr-shot-ref-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-2.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -629,9 +710,12 @@
    "id": "ehr-shot-ref-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-3.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -649,9 +733,12 @@
    "id": "ehr-shot-ref-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-4.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -669,9 +756,12 @@
    "id": "ehr-shot-ref-5",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-5.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -689,9 +779,12 @@
    "id": "ehr-shot-ref-6",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-shot-ref-6.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-050"
    ],
@@ -709,9 +802,12 @@
    "id": "ehr-pdf-quickref",
    "media": "image",
    "route": "own-pdf",
-   "status": "todo",
+   "status": "review",
    "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-pdf-quickref.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "ehr-091"
    ],
@@ -727,10 +823,10 @@
   },
   {
    "id": "ehr-vid-walkthrough",
-   "media": "image",
-   "route": "own-svg",
-   "status": "todo",
-   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-walkthrough.svg",
+   "media": "video",
+   "route": "blocked-mp4-vtt",
+   "status": "blocked",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-walkthrough.mp4",
    "size_px": null,
    "screens": [
     "ehr-060"

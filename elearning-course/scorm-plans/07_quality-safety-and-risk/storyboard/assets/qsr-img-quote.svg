@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Opening quotation mark graphic</title><desc id="desc">My Clinic course diagram. Text remains live SVG text where needed; decorative icon labels stay in HTML.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+.h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}
+.small{font-size:22px;font-weight:600}
+.line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thinline{stroke:#003867;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}
+.accent{fill:#008C99}
+.purple{fill:#652D8C}
+.magenta{fill:#9D3293}
+.burg{fill:#7C0041}
+</style><rect x="120" y="180" width="430" height="520" rx="28" fill="#F4F7FA" stroke="#D9E1E8" stroke-width="3"/><text x="260" y="500" font-size="340" font-weight="800" fill="#652D8C" font-family="Georgia,serif">“</text><rect x="600" y="180" width="8" height="520" fill="#003867"/><text x="80" y="95" class="h">Patient-safety quote</text><text x="80" y="138" class="b">Decorative opening quotation graphic; quote text is typeset by the course layer.</text></svg>

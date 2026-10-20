@@ -27,8 +27,17 @@ MC_03_WelcomeOnBoard_v1.0_1.2.zip
 ├── runtime/
 │   └── scorm-again.min.js     # SCORM API wrapper (1.2 and 2004)
 └── assets/
+    ├── hr-img-7c-capabilities.*
+    ├── hr-img-7c-care.*
+    ├── hr-img-7c-clinicians.*
+    ├── hr-img-7c-closer.*
+    ├── hr-img-7c-cost.*
+    ├── hr-img-7c-culture.*
+    ├── hr-img-7c-cure.*
     ├── hr-img-7c-icons.*
     ├── hr-img-award-icons.*
+    ├── hr-img-award-star.*
+    ├── hr-img-award-trophy.*
     ├── hr-img-benefits-wheel.*
     ├── hr-img-branches.*
     ├── hr-img-dress.*

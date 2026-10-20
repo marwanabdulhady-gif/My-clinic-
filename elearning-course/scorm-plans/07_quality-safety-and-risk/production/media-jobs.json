@@ -28,7 +28,7 @@
    "id": "qsr-img-pillars",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "07_quality-safety-and-risk/storyboard/assets/qsr-img-pillars.png",
    "size_px": [
     1920,
@@ -39,7 +39,7 @@
    ],
    "brief": "Six pillars with numbered icons (ID band, speech bubble, red-label vial, surgical checklist, hands, yellow band) — no NotebookLM frames reused",
    "alt_text": "Six patient safety goals as six pillars.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "Create six separate simple pictogram illustrations arranged as a balanced set of six vertical pillars, with no labels or numerals: (1) patient identification wristband, (2) speech bubble for effective communication, (3) medicine vial with a small safety check, (4) surgical checklist, (5) hands supporting a patient, (6) a clinic quality-improvement cycle represented by a circular arrow. Do not assert that these icons alone define the official patient-safety goals. Leave every label to the editable course layer. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "hotspots": {
     "rule": "Every listed item must be clearly visible, separate and at least 48 px at 960×540. After generating, map one box per region into production/hotspots/<asset-id>.json (tools/map_hotspots.py) — coordinates are not guessed in the storyboard.",
@@ -132,7 +132,7 @@
    "id": "qsr-img-wristbands",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "07_quality-safety-and-risk/storyboard/assets/qsr-img-wristbands.png",
    "size_px": [
     1920,
@@ -143,7 +143,7 @@
    ],
    "brief": "Two wristbands with the same name, different MRN and DOB (fictional data)",
    "alt_text": "Two patient wristbands with the same name and different record numbers.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "Two plain hospital wristbands side by side for a fictional patient-identification teaching case. The bands should look similar, but contain only blank fields with no visible text, letters, numbers, barcodes, DOB, MRN, name or logo. Leave the exact identifiers for a separate editable layer after SME approval. No person or body part is shown. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
@@ -196,7 +196,7 @@
    "id": "qsr-img-quote",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "07_quality-safety-and-risk/storyboard/assets/qsr-img-quote.svg",
    "size_px": null,
    "screens": [

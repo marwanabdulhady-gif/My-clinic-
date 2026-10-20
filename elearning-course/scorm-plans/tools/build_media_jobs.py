@@ -65,6 +65,8 @@ def register(mdir: Path) -> dict[str, dict]:
 
 def route_for(aid: str, reg: dict) -> str:
     r, k = reg.get("route", "").lower(), reg.get("kind", "").lower()
+    if "mp4" in k or "vtt" in k or "video" in k or "mp4" in r or "vtt" in r:
+        return "blocked-mp4-vtt"
     if "oracle" in aid or "ehr-shot" in aid:
         return "capture"          # test-environment screenshot, never generated
     if "leaders" in aid:
@@ -107,12 +109,16 @@ def usage(spec: dict) -> dict[str, list[dict]]:
 def image_job(aid: str, mdir: Path, reg: dict, uses: list[dict], amap: dict, suffix: str, pr: dict, colour: str) -> dict:
     route = route_for(aid, reg)
     hotspot = [u for u in uses if u.get("regions")]
+    exists = any((mdir / "storyboard" / "assets" / f"{aid}{e}").exists() for e in (".svg", ".png", ".jpg"))
+    blocked = route == "blocked-mp4-vtt"
     job = {
-        "id": aid, "media": "image", "route": route,
-        "status": "done" if (amap.get("status") == "file" and not amap.get("interim"))
-                  or any((mdir / "storyboard" / "assets" / f"{aid}{e}").exists() for e in (".svg", ".png", ".jpg")) else "todo",
-        "target_file": f"{mdir.name}/storyboard/assets/{aid}{'.svg' if route == 'own-svg' else '.png'}",
-        "size_px": [1920, 1080] if route in {"ai-image", "client-photo"} else None,
+        "id": aid, "media": "video" if blocked else "image", "route": route,
+        "status": "blocked" if blocked else (
+            "done" if (amap.get("status") == "file" and not amap.get("interim")) or exists else "todo"
+        ),
+        "target_file": (f"{mdir.name}/storyboard/assets/{aid}.mp4" if blocked
+                        else f"{mdir.name}/storyboard/assets/{aid}{'.svg' if route == 'own-svg' else '.png'}"),
+        "size_px": None if blocked or route == "own-svg" else [1920, 1080],
         "screens": sorted({u["screen_id"] for u in uses}) or [s.strip("` ") for s in reg.get("screens", "").split(",") if s.strip()],
         "brief": reg.get("brief", ""), "alt_text": reg.get("alt", ""),
         "gate": reg.get("gate") or amap.get("gate", ""),

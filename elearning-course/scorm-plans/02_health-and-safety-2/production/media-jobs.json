@@ -111,7 +111,7 @@
    "id": "hs2-img-drill-1",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-1.png",
    "size_px": [
     1920,
@@ -129,13 +129,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Smoke in a consultation room with an unnamed patient.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-img-drill-2",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-2.png",
    "size_px": [
     1920,
@@ -153,13 +158,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Call point and phone; call-script wording is editable HTML after approval.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-img-drill-3",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-3.png",
    "size_px": [
     1920,
@@ -177,13 +187,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Oxygen cylinder and alcohol rub; containment cues follow the signed node list.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-img-drill-4",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-4.png",
    "size_px": [
     1920,
@@ -201,13 +216,19 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Small bin fire versus spreading fire; depict both states in separate editable layers.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
+   "notes": "Draft needs SME review: image depicts a small bin fire and spreading flames, but the brief requires two states in separate editable layers; this generated PNG cannot provide editable layers."
   },
   {
    "id": "hs2-img-drill-5",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-5.png",
    "size_px": [
     1920,
@@ -225,13 +246,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Stairwell with evacuation chair and an unnamed wheelchair user; no real floor plan.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-img-drill-6",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-6.png",
    "size_px": [
     1920,
@@ -249,7 +275,12 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Generic assembly point; local names and all-clear wording remain editable.. Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-img-floorplan",
@@ -275,7 +306,7 @@
    "id": "hs2-img-extinguisher",
    "media": "image",
    "route": "client-photo",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-extinguisher.png",
    "size_px": [
     1920,
@@ -366,7 +397,7 @@
    "id": "hs2-img-kit-chem",
    "media": "image",
    "route": "client-photo",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-kit-chem.png",
    "size_px": [
     1920,
@@ -389,7 +420,7 @@
    "id": "hs2-img-kit-bio",
    "media": "image",
    "route": "client-photo",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-kit-bio.png",
    "size_px": [
     1920,
@@ -412,7 +443,7 @@
    "id": "hs2-img-codes",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-codes.svg",
    "size_px": null,
    "screens": [
@@ -432,7 +463,7 @@
    "id": "hs2-img-register",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-register.svg",
    "size_px": null,
    "screens": [
@@ -476,7 +507,7 @@
    "id": "hs2-img-ghs-1",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-1.svg",
    "size_px": null,
    "screens": [
@@ -496,7 +527,7 @@
    "id": "hs2-img-ghs-2",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-2.svg",
    "size_px": null,
    "screens": [
@@ -516,7 +547,7 @@
    "id": "hs2-img-ghs-3",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-3.svg",
    "size_px": null,
    "screens": [
@@ -536,7 +567,7 @@
    "id": "hs2-img-ghs-4",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-4.svg",
    "size_px": null,
    "screens": [
@@ -556,7 +587,7 @@
    "id": "hs2-img-ghs-5",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-5.svg",
    "size_px": null,
    "screens": [
@@ -576,7 +607,7 @@
    "id": "hs2-img-ghs-6",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-6.svg",
    "size_px": null,
    "screens": [
@@ -596,7 +627,7 @@
    "id": "hs2-img-ghs-7",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-7.svg",
    "size_px": null,
    "screens": [
@@ -616,7 +647,7 @@
    "id": "hs2-img-ghs-8",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-8.svg",
    "size_px": null,
    "screens": [
@@ -636,7 +667,7 @@
    "id": "hs2-img-ghs-9",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-ghs-9.svg",
    "size_px": null,
    "screens": [
@@ -656,7 +687,7 @@
    "id": "hs2-img-spill-photo",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "02_health-and-safety-2/storyboard/assets/hs2-img-spill-photo.png",
    "size_px": [
     1920,
@@ -674,7 +705,12 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "Spill with a measuring cue (e.g. a 1 L bottle on its side, more than half gone). Module highlight colour #008C99.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hs2-aud-000",

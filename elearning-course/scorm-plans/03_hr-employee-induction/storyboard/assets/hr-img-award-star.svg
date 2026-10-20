@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Award icon star</title><desc id="desc">My Clinic course diagram. Text remains live SVG text where needed; decorative icon labels stay in HTML.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+.h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}
+.small{font-size:22px;font-weight:600}
+.line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thinline{stroke:#003867;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}
+.accent{fill:#008C99}
+.purple{fill:#652D8C}
+.magenta{fill:#9D3293}
+.burg{fill:#7C0041}
+</style><rect x="580" y="205" width="440" height="480" rx="40" class="card"/><g transform="translate(800 430)" fill="none" stroke="#652D8C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M0 -50l14 34 36 4 -28 24 8 38 -30-20-30 20 8-38-28-24 36-4z"/></g><text x="80" y="95" class="h">Award card icon</text><text x="80" y="138" class="b">Decorative card-front icon; award title stays in HTML.</text></svg>

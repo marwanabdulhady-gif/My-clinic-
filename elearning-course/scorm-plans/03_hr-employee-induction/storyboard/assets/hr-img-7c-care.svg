@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">7 Cs icon: care</title><desc id="desc">My Clinic course diagram. Text remains live SVG text where needed; decorative icon labels stay in HTML.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+.h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}
+.small{font-size:22px;font-weight:600}
+.line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thinline{stroke:#003867;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}
+.accent{fill:#008C99}
+.purple{fill:#652D8C}
+.magenta{fill:#9D3293}
+.burg{fill:#7C0041}
+</style><rect x="520" y="190" width="560" height="560" rx="40" class="card"/><g transform="translate(800 460)" fill="none" stroke="#652D8C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M0 34c-34-22-52-40-52-56a24 24 0 0 1 46-10 24 24 0 0 1 46 10C40 -6 22 12 0 34z" fill="#652D8C" stroke="#652D8C"/></g><text x="80" y="95" class="h">Seven Cs icon</text><text x="80" y="138" class="b">Single decorative line icon; card label remains HTML.</text><text x="800" y="820" class="b" text-anchor="middle">Icon placeholder pending SME confirmation of the final 7 Cs wording.</text></svg>

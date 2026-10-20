@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">11 emergency code colour chips.</title><desc id="desc">My Clinic course diagram. Text remains live SVG text where needed; decorative icon labels stay in HTML.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+.h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}
+.small{font-size:22px;font-weight:600}
+.line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thinline{stroke:#003867;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}
+.accent{fill:#008C99}
+.purple{fill:#652D8C}
+.magenta{fill:#9D3293}
+.burg{fill:#7C0041}
+</style><text x="80" y="95" class="h">Emergency code colour chips</text><text x="80" y="138" class="b">Colour chips only — code names and extensions are editable HTML.</text><rect x="370" y="230" width="260" height="120" rx="22" fill="#D8262F" stroke="#003867" stroke-width="4"/><rect x="670" y="230" width="260" height="120" rx="22" fill="#F28C28" stroke="#003867" stroke-width="4"/><rect x="970" y="230" width="260" height="120" rx="22" fill="#FFFFFF" stroke="#003867" stroke-width="4"/><rect x="978" y="238" width="244" height="104" rx="16" fill="none" stroke="#003867" stroke-width="3"/><rect x="370" y="386" width="260" height="120" rx="22" fill="#222222" stroke="#003867" stroke-width="4"/><rect x="670" y="386" width="260" height="120" rx="22" fill="#F472B6" stroke="#003867" stroke-width="4"/><rect x="970" y="386" width="260" height="120" rx="22" fill="#1E5AA8" stroke="#003867" stroke-width="4"/><rect x="370" y="542" width="260" height="120" rx="22" fill="#FFE066" stroke="#003867" stroke-width="4"/><rect x="378" y="550" width="244" height="104" rx="16" fill="none" stroke="#003867" stroke-width="3"/><rect x="670" y="542" width="260" height="120" rx="22" fill="#8B5A2B" stroke="#003867" stroke-width="4"/><rect x="970" y="542" width="260" height="120" rx="22" fill="#9CA3AF" stroke="#003867" stroke-width="4"/><rect x="370" y="698" width="260" height="120" rx="22" fill="#22C55E" stroke="#003867" stroke-width="4"/><rect x="670" y="698" width="260" height="120" rx="22" fill="#008C99" stroke="#003867" stroke-width="4"/></svg>

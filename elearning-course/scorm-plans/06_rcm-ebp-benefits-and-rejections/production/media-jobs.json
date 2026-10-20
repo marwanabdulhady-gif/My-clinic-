@@ -29,7 +29,7 @@
    "id": "rcmb-tbl-log",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-tbl-log.svg",
    "size_px": null,
    "screens": [
@@ -50,9 +50,12 @@
    "id": "rcmb-pdf-ebp",
    "media": "image",
    "route": "own-pdf",
-   "status": "todo",
+   "status": "review",
    "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-pdf-ebp.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "rcmb-091"
    ],

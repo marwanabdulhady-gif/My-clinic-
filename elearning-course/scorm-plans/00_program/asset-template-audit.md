@@ -57,14 +57,14 @@ Layouts with a mockup: L1 Title, L1 duo (companion intro), L2 Section opener, L3
 
 | Module | Assets on disk | Referenced, no file | Planned, not built | Orphans | SVG issues | Cards | Incomplete cards | ⚠ PENDING | Narration min | Two-voice screens | TTS label leaks |
 |---|---:|---|---|---|---|---:|---:|---:|---:|---|---|
-| 01 | 7 | — | 14 | — | 0 | 54 | 0 | 42 | 16.4 | 2 | 0 |
-| 02 | 3 | — | 21 | — | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
-| 03 | 9 | — | 31 | — | 0 | 36 | 0 | 17 | 12.3 | 3 | 0 |
-| 04 | 4 | — | 2 | — | 0 | 13 | 0 | 18 | 4.4 | 1 | 0 |
-| 05 | 3 | — | 2 | — | 0 | 21 | 0 | 26 | 6.3 | 1 | 0 |
-| 06 | 1 | — | 2 | — | 0 | 15 | 0 | 23 | 4.7 | 1 | 0 |
-| 07 | 3 | — | 4 | — | 0 | 22 | 0 | 172 | 6.2 | 1 | 0 |
-| 08 | 1 | — | 2 | — | 0 | 20 | 0 | 31 | 5.1 | 0 | 0 |
+| 01 | 22 | — | 0 | hs1-img-staffroom | 0 | 54 | 0 | 42 | 16.4 | 2 | 0 |
+| 02 | 24 | — | 0 | — | 0 | 26 | 0 | 28 | 6.6 | 2 | 0 |
+| 03 | 36 | — | 4 | — | 0 | 36 | 0 | 17 | 12.3 | 3 | 0 |
+| 04 | 8 | — | 1 | ops-img-scenes-2, ops-img-scenes-3, ops-img-scenes-4 | 0 | 13 | 0 | 18 | 3.3 | 1 | 0 |
+| 05 | 4 | — | 1 | — | 0 | 21 | 0 | 26 | 6.3 | 1 | 0 |
+| 06 | 3 | — | 0 | — | 0 | 15 | 0 | 23 | 4.7 | 1 | 0 |
+| 07 | 6 | — | 1 | — | 0 | 22 | 0 | 172 | 6.2 | 1 | 0 |
+| 08 | 35 | — | 1 | ehr-shot-dx-1, ehr-shot-dx-2, ehr-shot-dx-3, ehr-shot-dx-4, ehr-shot-dx-5, ehr-shot-form, ehr-shot-form-1, ehr-shot-list, ehr-shot-list-1, ehr-shot-order-1, ehr-shot-order-2, ehr-shot-order-3, ehr-shot-order-4, ehr-shot-order-5, ehr-shot-order-6, ehr-shot-ref-1, ehr-shot-ref-2, ehr-shot-ref-3, ehr-shot-ref-4, ehr-shot-ref-5, ehr-shot-ref-6, ehr-shot-sms-1, ehr-shot-sms-2, ehr-shot-sms-3, ehr-shot-sms-4, ehr-shot-sms-5, ehr-shot-summary-1, ehr-shot-summary-2, ehr-shot-summary-3, ehr-shot-wizard-1, ehr-shot-wizard-2, ehr-shot-wizard-3, ehr-shot-wizard-4 | 0 | 20 | 0 | 31 | 5.1 | 0 | 0 |
 
 Planned-but-not-built assets are intentional: they wait on SME/consent/DPO decisions recorded in each asset register.
 

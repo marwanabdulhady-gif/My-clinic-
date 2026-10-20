@@ -76,9 +76,12 @@
    "id": "rcma-pdf-checklist",
    "media": "image",
    "route": "own-pdf",
-   "status": "todo",
+   "status": "review",
    "target_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-pdf-checklist.png",
-   "size_px": null,
+   "size_px": [
+    1920,
+    1080
+   ],
    "screens": [
     "rcma-091"
    ],
