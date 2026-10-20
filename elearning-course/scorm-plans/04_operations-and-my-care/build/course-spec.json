@@ -44,31 +44,55 @@
    "name": "role_label",
    "type": "text",
    "default": "team member"
+  },
+  {
+   "name": "xp",
+   "type": "number",
+   "default": 0
+  }
+ ],
+ "points_var": "xp",
+ "levels": [
+  {
+   "name": "Guide",
+   "min_points": 0
+  },
+  {
+   "name": "Navigator",
+   "min_points": 18
+  },
+  {
+   "name": "Coordinator",
+   "min_points": 37
+  },
+  {
+   "name": "Journey Expert",
+   "min_points": 52
   }
  ],
  "outline": [
   {
    "id": "ops-s1",
    "kind": "section",
-   "title": "The patient journey",
+   "title": "Mission 1 · The patient journey",
    "unlock_rule": "free"
   },
   {
    "id": "ops-s2",
    "kind": "section",
-   "title": "Operations",
+   "title": "Mission 2 · Operations",
    "unlock_rule": "free"
   },
   {
    "id": "ops-s3",
    "kind": "section",
-   "title": "My Care",
+   "title": "Mission 3 · My Care",
    "unlock_rule": "free"
   },
   {
    "id": "ops-s4",
    "kind": "section",
-   "title": "Practice: right team, first time",
+   "title": "Mission 4 · Practice: right team, first time",
    "unlock_rule": "free"
   }
  ],
@@ -114,7 +138,7 @@
     {
      "id": "front",
      "text_html": "<strong>Front office</strong><br><small>Reception, call centre, PXOs</small>",
-     "goto_screen_id": "ops-001p",
+     "goto_screen_id": "ops-00m",
      "set_vars": [
       {
        "var": "role",
@@ -131,7 +155,7 @@
     {
      "id": "mycare",
      "text_html": "<strong>My Care</strong><br><small>Coordinators, onboarding, home care</small>",
-     "goto_screen_id": "ops-001p",
+     "goto_screen_id": "ops-00m",
      "set_vars": [
       {
        "var": "role",
@@ -148,7 +172,7 @@
     {
      "id": "clinical",
      "text_html": "<strong>Clinical</strong><br><small>Physicians, nurses, allied health</small>",
-     "goto_screen_id": "ops-001p",
+     "goto_screen_id": "ops-00m",
      "set_vars": [
       {
        "var": "role",
@@ -165,7 +189,7 @@
     {
      "id": "support",
      "text_html": "<strong>Support</strong><br><small>Admin, RCM, IT, facilities</small>",
-     "goto_screen_id": "ops-001p",
+     "goto_screen_id": "ops-00m",
      "set_vars": [
       {
        "var": "role",
@@ -182,7 +206,7 @@
     {
      "id": "all",
      "text_html": "<strong>Show me every role's tips</strong>",
-     "goto_screen_id": "ops-001p",
+     "goto_screen_id": "ops-00m",
      "set_vars": [
       {
        "var": "role",
@@ -197,12 +221,26 @@
      ]
     }
    ],
-   "default_goto": "ops-001p",
+   "default_goto": "ops-00m",
    "points": 0,
    "objective_ids": [],
    "section": "The patient journey",
    "node_id": "ops-s1",
    "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "content_slide",
+   "id": "ops-00m",
+   "title": "Right team, first time",
+   "layout": "text_media",
+   "body_html": "<h3>Can you get every patient to the right team, first time?</h3><p class=\"mc-missions\"><strong>4 missions:</strong> <strong>1</strong> The patient journey · <strong>2</strong> Operations · <strong>3</strong> My Care · <strong>4</strong> Practice: right team, first time</p><p class=\"mc-xp-rules\"><strong>Earn XP:</strong> +10 for each activity you get right · +5 for each quick check · +2 for each screen you explore. <strong>Ranks:</strong> Guide → Navigator → Coordinator → Journey Expert.</p><p class=\"mc-note\">XP is just for you: it never counts towards your pass mark.</p>",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Gamification (tools/gamify.py, decision D18).",
+   "media_asset_id": "char-omar-explaining",
+   "media_alt": "Illustration for the right team, first time.",
+   "section": "The patient journey",
+   "node_id": "ops-s1"
   },
   {
    "type": "exploration",
@@ -229,7 +267,14 @@
    "node_id": "ops-s1",
    "points": 0,
    "objective_ids": [],
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "hotspot",
@@ -320,7 +365,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Hotspot circles use the ops-img-journey.svg pixel space (1600 × 900): stage circles cx 220/450/680/910/1140/1370, cy 450, r 72. Stage-lead assignments derived from the slide 2/5 activity lists ⚠ Draft — pending B7. No companion.",
-   "narration_text": "Dr. Omar: Follow the patient from booking through follow-up. Open each stage and notice when Operations, My Care, or both are involved. The sequence helps you see how separate teams contribute to one visit."
+   "narration_text": "Dr. Omar: Follow the patient from booking through follow-up. Open each stage and notice when Operations, My Care, or both are involved. The sequence helps you see how separate teams contribute to one visit.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -378,7 +430,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "7 Operations activities from slide 2 (verified-facts register). The recovery example is from the card; the other one-line examples restate the activity and need SME confirmation (Director of Operations). Overlap with My Care on inquiries/complaints ⚠ Draft — pending B7. ops-img-activities is the planned shared line-icon set (one icon id until the 14 icons are split). No companion.",
-   "narration_text": "Dr. Omar: Operations supports the day-to-day environment, monitors KPIs, and helps recover service when something goes wrong. As you explore these activities, consider what each one means for the patient’s experience and for colleagues working across the clinic. Some issues may need attention from another team, so be clear about the part you own and when a handoff is needed."
+   "narration_text": "Dr. Omar: Operations supports the day-to-day environment, monitors KPIs, and helps recover service when something goes wrong. As you explore these activities, consider what each one means for the patient’s experience and for colleagues working across the clinic. Some issues may need attention from another team, so be clear about the part you own and when a handoff is needed.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "labeled_diagram",
@@ -426,7 +485,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Label coordinates are 0–1000 normalised from the box centres in ops-img-ops-chart.svg (1600 × 900). The lower tiers (PX Managers, PXOs/FMs per site) are not drawn in the draft SVG; they are listed as text in prompt_html. Reporting lines ⚠ Draft — pending B1; headcounts dropped (B4); no names on screen (B6 / D5). No companion.",
-   "narration_text": "Dr. Omar: Use the chart to see how Operations is organised by role. Names can change, so the directory is the place to check current contacts. When a task needs support, identify the role involved and use the current directory rather than relying on a name you remember."
+   "narration_text": "Dr. Omar: Use the chart to see how Operations is organised by role. Names can change, so the directory is the place to check current contacts. When a task needs support, identify the role involved and use the current directory rather than relying on a name you remember.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -462,7 +528,17 @@
    "node_id": "ops-s2",
    "points": 0,
    "objective_ids": [],
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 5
+    }
+   ],
+   "evidence_screen_ids": [
+    "ops-011"
+   ]
   },
   {
    "type": "accordion",
@@ -520,7 +596,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "7 My Care activities from slide 5 (verified-facts register). DMP/CHP expansions ⚠ Draft — pending B3 (not invented). Inquiries/complaints overlap ⚠ Draft — pending B7. One-line descriptions restate the activity; My Care Manager to confirm. No companion.",
-   "narration_text": "Dr. Omar: My Care continues the relationship beyond the visit through follow-ups, programmes, and referrals. As you open each section, consider how those activities connect with what happened during the appointment. A useful handoff gives the next colleague enough context to continue the patient’s care without asking them to start their story again. That continuity matters to the patient."
+   "narration_text": "Dr. Omar: My Care continues the relationship beyond the visit through follow-ups, programmes, and referrals. As you open each section, consider how those activities connect with what happened during the appointment. A useful handoff gives the next colleague enough context to continue the patient’s care without asking them to start their story again. That continuity matters to the patient.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "labeled_diagram",
@@ -580,7 +663,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Label coordinates are 0–1000 normalised from the box centres in ops-img-mycare-chart.svg (1600 × 900). Reporting lines ⚠ Draft — pending B2 (coordinator lines pending per the SVG note). Role descriptions for onboarding and QA leaders come from the ops-033 card. No names (B6 / D5). No companion.",
-   "narration_text": "Dr. Omar: Explore the structure and notice how the roles fit together. The diagram can help you understand where responsibilities sit, while the current directory helps you find the right contact when people or assignments change. Use both when you need to orient yourself."
+   "narration_text": "Dr. Omar: Explore the structure and notice how the roles fit together. The diagram can help you understand where responsibilities sit, while the current directory helps you find the right contact when people or assignments change. Use both when you need to orient yourself.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "flashcards",
@@ -628,7 +718,14 @@
    "animation": "fade-up",
    "reveal": "auto",
    "notes": "Companion: Noor char-noor-avatar-neutral + tip card, L3 tip card (tip text is in prompt_html). Speaker: Noor. FM, DMP, CHP, PR1 and VIP team definitions ⚠ Draft — pending B3; PR1 vs PRC ⚠ Draft — pending B5 / D3. PXO expansion from the programme lexicon; HHC as used in module 03.",
-   "narration_text": "Noor: Open each abbreviation and say what it means in your own words. Connecting the short form to its meaning can make team conversations easier to follow."
+   "narration_text": "Noor: Open each abbreviation and say what it means in your own words. Connecting the short form to its meaning can make team conversations easier to follow.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "drag_drop",
@@ -714,7 +811,14 @@
    },
    "reveal": "none",
    "notes": "Card answers follow the Phase 0 verified-facts lists (slides 2 and 5). The card asks for feedback on each card; edumints drag_drop has no per-item feedback, so the overlap explanation is in the screen feedback. Overlap items ⚠ Draft — pending B7. Keyboard pick-and-place is the player's default. No companion.",
-   "narration_text": "Dr. Omar: A request arrives during a busy shift. Read the details and decide how you would sort the work."
+   "narration_text": "Dr. Omar: A request arrives during a busy shift. Read the details and decide how you would sort the work.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "decision_scenario",
@@ -859,7 +963,14 @@
    },
    "reveal": "none",
    "notes": "Companion: Dr. Omar char-omar-avatar-neutral host avatar above each situation (L5); feedback line uses char-omar-avatar-happy (best choice) or char-omar-avatar-concern (other choices), never beside the choice buttons. Four nodes, +1 per correct route, pass_score 3 (Phase 3 activity plan). Images: node 1 ops-img-reception-scenario (= scene 1), nodes 2–4 ops-img-scenes-2..4 (planned, ai-generated, visual QA). All routing answers ⚠ Draft — pending B7; role names ⚠ Draft — pending B1 / B2.",
-   "narration_text": "Dr. Omar: A patient needs help, and you are deciding where the request should go. Consider the situation and the support the patient needs before choosing a route."
+   "narration_text": "Dr. Omar: A patient needs help, and you are deciding where the request should go. Consider the situation and the support the patient needs before choosing a route.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -909,7 +1020,14 @@
    },
    "reveal": "none",
    "notes": "Correct answer from the card (site Patient Experience Manager, per B1) ⚠ Draft — pending B1. Distractors are roles shown on ops-011/ops-021. No companion over the question.",
-   "narration_text": "Dr. Omar: A concern needs escalation. Read the situation and decide what you would do next."
+   "narration_text": "Dr. Omar: A concern needs escalation. Read the situation and decide what you would do next.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "matching",
@@ -961,7 +1079,14 @@
    },
    "reveal": "none",
    "notes": "Pairs verbatim from the card. Role titles follow the draft charts ⚠ Draft — pending B1 / B2. No companion.",
-   "narration_text": "Dr. Omar: You are working with colleagues across both teams. Match each role with its area of responsibility."
+   "narration_text": "Dr. Omar: You are working with colleagues across both teams. Match each role with its area of responsibility.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -983,7 +1108,14 @@
    "objective_ids": [],
    "section": "Practice: right team, first time",
    "node_id": "ops-s4",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -1005,7 +1137,14 @@
    "objective_ids": [],
    "section": "Practice: right team, first time",
    "node_id": "ops-s4",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -1027,7 +1166,14 @@
    "objective_ids": [],
    "section": "Practice: right team, first time",
    "node_id": "ops-s4",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -1049,7 +1195,14 @@
    "objective_ids": [],
    "section": "Practice: right team, first time",
    "node_id": "ops-s4",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "tabs",
@@ -1083,7 +1236,14 @@
    "objective_ids": [],
    "section": "Practice: right team, first time",
    "node_id": "ops-s4",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "results_breakdown",
@@ -1130,7 +1290,7 @@
    "node_id": "ops-s4",
    "objective_ids": [],
    "points": 0,
-   "body_html": "<h3>Right team, first time</h3><ul><li>Operations runs the visit: environment, KPIs, recovery on the spot.</li><li>My Care carries the relationship: follow-ups, programmes, insurance, referrals.</li><li>Route by where and when: in the clinic now, or the patient's ongoing care.</li><li>Escalate one step at a time, by role.</li></ul><p><strong>Names:</strong> use the live staff directory (intranet). <em>Link ⚠ Draft — pending B6 / D5.</em></p><p><strong>Next:</strong> module 05/06 (clinicians) or 08 (EHR).</p><p>Your first guess: <strong><span data-exploration-ref=\"ops_first_guess\"></span></strong>. In the clinic now → Operations; over time → My Care.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> save your first-call contact in your phone today.</p>",
+   "body_html": "<h3>Right team, first time</h3><ul><li>Operations runs the visit: environment, KPIs, recovery on the spot.</li><li>My Care carries the relationship: follow-ups, programmes, insurance, referrals.</li><li>Route by where and when: in the clinic now, or the patient's ongoing care.</li><li>Escalate one step at a time, by role.</li></ul><p><strong>Names:</strong> use the live staff directory (intranet). <em>Link ⚠ Draft — pending B6 / D5.</em></p><p><strong>Next:</strong> module 05/06 (clinicians) or 08 (EHR).</p><p>Your first guess: <strong><span data-exploration-ref=\"ops_first_guess\"></span></strong>. In the clinic now → Operations; over time → My Care.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> save your first-call contact in your phone today.</p><p class=\"mc-xp-final\"><strong>You finished with {{xp}} XP.</strong> Your rank is at the top of the screen.</p>",
    "show_score": true,
    "show_completion": true,
    "animation": "fade-up",

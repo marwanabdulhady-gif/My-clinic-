@@ -13,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M5BMHM2YJWBSVYY46XE1EYMM",
-    "job_id": "job_01M5BMHM3VYJRC4Z31K5MVPF9G",
+    "project_id": "proj_01M5BV9MQCW18KTW06KVMD6ZB6",
+    "job_id": "job_01M5BV9MRN13Q4B34GBEB96H0E",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/-gHqMqKL0Sj7Z09bmW4buPXx1PTKYdtF",
+    "download_url": "http://localhost/scorm/files/V2LhpGYkPvv2KOEWIV8OfcY1kEZki_tp",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BMHM2YJWBSVYY46XE1EYMM",
+    "project_id": "proj_01M5BV9MQCW18KTW06KVMD6ZB6",
     "strict": false,
     "error_count": 0,
     "warn_count": 3,
@@ -32,14 +32,14 @@
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "7 ardışık görselsiz ekran (screens[9..15]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[9..15]"
+        "message": "7 ardışık görselsiz ekran (screens[10..16]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[10..16]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[20..23]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[20..23]"
+        "message": "4 ardışık görselsiz ekran (screens[21..24]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[21..24]"
       },
       {
         "severity": "warn",
@@ -63,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 951871
+    "bytes": 1132764
   },
   "preview": "preview.html"
 }

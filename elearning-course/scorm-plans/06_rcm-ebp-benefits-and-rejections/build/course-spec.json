@@ -44,25 +44,49 @@
    "name": "role_label",
    "type": "text",
    "default": "team member"
+  },
+  {
+   "name": "xp",
+   "type": "number",
+   "default": 0
+  }
+ ],
+ "points_var": "xp",
+ "levels": [
+  {
+   "name": "Benefit Learner",
+   "min_points": 0
+  },
+  {
+   "name": "Policy Reader",
+   "min_points": 24
+  },
+  {
+   "name": "Rejection Fixer",
+   "min_points": 48
+  },
+  {
+   "name": "Revenue Guardian",
+   "min_points": 68
   }
  ],
  "outline": [
   {
    "id": "rcmb-sA",
    "kind": "section",
-   "title": "What changed",
+   "title": "Mission 1 · What changed",
    "unlock_rule": "free"
   },
   {
    "id": "rcmb-sB",
    "kind": "section",
-   "title": "Benefits in practice",
+   "title": "Mission 2 · Benefits in practice",
    "unlock_rule": "free"
   },
   {
    "id": "rcmb-sC",
    "kind": "section",
-   "title": "Reading rejections",
+   "title": "Mission 3 · Reading rejections",
    "unlock_rule": "free"
   },
   {
@@ -126,7 +150,7 @@
     {
      "id": "physician",
      "text_html": "<strong>Physician or dentist</strong><br><small>Treating clinicians</small>",
-     "goto_screen_id": "rcmb-001p",
+     "goto_screen_id": "rcmb-00m",
      "set_vars": [
       {
        "var": "role",
@@ -143,7 +167,7 @@
     {
      "id": "rcm",
      "text_html": "<strong>RCM team</strong><br><small>Insurance, billing, coding</small>",
-     "goto_screen_id": "rcmb-001p",
+     "goto_screen_id": "rcmb-00m",
      "set_vars": [
       {
        "var": "role",
@@ -160,7 +184,7 @@
     {
      "id": "all",
      "text_html": "<strong>Show me every role's tips</strong>",
-     "goto_screen_id": "rcmb-001p",
+     "goto_screen_id": "rcmb-00m",
      "set_vars": [
       {
        "var": "role",
@@ -175,12 +199,26 @@
      ]
     }
    ],
-   "default_goto": "rcmb-001p",
+   "default_goto": "rcmb-00m",
    "points": 0,
    "objective_ids": [],
    "section": "What changed",
    "node_id": "rcmb-sA",
    "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "content_slide",
+   "id": "rcmb-00m",
+   "title": "Save the claim",
+   "layout": "text_media",
+   "body_html": "<h3>Can you turn a rejected claim into a paid one?</h3><p class=\"mc-missions\"><strong>3 missions:</strong> <strong>1</strong> What changed · <strong>2</strong> Benefits in practice · <strong>3</strong> Reading rejections</p><p class=\"mc-xp-rules\"><strong>Earn XP:</strong> +10 for each activity you get right · +5 for each quick check · +2 for each screen you explore. <strong>Ranks:</strong> Benefit Learner → Policy Reader → Rejection Fixer → Revenue Guardian.</p><p class=\"mc-note\">XP is just for you: it never counts towards your pass mark.</p>",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Gamification (tools/gamify.py, decision D18).",
+   "media_asset_id": "char-omar-explaining",
+   "media_alt": "Illustration for the save the claim.",
+   "section": "What changed",
+   "node_id": "rcmb-sA"
   },
   {
    "type": "exploration",
@@ -196,7 +234,14 @@
    "node_id": "rcmb-sA",
    "points": 0,
    "objective_ids": [],
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "drag_drop",
@@ -311,7 +356,14 @@
    },
    "notes": "Card asks for feedback per card; edumints DragItem has no per-item feedback field, so the card-level reasoning is in feedback.correct_html/incorrect_html (show_correct_answer marks each card). Counts '18 added / 10 amended' dropped per B4 recommended draft (headline items only). Open: B3, B4, B6 (optical wording). Icons rcmb-img-benefit-icons are used on rcmb-020/040 (drag_drop has no media slot).",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "tabs",
@@ -341,7 +393,14 @@
    "notes": "No companion. Open: B7 (dietary consultation criteria, draft value shown), B3 (all benefit wording).",
    "narration_text": "Dr. Omar: Prevention is now covered: think of the patient in front of you who is due a screen. Move through the items one at a time and connect each point with a practical response. The aim is to use the information, not just recognise it. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role.",
    "animation": "fade-up",
-   "reveal": "auto"
+   "reveal": "auto",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -387,7 +446,14 @@
    },
    "notes": "Open: B7 (criteria 'BMI > 30 or ≥ 2 risk factors' is the source draft).",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -423,7 +489,14 @@
    "notes": "Companion: Noor, char-noor-avatar-neutral + tip card, L3 tip card (alt: Noor, the safety liaison, sharing a tip). Speaker: Noor. Accordion has no free media slot, so the tip text is in the last panel and the pose stays here for the developer. Open: B5 (limit value), B3.",
    "narration_text": "Noor: Mental-health cover is wider, but it has a limit and needs pre-authorisation for some services. Open one section at a time and pause on the detail that changes what you would do next. That link turns information into a practical response. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
    "animation": "fade-up",
-   "reveal": "auto"
+   "reveal": "auto",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "true_false",
@@ -446,7 +519,14 @@
     "show_correct_answer": true
    },
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "tabs",
@@ -484,7 +564,14 @@
    "notes": "No companion. Open: B5 (transplant limit), D4/B2 (regulator name CHI vs CCHI — shown as the deck's 'CHI' with a pending marker), B3.",
    "narration_text": "Dr. Omar: Five benefits that change what you can offer at discharge, by phone, for diabetes and for women's health. Use the tabs as a short reference, not a checklist to race through. Notice which detail would guide your next conversation or decision. Apply the point to a familiar task. Carry the idea into your next decision. Notice which part of this you would use first on shift. The aim is a decision you can repeat, not a phrase to recall. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one.",
    "animation": "fade-up",
-   "reveal": "auto"
+   "reveal": "auto",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "matching",
@@ -540,7 +627,14 @@
    },
    "notes": "Limit values are not shown here (B5 pending); the pairs use 'policy limit' wording only.",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -644,7 +738,14 @@
    },
    "notes": "Category set and item mapping are the B9 proposal (draft); radiology 'two views' mapped to Documentation and 'renal panel' to Coding pending the Coding lead. Per-card cause+fix feedback is condensed into feedback (DragItem has no per-item feedback).",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "decision_scenario",
@@ -745,7 +846,14 @@
    },
    "notes": "Companion host: char-omar-avatar-neutral (outcome poses char-omar-avatar-happy on pass / char-omar-avatar-concern on retry — no outcome-pose switch in the edumints schema; developer note). Speaker: Dr. Omar. Pass rule: all best choices (Phase 3 activity plan) → pass_score 3. 'Ties back to Part A' = Module 05 documentation and coding. Example provisional diagnosis left generic for SME (no specific code shown).",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -767,7 +875,14 @@
    "objective_ids": [],
    "section": "Reading rejections",
    "node_id": "rcmb-sC",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -789,7 +904,14 @@
    "objective_ids": [],
    "section": "Reading rejections",
    "node_id": "rcmb-sC",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "tabs",
@@ -815,7 +937,14 @@
    "objective_ids": [],
    "section": "Reading rejections",
    "node_id": "rcmb-sC",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "adaptive_practice",
@@ -1181,7 +1310,14 @@
    },
    "notes": "Elo strategy, 15-item bank from the card (8 card examples + 7 from the same benefits on rcmb-020/030/040). Payer relations must approve all 15 items (Phase 3 §5). Option order is rotated per item in the source (the adaptive renderer does not shuffle). Open: B3, B5, B7, 05/B6.",
    "narration_text": "Dr. Omar: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Use the rule you practised.",
-   "reveal": "none"
+   "reveal": "none",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "results_breakdown",
@@ -1235,7 +1371,7 @@
    "points": 0,
    "show_score": true,
    "show_completion": true,
-   "body_html": "<ul><li><strong>Know what's new</strong> in the EBP.</li><li><strong>Document</strong> to the benefit's criteria.</li><li><strong>Check limits and pre-authorisation</strong> before you promise cover.</li><li><strong>Rework, don't resubmit</strong> a rejected claim.</li></ul><p>EBP one-page summary (PDF): link added after payer-relations approval. <strong>⚠ Draft — pending B3</strong></p><p>You guessed <strong><span data-exploration-ref=\"rcmb_new_guess\"></span></strong> new benefits.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check the patient's policy and the table of benefits before you document or submit.</p>",
+   "body_html": "<ul><li><strong>Know what's new</strong> in the EBP.</li><li><strong>Document</strong> to the benefit's criteria.</li><li><strong>Check limits and pre-authorisation</strong> before you promise cover.</li><li><strong>Rework, don't resubmit</strong> a rejected claim.</li></ul><p>EBP one-page summary (PDF): link added after payer-relations approval. <strong>⚠ Draft — pending B3</strong></p><p>You guessed <strong><span data-exploration-ref=\"rcmb_new_guess\"></span></strong> new benefits.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> check the patient's policy and the table of benefits before you document or submit.</p><p class=\"mc-xp-final\"><strong>You finished with {{xp}} XP.</strong> Your rank is at the top of the screen.</p>",
    "notes": "Companions: Dr. Omar char-omar-success + Noor char-noor-avatar-happy, L6 (summary has no media slot; developer places). Two-voice close: omar-1 then noor-1. Planned asset rcmb-pdf-ebp (PDF, pending B3) — summary schema has no attachment field; link to be added when the approved PDF exists.",
    "narration_text": "Dr. Omar: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you. Noor: And remember: asking early is always the safe move here.",
    "animation": "fade-up",

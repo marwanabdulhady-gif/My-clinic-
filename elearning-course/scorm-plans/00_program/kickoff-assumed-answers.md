@@ -6,7 +6,7 @@
 
 | Rows | High confidence | Medium | Low | Owner must confirm |
 |---:|---:|---:|---:|---:|
-| 105 | 48 | 37 | 20 | 75 |
+| 106 | 49 | 37 | 20 | 76 |
 
 ## Where the research disagrees with the client decks
 
@@ -38,6 +38,7 @@ Raise these first at the kick-off: the course would teach something out of date 
 | `D15` | Who the induction is for — role catalogue and LMS learning paths | Eight roles in three or four groups (Clinical; Front office & My Care; Support & back office), with the LMS paths in personalisation-and-interactivity-plan.md §1. Every scored activity is common to all roles. | HR + L&D · Medium | [1](https://myclinic.com.sa/about-us) |
 | `D16` | Extra unscored screens from the personalisation layer (+26 per learner across the programme; Rev01 says ≈207) | Accept the 26 extra unscored screens per learner as a free value-add and log them in the proposal change log. | Course owner · High |  |
 | `D17` | Optional motion-graphics videos (9 planned clips, media-video-plan.json) | Make the programme welcome clip and the qsr-060 speak-up clip first (HyperFrames); decide the other seven after the pilot. | Course owner · Medium | [1](https://github.com/heygen-com/hyperframes) |
+| `D18` | Gamification across all courses (challenge, missions, XP, ranks) | Keep the challenge, missions, XP and four ranks per course as built; XP is never reported to the LMS or counted in the score. | Course owner · High |  |
 | `D2` | Emergency code sheet — one naming set (e.g. Code Silver "violent situation involving a weapon" vs "active shooter with weapon"; RRT included or not) and the real extension numbers (decks show "5555") [2] | One code sheet (see 01/B2) used in 01, 02, 07; Code Silver = 'person with a weapon or hostage situation'; include RRT as a separate call (deteriorating patient); Code Blue 2222 national; all other extensions placeholders until the switchboard confirms per branch. | Safety & Security Manager + Switchboard · Medium | [1](https://english.ajel.sa/news/king-salman-approves-several-saudi-health-council-decisions) [2](https://www.arabnews.pk/node/1428551) [3](https://doaj.org/article/29b68421c28d4cc2aaa4832823d40ced) [4](https://smj.org.sa/content/smj/31/12/1377.full.pdf) |
 | `D3` | Branch names and codes: J3 Al Andalus vs Al Tahlia; J4 Abhor vs Obhur; PR1 vs PRC [6] | Use official website names: Al Mohammadiyah (main centre), Al Safa, Dental Centre – Al Khalidiyah, Al Tahlia, Obhur (Jeddah); Al Sahafa (Riyadh). Retire 'Al Andalus' and 'Abhor'. Internal codes (J1–J4, PR1/PRC) only in a glossary. | HR + Operations · Medium | [1](https://myclinic.com.sa/about-us) [2](https://www.myclinic.com.sa/) [3](https://www.autotouch.ai/prospecting/my-clinic-ksa) |
 | `D4` | Regulator name: CCHI vs CHI (Council of Health Insurance) [7] | Council of Health Insurance (CHI) – current name; 'formerly CCHI' once; note IA supervises insurers since 4 March 2024. | RCM lead (Dr Wafaa Elshayeb or successor) · High · no confirmation needed | [1](https://ia.gov.sa/en/news/news-12.html) [2](https://meinsurancereview.com/News/ViewNewsLetterArticle/id/87459/type/MiddleEast/Saudi-Arabia-Insurance-Authority-now-in-charge-of-health-insurance-regulation) [3](https://saudilifeguide.com/?p=2087) |

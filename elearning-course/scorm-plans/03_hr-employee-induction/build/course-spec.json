@@ -56,6 +56,30 @@
    "name": "role_label",
    "type": "text",
    "default": "team member"
+  },
+  {
+   "name": "xp",
+   "type": "number",
+   "default": 0
+  }
+ ],
+ "points_var": "xp",
+ "levels": [
+  {
+   "name": "New Joiner",
+   "min_points": 0
+  },
+  {
+   "name": "Team Member",
+   "min_points": 53
+  },
+  {
+   "name": "Insider",
+   "min_points": 107
+  },
+  {
+   "name": "Culture Ambassador",
+   "min_points": 151
   }
  ],
  "outline": [
@@ -68,49 +92,49 @@
   {
    "id": "hr-sB",
    "kind": "section",
-   "title": "Our values & strategy",
+   "title": "Mission 1 · Our values & strategy",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sC",
    "kind": "section",
-   "title": "Our clinic",
+   "title": "Mission 2 · Our clinic",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sD",
    "kind": "section",
-   "title": "Ethics & patients' rights",
+   "title": "Mission 3 · Ethics & patients' rights",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sE",
    "kind": "section",
-   "title": "Your leave",
+   "title": "Mission 4 · Your leave",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sF",
    "kind": "section",
-   "title": "Pay & social insurance",
+   "title": "Mission 5 · Pay & social insurance",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sG",
    "kind": "section",
-   "title": "Systems & licences",
+   "title": "Mission 6 · Systems & licences",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sH",
    "kind": "section",
-   "title": "ID, benefits & dress code",
+   "title": "Mission 7 · ID, benefits & dress code",
    "unlock_rule": "free"
   },
   {
    "id": "hr-sI",
    "kind": "section",
-   "title": "Contracts & leaving",
+   "title": "Mission 8 · Contracts & leaving",
    "unlock_rule": "free"
   },
   {
@@ -189,7 +213,14 @@
    "allow_text": true,
    "reflection_html": "<p>Whatever you chose says something you care about. At My Clinic, we start from what people care about — including yours.</p>",
    "reveal": "none",
-   "narration_text": "OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest."
+   "narration_text": "OMAR: Before we start: if you had one million Saudi riyals, where would you spend it? There's no right answer. Pick whatever is closest.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "branching",
@@ -200,7 +231,7 @@
     {
      "id": "clinical",
      "text_html": "<strong>Medical team</strong><br><small>Physicians, dentists, nurses, allied health</small>",
-     "goto_screen_id": "hr-010",
+     "goto_screen_id": "hr-00m",
      "set_vars": [
       {
        "var": "role",
@@ -217,7 +248,7 @@
     {
      "id": "front",
      "text_html": "<strong>Front office</strong><br><small>Reception, call centre, patient experience, My Care</small>",
-     "goto_screen_id": "hr-010",
+     "goto_screen_id": "hr-00m",
      "set_vars": [
       {
        "var": "role",
@@ -234,7 +265,7 @@
     {
      "id": "support",
      "text_html": "<strong>Back office</strong><br><small>Admin, HR, finance, RCM, IT, facilities</small>",
-     "goto_screen_id": "hr-010",
+     "goto_screen_id": "hr-00m",
      "set_vars": [
       {
        "var": "role",
@@ -251,7 +282,7 @@
     {
      "id": "all",
      "text_html": "<strong>Show me every role's tips</strong>",
-     "goto_screen_id": "hr-010",
+     "goto_screen_id": "hr-00m",
      "set_vars": [
       {
        "var": "role",
@@ -266,12 +297,26 @@
      ]
     }
    ],
-   "default_goto": "hr-010",
+   "default_goto": "hr-00m",
    "points": 0,
    "objective_ids": [],
    "section": "A · Welcome",
    "node_id": "hr-sA",
    "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+  },
+  {
+   "type": "content_slide",
+   "id": "hr-00m",
+   "title": "First 90 days challenge",
+   "layout": "text_media",
+   "body_html": "<h3>Can you find your way through your first 90 days?</h3><p class=\"mc-missions\"><strong>8 missions:</strong> <strong>1</strong> Our values & strategy · <strong>2</strong> Our clinic · <strong>3</strong> Ethics & patients' rights · <strong>4</strong> Your leave · <strong>5</strong> Pay & social insurance · <strong>6</strong> Systems & licences · <strong>7</strong> ID, benefits & dress code · <strong>8</strong> Contracts & leaving</p><p class=\"mc-xp-rules\"><strong>Earn XP:</strong> +10 for each activity you get right · +5 for each quick check · +2 for each screen you explore. <strong>Ranks:</strong> New Joiner → Team Member → Insider → Culture Ambassador.</p><p class=\"mc-note\">XP is just for you: it never counts towards your pass mark.</p>",
+   "points": 0,
+   "objective_ids": [],
+   "notes": "Gamification (tools/gamify.py, decision D18).",
+   "media_asset_id": "char-omar-explaining",
+   "media_alt": "Illustration for the first 90 days challenge.",
+   "section": "A · Welcome",
+   "node_id": "hr-sA"
   },
   {
    "type": "tabs",
@@ -309,7 +354,14 @@
     }
    ],
    "reveal": "none",
-   "narration_text": "OMAR: Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked."
+   "narration_text": "OMAR: Every clinic has values on a wall. Ours only matter if you can see them in what people do. Collaborative: we act together, treat everyone with respect, and stay transparent. Responsible: own your decisions, make things happen, and hold each other to the same standard. Ambitious: go above and beyond, and challenge the status quo when it stops serving patients. Caring: act with empathy, because everyone matters. As you go on, think which of these you already do without being asked.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "matching",
@@ -363,7 +415,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Here are six things people did this week. Match each one to the value behind it."
+   "narration_text": "OMAR: Here are six things people did this week. Match each one to the value behind it.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -419,7 +478,14 @@
     }
    ],
    "reveal": "none",
-   "narration_text": "OMAR: Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in."
+   "narration_text": "OMAR: Strategy feels like someone else's job until you find your own work inside it. Here are the seven pillars. Closer: convenient access — clinics, community clinics and home health care, digital services, telemedicine. Cure: the best Saudi doctors, clinical outcomes, centres of excellence, prevention and wellbeing. Capabilities: a repeatable model for running and growing clinics, with real governance. Culture: our mission and values, servant leadership, a culture of excellence. Clinicians: a caring environment, competitive benefits, room to grow. Care: seamless experience, empathy, loyalty built through My Care. Cost: competitive cost to serve. Whichever one you picked, that's your line in.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -465,7 +531,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?"
+   "narration_text": "OMAR: One to try. My Care follow-up calls build patient loyalty. Which pillar do they belong to?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "flashcards",
@@ -490,7 +563,14 @@
    "node_id": "hr-sB",
    "narration_text": "OMAR: Who do we serve? First, patients and their families — sick or healthy. Many of the people who walk in today are well, and we want them to stay that way. Second, the community around each clinic. Third, corporates and insurers. Three groups, one standard.",
    "points": 0,
-   "objective_ids": []
+   "objective_ids": [],
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "timeline",
@@ -549,7 +629,14 @@
     }
    ],
    "reveal": "none",
-   "narration_text": "OMAR: We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer."
+   "narration_text": "OMAR: We opened our first clinic in North Jeddah in 2017. In 2019 we started the employment check-up unit, our first corporate service. Then came East Jeddah, the dental centre, and Petro-Rabigh in 2023, our first clinic inside a corporate community. Riyadh followed in 2024, a flagship to put the brand on the map. The last two years added our first community clinics. Nine years, nine steps, one idea: bring good care closer.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "hotspot",
@@ -654,7 +741,14 @@
     "correct_html": "<p>You have explored all seven My Clinic branches across Jeddah, Rabigh and Riyadh.</p>",
     "incorrect_html": "<p>Select each branch pin on the map to explore all seven sites.</p>",
     "show_correct_answer": true
-   }
+   },
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "flashcards",
@@ -683,7 +777,14 @@
    "node_id": "hr-sC",
    "narration_text": "OMAR: Four people lead the company. The CEO sets the direction. The CMO owns clinical standards — questions about how we practise medicine land here. The COO runs the clinics day to day. The CFO looks after the money. You'll see their decisions in how your clinic runs.",
    "points": 0,
-   "objective_ids": []
+   "objective_ids": [],
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "flashcards",
@@ -727,7 +828,14 @@
     }
    ],
    "reveal": "none",
-   "narration_text": "OMAR: We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards."
+   "narration_text": "OMAR: We're proud of these, so flip them. And hold one thought alongside them. Accreditation is measured, not given. Every score here expires, and the next survey team will look at what we did this year, not at these cards.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -774,7 +882,14 @@
    "node_id": "hr-sD",
    "points": 0,
    "objective_ids": [],
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "decision_scenario",
@@ -888,7 +1003,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "NOOR: Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?"
+   "narration_text": "NOOR: Three moments now, and nobody is watching. First: you're on a panel evaluating suppliers for a clinic fit-out, and one bidder is your cousin's company. The evaluation starts in an hour. What do you do?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "drag_drop",
@@ -967,7 +1089,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?"
+   "narration_text": "OMAR: Nine statements from reception. Sort each: is it what the patient can expect, or what we ask of them?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -1013,7 +1142,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?"
+   "narration_text": "OMAR: Last one here. A patient refuses a blood test after the doctor has explained the risks. What do you do?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -1079,7 +1215,14 @@
     }
    ],
    "reveal": "none",
-   "narration_text": "OMAR: Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most."
+   "narration_text": "OMAR: Nine types. Open the ones you need. Annual: after probation, five days carried over, used by end of March. Sick: valid report needed. First thirty days paid in full. Work injury covers commuting, and has a same-day or next-day deadline. Maternity: twelve weeks, starting up to four weeks early. Exam leave: academic exams only, documents two weeks ahead. Scientific: by profession, and can't be carried over. Hajj: two years' service and a permit. Compassionate: marriage, paternity, bereavement. Then Eid, Founding Day, National Day. We'll practise the four people ask about most.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "matching",
@@ -1123,7 +1266,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Four grades, four entitlements. Match each grade to its annual leave, in working days."
+   "narration_text": "OMAR: Four grades, four entitlements. Match each grade to its annual leave, in working days.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "worked_example",
@@ -1160,7 +1310,14 @@
    ],
    "self_explanation_prompt_html": "<p>What changes if the medical report comes from another hospital?</p>",
    "reveal": "none",
-   "narration_text": "OMAR: One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?"
+   "narration_text": "OMAR: One example, properly. A colleague is off sick forty days in a year, with valid reports. First, she tells her line manager — that's first, not last. The first thirty days are paid in full. Ten days fall into the next band, and that's where pay drops. Note the detail people miss: it's the total in the year that sets the band, not one spell. Beyond ninety days it's unpaid. And if the report is from outside My Clinic, the Staff Health Clinic must approve it. Now: what changes if her report comes from another hospital?",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "decision_scenario",
@@ -1310,7 +1467,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "NOOR: Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval."
+   "narration_text": "NOOR: Now you're on the other side of the desk. Four colleagues, four questions. First: Yousuf, a lab technician, wants scientific leave and already has the MD's pre-approval.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "adaptive_practice",
@@ -1604,7 +1768,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more."
+   "narration_text": "OMAR: A short practice set now. It adapts: if you're getting these, it will finish early. If you're not, it'll keep going for a few more.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -1650,7 +1821,14 @@
    ],
    "self_explanation_prompt_html": "<p>Which part of the salary is the percentage applied to?</p>",
    "reveal": "none",
-   "narration_text": "OMAR: Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for."
+   "narration_text": "OMAR: Let's do one together. Basic four thousand eight hundred, housing one thousand two hundred. Add them — GOSI is charged on basic plus housing, so six thousand. Apply your rate, nine point seven five per cent. The company's rate never touches your payslip. Six thousand times nought point nought nine seven five is five hundred and eighty-five riyals a month. That's the line to look for.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "fill_blank",
@@ -1687,7 +1865,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?"
+   "narration_text": "OMAR: Your turn. Basic six thousand, housing one thousand five hundred. What's your monthly GOSI deduction?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "worked_example",
@@ -1717,7 +1902,14 @@
    ],
    "self_explanation_prompt_html": "<p>Why is the hourly rate worked out from 240 hours, not 208?</p>",
    "reveal": "none",
-   "narration_text": "OMAR: One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves."
+   "narration_text": "OMAR: One caveat before the numbers: whether you're eligible for overtime at all depends on your grade. Check that first. Now the arithmetic. Basic six thousand. Divide by thirty days times eight hours — two hundred and forty hours — and you get twenty-five riyals an hour. On a normal working day, multiply by one and a half. That's thirty-seven riyals fifty. On a public holiday, multiply by two. Fifty riyals an hour. Same hourly rate both times. Only the multiplier moves.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "mcq",
@@ -1763,7 +1955,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?"
+   "narration_text": "OMAR: One for you. Basic six thousand. You work four overtime hours on a normal working day. What's the overtime pay?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "matching",
@@ -1817,7 +2016,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system."
+   "narration_text": "OMAR: Six tasks, four systems. Match each one to where it actually happens. Most of them are the same system.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "simulation",
@@ -1942,7 +2148,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for."
+   "narration_text": "OMAR: Let's do it once for real, on a test account. Book yourself a week of annual leave. Five steps, and I'll tell you what to look for.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "true_false",
@@ -1965,7 +2178,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work."
+   "narration_text": "OMAR: True or false: if your licence expires in under thirty days without renewal, HR may suspend you from work.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -2062,7 +2282,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days."
+   "narration_text": "OMAR: Six dress-code rules, three groups. Put each one where it applies — and pay attention to the one about casual days.",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -2084,7 +2311,14 @@
    "objective_ids": [],
    "section": "H · ID, benefits & dress code",
    "node_id": "hr-sH",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -2106,7 +2340,14 @@
    "objective_ids": [],
    "section": "H · ID, benefits & dress code",
    "node_id": "hr-sH",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "accordion",
@@ -2128,7 +2369,14 @@
    "objective_ids": [],
    "section": "H · ID, benefits & dress code",
    "node_id": "hr-sH",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "tabs",
@@ -2158,7 +2406,14 @@
    "objective_ids": [],
    "section": "H · ID, benefits & dress code",
    "node_id": "hr-sH",
-   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording."
+   "notes": "Personalisation layer (production/personalisation.json) — unscored; SME confirms wording.",
+   "on_enter": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 2
+    }
+   ]
   },
   {
    "type": "content_slide",
@@ -2220,7 +2475,14 @@
     "show_correct_answer": true
    },
    "reveal": "none",
-   "narration_text": "OMAR: Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?"
+   "narration_text": "OMAR: Last scenario. You've accepted a new job starting in three weeks. What happens with your notice?",
+   "on_correct": [
+    {
+     "var": "xp",
+     "op": "add",
+     "value": 10
+    }
+   ]
   },
   {
    "type": "results_breakdown",
@@ -2300,7 +2562,7 @@
    "notes": "Companions: Dr. Omar char-omar-success half-body 300-360 px right side; Noor char-noor-avatar-happy 56 px (3 px #652D8C ring) on the 'Next: module 07' line. Audio: omar-1 + noor-1 joined with 0.3 s silence.",
    "show_score": true,
    "show_completion": true,
-   "body_html": "<p><strong>You can now:</strong> live the values · raise a concern the right way · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid.</p><p><strong>Keep this:</strong> HR Quick Reference (PDF, 2 pages) <em>⚠ Draft — pending: job aid not produced yet</em></p><p><strong>Please do:</strong> <a href=\"{{survey_url}}\" target=\"_blank\" rel=\"noopener\">the onboarding survey (2 minutes)</a></p><p><strong>Next:</strong> module 07 — Clinical Governance: Quality, Patient Safety &amp; Risk.</p><p>You chose <strong><span data-exploration-ref=\"hr_ethic\"></span></strong> as your principle.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> your manager will walk you through your team's first-week checklist.</p>",
+   "body_html": "<p><strong>You can now:</strong> live the values · raise a concern the right way · answer leave and pay questions · use Oracle, Qiwa and Mumaris · keep your licence valid.</p><p><strong>Keep this:</strong> HR Quick Reference (PDF, 2 pages) <em>⚠ Draft — pending: job aid not produced yet</em></p><p><strong>Please do:</strong> <a href=\"{{survey_url}}\" target=\"_blank\" rel=\"noopener\">the onboarding survey (2 minutes)</a></p><p><strong>Next:</strong> module 07 — Clinical Governance: Quality, Patient Safety &amp; Risk.</p><p>You chose <strong><span data-exploration-ref=\"hr_ethic\"></span></strong> as your principle.</p><p class=\"mc-role-line\"><strong>As a {{role_label}}:</strong> your manager will walk you through your team's first-week checklist.</p><p class=\"mc-xp-final\"><strong>You finished with {{xp}} XP.</strong> Your rank is at the top of the screen.</p>",
    "animation": "fade-up",
    "reveal": "auto",
    "narration_text": "OMAR: That's the induction. You can now live the values, raise a concern the right way, answer leave and pay questions, and pick the right system. Download the HR Quick Reference. And please complete the onboarding survey. Two minutes, and it shapes how we run this day. NOOR: Next, you'll join me for clinical governance: quality, patient safety and risk. Welcome to My Clinic."
@@ -2440,27 +2702,27 @@
   {
    "id": "hr-img-oracle-1",
    "filename": "hr-img-oracle-1.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1vcmFjbGUtMSI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctb3JhY2xlLTE8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5UZXN0LWFjY291bnQgY2FwdHVyZSBhZnRlciBCODwvdGV4dD4KPC9zdmc+"
+   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iVHJhaW5pbmcgd2lyZWZyYW1lIG9mIEhSIHNlbGYtc2VydmljZTogQm9vayB5b3VyIGxlYXZlIGluIE9yYWNsZSI+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODgiIGZpbGw9IiMwMDM4NjciLz4KPHRleHQgeD0iMzIiIHk9IjU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+SFIgc2VsZi1zZXJ2aWNlPC90ZXh0Pgo8dGV4dCB4PSIxODg4IiB5PSI1NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNDMENFRDkiPlRlc3QgYWNjb3VudCDCtyB0cmFpbmluZyB3aXJlZnJhbWUg4oCUIG5vdCB0aGUgbGl2ZSBzeXN0ZW08L3RleHQ+CjxyZWN0IHg9IjExODAiIHk9IjYyMCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI1NiIgcng9IjE2IiBmaWxsPSIjMDA4Qzk5IiBzdHJva2U9IiMwMDhDOTkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjEyNzAuMCIgeT0iNjU4LjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjZmZmIj5TaWduIEluPC90ZXh0Pgo8cmVjdCB4PSIxMjAiIHk9IjEyOCIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSI4OCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE0OCIgeT0iMTgyLjAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMDAzODY3Ij5Vc2VyIG5hbWU8L3RleHQ+CjxyZWN0IHg9IjEwMDAiIHk9IjEyOCIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSI4OCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjEwMjgiIHk9IjE4Mi4wIiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzAwMzg2NyI+UGFzc3dvcmQ8L3RleHQ+CjxyZWN0IHg9IjEyMCIgeT0iMjYwIiB3aWR0aD0iMzYwIiBoZWlnaHQ9Ijg4IiByeD0iMTYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTQ4IiB5PSIzMTQuMCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwMDM4NjciPkZvcmdvdCBwYXNzd29yZD88L3RleHQ+CjxyZWN0IHg9IjEwNDAiIHk9IjI2MCIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+CjxyZWN0IHg9IjEyMCIgeT0iMzcyIiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPHJlY3QgeD0iMTA0MCIgeT0iMzcyIiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPHJlY3QgeD0iMTIwIiB5PSI0ODQiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMDQwIiB5PSI0ODQiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMjAiIHk9IjU5NiIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+Cjwvc3ZnPg=="
   },
   {
    "id": "hr-img-oracle-2",
    "filename": "hr-img-oracle-2.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1vcmFjbGUtMiI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctb3JhY2xlLTI8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5UZXN0LWFjY291bnQgY2FwdHVyZSBhZnRlciBCODwvdGV4dD4KPC9zdmc+"
+   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iVHJhaW5pbmcgd2lyZWZyYW1lIG9mIEhSIHNlbGYtc2VydmljZTogQm9vayB5b3VyIGxlYXZlIGluIE9yYWNsZSI+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODgiIGZpbGw9IiMwMDM4NjciLz4KPHRleHQgeD0iMzIiIHk9IjU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+SFIgc2VsZi1zZXJ2aWNlPC90ZXh0Pgo8dGV4dCB4PSIxODg4IiB5PSI1NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNDMENFRDkiPlRlc3QgYWNjb3VudCDCtyB0cmFpbmluZyB3aXJlZnJhbWUg4oCUIG5vdCB0aGUgbGl2ZSBzeXN0ZW08L3RleHQ+CjxyZWN0IHg9IjI2MCIgeT0iMzAwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgcng9IjI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDhDOTkiIHN0cm9rZS13aWR0aD0iNCIvPjx0ZXh0IHg9IjI5MiIgeT0iMzU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzAwMzg2NyI+VGltZSBhbmQgQWJzZW5jZXM8L3RleHQ+CjxyZWN0IHg9IjI5MiIgeT0iMzg4IiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI0IiByeD0iMTIiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3QgeD0iNjgwIiB5PSIxMjgiIHdpZHRoPSI2NDAiIGhlaWdodD0iNDAwIiByeD0iMjQiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNzEyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij5QYXk8L3RleHQ+CjxyZWN0IHg9IjEyMCIgeT0iNTY4IiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCIgcng9IjI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE1MiIgeT0iNjI0IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzAwMzg2NyI+UGVyc29uYWwgSW5mb3JtYXRpb248L3RleHQ+CjxyZWN0IHg9Ijg0MCIgeT0iNTY4IiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCIgcng9IjI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9Ijg3MiIgeT0iNjI0IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzAwMzg2NyI+TGVhcm5pbmc8L3RleHQ+Cjwvc3ZnPg=="
   },
   {
    "id": "hr-img-oracle-3",
    "filename": "hr-img-oracle-3.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1vcmFjbGUtMyI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctb3JhY2xlLTM8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5UZXN0LWFjY291bnQgY2FwdHVyZSBhZnRlciBCODwvdGV4dD4KPC9zdmc+"
+   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iVHJhaW5pbmcgd2lyZWZyYW1lIG9mIEhSIHNlbGYtc2VydmljZTogQm9vayB5b3VyIGxlYXZlIGluIE9yYWNsZSI+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODgiIGZpbGw9IiMwMDM4NjciLz4KPHRleHQgeD0iMzIiIHk9IjU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+SFIgc2VsZi1zZXJ2aWNlPC90ZXh0Pgo8dGV4dCB4PSIxODg4IiB5PSI1NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNDMENFRDkiPlRlc3QgYWNjb3VudCDCtyB0cmFpbmluZyB3aXJlZnJhbWUg4oCUIG5vdCB0aGUgbGl2ZSBzeXN0ZW08L3RleHQ+CjxyZWN0IHg9IjQyMCIgeT0iMzEwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjE0MCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjQ0OCIgeT0iMzkwLjAiICBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzAwMzg2NyI+QWRkIExlYXZlczwvdGV4dD4KPHJlY3QgeD0iNjgwIiB5PSIxMjgiIHdpZHRoPSI2NDAiIGhlaWdodD0iNDAwIiByeD0iMjQiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNzEyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij5FeGlzdGluZyBBYnNlbmNlczwvdGV4dD4KPHJlY3QgeD0iMTIwIiB5PSI1NjgiIHdpZHRoPSI2NDAiIGhlaWdodD0iNDAwIiByeD0iMjQiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTUyIiB5PSI2MjQiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij5BYnNlbmNlIEJhbGFuY2U8L3RleHQ+CjxyZWN0IHg9Ijg0MCIgeT0iNTY4IiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCIgcng9IjI0IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9Ijg3MiIgeT0iNjI0IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzAwMzg2NyI+VGltZSBDYXJkczwvdGV4dD4KPC9zdmc+"
   },
   {
    "id": "hr-img-oracle-4",
    "filename": "hr-img-oracle-4.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1vcmFjbGUtNCI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctb3JhY2xlLTQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5UZXN0LWFjY291bnQgY2FwdHVyZSBhZnRlciBCODwvdGV4dD4KPC9zdmc+"
+   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iVHJhaW5pbmcgd2lyZWZyYW1lIG9mIEhSIHNlbGYtc2VydmljZTogQm9vayB5b3VyIGxlYXZlIGluIE9yYWNsZSI+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODgiIGZpbGw9IiMwMDM4NjciLz4KPHRleHQgeD0iMzIiIHk9IjU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+SFIgc2VsZi1zZXJ2aWNlPC90ZXh0Pgo8dGV4dCB4PSIxODg4IiB5PSI1NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNDMENFRDkiPlRlc3QgYWNjb3VudCDCtyB0cmFpbmluZyB3aXJlZnJhbWUg4oCUIG5vdCB0aGUgbGl2ZSBzeXN0ZW08L3RleHQ+CjxyZWN0IHg9IjMwMCIgeT0iMjYwIiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjYwIiByeD0iMTYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMzI4IiB5PSIzMDAuMCIgIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMDAzODY3Ij5MZWF2ZSB0eXBlPC90ZXh0Pgo8cmVjdCB4PSIxMjAiIHk9IjEyOCIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSI4OCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE0OCIgeT0iMTgyLjAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMDAzODY3Ij5TdGFydCBkYXRlPC90ZXh0Pgo8cmVjdCB4PSIxMDAwIiB5PSIxMjgiIHdpZHRoPSI4NDAiIGhlaWdodD0iODgiIHJ4PSIxNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjQzBDRUQ5IiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxMDI4IiB5PSIxODIuMCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwMDM4NjciPkVuZCBkYXRlPC90ZXh0Pgo8cmVjdCB4PSI3NjAiIHk9IjI2MCIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSI4OCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9Ijc4OCIgeT0iMzE0LjAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMDAzODY3Ij5Db21tZW50czwvdGV4dD4KPHJlY3QgeD0iMTIwIiB5PSIzNzIiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMDQwIiB5PSIzNzIiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMjAiIHk9IjQ4NCIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+CjxyZWN0IHg9IjEwNDAiIHk9IjQ4NCIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+CjxyZWN0IHg9IjEyMCIgeT0iNTk2IiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPHJlY3QgeD0iMTA0MCIgeT0iNTk2IiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPC9zdmc+"
   },
   {
    "id": "hr-img-oracle-5",
    "filename": "hr-img-oracle-5.svg",
-   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgOTYwIDU0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQZW5kaW5nIGFzc2V0IGhyLWltZy1vcmFjbGUtNSI+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNTQwIiBmaWxsPSIjRjRGN0ZBIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI1MTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgcng9IjE2Ii8+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyNDIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAzODY3Ij4mIzk4ODg7IFBFTkRJTkcgQVNTRVQ8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIyODQuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMDAzODY3Ij5oci1pbWctb3JhY2xlLTU8L3RleHQ+Cjx0ZXh0IHg9IjQ4MC4wIiB5PSIzMjIuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNUI2QjdCIj5UZXN0LWFjY291bnQgY2FwdHVyZSBhZnRlciBCODwvdGV4dD4KPC9zdmc+"
+   "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iVHJhaW5pbmcgd2lyZWZyYW1lIG9mIEhSIHNlbGYtc2VydmljZTogQm9vayB5b3VyIGxlYXZlIGluIE9yYWNsZSI+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNGNEY3RkEiLz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODgiIGZpbGw9IiMwMDM4NjciLz4KPHRleHQgeD0iMzIiIHk9IjU2IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCxBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+SFIgc2VsZi1zZXJ2aWNlPC90ZXh0Pgo8dGV4dCB4PSIxODg4IiB5PSI1NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNDMENFRDkiPlRlc3QgYWNjb3VudCDCtyB0cmFpbmluZyB3aXJlZnJhbWUg4oCUIG5vdCB0aGUgbGl2ZSBzeXN0ZW08L3RleHQ+CjxyZWN0IHg9IjE1MDAiIHk9IjkwMCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI1NiIgcng9IjE2IiBmaWxsPSIjMDA4Qzk5IiBzdHJva2U9IiMwMDhDOTkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE1OTAuMCIgeT0iOTM4LjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjZmZmIj5TdWJtaXQ8L3RleHQ+CjxyZWN0IHg9IjEyMCIgeT0iMTI4IiB3aWR0aD0iMzYwIiBoZWlnaHQ9Ijg4IiByeD0iMTYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTQ4IiB5PSIxODIuMCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwMDM4NjciPlNhdmUgYW5kIENsb3NlPC90ZXh0Pgo8cmVjdCB4PSI1MjAiIHk9IjEyOCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSI4OCIgcng9IjE2IiBmaWxsPSIjZmZmIiBzdHJva2U9IiNDMENFRDkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjU0OCIgeT0iMTgyLjAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMDAzODY3Ij5DYW5jZWw8L3RleHQ+CjxyZWN0IHg9IjkyMCIgeT0iMTI4IiB3aWR0aD0iODQwIiBoZWlnaHQ9Ijg4IiByeD0iMTYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0MwQ0VEOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iOTQ4IiB5PSIxODIuMCIgZm9udC1mYW1pbHk9Ik1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwMDM4NjciPkxlYXZlIHR5cGU6IEFubnVhbDwvdGV4dD4KPHJlY3QgeD0iMTIwIiB5PSIyNjAiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMDQwIiB5PSIyNjAiIHdpZHRoPSI3MjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI0UzRUFGMCIvPgo8cmVjdCB4PSIxMjAiIHk9IjM3MiIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+CjxyZWN0IHg9IjEwNDAiIHk9IjM3MiIgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyOCIgcng9IjE0IiBmaWxsPSIjRTNFQUYwIi8+CjxyZWN0IHg9IjEyMCIgeT0iNDg0IiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPHJlY3QgeD0iMTA0MCIgeT0iNDg0IiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjI4IiByeD0iMTQiIGZpbGw9IiNFM0VBRjAiLz4KPC9zdmc+"
   },
   {
    "id": "hr-img-idcard",

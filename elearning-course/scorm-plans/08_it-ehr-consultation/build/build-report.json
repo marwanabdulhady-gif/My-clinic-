@@ -13,16 +13,16 @@
   ],
   "module_colour": "#006E78",
   "build": {
-    "project_id": "proj_01M5BMHPCZGS1MAXEPWRNXJ246",
-    "job_id": "job_01M5BMHPFAH1C9Q1ATCSDJVRB3",
+    "project_id": "proj_01M5BV9PRF6JSB7MBPEE1SF11K",
+    "job_id": "job_01M5BV9PTJAYYMNRMFC5FCAGGB",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/24eWStIyxMdFviI5XoqhgLhZdpidIH3j",
+    "download_url": "http://localhost/scorm/files/UHKzSyKHRe7XnWV5qq9OMkN4w8tr-s4L",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BMHPCZGS1MAXEPWRNXJ246",
+    "project_id": "proj_01M5BV9PRF6JSB7MBPEE1SF11K",
     "strict": false,
     "error_count": 0,
     "warn_count": 3,
@@ -33,13 +33,13 @@
         "severity": "warn",
         "code": "too_many_list_items",
         "message": "Ekranda 6 <li> var (>4) — bir ekran bir fikir taşımalı; listeyi bölmeyi ya da accordion/flashcards'a çevirmeyi düşün",
-        "path": "screens[15].body_html"
+        "path": "screens[16].body_html"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[16..19]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[16..19]"
+        "message": "4 ardışık görselsiz ekran (screens[17..20]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[17..20]"
       },
       {
         "severity": "warn",
@@ -63,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_08_EHR_v0.1-draft_1.2.zip",
-    "bytes": 720022
+    "bytes": 724530
   },
   "preview": "preview.html"
 }

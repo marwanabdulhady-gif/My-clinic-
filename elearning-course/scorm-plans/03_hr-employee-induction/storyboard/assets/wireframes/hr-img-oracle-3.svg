@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Training wireframe of HR self-service: Book your leave in Oracle">
+<rect width="1920" height="1080" fill="#F4F7FA"/>
+<rect width="1920" height="88" fill="#003867"/>
+<text x="32" y="56" font-family="Montserrat,Arial" font-size="30" font-weight="700" fill="#fff">HR self-service</text>
+<text x="1888" y="56" text-anchor="end" font-family="Montserrat,Arial" font-size="22" fill="#C0CED9">Test account · training wireframe — not the live system</text>
+<rect x="420" y="310" width="220" height="140" rx="16" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="448" y="390.0"  font-family="Montserrat,Arial" font-size="26" font-weight="600" fill="#003867">Add Leaves</text>
+<rect x="680" y="128" width="640" height="400" rx="24" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="712" y="184" font-family="Montserrat,Arial" font-size="28" font-weight="700" fill="#003867">Existing Absences</text>
+<rect x="120" y="568" width="640" height="400" rx="24" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="152" y="624" font-family="Montserrat,Arial" font-size="28" font-weight="700" fill="#003867">Absence Balance</text>
+<rect x="840" y="568" width="640" height="400" rx="24" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="872" y="624" font-family="Montserrat,Arial" font-size="28" font-weight="700" fill="#003867">Time Cards</text>
+</svg>

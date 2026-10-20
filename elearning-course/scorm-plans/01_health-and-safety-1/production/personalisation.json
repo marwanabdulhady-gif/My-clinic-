@@ -224,7 +224,12 @@
      "feedback_html": "<p>Hot work only with a Facilities permit.</p>"
     }
    ],
-   "brief": "Flat staff-room scene, 16:9: a small table and chairs, a kitchen counter. Seven separate, clearly visible items: a lit candle, a cheap home extension lead with several plugs, a small fan heater, a vape on the table, a microwave on the counter, an open bottle with a flame pictogram shape (no text), a welding kit propped by the door. Each item at least 48 px at 960×540, not overlapping."
+   "brief": "Flat staff-room scene, 16:9: a small table and chairs, a kitchen counter. Seven separate, clearly visible items: a lit candle, a cheap home extension lead with several plugs, a small fan heater, a vape on the table, a microwave on the counter, an open bottle with a flame pictogram shape (no text), a welding kit propped by the door. Each item at least 48 px at 960×540, not overlapping.",
+   "feedback": {
+    "correct_html": "<p><strong>All seven found.</strong> Flame and fuel, unsafe electrics and blocked exits start most clinic fires. If you see one at work, remove it or report it.</p>",
+    "incorrect_html": "<p>Keep looking: there are seven things in this room that should not be there.</p>",
+    "show_correct_answer": true
+   }
   }
  }
 }

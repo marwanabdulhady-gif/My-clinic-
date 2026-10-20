@@ -13,62 +13,56 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M5BN9EXSR2GCW07D2HZ61H4Q",
-    "job_id": "job_01M5BN9F1NFZ0XA7NMEEYC9HFJ",
+    "project_id": "proj_01M5BV999K2V4K163QZVMMY181",
+    "job_id": "job_01M5BV99BYBWM6X1DJF1JGQDCB",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/BL6ewBvFTC0kD0v4MGL-bJc8RZTIYtVq",
+    "download_url": "http://localhost/scorm/files/zYUYYegsf20pVLfS-iHl6eFsO4WfH_9y",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BN9EXSR2GCW07D2HZ61H4Q",
+    "project_id": "proj_01M5BV999K2V4K163QZVMMY181",
     "strict": false,
     "error_count": 0,
-    "warn_count": 7,
+    "warn_count": 6,
     "clean": false,
-    "evidence_binding_coverage": 0.923,
+    "evidence_binding_coverage": 0.929,
     "issues": [
       {
         "severity": "warn",
         "code": "free_hints",
         "message": "Tüm ipuçları bedava (maliyet 0) + skor var: bedava ipucu öğrenmeyi baltalar (en az bir ipucuna puan/zaman maliyeti ver)",
-        "path": "screens[9].mechanics.hints"
+        "path": "screens[10].mechanics.hints"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[0..4]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[0..4]"
+        "message": "5 ardışık görselsiz ekran (screens[11..15]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[11..15]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[10..14]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[10..14]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "8 ardışık görselsiz ekran (screens[22..29]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[22..29]"
+        "message": "8 ardışık görselsiz ekran (screens[23..30]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[23..30]"
       },
       {
         "severity": "warn",
         "code": "visual_poverty",
-        "message": "Kursta 33 ekranın yalnızca %18.2'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
+        "message": "Kursta 34 ekranın yalnızca %20.6'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
         "path": "screens"
       },
       {
         "severity": "warn",
         "code": "unbound_scored_question",
         "message": "Skorlanan soru 'hs2-031' kurs-içi bir kanıt kaynağına bağlı değil (K1/T1). K2 denetimi: 'kursu hiç görmemiş ama alanı bilen biri bunu zaten cevaplayabilir mi?' Evet ise bu öğretim değil ankettir. K3 — bağla ya da at: cevabı üreten ekranı `evidence_screen_ids` ile beyan et, kanıt ekranı ekle, soruyu points:0 yap ya da sil. Muhtemel adaylar (beyan edilmemiş): hs2-031r-clinical, hs2-031r-front, hs2-031r-support — uygunsa `evidence_screen_ids` ile beyan et.",
-        "path": "screens[10]"
+        "path": "screens[11]"
       },
       {
         "severity": "warn",
         "code": "scored_over_objectives",
-        "message": "Skorlanan ekran sayısı (13) hedef sayısı + 1'i (8) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
+        "message": "Skorlanan ekran sayısı (14) hedef sayısı + 1'i (8) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
         "path": "screens"
       }
     ]
@@ -87,7 +81,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_02_SafetyLab_v0.1-draft_1.2.zip",
-    "bytes": 4445766
+    "bytes": 4626658
   },
   "preview": "preview.html"
 }

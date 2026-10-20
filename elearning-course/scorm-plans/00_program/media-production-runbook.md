@@ -28,7 +28,7 @@ The roll-up is in [`media-jobs-summary.md`](media-jobs-summary.md). Each job car
 | `own-svg` | Diagram, icon set or pictogram drawn as SVG; labels stay in HTML, never in pixels | Diagram agent |
 | `own-pdf` | Job aid from the brand template | Document agent |
 | `client-photo` / `client-photo-or-role-tile` | Photographed by My Clinic with permission; if not supplied, a role tile or an `ai-image` substitute, recorded as a substitution | My Clinic / image agent |
-| `capture` | Screenshot from an approved **test** environment (Oracle, EHR). Never generated, never from `IT.mp4` | My Clinic IT with L2S |
+| `capture` | Screenshot from an approved **test** environment (Oracle, EHR). Never generated, never from `IT.mp4`. Until it exists, `tools/build_wireframes.py` draws a labelled training wireframe with the click target in place (`storyboard/assets/wireframes/`); the job stays open | My Clinic IT with L2S |
 
 Rules that apply to every generated picture: 1920 × 1080 master (shown at 960 × 540), delivered as JPEG quality 86 (PNG only for line art that needs transparency; keep each file under ~300 KB), no text, numbers, logos or identifiers in the pixels, no real likenesses, Noor and Dr. Omar are never regenerated (use `characters/assets/`), unnamed supporting people only ([`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md)).
 

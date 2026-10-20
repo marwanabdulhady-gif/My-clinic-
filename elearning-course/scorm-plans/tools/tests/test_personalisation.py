@@ -20,13 +20,16 @@ class LayerTests(unittest.TestCase):
             self.assertTrue(any(s["type"] == "branching" for s in spec["screens"]), mdir.name)
             self.assertEqual(sum(s.get("points") or 0 for s in spec["screens"]), totals[mdir.name[:2]], mdir.name)
             self.assertFalse(spec["screens"][-1].get("visible_if"), mdir.name)
-            self.assertEqual({v["name"] for v in spec.get("variables", [])}, {"role", "role_label"})
+            self.assertEqual({v["name"] for v in spec.get("variables", [])}, {"role", "role_label", "xp"})
+            self.assertEqual(spec.get("points_var"), "xp")
+            self.assertEqual(len(spec.get("levels", [])), 4)
 
     def test_picker_continues_to_the_screen_that_follows_it(self):
         for mdir in MODULES:
             screens = json.loads((mdir / "build" / "course-spec.json").read_text())["screens"]
             i = next(i for i, s in enumerate(screens) if s["type"] == "branching")
             self.assertEqual({c["goto_screen_id"] for c in screens[i]["choices"]}, {screens[i + 1]["id"]}, mdir.name)
+            self.assertTrue(screens[i + 1]["id"].endswith("-00m"), "mission brief follows the picker")
 
     def _run(self, layer: dict, screens: list[dict]):
         with tempfile.TemporaryDirectory() as d:

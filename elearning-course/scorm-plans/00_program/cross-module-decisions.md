@@ -21,6 +21,7 @@ These decisions affect more than one package. Record the final answer here **onc
 | D15 | **Who the induction is for** — role catalogue and LMS learning paths | all | Assumed catalogue in `roles.json` / `personalisation-and-interactivity-plan.md` §1 (8 roles + managers, 3–4 groups per package). HR maps Oracle job families to these roles. | HR + L&D | Open — assumption applied to drafts | |
 | D16 | **Extra unscored screens** from the personalisation layer (+26 per learner across the programme; Rev01 says ≈207) | all | Accept as a free value-add and log it in the proposal change log; scored content unchanged. | Course owner | Open | |
 | D17 | **Optional motion-graphics videos** (9 planned clips, `media-video-plan.json`) | all | Start with the programme welcome and `qsr-060`; decide the rest after the pilot. Each is a value-add or a change request. | Course owner | Open | |
+| D18 | **Gamification across all courses** (challenge, missions, XP, ranks) | all | Owner asked for it on 2026-10-20; built as an unscored layer (`gamification-plan.md`). Confirm the rank names and that XP is not reported to the LMS. | Course owner | Open — applied to drafts | |
 
 ## How to close a decision
 

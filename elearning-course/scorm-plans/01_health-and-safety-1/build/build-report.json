@@ -13,86 +13,80 @@
   ],
   "module_colour": "#008C99",
   "build": {
-    "project_id": "proj_01M5BMH6VX4FEGX7H9C4KQHZ7G",
-    "job_id": "job_01M5BMH6XHSSA9Z9Q1DWQ1DFAM",
+    "project_id": "proj_01M5BV96QPYFGJ1PK5X7V92034",
+    "job_id": "job_01M5BV96SSZNSJND5MF48XV3CC",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/ozlePZRDZrhhrqHFb_OBFOItWdWMlVc-",
+    "download_url": "http://localhost/scorm/files/_m9KoC_Jj-QcZKQoNcB86IZ1CWMVUfCx",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BMH6VX4FEGX7H9C4KQHZ7G",
+    "project_id": "proj_01M5BV96QPYFGJ1PK5X7V92034",
     "strict": false,
     "error_count": 0,
-    "warn_count": 11,
+    "warn_count": 10,
     "clean": false,
     "evidence_binding_coverage": 1.0,
     "issues": [
       {
         "severity": "warn",
-        "code": "default_feedback",
-        "message": "Feedback yazılmamış, jenerik varsayılana bırakılmış — her feedback nedeni açıklamalı ve doğru modele bağlanmalı",
-        "path": "screens[29].feedback"
-      },
-      {
-        "severity": "warn",
         "code": "free_hints",
         "message": "Tüm ipuçları bedava (maliyet 0) + skor var: bedava ipucu öğrenmeyi baltalar (en az bir ipucuna puan/zaman maliyeti ver)",
-        "path": "screens[57].mechanics.hints"
+        "path": "screens[58].mechanics.hints"
       },
       {
         "severity": "warn",
         "code": "too_many_list_items",
         "message": "Ekranda 5 <li> var (>4) — bir ekran bir fikir taşımalı; listeyi bölmeyi ya da accordion/flashcards'a çevirmeyi düşün",
-        "path": "screens[60].body_html"
+        "path": "screens[61].body_html"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[6..9]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[6..9]"
+        "message": "4 ardışık görselsiz ekran (screens[7..10]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[7..10]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "8 ardışık görselsiz ekran (screens[11..18]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[11..18]"
+        "message": "8 ardışık görselsiz ekran (screens[12..19]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[12..19]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[24..28]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[24..28]"
+        "message": "5 ardışık görselsiz ekran (screens[25..29]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[25..29]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "7 ardışık görselsiz ekran (screens[30..36]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[30..36]"
+        "message": "7 ardışık görselsiz ekran (screens[31..37]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[31..37]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[41..44]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[41..44]"
+        "message": "4 ardışık görselsiz ekran (screens[42..45]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[42..45]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[53..57]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[53..57]"
+        "message": "5 ardışık görselsiz ekran (screens[54..58]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[54..58]"
       },
       {
         "severity": "warn",
         "code": "visual_poverty",
-        "message": "Kursta 61 ekranın yalnızca %21.3'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
+        "message": "Kursta 62 ekranın yalnızca %22.6'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
         "path": "screens"
       },
       {
         "severity": "warn",
         "code": "scored_over_objectives",
-        "message": "Skorlanan ekran sayısı (24) hedef sayısı + 1'i (11) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
+        "message": "Skorlanan ekran sayısı (26) hedef sayısı + 1'i (11) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
         "path": "screens"
       }
     ]
@@ -111,7 +105,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_01_FMS_v0.1-draft_1.2.zip",
-    "bytes": 2849811
+    "bytes": 2850683
   },
   "preview": "preview.html"
 }

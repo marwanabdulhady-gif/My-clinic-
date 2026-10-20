@@ -38,3 +38,17 @@ The client must confirm LMS and SCORM version through D9 before build. Keep pack
 ## Gamification quality gate
 
 Before build, for every scored interaction confirm: objective id and point value match Phase 4; correct and incorrect feedback are substantive; per-choice feedback exists for branching tasks; hints do not disclose answers; retries/lives/pass rules match Phase 3; keyboard and text-only alternatives work; color is not the sole cue; and the interaction does not use real patient or staff data. Run `lint_planning.py`, regenerate `scorm-structure.md`, close the relevant SME register row, and include the case in the 81-test QA plan. Package-level quiz/pass totals must reconcile with Rev01.
+
+## Programme gamification system (owner decision D18, 2026-10-20)
+
+The owner asked for a visible gamification layer across all eight courses. It is built by `tools/gamify.py` from [`gamification.json`](gamification.json) and changes nothing scored:
+
+| Mechanic | What the learner sees | Rule |
+|---|---|---|
+| **Challenge** | A "Can you …?" hook on a mission-brief screen after the role picker (e.g. *Can you keep your clinic safe in your first week?*), with the course's challenge illustration | One per course; hooks in `gamification.json` |
+| **Missions** | Every teaching section is "Mission n · <title>" in the menu | Welcome and close sections are not missions |
+| **XP** | ★ n XP in the header | +10 per scored activity answered correctly, +5 per quick check, +2 per screen explored |
+| **Ranks** | ◆ rank in the header, four per course (e.g. Newcomer → Safety Spotter → Safety Ally → Safety Champion) | Unlocked at 0 / 30 / 60 / 85 % of the course's maximum XP |
+| **Debrief** | "You finished with n XP" on the closing screen | — |
+
+Still excluded: leaderboards, public ranking, timers and speed bonuses, penalties outside the existing games, and anything that feeds XP into the score, the pass mark or the LMS record. XP lives only in the course variables (resume data, a few bytes). Revisiting a screen can add XP again; that is accepted because XP has no consequence. The earlier text in this plan that ruled out badges is superseded for ranks only, by D18.

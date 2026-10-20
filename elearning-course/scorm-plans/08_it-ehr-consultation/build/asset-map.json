@@ -12,104 +12,129 @@
       "interim": false
     },
     "ehr-shot-list": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-list.svg",
+      "interim": false
     },
     "ehr-shot-form": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-form.svg",
+      "interim": false
     },
     "ehr-shot-dx-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-dx-1.svg",
+      "interim": false
     },
     "ehr-shot-dx-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-dx-2.svg",
+      "interim": false
     },
     "ehr-shot-dx-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-dx-3.svg",
+      "interim": false
     },
     "ehr-shot-dx-4": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-dx-4.svg",
+      "interim": false
     },
     "ehr-shot-dx-5": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-dx-5.svg",
+      "interim": false
     },
     "ehr-shot-order-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-1.svg",
+      "interim": false
     },
     "ehr-shot-order-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-2.svg",
+      "interim": false
     },
     "ehr-shot-order-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-3.svg",
+      "interim": false
     },
     "ehr-shot-order-4": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-4.svg",
+      "interim": false
     },
     "ehr-shot-order-5": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-5.svg",
+      "interim": false
     },
     "ehr-shot-order-6": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-order-6.svg",
+      "interim": false
     },
     "ehr-shot-wizard-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-wizard-1.svg",
+      "interim": false
     },
     "ehr-shot-wizard-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-wizard-2.svg",
+      "interim": false
     },
     "ehr-shot-wizard-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-wizard-3.svg",
+      "interim": false
     },
     "ehr-shot-wizard-4": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-wizard-4.svg",
+      "interim": false
     },
     "ehr-shot-summary-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-summary-1.svg",
+      "interim": false
     },
     "ehr-shot-summary-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-summary-2.svg",
+      "interim": false
     },
     "ehr-shot-summary-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-summary-3.svg",
+      "interim": false
     },
     "ehr-shot-sms-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-sms-1.svg",
+      "interim": false
     },
     "ehr-shot-sms-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-sms-2.svg",
+      "interim": false
     },
     "ehr-shot-sms-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-sms-3.svg",
+      "interim": false
     },
     "ehr-shot-sms-4": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-sms-4.svg",
+      "interim": false
     },
     "ehr-shot-sms-5": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-sms-5.svg",
+      "interim": false
     },
     "char-noor-avatar-neutral": {
       "status": "file",
@@ -117,28 +142,34 @@
       "interim": false
     },
     "ehr-shot-ref-1": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-1.svg",
+      "interim": false
     },
     "ehr-shot-ref-2": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-2.svg",
+      "interim": false
     },
     "ehr-shot-ref-3": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-3.svg",
+      "interim": false
     },
     "ehr-shot-ref-4": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-4.svg",
+      "interim": false
     },
     "ehr-shot-ref-5": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-5.svg",
+      "interim": false
     },
     "ehr-shot-ref-6": {
-      "status": "PENDING",
-      "gate": "DPO-approved test-environment capture (B2/D6)"
+      "status": "file",
+      "path": "08_it-ehr-consultation/storyboard/assets/wireframes/ehr-shot-ref-6.svg",
+      "interim": false
     },
     "brand-logo-horizontal-navy": {
       "status": "file",

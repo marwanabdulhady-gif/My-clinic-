@@ -75,3 +75,17 @@ img[data-asset][alt^="PENDING"]{outline:2px dashed var(--mc-mist)}
   .mc-guide{width:120px}
 }
 @media (prefers-reduced-motion:reduce){.title-slide::after{display:none}}
+
+/* Gamification (decision D18): XP and rank in the header, the challenge brief */
+#pointsHud::after{content:" XP";font-weight:600}
+#pointsHud,#levelHud{font-weight:700;color:var(--mc-navy);background:#fff;border:2px solid var(--mc-module,#008C99);
+  border-radius:999px;padding:3px 12px;font-size:13px}
+#levelHud{background:var(--mc-module,#008C99);color:#fff;border-color:var(--mc-module,#008C99)}
+.mc-hook{font-size:24px;font-weight:700;color:var(--mc-navy);line-height:1.25;margin:0 0 14px;
+  border-left:6px solid var(--mc-module,#008C99);padding-left:14px}
+.mc-missions{columns:2;column-gap:28px;margin:0 0 14px;padding-left:20px;font-size:15px}
+.mc-missions li{margin:0 0 6px;break-inside:avoid}
+.mc-xp-rules{background:var(--mc-bg);border-radius:12px;padding:10px 14px;font-size:14px}
+.mc-note{font-size:13px;color:#5B6B7B}
+.mc-xp-final{margin-top:12px;padding:10px 14px;border-radius:12px;background:var(--mc-bg);
+  border:2px solid var(--mc-module,#008C99)}

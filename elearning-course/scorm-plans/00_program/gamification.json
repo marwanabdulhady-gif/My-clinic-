@@ -1,0 +1,96 @@
+{
+ "note": "Gamification system (owner decision D18, 2026-10-20). XP and ranks are for motivation only: never part of the score, the pass mark or the LMS record. No timers, no leaderboards, no penalties.",
+ "xp": {
+  "scored_correct": 10,
+  "check_correct": 5,
+  "explore": 2
+ },
+ "rank_thresholds": [
+  0,
+  0.3,
+  0.6,
+  0.85
+ ],
+ "modules": {
+  "01": {
+   "challenge": "First-week safety challenge",
+   "hook": "Can you keep your clinic safe in your first week?",
+   "ranks": [
+    "Newcomer",
+    "Safety Spotter",
+    "Safety Ally",
+    "Safety Champion"
+   ]
+  },
+  "02": {
+   "challenge": "Safety lab challenge",
+   "hook": "Can you handle a day in the safety lab?",
+   "ranks": [
+    "Trainee",
+    "Drill Ready",
+    "Lab Pro",
+    "Safety Captain"
+   ]
+  },
+  "03": {
+   "challenge": "First 90 days challenge",
+   "hook": "Can you find your way through your first 90 days?",
+   "ranks": [
+    "New Joiner",
+    "Team Member",
+    "Insider",
+    "Culture Ambassador"
+   ]
+  },
+  "04": {
+   "challenge": "Right team, first time",
+   "hook": "Can you get every patient to the right team, first time?",
+   "ranks": [
+    "Guide",
+    "Navigator",
+    "Coordinator",
+    "Journey Expert"
+   ]
+  },
+  "05": {
+   "challenge": "The note that gets paid",
+   "hook": "Can you write a note that gets the claim paid?",
+   "ranks": [
+    "Note Writer",
+    "Clear Coder",
+    "Claim Saver",
+    "Documentation Pro"
+   ]
+  },
+  "06": {
+   "challenge": "Save the claim",
+   "hook": "Can you turn a rejected claim into a paid one?",
+   "ranks": [
+    "Benefit Learner",
+    "Policy Reader",
+    "Rejection Fixer",
+    "Revenue Guardian"
+   ]
+  },
+  "07": {
+   "challenge": "Stop harm first",
+   "hook": "Can you stop harm before it reaches a patient?",
+   "ranks": [
+    "Observer",
+    "Safety Voice",
+    "Risk Spotter",
+    "Patient Safety Champion"
+   ]
+  },
+  "08": {
+   "challenge": "The complete consultation",
+   "hook": "Can you close a consultation without a single gap?",
+   "ranks": [
+    "First Login",
+    "Navigator",
+    "Power User",
+    "EHR Expert"
+   ]
+  }
+ }
+}

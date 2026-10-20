@@ -493,7 +493,7 @@
    "id": "hr-img-oracle-1",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-oracle-1.png",
    "size_px": null,
    "screens": [
@@ -501,7 +501,7 @@
    ],
    "brief": "Oracle Applications Cloud sign-in page, test account, 1920×1080",
    "alt_text": "Oracle sign-in page with empty username and password fields and a Sign In button.",
-   "gate": "Test-account capture after B8",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
@@ -513,7 +513,7 @@
    "id": "hr-img-oracle-2",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-oracle-2.png",
    "size_px": null,
    "screens": [
@@ -521,7 +521,7 @@
    ],
    "brief": "Oracle home with the Time and Absences tile",
    "alt_text": "Oracle home page with a Time and Absences tile in the quick actions area.",
-   "gate": "Test-account capture after B8",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
@@ -533,7 +533,7 @@
    "id": "hr-img-oracle-3",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-oracle-3.png",
    "size_px": null,
    "screens": [
@@ -541,7 +541,7 @@
    ],
    "brief": "Time and Absences hub with the Add Leaves tile",
    "alt_text": "Oracle Time and Absences page with an Add Leaves tile.",
-   "gate": "Test-account capture after B8",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
@@ -553,7 +553,7 @@
    "id": "hr-img-oracle-4",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-oracle-4.png",
    "size_px": null,
    "screens": [
@@ -561,7 +561,7 @@
    ],
    "brief": "Add Leaves form with the leave-type drop-down open, showing Annual, Bereavement, Marriage, Scientific, Sick, Study",
    "alt_text": "Oracle Add Leaves form with the leave-type drop-down open.",
-   "gate": "Test-account capture after B8",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
@@ -573,7 +573,7 @@
    "id": "hr-img-oracle-5",
    "media": "image",
    "route": "capture",
-   "status": "todo",
+   "status": "done",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-oracle-5.png",
    "size_px": null,
    "screens": [
@@ -581,7 +581,7 @@
    ],
    "brief": "Add Leaves form filled, with a Submit button",
    "alt_text": "Oracle Add Leaves form with dates entered and a Submit button.",
-   "gate": "Test-account capture after B8",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",

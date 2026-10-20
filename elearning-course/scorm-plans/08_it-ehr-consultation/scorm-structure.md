@@ -60,6 +60,7 @@ MC_08_EHR_v1.0_1.2.zip
     ├── ehr-shot-wizard-2.*
     ├── ehr-shot-wizard-3.*
     ├── ehr-shot-wizard-4.*
+    ├── wireframes.*
     ├── char-noor-avatar-neutral.png
     ├── char-omar-avatar-neutral.png
     ├── char-omar-explaining.png

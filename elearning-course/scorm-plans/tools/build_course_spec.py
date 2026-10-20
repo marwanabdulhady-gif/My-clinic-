@@ -57,6 +57,8 @@ def find_asset(aid: str, module_dir: Path) -> Path | None:
     if aid.startswith("char-"):
         cands += [CHARS / "assets" / f"{aid}.png", CHARS / "previews" / f"{aid}.jpg"]
     cands.append(BRAND / f"{aid}.png")
+    # training wireframe for a software capture that is still owed (tools/build_wireframes.py)
+    cands.append(module_dir / "storyboard" / "assets" / "wireframes" / f"{aid}.svg")
     return next((c for c in cands if c.exists()), None)
 
 
@@ -287,6 +289,18 @@ def build(module: str) -> dict:
                 use(v)
     for note in pnotes:
         print(f"{module}: {note}")
+    from gamify import apply as gamify
+    picker = next((x["id"] for x in built if x["type"] == "branching"), None)
+    pfx = built[0]["id"].split("-")[0]
+    hero = next((h for h in (f"{pfx}-img-challenge", "char-noor-explaining" if pfx in {"hs1", "hs2", "qsr"} else "char-omar-explaining")
+                 if find_asset(h, mdir)), None)
+    built, game, gnotes = gamify(built, module, picker, hero)
+    if hero and game:
+        use(hero)
+    if game:
+        variables = variables + [{"name": "xp", "type": "number", "default": 0}]
+    for note in gnotes:
+        print(f"{module}: {note}")
     from map_hotspots import apply as apply_hotspot_maps
     for note in apply_hotspot_maps(built, mdir):
         print(f"{module}: {note}")
@@ -304,6 +318,10 @@ def build(module: str) -> dict:
                             "unlock_rule": "free"})
     used_nodes = {s.get("node_id") for s in built}
     outline = [n for n in outline if n["id"] in used_nodes]
+    if game:  # menu: teaching sections become missions
+        titles = {k.split("·")[-1].strip(): v for k, v in game["mission_titles"].items()}
+        for n in outline:
+            n["title"] = titles.get(n["title"], n["title"])
     objectives = []
     for cells in table_rows(sb, rf"{prefix}-o\d+"):
         oid = cells[0].strip("`")
@@ -333,6 +351,7 @@ def build(module: str) -> dict:
                      "typical_learning_time": f"PT{seat.group(1)}M" if seat else None},
         "objectives": objectives,
         **({"variables": variables} if variables else {}),
+        **({"points_var": game["points_var"], "levels": game["levels"]} if game else {}),
         "outline": outline,
         "screens": built,
         "assets": list(assets.values()),

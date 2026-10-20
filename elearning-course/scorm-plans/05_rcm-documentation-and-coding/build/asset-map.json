@@ -26,6 +26,11 @@
       "path": "00_program/characters/assets/char-omar-avatar-neutral.png",
       "interim": false
     },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

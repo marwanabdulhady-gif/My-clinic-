@@ -329,10 +329,10 @@
         "label": "Safety pin",
         "correct": null,
         "coords": [
-         330,
-         60,
-         140,
-         90
+         1297,
+         40,
+         91,
+         86
         ]
        },
        {
@@ -340,9 +340,9 @@
         "label": "Pressure gauge",
         "correct": null,
         "coords": [
-         580,
-         110,
-         55
+         1326,
+         168,
+         34
         ]
        },
        {
@@ -350,10 +350,10 @@
         "label": "Class / agent label",
         "correct": null,
         "coords": [
-         330,
-         190,
-         300,
-         130
+         1206,
+         414,
+         213,
+         303
         ]
        },
        {
@@ -361,10 +361,10 @@
         "label": "Instructions panel (PASS)",
         "correct": null,
         "coords": [
-         330,
-         340,
-         300,
-         150
+         1206,
+         791,
+         240,
+         141
         ]
        },
        {
@@ -372,10 +372,10 @@
         "label": "Last inspection tag",
         "correct": null,
         "coords": [
-         680,
-         250,
-         170,
-         170
+         1423,
+         303,
+         152,
+         263
         ]
        }
       ]

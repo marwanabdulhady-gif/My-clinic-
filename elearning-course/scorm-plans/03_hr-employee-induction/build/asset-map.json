@@ -137,24 +137,29 @@
       "interim": false
     },
     "hr-img-oracle-1": {
-      "status": "PENDING",
-      "gate": "Test-account capture after B8"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/wireframes/hr-img-oracle-1.svg",
+      "interim": false
     },
     "hr-img-oracle-2": {
-      "status": "PENDING",
-      "gate": "Test-account capture after B8"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/wireframes/hr-img-oracle-2.svg",
+      "interim": false
     },
     "hr-img-oracle-3": {
-      "status": "PENDING",
-      "gate": "Test-account capture after B8"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/wireframes/hr-img-oracle-3.svg",
+      "interim": false
     },
     "hr-img-oracle-4": {
-      "status": "PENDING",
-      "gate": "Test-account capture after B8"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/wireframes/hr-img-oracle-4.svg",
+      "interim": false
     },
     "hr-img-oracle-5": {
-      "status": "PENDING",
-      "gate": "Test-account capture after B8"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/wireframes/hr-img-oracle-5.svg",
+      "interim": false
     },
     "hr-img-idcard": {
       "status": "file",

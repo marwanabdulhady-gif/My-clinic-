@@ -68,6 +68,7 @@ MC_03_WelcomeOnBoard_v1.0_1.2.zip
     ├── hr-img-serve-icons.*
     ├── hr-img-values-icons.*
     ├── hr-pdf-quickref.*
+    ├── wireframes.*
     ├── char-noor-avatar-neutral.png
     ├── char-omar-avatar-neutral.png
     ├── char-omar-explaining.png
