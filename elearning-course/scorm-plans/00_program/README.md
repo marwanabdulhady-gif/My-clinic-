@@ -32,6 +32,7 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 | [`storyboard-review-register.md`](storyboard-review-register.md) · [`.csv`](storyboard-review-register.csv) | Screen-level SME build-detail questions |
 | [`scenario-design-plan.md`](scenario-design-plan.md) · [`gamification-plan.md`](gamification-plan.md) | Scenario inventory, game mechanics, scoring, retries |
 | [`storyboard-proposal-check.md`](storyboard-proposal-check.md) | Storyboards vs proposal Rev01, interactivity audit, compiler capabilities |
+| [`inspiration-portfolio-review.md`](inspiration-portfolio-review.md) | Instructional-design portfolio review: patterns and 15 ranked upgrades for the courses |
 | [`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md) · [`roles.json`](roles.json) · [`interactivity-upgrades.json`](interactivity-upgrades.json) | Who the induction is for, role paths, the unscored personalisation layer, backlog |
 | [`draft-slide-production.md`](draft-slide-production.md) · [`draft-slide-phases.json`](draft-slide-phases.json) · [`screen-generator.md`](screen-generator.md) | Pre-kick-off browser slide drafts (review renderer) |
 
