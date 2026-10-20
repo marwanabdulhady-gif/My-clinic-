@@ -26,17 +26,14 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 PLANS = Path(__file__).resolve().parents[1]
 PROG = PLANS / "00_program"
 MODULES = sorted(p.name for p in PLANS.glob("0[1-8]_*") if p.is_dir())
-PAD_LINES = (  # generic filler the storyboard assembler adds to reach target length (gap G11)
-    "Pause and connect this to your role.", "Use the principle in context.", "Keep the next action clear.",
-    "Think of the first detail you would check.", "Apply the point to a familiar task.",
-    "Carry the idea into your next decision.", "Notice which part of this you would use first on shift.",
-    "Link it to the task waiting for you tomorrow.", "Use the rule you practised.",
-    "Focus on the action that fits.", "Choose the option you would defend to a colleague.",
-)
+from narration_filler import filler_in  # noqa: E402  (generic lines the assembler added, gap G11)
 VOICES = {"noor": "Noor — female, early-to-mid 30s, warm, calm, clear",
           "omar": "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"}
 
@@ -176,7 +173,7 @@ def audio_jobs(mdir: Path, prefix: str) -> list[dict]:
     jobs = []
     for seg in n["segments"]:
         text = seg.get("narration", "")
-        pads = [l for l in PAD_LINES if l in text]
+        pads = filler_in(text)
         speakers = sorted(set(re.findall(r"^(NOOR|OMAR):", text, re.M))) or [seg.get("speaker", "").upper()]
         jobs.append({
             "id": f"{prefix}-aud-{seg['screen_id'].split('-', 1)[1]}", "media": "audio", "route": "tts",

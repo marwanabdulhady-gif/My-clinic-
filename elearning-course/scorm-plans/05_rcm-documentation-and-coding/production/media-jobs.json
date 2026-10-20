@@ -96,7 +96,7 @@
    "id": "rcma-aud-000",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-000.mp3",
    "screens": [
     "rcma-000"
@@ -110,11 +110,14 @@
    "script": "OMAR: Welcome to RCM Part A: Documentation & Coding. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
    "target_sec": 12.0,
    "tone": "warm",
-   "filler_lines": [],
+   "filler_lines": [
+    "You will leave with practical actions for your next shift.",
+    "You will practise decisions that help you act with confidence."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-001",
@@ -135,11 +138,13 @@
    "target_sec": 30.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Use the principle in context.",
-    "Keep the next action clear.",
-    "Think of the first detail you would check.",
     "Apply the point to a familiar task.",
-    "Carry the idea into your next decision."
+    "Carry the idea into your next decision.",
+    "Keep the main point connected to a familiar task or conversation.",
+    "Keep the next action clear.",
+    "That connection makes the information easier to use when it matters.",
+    "Think of the first detail you would check.",
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -150,7 +155,7 @@
    "id": "rcma-aud-002",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-002.mp3",
    "screens": [
     "rcma-002"
@@ -164,11 +169,14 @@
    "script": "OMAR: This reflection is not scored. Choose the response that helps you set one intention for your next shift.",
    "target_sec": 8.0,
    "tone": "reflective",
-   "filler_lines": [],
+   "filler_lines": [
+    ": This reflection is not scored.",
+    "Choose the response that helps you set one intention for your next shift."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-010",
@@ -189,11 +197,15 @@
    "target_sec": 35.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
+    "Apply the point to a familiar task.",
+    "Ask early when a situation does not match the rule.",
+    "Good habits here are quiet: check, confirm, continue.",
     "Keep the next action clear.",
+    "Notice which detail would guide your next conversation or decision.",
+    "Pause and connect this to your role.",
     "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
+    "Use the principle in context.",
+    "Use the tabs as a short reference, not a checklist to race through."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -219,9 +231,12 @@
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [
+    "Good habits here are quiet: check, confirm, continue.",
+    "Keep the next action clear.",
     "Pause and connect this to your role.",
-    "Use the principle in context.",
-    "Keep the next action clear."
+    "The important step is turning what you see into a clear response.",
+    "Use the comparison to separate a helpful detail from a potential problem.",
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -232,7 +247,7 @@
    "id": "rcma-aud-012",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-012.mp3",
    "screens": [
     "rcma-012"
@@ -246,17 +261,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-013",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-013.mp3",
    "screens": [
     "rcma-013"
@@ -270,11 +288,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-020",
@@ -295,8 +316,13 @@
    "target_sec": 35.0,
    "tone": "calm, practical",
    "filler_lines": [
+    "Ask early when a situation does not match the rule.",
+    "Good habits here are quiet: check, confirm, continue.",
+    "If one detail stays with you, let it be the safe one.",
+    "Link it to the task waiting for you tomorrow.",
+    "Notice which part of the information you would need first in practice.",
     "Pause and connect this to your role.",
-    "Link it to the task waiting for you tomorrow."
+    "Use that as the starting point for a safe, respectful next action."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -307,7 +333,7 @@
    "id": "rcma-aud-021",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-021.mp3",
    "screens": [
     "rcma-021"
@@ -321,11 +347,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-022",
@@ -346,11 +375,15 @@
    "target_sec": 40.0,
    "tone": "calm, practical",
    "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
+    "Apply the point to a familiar task.",
+    "Ask early when a situation does not match the rule.",
+    "Follow the example one step at a time, then identify why the next step makes sense.",
+    "Good habits here are quiet: check, confirm, continue.",
     "Keep the next action clear.",
+    "Pause and connect this to your role.",
+    "The value is the reasoning you can carry into a similar case.",
     "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
+    "Use the principle in context."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -361,7 +394,7 @@
    "id": "rcma-aud-023",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-023.mp3",
    "screens": [
     "rcma-023"
@@ -375,11 +408,15 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. The scenario uses fictional names and numbers.",
    "target_sec": 10.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose.",
+    "The scenario uses fictional names and numbers."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-030",
@@ -400,8 +437,12 @@
    "target_sec": 35.0,
    "tone": "calm, practical",
    "filler_lines": [
+    "As you read, focus on the decision this information supports in your own role.",
+    "If one detail stays with you, let it be the safe one.",
+    "Link it to the task waiting for you tomorrow.",
     "Notice which part of this you would use first on shift.",
-    "Link it to the task waiting for you tomorrow."
+    "The aim is a decision you can repeat, not a phrase to recall.",
+    "The aim is a practical next action, not a phrase to memorise."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -427,7 +468,10 @@
    "target_sec": 15.0,
    "tone": "encouraging",
    "filler_lines": [
-    "Focus on the action that fits."
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Focus on the action that fits.",
+    "Read carefully, then choose."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -438,7 +482,7 @@
    "id": "rcma-aud-032",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-032.mp3",
    "screens": [
     "rcma-032"
@@ -452,17 +496,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-033",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-033.mp3",
    "screens": [
     "rcma-033"
@@ -476,17 +523,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-040",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-040.mp3",
    "screens": [
     "rcma-040"
@@ -500,11 +550,14 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 10.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-041",
@@ -526,8 +579,11 @@
    "tone": "calm, practical",
    "filler_lines": [
     "Carry the idea into your next decision.",
+    "Link it to the task waiting for you tomorrow.",
+    "Notice which part of the information you would need first in practice.",
     "Notice which part of this you would use first on shift.",
-    "Link it to the task waiting for you tomorrow."
+    "The aim is a decision you can repeat, not a phrase to recall.",
+    "Use that as the starting point for a safe, respectful next action."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
@@ -538,7 +594,7 @@
    "id": "rcma-aud-042",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-042.mp3",
    "screens": [
     "rcma-042"
@@ -552,17 +608,20 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
    "target_sec": 8.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-050",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-050.mp3",
    "screens": [
     "rcma-050"
@@ -576,17 +635,21 @@
    "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Feedback explains the reasoning after you respond.",
    "target_sec": 10,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    ": The next choice asks you to apply the rule in a workplace situation.",
+    "Feedback explains the reasoning after you respond.",
+    "Read carefully, then choose."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-050",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-050.mp3",
    "screens": [
     "rcma-050"
@@ -600,17 +663,19 @@
    "script": "NOOR: That is the habit we want from every new colleague.",
    "target_sec": 5.0,
    "tone": "encouraging",
-   "filler_lines": [],
+   "filler_lines": [
+    "That is the habit we want from every new colleague."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-090",
    "media": "audio",
    "route": "tts",
-   "status": "todo",
+   "status": "blocked-rewrite",
    "target_file": "05_rcm-documentation-and-coding/storyboard/audio/rcma-aud-090.mp3",
    "screens": [
     "rcma-090"
@@ -624,11 +689,14 @@
    "script": "OMAR: Your results are organised by objective. Notice where you were confident, then revisit any section that needs another practical try.",
    "target_sec": 10.0,
    "tone": "supportive",
-   "filler_lines": [],
+   "filler_lines": [
+    ": Your results are organised by objective.",
+    "Notice where you were confident, then revisit any section that needs another practical try."
+   ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved"
+   "gate": "D10 voices approved; filler lines rewritten from the source first"
   },
   {
    "id": "rcma-aud-091",
@@ -649,7 +717,11 @@
    "target_sec": 25.0,
    "tone": "confident",
    "filler_lines": [
-    "Link it to the task waiting for you tomorrow."
+    ": You can now use these key actions in your role.",
+    "Keep the practical rule close, ask when you are unsure, and carry the next step into your shift.",
+    "Link it to the task waiting for you tomorrow.",
+    "Take one clear next action with you.",
+    "The aim is a decision you can repeat, not a phrase to recall."
    ],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",

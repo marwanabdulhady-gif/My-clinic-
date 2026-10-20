@@ -469,19 +469,22 @@
           ]
         },
         "on_disk": [
+          "hs1-img-8plans",
           "hs1-img-alara",
           "hs1-img-arec",
           "hs1-img-corridor",
           "hs1-img-ert",
+          "hs1-img-eyewash",
           "hs1-img-nfpa-301w",
           "hs1-img-nfpa-blank",
+          "hs1-img-pump-label",
+          "hs1-img-staffroom",
+          "hs1-img-treatment-room",
           "hs1-img-triangle"
         ],
         "missing_files": [],
         "planned_not_built": [
-          "hs1-img-8plans",
           "hs1-img-codes-chips",
-          "hs1-img-eyewash",
           "hs1-img-ghs-1",
           "hs1-img-ghs-2",
           "hs1-img-ghs-3",
@@ -490,11 +493,11 @@
           "hs1-img-ghs-6",
           "hs1-img-ghs-7",
           "hs1-img-ghs-8",
-          "hs1-img-ghs-9",
-          "hs1-img-pump-label",
-          "hs1-img-treatment-room"
+          "hs1-img-ghs-9"
         ],
-        "orphans": [],
+        "orphans": [
+          "hs1-img-staffroom"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -664,13 +667,6 @@
           ]
         },
         "on_disk": [
-          "hs2-img-floorplan",
-          "hs2-img-nfpa-230",
-          "hs2-img-storeroom"
-        ],
-        "missing_files": [],
-        "planned_not_built": [
-          "hs2-img-codes",
           "hs2-img-drill-1",
           "hs2-img-drill-2",
           "hs2-img-drill-3",
@@ -678,6 +674,16 @@
           "hs2-img-drill-5",
           "hs2-img-drill-6",
           "hs2-img-extinguisher",
+          "hs2-img-floorplan",
+          "hs2-img-kit-bio",
+          "hs2-img-kit-chem",
+          "hs2-img-nfpa-230",
+          "hs2-img-spill-photo",
+          "hs2-img-storeroom"
+        ],
+        "missing_files": [],
+        "planned_not_built": [
+          "hs2-img-codes",
           "hs2-img-ghs-1",
           "hs2-img-ghs-2",
           "hs2-img-ghs-3",
@@ -687,10 +693,7 @@
           "hs2-img-ghs-7",
           "hs2-img-ghs-8",
           "hs2-img-ghs-9",
-          "hs2-img-kit-bio",
-          "hs2-img-kit-chem",
-          "hs2-img-register",
-          "hs2-img-spill-photo"
+          "hs2-img-register"
         ],
         "orphans": [],
         "svg_issues": []
@@ -929,18 +932,6 @@
           ]
         },
         "on_disk": [
-          "hr-img-7c-icons",
-          "hr-img-award-icons",
-          "hr-img-benefits-wheel",
-          "hr-img-ethics-icons",
-          "hr-img-exit-icons",
-          "hr-img-gosi-bar",
-          "hr-img-help-icons",
-          "hr-img-map",
-          "hr-img-serve-icons"
-        ],
-        "missing_files": [],
-        "planned_not_built": [
           "hr-img-7c-capabilities",
           "hr-img-7c-care",
           "hr-img-7c-clinicians",
@@ -948,23 +939,35 @@
           "hr-img-7c-cost",
           "hr-img-7c-culture",
           "hr-img-7c-cure",
+          "hr-img-7c-icons",
+          "hr-img-award-icons",
           "hr-img-award-star",
           "hr-img-award-trophy",
-          "hr-img-branches",
+          "hr-img-benefits-wheel",
           "hr-img-dress-backoffice",
           "hr-img-dress-frontoffice",
           "hr-img-dress-medical",
           "hr-img-ethics-corridor",
           "hr-img-ethics-desk",
+          "hr-img-ethics-icons",
           "hr-img-ethics-meeting",
-          "hr-img-hero",
+          "hr-img-exit-icons",
+          "hr-img-gosi-bar",
+          "hr-img-help-icons",
           "hr-img-idcard",
+          "hr-img-leavedesk",
+          "hr-img-map",
+          "hr-img-serve-icons"
+        ],
+        "missing_files": [],
+        "planned_not_built": [
+          "hr-img-branches",
+          "hr-img-hero",
           "hr-img-leaders",
           "hr-img-leaders-ceo",
           "hr-img-leaders-cfo",
           "hr-img-leaders-cmo",
           "hr-img-leaders-coo",
-          "hr-img-leavedesk",
           "hr-img-oracle-1",
           "hr-img-oracle-2",
           "hr-img-oracle-3",
@@ -1034,17 +1037,24 @@
           ]
         },
         "on_disk": [
+          "ops-img-activities",
           "ops-img-journey",
           "ops-img-mycare-chart",
           "ops-img-ops-chart",
-          "ops-img-reception-scenario"
+          "ops-img-reception-scenario",
+          "ops-img-scenes-2",
+          "ops-img-scenes-3",
+          "ops-img-scenes-4"
         ],
         "missing_files": [],
         "planned_not_built": [
-          "ops-img-activities",
           "ops-img-scenes-1"
         ],
-        "orphans": [],
+        "orphans": [
+          "ops-img-scenes-2",
+          "ops-img-scenes-3",
+          "ops-img-scenes-4"
+        ],
         "svg_issues": []
       },
       "narration": {
@@ -1054,7 +1064,7 @@
         ],
         "unsplit": [],
         "tts_label_leaks": [],
-        "minutes": 4.4,
+        "minutes": 3.3,
         "voice_persona_set": true
       },
       "template": {
@@ -1251,13 +1261,13 @@
         "on_disk": [
           "qsr-img-iceberg",
           "qsr-img-matrix",
-          "qsr-img-spo"
+          "qsr-img-pillars",
+          "qsr-img-spo",
+          "qsr-img-wristbands"
         ],
         "missing_files": [],
         "planned_not_built": [
-          "qsr-img-pillars",
           "qsr-img-quote",
-          "qsr-img-wristbands",
           "qsr-vid-speakup"
         ],
         "orphans": [],

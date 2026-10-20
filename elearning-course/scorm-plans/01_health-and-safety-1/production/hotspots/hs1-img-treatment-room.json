@@ -1,0 +1,63 @@
+{
+ "asset_id": "hs1-img-treatment-room",
+ "image_size": [
+  1920,
+  1080
+ ],
+ "mapped_by": "Claude, 2026-10-20 — measured on a 100 px grid and checked on the overlay",
+ "checked_by": null,
+ "sme_approved": false,
+ "screens": {
+  "hs1-701": {
+   "mode": "explore",
+   "scored": false,
+   "labels": {
+    "redsocket": "<strong>Emergency socket (red) ⚠ Draft — pending 01/B6</strong>",
+    "stdsocket": "<strong>Standard socket</strong>",
+    "ups": "<strong>UPS-backed monitor</strong>",
+    "extension": "<strong>Unauthorised extension</strong>",
+    "valve": "<strong>Water shut-off valve</strong>",
+    "vent": "<strong>HVAC vent (isolation room)</strong>"
+   },
+   "regions": {
+    "redsocket": [
+     676,
+     326,
+     92,
+     92
+    ],
+    "stdsocket": [
+     776,
+     426,
+     86,
+     86
+    ],
+    "ups": [
+     948,
+     268,
+     312,
+     232
+    ],
+    "extension": [
+     686,
+     540,
+     236,
+     250
+    ],
+    "valve": [
+     952,
+     592,
+     162,
+     130
+    ],
+    "vent": [
+     1158,
+     568,
+     198,
+     198
+    ]
+   },
+   "add_regions": []
+  }
+ }
+}

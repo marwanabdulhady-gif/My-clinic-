@@ -47,32 +47,39 @@
       "interim": false
     },
     "hr-img-7c-closer": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-closer.svg",
+      "interim": false
     },
     "hr-img-7c-cure": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-cure.svg",
+      "interim": false
     },
     "hr-img-7c-capabilities": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-capabilities.svg",
+      "interim": false
     },
     "hr-img-7c-culture": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-culture.svg",
+      "interim": false
     },
     "hr-img-7c-clinicians": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-clinicians.svg",
+      "interim": false
     },
     "hr-img-7c-care": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-care.svg",
+      "interim": false
     },
     "hr-img-7c-cost": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-7c-cost.svg",
+      "interim": false
     },
     "hr-img-map": {
       "status": "file",
@@ -80,12 +87,14 @@
       "interim": false
     },
     "hr-img-award-star": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-award-star.svg",
+      "interim": false
     },
     "hr-img-award-trophy": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-award-trophy.svg",
+      "interim": false
     },
     "hr-img-ethics-icons": {
       "status": "file",
@@ -93,16 +102,19 @@
       "interim": false
     },
     "hr-img-ethics-meeting": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-meeting.jpg",
+      "interim": false
     },
     "hr-img-ethics-corridor": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-corridor.jpg",
+      "interim": false
     },
     "hr-img-ethics-desk": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-desk.jpg",
+      "interim": false
     },
     "char-noor-avatar-neutral": {
       "status": "file",
@@ -115,8 +127,9 @@
       "interim": false
     },
     "hr-img-leavedesk": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-leavedesk.jpg",
+      "interim": false
     },
     "hr-img-gosi-bar": {
       "status": "file",
@@ -144,8 +157,9 @@
       "gate": "Test-account capture after B8"
     },
     "hr-img-idcard": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "03_hr-employee-induction/storyboard/assets/hr-img-idcard.jpg",
+      "interim": false
     },
     "hr-img-benefits-wheel": {
       "status": "file",

@@ -13,16 +13,16 @@
   ],
   "module_colour": "#9D3293",
   "build": {
-    "project_id": "proj_01M5AE713DYGEPZ2HVXNFG66RD",
-    "job_id": "job_01M5AE714XSVY0CGWH4K7S93N5",
+    "project_id": "proj_01M5BMHE123NXV4YDBFD1G4PFX",
+    "job_id": "job_01M5BMHE2A0WPSJCJXB6N6P8EP",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/B2tghmqenJRMi6hZvOIBq3XlGJtG4tNC",
+    "download_url": "http://localhost/scorm/files/kxmeufFUFshfYIvxomfnBfb8ZrQuvxSJ",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5AE713DYGEPZ2HVXNFG66RD",
+    "project_id": "proj_01M5BMHE123NXV4YDBFD1G4PFX",
     "strict": false,
     "error_count": 0,
     "warn_count": 1,
@@ -51,7 +51,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_04_OpsMyCare_v0.1-draft_1.2.zip",
-    "bytes": 2535796
+    "bytes": 2877886
   },
   "preview": "preview.html"
 }

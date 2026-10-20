@@ -30,7 +30,7 @@ The roll-up is in [`media-jobs-summary.md`](media-jobs-summary.md). Each job car
 | `client-photo` / `client-photo-or-role-tile` | Photographed by My Clinic with permission; if not supplied, a role tile or an `ai-image` substitute, recorded as a substitution | My Clinic / image agent |
 | `capture` | Screenshot from an approved **test** environment (Oracle, EHR). Never generated, never from `IT.mp4` | My Clinic IT with L2S |
 
-Rules that apply to every generated picture: 1920 × 1080 master (shown at 960 × 540), PNG, no text, numbers, logos or identifiers in the pixels, no real likenesses, Noor and Dr. Omar are never regenerated (use `characters/assets/`), unnamed supporting people only ([`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md)).
+Rules that apply to every generated picture: 1920 × 1080 master (shown at 960 × 540), delivered as JPEG quality 86 (PNG only for line art that needs transparency; keep each file under ~300 KB), no text, numbers, logos or identifiers in the pixels, no real likenesses, Noor and Dr. Omar are never regenerated (use `characters/assets/`), unnamed supporting people only ([`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md)).
 
 ## 3. Hotspots on generated pictures — and adding more
 
@@ -50,7 +50,7 @@ python3 tools/map_hotspots.py preview 01_health-and-safety-1                    
 
 - One clip per segment, file name `<prefix>-aud-<screen>.mp3`, MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head and tail.
 - Voices: Noor and Dr. Omar only, from the D10 provider; the voice description is in each job. Neither voice may be cloned from, or sound like, a real employee.
-- **Do not voice a job with `status: "blocked-rewrite"`.** Its script still carries generic filler lines (listed in `filler_lines`) added by the storyboard assembler to reach the target length (gap G11). Rewrite from the source first, keep it under `target_sec`, never narrate the answer.
+- **Do not voice a job with `status: "blocked-rewrite"`** (156 of 218 on 2026-10-19; every segment in 01, 02, 04, 05, 06 and 08). Rewrite them with `tools/narration_rewrite.py` (export → fill `new_text` → apply → check); step by step in [`../../AGENT-TASKS.md`](../../AGENT-TASKS.md) T1. Its script still carries generic filler lines (listed in `filler_lines`) added by the storyboard assembler to reach the target length (gap G11). Rewrite from the source first, keep it under `target_sec`, never narrate the answer.
 - Captions: WebVTT made from the final audio by forced alignment (e.g. `whisperx` or `aeneas`), with speaker voice tags. The caption text must match `narration_text` on the screen word for word.
 - Pronunciation: the lexicon in `storyboard/voice_talent.md` and [`narration-and-lexicon.md`](narration-and-lexicon.md).
 

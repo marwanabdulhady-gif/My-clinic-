@@ -1,0 +1,63 @@
+{
+ "asset_id": "qsr-img-pillars",
+ "image_size": [
+  1920,
+  1080
+ ],
+ "mapped_by": "Claude, 2026-10-20 — measured on a 100 px grid and checked on the overlay",
+ "checked_by": null,
+ "sme_approved": false,
+ "screens": {
+  "qsr-020": {
+   "mode": "explore",
+   "scored": false,
+   "labels": {
+    "g1": "<strong>Goal 1 — Identification ⚠ PENDING B3</strong><p>Use two approved identifiers. Exact rule ⚠ PENDING B4.</p>",
+    "g2": "<strong>Goal 2 — Communication ⚠ PENDING B3</strong><p>Verify verbal/telephone orders, report critical results and use structured handover.</p>",
+    "g3": "<strong>Goal 3 — High-alert medicines ⚠ PENDING B3</strong><p>Draft mentions a red label and independent double-check.</p>",
+    "g4": "<strong>Goal 4 — Safe procedures ⚠ PENDING B3</strong><p>Draft practices include verification, site marking, time-out and sign-out.</p>",
+    "g5": "<strong>Goal 5 — Hand hygiene ⚠ PENDING B10</strong><p>Five moments: before patient contact, before a clean procedure, after body-fluid exposure risk, after patient contact, after surroundings.</p>",
+    "g6": "<strong>Goal 6 — Fall prevention ⚠ PENDING B5</strong><p>Draft source mentions a high-risk identifier band; confirm its colour and use.</p>"
+   },
+   "regions": {
+    "g1": [
+     84,
+     165,
+     261,
+     700
+    ],
+    "g2": [
+     383,
+     165,
+     261,
+     700
+    ],
+    "g3": [
+     680,
+     165,
+     261,
+     700
+    ],
+    "g4": [
+     979,
+     165,
+     261,
+     700
+    ],
+    "g5": [
+     1276,
+     165,
+     261,
+     700
+    ],
+    "g6": [
+     1575,
+     165,
+     261,
+     700
+    ]
+   },
+   "add_regions": []
+  }
+ }
+}

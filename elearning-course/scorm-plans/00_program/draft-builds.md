@@ -7,13 +7,13 @@
 <!-- builds:start -->
 | Module | SCORM | Screens | Scored | lint errors | lint warnings | validate | Package | KB | Pending media | Companions placed | Explore-hotspot rules |
 |---|---|---:|---:|---:|---|---|---|---:|---:|---:|---:|
-| [01](../01_health-and-safety-1/build/) | 1.2 | 61 | 24 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`×5, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_1.2.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_1.2.zip) | 2333 | 4 | 7 | 23 |
-| [02](../02_health-and-safety-2/build/) | 1.2 | 33 | 13 | 0 | `free_hints`, `text_only_run`×3, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 3266 | 9 | 4 | 11 |
-| [03](../03_hr-employee-induction/build/) | 1.2 | 42 | 15 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip) | 1203 | 19 | 3 | 7 |
-| [04](../04_operations-and-my-care/build/) | 1.2 | 22 | 4 | 0 | `text_only_run` | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2476 | 4 | 3 | 6 |
+| [01](../01_health-and-safety-1/build/) | 1.2 | 61 | 24 | 0 | `default_feedback`, `free_hints`, `too_many_list_items`, `text_only_run`×6, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_01_FMS_v0.1-draft_1.2.zip`](../01_health-and-safety-1/build/MC_01_FMS_v0.1-draft_1.2.zip) | 2783 | 0 | 7 | 30 |
+| [02](../02_health-and-safety-2/build/) | 1.2 | 33 | 13 | 0 | `free_hints`, `text_only_run`×3, `visual_poverty`, `unbound_scored_question`, `scored_over_objectives` | ok* | [`MC_02_SafetyLab_v0.1-draft_1.2.zip`](../02_health-and-safety-2/build/MC_02_SafetyLab_v0.1-draft_1.2.zip) | 4342 | 0 | 4 | 11 |
+| [03](../03_hr-employee-induction/build/) | 1.2 | 42 | 15 | 0 | `text_only_run`, `scored_over_objectives` | ok* | [`MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip`](../03_hr-employee-induction/build/MC_03_WelcomeOnBoard_v0.1-draft_1.2.zip) | 1651 | 5 | 3 | 7 |
+| [04](../04_operations-and-my-care/build/) | 1.2 | 22 | 4 | 0 | `text_only_run` | ok* | [`MC_04_OpsMyCare_v0.1-draft_1.2.zip`](../04_operations-and-my-care/build/MC_04_OpsMyCare_v0.1-draft_1.2.zip) | 2810 | 0 | 3 | 6 |
 | [05](../05_rcm-documentation-and-coding/build/) | 1.2 | 27 | 10 | 0 | `free_hints`, `too_many_list_items`, `text_only_run`, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_05_RCM-A_v0.1-draft_1.2.zip`](../05_rcm-documentation-and-coding/build/MC_05_RCM-A_v0.1-draft_1.2.zip) | 519 | 0 | 3 | 0 |
 | [06](../06_rcm-ebp-benefits-and-rejections/build/) | 1.2 | 20 | 7 | 0 | `text_only_run`×2, `visual_poverty`, `scored_over_objectives` | ok* | [`MC_06_RCM-B_v0.1-draft_1.2.zip`](../06_rcm-ebp-benefits-and-rejections/build/MC_06_RCM-B_v0.1-draft_1.2.zip) | 706 | 0 | 3 | 0 |
-| [07](../07_quality-safety-and-risk/build/) | 1.2 | 27 | 11 | 0 | `text_only_run`×2, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 808 | 2 | 3 | 6 |
+| [07](../07_quality-safety-and-risk/build/) | 1.2 | 27 | 11 | 0 | `text_only_run`×2, `scored_over_objectives` | ok* | [`MC_07_ClinicalGov_v0.1-draft_1.2.zip`](../07_quality-safety-and-risk/build/MC_07_ClinicalGov_v0.1-draft_1.2.zip) | 930 | 0 | 3 | 6 |
 | [08](../08_it-ehr-consultation/build/) | 1.2 | 25 | 11 | 0 | `too_many_list_items`, `text_only_run`, `scored_over_objectives` | ok* | [`MC_08_EHR_v0.1-draft_1.2.zip`](../08_it-ehr-consultation/build/MC_08_EHR_v0.1-draft_1.2.zip) | 703 | 31 | 3 | 6 |
 <!-- builds:end -->
 

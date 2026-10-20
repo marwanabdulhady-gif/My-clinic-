@@ -17,8 +17,9 @@
       "interim": false
     },
     "ops-img-activities": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-activities.svg",
+      "interim": false
     },
     "ops-img-ops-chart": {
       "status": "file",
@@ -36,16 +37,19 @@
       "interim": false
     },
     "ops-img-scenes-2": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-2.jpg",
+      "interim": false
     },
     "ops-img-scenes-3": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-3.jpg",
+      "interim": false
     },
     "ops-img-scenes-4": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-4.jpg",
+      "interim": false
     },
     "char-omar-avatar-neutral": {
       "status": "file",

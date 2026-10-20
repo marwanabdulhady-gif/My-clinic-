@@ -8,7 +8,7 @@
    "id": "hr-img-7c-closer",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-closer.svg",
    "size_px": null,
    "screens": [
@@ -16,19 +16,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-cure",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-cure.svg",
    "size_px": null,
    "screens": [
@@ -36,19 +38,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-capabilities",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-capabilities.svg",
    "size_px": null,
    "screens": [
@@ -56,19 +60,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-culture",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-culture.svg",
    "size_px": null,
    "screens": [
@@ -76,19 +82,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-clinicians",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-clinicians.svg",
    "size_px": null,
    "screens": [
@@ -96,19 +104,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-care",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-care.svg",
    "size_px": null,
    "screens": [
@@ -116,19 +126,21 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-7c-cost",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-7c-cost.svg",
    "size_px": null,
    "screens": [
@@ -136,13 +148,15 @@
    ],
    "brief": "Part of hr-img-7c-icons: Line icons redrawn from slide 10: headset (Closer), syringe (Cure), mind-and-gears (Capabilities), handshake (Culture), stethoscope (Clinicians), heart-hands (Care), coins (Cost)",
    "alt_text": "Decorative — each panel is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-map",
@@ -257,7 +271,7 @@
    "id": "hr-img-award-star",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-award-star.svg",
    "size_px": null,
    "screens": [
@@ -265,19 +279,21 @@
    ],
    "brief": "Part of hr-img-award-icons: Two line icons redrawn from slides 17–18: a trophy and a laurel star",
    "alt_text": "Decorative — each card front is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-award-trophy",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-award-trophy.svg",
    "size_px": null,
    "screens": [
@@ -285,13 +301,15 @@
    ],
    "brief": "Part of hr-img-award-icons: Two line icons redrawn from slides 17–18: a trophy and a laurel star",
    "alt_text": "Decorative — each card front is labelled in text.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-ethics-icons",
@@ -317,7 +335,7 @@
    "id": "hr-img-ethics-meeting",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-meeting.png",
    "size_px": [
     1920,
@@ -328,20 +346,25 @@
    ],
    "brief": "Flat meeting-room scene: table, four chairs, a laptop and a document; two brand colours",
    "alt_text": "A small meeting room where a supplier evaluation is being discussed.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A small, uncluttered clinic meeting room viewed at a slight angle. A plain table, four chairs, one closed laptop and one unmarked document are arranged for a supplier-evaluation discussion. No people are visible. The image should support a workplace ethics scenario without depicting a real supplier, gift, conflict outcome or policy rule. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A small, uncluttered clinic meeting room viewed at a slight angle. A plain table, four chairs, one closed laptop and one unmarked document are arranged for a supplier-evaluation discussion. No people are visible. The image should support a workplace ethics scenario without depicting a real supplier, gift, conflict outcome or policy rule. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-ethics-corridor",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-corridor.png",
    "size_px": [
     1920,
@@ -352,20 +375,25 @@
    ],
    "brief": "Flat corridor scene: reception desk and a queue of two patients",
    "alt_text": "A clinic corridor with a reception desk and two patients waiting.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A bright outpatient-clinic corridor with a simple reception counter and two generic adult patients waiting at a respectful distance. Keep faces indistinct and no patient records or signage. The scene is neutral; do not imply a particular queue-jumping decision or policy. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A bright outpatient-clinic corridor with a simple reception counter and two generic adult patients waiting at a respectful distance. Keep faces indistinct and no patient records or signage. The scene is neutral; do not imply a particular queue-jumping decision or policy. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-ethics-desk",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-ethics-desk.png",
    "size_px": [
     1920,
@@ -376,14 +404,19 @@
    ],
    "brief": "Flat desk scene: laptop showing a blank report form, a cup, a notebook",
    "alt_text": "A desk with a laptop open on an incident report form.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A tidy work desk with an open laptop showing a blank, abstract form with empty fields (no readable interface or text), one plain notebook and a cup. No people, logos or patient/staff data. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A tidy work desk with an open laptop showing a blank, abstract form with empty fields (no readable interface or text), one plain notebook and a cup. No people, logos or patient/staff data. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-help-icons",
@@ -409,7 +442,7 @@
    "id": "hr-img-leavedesk",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-leavedesk.png",
    "size_px": [
     1920,
@@ -420,14 +453,19 @@
    ],
    "brief": "Flat office-desk scene: a desk, a laptop, a small plant, two chairs; brand colours, white background",
    "alt_text": "An HR service desk with a laptop and two chairs.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A neutral HR service desk: one desk, a closed or unreadable laptop, a small plant and two visitor chairs. No people, calendars, forms, text or policy cues. The illustration is a calm setting for a separate learner interaction, not a depiction of a real HR system. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A neutral HR service desk: one desk, a closed or unreadable laptop, a small plant and two visitor chairs. No people, calendars, forms, text or policy cues. The illustration is a calm setting for a separate learner interaction, not a depiction of a real HR system. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-gosi-bar",
@@ -555,7 +593,7 @@
    "id": "hr-img-idcard",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-idcard.png",
    "size_px": [
     1920,
@@ -566,14 +604,19 @@
    ],
    "brief": "Flat ID badge on a lanyard, first name only, no real logo until approved",
    "alt_text": "A My Clinic staff ID badge on a lanyard.",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A simple employee ID badge on a plain lanyard, shown against a clean light background. The card is completely blank: no name, photo, number, barcode, logo or text. Do not render the My Clinic brand. Use the shared style suffix with caring purple #652D8C; keep the badge large and front-facing.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A simple employee ID badge on a plain lanyard, shown against a clean light background. The card is completely blank: no name, photo, number, barcode, logo or text. Do not render the My Clinic brand. Use the shared style suffix with caring purple #652D8C; keep the badge large and front-facing.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-benefits-wheel",
@@ -633,7 +676,8 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-img-serve-icons",
@@ -753,7 +797,8 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "hr-pdf-quickref",
@@ -780,7 +825,7 @@
    "id": "hr-img-dress-frontoffice",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-dress-frontoffice.png",
    "size_px": [
     1920,
@@ -798,13 +843,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "One generic adult front-office colleague standing in a relaxed neutral pose, wearing modest, plain professional business-casual clothing suitable for a Saudi outpatient reception. No badge, logo, pattern text, named uniform or distinctive personal features. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-dress-medical",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-dress-medical.png",
    "size_px": [
     1920,
@@ -822,13 +872,18 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "One generic adult clinical colleague standing in a relaxed neutral pose, wearing plain modest clinical scrubs with a simple white coat and stethoscope. No badge, logo, patient, clinical procedure or distinctive personal features. Do not imply a role-specific dress rule beyond this neutral visual. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-img-dress-backoffice",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "03_hr-employee-induction/storyboard/assets/hr-img-dress-backoffice.png",
    "size_px": [
     1920,
@@ -846,7 +901,12 @@
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "One generic adult back-office colleague standing in a relaxed neutral pose, wearing modest plain business attire suitable for an office. No badge, logo, named department or distinctive personal features. Use the shared style suffix with caring purple #652D8C.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "hr-aud-000",

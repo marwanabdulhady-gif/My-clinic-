@@ -102,7 +102,7 @@
    "id": "ops-img-activities",
    "media": "image",
    "route": "own-svg",
-   "status": "todo",
+   "status": "review",
    "target_file": "04_operations-and-my-care/storyboard/assets/ops-img-activities.svg",
    "size_px": null,
    "screens": [
@@ -111,13 +111,15 @@
    ],
    "brief": "Line icons; slide 2/5 \"sticky note\" style not copied",
    "alt_text": "decorative",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena agent (PR #53), provenance not recorded",
+   "notes": "From PR #53; baked-in designer notes removed and cropped to the artwork (Claude 2026-10-20)."
   },
   {
    "id": "ops-img-ops-chart",
@@ -187,7 +189,7 @@
    "id": "ops-img-scenes-2",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-2.png",
    "size_px": [
     1920,
@@ -198,20 +200,25 @@
    ],
    "brief": "",
    "alt_text": "",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A generic care-coordination colleague making a follow-up phone call at a quiet desk, with a closed notebook and an unreadable blank computer display. No visible phone number, patient name, document text or identifiable patient. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A generic care-coordination colleague making a follow-up phone call at a quiet desk, with a closed notebook and an unreadable blank computer display. No visible phone number, patient name, document text or identifiable patient. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "ops-img-scenes-3",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-3.png",
    "size_px": [
     1920,
@@ -222,20 +229,25 @@
    ],
    "brief": "",
    "alt_text": "",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A generic front-office colleague wearing a headset and speaking on a phone at a tidy desk. Show the workstation without readable screens, insurer names, claim numbers, documents or logos. The scene is neutral and must not show a coverage decision. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A generic front-office colleague wearing a headset and speaking on a phone at a tidy desk. Show the workstation without readable screens, insurer names, claim numbers, documents or logos. The scene is neutral and must not show a coverage decision. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "ops-img-scenes-4",
    "media": "image",
    "route": "ai-image",
-   "status": "todo",
+   "status": "review",
    "target_file": "04_operations-and-my-care/storyboard/assets/ops-img-scenes-4.png",
    "size_px": [
     1920,
@@ -246,14 +258,19 @@
    ],
    "brief": "",
    "alt_text": "",
-   "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)",
+   "gate": "",
    "prompt": "A generic outpatient pharmacy counter with a short, orderly queue of two adult visitors and one staff member behind the counter. No medicine labels, prescriptions, patient identifiers, names or logos. No medical advice or medication handling is shown. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance.",
    "acceptance": [
     "Matches the brief; nothing beyond it (no extra hazards, people or objects).",
     "No text, numbers, logos, identifiers or real likenesses in the pixels; labels stay in HTML.",
     "Brand palette: navy #003867 outlines, light surfaces, one module highlight.",
     "Provenance recorded (generator, model, date, prompt) in PROVENANCE.json via add_asset."
-   ]
+   ],
+   "made_by": "Arena Agent Mode",
+   "tool": "Arena generate_image",
+   "model": "gemini-3.1-flash-image",
+   "date": "2026-10-19",
+   "prompt_used": "A generic outpatient pharmacy counter with a short, orderly queue of two adult visitors and one staff member behind the counter. No medicine labels, prescriptions, patient identifiers, names or logos. No medical advice or medication handling is shown. Use the shared style suffix with responsible magenta #9D3293.\n\nFlat vector illustration for a Saudi outpatient healthcare e-learning course, 16:9 landscape, clean minimalist composition, simple geometric shapes, thin navy (#003867) outlines, white and very light blue-grey (#F4F7FA, #C0CED9) surfaces, one approved module highlight colour, lots of white space, calm bright clinic environment, soft even lighting. Generic fictional people only, modest culturally appropriate clothing. No text, letters, numbers, logos, My Clinic wordmark, signage words, watermark, readable interface, patient or staff identifiers. No photorealism, 3D render, gradients, neon, clutter, heavy shadow, blood, injury, distorted hands, extra objects or hazards beyond the brief, or Western hospital stereotypes. Keep the composition readable at 960 × 540; leave negative space for separately typeset screen content. Deliver an unlabelled PNG master and source/settings, and record generator, date and provenance."
   },
   {
    "id": "ops-aud-000",
@@ -270,7 +287,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: Welcome to Who Does What: Operations & My Care. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+   "script": "OMAR: In this module, follow a patient through a visit and see how Operations and My Care contribute at different points. Notice how their work connects.",
    "target_sec": 12.0,
    "tone": "warm",
    "filler_lines": [],
@@ -283,7 +300,7 @@
    "id": "ops-aud-001",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-001.mp3",
    "screens": [
     "ops-001"
@@ -294,22 +311,20 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context.",
+   "script": "OMAR: A patient who has to repeat their story can lose confidence in the visit. The teams need to connect their work so the patient is guided smoothly from one stage to another. As you look at the journey, consider what a clear handoff feels like from the patient’s perspective.",
    "target_sec": 25.0,
    "tone": "calm, practical",
-   "filler_lines": [
-    "Use the principle in context."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-002",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-002.mp3",
    "screens": [
     "ops-002"
@@ -320,24 +335,20 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: Walk the journey. Notice where each team leads. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+   "script": "OMAR: Follow the patient from booking through follow-up. Open each stage and notice when Operations, My Care, or both are involved. The sequence helps you see how separate teams contribute to one visit.",
    "target_sec": 20.0,
    "tone": "calm, practical",
-   "filler_lines": [
-    "Keep the next action clear.",
-    "Think of the first detail you would check.",
-    "Apply the point to a familiar task."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-010",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-010.mp3",
    "screens": [
     "ops-010"
@@ -348,27 +359,20 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+   "script": "OMAR: Operations supports the day-to-day environment, monitors KPIs, and helps recover service when something goes wrong. As you explore these activities, consider what each one means for the patient’s experience and for colleagues working across the clinic. Some issues may need attention from another team, so be clear about the part you own and when a handoff is needed.",
    "target_sec": 40.0,
    "tone": "calm, practical",
-   "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
-    "Keep the next action clear.",
-    "Think of the first detail you would check.",
-    "Apply the point to a familiar task.",
-    "Carry the idea into your next decision."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-011",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-011.mp3",
    "screens": [
     "ops-011"
@@ -379,25 +383,20 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+   "script": "OMAR: Use the chart to see how Operations is organised by role. Names can change, so the directory is the place to check current contacts. When a task needs support, identify the role involved and use the current directory rather than relying on a name you remember.",
    "target_sec": 30.0,
    "tone": "calm, practical",
-   "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
-    "Keep the next action clear.",
-    "Think of the first detail you would check."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-020",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-020.mp3",
    "screens": [
     "ops-020"
@@ -408,19 +407,14 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+   "script": "OMAR: My Care continues the relationship beyond the visit through follow-ups, programmes, and referrals. As you open each section, consider how those activities connect with what happened during the appointment. A useful handoff gives the next colleague enough context to continue the patient’s care without asking them to start their story again. That continuity matters to the patient.",
    "target_sec": 40.0,
    "tone": "calm, practical",
-   "filler_lines": [
-    "Pause and connect this to your role.",
-    "Use the principle in context.",
-    "Keep the next action clear.",
-    "Link it to the task waiting for you tomorrow."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-021",
@@ -437,7 +431,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+   "script": "OMAR: Explore the structure and notice how the roles fit together. The diagram can help you understand where responsibilities sit, while the current directory helps you find the right contact when people or assignments change. Use both when you need to orient yourself.",
    "target_sec": 25.0,
    "tone": "calm, practical",
    "filler_lines": [],
@@ -461,7 +455,7 @@
    "voices": [
     "Noor — female, early-to-mid 30s, warm, calm, clear"
    ],
-   "script": "NOOR: The abbreviations you'll hear on day one. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later.",
+   "script": "NOOR: Open each abbreviation and say what it means in your own words. Connecting the short form to its meaning can make team conversations easier to follow.",
    "target_sec": 15.0,
    "tone": "calm, practical",
    "filler_lines": [],
@@ -485,7 +479,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "script": "OMAR: A request arrives during a busy shift. Read the details and decide how you would sort the work.",
    "target_sec": 8.0,
    "tone": "encouraging",
    "filler_lines": [],
@@ -498,7 +492,7 @@
    "id": "ops-aud-031",
    "media": "audio",
    "route": "tts",
-   "status": "blocked-rewrite",
+   "status": "todo",
    "target_file": "04_operations-and-my-care/storyboard/audio/ops-aud-031.mp3",
    "screens": [
     "ops-031"
@@ -509,16 +503,14 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+   "script": "OMAR: A patient needs help, and you are deciding where the request should go. Consider the situation and the support the patient needs before choosing a route.",
    "target_sec": 15.0,
    "tone": "encouraging",
-   "filler_lines": [
-    "Focus on the action that fits."
-   ],
+   "filler_lines": [],
    "format": "MP3 44.1 kHz mono 96 kbps, −16 LUFS integrated, −1 dBTP, 300 ms head/tail",
    "captions": "WebVTT from the final audio (forced alignment), speaker names as <v Noor>/<v Dr. Omar>",
    "lexicon": "storyboard/voice_talent.md + 00_program/narration-and-lexicon.md",
-   "gate": "D10 voices approved; filler lines rewritten from the source first"
+   "gate": "D10 voices approved"
   },
   {
    "id": "ops-aud-032",
@@ -535,7 +527,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "script": "OMAR: A concern needs escalation. Read the situation and decide what you would do next.",
    "target_sec": 8.0,
    "tone": "encouraging",
    "filler_lines": [],
@@ -559,7 +551,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+   "script": "OMAR: You are working with colleagues across both teams. Match each role with its area of responsibility.",
    "target_sec": 8.0,
    "tone": "encouraging",
    "filler_lines": [],
@@ -583,7 +575,7 @@
    "voices": [
     "Dr. Omar — male, late 30s, friendly, confident, medium-low pitch"
    ],
-   "script": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+   "script": "OMAR: Keep the patient’s journey in view: the right team, first time. When you need a current contact, check the staff directory. Then continue with the next module that fits your role.",
    "target_sec": 16,
    "tone": "confident",
    "filler_lines": [],
@@ -607,7 +599,7 @@
    "voices": [
     "Noor — female, early-to-mid 30s, warm, calm, clear"
    ],
-   "script": "NOOR: Carry this practical rule into your next decision.",
+   "script": "NOOR: Carry that patient-focused approach into your next shift.",
    "target_sec": 5.0,
    "tone": "confident",
    "filler_lines": [],

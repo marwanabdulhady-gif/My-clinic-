@@ -17,28 +17,34 @@
       "interim": false
     },
     "hs2-img-drill-1": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-1.jpg",
+      "interim": false
     },
     "hs2-img-drill-2": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-2.jpg",
+      "interim": false
     },
     "hs2-img-drill-3": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-3.jpg",
+      "interim": false
     },
     "hs2-img-drill-4": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-4.jpg",
+      "interim": false
     },
     "hs2-img-drill-5": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-5.jpg",
+      "interim": false
     },
     "hs2-img-drill-6": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-drill-6.jpg",
+      "interim": false
     },
     "char-noor-avatar-neutral": {
       "status": "file",
@@ -51,16 +57,19 @@
       "interim": false
     },
     "hs2-img-extinguisher": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-extinguisher.jpg",
+      "interim": false
     },
     "hs2-img-kit-chem": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-kit-chem.jpg",
+      "interim": false
     },
     "hs2-img-kit-bio": {
-      "status": "PENDING",
-      "gate": "Still to produce and approve (visual-and-motion-agent-brief.md)"
+      "status": "file",
+      "path": "02_health-and-safety-2/storyboard/assets/hs2-img-kit-bio.jpg",
+      "interim": false
     },
     "char-omar-avatar-neutral": {
       "status": "file",

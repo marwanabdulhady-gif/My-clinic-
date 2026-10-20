@@ -48,7 +48,7 @@
     {
       "screen_id": "ops-000",
       "part": "omar",
-      "narration": "OMAR: Welcome to Who Does What: Operations & My Care. You will practise decisions that help you act with confidence. You will leave with practical actions for your next shift.",
+      "narration": "OMAR: In this module, follow a patient through a visit and see how Operations and My Care contribute at different points. Notice how their work connects.",
       "on_screen_text": "\"Who Does What\" · \"Operations & My Care\"",
       "target_sec": 12.0,
       "tone": "warm",
@@ -57,7 +57,7 @@
     {
       "screen_id": "ops-001",
       "part": "omar",
-      "narration": "OMAR: Routing matters. A patient who repeats their story loses trust. I once sent the same patient to three desks in one morning. She never forgot it — and neither did I. Keep the main point connected to a familiar task or conversation. That connection makes the information easier to use when it matters. Use the principle in context.",
+      "narration": "OMAR: A patient who has to repeat their story can lose confidence in the visit. The teams need to connect their work so the patient is guided smoothly from one stage to another. As you look at the journey, consider what a clear handoff feels like from the patient’s perspective.",
       "on_screen_text": "\"Right team, first time.\" · A patient shouldn't have to tell their story twice.",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -66,7 +66,7 @@
     {
       "screen_id": "ops-002",
       "part": "omar",
-      "narration": "OMAR: Walk the journey. Notice where each team leads. Let each marker add context rather than rushing to a conclusion. The full picture matters before a workplace decision is made. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task.",
+      "narration": "OMAR: Follow the patient from booking through follow-up. Open each stage and notice when Operations, My Care, or both are involved. The sequence helps you see how separate teams contribute to one visit.",
       "on_screen_text": "Horizontal journey: Book → Arrive & register → Consult → Lab / Radiology / Pharmacy → Leave → Follow-up. Each stage shows which team leads (Operations, My Care or both)",
       "target_sec": 20.0,
       "tone": "calm, practical",
@@ -75,7 +75,7 @@
     {
       "screen_id": "ops-010",
       "part": "omar",
-      "narration": "OMAR: Operations runs the day: environment, KPIs, recovery on the spot. Use each section to build the picture step by step. Before moving on, identify the action or check that belongs to your role. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check. Apply the point to a familiar task. Carry the idea into your next decision.",
+      "narration": "OMAR: Operations supports the day-to-day environment, monitors KPIs, and helps recover service when something goes wrong. As you explore these activities, consider what each one means for the patient’s experience and for colleagues working across the clinic. Some issues may need attention from another team, so be clear about the part you own and when a handoff is needed.",
       "on_screen_text": "7 items from slide 2, each with one example (\"Recovery: a patient waited 40 minutes; the PX officer apologises and fixes the next visit\")",
       "target_sec": 40.0,
       "tone": "calm, practical",
@@ -84,7 +84,7 @@
     {
       "screen_id": "ops-011",
       "part": "omar",
-      "narration": "OMAR: Read the chart by roles. Names are in the directory because they change. Read each label as a prompt for what to check or who should act next. The useful step is linking the visual with a real decision. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear. Think of the first detail you would check.",
+      "narration": "OMAR: Use the chart to see how Operations is organised by role. Names can change, so the directory is the place to check current contacts. When a task needs support, identify the role involved and use the current directory rather than relying on a name you remember.",
       "on_screen_text": "Redrawn role-only chart (B1): Director of Operations → PX & Operations Sr. Manager · Patient Access & PX Sr. Manager · Operations Sr. Manager → PX Managers → PXOs/FMs at sites J1–J4, PR1, VIP team, Check-Up Unit, In-Patient",
       "target_sec": 30.0,
       "tone": "calm, practical",
@@ -93,7 +93,7 @@
     {
       "screen_id": "ops-020",
       "part": "omar",
-      "narration": "OMAR: My Care is the relationship after the visit: follow-ups, programmes, referrals. Read the sections in sequence, then compare the points that matter most in practice. Keep the next action clearer than the terminology. Link it to the task waiting for you tomorrow. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule. Good habits here are quiet: check, confirm, continue. Pause and connect this to your role. Use the principle in context. Keep the next action clear.",
+      "narration": "OMAR: My Care continues the relationship beyond the visit through follow-ups, programmes, and referrals. As you open each section, consider how those activities connect with what happened during the appointment. A useful handoff gives the next colleague enough context to continue the patient’s care without asking them to start their story again. That continuity matters to the patient.",
       "on_screen_text": "7 items from slide 5, with DMP/CHP expanded (B3)",
       "target_sec": 40.0,
       "tone": "calm, practical",
@@ -102,7 +102,7 @@
     {
       "screen_id": "ops-021",
       "part": "omar",
-      "narration": "OMAR: My Care structure: managers, site leaders, coordinators, quality. Use the labels to connect each part of the visual with the responsibility or action it supports. The diagram is a working reference, not a test to memorise. If one detail stays with you, let it be the safe one. Ask early when a situation does not match the rule.",
+      "narration": "OMAR: Explore the structure and notice how the roles fit together. The diagram can help you understand where responsibilities sit, while the current directory helps you find the right contact when people or assignments change. Use both when you need to orient yourself.",
       "on_screen_text": "Redrawn role-only chart (B2): Director of Operations → Patient Access & PX Sr. Manager → My Care Manager → Onboarding leaders, site leaders (J1; J2–J4) → Coordinators; QA leader",
       "target_sec": 25.0,
       "tone": "calm, practical",
@@ -111,7 +111,7 @@
     {
       "screen_id": "ops-022",
       "part": "noor",
-      "narration": "NOOR: The abbreviations you'll hear on day one. Take the cards one at a time and test whether you can explain the point in your own words. That makes the information easier to use later.",
+      "narration": "NOOR: Open each abbreviation and say what it means in your own words. Connecting the short form to its meaning can make team conversations easier to follow.",
       "on_screen_text": "PXO · FM · Coord · DMP · CHP · HHC · PR1 · VIP team (B3)",
       "target_sec": 15.0,
       "tone": "calm, practical",
@@ -120,7 +120,7 @@
     {
       "screen_id": "ops-030",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: A request arrives during a busy shift. Read the details and decide how you would sort the work.",
       "on_screen_text": "10 cards → Operations / My Care: lab TAT KPI · clinic look and feel · on-spot complaint at reception · end-to-end journey · support a doctor's inquiry · monthly follow-up call · insurance medication follow-up · hypertension programme booking …",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -129,7 +129,7 @@
     {
       "screen_id": "ops-031",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose. Focus on the action that fits. Feedback explains the reasoning after you respond.",
+      "narration": "OMAR: A patient needs help, and you are deciding where the request should go. Consider the situation and the support the patient needs before choosing a route.",
       "on_screen_text": "4 nodes (routing per B7): (1) A patient at reception is upset that her lab result isn't ready → Operations / PX officer on site; (2) A diabetic patient asks who will remind him about his 3-month review → My …",
       "target_sec": 15.0,
       "tone": "encouraging",
@@ -138,7 +138,7 @@
     {
       "screen_id": "ops-032",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: A concern needs escalation. Read the situation and decide what you would do next.",
       "on_screen_text": "\"The PX officer can't resolve a complaint on the spot. Who is the next step?\" → site Patient Experience Manager (per B1)",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -147,7 +147,7 @@
     {
       "screen_id": "ops-033",
       "part": "omar",
-      "narration": "OMAR: The next choice asks you to apply the rule in a workplace situation. Read carefully, then choose.",
+      "narration": "OMAR: You are working with colleagues across both teams. Match each role with its area of responsibility.",
       "on_screen_text": "PXO ↔ \"patient experience on site\" · My Care Coordinator ↔ \"follow-ups and bookings\" · My Care Onboarding Leader ↔ \"enrols patients in My Care\" · Operations Sr. Manager ↔ \"daily operations\" · QA Leader ↔ \"quality of My Care …",
       "target_sec": 8.0,
       "tone": "encouraging",
@@ -156,7 +156,7 @@
     {
       "screen_id": "ops-090",
       "part": "omar-1",
-      "narration": "OMAR: You can now use these key actions in your role. Keep the practical rule close, ask when you are unsure, and carry the next step into your shift. Take one clear next action with you.",
+      "narration": "OMAR: Keep the patient’s journey in view: the right team, first time. When you need a current contact, check the staff directory. Then continue with the next module that fits your role.",
       "on_screen_text": "Right team, first time · Link: live staff directory (intranet) · Next: module 05/06 (clinicians) or 08 (EHR)",
       "target_sec": 16,
       "tone": "confident",
@@ -165,7 +165,7 @@
     {
       "screen_id": "ops-090",
       "part": "noor-1",
-      "narration": "NOOR: Carry this practical rule into your next decision.",
+      "narration": "NOOR: Carry that patient-focused approach into your next shift.",
       "on_screen_text": "Right team, first time · Link: live staff directory (intranet) · Next: module 05/06 (clinicians) or 08 (EHR)",
       "target_sec": 5.0,
       "tone": "confident",
