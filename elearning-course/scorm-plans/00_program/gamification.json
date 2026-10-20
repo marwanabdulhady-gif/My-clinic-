@@ -1,5 +1,5 @@
 {
- "note": "Gamification system (owner decision D18, 2026-10-20). XP and ranks are for motivation only: never part of the score, the pass mark or the LMS record. No timers, no leaderboards, no penalties.",
+ "note": "Gamification system (owner decision D18, 2026-10-20). XP and ranks are for motivation only: never part of the score, the pass mark or the LMS record. No timers, no leaderboards, no penalties. Inspiration upgrades (2026-10-20, inspiration-portfolio-review.md): outcome meter, Ask Noor / Ask Dr. Omar hints, outcome-first feedback, a day-at-the-clinic spine (02), revisit map on results, replies from the other side (04, 06).",
  "xp": {
   "scored_correct": 10,
   "check_correct": 5,
@@ -20,7 +20,27 @@
     "Safety Spotter",
     "Safety Ally",
     "Safety Champion"
-   ]
+   ],
+   "meter": "Clinic safety",
+   "outcome_target": "the clinic",
+   "hints": {
+    "hs1-205": {
+     "who": "noor",
+     "text": "Think about who could get hurt in the next minute, and which fix removes the hazard rather than just warning about it. You may always stop unsafe work."
+    },
+    "hs1-409": {
+     "who": "noor",
+     "text": "Remember the order in RACE: people first, then the alarm, then containing the fire. An alarm call needs three things: the code, where you are, and who you are."
+    },
+    "hs1-507": {
+     "who": "noor",
+     "text": "Use one rule for every spill: how much, and how dangerous. Volume is not the only trigger. ⚠ Draft — pending D1."
+    },
+    "hs1-802": {
+     "who": "omar",
+     "text": "An overdue inspection means nobody can vouch for this device today. Who owns medical equipment checks here?"
+    }
+   }
   },
   "02": {
    "challenge": "Safety lab challenge",
@@ -30,6 +50,31 @@
     "Drill Ready",
     "Lab Pro",
     "Safety Captain"
+   ],
+   "meter": "Lab safety",
+   "outcome_target": "the lab",
+   "hints": {
+    "hs2-052": {
+     "who": "omar",
+     "text": "Two questions for each spill: is it biological or chemical, and does it cross the Code Orange rule? A tiny amount can still be serious."
+    }
+   },
+   "shift": [
+    "07:30",
+    "09:00",
+    "10:30",
+    "12:00",
+    "13:30",
+    "15:00"
+   ],
+   "shift_title": "A day in the safety lab",
+   "shift_notes": [
+    "Your first walk-round: find what could hurt someone.",
+    "Smoke in a consultation room: run the Code Red drill.",
+    "Get everyone out safely, including people who can't use the stairs.",
+    "Pick and use the right extinguisher, or decide not to.",
+    "Spills in the lab and the store: triage each one.",
+    "Before handover: read the labels and the chemical register."
    ]
   },
   "03": {
@@ -40,7 +85,19 @@
     "Team Member",
     "Insider",
     "Culture Ambassador"
-   ]
+   ],
+   "meter": "Team trust",
+   "outcome_target": "you and the team",
+   "hints": {
+    "hr-031": {
+     "who": "noor",
+     "text": "Ask yourself: would I be comfortable if everyone could see this decision? When in doubt, declare it and ask."
+    },
+    "hr-044": {
+     "who": "noor",
+     "text": "Check each request against the rule for that leave type: who qualifies, how long they have served, and what documents they need."
+    }
+   }
   },
   "04": {
    "challenge": "Right team, first time",
@@ -50,7 +107,39 @@
     "Navigator",
     "Coordinator",
     "Journey Expert"
-   ]
+   ],
+   "meter": "Patient trust",
+   "outcome_target": "the patient",
+   "hints": {
+    "ops-031": {
+     "who": "omar",
+     "text": "Two questions decide the route: is the patient in the clinic now, or is this about their care over the coming weeks?"
+    }
+   },
+   "replies": {
+    "ops-031": {
+     "n1": {
+      "a": "Patient: “Thank you — someone is finally looking into it.”",
+      "b": "Patient: “The coordinator? I'm standing right here, upset, now.”",
+      "c": "Patient: “So I have to come back and explain it all again?”"
+     },
+     "n2": {
+      "a": "Patient: “Good, I'd forget otherwise.”",
+      "b": "Patient: “The front desk won't remember me in three months.”",
+      "c": "Patient: “I thought the clinic would remind me.”"
+     },
+     "n3": {
+      "a": "Patient: “So someone will follow up with the insurer for me?”",
+      "b": "Patient: “The manager doesn't deal with my insurance, surely?”",
+      "c": "Patient: “The pharmacy told me to ask someone else.”"
+     },
+     "n4": {
+      "a": "Doctor: “Thanks — the afternoon queue is hurting my clinic times.”",
+      "b": "Doctor: “This isn't about call quality, it's the queue.”",
+      "c": "Doctor: “I'm seeing patients — I can't run the pharmacy too.”"
+     }
+    }
+   }
   },
   "05": {
    "challenge": "The note that gets paid",
@@ -60,7 +149,15 @@
     "Clear Coder",
     "Claim Saver",
     "Documentation Pro"
-   ]
+   ],
+   "meter": "Claim health",
+   "outcome_target": "the claim",
+   "hints": {
+    "rcma-031": {
+     "who": "omar",
+     "text": "Order what the findings and history justify, not everything you can think of. What does the note need to show to support it?"
+    }
+   }
   },
   "06": {
    "challenge": "Save the claim",
@@ -70,7 +167,33 @@
     "Policy Reader",
     "Rejection Fixer",
     "Revenue Guardian"
-   ]
+   ],
+   "meter": "Claim health",
+   "outcome_target": "the claim",
+   "hints": {
+    "rcmb-052": {
+     "who": "omar",
+     "text": "A rejection comment is a to-do list. Start where the problem began: the documentation behind the claim."
+    }
+   },
+   "replies": {
+    "rcmb-052": {
+     "n1": {
+      "a": "Payer system: “Rejected again — same reason as before.”",
+      "b": "Payer system: “Duplicate claim detected — rejected.”",
+      "c": "Payer system: “Awaiting your corrected submission.”"
+     },
+     "n2": {
+      "a": "Payer reviewer: “Diagnosis now matches the findings.”",
+      "b": "Payer reviewer: “The second code isn't supported by the note — flagged.”",
+      "c": "Payer reviewer: “Still a symptom code — same rejection.”"
+     },
+     "n3": {
+      "a": "Payer system: “Resubmission received with supporting document — under review.”",
+      "b": "Payer system: “Duplicate claim for the same visit — rejected.”"
+     }
+    }
+   }
   },
   "07": {
    "challenge": "Stop harm first",
@@ -80,7 +203,19 @@
     "Safety Voice",
     "Risk Spotter",
     "Patient Safety Champion"
-   ]
+   ],
+   "meter": "Patient safety",
+   "outcome_target": "the patient",
+   "hints": {
+    "qsr-021": {
+     "who": "noor",
+     "text": "A name alone is never enough. What does policy say you check, and what is never an identifier?"
+    },
+    "qsr-051": {
+     "who": "noor",
+     "text": "No harm doesn't mean nothing to report. Near misses are how we learn before anyone is hurt. ⚠ Draft — pending D8."
+    }
+   }
   },
   "08": {
    "challenge": "The complete consultation",
@@ -90,7 +225,9 @@
     "Navigator",
     "Power User",
     "EHR Expert"
-   ]
+   ],
+   "meter": "Record quality",
+   "outcome_target": "the patient record"
   }
  }
 }

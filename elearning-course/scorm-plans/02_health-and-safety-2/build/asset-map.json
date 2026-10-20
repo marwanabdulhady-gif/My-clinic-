@@ -81,6 +81,11 @@
       "path": "02_health-and-safety-2/storyboard/assets/hs2-img-challenge.jpg",
       "interim": false
     },
+    "char-omar-explaining": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-omar-explaining.png",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

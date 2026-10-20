@@ -1550,8 +1550,12 @@
    "placement": "new unscored video screen after hs2-030",
    "target_sec": 35,
    "script_outline": "Motion briefing before the drill game: the goal, lives and hints. RACE letters animate in. No extension numbers until D2.",
-   "target_file": "media/video/hs2-vid-drill.mp4",
-   "captions_file": "media/video/hs2-vid-drill.vtt",
+   "target_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill.mp4",
+   "captions_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill.vtt",
+   "work_dir": "elearning-course/video/hs2-vid-drill/",
+   "transcript_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill-transcript.html",
+   "poster_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

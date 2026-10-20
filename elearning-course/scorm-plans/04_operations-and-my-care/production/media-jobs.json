@@ -656,8 +656,12 @@
    "placement": "new unscored video screen after ops-002",
    "target_sec": 40,
    "script_outline": "Animated journey: booking, reception, consultation, pharmacy, My Care follow-up; each team lights up as the patient passes.",
-   "target_file": "media/video/ops-vid-journey.mp4",
-   "captions_file": "media/video/ops-vid-journey.vtt",
+   "target_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey.mp4",
+   "captions_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey.vtt",
+   "work_dir": "elearning-course/video/ops-vid-journey/",
+   "transcript_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey-transcript.html",
+   "poster_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

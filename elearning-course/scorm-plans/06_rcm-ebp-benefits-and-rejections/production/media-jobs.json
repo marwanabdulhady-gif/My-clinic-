@@ -571,8 +571,12 @@
    "placement": "new unscored video screen after rcmb-001",
    "target_sec": 50,
    "script_outline": "Icons of the headline benefit changes; limits appear only after B5 is confirmed.",
-   "target_file": "media/video/rcmb-vid-benefits.mp4",
-   "captions_file": "media/video/rcmb-vid-benefits.vtt",
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits.mp4",
+   "captions_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits.vtt",
+   "work_dir": "elearning-course/video/rcmb-vid-benefits/",
+   "transcript_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits-transcript.html",
+   "poster_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

@@ -2526,8 +2526,12 @@
    "placement": "new unscored video screen after hs1-000",
    "target_sec": 40,
    "script_outline": "Noor walks a corridor: call point, extinguisher, exit. 'Know where these are before you need them.' No codes or numbers until D2 closes.",
-   "target_file": "media/video/hs1-vid-why.mp4",
-   "captions_file": "media/video/hs1-vid-why.vtt",
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why.mp4",
+   "captions_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why.vtt",
+   "work_dir": "elearning-course/video/hs1-vid-why/",
+   "transcript_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why-transcript.html",
+   "poster_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

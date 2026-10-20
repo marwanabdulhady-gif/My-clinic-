@@ -298,7 +298,11 @@ def build(module: str) -> dict:
     if hero and game:
         use(hero)
     if game:
-        variables = variables + [{"name": "xp", "type": "number", "default": 0}]
+        variables = variables + [{"name": "xp", "type": "number", "default": 0}] + game.get("extra_vars", [])
+    for s in built:  # pictures added by the gamification (companion poses on hint screens)
+        for k, v in list(s.items()):
+            if k.endswith("asset_id") and isinstance(v, str) and v not in assets:
+                use(v)
     for note in gnotes:
         print(f"{module}: {note}")
     from map_hotspots import apply as apply_hotspot_maps
@@ -351,11 +355,12 @@ def build(module: str) -> dict:
                      "typical_learning_time": f"PT{seat.group(1)}M" if seat else None},
         "objectives": objectives,
         **({"variables": variables} if variables else {}),
-        **({"points_var": game["points_var"], "levels": game["levels"]} if game else {}),
+        **({k: game[k] for k in ("points_var", "levels", "lives_var", "max_lives")} if game else {}),
         "outline": outline,
         "screens": built,
         "assets": list(assets.values()),
-        "__extra_css": explore_hotspot_css(built, assets),
+        "__extra_css": explore_hotspot_css(built, assets) + (
+            f'\n#livesHud::before{{content:"{game["meter_label"]} ";font-weight:600}}' if game else ""),
     }
     out = mdir / "build"
     out.mkdir(exist_ok=True)

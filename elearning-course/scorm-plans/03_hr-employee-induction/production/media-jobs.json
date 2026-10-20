@@ -1892,8 +1892,12 @@
    "placement": "new unscored video screen after hr-000",
    "target_sec": 45,
    "script_outline": "Dr. Omar and Noor welcome the new colleague, show the induction path for the learner's role, and explain how resume and scoring work.",
-   "target_file": "media/video/prog-vid-welcome.mp4",
-   "captions_file": "media/video/prog-vid-welcome.vtt",
+   "target_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome.mp4",
+   "captions_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome.vtt",
+   "work_dir": "elearning-course/video/prog-vid-welcome/",
+   "transcript_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome-transcript.html",
+   "poster_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   },
   {
@@ -1916,8 +1920,12 @@
    "placement": "new unscored video screen after hr-012",
    "target_sec": 45,
    "script_outline": "Timeline animation: day 1 badge and Oracle login, week 1 department, month 1 licence and probation check-ins. Facts as closed in B-items.",
-   "target_file": "media/video/hr-vid-journey.mp4",
-   "captions_file": "media/video/hr-vid-journey.vtt",
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey.mp4",
+   "captions_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey.vtt",
+   "work_dir": "elearning-course/video/hr-vid-journey/",
+   "transcript_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey-transcript.html",
+   "poster_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

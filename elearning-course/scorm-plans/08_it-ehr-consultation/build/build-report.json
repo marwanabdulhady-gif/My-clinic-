@@ -1,7 +1,7 @@
 {
   "module": "08_it-ehr-consultation",
   "edumints_revision": "4bbf459",
-  "explore_hotspot_rules": 6,
+  "explore_hotspot_rules": 7,
   "theme_keys": [
     "color",
     "custom_css",
@@ -13,16 +13,16 @@
   ],
   "module_colour": "#006E78",
   "build": {
-    "project_id": "proj_01M5BVSA3M0VET4X80EKAPSGDB",
-    "job_id": "job_01M5BVSA5N9FY3QXBQ70TZMXJD",
+    "project_id": "proj_01M5CG4Z36QRG8D6JKNSRFP7AX",
+    "job_id": "job_01M5CG4Z5NVSV5FQ0X8RYBSYX6",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/d4YVNICKC76kdYS4pR4NdWfhU38hz2Gu",
+    "download_url": "http://localhost/scorm/files/BzsFejX7rzAF7MjHM3hMIdTwj0cOaT7z",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BVSA3M0VET4X80EKAPSGDB",
+    "project_id": "proj_01M5CG4Z36QRG8D6JKNSRFP7AX",
     "strict": false,
     "error_count": 0,
     "warn_count": 3,
@@ -63,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_08_EHR_v0.1-draft_1.2.zip",
-    "bytes": 813917
+    "bytes": 814257
   },
   "preview": "preview.html"
 }

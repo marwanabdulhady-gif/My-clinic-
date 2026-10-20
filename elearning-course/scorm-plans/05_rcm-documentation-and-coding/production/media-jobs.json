@@ -776,8 +776,12 @@
    "placement": "new unscored video screen after rcma-001",
    "target_sec": 45,
    "script_outline": "A claim travels from the note to the payer via NPHIES; missing diagnosis turns it red; fixed note turns it green. Dr. Omar narrates.",
-   "target_file": "media/video/rcma-vid-claim.mp4",
-   "captions_file": "media/video/rcma-vid-claim.vtt",
+   "target_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim.mp4",
+   "captions_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim.vtt",
+   "work_dir": "elearning-course/video/rcma-vid-claim/",
+   "transcript_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim-transcript.html",
+   "poster_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

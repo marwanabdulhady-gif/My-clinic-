@@ -1,7 +1,7 @@
 {
   "module": "04_operations-and-my-care",
   "edumints_revision": "4bbf459",
-  "explore_hotspot_rules": 6,
+  "explore_hotspot_rules": 7,
   "theme_keys": [
     "color",
     "custom_css",
@@ -13,16 +13,16 @@
   ],
   "module_colour": "#9D3293",
   "build": {
-    "project_id": "proj_01M5BVYV4MY8B5KJCR06WVGMXE",
-    "job_id": "job_01M5BVYV6AKCW5FBJR32G9VD7X",
+    "project_id": "proj_01M5CG4JQ8AYA9XCFB943WWEZP",
+    "job_id": "job_01M5CG4JSCN58SNS4FZ2BBKCT1",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/knLSF3KWX1UvM3db03wLip2tURjbnAzR",
+    "download_url": "http://localhost/scorm/files/YN4Ds6FigTJTrR_ZMKel2cppM-s6htbt",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BVYV4MY8B5KJCR06WVGMXE",
+    "project_id": "proj_01M5CG4JQ8AYA9XCFB943WWEZP",
     "strict": false,
     "error_count": 0,
     "warn_count": 2,
@@ -32,8 +32,8 @@
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "7 ardışık görselsiz ekran (screens[14..20]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[14..20]"
+        "message": "7 ardışık görselsiz ekran (screens[16..22]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[16..22]"
       },
       {
         "severity": "warn",
@@ -57,7 +57,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_04_OpsMyCare_v0.1-draft_1.2.zip",
-    "bytes": 2983499
+    "bytes": 2984464
   },
   "preview": "preview.html"
 }

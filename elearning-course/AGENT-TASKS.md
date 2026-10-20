@@ -182,7 +182,14 @@ The jobs with `"route": "own-pdf"` in modules 03, 05, 06 and 08, plus emergency-
 
 ### T7 — Motion-graphics videos ⛔ blocked
 
-Blocked until the owner closes decision **D17**. When it opens: use HyperFrames (`scorm-plans/00_program/video-tooling.md`), follow `00_program/media-video-plan.json` and `media-production-runbook.md` §5, and start with `prog-vid-welcome` and `qsr-vid-speakup`.
+Blocked until the owner closes decision **D17**. When it opens:
+1. Read [`video/README.md`](video/README.md) first: folders, names, standards and gates.
+2. Follow the 44 numbered steps in `scorm-plans/00_program/video-playbook-review.md` §5, one at a time. Stop at every gate (A–F) and wait for an explicit OK.
+3. Work only in `elearning-course/video/<clip-id>/`. Take the clip id from `scorm-plans/00_program/media-video-plan.json`. Start with `prog-vid-welcome`, then `qsr-vid-speakup`.
+4. Never type animation times by hand. Run `video/_shared/scripts/resolve_cues.py`, which must exit 0.
+5. Before delivery, `video/_shared/scripts/delivery_check.py` must print `PASS` on every line. Paste the lines into the clip's `QA_REPORT.md`.
+6. Copy the files to `target_file` / `captions_file` only after the owner approves.
+- If a script that a step needs is not in `video/_shared/scripts/` yet (`transcribe.py`, `build_timeline.py`, `qa_check.py`…), stop and report it. Do not write a replacement yourself.
 
 ### T8 — Voice recording (TTS) ⛔ blocked
 

@@ -87,6 +87,7 @@ elearning-course/
 ├── md/                       source content, one Markdown file per source (8)
 ├── media/                    source screenshots (reference only)
 ├── proposal/                 L2S proposal Rev00, Rev01 (docx + pdf)
+├── video/                    where motion-graphics clips are made (README: folders, names, QA scripts)
 └── scorm-plans/
     ├── README.md             phase model, package map, timeline
     ├── 00_program/           programme files by phase (see its README)

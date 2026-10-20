@@ -52,3 +52,19 @@ The owner asked for a visible gamification layer across all eight courses. It is
 | **Debrief** | "You finished with n XP" on the closing screen | — |
 
 Still excluded: leaderboards, public ranking, timers and speed bonuses, penalties outside the existing games, and anything that feeds XP into the score, the pass mark or the LMS record. XP lives only in the course variables (resume data, a few bytes). Revisiting a screen can add XP again; that is accepted because XP has no consequence. The earlier text in this plan that ruled out badges is superseded for ranks only, by D18.
+
+### The seven portfolio upgrades (inspiration-portfolio-review.md, applied 2026-10-20)
+
+All seven are built by `tools/gamify.py` (1–5, 7) or by the module layers (6). Nothing scored changes: no screen id, type, order, point or objective moved, and the totals are unchanged (220/145/145/50/100/80/95/90).
+
+| # | Idea | What the learner sees | Where it lives |
+|---|---|---|---|
+| 1 | **Outcome meter** | A five-dot meter at the top, named for the course ("Clinic safety", "Patient trust", "Claim health", …). It starts at 3, goes up on each scored decision, game or simulation answered well, and down on each one answered badly. It is never the score. | `gamification.json` `meter`; player `lives_var: meter`, `max_lives: 5` |
+| 2 | **Ask Noor / Ask Dr. Omar** | Before 12 key decisions: "Want a hint first?" → a short nudge from the companion (never the answer), or "I'm ready". | `gamification.json` `hints`; screens `<id>-ask`, `<id>-hint` (unscored, `visible_if hint == 1`) |
+| 3 | **Consequence first** | Every decision-scenario reply starts with "✓ Better for the patient." or "⚠ Risk for the patient." (target per course), then the existing feedback. | `outcome_target` |
+| 4 | **A day at the clinic** (02) | A 07:30 → 15:00 shift timeline after the brief, with each mission given a time. | `shift`, `shift_title`, `shift_notes` (02 only) |
+| 5 | **Revisit map** | On the results screen, each weak area says which mission to reopen from the menu. | built from `evidence_screen_ids` |
+| 6 | **Drag-to-store practice** (01, 02) | 01 `hs1-501s` "Put it where it belongs"; 02 `hs2-051s` "Which kit?". Both are unscored, and the storage rules are marked ⚠ Draft — pending 01/B7 and 02/B4. | `<module>/production/personalisation.json` |
+| 7 | **Replies from the other side** (04, 06) | Before the feedback, the patient's, doctor's or payer's reaction in italics. | `gamification.json` `replies` (`ops-031`, `rcmb-052`). Module 08 has no branching scenario yet. |
+
+Rules: hints and replies use only storyboard wording or ⚠-pending assumptions. The meter is shown with its name and in the module colour, turning red only when low. The meter and hint values are course variables, like XP.

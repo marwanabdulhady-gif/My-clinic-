@@ -1364,8 +1364,12 @@
    "placement": "new unscored video screen after ehr-001",
    "target_sec": 45,
    "script_outline": "Abstract EHR wireframe (no real screens): open the visit, record, diagnose, order, educate, close. Real captures stay in the simulations.",
-   "target_file": "media/video/ehr-vid-consult.mp4",
-   "captions_file": "media/video/ehr-vid-consult.vtt",
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult.mp4",
+   "captions_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult.vtt",
+   "work_dir": "elearning-course/video/ehr-vid-consult/",
+   "transcript_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult-transcript.html",
+   "poster_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

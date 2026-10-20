@@ -1,7 +1,7 @@
 {
   "module": "07_quality-safety-and-risk",
   "edumints_revision": "4bbf459",
-  "explore_hotspot_rules": 6,
+  "explore_hotspot_rules": 7,
   "theme_keys": [
     "color",
     "custom_css",
@@ -13,16 +13,16 @@
   ],
   "module_colour": "#652D8C",
   "build": {
-    "project_id": "proj_01M5BVS7WM2H2TC5ZAP0EET3E8",
-    "job_id": "job_01M5BVS7XHZ5PN0SY0DM3F3BPS",
+    "project_id": "proj_01M5CG4W6SSFBDC6SKXAHNM5G6",
+    "job_id": "job_01M5CG4W894RHVZVWT4HCVD4DE",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/DW7yCOTjPZ5TfgFT8NDTToufize7v1pu",
+    "download_url": "http://localhost/scorm/files/0i-gDV4F2BUne0E6h65FiBIFcEJlsvQb",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BVS7WM2H2TC5ZAP0EET3E8",
+    "project_id": "proj_01M5CG4W6SSFBDC6SKXAHNM5G6",
     "strict": false,
     "error_count": 0,
     "warn_count": 3,
@@ -32,14 +32,14 @@
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "7 ardışık görselsiz ekran (screens[10..16]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[10..16]"
+        "message": "7 ardışık görselsiz ekran (screens[12..18]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[12..18]"
       },
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[21..24]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[21..24]"
+        "message": "4 ardışık görselsiz ekran (screens[23..26]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[23..26]"
       },
       {
         "severity": "warn",
@@ -63,7 +63,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_07_ClinicalGov_v0.1-draft_1.2.zip",
-    "bytes": 1036840
+    "bytes": 1218010
   },
   "preview": "preview.html"
 }

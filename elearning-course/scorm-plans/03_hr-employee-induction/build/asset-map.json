@@ -181,6 +181,11 @@
       "path": "03_hr-employee-induction/storyboard/assets/hr-img-challenge.jpg",
       "interim": false
     },
+    "char-noor-explaining": {
+      "status": "file",
+      "path": "00_program/characters/assets/char-noor-explaining.png",
+      "interim": false
+    },
     "brand-logo-horizontal-navy": {
       "status": "file",
       "path": "00_program/brand/assets/logo-horizontal-navy.png",

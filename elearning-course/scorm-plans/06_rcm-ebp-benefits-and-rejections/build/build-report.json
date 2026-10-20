@@ -1,6 +1,7 @@
 {
   "module": "06_rcm-ebp-benefits-and-rejections",
   "edumints_revision": "4bbf459",
+  "explore_hotspot_rules": 0,
   "theme_keys": [
     "color",
     "custom_css",
@@ -12,33 +13,27 @@
   ],
   "module_colour": "#7C0041",
   "build": {
-    "project_id": "proj_01M5BVS5YD3Z9NQPHQBQY57H6P",
-    "job_id": "job_01M5BVS5Z742ZJ9TX46FDTHXQ6",
+    "project_id": "proj_01M5CG4S4TXCP3WY3DTSBARJ12",
+    "job_id": "job_01M5CG4S69W7138PJHDA08XTEF",
     "status": "done",
-    "download_url": "http://localhost/scorm/files/mxxEH5xazeFbhxeftkRRCM0f6e_eiaim",
+    "download_url": "http://localhost/scorm/files/uvhu1AhHKLZTgzqp6eD-wb0Z0M8G60HW",
     "warnings": [
       "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
     ]
   },
   "lint_course": {
-    "project_id": "proj_01M5BVS5YD3Z9NQPHQBQY57H6P",
+    "project_id": "proj_01M5CG4S4TXCP3WY3DTSBARJ12",
     "strict": false,
     "error_count": 0,
-    "warn_count": 3,
+    "warn_count": 2,
     "clean": false,
     "evidence_binding_coverage": 1.0,
     "issues": [
       {
         "severity": "warn",
         "code": "text_only_run",
-        "message": "6 ardışık görselsiz ekran (screens[13..18]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[13..18]"
-      },
-      {
-        "severity": "warn",
-        "code": "visual_poverty",
-        "message": "Kursta 21 ekranın yalnızca %23.8'i ÖĞRETEN görsel taşıyor (<%25; süs görseli — caption'sız video, prompt'suz lottie — sayılmaz): content_slide'lara blok görseli, quiz'lere hotspot/image_compare, istatistiklere data_chart ekle",
-        "path": "screens"
+        "message": "5 ardışık görselsiz ekran (screens[16..20]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
+        "path": "screens[16..20]"
       },
       {
         "severity": "warn",
@@ -62,7 +57,7 @@
   "player_patches": 2,
   "package": {
     "file": "MC_06_RCM-B_v0.1-draft_1.2.zip",
-    "bytes": 828741
+    "bytes": 829625
   },
   "preview": "preview.html"
 }

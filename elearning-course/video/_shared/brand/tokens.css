@@ -1,0 +1,14 @@
+/* My Clinic video tokens: copied from scorm-plans/00_program/brand/brand-identity.md.
+   Change the brand there first, then here. One module colour per clip; magenta only for warnings. */
+:root {
+  --mc-navy: #003867;      /* text, headlines, backgrounds */
+  --mc-white: #ffffff;
+  --mc-warn: #9D3293;      /* warnings and "don't" only, never decoration */
+  --mc-module: #008C99;    /* set per clip from the table below */
+  --mc-font: "Montserrat", system-ui, sans-serif;
+  --mc-safe-x: 96px;  --mc-safe-top: 150px;  --mc-safe-bottom: 200px;  /* 1920x1080 title-safe area */
+  --mc-text-min: 24px; --mc-body: 28px;
+}
+/* module colours (README of each module):
+   01 hs1 #008C99 · 02 hs2 #008C99 · 03 hr #652D8C · 04 ops #9D3293
+   05 rcma #7C0041 · 06 rcmb #7C0041 · 07 qsr #652D8C · 08 ehr #006E78 · prog = navy */

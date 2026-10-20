@@ -122,6 +122,65 @@
       }
      ]
     }
+   },
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "drag_drop",
+     "id": "hs1-501s",
+     "title": "Put it where it belongs",
+     "prompt_html": "<p><strong>Practice (not scored).</strong> Drag each item to where it is stored or thrown away.</p>",
+     "targets": [
+      {
+       "id": "flam",
+       "label_html": "Flammables cabinet"
+      },
+      {
+       "id": "sharps",
+       "label_html": "Sharps container"
+      },
+      {
+       "id": "infect",
+       "label_html": "Infectious waste"
+      },
+      {
+       "id": "general",
+       "label_html": "General waste"
+      }
+     ],
+     "items": [
+      {
+       "id": "i0",
+       "text_html": "Alcohol hand-rub refill",
+       "correct_target_id": "flam"
+      },
+      {
+       "id": "i1",
+       "text_html": "Used needle",
+       "correct_target_id": "sharps"
+      },
+      {
+       "id": "i2",
+       "text_html": "Blood-soaked gauze",
+       "correct_target_id": "infect"
+      },
+      {
+       "id": "i3",
+       "text_html": "Empty paper packaging",
+       "correct_target_id": "general"
+      },
+      {
+       "id": "i4",
+       "text_html": "Used scalpel blade",
+       "correct_target_id": "sharps"
+      }
+     ],
+     "feedback": {
+      "correct_html": "<p>All in the right place. Flammables live in the approved cabinet, anything sharp goes in the sharps container, and anything soiled with body fluids is infectious waste.</p>",
+      "incorrect_html": "<p>Not yet. Sharp items always go in the sharps container; anything with blood or body fluids is infectious waste. Bin colours follow your facility poster. ⚠ Draft — pending 01/B7.</p>",
+      "show_correct_answer": true
+     }
+    }
    }
   ]
  },

@@ -815,8 +815,12 @@
    "placement": "existing optional screen qsr-060",
    "target_sec": 55,
    "script_outline": "Generic near-miss conversation; reporting route and deadline only as confirmed under D8.",
-   "target_file": "media/video/qsr-vid-speakup.mp4",
-   "captions_file": "media/video/qsr-vid-speakup.vtt",
+   "target_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup.mp4",
+   "captions_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup.vtt",
+   "work_dir": "elearning-course/video/qsr-vid-speakup/",
+   "transcript_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup-transcript.html",
+   "poster_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)",
    "media": "video"
   }
  ]

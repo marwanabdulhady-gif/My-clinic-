@@ -1,5 +1,5 @@
 {
- "note": "Rev01 baseline needs zero videos. These are optional motion-graphics clips, each adding one unscored screen (or using the existing optional slot qsr-060). Decide per clip under D17.",
+ "note": "Rev01 baseline needs zero videos. These are optional motion-graphics clips, each adding one unscored screen (or using the existing optional slot qsr-060). Decide per clip under D17. Paths: work happens in elearning-course/video/<clip-id>/; target_file/captions_file are relative to elearning-course/scorm-plans/ (the module's storyboard/assets, where the build looks for media).",
  "clips": [
   {
    "route": "motion-video",
@@ -21,8 +21,12 @@
    "placement": "new unscored video screen after hr-000",
    "target_sec": 45,
    "script_outline": "Dr. Omar and Noor welcome the new colleague, show the induction path for the learner's role, and explain how resume and scoring work.",
-   "target_file": "media/video/prog-vid-welcome.mp4",
-   "captions_file": "media/video/prog-vid-welcome.vtt"
+   "target_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome.mp4",
+   "captions_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome.vtt",
+   "work_dir": "elearning-course/video/prog-vid-welcome/",
+   "transcript_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome-transcript.html",
+   "poster_file": "03_hr-employee-induction/storyboard/assets/prog-vid-welcome-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -44,8 +48,12 @@
    "placement": "new unscored video screen after hs1-000",
    "target_sec": 40,
    "script_outline": "Noor walks a corridor: call point, extinguisher, exit. 'Know where these are before you need them.' No codes or numbers until D2 closes.",
-   "target_file": "media/video/hs1-vid-why.mp4",
-   "captions_file": "media/video/hs1-vid-why.vtt"
+   "target_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why.mp4",
+   "captions_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why.vtt",
+   "work_dir": "elearning-course/video/hs1-vid-why/",
+   "transcript_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why-transcript.html",
+   "poster_file": "01_health-and-safety-1/storyboard/assets/hs1-vid-why-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -67,8 +75,12 @@
    "placement": "new unscored video screen after hs2-030",
    "target_sec": 35,
    "script_outline": "Motion briefing before the drill game: the goal, lives and hints. RACE letters animate in. No extension numbers until D2.",
-   "target_file": "media/video/hs2-vid-drill.mp4",
-   "captions_file": "media/video/hs2-vid-drill.vtt"
+   "target_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill.mp4",
+   "captions_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill.vtt",
+   "work_dir": "elearning-course/video/hs2-vid-drill/",
+   "transcript_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill-transcript.html",
+   "poster_file": "02_health-and-safety-2/storyboard/assets/hs2-vid-drill-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -90,8 +102,12 @@
    "placement": "new unscored video screen after hr-012",
    "target_sec": 45,
    "script_outline": "Timeline animation: day 1 badge and Oracle login, week 1 department, month 1 licence and probation check-ins. Facts as closed in B-items.",
-   "target_file": "media/video/hr-vid-journey.mp4",
-   "captions_file": "media/video/hr-vid-journey.vtt"
+   "target_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey.mp4",
+   "captions_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey.vtt",
+   "work_dir": "elearning-course/video/hr-vid-journey/",
+   "transcript_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey-transcript.html",
+   "poster_file": "03_hr-employee-induction/storyboard/assets/hr-vid-journey-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -113,8 +129,12 @@
    "placement": "new unscored video screen after ops-002",
    "target_sec": 40,
    "script_outline": "Animated journey: booking, reception, consultation, pharmacy, My Care follow-up; each team lights up as the patient passes.",
-   "target_file": "media/video/ops-vid-journey.mp4",
-   "captions_file": "media/video/ops-vid-journey.vtt"
+   "target_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey.mp4",
+   "captions_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey.vtt",
+   "work_dir": "elearning-course/video/ops-vid-journey/",
+   "transcript_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey-transcript.html",
+   "poster_file": "04_operations-and-my-care/storyboard/assets/ops-vid-journey-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -136,8 +156,12 @@
    "placement": "new unscored video screen after rcma-001",
    "target_sec": 45,
    "script_outline": "A claim travels from the note to the payer via NPHIES; missing diagnosis turns it red; fixed note turns it green. Dr. Omar narrates.",
-   "target_file": "media/video/rcma-vid-claim.mp4",
-   "captions_file": "media/video/rcma-vid-claim.vtt"
+   "target_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim.mp4",
+   "captions_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim.vtt",
+   "work_dir": "elearning-course/video/rcma-vid-claim/",
+   "transcript_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim-transcript.html",
+   "poster_file": "05_rcm-documentation-and-coding/storyboard/assets/rcma-vid-claim-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -159,8 +183,12 @@
    "placement": "new unscored video screen after rcmb-001",
    "target_sec": 50,
    "script_outline": "Icons of the headline benefit changes; limits appear only after B5 is confirmed.",
-   "target_file": "media/video/rcmb-vid-benefits.mp4",
-   "captions_file": "media/video/rcmb-vid-benefits.vtt"
+   "target_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits.mp4",
+   "captions_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits.vtt",
+   "work_dir": "elearning-course/video/rcmb-vid-benefits/",
+   "transcript_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits-transcript.html",
+   "poster_file": "06_rcm-ebp-benefits-and-rejections/storyboard/assets/rcmb-vid-benefits-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -182,8 +210,12 @@
    "placement": "existing optional screen qsr-060",
    "target_sec": 55,
    "script_outline": "Generic near-miss conversation; reporting route and deadline only as confirmed under D8.",
-   "target_file": "media/video/qsr-vid-speakup.mp4",
-   "captions_file": "media/video/qsr-vid-speakup.vtt"
+   "target_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup.mp4",
+   "captions_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup.vtt",
+   "work_dir": "elearning-course/video/qsr-vid-speakup/",
+   "transcript_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup-transcript.html",
+   "poster_file": "07_quality-safety-and-risk/storyboard/assets/qsr-vid-speakup-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   },
   {
    "route": "motion-video",
@@ -205,8 +237,12 @@
    "placement": "new unscored video screen after ehr-001",
    "target_sec": 45,
    "script_outline": "Abstract EHR wireframe (no real screens): open the visit, record, diagnose, order, educate, close. Real captures stay in the simulations.",
-   "target_file": "media/video/ehr-vid-consult.mp4",
-   "captions_file": "media/video/ehr-vid-consult.vtt"
+   "target_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult.mp4",
+   "captions_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult.vtt",
+   "work_dir": "elearning-course/video/ehr-vid-consult/",
+   "transcript_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult-transcript.html",
+   "poster_file": "08_it-ehr-consultation/storyboard/assets/ehr-vid-consult-poster.jpg",
+   "procedure": "elearning-course/video/README.md (agent procedure: 00_program/video-playbook-review.md §5)"
   }
  ]
 }

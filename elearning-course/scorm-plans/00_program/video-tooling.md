@@ -20,6 +20,8 @@ Project context: SCORM e-learning for healthcare induction. Brand navy `#003867`
 
 ---
 
+> **Update 2026-10-20 (owner's video playbook):** clips are now made in `elearning-course/video/<clip-id>/` (see [`../../video/README.md`](../../video/README.md)). The narration is the master clock: word timestamps come from the recording and animations wait for spoken phrases (`resolve_cues.py` fails loudly when a phrase is missing). The sidecar VTT script (`srt_to_vtt.py`) and the hard delivery checks (`delivery_check.py`: loudness, true peak, size, flashes, format) are written and tested. Comparison of the playbook against this plan: [`video-playbook-review.md`](video-playbook-review.md).
+
 ## 2. Comparison table
 
 | Tool | Licence | Lang / authoring | Render pipeline | Output | Captions | Agent-friendliness | Stars (approx) | Last release / activity | SCORM fit |

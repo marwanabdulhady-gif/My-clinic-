@@ -89,6 +89,54 @@
      }
     }
    }
+  ],
+  "hs2-051": [
+   {
+    "kind": "screen",
+    "screen": {
+     "type": "drag_drop",
+     "id": "hs2-051s",
+     "title": "Which kit?",
+     "prompt_html": "<p><strong>Practice (not scored).</strong> Drag each spill to the kit you would use.</p>",
+     "targets": [
+      {
+       "id": "chem",
+       "label_html": "Chemical spill kit (red)"
+      },
+      {
+       "id": "bio",
+       "label_html": "Biological spill kit (yellow)"
+      }
+     ],
+     "items": [
+      {
+       "id": "i0",
+       "text_html": "Blood on the floor after a sample drop",
+       "correct_target_id": "bio"
+      },
+      {
+       "id": "i1",
+       "text_html": "Surface disinfectant leaking from a split bottle",
+       "correct_target_id": "chem"
+      },
+      {
+       "id": "i2",
+       "text_html": "Vomit in the waiting area",
+       "correct_target_id": "bio"
+      },
+      {
+       "id": "i3",
+       "text_html": "Cleaning detergent spilled in the store",
+       "correct_target_id": "chem"
+      }
+     ],
+     "feedback": {
+      "correct_html": "<p>Right kits. Body fluids need the biological kit; chemicals need the chemical kit. Then check whether it crosses the Code Orange rule.</p>",
+      "incorrect_html": "<p>Look at what spilled: body fluids → biological kit; chemicals → chemical kit. Kit contents ⚠ Draft — pending 02/B4.</p>",
+      "show_correct_answer": true
+     }
+    }
+   }
   ]
  },
  "append_html": {

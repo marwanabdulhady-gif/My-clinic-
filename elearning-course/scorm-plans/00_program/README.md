@@ -32,7 +32,7 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 | [`storyboard-review-register.md`](storyboard-review-register.md) · [`.csv`](storyboard-review-register.csv) | Screen-level SME build-detail questions |
 | [`scenario-design-plan.md`](scenario-design-plan.md) · [`gamification-plan.md`](gamification-plan.md) | Scenario inventory, game mechanics, scoring, retries |
 | [`storyboard-proposal-check.md`](storyboard-proposal-check.md) | Storyboards vs proposal Rev01, interactivity audit, compiler capabilities |
-| [`inspiration-portfolio-review.md`](inspiration-portfolio-review.md) | Instructional-design portfolio review: patterns and 15 ranked upgrades for the courses |
+| [`inspiration-portfolio-review.md`](inspiration-portfolio-review.md) | Instructional-design portfolio review: patterns and 15 ranked upgrades for the courses; the top seven are applied (see `gamification-plan.md`) |
 | [`personalisation-and-interactivity-plan.md`](personalisation-and-interactivity-plan.md) · [`roles.json`](roles.json) · [`interactivity-upgrades.json`](interactivity-upgrades.json) | Who the induction is for, role paths, the unscored personalisation layer, backlog |
 | [`draft-slide-production.md`](draft-slide-production.md) · [`draft-slide-phases.json`](draft-slide-phases.json) · [`screen-generator.md`](screen-generator.md) | Pre-kick-off browser slide drafts (review renderer) |
 
@@ -47,6 +47,7 @@ Everything that applies to **all eight packages**, grouped by the phase it belon
 | [`visual-and-motion-agent-brief.md`](visual-and-motion-agent-brief.md) | Minimum asset inventory, video decision, agent instructions |
 | [`media-production-runbook.md`](media-production-runbook.md) · [`media-jobs-summary.md`](media-jobs-summary.md) | How image/audio/video agents work the generated job lists; hotspot maps |
 | [`video-tooling.md`](video-tooling.md) · [`media-video-plan.json`](media-video-plan.json) | Motion-graphics tools (HyperFrames, Remotion …) and the optional clip plan |
+| [`video-playbook-review.md`](video-playbook-review.md) · [`../../video/README.md`](../../video/README.md) | Owner's video playbook vs our plan; where clips are made, names, QA scripts, 44-step agent procedure |
 | [`motion-and-animation-spec.md`](motion-and-animation-spec.md) · [`motion-spec-summary.json`](motion-spec-summary.json) | Structured motion spec per screen |
 | [`g10-visual-restoration.md`](g10-visual-restoration.md) · [`asset-approval-handoff/`](asset-approval-handoff/) | Restored planned visuals and the SME approval hand-off |
 | [`asset-template-audit.md`](asset-template-audit.md) · [`asset-audit.json`](asset-audit.json) | Asset, template, logo and link audit |

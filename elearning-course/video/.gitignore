@@ -1,0 +1,8 @@
+# per-clip heavy or temporary files (see README.md)
+*/node_modules/
+*/renders/frames/
+*/renders/qa/
+*/renders/*.png
+*/renders/*_master_*.mp4
+*/narration/_joined/
+__pycache__/
