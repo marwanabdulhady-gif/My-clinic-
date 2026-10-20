@@ -4,6 +4,13 @@
 
 > Prepared **2026-10-19**. My Clinic runs **Oracle Applications Cloud** (the HR deck's self-service screens are Oracle Fusion: sign-in, *Time and Absences*, *Add Leaves*). The induction courses will therefore most likely be hosted in **Oracle Learning** (Fusion HCM). This file records what Oracle Learning accepts, what our packages send, the evidence we have, and the test My Clinic's LMS team runs with the sample package. Decision **D9** stays open until that test is done.
 
+> **Update 2026-10-20: own player.** All nine packages now use our own SCORM 1.2 player (`tools/player/`), which replaces the edumints compiler and the scorm-again runtime. The zip root holds `imsmanifest.xml`, `index.html`, `course.js`, `player.js`, `player.css` and `assets/`. What it reports is in [`../tools/player/README.md`](../tools/player/README.md#what-oracle-receives-scorm-12). `tools/check_packages.py` plays every package on a mock SCORM 1.2 LMS:
+> - all correct → `passed` 100 (07: 95, because `qsr-032` waits for B6);
+> - all wrong → `failed`;
+> - closed after 6 screens → relaunch on the same screen.
+>
+> This does **not** replace the real Oracle test (§4), which still closes D9. Rows below that mention edumints describe the old builds. The percent-format patch (G18) is no longer needed, because the player writes "75%".
+
 ## 1. What Oracle Learning accepts (published sources)
 
 | Requirement | Oracle Learning | Our packages |

@@ -21,7 +21,7 @@ Run `../00_program/qa-checklist.md` first.
 
 ## 2. LMS delivery
 
-- Package: `MC_03_Induction_v1.0_2004.zip`. First item in the new-starter learning path; due day 3.
+- Package: `MC_03_Induction_v1.0_1.2.zip`. First item in the new-starter learning path; due day 3.
 - The HR Quick Reference PDF is also posted on the intranet.
 
 ## 3. Maintenance triggers

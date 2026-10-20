@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-MC-hr" version="1.2" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p4.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <imsmd:lom><imsmd:general><imsmd:title><imsmd:langstring xml:lang="en">My Clinic — Welcome On Board: My Clinic &amp; HR Essentials</imsmd:langstring></imsmd:title><imsmd:language>en</imsmd:language><imsmd:description><imsmd:langstring xml:lang="en">Induction for new employees: who we are, our values and strategy, ethics, patients' rights and essential HR policies.</imsmd:langstring></imsmd:description><imsmd:keyword><imsmd:langstring xml:lang="en">My Clinic</imsmd:langstring></imsmd:keyword><imsmd:keyword><imsmd:langstring xml:lang="en">induction</imsmd:langstring></imsmd:keyword><imsmd:keyword><imsmd:langstring xml:lang="en">hr</imsmd:langstring></imsmd:keyword></imsmd:general><imsmd:educational><imsmd:typicallearningtime><imsmd:datetime>PT45M</imsmd:datetime></imsmd:typicallearningtime></imsmd:educational></imsmd:lom>
+  </metadata>
+  <organizations default="ORG-1">
+    <organization identifier="ORG-1">
+      <title>My Clinic — Welcome On Board: My Clinic &amp; HR Essentials</title>
+      <item identifier="ITEM-1" identifierref="RES-1">
+        <title>My Clinic — Welcome On Board: My Clinic &amp; HR Essentials</title>
+        <adlcp:masteryscore>70</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="assets/brand-background-title-navy.png"/>
+      <file href="assets/brand-logo-horizontal-navy.png"/>
+      <file href="assets/brand-value-tile-ambitious-teal.png"/>
+      <file href="assets/brand-value-tile-caring-purple.png"/>
+      <file href="assets/brand-value-tile-collaborative-burgundy.png"/>
+      <file href="assets/brand-value-tile-responsible-magenta.png"/>
+      <file href="assets/char-noor-avatar-neutral.png"/>
+      <file href="assets/char-noor-explaining.png"/>
+      <file href="assets/char-noor-welcome.png"/>
+      <file href="assets/char-omar-explaining.png"/>
+      <file href="assets/char-omar-welcome.png"/>
+      <file href="assets/hr-img-7c-capabilities.svg"/>
+      <file href="assets/hr-img-7c-care.svg"/>
+      <file href="assets/hr-img-7c-clinicians.svg"/>
+      <file href="assets/hr-img-7c-closer.svg"/>
+      <file href="assets/hr-img-7c-cost.svg"/>
+      <file href="assets/hr-img-7c-culture.svg"/>
+      <file href="assets/hr-img-7c-cure.svg"/>
+      <file href="assets/hr-img-award-star.svg"/>
+      <file href="assets/hr-img-award-trophy.svg"/>
+      <file href="assets/hr-img-benefits-wheel.svg"/>
+      <file href="assets/hr-img-challenge.jpg"/>
+      <file href="assets/hr-img-ethics-corridor.jpg"/>
+      <file href="assets/hr-img-ethics-desk.jpg"/>
+      <file href="assets/hr-img-ethics-icons.svg"/>
+      <file href="assets/hr-img-ethics-meeting.jpg"/>
+      <file href="assets/hr-img-exit-icons.svg"/>
+      <file href="assets/hr-img-gosi-bar.svg"/>
+      <file href="assets/hr-img-help-icons.svg"/>
+      <file href="assets/hr-img-idcard.jpg"/>
+      <file href="assets/hr-img-leavedesk.jpg"/>
+      <file href="assets/hr-img-map.svg"/>
+      <file href="assets/hr-img-oracle-1.svg"/>
+      <file href="assets/hr-img-oracle-2.svg"/>
+      <file href="assets/hr-img-oracle-3.svg"/>
+      <file href="assets/hr-img-oracle-4.svg"/>
+      <file href="assets/hr-img-oracle-5.svg"/>
+      <file href="assets/mark-white.png"/>
+      <file href="assets/montserrat-latin-400-normal.woff2"/>
+      <file href="assets/montserrat-latin-600-normal.woff2"/>
+      <file href="assets/montserrat-latin-700-normal.woff2"/>
+      <file href="course.js"/>
+      <file href="index.html"/>
+      <file href="player.css"/>
+      <file href="player.js"/>
+    </resource>
+  </resources>
+</manifest>

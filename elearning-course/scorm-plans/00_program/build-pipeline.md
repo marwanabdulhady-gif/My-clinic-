@@ -1,5 +1,7 @@
 # Build pipeline and SCORM settings (all modules)
 
+> **Update 2026-10-20: own player.** The edumints compiler is retired. Packages are now built with `tools/build_package.py` and played by our own SCORM 1.2 player (`tools/player/`, see its README). The browser check is `tools/check_packages.py`. Where this page names `edumints_build.py`, read `build_package.py`.
+
 This is the exact sequence Claude (the MCP client) follows for each package. Tool names are the edumints MCP tools listed in the server (`server.py`).
 
 ## 1. Tool sequence per module

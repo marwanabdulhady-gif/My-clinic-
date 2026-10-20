@@ -1,3 +1,5 @@
+> **Retired 2026-10-20.** This harness tested the old edumints packages. Use `tools/check_packages.py`, which plays the new packages on a mock SCORM 1.2 LMS.
+
 # Local SCORM API harness
 
 A minimal stand-in LMS for checking what a package sends before it goes to Oracle Learning or SCORM Cloud. `harness.html` exposes both the SCORM 1.2 `API` and the SCORM 2004 `API_1484_11`, logs every call and keeps the CMI data in `sessionStorage` so a relaunch can test resume.

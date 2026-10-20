@@ -1,5 +1,7 @@
 # SCORM package builds — draft for 03 + 07 (pilot)
 
+> **Update 2026-10-20: own player.** The edumints compiler is retired. Packages are now built with `tools/build_package.py` and played by our own SCORM 1.2 player (`tools/player/`, see its README). The browser check is `tools/check_packages.py`. Where this page names `edumints_build.py`, read `build_package.py`.
+
 > **Superseded (2026-10-15).** The canonical build route is `tools/build_course_spec.py` + `tools/edumints_build.py`: all eight packages, brand skin, companions, the explore-hotspot fix and the `lint_course` gate, with results in [`draft-builds.md`](draft-builds.md). This file and `tools/build_scorm_packages.py` are kept as the record of the first 03/07 pilot only.
 
 **Date:** 2026-10-15  

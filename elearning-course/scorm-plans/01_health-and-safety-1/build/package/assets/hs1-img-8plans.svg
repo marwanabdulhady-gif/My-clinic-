@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Eight Facility Management and Safety plans shown as icons.">
+<rect width="960" height="540" fill="#F4F7FA"/>
+<rect x="16" y="16" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="80" y="222" width="80" height="8" rx="4" fill="#D8262F"/>
+<g transform="translate(120 122)"><path d="M0 -62c26 30 44 52 44 82a44 44 0 0 1-88 0c0-20 10-34 22-46 2 16 10 24 18 26-6-24 0-44 4-62z" fill="none" stroke="#D8262F" stroke-width="7" stroke-linejoin="round"/></g>
+<rect x="256" y="16" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="320" y="222" width="80" height="8" rx="4" fill="#E8862A"/>
+<g transform="translate(360 122)"><rect x="-46" y="-50" width="92" height="104" fill="none" stroke="#E8862A" stroke-width="7"/><path d="M-28 -32h16v16h-16zM12 -32h16v16H12zM-28 2h16v16h-16zM12 2h16v16H12zM-10 30h20v24h-20z" fill="#E8862A"/></g>
+<rect x="496" y="16" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="560" y="222" width="80" height="8" rx="4" fill="#008C99"/>
+<g transform="translate(600 122)"><path d="M0 -58L58 0 0 58-58 0z" fill="none" stroke="#008C99" stroke-width="7" stroke-linejoin="round"/><path d="M-12 -24h24M-6 -24v16l-16 28h44l-16-28v-16" fill="none" stroke="#008C99" stroke-width="6" stroke-linejoin="round"/></g>
+<rect x="736" y="16" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="800" y="222" width="80" height="8" rx="4" fill="#E0B000"/>
+<g transform="translate(840 122)"><path d="M8 -58L-26 6h24l-10 52 38-70H2z" fill="none" stroke="#E0B000" stroke-width="7" stroke-linejoin="round"/></g>
+<rect x="16" y="286" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="80" y="492" width="80" height="8" rx="4" fill="#652D8C"/>
+<g transform="translate(120 392)"><rect x="-54" y="-40" width="108" height="76" rx="8" fill="none" stroke="#652D8C" stroke-width="7"/><path d="M-40 0h18l8-18 12 34 10-24 8 8h24" fill="none" stroke="#652D8C" stroke-width="6" stroke-linejoin="round"/><path d="M-20 52h40" stroke="#652D8C" stroke-width="7"/></g>
+<rect x="256" y="286" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="320" y="492" width="80" height="8" rx="4" fill="#1F5AA6"/>
+<g transform="translate(360 392)"><path d="M0 -58l46 16v34c0 32-20 52-46 64-26-12-46-32-46-64v-34z" fill="none" stroke="#1F5AA6" stroke-width="7" stroke-linejoin="round"/><rect x="-16" y="-2" width="32" height="26" rx="4" fill="#1F5AA6"/><path d="M-10 -2v-10a10 10 0 0 1 20 0v10" fill="none" stroke="#1F5AA6" stroke-width="6"/></g>
+<rect x="496" y="286" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="560" y="492" width="80" height="8" rx="4" fill="#9D3293"/>
+<g transform="translate(600 392)"><path d="M-50 54v-74l50-34 50 34v74z" fill="none" stroke="#9D3293" stroke-width="7" stroke-linejoin="round"/><path d="M0 -16v34" stroke="#9D3293" stroke-width="8" stroke-linecap="round"/><circle cx="0" cy="34" r="5" fill="#9D3293"/></g>
+<rect x="736" y="286" width="208" height="238" rx="22" fill="#FFFFFF" stroke="#D9E1E8" stroke-width="3"/>
+<rect x="800" y="492" width="80" height="8" rx="4" fill="#7C0041"/>
+<g transform="translate(840 392)"><path d="M-34 10a26 26 0 0 1 8-50 32 32 0 0 1 60 6 22 22 0 0 1 2 44z" fill="none" stroke="#7C0041" stroke-width="7" stroke-linejoin="round"/><path d="M-20 26l-8 22M2 26l-8 22M24 26l-8 22" stroke="#7C0041" stroke-width="6" stroke-linecap="round"/></g>
+</svg>

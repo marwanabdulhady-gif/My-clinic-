@@ -64,7 +64,7 @@ The approved baseline (Rev01) needs **no** video. The optional motion-graphics c
 
 ```bash
 python3 tools/build_course_spec.py <module>          # picks up new files + hotspot maps
-EDUMINTS_DIR=… /tmp/claude-0/edu-venv/bin/python tools/edumints_build.py <module>
+python3 tools/build_package.py <module>                # SCORM 1.2 zip + build/preview.html (own player)
 python3 tools/build_media_jobs.py                    # job statuses refresh from the files on disk
 ```
 

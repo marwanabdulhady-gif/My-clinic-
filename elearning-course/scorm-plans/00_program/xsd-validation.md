@@ -1,5 +1,7 @@
 # Manifest XSD validation — all eight draft packages
 
+> **Update 2026-10-20: own player.** The edumints compiler is retired. Packages are now built with `tools/build_package.py` and played by our own SCORM 1.2 player (`tools/player/`, see its README). The browser check is `tools/check_packages.py`. Where this page names `edumints_build.py`, read `build_package.py`.
+
 > **2026-10-19:** 01 and 03 are now SCORM 1.2 (Oracle Learning target). Their 2004 results below are kept as the record; rerun the XSD check on the 1.2 builds with `SCORM_SCHEMA_DIR` (schema hosts are blocked in the cloud workspace).
 
 ![My Clinic logo](brand/logo-preview.png)

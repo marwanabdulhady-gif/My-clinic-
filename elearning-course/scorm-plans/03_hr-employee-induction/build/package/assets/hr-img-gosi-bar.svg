@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="title desc">
+<title id="title">GOSI contribution split</title>
+<desc id="desc">GOSI contribution: the employee pays 9.75%, My Clinic pays 11.75%, a total of 21.5%. Stacked bar with two segments; the percentages are live SVG text so they can be corrected after HR review.</desc>
+<rect width="960" height="200" fill="#FFFFFF"/>
+<style>
+  text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+  .h{font-size:24px;font-weight:700}
+  .seg{font-size:19px;font-weight:700;fill:#FFFFFF}
+  .small{font-size:18px;font-weight:600;fill:#5B6B7B}
+  .total{font-size:20px;font-weight:700}
+  .employee{fill:#652D8C}
+  .employer{fill:#008C99}
+  .track{fill:#F4F7FA;stroke:#D9E1E8;stroke-width:2}
+  @media (prefers-reduced-motion: no-preference){
+    .employee{transform-origin:40px 60px;animation:gosi-grow 760ms cubic-bezier(.05,.7,.1,1) both}
+    .employer{transform-origin:366px 60px;animation:gosi-grow 760ms cubic-bezier(.05,.7,.1,1) 260ms both}
+    .seg{animation:gosi-fade 320ms ease-out 620ms both}
+  }
+  @keyframes gosi-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes gosi-fade{from{opacity:0}to{opacity:1}}
+</style>
+<text x="40" y="36" class="h">GOSI contribution</text>
+<text x="920" y="36" class="total" text-anchor="end">Total 21.5%</text>
+<rect class="track" x="40" y="58" width="720" height="58" rx="10"/>
+<!-- 9.75 / 21.5 = 45.3% of the bar; 11.75 / 21.5 = 54.7%. -->
+<rect class="employee" x="40" y="58" width="326" height="58" rx="10"/>
+<rect class="employer" x="366" y="58" width="394" height="58" rx="10"/>
+<text class="seg" x="203" y="94" text-anchor="middle">Employee 9.75%</text>
+<text class="seg" x="563" y="94" text-anchor="middle">My Clinic 11.75%</text>
+<text class="small" x="40" y="152">Percentages are live text: correct them here (or in HTML) if HR revises the rates.</text>
+<text class="small" x="40" y="180">Own SVG draft · figures await HR confirmation before release.</text>
+</svg>

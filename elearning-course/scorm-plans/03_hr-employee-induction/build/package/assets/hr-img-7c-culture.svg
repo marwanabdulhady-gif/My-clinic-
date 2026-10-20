@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="500 170 600 600" role="img" aria-labelledby="title desc">
+<title id="title">7 Cs icon: culture</title><desc id="desc">My Clinic course diagram. Text remains live SVG text where needed; decorative icon labels stay in HTML.</desc>
+<rect width="1600" height="900" fill="#F4F7FA"/><style>text{font-family:Montserrat,Arial,sans-serif;fill:#003867}
+.h{font-size:44px;font-weight:700}.b{font-size:27px;font-weight:500}
+.small{font-size:22px;font-weight:600}
+.line{stroke:#003867;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thinline{stroke:#003867;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card{fill:#fff;stroke:#D9E1E8;stroke-width:3}
+.accent{fill:#008C99}
+.purple{fill:#652D8C}
+.magenta{fill:#9D3293}
+.burg{fill:#7C0041}
+</style><rect x="520" y="190" width="560" height="560" rx="40" class="card"/><g transform="translate(800 460)" fill="none" stroke="#652D8C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M-54 20c0-26 20-44 54-44s54 18 54 44z"/><path d="M-34 -8c8-12 20-18 34-18s26 6 34 18"/></g></svg>

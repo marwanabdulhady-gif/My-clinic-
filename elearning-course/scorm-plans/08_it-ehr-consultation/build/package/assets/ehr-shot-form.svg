@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Training wireframe of Clinic EHR: Mandatory fields">
+<rect width="960" height="540" fill="#F4F7FA"/>
+<rect width="960" height="44" fill="#003867"/>
+<text x="16" y="28" font-family="Montserrat,Arial" font-size="15" font-weight="700" fill="#fff">Clinic EHR</text>
+<text x="944" y="28" text-anchor="end" font-family="Montserrat,Arial" font-size="11" fill="#C0CED9">TEST PATIENT · fictional · training wireframe — not the live system</text>
+<rect x="6" y="50" width="308" height="214" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="20" y="76" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">Chief complaint</text>
+<rect x="20" y="96" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="20" y="126" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="20" y="156" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="326" y="50" width="308" height="214" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="340" y="76" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">Duration</text>
+<rect x="340" y="96" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="340" y="126" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="340" y="156" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="646" y="50" width="308" height="214" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="660" y="76" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">History of present illness (HPI)</text>
+<rect x="660" y="96" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="660" y="126" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="660" y="156" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="6" y="276" width="308" height="258" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="20" y="302" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">Past history — allergies and medications</text>
+<rect x="20" y="322" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="20" y="352" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="20" y="382" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="326" y="276" width="308" height="258" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="340" y="302" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">Examination</text>
+<rect x="340" y="322" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="340" y="352" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="340" y="382" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="646" y="276" width="308" height="258" rx="10" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="660" y="302" font-family="Montserrat,Arial" font-size="13" font-weight="700" fill="#003867">Plan of care</text>
+<rect x="660" y="322" width="280" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="660" y="352" width="250" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="660" y="382" width="220" height="14" rx="7" fill="#F4F7FA"/>
+<rect x="60" y="90" width="300" height="52" rx="8" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="74" y="121.0"  font-family="Montserrat,Arial" font-size="13" font-weight="600" fill="#003867">Consultation form</text>
+</svg>

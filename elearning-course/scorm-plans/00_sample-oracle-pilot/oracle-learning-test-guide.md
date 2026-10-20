@@ -9,7 +9,6 @@ This sample is a short, real My Clinic course built with exactly the same tools 
 | File | Use |
 |---|---|
 | **`MC_Sample_OracleLearning_1.2.zip`** | **Upload this one.** SCORM 1.2 — the standard all Oracle Learning releases support. |
-| `MC_Sample_OracleLearning_2004.zip` | Optional second test only. SCORM 2004 (4th Edition). Oracle documents 2004 Editions 2 and 3, so results may differ. |
 
 Do not unzip the files. Upload each zip as it is.
 

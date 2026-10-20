@@ -23,7 +23,7 @@ Run the common checklist in `../00_program/qa-checklist.md` first. Then these mo
 
 ## 2. LMS delivery
 
-- Package: `MC_01_FMS_v1.0_2004.zip`.
+- Package: `MC_01_FMS_v1.0_1.2.zip`.
 - LMS activity settings: new attempt allowed after fail; record highest score; launch in a new window (recommended for Moodle).
 - After the package: LMS attestation step for the safety acknowledgement (D14).
 - Assign to: all new staff, due within 7 days of start date. Annual refresher: same package, or a short refresher built later from the section checks.

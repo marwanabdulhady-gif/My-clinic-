@@ -1,5 +1,7 @@
 # Next phases — implementation roadmap in PR-sized chunks
 
+> **Update 2026-10-20: own player.** The edumints compiler is retired. Packages are now built with `tools/build_package.py` and played by our own SCORM 1.2 player (`tools/player/`, see its README). The browser check is `tools/check_packages.py`. Where this page names `edumints_build.py`, read `build_package.py`.
+
 ![My Clinic logo](brand/logo-preview.png)
 
 > Prepared **2026-10-14** from [`programme-status.md`](programme-status.md), the eight phase plans,

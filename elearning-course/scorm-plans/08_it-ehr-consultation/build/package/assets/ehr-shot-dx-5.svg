@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Training wireframe of Clinic EHR: Add the primary diagnosis">
+<rect width="960" height="540" fill="#F4F7FA"/>
+<rect width="960" height="44" fill="#003867"/>
+<text x="16" y="28" font-family="Montserrat,Arial" font-size="15" font-weight="700" fill="#fff">Clinic EHR</text>
+<text x="944" y="28" text-anchor="end" font-family="Montserrat,Arial" font-size="11" fill="#C0CED9">TEST PATIENT · fictional · training wireframe — not the live system</text>
+<circle cx="840" cy="120" r="32" fill="#fff" stroke="#C0CED9" stroke-width="2"/><polygon points="840,91 832,110 813,111 828,124 823,143 840,133 857,143 852,124 867,111 848,110" fill="none" stroke="#003867" stroke-width="2" stroke-linejoin="round"/>
+<rect x="60" y="64" width="180" height="44" rx="8" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="74" y="91.0" font-family="Montserrat,Arial" font-size="13" font-weight="600" fill="#003867">Edit</text>
+<rect x="260" y="64" width="180" height="44" rx="8" fill="#fff" stroke="#C0CED9" stroke-width="2"/><text x="274" y="91.0" font-family="Montserrat,Arial" font-size="13" font-weight="600" fill="#003867">Remove</text>
+<rect x="60" y="130" width="360" height="14" rx="7" fill="#E3EAF0"/>
+<rect x="60" y="186" width="360" height="14" rx="7" fill="#E3EAF0"/>
+<rect x="520" y="186" width="360" height="14" rx="7" fill="#E3EAF0"/>
+<rect x="60" y="242" width="360" height="14" rx="7" fill="#E3EAF0"/>
+<rect x="520" y="242" width="360" height="14" rx="7" fill="#E3EAF0"/>
+<rect x="60" y="298" width="360" height="14" rx="7" fill="#E3EAF0"/>
+</svg>

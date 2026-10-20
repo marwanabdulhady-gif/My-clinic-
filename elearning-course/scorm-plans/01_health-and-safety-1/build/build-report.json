@@ -1,111 +1,17 @@
 {
-  "module": "01_health-and-safety-1",
-  "edumints_revision": "4bbf459",
-  "explore_hotspot_rules": 31,
-  "theme_keys": [
-    "color",
-    "custom_css",
-    "custom_fonts",
-    "logo_alt",
-    "logo_asset_id",
-    "name",
-    "typography"
-  ],
-  "module_colour": "#008C99",
-  "build": {
-    "project_id": "proj_01M5CG47EPEN9ZCM0YM70W4GSN",
-    "job_id": "job_01M5CG47J1EPXKZC4W3PMR5E5W",
-    "status": "done",
-    "download_url": "http://localhost/scorm/files/d-R47G3DnZYwJ8gZLQN1YxboyoF6nTtQ",
-    "warnings": [
-      "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın."
-    ]
-  },
-  "lint_course": {
-    "project_id": "proj_01M5CG47EPEN9ZCM0YM70W4GSN",
-    "strict": false,
-    "error_count": 0,
-    "warn_count": 10,
-    "clean": false,
-    "evidence_binding_coverage": 0.963,
-    "issues": [
-      {
-        "severity": "warn",
-        "code": "free_hints",
-        "message": "Tüm ipuçları bedava (maliyet 0) + skor var: bedava ipucu öğrenmeyi baltalar (en az bir ipucuna puan/zaman maliyeti ver)",
-        "path": "screens[67].mechanics.hints"
-      },
-      {
-        "severity": "warn",
-        "code": "too_many_list_items",
-        "message": "Ekranda 5 <li> var (>4) — bir ekran bir fikir taşımalı; listeyi bölmeyi ya da accordion/flashcards'a çevirmeyi düşün",
-        "path": "screens[70].body_html"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[7..10]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[7..10]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "7 ardışık görselsiz ekran (screens[15..21]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[15..21]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[27..31]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[27..31]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "8 ardışık görselsiz ekran (screens[35..42]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[35..42]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "4 ardışık görselsiz ekran (screens[49..52]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[49..52]"
-      },
-      {
-        "severity": "warn",
-        "code": "text_only_run",
-        "message": "5 ardışık görselsiz ekran (screens[63..67]) — metin duvarı: birine blok görseli ekle, birini data_chart'a çevir, ya da flashcards/accordion öğelerine görsel ver",
-        "path": "screens[63..67]"
-      },
-      {
-        "severity": "warn",
-        "code": "evidence_target_not_evidentiary",
-        "message": "Kanıt hedefi 'hs1-501c' kanıt taşıyamaz (tip: ScreenType.mcq) — düz iddia metni / kapak / özet / skorlu ekran cevabı ÜRETMEZ (K1). Hedef bir gösterim/artefakt ekranı olmalı: bloklu/görselli content_slide, accordion/tabs/flashcards/timeline, data_chart, image_compare, caption'lı video ya da formatif (points:0) deneme.",
-        "path": "screens[41].evidence_screen_ids"
-      },
-      {
-        "severity": "warn",
-        "code": "scored_over_objectives",
-        "message": "Skorlanan ekran sayısı (27) hedef sayısı + 1'i (11) aşıyor (H3) — ya fazla soruları hedefe eşle/at (H1: hedefsiz ölçme yasak) ya da bilinçli sınav-kursu gerekçesini pre-flight'a tek cümle yaz",
-        "path": "screens"
-      }
-    ]
-  },
-  "validate_package": {
-    "ok": true,
-    "errors": [],
-    "warnings": [
-      {
-        "code": "schema_unavailable",
-        "message": "SCORM XSD şemaları indirilemedi/bulunamadı — yalnız yapısal kontrol yapıldı. Çevrimdışı kullanım için SCORM_SCHEMA_DIR ayarlayın.",
-        "path": "imsmanifest.xml"
-      }
-    ]
-  },
-  "player_patches": 2,
-  "package": {
-    "file": "MC_01_FMS_v0.1-draft_1.2.zip",
-    "bytes": 3144852
-  },
-  "preview": "preview.html"
+ "builder": "tools/build_package.py (My Clinic player, SCORM 1.2)",
+ "validate_package": {
+  "ok": true,
+  "issues": []
+ },
+ "lint_course": {
+  "error_count": 0,
+  "issues": []
+ },
+ "package": {
+  "file": "MC_01_FMS_v0.1-draft_1.2.zip",
+  "bytes": 2999729
+ },
+ "screens": 71,
+ "total_points": 220
 }

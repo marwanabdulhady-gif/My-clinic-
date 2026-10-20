@@ -1,6 +1,6 @@
 # Agent tasks — read this whole file before you change anything
 
-You are working on the **My Clinic induction e-learning** project: 8 SCORM packages for a Saudi outpatient clinic group (Jeddah and Riyadh). The packages are built from storyboards with the edumints compiler. Your job is one task from the list in §4.
+You are working on the **My Clinic induction e-learning** project: 8 SCORM packages for a Saudi outpatient clinic group (Jeddah and Riyadh). The packages are built from storyboards and played by **our own SCORM 1.2 player** (`scorm-plans/tools/player/`, made for Oracle Learning). The edumints compiler is no longer used. Your job is one task from the list in §4.
 
 Follow these instructions **exactly**. If a step fails or something is unclear, **stop and report it**. Do not guess, and do not work around a rule.
 
@@ -43,16 +43,13 @@ cd <repo root>                                   # the folder that contains elea
 git fetch origin main && git checkout -b <your-branch> origin/main
 python3 -m venv /tmp/edu-venv
 /tmp/edu-venv/bin/pip install -q python-docx pillow pytest
-# the compiler (needed for builds):
-ls ../edumints-scorm-mcp 2>/dev/null || git clone https://github.com/marwanabdulhady-gif/edumints-scorm-mcp ../edumints-scorm-mcp
-/tmp/edu-venv/bin/pip install -q -e ../edumints-scorm-mcp
-export EDUMINTS_DIR=$(cd ../edumints-scorm-mcp && pwd)
 T=elearning-course/scorm-plans/tools
+# the browser check (check_packages.py) needs Node + Playwright + Chromium; cloud sessions have them in /opt
 ```
 
 Name your branch for the task, for example `agent/t1-narration-04` or `agent/t3-images-02`. If your environment gives you a required branch name, use that one.
 
-If you cannot clone the compiler, you can still do T1, T2 and T6. Skip the build step in §3 and say so in your report.
+If Node or Chromium is missing, run every other gate, skip `check_packages.py`, and say so in your report.
 
 ---
 
@@ -61,7 +58,8 @@ If you cannot clone the compiler, you can still do T1, T2 and T6. Skip the build
 ```bash
 python3 $T/build_media_jobs.py                       # refresh job lists
 python3 $T/build_course_spec.py <module>             # storyboard + layer + maps → course-spec.json
-/tmp/edu-venv/bin/python $T/edumints_build.py <module>   # compile → zip, preview.html, build-report.json
+python3 $T/build_package.py <module>                # package → zip, build/package/, preview.html, build-report.json
+python3 $T/check_packages.py <NN>                    # plays the course in a browser on a mock LMS (right, wrong, resume)
 python3 $T/draft_builds_report.py
 python3 $T/lint_planning.py
 python3 $T/audit_assets.py                           # must end with hard_failures=0
@@ -69,7 +67,9 @@ python3 $T/audit_scorm_base.py                       # must end with "audit clea
 /tmp/edu-venv/bin/python -m pytest -q $T/tests       # every test must pass
 ```
 
-The compile step must print `"lint_errors": 0` and `"validate_ok": true`.
+`build_package.py` must end with `validate ok`. `check_packages.py` must end with `failures=0`: the all-correct run ends **passed**, the all-wrong run ends **failed**, and the resume run reopens on the same screen.
+
+**Never edit `tools/player/player.js` or `player.css` as part of a content task.** The player is shared by all nine packages; a change there is its own task, and it must pass `check_packages.py` for every module.
 
 The total points for each module must stay the same:
 
@@ -87,7 +87,7 @@ Module folder names (`scorm-plans/`):
 - `07_quality-safety-and-risk`
 - `08_it-ehr-consultation`
 
-**Look at your work.** Open `<module>/build/preview.html` in a browser (Playwright screenshot is fine) and look at every screen you touched. Text must be readable, nothing cut off, and no raw markup or `{{…}}` visible.
+**Look at your work.** Open `<module>/build/preview.html` in a browser (Playwright screenshot is fine) and look at every screen you touched, before and after you answer it. Text must be readable, nothing cut off, and no raw markup or `{{…}}` visible. The preview saves progress in your browser: use **☰ → Restart preview** to start again.
 
 ---
 

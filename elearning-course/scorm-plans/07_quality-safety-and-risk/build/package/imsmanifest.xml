@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-MC-qsr" version="1.2" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p4.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <imsmd:lom><imsmd:general><imsmd:title><imsmd:langstring xml:lang="en">My Clinic — Clinical Governance: Quality, Patient Safety &amp; Risk</imsmd:langstring></imsmd:title><imsmd:language>en</imsmd:language><imsmd:description><imsmd:langstring xml:lang="en">Quality standard, the six International Patient Safety Goals, risk scoring, incident types and the 24-hour reporting rule.</imsmd:langstring></imsmd:description><imsmd:keyword><imsmd:langstring xml:lang="en">My Clinic</imsmd:langstring></imsmd:keyword><imsmd:keyword><imsmd:langstring xml:lang="en">induction</imsmd:langstring></imsmd:keyword><imsmd:keyword><imsmd:langstring xml:lang="en">qsr</imsmd:langstring></imsmd:keyword></imsmd:general><imsmd:educational><imsmd:typicallearningtime><imsmd:datetime>PT25M</imsmd:datetime></imsmd:typicallearningtime></imsmd:educational></imsmd:lom>
+  </metadata>
+  <organizations default="ORG-1">
+    <organization identifier="ORG-1">
+      <title>My Clinic — Clinical Governance: Quality, Patient Safety &amp; Risk</title>
+      <item identifier="ITEM-1" identifierref="RES-1">
+        <title>My Clinic — Clinical Governance: Quality, Patient Safety &amp; Risk</title>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="assets/brand-background-title-navy.png"/>
+      <file href="assets/brand-logo-horizontal-navy.png"/>
+      <file href="assets/brand-value-tile-caring-purple.png"/>
+      <file href="assets/char-noor-avatar-concern.png"/>
+      <file href="assets/char-noor-avatar-neutral.png"/>
+      <file href="assets/char-noor-explaining.png"/>
+      <file href="assets/char-noor-welcome.png"/>
+      <file href="assets/mark-white.png"/>
+      <file href="assets/montserrat-latin-400-normal.woff2"/>
+      <file href="assets/montserrat-latin-600-normal.woff2"/>
+      <file href="assets/montserrat-latin-700-normal.woff2"/>
+      <file href="assets/qsr-img-challenge.jpg"/>
+      <file href="assets/qsr-img-iceberg.svg"/>
+      <file href="assets/qsr-img-matrix.svg"/>
+      <file href="assets/qsr-img-pillars.jpg"/>
+      <file href="assets/qsr-img-spo.svg"/>
+      <file href="assets/qsr-img-wristbands.jpg"/>
+      <file href="course.js"/>
+      <file href="index.html"/>
+      <file href="player.css"/>
+      <file href="player.js"/>
+    </resource>
+  </resources>
+</manifest>

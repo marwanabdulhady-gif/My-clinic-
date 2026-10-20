@@ -6,8 +6,8 @@
 |---|---|
 | Purpose | One small package My Clinic's LMS team can upload to **Oracle Learning** (Oracle Applications Cloud) to confirm launch, tracking and resume before the eight real packages arrive |
 | Brand | My Clinic brand; module colour **Ambitious teal #008C99**; layouts L1–L6 |
-| Built by | The same pipeline as the eight courses: `tools/build_sample.py` → `tools/edumints_build.py` (edumints compiler) |
-| Packages | `build/MC_Sample_OracleLearning_1.2.zip` (**upload this one first**) and `build/MC_Sample_OracleLearning_2004.zip` |
+| Built by | The same pipeline as the eight courses: `tools/build_sample.py` → `tools/build_package.py` (our own SCORM 1.2 player, `tools/player/`; edumints retired 2026-10-20) |
+| Packages | `build/MC_Sample_OracleLearning_1.2.zip` (**upload this one first**) (the 2004 build was dropped with the edumints compiler: Oracle documents SCORM 1.2 support, and the player is 1.2 only) |
 | Seat time | ~8 minutes · 13 screens · 4 scored checks · 60 points · pass 80% (48) |
 | Content | Standard, low-risk practice: two patient identifiers, RACE/PASS fire response, WHO five moments for hand hygiene. Not reviewed by My Clinic SMEs; a sample, not a course |
 
